@@ -1,0 +1,10 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/nether_star"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":5555}, "model": "items/_papaya"},
+		{"predicate": {"custom_model_data":16575}, "model": "items/_lshard"}
+	]
+}

@@ -1,0 +1,25 @@
+{
+  "parent": "item/generated",
+  "textures": {
+      "layer0": "item/firework_star",
+      "layer1": "item/firework_star_overlay"
+  },
+    "overrides": [
+		    {"predicate": {"custom_model_data":1}, "model": "items/_mobs/bee"},
+        {"predicate": {"custom_model_data":2}, "model": "items/_mobs/cat"},
+        {"predicate": {"custom_model_data":3}, "model": "items/_mobs/chicken"},
+        {"predicate": {"custom_model_data":4}, "model": "items/_mobs/chillager"},
+        {"predicate": {"custom_model_data":5}, "model": "items/_mobs/ghast"},
+        {"predicate": {"custom_model_data":6}, "model": "items/_mobs/golem_arm1"},
+        {"predicate": {"custom_model_data":7}, "model": "items/_mobs/golem_arm2"},
+        {"predicate": {"custom_model_data":8}, "model": "items/_mobs/golem_head"},
+        {"predicate": {"custom_model_data":9}, "model": "items/_mobs/guardian"},
+        {"predicate": {"custom_model_data":10}, "model": "items/_mobs/hoglin"},
+        {"predicate": {"custom_model_data":11}, "model": "items/_mobs/pillager"},
+        {"predicate": {"custom_model_data":12}, "model": "items/_mobs/ravager"},
+        {"predicate": {"custom_model_data":13}, "model": "items/_mobs/vindicator"},
+        {"predicate": {"custom_model_data":14}, "model": "items/_mobs/wolf"},
+        {"predicate": {"custom_model_data":15}, "model": "items/_mobs/chicken"},
+        {"predicate": {"custom_model_data":16}, "model": "items/_mobs/johnny"}
+	]
+}
