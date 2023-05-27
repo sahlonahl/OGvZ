@@ -1,0 +1,28 @@
+{
+    "parent": "item/bow",
+    "textures": {
+        "layer0": "items/whispersong/whispersong_pulling_2"
+    },
+    "display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -95, 45],
+			"translation": [-1, -2, 5],
+			"scale": [2, 2, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 85, -45],
+			"translation": [-1, -2, 5],
+			"scale": [2, 2, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 30],
+			"translation": [3, 3, 2],
+			"scale": [1.5, 1.5, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -30],
+			"translation": [3, 3, 2],
+			"scale": [1.5, 1.5, 1]
+		}
+	}
+}

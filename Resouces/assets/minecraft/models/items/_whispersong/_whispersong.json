@@ -1,0 +1,43 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/bow",
+	"textures": {
+		"layer0": "items/whispersong/whispersong"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 8],
+			"to": [16, 16, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#layer0"},
+				"east": {"uv": [0, 0, 16, 0], "rotation": 270, "texture": "#layer0"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+				"west": {"uv": [0, 0, 16, 0], "rotation": 90, "texture": "#layer0"},
+				"up": {"uv": [0, 0, 16, 0], "rotation": 180, "texture": "#layer0"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#layer0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -95, 45],
+			"translation": [-1, -2, 5],
+			"scale": [2, 2, 1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 85, -45],
+			"translation": [-1, -2, 5],
+			"scale": [2, 2, 1]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 30],
+			"translation": [3, 3, 2],
+			"scale": [1.5, 1.5, 1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -30],
+			"translation": [3, 3, 2],
+			"scale": [1.5, 1.5, 1]
+		}
+	}
+}
