@@ -1,0 +1,353 @@
+[][][][][][][][][][][]
+ADD NEW UPDATES ABOVE
+[][][][][][][][][][][]
+
+The "Structurally Sound" Update
+=== 2022.09.24 ===
++ BUILDER STRUCTURES
+  - Builder Legendary transmute
+  - Comes in 9 different types
+    - Bunker
+    - Conduit
+    - Disposal
+    - Platform
+    - Rampart
+    - Stable
+    - Tower
+    - Talltower
+    - Workshop
+  - Place structure to build it immediately
+  - Based on where you are looking, so it always places correct
+  - Only works for builders! 
+
++Fixed syntax error w/ "Lore" on papaya, causing it to be unobtainable
+-Removed shrine mana gen sound
+-Reduced pearl rod spawn chances
++Fixed enderman and golem spawn messages (text w/ name, and sound)
++Fixed miniboss spawns not having the horn sound
++Fixed pearl rods not working and reduced cooldown
+-Golem protection reduced
+==================
+
+
+
+=== 2022.09.18 ===
+-Removed ***ALL*** zombie block pickups while maintaining dwarf pickups. (finally!)
+
+-Fixed WW's bow losing infinity after the first kill 
+-Shrine game over effect no longer has an explosion and dwarves should get teleported instead of killed 
+-Blacksmith's legendary transmute yields more items 
+-Buffed Wicked Crossbow 
+-Tailor's legendary transmute yields more items 
+-Tailor's netherite comes pre-enchanted 
+-Baker's legendary transmute can potentially yield golden carrots and an enchanted golden apple 
+
+-Ghast blast prot should protect it from nuking itself at close 
+-Ghast fireball power dwindling has been tweaked and now emits smoke with its darkness indicating its current blast strength. Black is strongest, white is weak.
+-Ghast is immune to fall damage, following other flyers 
+-Nixed spider's web climb ability 
+
+-Reduced the enchant glint to something more subtle 
+-Fixed Chillager's invis ability icon to its own texture; what it should have been a while ago
+
+-Increased chances of pearl rods 
+-Reduced chances of transmuting crossbows 
+-Added a description of the Papaya's function 
+-EZ fix slabs are constructed slightly closer 
+-Dwarven guard's Mind's Eye ability activation sound is much longer range
+
+-Bumped up the AoE of Phantom's Delirium
+-Slightly reduced Delirium cooldown 
+-Fixed Phantom's delirium projectiles appearing as snowballs, now black ink
+
+-removed tool crafting recipes
+-added check for shrine blocks before game start 
+-slightly adjusted mob spawn protection 
+-fixed bug causing title notification spam.
+-removed naturally generating chest items
+==================
+
+
+
+=== 2022.09.10 ===
+-Made changes to the game over effects and fixed some effects not happening at all
+-Extended the length of the saturation and weakness effects in the lobby.
+-Reduced regen effect and slight protection reduction on Hoglin's final stage
+-A sound and chat message appears when an enderman spawns
+-Fixed dwarf death messages' lack of fanfare. I hope.
+-Reactivated friendly fire; JBG is back.
+-AI mobs have been substantially nerfed
+-Reduced Hoglin's hunger affliction
+-Hoglin and Iron golem have messages upon final stage and spawning respectively
+-Replaced drowned's DS with FF due to a vanilla bug preventing riptide from working
+-Chicken has a full complement of armor, but no armor points
+-The amount of blocks hoglin must eat to evolve has increased
+-Fixed miniboss spawn sounds not playing
+-Miniboss spawn messages also display in chat
+-Phantom no longer has an armor rating. It also lacks any protection except for blast.
+-Phantom's sword is now stone. Knockback reduced to 1.
+-Upped the cooldown to 20 seconds for chicken's fly ability
+-Golem's projectile prot is knocked down to 1 on only 1 piece of armor; no longer gets it otherwise.
+-Zombies can no longer get wooden picks as a rare chance
+-Fixed normal Enderman portal spawn egg count to be 8 instead of old 16
+-Increased AI creeper fuse time
+-Increased follow range for AI mobs
+-Removed magic milk dispenser from Baker
+-Pearl Rod can teleport even if a layer of blocks covers it again
+-Creeper effect clouds should die. If this doesn't work I'm going to take a shit
+-Hoglin is rarer
+-Blaze gives temporary fire resistance to monsters in a short radius around it
+-Pearl rods are slightly more common
+-Pearl rods have a cooldown
+-Pearl rods have cooldown and mana error messages
+-A sound and particles play when enchanters and builders regenerate mana around the shrine or assassin slayer
+-Increased radius of mana regeneration around shrine
+-Fixed accuracy errors in dwarf hero item descriptions
+-Whispersong starts with infinity
+-Fixed Hoglin's announcement message playing when it shouldn't
+-Fixed particles and sounds not playing when pig mines blocks
+-Fixed mobs not being able to hear silverfish's "roar"
+-Hoglin gets a death announcement message
+-Important monster spawn announcement messages now include the player's name
+-A title message indicating the doom/boss event appears upon selection a dwarf class.
+-AI mobs get weak passive regen back (except silverfish)
+==================
+
+
+
+=== 2022.08.25 ===
++ Increased Elder Guardian boss health
++ Increased the amount of redstone blacksmiths recieve upon transmute
++ Fixed Creepers leaving behind effect clouds
+- AI silverfish take more knockback than previously
++ Fixed dwarven guard being assigned when enough dwarves are killed during an assassin game
++ Fixed wither warrior being assigned when enough dwarves are killed during a guardian game
++ Fixed important monster death announcement sounds
++ Reduced the number of spawn eggs enderman gets when creating a portal
+- Lowered protection of AI zombies
+- Lowered protection of player Phantoms
++ Upped the range of Bee's honey ability
+- Eggs found by dwarves will no longer explode when thrown
+- Reduced chicken spawn chance
++ Increased golem protection level by 1
+- Mangrove log/wood/roots can no longer be obtained by zombies
++ (Maybe) Fixed "dwarves remaining message counts 1 extra player."
++ Fixed vindication having no cooldown dvz:rightclick/cooldown
+- Reduced spider speed
+==================
+
+
+
+The "Dangerous & Deadly" Update
+=== 2022.08.19 ===
+==-New Mechanics-==
+- Boss auto ends when 33% of online players are dead.
++ The shrine grants mana regen up to 100 for builders and enchanters as long as they stay close to it
+
++ ENDER DRAGON BOSS
+  - New ability, "World Cracker"
+    - many, many, many fireballs
+  - No more healing crystal
+
++ CHICKEN
+  - Can be one shot
+  - ghastflight:tm:
+  - Flying dash ability
+  - EXPLODING EGGS
+
++ PHANTOM
+  - Delerium
+    - shoots snowballs that heavily debuff dwarves
+  - Eytra
+
++ EZ-Fix Slabs!
+  - Builder's new legendary item
+
++ Monsters are all on one team!
+  - Prevents spying on tab menu, adding stealth
+  - allows new command /teammsg or /tm
+  - Can see fellow invisible mobs
+
++ AI mobs now naturally spawn when the boss dies.
+  - They are tougher than normal AI mobs and won't attack the zombies team!
+
+==-Overhaul-==
++ Johnny
+  - Faster
+  - Gets a fancy new crossbow and arrows
+  - Upgraded vindication
+    - Now teleports all zombie variants to Johnny
+    - Empowers all mobs
+    - Extra buffs for zombie variants
+    - Johnny is immune to damage for 30 seconds
+
++ Ghast
+  - Reduced health
+  - Fireball
+    - Increased cooldown to 10 seconds
+    - Reduces power over distance, and deletes itself if it goes too far
+
++ Spider
+  - Speed increase
+  - New wooden sword to remove webs
+  - Poison is now more severe, works by hitting dwarves, and has no cooldown
+  - spawns with a 5s web cooldown to prevent using it in mob spawn
+  - climbs webs faster
+
++ Hoglin
+  - New tool, mine blocks with it for better control
+  - final stage is stronger, better regen, and applies hunger to dwarves on hit
+
++ Enderman
+  - Has two portals, pick one
+    - ground level
+    - airborne
+  - airborn portal is lower
+  - all cooldowns reduced significantly
+
++ Bee
+  - New/Reusable healing item "Honey"
+  - Has more potions to help support
+  - Takes no fall damage
+
++ Zombie AND Skeleton are both guaranteed now
++ Skeletons have a chance for punch and flame bows
++ Pillagers have a chance for punch, flame, and fireworks
++ Skeletons and skeleton variants (except guardian) have a chance of getting skeleton horse mounts
++ Zombies and zombie variants have a chance of getting zombie horse mounts (plus other toys)
++ All mobs get night vision and conduit power
+
++ Papaya activates more often and provides greater healing
++ Enchanter gets grindstone and more bookshelves
+- Alchemists now only have 1 cauldron
+- Builders no longer get reinforced brick or emeralds when combat time starts
++ Every hero was modified for balance
+
+==-Bugfixes-==
+- Minibosses no longer get mob spawn regen
++ Teleporting to the enderman won't mess with previous effects
+- Dragon Warrior's "ultimate potion" does not work for any other dwarves
++ Fixed chillager invis and reapplication of armor not working
++ Fixed the dwarf count in dwarf death messages not appearing
+
+==-Other/QoL-==
++ Bee is more common
++ Pearl Rod leaves an effect behind at the spot you teleported away from
++ Blaze can now choose to descend slowly like ghast/bee
++ Silverfish more stealthy by placing eggs silently to dwarves
+- Baker produces less cake, but more pie/bread
++ Wolf's iron sword is now diamond and has one more wolf egg
++ Updated block list for ravager/silverfish interactable to include shop blocks and variants like stairs and slabs
++ Blaze fireballs have slightly less spread
++ Ocelot speed boost is now permanent
++ Silverfish roar makes a sound and spawns with 3 spawn eggs
++ Lobby players have weakness and saturation to prevent dying...
++ Assassin Slayer now has a mana regen aura for nearby dwarves
++ "Assisted shrine" setup now clears a larger space, and includes a basic shrine room!
++ Creepers now explode, but differently
++ Ocelot has a new tool called "disarm" which makes dwarves unable to do damage for 3 seconds
++ Assassin now recieves a message in chat detailing its mission and notes
++ Wither skeletons get vines
++ Chillager's ice bomb now comes with particles, a sound, and powder snow at its center
++ Bumped up depth strider of aquatic mobs
++ Replaced the player dragon boss' healing ability with something new: WORLD CRACKER
++ Wither and Elder Guardian bosses buffed
++ Whispersong no longer adjusts fov on crouch. It gets a spy glass in its place. 
+- Higher mana requirement for health potions
++ Snowman's ice shard effect lasts a little longer, and its snowballs go a little further
++ Drowned give eavh other dolphins grace instead of conduit power
++ Hoglin's final stage depletes hunger on hit
++ Wolf companions are tougher.
++ Added miniboss death messages
++ Increased mob spawn protection radius
++ The shrine has a fancy explosion when the game is over by shrine destruction
++ Mobs get a notification when their suicide pill is ready
++ fix for JBG with dwarves
++ Changed internal code to be more effecient (less lag for you)
+==================
+
+
+
+The "Very Pretty" Update
+=== 2022.02.11 ===
+==-Particles-==
++ Added particles for dwarves' summoning and legendary books
++ Added particles for all hero weapons
++ All dwarven heros now emit an ambient trail of particles!
++ Blaze now emits ambient blaze particles
+
+==-Sounds-==
++ Added Timer sounds and different cues
++ Added Boss spawn sounds
++ Added sound and chat cue when attempting to use a lava bucket (don't try it)
++ Added a sound for the game starting
++ Added sounds for dwarves' summoning and legendary books
++ Added sounds for all hero weapons
++ When a dwarf recieves mana from a hero, a sound is played
++ When the assassin is selected, a special sound plays
++ Add a sound when using the Pearl Rod
++ Modified the sounds when using dwarves' potions
++ All mobs make their respective mob sounds when they are either hit or killed
++ All mob abilities make their respective sounds
++ Bosses' abilities have custom sounds
+
+==-Textures-==
++ Updated the textures for the spawn in lobby, lanterns, and reinforced stone bricks
+  - (or blue bricks for you laymen)
++ Updated diamond bow and emerald bow textures
++ Changed the Assassin Knife texture
++ All classes spawn in with a music disc now!
++ Changed silverfish head (not a model, just a player head texture)
++ Alchemist now uses lapis lazuli (like 2012)
+  - this cannot be crafted into anything else
++ Mob spawn is now crying obsidian
+
+==-Models-==
++ Added custom head models (some are even animated) for the following:
+  - all minibosses
+  - the illager clan
+  - wolves
+  - bees
+  - ocelots
+  - guardians
++ Custom 3rd person model for the Whispersong (it's huuuge)
+
+==-Other-==
++ ADDED A RULE BOOK
+  - given to players waiting in the lobby before the game starts
+
++ Readded natural regen
++ Buffed Papaya (woo)
++ Dwarven deaths have a special death message
++ Changed the armor color of (almost) all mobs
++ Enderman portal creation has a new message
++ When a dwarf gets their mana stolen by an Ocelot, they are notified in chat
++ Enderman can now move around very slowly on their portal without having to spam their spacebar
++ Mobs on the enderman platform no longer have temporary invulnerability
+  - They still don't take fall damage if they jump fast enough.
++ Assassin Slayer is a little more tanky with added blast resistance!
++ Added several helpful tips in chat messages for when you spawn in, pick a class, die, etc!
++ Added team's remaining players in a sidebar on the right
++ Added "GAME OVER" screens for when either all dwarves die or all the gold is gone.
+  - These are calculated and displayed automagically!
++ Changed message when using pearl rod
++ Tailor gold output buffed!
++ Raised crafter dwarves' shop blocks to a 1.5 stacks instead of only 1!
++ Fixed seeds and dirt and a bunch of other blocks from dropping
+  - (give me your feedback on this after a couple games, it's what I think is the best mixture of no crafting and full crafting
+  - Builders have to use their axe to get trees
+  - This fixes 2-tall flower glitch and crafting new gold
++ Buffed builder mana
++ Changed timer color
++ Changed boss health colors
++ Mobs' release message is now in chat instead of the actionbar
++ Modified almost all legendary transmutes
++ Bookshelves and 
++ Baker has a cow spawn egg to get more milk buckets from
+  - (his name is Jeffry and he's invincible, literally)
++ Obsidian cannot be picked up, but still can be a legendary transmute
+
+- GHAST NO LONGER HAS REGEN
++ FIXED EXCALIBUR AND DIAMOND BOW
++ FIXED COAL (iykyk)
+==================
