@@ -1,0 +1,11 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gold_ingot"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 1
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:15,Unbreakable:1b,display:{Name:\'{\"text\":\"Builder\",\"color\":\"green\"}\',Lore:[\'[{\"text\":\"Basic dwarf class; no keep with out them.\",\"color\":\"aqua\"}]\']}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.5
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:16,Unbreakable:1b,display:{Name:\'{\"text\":\"Baker\",\"color\":\"blue\"}\',Lore:[\'[{\"text\":\"Supplies the keep with food.\",\"color\":\"aqua\"}]\']}}"
+			}
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.5
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:18,Unbreakable:1b,display:{Name:\'{\"text\":\"Blacksmith\",\"color\":\"blue\"}\',Lore:[\'[{\"text\":\"Supplies the keep with weapons and tools.\",\"color\":\"aqua\"}]\']}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.5
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:20,Unbreakable:1b,display:{Name:\'{\"text\":\"Enchanter\",\"color\":\"blue\"}\',Lore:[\'[{\"text\":\"Supplies the keep with higher quiality items.\",\"color\":\"aqua\"}]\']}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.5
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:19,Unbreakable:1b,display:{Name:\'{\"text\":\"Alchemist\",\"color\":\"blue\"}\',Lore:[\'[{\"text\":\"Supplies the keep with magical potions.\",\"color\":\"aqua\"}]\']}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.5
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:21,Unbreakable:1b,display:{Name:\'{\"text\":\"Tailor\",\"color\":\"blue\"}\',Lore:[\'[{\"text\":\"Supplies the keep with armour.\",\"color\":\"aqua\"}]\']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

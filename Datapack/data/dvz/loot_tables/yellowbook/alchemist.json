@@ -1,0 +1,69 @@
+{
+  "pools": [
+    {
+      "rolls": 32,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:long_water_breathing\"}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tipped_arrow",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 12
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Arrow of Legend\",\"color\":\"yellow\"}',Lore:['{\"text\":\"Hit a dwarf to give them regeneration, and a monster to poison them!\",\"color\":\"gold\"}']},CustomPotionEffects:[{Id:26b,Duration:200,Ambient:1b}],CustomPotionColor:16753152}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:long_turtle_master\"}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:23,Unbreakable:1b,display:{Name:'{\"text\":\"Ultimate Potion\",\"color\":\"red\"}',Lore:['[{\"text\":\"Applies all of the effects.\"}]','[{\"text\":\"Requires 30 mana!\",\"color\":\"red\"}]','[{\"text\":\"NO cooldown!\",\"color\":\"green\"}]']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

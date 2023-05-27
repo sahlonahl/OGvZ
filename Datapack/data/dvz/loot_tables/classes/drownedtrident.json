@@ -1,0 +1,33 @@
+{
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 1
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:trident",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b}"
+            },
+			      {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "loyalty",
+				        "riptide"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

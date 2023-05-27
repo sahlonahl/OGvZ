@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+	"stone_bricks",
+	"stone_brick_stairs",
+	"stone_brick_slab",
+	"mossy_stone_bricks",
+	"mossy_stone_brick_stairs",
+	"mossy_stone_brick_slab",
+	"cracked_stone_bricks",
+	"chiseled_stone_bricks",
+	"terracotta",
+	"smooth_quartz",
+	"smooth_quartz_stairs",
+	"smooth_quartz_slab",
+	"bricks",
+	"brick_stairs",
+	"brick_slab",
+	"nether_bricks",
+	"nether_brick_stairs",
+	"nether_brick_slab",
+	"dark_prismarine",
+	"dark_prismarine_stairs",
+	"dark_prismarine_slab",
+	"cobblestone",
+	"cobbled_deepslate"
+  ]
+}

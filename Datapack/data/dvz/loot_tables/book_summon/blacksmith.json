@@ -1,0 +1,527 @@
+{
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.5
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:redstone_ore",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+			        }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_sword",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_pickaxe",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_shovel",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:crossbow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:3}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Claymore"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 9,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "",
+                  "amount": -2.8,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:2}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Sabre"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 5,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "",
+                  "amount": -1.9,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 9,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "",
+                  "amount": -2.9,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": -2,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Spear"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 7,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "",
+                  "amount": -2.5,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": -2.5,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"knockback\",lvl:1}]}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 9,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "",
+                  "amount": -2.9,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1,Enchantments:[{id:\"knockback\",lvl:3}]}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Mace"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 9,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "",
+                  "amount": -3.1,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:2,Enchantments:[{id:\"knockback\",lvl:1}]}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Halberd"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 13,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "",
+                  "amount": -3.2,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_shard",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Shiv"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "",
+                  "amount": 5,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.movement_speed",
+                  "name": "",
+                  "amount": 0.04,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.armor",
+                  "name": "",
+                  "amount": -2,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.armor_toughness",
+                  "name": "",
+                  "amount": -2,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 1
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 8,
+                "max": 16
+              }
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Lore:['[{\"text\":\"Give to the Baker!\",\"color\":\"blue\"}]']}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.33
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Lore:[\'[{\"text\":\"Give to the Enchanter!\",\"color\":\"blue\"}]\']}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.1
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:nether_star",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:16575,display:{Name:\'{\"text\":\"Legendary Shard\",\"color\":\"dark_purple\"}\',Lore:[\'[{\"text\":\"Use with a Legendary Book to make Legendary Items.\",\"color\":\"blue\"}]\']}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 1
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:arrow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 48,
+                "max": 96
+              }
+            
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

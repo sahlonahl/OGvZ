@@ -1,0 +1,303 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Lonely:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Lonely"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Brave:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Brave"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Adamant:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Adamant"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Naughty:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Naughty"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Bold:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Bold"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Relaxed:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Relaxed"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Impish:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Impish"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Lax:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Lax"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Timid:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Timid"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Hasty:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Hasty"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Jolly:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Jolly"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Naive:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Naive"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Modest:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Modest"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Mild:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Mild"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Quiet:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Quiet"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Rash:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Rash"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Calm:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Calm"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Gentle:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Gentle"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Sassy:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Sassy"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Careful:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Careful"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Gluttonous:1b,Nature:1b}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "Nature: Gluttonous"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:blaze_rod",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{LegendItem:1b,CustomModelData:1,Enchantments:[{id:\"knockback\",lvl:1}],Bezerker:1b,Unbreakable:1b,AttributeModifiers:[{Slot:\"mainhand\", AttributeName:\"generic.attack_speed\", Name:\"generic.attack_speed\", Amount:1000.0, Operation:0, UUID:[I; 2, 2, -2, -2]},{Slot:\"mainhand\", AttributeName:\"generic.attack_damage\", Name:\"generic.attack_damage\", Amount:5.0, Operation:0, UUID:[I; 2443, -233, 28, -552]}],display:{Name:\'{\"text\":\"Bezerker Axe\",\"color\":\"red\"}\'}}"
+            }
+          ]
+        },
+		{
+          "type": "item",
+          "name": "minecraft:diamond_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{LegendItem:1b,CustomModelData:1,Enchantments:[{id:\"fire_aspect\",lvl:3},{id:\"knockback\",lvl:2},{id:\"sharpness\",lvl:5}],HealthBoost:1b,Unbreakable:1b,display:{Name:\'{\"text\":\"Excalibur\",\"color\":\"gold\"}\'}}"
+            }
+          ]
+        },
+		{
+          "type": "item",
+          "name": "minecraft:bow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{LegendItem:1b,CustomModelData:804,Enchantments:[{id:\"power\",lvl:5},{id:\"punch\",lvl:2}],HealthBoost:1b,Unbreakable:1b,display:{Name:\'{\"text\":\"Diamond Bow\",\"color\":\"aqua\"}\'}}"
+            }
+          ]
+        },
+		{
+          "type": "item",
+          "name": "minecraft:bow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{LegendItem:1b,CustomModelData:805,Enchantments:[{id:\"power\",lvl:2},{id:\"punch\",lvl:5}],EmeraldBow:1b,Unbreakable:1b,display:{Name:\'{\"text\":\"Emerald Bow\",\"color\":\"green\"}\'}}"
+            }
+          ]
+        },
+		{
+          "type": "item",
+          "name": "minecraft:crossbow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{LegendItem:1b,Enchantments:[{id:\"piercing\",lvl:10s},{id:\"multishot\",lvl:1s},{id:\"quick_charge\",lvl:5s}],Unbreakable:1b,display:{Name:\'{\"text\":\"Wicked Crossbow\",\"color\":\"dark_green\"}\'}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

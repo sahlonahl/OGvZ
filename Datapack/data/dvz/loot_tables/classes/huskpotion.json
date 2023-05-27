@@ -1,0 +1,53 @@
+{
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:weakness\"}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:slowness\"}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:20b,Duration:200,Ambient:1b}],CustomPotionColor:6041600,display:{Name:\"\\\"Splash Potion of Withering\\\"\"}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:17b,Duration:200,Ambient:1b}],CustomPotionColor:6041600,display:{Name:\"\\\"Splash Potion of Hunger\\\"\"}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

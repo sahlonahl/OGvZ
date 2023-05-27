@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0, 
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "minecraft:brown_bed",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "part": "head"
+              }
+            }
+          ],
+          "name": "minecraft:brown_bed"
+        }
+      ],
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"dwarves\"]}"
+          }
+        }
+      ]
+    }
+  ]
+}

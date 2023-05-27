@@ -1,0 +1,35 @@
+# -------------------------------------------
+# Called By: dvz:rightclick\zombie
+# File Name: vindicator
+# File Purpose: Spawn items for vindicator variant-zombie class
+# Created By: Sahlonahl
+# 
+# Created On: 2020.02.29
+# Last Modified On: 2023.03.05
+# Last Modified By: Zaffre
+#
+# Credit to:
+#
+# Comments:
+# -------------------------------------------
+
+tag @s[tag=!selectedclass] remove nopill
+effect clear @s[tag=!selectedclass]
+team join zMONSTER @s[tag=vindicator,tag=!selectedclass]
+clear @s[tag=!selectedclass]
+
+give @s[tag=vindicator,tag=!selectedclass] cooked_beef 64
+give @s[tag=vindicator,tag=!selectedclass] iron_axe{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:3}]}
+give @s[tag=vindicator,tag=!selectedclass] iron_sword{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:1}]}
+give @s[tag=vindicator,tag=!selectedclass] splash_potion{Potion:"minecraft:strong_healing"} 2
+loot give @s[tag=vindicator,tag=!selectedclass] loot dvz:classes/zombiepotion
+loot give @s[tag=vindicator,tag=!selectedclass] loot dvz:classes/zombietoys
+
+item replace entity @s[tag=vindicator,tag=!selectedclass] weapon.offhand with shield{Unbreakable: 1b}
+#item replace entity @s[tag=vindicator,tag=!selectedclass] armor.head with pumpkin{display:{Name:'{"text":"Vindicator Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1},{id:"protection",lvl:2}],AttributeModifiers:[{Slot:"head",AttributeName:"generic.armor", Name:"generic.armor", Amount:2.0, Operation:0, UUID:[I; -64585, 64804, 64804, 64804]}]}
+item replace entity @s[tag=vindicator,tag=!selectedclass] armor.head with firework_star{CustomModelData:13,display:{Name:'{"text":"Vindicator Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1},{id:"protection",lvl:2}],AttributeModifiers:[{Slot:"head",AttributeName:"generic.armor", Name:"generic.armor", Amount:2.0, Operation:0, UUID:[I; -64585, 64804, 64804, 64804]}]}
+item replace entity @s[tag=vindicator,tag=!selectedclass] armor.chest with leather_chestplate{display: {color: 4209720}, Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}, {id: "protection", lvl: 2}], AttributeModifiers: [{Slot: "chest", AttributeName: "generic.armor", Name: "generic.armor", Amount: 6.0d, Operation: 0, UUID: [I; 64585, -64804, 64804, 64804]}]}
+item replace entity @s[tag=vindicator,tag=!selectedclass] armor.legs with leather_leggings{display: {color: 2580065}, Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}, {id: "protection", lvl: 2}], AttributeModifiers: [{Slot: "legs", AttributeName: "generic.armor", Name: "generic.armor", Amount: 5.0d, Operation: 0, UUID: [I; 64585, 64804, -64804, 64804]}]}
+item replace entity @s[tag=vindicator,tag=!selectedclass] armor.feet with iron_boots{display: {color: 2182476}, Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}, {id: "protection", lvl: 2}], AttributeModifiers: [{Slot: "feet", AttributeName: "generic.armor", Name: "generic.armor", Amount: 2.0d, Operation: 0, UUID: [I; 64585, 64804, 64804, -64804]}]}
+
+execute as @s[tag=vindicator] if predicate dvz:natchance run loot give @s loot dvz:mob_natures

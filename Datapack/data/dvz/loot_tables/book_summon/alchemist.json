@@ -1,0 +1,218 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:sand",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:27,Unbreakable:1b,display:{Name:\'{\"text\":\"Health Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 30 mana!\",\"color\":\"red\"}]\']}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:28,Unbreakable:1b,display:{Name:\'{\"text\":\"Strength Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 20 mana!\",\"color\":\"red\"}]\']}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:29,Unbreakable:1b,display:{Name:\'{\"text\":\"Jump Boost Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 20 mana!\",\"color\":\"red\"}]\']}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:30,Unbreakable:1b,display:{Name:\'{\"text\":\"Speed Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 20 mana!\",\"color\":\"red\"}]\']}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.2
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:firework_rocket",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 16,
+                "max": 32
+              }
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Fireworks:{Flight:3b,Explosions:[{Type:0,Colors:[I;16750848]},{Type:0,Colors:[I;16750848]},{Type:0,Colors:[I;16750848]},{Type:0,Colors:[I;16750848]},{Type:0,Colors:[I;16750848]},{Type:0,Colors:[I;16750848]},{Type:0,Colors:[I;16750848]}]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 1
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 16
+              }
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Lore:[\'[{\"text\":\"Give to the Tailor!\",\"color\":\"blue\"}]\']}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.25
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:milk_bucket",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.1
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:nether_star",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:16575,display:{Name:\'{\"text\":\"Legendary Shard\",\"color\":\"dark_purple\"}\',Lore:[\'[{\"text\":\"Use with a Legendary Book to make Legendary Items.\",\"color\":\"blue\"}]\']}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.33
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Lore:[\'[{\"text\":\"Give to the Enchanter!\",\"color\":\"blue\"}]\']}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
