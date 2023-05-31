@@ -1,5 +1,5 @@
 NOTE: This is an add-on. You will require the OGvZ data pack to play the game.
-IMPORTANT: You need to place this add-on data pack AFTER the OGvZ data pack. If you just drag and drop the 2 data packs into the datapack folder, they will put themselves in the correct order automatically (data packs are loaded in alphabetical order).
+IMPORTANT: You need to place this add-on data pack AFTER the OGvZ data pack.
 NOTE: Modifies only files inside the minecraft namespace.
 
 CHANGELOG:
