@@ -1,12 +1,13 @@
 NOTE: This is an add-on. You will require the OGvZ data pack to play the game.
-IMPORTANT: You need to place this add-on data pack AFTER the OGvZ data pack.
+IMPORTANT: You need to place this add-on data pack AFTER the OGvZ data pack. If you just drag and drop the 2 data packs into the datapack folder, they will put themselves in the correct order automatically (data packs are loaded in alphabetical order).
 NOTE: Modifies only files inside the minecraft namespace.
 
 CHANGELOG:
 - All planks now always drop themselves, even for zombie players.
-- Wooden tools can now be crafted.
+- Stone and Cobblestone drop Cobblestone for zombie players too.
+- Deepslate and Cobblestone Deepslate drop Cobbled Deepslate for zombie players too.
+- Wooden and Stone tools can now be crafted.
 - Reinforced Bricks (blue bricks) now require at least an Iron Pickaxe to mine quickly. A wooden pickaxe will only mine them slightly faster than by hand.
-- Mining Gold Blocks with any pickaxe now takes same amount of time as mining the block by hand.
 
 Add-on data pack by
 ropeFullOfHope

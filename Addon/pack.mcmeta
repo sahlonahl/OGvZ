@@ -2,13 +2,5 @@
   "pack": {
     "pack_format": 12,
     "description": "Throwing spaghetti at a wall and seeing what sticks."
-  },
-  "filter": {
-    "block": [
-      {
-        "namespace": "minecraft",
-        "path": "tags/blocks/mineable/pickaxe.json"
-      }
-    ]
   }
 }
