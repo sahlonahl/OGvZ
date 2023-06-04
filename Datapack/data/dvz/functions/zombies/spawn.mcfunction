@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.04.07
+# Last Modified On: 2023.06.04
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -20,7 +20,7 @@ execute if entity @e[tag=dvztimer,tag=playerwitherselected] run loot give @s loo
 execute if entity @e[tag=dvztimer,tag=guardianselected] run loot give @s loot dvz:variants/guardianzombies
 execute if entity @e[tag=dvztimer,tag=assassinselected] run loot give @s loot dvz:variants/assassinzombies
 
-execute if entity @e[tag=dvztimer,tag=!miniboss,scores={DVZ.battletimer=12000..}] run loot give @s loot dvz:minibosses
+execute if entity @e[tag=dvztimer,tag=!miniboss,scores={DVZ.battletimer=18000..}] run loot give @s loot dvz:minibosses
 execute if predicate dvz:rain if entity @e[tag=dvztimer,tag=!guardianselected] run loot give @s loot dvz:variants/rain
 
 tp @s ~ ~ ~ facing entity @e[type=marker,tag=dSpawn,limit=1]

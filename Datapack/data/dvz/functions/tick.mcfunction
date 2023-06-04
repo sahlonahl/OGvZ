@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.05.14
-# Last Modified By: Sahlonahl
+# Last Modified On: 2023.06.04
+# Last Modified By: Zaffre
 #
 # Credit to:
 #
@@ -136,9 +136,9 @@ execute if entity @e[scores={DVZ.timer=35960}] as @a at @s run playsound minecra
 execute if entity @e[scores={DVZ.timer=35980}] as @a at @s run playsound minecraft:entity.armor_stand.break master @s ~ ~ ~ 1 2
 
 #Miniboss spawn capability notification
-execute as @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=..12000}] run scoreboard players add @s[scores={DVZ.battletimer=..12001}] DVZ.battletimer 1
-execute if entity @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=12000}] as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.7 2
-execute if entity @a[tag=dvztimer,tag=fight,scores={DVZ.battletimer=12000..}] run tellraw @a ["",{"text":"Beware:","bold":true,"color":"gold"},{"text":" Minibosses can appear!","bold":true,"color":"red"}] 
+execute as @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=..18000}] run scoreboard players add @s[scores={DVZ.battletimer=..12001}] DVZ.battletimer 1
+execute if entity @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=18000}] as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.7 2
+execute if entity @a[tag=dvztimer,tag=fight,scores={DVZ.battletimer=18000..}] run title @a actionbar ["",{"text":"Beware:","bold":true,"color":"gold"},{"text":" Minibosses can appear!","bold":true,"color":"red"}] 
 
 
 

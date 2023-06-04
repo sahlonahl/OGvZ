@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.08
+# Last Modified On: 2023.06.03
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -24,8 +24,7 @@ give @s[tag=zlguardian,tag=!selectedclass] cooked_beef 64
 give @s[tag=zlguardian,tag=!selectedclass] carrot_on_a_stick{CustomModelData:51,Unbreakable:1b,display:{Name:'{"text":"Beam","italic":"false","color":"red"}'}}
 give @s[tag=zlguardian,tag=!selectedclass] vine 24
 
-item replace entity @s[tag=zlguardian,tag=!selectedclass] weapon.offhand with shield{Unbreakable: 1b}
-#item replace entity @s[tag=zlguardian,tag=!selectedclass] armor.head with jack_o_lantern{display:{Name:'{"text":"Guardian Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1}]}
+
 item replace entity @s[tag=zlguardian,tag=!selectedclass] armor.head with firework_star{CustomModelData:9,display:{Name:'{"text":"Guardian Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1}]}
 item replace entity @s[tag=zlguardian,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 5287080}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]}
 item replace entity @s[tag=zlguardian,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 5287080}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]}
