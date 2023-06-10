@@ -209,51 +209,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:trident",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:1}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Spear"
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "minecraft:generic.attack_damage",
-                  "name": "",
-                  "amount": 7,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                },
-                {
-                  "attribute": "minecraft:generic.attack_speed",
-                  "name": "",
-                  "amount": -2.5,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                },
-                {
-                  "attribute": "minecraft:generic.armor",
-                  "name": "",
-                  "amount": -2.5,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:diamond_axe",
           "weight": 4,
           "functions": [

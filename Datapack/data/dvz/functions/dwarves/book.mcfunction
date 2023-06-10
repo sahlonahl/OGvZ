@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.02.20
+# Last Modified On: 2023.06.10
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -20,18 +20,18 @@ execute as @s[tag=enchanter] store result score @s DVZ.ench.emerald run clear @s
 execute as @s[tag=tailor] store result score @s DVZ.tailor.dyes run clear @s #dvz:dyes 0
 
 
-execute as @s[tag=builder,scores={DVZ.book.cool=1..}] run tellraw @s ["",{"text":" * [Summoning Book] You have ","color":"dark_aqua"},{"score":{"name":"@s","objective":"DVZ.book.cool"},"color":"dark_aqua"},{"text":" seconds remaining!","color":"dark_aqua"}]
+execute as @s[tag=builder,scores={DVZ.book.cool=1..}] run title @s actionbar ["",{"text":" * [Summoning Book] You have ","color":"dark_aqua"},{"score":{"name":"@s","objective":"DVZ.book.cool"},"color":"dark_aqua"},{"text":" seconds remaining!","color":"dark_aqua"}]
 
-execute if entity @s[tag=enchanter,scores={DVZ.ench.emerald=0}] run tellraw @s {"text":" * [Summoning Book] You need at least 1 emerald!","color":"dark_aqua"}
+execute if entity @s[tag=enchanter,scores={DVZ.ench.emerald=0}] run title @s actionbar {"text":" * [Summoning Book] You need at least 1 emerald!","color":"dark_aqua"}
 
-execute if entity @s[tag=alchemist,level=..29] run tellraw @s {"text":" * [Summoning Book] You need at least 30 Mana!","color":"dark_aqua"}
-execute if entity @s[tag=alchemist,scores={DVZ.alch.potions=..2}] run tellraw @s {"text":" * [Summoning Book] You need at least 3 potions!","color":"dark_aqua"}
-execute if entity @s[tag=baker,level=..29] run tellraw @s {"text":" * [Summoning Book] You need at least 30 Mana!","color":"dark_aqua"}
-execute if entity @s[tag=baker,scores={DVZ.baker.bricks=..9}] run tellraw @s {"text":" * [Summoning Book] You need at least 10 bricks!","color":"dark_aqua"}
-execute if entity @s[tag=blacksmith,level=..29] run tellraw @s {"text":" * [Summoning Book] You need at least 30 Mana!","color":"dark_aqua"}
-execute if entity @s[tag=blacksmith,scores={DVZ.smith.clocks=..4}] run tellraw @s {"text":" * [Summoning Book] You need at least 5 clocks!","color":"dark_aqua"}
-execute if entity @s[tag=tailor,level=..29] run tellraw @s {"text":" * [Summoning Book] You need at least 30 Mana!","color":"dark_aqua"}
-execute if entity @s[tag=tailor,scores={DVZ.tailor.dyes=..15}] run tellraw @s {"text":" * [Summoning Book] You need at least 10 dyes!","color":"dark_aqua"}
+execute if entity @s[tag=alchemist,level=..29] run title @s actionbar {"text":" * [Summoning Book] You need at least 30 Mana!","color":"dark_aqua"}
+execute if entity @s[tag=alchemist,scores={DVZ.alch.potions=..2}] run title @s actionbar {"text":" * [Summoning Book] You need at least 3 potions!","color":"dark_aqua"}
+execute if entity @s[tag=baker,level=..29] run title @s actionbar {"text":" * [Summoning Book] You need at least 30 Mana!","color":"dark_aqua"}
+execute if entity @s[tag=baker,scores={DVZ.baker.bricks=..9}] run title @s actionbar {"text":" * [Summoning Book] You need at least 10 bricks!","color":"dark_aqua"}
+execute if entity @s[tag=blacksmith,level=..29] run title @s actionbar {"text":" * [Summoning Book] You need at least 30 Mana!","color":"dark_aqua"}
+execute if entity @s[tag=blacksmith,scores={DVZ.smith.clocks=..4}] run title @s actionbar {"text":" * [Summoning Book] You need at least 5 clocks!","color":"dark_aqua"}
+execute if entity @s[tag=tailor,level=..29] run title @s actionbar {"text":" * [Summoning Book] You need at least 30 Mana!","color":"dark_aqua"}
+execute if entity @s[tag=tailor,scores={DVZ.tailor.dyes=..15}] run title @s actionbar {"text":" * [Summoning Book] You need at least 10 dyes!","color":"dark_aqua"}
 
 # standard builder loot
 execute as @s if entity @s[tag=builder,tag=!fight,scores={DVZ.book.cool=0}] run function dvz:dwarves/book/builder

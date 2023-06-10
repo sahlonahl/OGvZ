@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.01.17
+# Last Modified On: 2023.06.10
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -13,11 +13,11 @@
 # Comments:
 # -------------------------------------------
 
-execute as @s[tag=guardian,scores={DVZ.Gbeam.cool=1..}] run tellraw @s ["",{"text":" * [Beam] You have ","color":"gold"},{"score":{"name":"@s","objective":"DVZ.Gbeam.cool"},"color":"gold"},{"text":" seconds remaining!","color":"gold"}]
-execute if entity @s[tag=guardian,level=..9] run tellraw @s {"text":" * [Beam] You need at least 10 Mana!","color":"gold"}
+execute as @s[tag=guardian,scores={DVZ.Gbeam.cool=1..}] run title @s actionbar ["",{"text":" * [Beam] You have ","color":"gold"},{"score":{"name":"@s","objective":"DVZ.Gbeam.cool"},"color":"gold"},{"text":" seconds remaining!","color":"gold"}]
+execute if entity @s[tag=guardian,level=..9] run title @s actionbar {"text":" * [Beam] You need at least 10 Mana!","color":"gold"}
 tag @s[tag=guardian,scores={DVZ.Gbeam.cool=0},level=10..] add BEAMuse
 
-execute if entity @s[tag=BEAMuse] run tellraw @s {"text":" * [Beam] Poof!","color":"yellow"}
+execute if entity @s[tag=BEAMuse] run title @s actionbar {"text":" * [Beam] Poof!","color":"yellow"}
 execute if entity @s[tag=BEAMuse] at @s run playsound block.beacon.deactivate master @a ~ ~ ~ 1 2
 
 execute as @s if entity @s[tag=BEAMuse] run summon marker ~ ~ ~ {Tags:[ray]}

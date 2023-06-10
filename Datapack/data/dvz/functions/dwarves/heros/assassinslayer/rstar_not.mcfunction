@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.01.29
+# Last Modified On: 2023.06.10
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -13,7 +13,7 @@
 # Comments: Gives dwarves health and mana near where the Assassin Slayer aims
 # -------------------------------------------
 
-execute as @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run tellraw @s {"text":" * [Regrowth Star] Poof!","color":"yellow"}
+execute as @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run title @s actionbar {"text":" * [Regrowth Star] Poof!","color":"yellow"}
 execute as @s at @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run playsound entity.evoker.prepare_summon master @s ~ ~ ~ 1
 
 execute as @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run summon marker ~ ~ ~ {Tags:[ray]}

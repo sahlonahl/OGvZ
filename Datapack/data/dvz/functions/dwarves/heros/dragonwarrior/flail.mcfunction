@@ -5,20 +5,20 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.01.12
-# Last Modified By: Sahlonahl
+# Last Modified On: 2023.06.10
+# Last Modified By: Zaffre
 #
 # Credit to:
 #
 # Comments: Summons blocks in front of player
 # -------------------------------------------
 
-execute as @s[tag=dragon,scores={DVZ.flail.cool=1..}] run tellraw @s ["",{"text":" * [Dragon's Flail] You have ","color":"gold"},{"score":{"name":"@s","objective":"DVZ.flail.cool"},"color":"gold"},{"text":" seconds remaining!","color":"gold"}]
-execute if entity @s[tag=dragon,level=..9] run tellraw @s {"text":" * [Dragon's Flail] You need at least 10 Mana!","color":"gold"}
+execute as @s[tag=dragon,scores={DVZ.flail.cool=1..}] run title @s actionbar ["",{"text":" * [Dragon's Flail] You have ","color":"gold"},{"score":{"name":"@s","objective":"DVZ.flail.cool"},"color":"gold"},{"text":" seconds remaining!","color":"gold"}]
+execute if entity @s[tag=dragon,level=..9] run title @s actionbar {"text":" * [Dragon's Flail] You need at least 10 Mana!","color":"gold"}
 tag @s[tag=dragon,scores={DVZ.flail.cool=0},level=10..] add FLAILuse
 
 execute if entity @s[tag=FLAILuse] at @s run fill ^-2 ^2 ^2 ^2 ^-1 ^2 minecraft:stone_bricks replace #dvz:gothrough
-execute if entity @s[tag=FLAILuse] run tellraw @s {"text":" * [Dragon's Flail] Poof!","color":"yellow"}
+execute if entity @s[tag=FLAILuse] run title @s actionbar {"text":" * [Dragon's Flail] Poof!","color":"yellow"}
 execute if entity @s[tag=FLAILuse] run execute as @s run particle minecraft:explosion ^ ^1 ^2 1.5 1 1.5 0.01 5
 execute if entity @s[tag=FLAILuse] run execute as @s run playsound minecraft:block.nether_bricks.break master @a ~ ~ ~ 1 0.7
 execute if entity @s[tag=FLAILuse] run execute as @s run playsound minecraft:block.nether_bricks.break master @a ~ ~ ~ 1 0.7

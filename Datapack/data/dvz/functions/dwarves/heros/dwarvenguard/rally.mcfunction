@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.01.29
+# Last Modified On: 2023.06.10
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -13,11 +13,11 @@
 # Comments: Stacks mana additions based on proximity to Dwarven Guard
 # -------------------------------------------
 
-execute as @s[tag=guardian,scores={DVZ.rally.cool=1..}] run tellraw @s ["",{"text":" * [Rally] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.rally.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
-execute if entity @s[tag=guardian,level=..29] run tellraw @s {"text":" * [Rally] You need at least 30 Mana!","color":"dark_red"}
+execute as @s[tag=guardian,scores={DVZ.rally.cool=1..}] run title @s actionbar ["",{"text":" * [Rally] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.rally.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
+execute if entity @s[tag=guardian,level=..29] run title @s actionbar {"text":" * [Rally] You need at least 30 Mana!","color":"dark_red"}
 tag @s[tag=guardian,scores={DVZ.rally.cool=0},level=30..] add RALLYuse
 
-execute as @s[tag=RALLYuse] run tellraw @s {"text":" * [Rally] Poof!","color":"red"}
+execute as @s[tag=RALLYuse] run title @s actionbar {"text":" * [Rally] Poof!","color":"red"}
 
 execute as @s if entity @s[tag=RALLYuse] run tag @a add overcharge
 execute as @s if entity @s[tag=RALLYuse] run execute at @a[tag=dwarves] run xp add @a[tag=dwarves,distance=..5] 10 levels

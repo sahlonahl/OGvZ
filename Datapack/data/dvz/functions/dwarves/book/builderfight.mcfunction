@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2023.04.01
-# Last Modified On: 2023.04.01
+# Last Modified On: 2023.06.10
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -13,7 +13,7 @@
 # Comments: 
 # -------------------------------------------
 
-execute as @s run tellraw @s {"text":" * [Summoning Book] Poof!","color":"aqua"}
+execute as @s run title @s actionbar {"text":" * [Summoning Book] Poof!","color":"aqua"}
 execute as @s run xp add @s 15 levels
 execute as @s if entity @e[type=marker,tag=dvztimer] run loot give @s loot dvz:book_summon/builderfight
 execute as @s run scoreboard players set @s DVZ.book.cool 30 

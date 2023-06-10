@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.03
+# Last Modified On: 2023.06.10
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -16,7 +16,7 @@
 #Setup
 #schedule function dvz:unload 5s
 scoreboard objectives add DVZ.start trigger
-difficulty hard
+difficulty normal
 gamemode survival @a
 tag @a remove DVZready
 clear @a
