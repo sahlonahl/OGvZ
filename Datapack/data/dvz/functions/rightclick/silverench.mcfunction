@@ -43,7 +43,7 @@ give @s[tag=enchanter,tag=!selectedclass] grindstone 1
 give @s[tag=enchanter,tag=!selectedclass] enchanting_table 1
 give @s[tag=enchanter,tag=!selectedclass] emerald 4
 give @s[tag=enchanter,tag=!selectedclass] anvil 2
-give @s[tag=enchanter,tag=!selectedclass] chest 2
+give @s[tag=enchanter,tag=!selectedclass] chest 14
 give @s[tag=enchanter,tag=!selectedclass] oak_sign 3
 give @s[tag=enchanter,tag=!selectedclass] carrot_on_a_stick{CustomModelData:3,Unbreakable:1b,display:{Name:'{"text":"Summoning Book","color":"aqua"}',Lore:['[{"text":"Turns emeralds into lapis and blaze powder."}]']}}
 execute if predicate dvz:50chance run give @s[tag=enchanter,tag=!selectedclass] carrot_on_a_stick{CustomModelData:1000,Unbreakable:1b,display:{Name:'{"text":"Legendary Book","color":"gold"}',Lore:['[{"text":"Used with 5 Legendary Shards to make Legendary Items.","color":"blue"}]','[{"text":"Single-use item!","color":"red"}]']}}

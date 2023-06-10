@@ -12,13 +12,9 @@
       "rolls": 1.0,
       "conditions": [
         {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "nbt": "{Tags:[\"dwarves\"]}"
-          }
+          "condition": "minecraft:survives_explosion"
         }
-      ]
+      ],
     }
   ]
 }
