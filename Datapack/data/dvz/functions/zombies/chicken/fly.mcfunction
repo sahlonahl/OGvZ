@@ -13,9 +13,9 @@
 # Comments: controlled entirely by dvz:tick
 # -------------------------------------------
 
-execute as @s[tag=chicken,scores={DVZ.fly.cool=1..}] run tellraw @s ["",{"text":" * [Fly] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.fly.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
+execute as @s[tag=chicken,scores={DVZ.fly.cool=1..}] run title @s actionbar ["",{"text":" * [Fly] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.fly.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 
-execute as @s if entity @s[tag=chicken,scores={DVZ.fly.cool=0}] run tellraw @s {"text":" * [Fly] Poof!","color":"red"}
+execute as @s if entity @s[tag=chicken,scores={DVZ.fly.cool=0}] run title @s actionbar {"text":" * [Fly] Poof!","color":"red"}
 execute as @s if entity @s[tag=chicken,scores={DVZ.fly.cool=0}] run playsound entity.bat.takeoff master @a ~ ~ ~ 1 1.2
 execute as @s if entity @s[tag=chicken,scores={DVZ.fly.cool=0}] run effect give @s levitation 1
 execute as @s if entity @s[tag=chicken,scores={DVZ.fly.cool=0}] run effect give @s slow_falling 1

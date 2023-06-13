@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.08
+# Last Modified On: 2023.06.13
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -13,9 +13,9 @@
 # Comments:
 # -------------------------------------------
 
-execute as @s[tag=chillager,scores={DVZ.icy.cool=1..}] run tellraw @s ["",{"text":" * [Ice] You have ","color":"dark_aqua"},{"score":{"name":"@s","objective":"DVZ.icy.cool"},"color":"dark_aqua"},{"text":" seconds remaining!","color":"dark_aqua"}]
+execute as @s[tag=chillager,scores={DVZ.icy.cool=1..}] run title @s actionbar ["",{"text":" * [Ice] You have ","color":"dark_aqua"},{"score":{"name":"@s","objective":"DVZ.icy.cool"},"color":"dark_aqua"},{"text":" seconds remaining!","color":"dark_aqua"}]
 
-execute as @s if entity @s[tag=chillager,scores={DVZ.icy.cool=0}] run tellraw @s {"text":" * [Ice] Poof!","color":"red"}
+execute as @s if entity @s[tag=chillager,scores={DVZ.icy.cool=0}] run title @s actionbar {"text":" * [Ice] Poof!","color":"red"}
 execute as @s at @s if entity @s[tag=chillager,scores={DVZ.icy.cool=0}] run playsound block.respawn_anchor.set_spawn master @a ~ ~ ~ 1
 
 execute as @s if entity @s[tag=chillager,scores={DVZ.icy.cool=0}] run summon marker ~ ~ ~ {Tags:[ray]}

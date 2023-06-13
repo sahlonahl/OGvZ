@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.03
+# Last Modified On: 2023.06.13
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -13,8 +13,8 @@
 # Comments:
 # -------------------------------------------
 
-execute as @s[tag=blaze,scores={DVZ.fball.cool=1..}] run tellraw @s ["",{"text":" * [Fireball] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.fball.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
-execute as @s if entity @s[tag=blaze,scores={DVZ.fball.cool=0}] run tellraw @s {"text":" * [Fireball] Poof!","color":"red"}
+execute as @s[tag=blaze,scores={DVZ.fball.cool=1..}] run title @s actionbar ["",{"text":" * [Fireball] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.fball.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
+execute as @s if entity @s[tag=blaze,scores={DVZ.fball.cool=0}] run title @s actionbar {"text":" * [Fireball] Poof!","color":"red"}
 execute as @s at @s if entity @s[tag=blaze,scores={DVZ.fball.cool=0}] run playsound entity.blaze.shoot master @a ~ ~ ~ 1
 execute if entity @s[tag=blaze,scores={DVZ.fball.cool=0}] run function dvz:zombies/blaze/fireballsummon
 execute if entity @s[tag=blaze,scores={DVZ.fball.cool=0}] run function dvz:zombies/blaze/fireball2

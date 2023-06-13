@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.04.07
+# Last Modified On: 2023.06.13
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -14,13 +14,13 @@
 # -------------------------------------------
 
 #Portal Errors
-execute as @s if entity @a[tag=enderman,tag=ePortal] run tellraw @s {"text":" * [Portal] There's another ender portal open!","color":"dark_red"}
+execute as @s if entity @a[tag=enderman,tag=ePortal] run title @s actionbar {"text":" * [Portal] There's another ender portal open!","color":"dark_red"}
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=..4}] if entity @a[tag=enderman,tag=ePortal] run scoreboard players set @s DVZ.portal.cool 5
-execute as @s[tag=enderman,scores={DVZ.portal.cool=1..}] run tellraw @s ["",{"text":" * [Portal] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.portal.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
+execute as @s[tag=enderman,scores={DVZ.portal.cool=1..}] run title @s actionbar ["",{"text":" * [Portal] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.portal.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 
 #Success
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0}] unless entity @a[tag=enderman,tag=ePortal] run tag @s add ePortal
-execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run tellraw @s {"text":" * [Portal] Poof!","color":"red"}
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run title @s actionbar {"text":" * [Portal] Poof!","color":"red"}
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run time set midnight
 
 #Initial Setup
@@ -31,7 +31,7 @@ execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] 
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s resistance 1000000 100 true
 
 #Portal Message
-execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run tellraw @a ["",{"text":" * [Portal] ","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":" has created an Ender portal!!!","color":"light_purple"}]
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run title @a actionbar ["",{"text":" * [Portal] ","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":" has created an Ender portal!!!","color":"light_purple"}]
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run summon lightning_bolt ~ ~256 ~
 
 ##Portal Structure

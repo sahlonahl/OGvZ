@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.04
+# Last Modified On: 2023.06.13
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -248,6 +248,14 @@ effect give @a[tag=dwarves,nbt={Inventory:[{Slot:-106b,tag:{Scutum:1b}}]}] minin
 
 #JBG Prevention for dwarves
 execute as @a[tag=dwarves,predicate=dvz:jbg] at @s if block ~ ~-5 ~ minecraft:air run effect give @s minecraft:levitation 1 128
+
+
+
+#Golem JBG sound alert
+execute as @a[tag=golem,nbt={HurtTime:1s}] at @s if block ~ ~-5 ~ minecraft:air run playsound minecraft:entity.iron_golem.attack master @a ~ ~ ~ 40 0.7
+
+
+
 
 #JBG Prevention for mobs
 #execute as @a[tag=golem,predicate=dvz:jbg] at @s if block ~ ~-5 ~ minecraft:air run effect give @s minecraft:levitation 1 128

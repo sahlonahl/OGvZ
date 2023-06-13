@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.12
+# Last Modified On: 2023.06.13
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -13,9 +13,9 @@
 # Comments:
 # -------------------------------------------
 
-execute as @s[tag=ocelot,scores={DVZ.steal.cool=1..}] run tellraw @s ["",{"text":" * [Steal] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.steal.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
+execute as @s[tag=ocelot,scores={DVZ.steal.cool=1..}] run title @s actionbar ["",{"text":" * [Steal] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.steal.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 
-execute as @s if entity @s[tag=ocelot,scores={DVZ.steal.cool=0}] run tellraw @s {"text":" * [Steal] Poof!","color":"red"}
+execute as @s if entity @s[tag=ocelot,scores={DVZ.steal.cool=0}] run title @s actionbar {"text":" * [Steal] Poof!","color":"red"}
 execute as @s if entity @s[tag=ocelot,scores={DVZ.steal.cool=0}] run playsound entity.cat.stray_ambient master @a ~ ~ ~ 1 0.7
 
 execute as @s if entity @s[tag=ocelot,scores={DVZ.steal.cool=0}] run summon marker ~ ~ ~ {Tags:[ray]}
