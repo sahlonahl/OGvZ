@@ -5,7 +5,7 @@
 # Created By: Zaffre
 # 
 # Created On: 2023.02.1
-# Last Modified On: 2023.02.1
+# Last Modified On: 2023.06.14
 # Last Modified By: Zaffre
 #
 # Credit to: MEEEEEEE -Zaff
@@ -16,7 +16,7 @@
 kill @e[tag=dSpawn]
 
 execute as @s align xyz run tp ~.5 ~ ~.5
-execute at @s run place template dvz:shrine_tower ~-8 ~ ~-8
+execute at @s run place template dvz:shrine_tower ~-5 ~ ~-4
 
-execute at @s run summon marker ~-0.5 ~24 ~0.5 {Tags:[dSpawn]}
+execute at @s run summon marker ~-0.5 ~22 ~0.5 {Tags:[dSpawn]}
 tag @s remove messaged 

@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.13
+# Last Modified On: 2023.06.14
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -425,9 +425,7 @@ execute store result score Mobs DVZ.playercount if entity @a[tag=zombies]
 execute as @e[tag=!gameover,tag=dvztimer,tag=fight] store result score @s DVZ.playertest run scoreboard players get Dwarves DVZ.playercount
 execute as @e[tag=!gameover,tag=dvztimer,tag=fight,scores={DVZ.playertest=0}] at @e[tag=dSpawn] run function dvz:gameoverkill
 #Game over with typical shrine
-execute as @e[tag=!gameover,tag=dvztimer,tag=fight] unless entity @e[tag=temple] at @e[tag=dSpawn] unless block ~ ~-1 ~ minecraft:gold_block unless block ~-1 ~-1 ~ minecraft:gold_block unless block ~ ~-1 ~-1 minecraft:gold_block unless block ~-1 ~-1 ~-1 minecraft:gold_block unless block ~1 ~-2 ~ minecraft:gold_block unless block ~1 ~-2 ~-1 minecraft:gold_block unless block ~ ~-2 ~-2 minecraft:gold_block unless block ~-1 ~-2 ~-2 minecraft:gold_block unless block ~-2 ~-2 ~-1 minecraft:gold_block unless block ~-2 ~-2 ~ minecraft:gold_block unless block ~-1 ~-2 ~1 minecraft:gold_block unless block ~ ~-2 ~1 minecraft:gold_block run function dvz:gameovershrine
-#Shrine gameover with temple shrine
-execute as @e[tag=!gameover,tag=dvztimer,tag=fight] if entity @e[tag=temple] at @e[tag=dSpawn] unless block ~ ~-5 ~ minecraft:gold_block unless block ~-1 ~-5 ~ minecraft:gold_block unless block ~ ~-5 ~-1 minecraft:gold_block unless block ~-1 ~-5 ~-1 minecraft:gold_block unless block ~1 ~-6 ~ minecraft:gold_block unless block ~1 ~-6 ~-1 minecraft:gold_block unless block ~ ~-6 ~-2 minecraft:gold_block unless block ~-1 ~-6 ~-2 minecraft:gold_block unless block ~-2 ~-6 ~-1 minecraft:gold_block unless block ~-2 ~-6 ~ minecraft:gold_block unless block ~-1 ~-6 ~1 minecraft:gold_block unless block ~ ~-6 ~1 minecraft:gold_block run function dvz:gameovershrine
+execute as @e[tag=!gameover,tag=dvztimer,tag=fight] at @e[tag=dSpawn] unless block ~ ~-1 ~ minecraft:gold_block unless block ~-1 ~-1 ~ minecraft:gold_block unless block ~ ~-1 ~-1 minecraft:gold_block unless block ~-1 ~-1 ~-1 minecraft:gold_block unless block ~1 ~-2 ~ minecraft:gold_block unless block ~1 ~-2 ~-1 minecraft:gold_block unless block ~ ~-2 ~-2 minecraft:gold_block unless block ~-1 ~-2 ~-2 minecraft:gold_block unless block ~-2 ~-2 ~-1 minecraft:gold_block unless block ~-2 ~-2 ~ minecraft:gold_block unless block ~-1 ~-2 ~1 minecraft:gold_block unless block ~ ~-2 ~1 minecraft:gold_block run function dvz:gameovershrine
 
 #Last dwarf stuff
 execute if entity @e[tag=!gameover,tag=dvztimer,tag=fight,scores={DVZ.playertest=1}] as @a[tag=dwarves,limit=1,tag=!lastdwarf,tag=!dragon,tag=!guardian,tag=!wither] run function dvz:dwarves/lastdwarf

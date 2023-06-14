@@ -38,7 +38,7 @@
         {
           "type": "item",
           "name": "minecraft:carrot_on_a_stick",
-          "weight": 1,
+          "weight": 3,
           "functions": [
             {
               "function": "set_count",
