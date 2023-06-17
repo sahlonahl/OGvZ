@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.14
+# Last Modified On: 2023.06.17
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -294,6 +294,9 @@ execute as @a[tag=spider,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag
 execute as @e[tag=customsnowball] at @s if entity @a[tag=dwarves,distance=..1.5] run effect give @p[tag=dwarves,distance=..1.5] instant_damage 1 1 true
 execute as @e[tag=customsnowball] at @s if entity @a[tag=dwarves,distance=..1.5] run kill @s
 
+#Snow Golem ice permanance
+execute as @a[tag=snowman] at @s run fill ~4 ~-1 ~4 ~-4 ~-1 ~-4 ice replace frosted_ice
+
 #Phantom Delirium
 execute as @e[tag=deliriumeffect] at @s if entity @a[tag=dwarves,distance=..1.5] run effect give @p[tag=dwarves,distance=..2.5] nausea 10 1 true
 execute as @e[tag=deliriumeffect] at @s if entity @a[tag=dwarves,distance=..1.5] run effect give @p[tag=dwarves,distance=..2.5] slowness 10 1 true
@@ -328,7 +331,7 @@ execute as @e[type=marker,tag=eggsplode] at @s unless entity @e[type=egg,tag=egg
 #Chicken egg regeneration
 execute as @a[tag=chicken,scores={DVZ.attack.hit=1..}] at @s if entity @a[tag=dwarves,distance=..5,nbt={HurtTime:10s},limit=1] run playsound entity.chicken.step hostile @a ~ ~ ~ 1
 #execute as @a[tag=chicken,scores={DVZ.attack.hit=1..}] if entity @a[tag=dwarves,distance=..5,nbt={HurtTime:10s},limit=1] run give @s egg{team:"zMONSTER"} 2
-execute as @a[tag=chicken,scores={DVZ.attack.hit=1..}] if entity @a[tag=dwarves,nbt={HurtTime:10s},limit=1] run give @s egg{team:"zMONSTER"} 1
+execute as @a[tag=chicken,scores={DVZ.attack.hit=1..}] if entity @a[tag=dwarves,nbt={HurtTime:10s},limit=1] run give @s egg{team:"zMONSTER"} 2
 
 #Creeper effect cloud killer
 #kill @e[type=minecraft:area_effect_cloud,nbt={Effects:[{Id:1},{Id:10},{Id:30}]}]
