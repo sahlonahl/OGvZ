@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.17
+# Last Modified On: 2023.06.24
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -50,7 +50,7 @@ execute at @e[type=marker,tag=zProtect] run tag @a[tag=dwarves,distance=45..] re
 execute at @e[type=marker,tag=dSpawn] run tag @a[tag=dwarves,distance=..100] remove dfarnotice
 execute at @e[type=marker,tag=zProtect] run tag @a[tag=zombies,distance=..300] remove zfarnotice
 
-execute at @a[tag=dwarves,scores={DVZ.health=..9}] run particle minecraft:dust 0.961 0 0 1 ~ ~ ~ 0.3 1 0.3 0.02 1
+#execute at @a[tag=dwarves,scores={DVZ.health=..9}] run particle minecraft:dust 0.961 0 0 1 ~ ~ ~ 0.3 1 0.3 0.02 1
 execute at @a[tag=dwarves,predicate=dvz:lowxp] run particle minecraft:rain ~ ~1 ~ 0.2 0.5 0.2 0.02 1
 
 ###Unique Weapon Kills
