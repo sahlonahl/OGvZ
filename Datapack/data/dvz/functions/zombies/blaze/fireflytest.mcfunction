@@ -15,7 +15,7 @@
 
 execute as @s at @s if block ^ ^ ^2 #dvz:gothrough run tp @s ^ ^ ^0.8
 execute as @s at @s if block ^ ^ ^2 #dvz:gothrough run particle minecraft:flame ~ ~1 ~ 0 0 0 0.01 4
-execute as @s at @s if block ^ ^ ^2 #dvz:gothrough run damage @a[tag=dwarves,distance=..2] 6 on_fire by @s from @s
+execute as @s at @s if block ^ ^ ^2 #dvz:gothrough run damage @a[tag=dwarves,distance=..2] 6 fire by @s from @s
 execute as @s at @s if block ^ ^ ^2 #dvz:gothrough run playsound minecraft:entity.generic.extinguish_fire player @a ~ ~ ~ 0.5 2
 execute as @s at @s unless block ^ ^ ^2 #dvz:gothrough run tag @s add fireflyremove
 execute as @s at @s run scoreboard players add @s DVZ.ffly.airtime 1
