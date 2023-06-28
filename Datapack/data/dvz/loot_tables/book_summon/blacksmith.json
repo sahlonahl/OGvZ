@@ -4,7 +4,7 @@
       "conditions": [
         {
           "condition": "random_chance",
-          "chance": 0.5
+          "chance": 0.75
         }
       ],
       "rolls": 1,
@@ -83,6 +83,25 @@
             {
               "function": "set_count",
               "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"piercing\",lvl:3s},{id:\"quick_charge\",lvl:3s}]}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:crossbow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"multishot\",lvl:1s},{id:\"quick_charge\",lvl:3s}]}"
             }
           ]
         }
