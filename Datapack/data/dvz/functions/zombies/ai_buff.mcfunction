@@ -23,7 +23,7 @@ data merge entity @s[type=wither_skeleton,tag=!AIbuffed] {HandItems:[{id:"minecr
 data merge entity @s[type=stray,tag=!AIbuffed] {HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:power",lvl:4s}]}},{}],HandDropChances:[0.000F,0.085F]}
 data merge entity @s[type=creeper,tag=!AIbuffed,tag=!explode] {Fuse:25}
 data merge entity @s[type=drowned,tag=!AIbuffed] {HandItems:[{id:"minecraft:trident",Count:1b,tag:{Enchantments:[{id:"minecraft:impaling",lvl:5s},{id:"minecraft:channeling",lvl:1s}]}},{}],HandDropChances:[0.000F,0.085F],ArmorItems:[{},{},{},{id:"minecraft:golden_helmet",Count:1b,tag:{Enchantments:[{id:"minecraft:protection",lvl:4s}]}}],ArmorDropChances:[0.000F,0.085F,0.085F,0.085F]}
-data merge entity @s[type=pillager,tag=!AIbuffed] {HandItems:[{id:"minecraft:crossbow",Count:1b,tag:{Enchantments:[{id:"minecraft:multishot",lvl:1s},{id:"minecraft:piercing",lvl:4s},{id:"minecraft:quick_charge",lvl:3s}]}},{}],HandDropChances:[0.000F,0.085F]}
+data merge entity @s[type=pillager,tag=!AIbuffed,tag=!legion] {HandItems:[{id:"minecraft:crossbow",Count:1b,tag:{Enchantments:[{id:"minecraft:multishot",lvl:1s},{id:"minecraft:piercing",lvl:4s},{id:"minecraft:quick_charge",lvl:3s}]}},{}],HandDropChances:[0.000F,0.085F]}
 data merge entity @s[type=shulker,tag=!AIbuffed] {AttachFace:0b,Color:10b}
 effect give @s[type=enderman,tag=!AIbuffed] strength 999999 0 true
 effect give @s[type=spider,tag=!AIbuffed] speed 999999 2 true
