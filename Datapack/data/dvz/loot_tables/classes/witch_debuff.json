@@ -1,0 +1,53 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Witch Potion\",\"color\":\"dark_purple\",\"bold\":false,\"italic\":false}'},witch_debuff:1,CustomPotionEffects:[{Id:18,Amplifier:2b,Duration:100}],Potion:\"minecraft:strong_harming\",CustomPotionColor:12101058}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Witch Potion\",\"color\":\"dark_purple\",\"bold\":false,\"italic\":false}'},witch_debuff:1,CustomPotionEffects:[{Id:4,Amplifier:1b,Duration:200}],Potion:\"minecraft:strong_harming\",CustomPotionColor:870923}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Witch Potion\",\"color\":\"dark_purple\",\"bold\":false,\"italic\":false}'},witch_debuff:1,CustomPotionEffects:[{Id:20,Amplifier:2b,Duration:100}],Potion:\"minecraft:strong_harming\",CustomPotionColor:4868682}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Witch Potion\",\"color\":\"dark_purple\",\"bold\":false,\"italic\":false}'},witch_debuff:1,CustomPotionEffects:[{Id:2,Amplifier:2b,Duration:100}],Potion:\"minecraft:strong_harming\",CustomPotionColor:3885475}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
