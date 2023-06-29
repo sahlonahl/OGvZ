@@ -159,7 +159,57 @@ execute as @a[scores={DVZ.evothrow.cool=1..}] run scoreboard players add @s DVZ.
 execute as @a[scores={DVZ.evothrow.ticks=20..}] run scoreboard players remove @s DVZ.evothrow.cool 1
 execute as @a[scores={DVZ.evothrow.ticks=20..}] run scoreboard players set @s DVZ.evothrow.ticks 0
 execute as @a[scores={DVZ.evothrow.cool=..0}] run scoreboard players reset @s DVZ.evothrow.ticks
-
+#Witch Buff
+execute as @a[scores={DVZ.witchbuff.cool=1..}] run scoreboard players add @s DVZ.witchbuff.ticks 1
+execute as @a[scores={DVZ.witchbuff.ticks=20..}] run scoreboard players remove @s DVZ.witchbuff.cool 1
+execute as @a[scores={DVZ.witchbuff.ticks=20..}] run scoreboard players set @s DVZ.witchbuff.ticks 0
+execute as @a[scores={DVZ.witchbuff.cool=..0}] run scoreboard players reset @s DVZ.witchbuff.ticks
+#Witch Debuff
+execute as @a[scores={DVZ.witchdebuff.cool=1..}] run scoreboard players add @s DVZ.witchdebuff.ticks 1
+execute as @a[scores={DVZ.witchdebuff.ticks=20..}] run scoreboard players remove @s DVZ.witchdebuff.cool 1
+execute as @a[scores={DVZ.witchdebuff.ticks=20..}] run scoreboard players set @s DVZ.witchdebuff.ticks 0
+execute as @a[scores={DVZ.witchdebuff.cool=..0}] run scoreboard players reset @s DVZ.witchdebuff.ticks
+#Witch Transmute
+execute as @a[scores={DVZ.witchfrog.cool=1..}] run scoreboard players add @s DVZ.witchfrog.ticks 1
+execute as @a[scores={DVZ.witchfrog.ticks=20..}] run scoreboard players remove @s DVZ.witchfrog.cool 1
+execute as @a[scores={DVZ.witchfrog.ticks=20..}] run scoreboard players set @s DVZ.witchfrog.ticks 0
+execute as @a[scores={DVZ.witchfrog.cool=..0}] run scoreboard players reset @s DVZ.witchfrog.ticks
+#Enchanter Book
+execute as @a[scores={DVZ.enchanterbook.cool=1..}] run scoreboard players add @s DVZ.enchanterbook.ticks 1
+execute as @a[scores={DVZ.enchanterbook.ticks=20..}] run scoreboard players remove @s DVZ.enchanterbook.cool 1
+execute as @a[scores={DVZ.enchanterbook.ticks=20..}] run scoreboard players set @s DVZ.enchanterbook.ticks 0
+execute as @a[scores={DVZ.enchanterbook.cool=..0}] run scoreboard players reset @s DVZ.enchanterbook.ticks
+#Magma Cube Throw
+execute as @a[scores={DVZ.magmathrow.cool=1..}] run scoreboard players add @s DVZ.magmathrow.ticks 1
+execute as @a[scores={DVZ.magmathrow.ticks=20..}] run scoreboard players remove @s DVZ.magmathrow.cool 1
+execute as @a[scores={DVZ.magmathrow.ticks=20..}] run scoreboard players set @s DVZ.magmathrow.ticks 0
+execute as @a[scores={DVZ.magmathrow.cool=..0}] run scoreboard players reset @s DVZ.magmathrow.ticks
+#Slime
+execute as @a[scores={DVZ.slimespit.cool=1..}] run scoreboard players add @s DVZ.slimespit.ticks 1
+execute as @a[scores={DVZ.slimespit.ticks=20..}] run scoreboard players remove @s DVZ.slimespit.cool 1
+execute as @a[scores={DVZ.slimespit.ticks=20..}] run scoreboard players set @s DVZ.slimespit.ticks 0
+execute as @a[scores={DVZ.slimespit.cool=..0}] run scoreboard players reset @s DVZ.slimespit.ticks
+execute as @a[scores={DVZ.slimebomb.cool=1..}] run scoreboard players add @s DVZ.slimebomb.ticks 1
+execute as @a[scores={DVZ.slimebomb.ticks=20..}] run scoreboard players remove @s DVZ.slimebomb.cool 1
+execute as @a[scores={DVZ.slimebomb.ticks=20..}] run scoreboard players set @s DVZ.slimebomb.ticks 0
+execute as @a[scores={DVZ.slimebomb.cool=..0}] run scoreboard players reset @s DVZ.slimebomb.ticks
+execute as @a[scores={DVZ.slimeexplode.cool=1..}] run scoreboard players add @s DVZ.slimeexplode.ticks 1
+execute as @a[scores={DVZ.slimeexplode.ticks=20..}] run scoreboard players remove @s DVZ.slimeexplode.cool 1
+execute as @a[scores={DVZ.slimeexplode.ticks=20..}] run scoreboard players set @s DVZ.slimeexplode.ticks 0
+execute as @a[scores={DVZ.slimeexplode.cool=..0}] run scoreboard players reset @s DVZ.slimeexplode.ticks
+#Evoker
+execute as @a[scores={DVZ.evokersummon.cool=1..}] run scoreboard players add @s DVZ.evokersummon.ticks 1
+execute as @a[scores={DVZ.evokersummon.ticks=20..}] run scoreboard players remove @s DVZ.evokersummon.cool 1
+execute as @a[scores={DVZ.evokersummon.ticks=20..}] run scoreboard players set @s DVZ.evokersummon.ticks 0
+execute as @a[scores={DVZ.evokersummon.cool=..0}] run scoreboard players reset @s DVZ.evokersummon.ticks
+execute as @a[scores={DVZ.evokerbomb.cool=1..}] run scoreboard players add @s DVZ.evokerbomb.ticks 1
+execute as @a[scores={DVZ.evokerbomb.ticks=20..}] run scoreboard players remove @s DVZ.evokerbomb.cool 1
+execute as @a[scores={DVZ.evokerbomb.ticks=20..}] run scoreboard players set @s DVZ.evokerbomb.ticks 0
+execute as @a[scores={DVZ.evokerbomb.cool=..0}] run scoreboard players reset @s DVZ.evokerbomb.ticks
+execute as @a[scores={DVZ.evokerward.cool=1..}] run scoreboard players add @s DVZ.evokerward.ticks 1
+execute as @a[scores={DVZ.evokerward.ticks=20..}] run scoreboard players remove @s DVZ.evokerward.cool 1
+execute as @a[scores={DVZ.evokerward.ticks=20..}] run scoreboard players set @s DVZ.evokerward.ticks 0
+execute as @a[scores={DVZ.evokerward.cool=..0}] run scoreboard players reset @s DVZ.evokerward.ticks
 #Dragon Breath
 execute as @a[scores={DVZ.breath.cool=1..}] run scoreboard players add @s DVZ.breath.ticks 1
 execute as @a[scores={DVZ.breath.ticks=20..}] run scoreboard players remove @s DVZ.breath.cool 1

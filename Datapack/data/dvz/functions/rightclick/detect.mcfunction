@@ -94,6 +94,35 @@ execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:78,Unbreakable:1b}}}] at @s run function dvz:rightclick/skeleton/zlguardian
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:79,Unbreakable:1b}}}] at @s run function dvz:zombies/evoker/summon
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:80,Unbreakable:1b}}}] at @s run function dvz:zombies/evoker/throw_spell
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:81,Unbreakable:1b}}}] at @s run function dvz:rightclick/piglin
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:82,Unbreakable:1b}}}] at @s run function dvz:rightclick/piglin_brute
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:83,Unbreakable:1b}}}] at @s run function dvz:rightclick/endermite
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:84,Unbreakable:1b}}}] at @s run function dvz:zombies/vex/etheral
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:85,Unbreakable:1b}}}] at @s run function dvz:zombies/vex/killer
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:86,Unbreakable:1b}}}] at @s run function dvz:rightclick/vex
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:87,Unbreakable:1b}}}] at @s run function dvz:zombies/vex/materialize
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:88,Unbreakable:1b}}}] at @s run function dvz:zombies/witch/brew_debuff
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:89,Unbreakable:1b}}}] at @s run function dvz:zombies/witch/brew_buff
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:90,Unbreakable:1b}}}] at @s run function dvz:zombies/witch/transmute
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:91,Unbreakable:1b}}}] at @s run function dvz:rightclick/witch
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:92,Unbreakable:1b}}}] at @s run function dvz:rightclick/zenchanter
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:93,Unbreakable:1b}}}] at @s run function dvz:zombies/enchanter/enchant_pulse
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:94,Unbreakable:1b}}}] at @s run function dvz:zombies/magma_cube/magma_throw
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:95,Unbreakable:1b}}}] at @s run function dvz:zombies/magma_cube/magma_explode
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:96,Unbreakable:1b}}}] at @s run function dvz:rightclick/magma_cube
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:97,Unbreakable:1b}}}] at @s run function dvz:zombies/allay/allay_fly
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:98,Unbreakable:1b}}}] at @s run function dvz:zombies/allay/allay_pick
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:99,Unbreakable:1b}}}] at @s run function dvz:rightclick/allay
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:100,Unbreakable:1b}}}] at @s run function dvz:zombies/allay/allay_drop
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:101,Unbreakable:1b}}}] at @s run function dvz:zombies/slime/slime_spit
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:102,Unbreakable:1b}}}] at @s run function dvz:zombies/slime/slime_bomb
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:103,Unbreakable:1b}}}] at @s run function dvz:zombies/slime/slime_explode
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:104,Unbreakable:1b}}}] at @s run function dvz:rightclick/slime
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:105,Unbreakable:1b}}}] at @s run function dvz:zombies/evoker/evoker_summon
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:106,Unbreakable:1b}}}] at @s run function dvz:zombies/evoker/evoker_bolt
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:107,Unbreakable:1b}}}] at @s run function dvz:zombies/evoker/evoker_ward
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:108,Unbreakable:1b}}}] at @s run function dvz:rightclick/evoker
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:109,Unbreakable:1b}}}] at @s run function dvz:zombies/slime/slime_detonate
 
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:1000,Unbreakable:1b}}}] at @s run function dvz:dwarves/yellowbook
 
