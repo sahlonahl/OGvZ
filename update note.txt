@@ -1,0 +1,30 @@
+Added 10 new mob classes!
+Endermite
+- Disguised as dwarves
+- Can Infiltrate the keep with chorus fruit
+Vex
+- Stealthy Assassin
+- Can phase through blocks
+Piglin
+- Builder with an assortment of material
+Piglin Brute
+- Heavy fighter class
+- Enraged when shot with arrow
+Allay
+- Flying mob
+- Can carry other monsters
+Enchanter
+- Pocket Support
+- Buff teammate at cost of its own health
+Witch
+- Brew potions for itself and team
+- Turn teammates into frogs
+Magma Cube
+- Create Magma Cubes to distract dwarves
+- Either from yourself or teammates
+Slime
+- Heavy and deadly ranged class
+- Can melt entire keep if left alone
+Evoker
+- Group fight focused debuffer
+- Channel legions of ai mobs
