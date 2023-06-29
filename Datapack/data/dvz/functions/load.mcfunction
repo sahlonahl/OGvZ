@@ -155,6 +155,35 @@ scoreboard objectives add DVZ.summon.ticks dummy
 scoreboard objectives add DVZ.summon.cool dummy
 scoreboard objectives add DVZ.evothrow.ticks dummy
 scoreboard objectives add DVZ.evothrow.cool dummy
+scoreboard objectives add DVZ.witchbuff.ticks dummy
+scoreboard objectives add DVZ.witchbuff.cool dummy
+scoreboard objectives add DVZ.witchdebuff.ticks dummy
+scoreboard objectives add DVZ.witchdebuff.cool dummy
+scoreboard objectives add DVZ.witchfrog.ticks dummy
+scoreboard objectives add DVZ.witchfrog.cool dummy
+scoreboard objectives add DVZ.enchanterbook.ticks dummy
+scoreboard objectives add DVZ.enchanterbook.cool dummy
+scoreboard objectives add DVZ.enchanterloop.ticks dummy
+scoreboard objectives add DVZ.magmathrow.ticks dummy
+scoreboard objectives add DVZ.magmathrow.cool dummy
+scoreboard objectives add pos dummy
+scoreboard objectives add bullet_age dummy
+scoreboard objectives add evoker_curse dummy
+scoreboard objectives add DVZ.allaypick.ticks dummy
+scoreboard objectives add DVZ.allaypick.cool dummy
+scoreboard objectives add DVZ.slimespit.ticks dummy
+scoreboard objectives add DVZ.slimespit.cool dummy
+scoreboard objectives add DVZ.slimebomb.ticks dummy
+scoreboard objectives add DVZ.slimebomb.cool dummy
+scoreboard objectives add DVZ.slimeexplode.ticks dummy
+scoreboard objectives add DVZ.slimeexplode.cool dummy
+scoreboard objectives add DVZ.evokersummon.ticks dummy
+scoreboard objectives add DVZ.evokersummon.cool dummy
+scoreboard objectives add DVZ.evokerbomb.ticks dummy
+scoreboard objectives add DVZ.evokerbomb.cool dummy
+scoreboard objectives add DVZ.evokerward.ticks dummy
+scoreboard objectives add DVZ.evokerward.cool dummy
+
 #Miniboss
 scoreboard objectives add DVZ.ghast.ticks dummy
 scoreboard objectives add DVZ.ghast.cool dummy

@@ -350,6 +350,25 @@ execute as @a[tag=dwarves,scores={DVZ.icy.check=1..}] at @s run function dvz:zom
 #execute as @e[type=marker,tag=evocation,scores={DVZ.timer=40..}] run function dvz:zombies/evoker/summon_notcrouch2
 #execute as @e[type=item,tag=evocation] run function dvz:zombies/evoker/evocation
 
+#Enchanter Loop
+execute as @a[team=zMONSTER] at @s run function dvz:zombies/enchanter/enchant_loop
+
+#Magma Cube Loop
+execute as @e[type=armor_stand,tag=magma_grenade] at @s run function dvz:zombies/magma_cube/magma_loop
+team join zMONSTER @e[type=minecraft:magma_cube]
+
+#Slime Loop
+execute as @e[type=armor_stand,tag=slime_spit] at @s run function dvz:zombies/slime/slime_spit_loop
+execute as @e[type=armor_stand,tag=slime_bomb] at @s run function dvz:zombies/slime/slime_bomb_loop
+
+#Evoker Loop
+execute as @e[type=armor_stand,tag=evoker_bolt] at @s run function dvz:zombies/evoker/evoker_bolt_loop
+execute as @a at @s run function dvz:zombies/evoker/evoker_loop
+execute as @a[tag=evoker,nbt={HurtTime:9s}] at @s run execute at @a[tag=dwarves,distance=..7.7] run summon evoker_fangs ~ ~ ~
+
+#Allay Loop
+execute as @a[tag=allay_carried] at @s run function dvz:zombies/allay/allay_loop
+
 #GhastFlight
 effect give @a[tag=ghastflight,nbt={Inventory:[{Slot:-106b,tag:{Levitate:1b}}]}] minecraft:levitation 1 1 true
 effect give @a[tag=ghastflight,nbt={Inventory:[{Slot:-106b,tag:{Descend:1b}}]}] minecraft:slow_falling 1 253 true
