@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.13
+# Last Modified On: 2023.06.30
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -20,5 +20,5 @@ execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run playsound ent
 
 execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run gamemode spectator
 execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run tag @s add fireflyactive
-execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run scoreboard players set @s DVZ.ffly.cool 15
+execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run scoreboard players set @s DVZ.ffly.cool 7
 execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run scoreboard players set @s DVZ.rclick 0

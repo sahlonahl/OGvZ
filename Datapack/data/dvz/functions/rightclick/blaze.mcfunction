@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.05.13
-# Last Modified By: Wilkekids
+# Last Modified On: 2023.06.30
+# Last Modified By: Zaffre
 #
 # Credit to:
 #
@@ -21,7 +21,7 @@ team join zMONSTER @s[tag=blaze,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 
 give @s[tag=blaze,tag=!selectedclass] cooked_beef 64
-give @s[tag=blaze,tag=!selectedclass] stick{display:{Name:'{"text":"Fire Aspect","color":"gold"}',Lore:['[{"text":"Burn, baby, burn!","color":"red"}]']},Enchantments:[{id:"fire_aspect",lvl:10},{id:"knockback",lvl:2}]} 1
+give @s[tag=blaze,tag=!selectedclass] stick{display:{Name:'{"text":"Fire Aspect","color":"gold"}',Lore:['[{"text":"Burn, baby, burn!","color":"red"}]']},Enchantments:[{id:"fire_aspect",lvl:10},{id:"knockback",lvl:2}],Blaze:1} 1
 give @s[tag=blaze,tag=!selectedclass] carrot_on_a_stick{CustomModelData:2,Unbreakable:1b,display:{Name:'{"text":"Firefly","color":"gold"}',Lore:['[{"text":"Briefly fly where you are looking."}]','[{"text":"15 second cooldown!","color":"red"}]']}} 1
 give @s[tag=blaze,tag=!selectedclass] carrot_on_a_stick{CustomModelData:22,Unbreakable:1b,display:{Name:'{"text":"Fireball","color":"gold"}',Lore:['[{"text":"Fires 9 fireballs."}]','[{"text":"5 second cooldown!","color":"red"}]']}} 1
 give @s[tag=blaze,tag=!selectedclass] fire_charge 64

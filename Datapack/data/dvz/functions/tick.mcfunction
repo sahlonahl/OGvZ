@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.24
+# Last Modified On: 2023.06.30
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -314,6 +314,7 @@ execute as @a[tag=fireflyremove] at @s run tag @s remove fireflyremove
 
 #Blaze fire buffs
 execute as @e[tag=blaze,predicate=dvz:onfire] run effect give @s strength 5 0
+execute as @e[tag=blaze,predicate=!dvz:onfire,nbt={SelectedItem:{id:"minecraft:stick",tag:{Blaze:1}}}] unless block ~ ~-1 ~ air run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:fire"},Time:1}
 
 #Chicken Fly test
 execute as @a[tag=flyactive] at @s run function dvz:zombies/chicken/flytest
