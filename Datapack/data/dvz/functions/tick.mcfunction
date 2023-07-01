@@ -343,32 +343,6 @@ execute as @a[tag=dwarves] at @s if entity @e[distance=..1.4,type=item,limit=1,s
 execute as @a[tag=dwarves,scores={DVZ.icy.check=1..}] at @s run kill @e[distance=..2,type=item,limit=1,sort=nearest,nbt={Item:{tag:{CustomModelData:53}}}]
 execute as @a[tag=dwarves,scores={DVZ.icy.check=1..}] at @s run function dvz:zombies/chillager/icebomb
 
-#Evoker's summoning spell
-#scoreboard players add @e[type=marker,tag=evocation,scores={DVZ.timer=..40}] DVZ.timer 1
-#execute as @e[type=marker,tag=evocation,scores={DVZ.timer=..40}] run playsound 
-
-#execute as @e[type=marker,tag=evocation,scores={DVZ.timer=40..}] run function dvz:zombies/evoker/summon_notcrouch2
-#execute as @e[type=item,tag=evocation] run function dvz:zombies/evoker/evocation
-
-#Enchanter Loop
-execute as @a[team=zMONSTER] at @s run function dvz:zombies/enchanter/enchant_loop
-
-#Magma Cube Loop
-execute as @e[type=armor_stand,tag=magma_grenade] at @s run function dvz:zombies/magma_cube/magma_loop
-team join zMONSTER @e[type=minecraft:magma_cube]
-
-#Slime Loop
-execute as @e[type=armor_stand,tag=slime_spit] at @s run function dvz:zombies/slime/slime_spit_loop
-execute as @e[type=armor_stand,tag=slime_bomb] at @s run function dvz:zombies/slime/slime_bomb_loop
-
-#Evoker Loop
-execute as @e[type=armor_stand,tag=evoker_bolt] at @s run function dvz:zombies/evoker/evoker_bolt_loop
-execute as @a at @s run function dvz:zombies/evoker/evoker_loop
-execute as @a[tag=evoker,nbt={HurtTime:9s}] at @s run execute at @a[tag=dwarves,distance=..7.7] run summon evoker_fangs ~ ~ ~
-
-#Allay Loop
-execute as @a[tag=allay_carried] at @s run function dvz:zombies/allay/allay_loop
-
 #GhastFlight
 effect give @a[tag=ghastflight,nbt={Inventory:[{Slot:-106b,tag:{Levitate:1b}}]}] minecraft:levitation 1 1 true
 effect give @a[tag=ghastflight,nbt={Inventory:[{Slot:-106b,tag:{Descend:1b}}]}] minecraft:slow_falling 1 253 true
@@ -467,4 +441,24 @@ scoreboard players set @a[scores={DVZ.kills=1..}] DVZ.kills 0
 scoreboard players set @a[scores={DVZ.killedby=1..}] DVZ.killedby 0
 scoreboard players set @a[scores={DVZ.bow=1..}] DVZ.bow 0
 scoreboard players set @a[scores={DVZ.attack.hit=1..}] DVZ.attack.hit 0
+
+#Enchanter Loop
+execute as @a[team=zMONSTER] at @s run function dvz:zombies/enchanter/enchant_loop
+
+#Magma Cube Loop
+execute as @e[type=armor_stand,tag=magma_grenade] at @s run function dvz:zombies/magma_cube/magma_loop
+team join zMONSTER @e[type=minecraft:magma_cube]
+tp @e[type=minecraft:magma_cube,nbt={Size:0}] ~ -1000 ~
+
+#Slime Loop
+execute as @e[type=armor_stand,tag=slime_spit] at @s run function dvz:zombies/slime/slime_spit_loop
+execute as @e[type=armor_stand,tag=slime_bomb] at @s run function dvz:zombies/slime/slime_bomb_loop
+
+#Evoker Loop
+execute as @e[type=armor_stand,tag=evoker_bolt] at @s run function dvz:zombies/evoker/evoker_bolt_loop
+execute as @a at @s run function dvz:zombies/evoker/evoker_loop
+execute as @a[tag=evoker,nbt={HurtTime:9s}] at @s run execute at @a[tag=dwarves,distance=..7.7] run summon evoker_fangs ~ ~ ~
+
+#Allay Loop
+execute as @a[tag=allay_carried] at @s run function dvz:zombies/allay/allay_loop
 
