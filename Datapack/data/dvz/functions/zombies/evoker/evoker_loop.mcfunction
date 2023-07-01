@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: tick
+# Called By: dvz:tick
 # File Name: evoker_loop
 # File Purpose: Cursed effect for evoker
 # Created By: Galactic

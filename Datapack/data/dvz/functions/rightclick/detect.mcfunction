@@ -1,12 +1,12 @@
 # -------------------------------------------
-# Called By: dvz:rightclick\detect
+# Called By: dvz:tick
 # File Name: detect
 # File Purpose: Main branch for all right-click events and items
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.08
-# Last Modified By: Zaffre
+# Last Modified On: 2023.07.01
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #

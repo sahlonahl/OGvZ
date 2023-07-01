@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: tick.mcfunction
+# Called By: dvz:tick
 # File Name: evoker_bolt_loop
 # File Purpose: controls bullet_hit
 # Created By: Galactic

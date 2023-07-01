@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: tick.mcfunction
+# Called By: dvz:tick
 # File Name: magma_loop
 # File Purpose: controls grenade
 # Created By: Galactic
