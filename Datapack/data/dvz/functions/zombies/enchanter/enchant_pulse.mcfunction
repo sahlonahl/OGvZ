@@ -24,6 +24,6 @@ execute as @s if entity @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run
 execute as @s if entity @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run effect give @s slowness 1 0 true
 execute as @s if entity @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run damage @s 1 minecraft:out_of_world
 
-execute as @s at @s if entity @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run execute as @a[team=zMONSTER,distance=0.1..9,limit=1,sort=nearest,tag=!golem,tag=!enderman,tag=!miniboss,tag=!chargecrp,tag=!pig3,tag=!slime,tag=!evoker] at @s run scoreboard players set @s DVZ.enchanterloop.ticks 25
+execute as @s at @s if entity @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] positioned ^ ^7 ^ run execute as @a[team=zMONSTER,distance=..9,limit=1,sort=nearest,tag=!zenchanter,tag=!golem,tag=!enderman,tag=!miniboss,tag=!chargecrp,tag=!pig3,tag=!slime,tag=!evoker] at @s run scoreboard players set @s DVZ.enchanterloop.ticks 30
 execute as @s if entity @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run scoreboard players set @s DVZ.enchanterbook.cool 1
 execute as @s if entity @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run scoreboard players set @s DVZ.rclick 0

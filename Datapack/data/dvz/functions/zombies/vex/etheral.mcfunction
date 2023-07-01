@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: dvz:zombies/vex/etheral.mcfunction
+# Called By: rightclick/detect
 # File Name: etheral
 # File Purpose: Moves vex through space (in spectator mode) until maximum distance
 # Created By: Galactic

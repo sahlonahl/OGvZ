@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: dvz:zombies/vex/killer.mcfunction
+# Called By: rightclick/detect
 # File Name: killer
 # File Purpose: Double attack damage for vex
 # Created By: Galactic

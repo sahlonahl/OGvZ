@@ -13,13 +13,13 @@
 # Comments: 
 # -------------------------------------------
 
-summon area_effect_cloud ^ ^ ^1 {Tags:["magma_direction"]}
+summon marker ^ ^ ^1 {Tags:["magma_direction"]}
 execute store result score #playerX pos run data get entity @s Pos[0] 2500
 execute store result score #playerY pos run data get entity @s Pos[1] 2500
 execute store result score #playerZ pos run data get entity @s Pos[2] 2500
-execute store result score #targetX pos as @e[type=area_effect_cloud,tag=magma_direction,limit=1] run data get entity @s Pos[0] 2500
-execute store result score #targetY pos as @e[type=area_effect_cloud,tag=magma_direction,limit=1] run data get entity @s Pos[1] 2500
-execute store result score #targetZ pos as @e[type=area_effect_cloud,tag=magma_direction,limit=1] run data get entity @s Pos[2] 2500
+execute store result score #targetX pos as @e[type=marker,tag=magma_direction,limit=1] run data get entity @s Pos[0] 2500
+execute store result score #targetY pos as @e[type=marker,tag=magma_direction,limit=1] run data get entity @s Pos[1] 2500
+execute store result score #targetZ pos as @e[type=marker,tag=magma_direction,limit=1] run data get entity @s Pos[2] 2500
 scoreboard players operation #targetX pos -= #playerX pos
 scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos

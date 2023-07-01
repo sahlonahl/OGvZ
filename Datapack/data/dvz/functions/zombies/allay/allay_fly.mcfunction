@@ -2,7 +2,7 @@
 # Called By: dvz:rightclick/detect
 # File Name: allay_fly
 # File Purpose: Moves allay until maximum distance or hits a wall
-# Created By: Zaffre
+# Created By: Galactic
 # 
 # Created On: 2022.04.19
 # Last Modified On: 2023.06.27

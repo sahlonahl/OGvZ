@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: dvz:zombies/piglin_brute/piglin_brute_shot.mcfunction
+# Called By: dvz:advancements/piglin_brute_shot
 # File Name: piglin_brute_shot
 # File Purpose: Piglin_brute
 # Created By: Galactic

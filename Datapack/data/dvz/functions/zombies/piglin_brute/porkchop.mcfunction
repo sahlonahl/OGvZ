@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: dvz:zombies/piglin_brute/porkchop.mcfunction
+# Called By: dvz:advancements/porkchop
 # File Name: porkchop
 # File Purpose: Porkchop eating for piglin and Piglin_brute
 # Created By: Galactic

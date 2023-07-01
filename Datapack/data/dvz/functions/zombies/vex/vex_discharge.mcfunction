@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: dvz:zombies/vex/vex_discharge.mcfunction
+# Called By: advancement/vex_discharge
 # File Name: vex_discharge
 # File Purpose: remove double damage for vex
 # Created By: Galactic

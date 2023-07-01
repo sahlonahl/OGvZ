@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: dvz:zombies/vex/materialize.mcfunction
+# Called By: rightclick/detect
 # File Name: materialize
 # File Purpose: Un-fly for vex
 # Created By: Galactic

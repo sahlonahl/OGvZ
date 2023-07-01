@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: detect
+# Called By: rightclick/detect
 # File Name: slime bomb
 # File Purpose: Throws projectile for slime
 # Created By: Galactic
