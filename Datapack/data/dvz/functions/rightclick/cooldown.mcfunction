@@ -179,6 +179,11 @@ execute as @a[scores={DVZ.enchanterbook.cool=1..}] run scoreboard players add @s
 execute as @a[scores={DVZ.enchanterbook.ticks=20..}] run scoreboard players remove @s DVZ.enchanterbook.cool 1
 execute as @a[scores={DVZ.enchanterbook.ticks=20..}] run scoreboard players set @s DVZ.enchanterbook.ticks 0
 execute as @a[scores={DVZ.enchanterbook.cool=..0}] run scoreboard players reset @s DVZ.enchanterbook.ticks
+#Allay Pick
+execute as @a[scores={DVZ.allaypick.cool=1..}] run scoreboard players add @s DVZ.allaypick.ticks 1
+execute as @a[scores={DVZ.allaypick.ticks=20..}] run scoreboard players remove @s DVZ.allaypick.cool 1
+execute as @a[scores={DVZ.allaypick.ticks=20..}] run scoreboard players set @s DVZ.allaypick.ticks 0
+execute as @a[scores={DVZ.allaypick.cool=..0}] run scoreboard players reset @s DVZ.allaypick.ticks
 #Magma Cube Throw
 execute as @a[scores={DVZ.magmathrow.cool=1..}] run scoreboard players add @s DVZ.magmathrow.ticks 1
 execute as @a[scores={DVZ.magmathrow.ticks=20..}] run scoreboard players remove @s DVZ.magmathrow.cool 1

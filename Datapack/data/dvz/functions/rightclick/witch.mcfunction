@@ -19,7 +19,7 @@ execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add witch
 team join zMONSTER @s[tag=witch,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=witch,tag=!selectedclass] cooked_beef 64
-give @s[tag=witch,tag=!selectedclass] wooden_sword{Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:unbreaking",lvl:3s}],Unbreakable:1b} 1
+give @s[tag=witch,tag=!selectedclass] wooden_sword{Enchantments:[{id:"minecraft:sharpness",lvl:1s},{id:"minecraft:unbreaking",lvl:3s}],Unbreakable:1b} 1
 give @s[tag=witch,tag=!selectedclass] carrot_on_a_stick{display:{Name:'{"text":"Brutal Alchemy","color":"dark_purple"}',Lore:['{"text":"Brew a potion with","color":"gray","bold":false,"italic":false}','{"text":"random negative effects","color":"gray","bold":false,"italic":false}','{"text":"8 second cooldown!","color":"red","bold":false,"italic":false}']},Unbreakable:1b,CustomModelData:88} 1
 give @s[tag=witch,tag=!selectedclass] carrot_on_a_stick{display:{Name:'{"text":"Soothing Alchemy","color":"dark_purple"}',Lore:['{"text":"Brew a potion with random","color":"gray","bold":false,"italic":false}','{"text":"positive effects for everyone!","color":"gray","bold":false,"italic":false}','{"text":"20 second cooldown!","color":"red","bold":false,"italic":false}']},Unbreakable:1b,CustomModelData:89} 1
 give @s[tag=witch,tag=!selectedclass] carrot_on_a_stick{display:{Name:'{"text":"Transmutation","color":"dark_purple"}',Lore:['{"text":"Turn nearest monster","color":"gray","bold":false,"italic":false}','{"text":"into frog!","color":"gray","bold":false,"italic":false}','{"text":"25 second cooldown!","color":"red","bold":false,"italic":false}']},Unbreakable:1b,CustomModelData:90} 1
