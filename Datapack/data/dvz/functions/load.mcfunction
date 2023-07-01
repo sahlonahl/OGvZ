@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.04.03
+# Last Modified On: 2023.06.10
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -16,7 +16,7 @@
 #Setup
 #schedule function dvz:unload 5s
 scoreboard objectives add DVZ.start trigger
-difficulty hard
+difficulty normal
 gamemode survival @a
 tag @a remove DVZready
 clear @a
@@ -277,7 +277,7 @@ team modify zGUARDIAN suffix {"text":", the Guardian","italic":"true","color":"l
 ### Zombies have invisible nametags
 team modify zMONSTER nametagVisibility hideForOtherTeams
 team modify zMONSTER seeFriendlyInvisibles true
-team modify zMONSTER friendlyFire false
+team modify zMONSTER friendlyFire true
 team modify zDEAD nametagVisibility never
 team modify zDEAD seeFriendlyInvisibles false
 team modify zDEAD friendlyFire true

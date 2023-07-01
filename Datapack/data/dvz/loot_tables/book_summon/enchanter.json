@@ -25,7 +25,7 @@
 	{
       "rolls": {
         "min": 2,
-        "max": 3
+        "max": 4
       },
       "entries": [
         {
@@ -47,8 +47,8 @@
             {
               "function": "set_count",
               "count": {
-                "min": 4,
-                "max": 7
+                "min": 9,
+                "max": 15
               }
             }
           ]

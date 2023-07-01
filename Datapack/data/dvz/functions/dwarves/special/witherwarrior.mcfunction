@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.05.18
-# Last Modified By: Wilkekids
+# Last Modified On: 2023.06.10
+# Last Modified By: Zaffre
 #
 # Credit to:
 #
@@ -65,6 +65,6 @@ item replace entity @s armor.chest with netherite_chestplate{AttributeModifiers:
 item replace entity @s armor.legs with netherite_leggings{AttributeModifiers: [{Slot: "legs", AttributeName: "generic.armor", Name: "generic.armor", Amount: 6.0d, Operation: 0, UUID: [I; 4804, 4804, -4804, 4804]}, {Slot: "legs", AttributeName: "generic.armor_toughness", Name: "generic.armor_toughness", Amount: 2.0d, Operation: 0, UUID: [I; 70264, 70264, -70264, 70264]}], Enchantments: [{id: "binding_curse", lvl: 1}, {id: "protection", lvl: 4}], Unbreakable: 1b, display: {Name: '{"text":"Warrior Leggings","color":"gold"}'}}
 item replace entity @s armor.feet with netherite_boots{AttributeModifiers: [{Slot: "feet", AttributeName: "generic.armor", Name: "generic.armor", Amount: 3.0d, Operation: 0, UUID: [I; 4804, 4804, 4804, -4804]}, {Slot: "feet", AttributeName: "generic.armor_toughness", Name: "generic.armor_toughness", Amount: 2.0d, Operation: 0, UUID: [I; 70264, 70264, 70264, -70264]}], Enchantments: [{id: "binding_curse", lvl: 1}, {id: "protection", lvl: 4}, {id: "feather_falling", lvl: 5}], Unbreakable: 1b, display: {Name: '{"text":"Warrior Boots","color":"gold"}'}}
 
-gamerule doMobSpawning true
+#gamerule doMobSpawning true
 gamerule doDaylightCycle true
 gamerule doWeatherCycle true

@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.02.20
+# Last Modified On: 2023.06.13
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -13,9 +13,9 @@
 # Comments: There is some built in aim assist to make the item more useful.
 # -------------------------------------------
 
-execute as @s[tag=spider,scores={DVZ.web.cool=1..}] run tellraw @s ["",{"text":" * [Web] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.web.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
+execute as @s[tag=spider,scores={DVZ.web.cool=1..}] run title @s actionbar ["",{"text":" * [Web] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.web.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 
-execute as @s if entity @s[tag=spider,scores={DVZ.web.cool=0}] run tellraw @s {"text":" * [Web] Poof!","color":"red"}
+execute as @s if entity @s[tag=spider,scores={DVZ.web.cool=0}] run title @s actionbar {"text":" * [Web] Poof!","color":"red"}
 execute as @s if entity @s[tag=spider,scores={DVZ.web.cool=0}] run playsound entity.spider.ambient master @a ~ ~ ~ 1 0.7
 
 execute as @s if entity @s[tag=spider,scores={DVZ.web.cool=0}] run summon marker ~ ~ ~ {Tags:[ray]}

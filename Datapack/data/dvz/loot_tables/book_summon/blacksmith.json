@@ -4,7 +4,7 @@
       "conditions": [
         {
           "condition": "random_chance",
-          "chance": 0.5
+          "chance": 0.75
         }
       ],
       "rolls": 1,
@@ -83,6 +83,25 @@
             {
               "function": "set_count",
               "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"piercing\",lvl:3s},{id:\"quick_charge\",lvl:3s}]}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:crossbow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"multishot\",lvl:1s},{id:\"quick_charge\",lvl:3s}]}"
             }
           ]
         }
@@ -117,7 +136,7 @@
                 {
                   "attribute": "minecraft:generic.attack_damage",
                   "name": "",
-                  "amount": 9,
+                  "amount": 11,
                   "operation": "addition",
                   "slot": "mainhand"
                 },
@@ -162,7 +181,7 @@
                 {
                   "attribute": "minecraft:generic.attack_speed",
                   "name": "",
-                  "amount": -1.9,
+                  "amount": -1.5,
                   "operation": "addition",
                   "slot": "mainhand"
                 }
@@ -185,14 +204,14 @@
                 {
                   "attribute": "minecraft:generic.attack_damage",
                   "name": "",
-                  "amount": 9,
+                  "amount": 10,
                   "operation": "addition",
                   "slot": "mainhand"
                 },
                 {
                   "attribute": "minecraft:generic.attack_speed",
                   "name": "",
-                  "amount": -2.9,
+                  "amount": -2.6,
                   "operation": "addition",
                   "slot": "mainhand"
                 },
@@ -200,51 +219,6 @@
                   "attribute": "minecraft:generic.armor",
                   "name": "",
                   "amount": -2,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:trident",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:1}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Spear"
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "minecraft:generic.attack_damage",
-                  "name": "",
-                  "amount": 7,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                },
-                {
-                  "attribute": "minecraft:generic.attack_speed",
-                  "name": "",
-                  "amount": -2.5,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                },
-                {
-                  "attribute": "minecraft:generic.armor",
-                  "name": "",
-                  "amount": -2.5,
                   "operation": "addition",
                   "slot": "mainhand"
                 }
@@ -271,7 +245,7 @@
                 {
                   "attribute": "minecraft:generic.attack_damage",
                   "name": "",
-                  "amount": 9,
+                  "amount": 13,
                   "operation": "addition",
                   "slot": "mainhand"
                 },
@@ -309,14 +283,14 @@
                 {
                   "attribute": "minecraft:generic.attack_damage",
                   "name": "",
-                  "amount": 9,
+                  "amount": 11,
                   "operation": "addition",
                   "slot": "mainhand"
                 },
                 {
                   "attribute": "minecraft:generic.attack_speed",
                   "name": "",
-                  "amount": -3.1,
+                  "amount": -2.9,
                   "operation": "addition",
                   "slot": "mainhand"
                 }
@@ -347,14 +321,14 @@
                 {
                   "attribute": "minecraft:generic.attack_damage",
                   "name": "",
-                  "amount": 13,
+                  "amount": 20,
                   "operation": "addition",
                   "slot": "mainhand"
                 },
                 {
                   "attribute": "minecraft:generic.attack_speed",
                   "name": "",
-                  "amount": -3.2,
+                  "amount": -3.3,
                   "operation": "addition",
                   "slot": "mainhand"
                 }

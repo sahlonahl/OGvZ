@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.14
+# Last Modified On: 2023.06.22
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -23,15 +23,10 @@ execute if entity @e[tag=dSpawn] store success score @s DVZ.begintest run tellra
 execute if entity @s[scores={DVZ.begintest=0}] run tellraw @s {"text":"COULD NOT FIND Dwarf Spawn.","bold":"true","color":"dark_aqua"}
 tag @s[scores={DVZ.begintest=0}] add begintestfail
 
-execute if entity @e[type=marker,tag=dSpawn,tag=!temple] run scoreboard players set @s DVZ.begintest 0
-execute store success score @s DVZ.begintest at @e[tag=dSpawn,tag=!temple] if block ~ ~-1 ~ minecraft:gold_block if block ~-1 ~-1 ~ minecraft:gold_block if block ~ ~-1 ~-1 minecraft:gold_block if block ~-1 ~-1 ~-1 minecraft:gold_block if block ~1 ~-2 ~ minecraft:gold_block if block ~1 ~-2 ~-1 minecraft:gold_block if block ~ ~-2 ~-2 minecraft:gold_block if block ~-1 ~-2 ~-2 minecraft:gold_block if block ~-2 ~-2 ~-1 minecraft:gold_block if block ~-2 ~-2 ~ minecraft:gold_block if block ~-1 ~-2 ~1 minecraft:gold_block if block ~ ~-2 ~1 minecraft:gold_block run tellraw @s {"text":"Found Valid Shrine.","color":"gold"}
-execute if entity @s[scores={DVZ.begintest=0}] if entity @e[tag=dSpawn,tag=!temple] run tellraw @s {"text":"COULD NOT FIND Valid Shrine.","bold":"true","color":"yellow"}
-execute if entity @e[type=marker,tag=dSpawn,tag=!temple] run tag @s[scores={DVZ.begintest=0}] add begintestfail
-
-execute if entity @e[type=marker,tag=temple] run scoreboard players set @s DVZ.begintest 0
-execute store success score @s DVZ.begintest at @e[tag=dSpawn,tag=temple] if block ~ ~-5 ~ minecraft:gold_block if block ~-1 ~-5 ~ minecraft:gold_block if block ~ ~-5 ~-1 minecraft:gold_block if block ~-1 ~-5 ~-1 minecraft:gold_block if block ~1 ~-6 ~ minecraft:gold_block if block ~1 ~-6 ~-1 minecraft:gold_block if block ~ ~-6 ~-2 minecraft:gold_block if block ~-1 ~-6 ~-2 minecraft:gold_block if block ~-2 ~-6 ~-1 minecraft:gold_block if block ~-2 ~-6 ~ minecraft:gold_block if block ~-1 ~-6 ~1 minecraft:gold_block if block ~ ~-6 ~1 minecraft:gold_block run tellraw @s {"text":"Found Valid Shrine.","color":"gold"}
-execute if entity @s[scores={DVZ.begintest=0}] if entity @e[tag=dSpawn,tag=temple] run tellraw @s {"text":"COULD NOT FIND Valid Shrine.","bold":"true","color":"yellow"}
-execute if entity @e[type=marker,tag=temple] run tag @s[scores={DVZ.begintest=0}] add begintestfail
+execute if entity @e[type=marker,tag=dSpawn] run scoreboard players set @s DVZ.begintest 0
+execute store success score @s DVZ.begintest at @e[tag=dSpawn] if block ~ ~-1 ~ minecraft:gold_block if block ~-1 ~-1 ~ minecraft:gold_block if block ~ ~-1 ~-1 minecraft:gold_block if block ~-1 ~-1 ~-1 minecraft:gold_block if block ~1 ~-2 ~ minecraft:gold_block if block ~1 ~-2 ~-1 minecraft:gold_block if block ~ ~-2 ~-2 minecraft:gold_block if block ~-1 ~-2 ~-2 minecraft:gold_block if block ~-2 ~-2 ~-1 minecraft:gold_block if block ~-2 ~-2 ~ minecraft:gold_block if block ~-1 ~-2 ~1 minecraft:gold_block if block ~ ~-2 ~1 minecraft:gold_block run tellraw @s {"text":"Found Valid Shrine.","color":"gold"}
+execute if entity @s[scores={DVZ.begintest=0}] if entity @e[tag=dSpawn] run tellraw @s {"text":"COULD NOT FIND Valid Shrine.","bold":"true","color":"yellow"}
+execute if entity @e[type=marker,tag=dSpawn] run tag @s[scores={DVZ.begintest=0}] add begintestfail
 
 scoreboard players set @s DVZ.begintest 0
 execute if entity @e[tag=zSpawn] store success score @s DVZ.begintest run tellraw @s {"text":"Found Zombie Spawn.","color":"red"}

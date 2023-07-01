@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.10.22
+# Last Modified On: 2023.06.13
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -13,9 +13,9 @@
 # Comments:
 # -------------------------------------------
 
-execute as @s[tag=zlguardian,scores={DVZ.zlbeam.cool=1..}] run tellraw @s ["",{"text":" * [Beam] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.zlbeam.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
+execute as @s[tag=zlguardian,scores={DVZ.zlbeam.cool=1..}] run title @s actionbar ["",{"text":" * [Beam] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.zlbeam.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 
-execute as @s if entity @s[tag=zlguardian,scores={DVZ.zlbeam.cool=0}] run tellraw @s {"text":" * [Beam] Poof!","color":"red"}
+execute as @s if entity @s[tag=zlguardian,scores={DVZ.zlbeam.cool=0}] run title @s actionbar {"text":" * [Beam] Poof!","color":"red"}
 execute as @s if entity @s[tag=zlguardian,scores={DVZ.zlbeam.cool=0}] run tag @s add zlBEAMuse
 execute as @s if entity @s[tag=zlguardian,scores={DVZ.zlbeam.cool=0}] run playsound minecraft:block.respawn_anchor.deplete master @a ~ ~ ~ 1 2
 
