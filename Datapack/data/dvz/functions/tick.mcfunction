@@ -344,13 +344,6 @@ execute as @a[tag=dwarves] at @s if entity @e[distance=..1.4,type=item,limit=1,s
 execute as @a[tag=dwarves,scores={DVZ.icy.check=1..}] at @s run kill @e[distance=..2,type=item,limit=1,sort=nearest,nbt={Item:{tag:{CustomModelData:53}}}]
 execute as @a[tag=dwarves,scores={DVZ.icy.check=1..}] at @s run function dvz:zombies/chillager/icebomb
 
-#Evoker's summoning spell
-#scoreboard players add @e[type=marker,tag=evocation,scores={DVZ.timer=..40}] DVZ.timer 1
-#execute as @e[type=marker,tag=evocation,scores={DVZ.timer=..40}] run playsound 
-
-#execute as @e[type=marker,tag=evocation,scores={DVZ.timer=40..}] run function dvz:zombies/evoker/summon_notcrouch2
-#execute as @e[type=item,tag=evocation] run function dvz:zombies/evoker/evocation
-
 #GhastFlight
 effect give @a[tag=ghastflight,nbt={Inventory:[{Slot:-106b,tag:{Levitate:1b}}]}] minecraft:levitation 1 1 true
 effect give @a[tag=ghastflight,nbt={Inventory:[{Slot:-106b,tag:{Descend:1b}}]}] minecraft:slow_falling 1 253 true
