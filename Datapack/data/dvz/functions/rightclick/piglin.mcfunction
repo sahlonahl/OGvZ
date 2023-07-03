@@ -19,7 +19,6 @@ execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add piglin
 team join zMONSTER @s[tag=piglin,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=piglin,tag=!selectedclass] cooked_porkchop 64
-give @s[tag=piglin,tag=!selectedclass] wooden_sword{Enchantments:[{id:"minecraft:sharpness",lvl:1s},{id:"minecraft:unbreaking",lvl:1s}],Unbreakable:1b} 1
 give @s[tag=piglin,tag=!selectedclass] weeping_vines 1
 give @s[tag=piglin,tag=!selectedclass] twisting_vines 1
 give @s[tag=piglin,tag=!selectedclass] bone_meal 16

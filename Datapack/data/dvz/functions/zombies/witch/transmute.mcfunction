@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: dvz:zombies/witch/transmute.mcfunction
+# Called By: rightclick/detect
 # File Name: Transmutation
 # File Purpose: Initiates transmutation for witch class
 # Created By: Galactic

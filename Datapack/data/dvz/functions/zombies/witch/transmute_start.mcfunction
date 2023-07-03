@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: dvz:zombies/witch/transmute_start.mcfunction
+# Called By: dvz:zombies/witch/transmute
 # File Name: transmute_start
 # File Purpose: Starts transmutation
 # Created By: Galactic

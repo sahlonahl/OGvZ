@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: dvz:zombies/witch/transmute_purple.mcfunction
+# Called By: dvz:zombies/witch/transmute_start
 # File Name: transmute_purple
 # File Purpose: Purple transmutation
 # Created By: Galactic

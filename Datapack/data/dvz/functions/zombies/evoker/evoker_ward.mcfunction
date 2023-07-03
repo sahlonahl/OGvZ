@@ -23,10 +23,10 @@ execute as @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run playso
 execute as @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run particle minecraft:end_rod ~ ~1 ~ 2.5 1 2.5 0.01 100
 execute as @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run particle dust 1.000 0.800 0.000 2 ~ ~1 ~ 2.5 1 2.5 0.01 100
 
-execute as @s at @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run effect give @e[team=zMONSTER,distance=..15] instant_health 1 1 true
-execute as @s at @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run effect give @e[team=zMONSTER,distance=..15] regeneration 10 1 true
-execute as @s at @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run effect give @e[team=zMONSTER,distance=..15] resistance 15 0 true
-execute as @s at @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run effect give @e[team=zMONSTER,distance=..15] absorption 15 4 true
+execute as @s at @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run effect give @e[team=zMONSTER,distance=0.1..15] instant_health 1 1 true
+execute as @s at @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run effect give @e[team=zMONSTER,distance=0.1..15] regeneration 10 1 true
+execute as @s at @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run effect give @e[team=zMONSTER,distance=0.1..15] resistance 15 0 true
+execute as @s at @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run effect give @e[team=zMONSTER,distance=0.1..15] absorption 15 4 true
 
 execute as @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run scoreboard players set @s DVZ.evokerward.cool 45
 execute as @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run scoreboard players set @s DVZ.rclick 0

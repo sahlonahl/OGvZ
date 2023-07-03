@@ -1,5 +1,5 @@
 # -------------------------------------------
-# Called By: dvz:zombies/witch/transmute_normal.mcfunction
+# Called By: dvz:zombies/witch/transmute_start
 # File Name: transmute_normal
 # File Purpose: Transmutation
 # Created By: Galactic
