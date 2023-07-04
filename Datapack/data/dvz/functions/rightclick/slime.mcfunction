@@ -5,7 +5,7 @@
 # Created By: GalacticAC
 # 
 # Created On: 2023.06.24
-# Last Modified On: 2023.06.27
+# Last Modified On: 2023.07.04
 # Last Modified By: GalacticAC
 #
 # Credit to:
@@ -17,7 +17,7 @@ tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add slime
 playsound entity.slime.ambient master @a ~ ~ ~ 200
-tellraw @a ["",{"text":"ALERT:","bold":true,"color":"red"},{"text":" A ","color":"gold"},{"text":"slime ","italic":true,"color":"gray"},{"text":"(","color":"gray"},{"selector":"@s[tag=slime]","color":"gray"},{"text":")","color":"gray"},{"text":" approaches!","color":"gold"}]
+tellraw @a ["",{"text":"ALERT:","bold":true,"color":"red"},{"text":" A ","color":"gold"},{"text":"Slime ","italic":true,"color":"gray"},{"text":"(","color":"gray"},{"selector":"@s[tag=slime]","color":"gray"},{"text":")","color":"gray"},{"text":" approaches!","color":"gold"}]
 team join zMONSTER @s[tag=slime,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=slime,tag=!selectedclass] cooked_beef 64
