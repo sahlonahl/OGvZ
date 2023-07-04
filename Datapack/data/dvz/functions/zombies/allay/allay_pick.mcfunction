@@ -13,7 +13,7 @@
 # Comments: controlled entirely by dvz:tick
 # -------------------------------------------
 
-execute as @s[tag=allay,scores={DVZ.allaypick.cool=1..}] run tellraw @s ["",{"text":" * [Pick] You have ","color":"aqua"},{"score":{"name":"@s","objective":"DVZ.allaypick.cool"},"color":"aqua"},{"text":" seconds remaining!","color":"aqua"}]
+execute as @s[tag=allay,scores={DVZ.allaypick.cool=1..}] run title actionbar @s ["",{"text":" * [Pick] You have ","color":"aqua"},{"score":{"name":"@s","objective":"DVZ.allaypick.cool"},"color":"aqua"},{"text":" seconds remaining!","color":"aqua"}]
 execute as @s at @s if entity @s[tag=allay,scores={DVZ.allaypick.cool=0}] unless entity @a[team=zMONSTER,distance=0.1..4,tag=!golem,tag=!enderman,tag=!miniboss,tag=!chargecrp,tag=!pig3,tag=!slime,tag=!evoker,tag=!allay] run title @s actionbar ["",{"text":" * [Pick] You have ","color":"aqua"},{"text":"no valid target!","color":"aqua"}]
 
 execute as @s at @s if entity @s[tag=allay,scores={DVZ.allaypick.cool=0}] if entity @a[team=zMONSTER,distance=0.1..4,tag=!golem,tag=!enderman,tag=!miniboss,tag=!chargecrp,tag=!pig3,tag=!slime,tag=!evoker,tag=!allay] run title @s actionbar {"text":" * [Pick] Poof!","color":"aqua"}
