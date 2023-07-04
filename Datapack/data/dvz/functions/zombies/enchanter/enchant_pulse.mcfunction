@@ -24,7 +24,7 @@ execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run effect give 
 execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run effect give @s slowness 1 0 true
 execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run damage @s 1 minecraft:out_of_world
 
-execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] at @s positioned ^ ^9 ^ run execute as @a[team=zMONSTER,distance=..12,limit=1,sort=nearest,tag=!zenchanter,tag=!golem,tag=!enderman,tag=!miniboss,tag=!chargecrp,tag=!pig3,tag=!slime,tag=!evoker] at @s run scoreboard players set @s DVZ.enchanterloop.ticks 30
+execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] at @s positioned ^ ^ ^9 run execute as @a[team=zMONSTER,distance=..12,limit=1,sort=nearest,tag=!zenchanter,tag=!golem,tag=!enderman,tag=!miniboss,tag=!chargecrp,tag=!pig3,tag=!slime,tag=!evoker] at @s run scoreboard players set @s DVZ.enchanterloop.ticks 30
 
 execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run effect give @a[scores={DVZ.enchanterloop.ticks=1..}] glowing 2 0
 execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run effect give @a[scores={DVZ.enchanterloop.ticks=1..}] haste 2 2
