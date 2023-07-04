@@ -5,7 +5,7 @@
 # Created By: GalacticAC
 # 
 # Created On: 2023.06.24
-# Last Modified On: 2023.06.27
+# Last Modified On: 2023.07.04
 # Last Modified By: GalacticAC
 #
 # Credit to:
@@ -17,7 +17,7 @@ tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add evoker
 playsound entity.evoker.ambient master @a ~ ~ ~ 200
-tellraw @a ["",{"text":"ALERT:","bold":true,"color":"red"},{"text":" A ","color":"gold"},{"text":"evoker ","italic":true,"color":"gray"},{"text":"(","color":"gray"},{"selector":"@s[tag=evoker]","color":"gray"},{"text":")","color":"gray"},{"text":" approaches!","color":"gold"}]
+tellraw @a ["",{"text":"ALERT:","bold":true,"color":"red"},{"text":" An ","color":"gold"},{"text":"Evoker ","italic":true,"color":"gray"},{"text":"(","color":"gray"},{"selector":"@s[tag=evoker]","color":"gray"},{"text":")","color":"gray"},{"text":" approaches!","color":"gold"}]
 team join zMONSTER @s[tag=evoker,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=evoker,tag=!selectedclass] cooked_beef 64
