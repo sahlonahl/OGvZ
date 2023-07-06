@@ -13,10 +13,10 @@
 # Comments: 
 # -------------------------------------------
 
-execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=1..}] run title @s actionbar ["",{"text":" * [Enchanter's Book] You have ","color":"#732D52"},{"score":{"name":"@s","objective":"DVZ.enchanterbook.cool"},"color":"dark_aqua"},{"text":" seconds remaining!","color":"#732D52"}]
+execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=1..}] run title @s actionbar ["",{"text":" * [Fungal Ritual] You have ","color":"#FF0000"},{"score":{"name":"@s","objective":"DVZ.enchanterbook.cool"},"color":"dark_aqua"},{"text":" seconds remaining!","color":"#FF0000"}]
 
-execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run title @s actionbar {"text":" * [Enchanter's Book] Poof!","color":"#732D52"}
-execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run playsound minecraft:entity.evoker.cast_spell player @a ~ ~ ~ 1 1
+execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run title @s actionbar {"text":" * [Fungal Ritual] Poof!","color":"#FF0000"}
+execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run playsound minecraft:entity.mooshroom.convert player @a ~ ~ ~ 1 1
 execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run playsound minecraft:block.beacon.activate player @a ~ ~ ~ 0.6 2
 execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run particle minecraft:large_smoke ~ ~0.9 ~ 0.75 1 0.75 0 15
 execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run particle minecraft:dust 0.5 0.1 0.1 2.5 ~ ~0.9 ~ 0.75 1 0.75 0 15
