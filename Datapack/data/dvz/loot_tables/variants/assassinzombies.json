@@ -580,7 +580,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Enchanter\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Support mob that\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"acts as a pocket buffer\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:92}"
+              "tag": "{display:{Name:'{\"text\":\"Mooshroom\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Support mob that\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"acts as a pocket buffer\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:92}"
             }
           ]
         }
