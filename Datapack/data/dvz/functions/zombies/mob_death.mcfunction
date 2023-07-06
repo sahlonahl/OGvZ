@@ -37,7 +37,7 @@ execute as @a[tag=piglin_brute,scores={DVZ.death=1..}] at @s run playsound minec
 execute as @a[tag=endermite,scores={DVZ.death=1..}] at @s run playsound minecraft:entity.endermite.death player @a ~ ~ ~ 1
 execute as @a[tag=vex,scores={DVZ.death=1..}] at @s run playsound minecraft:entity.vex.death player @a ~ ~ ~ 1
 execute as @a[tag=witch,scores={DVZ.death=1..}] at @s run playsound minecraft:entity.witch.death player @a ~ ~ ~ 1
-execute as @a[tag=zenchanter,scores={DVZ.death=1..}] at @s run playsound minecraft:entity.evoker.death player @a ~ ~ ~ 1
+execute as @a[tag=zenchanter,scores={DVZ.death=1..}] at @s run playsound minecraft:entity.cow.death player @a ~ ~ ~ 1
 execute as @a[tag=magma_cube,scores={DVZ.death=1..}] at @s run playsound minecraft:entity.magma_cube.death player @a ~ ~ ~ 1
 execute as @a[tag=allay,scores={DVZ.death=1..}] at @s run playsound minecraft:entity.allay.death player @a ~ ~ ~ 1
 execute as @a[tag=slime,scores={DVZ.death=1..}] at @s run playsound minecraft:entity.slime.death player @a ~ ~ ~ 1
