@@ -19,5 +19,5 @@ execute as @s if entity @s[tag=magma_cube,scores={DVZ.magmathrow.cool=0}] run ti
 execute as @s if entity @s[tag=magma_cube,scores={DVZ.magmathrow.cool=0}] run playsound minecraft:entity.blaze.shoot master @s ~ ~ ~ 1 0.5
 execute as @s if entity @s[tag=magma_cube,scores={DVZ.magmathrow.cool=0}] at @s run function dvz:zombies/magma_cube/magma_launch
 
-execute as @s if entity @s[tag=magma_cube,scores={DVZ.magmathrow.cool=0}] run scoreboard players set @s DVZ.magmathrow.cool 25
+execute as @s if entity @s[tag=magma_cube,scores={DVZ.magmathrow.cool=0}] run scoreboard players set @s DVZ.magmathrow.cool 20
 execute as @s if entity @s[tag=magma_cube,scores={DVZ.magmathrow.cool=0}] run scoreboard players set @s DVZ.rclick 0
