@@ -16,8 +16,6 @@
 playsound minecraft:entity.slime.squish master @a ~ ~ ~ 4 0.1
 fill ^ ^ ^ ^ ^ ^ lime_stained_glass replace #dvz:builderblocks
 fill ^ ^ ^1 ^ ^ ^1 lime_stained_glass replace #dvz:builderblocks
-fill ^ ^ ^ ^ ^ ^ stone_bricks replace end_stone_bricks
-fill ^ ^ ^1 ^ ^ ^1 stone_bricks replace end_stone_bricks
 execute as @a[tag=dwarves,distance=..2] at @s run damage @s 2 minecraft:out_of_world
 execute as @a[tag=dwarves,distance=..2] at @s run effect give @s minecraft:slowness 3 1 true
 kill @s
