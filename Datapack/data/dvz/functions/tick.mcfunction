@@ -401,6 +401,9 @@ execute as @a[tag=evoker,nbt={HurtTime:9s}] at @s run execute at @a[tag=dwarves,
 
 #Allay Loop
 execute as @a[tag=allay_carried] at @s run function dvz:zombies/allay/allay_loop
+tag @s[tag=golem] remove allay_carried
+tag @s[tag=enderman] remove allay_carried
+execute as @a[team=zMONSTER,scores={DVZ.crouch=1..}] run tag @s remove allay_carried
 
 ###Ambient Particles
 execute as @a[tag=hero] at @s run particle end_rod ~ ~0.1 ~ 0.1 0 0.1 0.01 1
