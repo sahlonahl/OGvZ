@@ -397,7 +397,7 @@ execute as @e[type=armor_stand,tag=slime_bomb] at @s run function dvz:zombies/sl
 #Evoker Loop
 execute as @e[type=armor_stand,tag=evoker_bolt] at @s run function dvz:zombies/evoker/evoker_bolt_loop
 execute as @a at @s run function dvz:zombies/evoker/evoker_loop
-execute as @a[tag=evoker,nbt={HurtTime:9s}] at @s run execute at @a[tag=dwarves,distance=..7.7] run summon evoker_fangs ~ ~ ~
+execute as @a[tag=evoker,nbt={HurtTime:9s}] at @s run execute at @a[tag=dwarves,distance=..16] run summon evoker_fangs ~ ~ ~
 
 #Allay Loop
 execute as @a[tag=allay_carried] at @s run function dvz:zombies/allay/allay_loop
