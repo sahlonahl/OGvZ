@@ -37,7 +37,7 @@ execute as @a[tag=piglin_brute,nbt={HurtTime:10s}] at @s run playsound minecraft
 execute as @a[tag=endermite,nbt={HurtTime:10s}] at @s run playsound minecraft:entity.endermite.hurt player @a ~ ~ ~ 1
 execute as @a[tag=vex,nbt={HurtTime:10s}] at @s run playsound minecraft:entity.vex.hurt player @a ~ ~ ~ 1
 execute as @a[tag=witch,nbt={HurtTime:10s}] at @s run playsound minecraft:entity.witch.hurt player @a ~ ~ ~ 1
-execute as @a[tag=zenchanter,nbt={HurtTime:10s}] at @s run playsound minecraft:entity.evoker.hurt player @a ~ ~ ~ 1
+execute as @a[tag=zenchanter,nbt={HurtTime:10s}] at @s run playsound minecraft:entity.cow.hurt player @a ~ ~ ~ 1
 execute as @a[tag=magma_cube,nbt={HurtTime:10s}] at @s run playsound minecraft:entity.magma_cube.hurt player @a ~ ~ ~ 1
 execute as @a[tag=allay,nbt={HurtTime:10s}] at @s run playsound minecraft:entity.allay.hurt player @a ~ ~ ~ 1
 execute as @a[tag=slime,nbt={HurtTime:10s}] at @s run playsound minecraft:entity.slime.hurt player @a ~ ~ ~ 1
