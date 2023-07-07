@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.30
-# Last Modified By: Zaffre
+# Last Modified On: 2023.07.06
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -33,7 +33,7 @@ item replace entity @s[tag=blaze,tag=!selectedclass] armor.feet with leather_boo
 
 effect give @s[tag=blaze,tag=!selectedclass] jump_boost 1000000 255 true
 effect give @s[tag=blaze,tag=!selectedclass] fire_resistance 1000000 4 true
-effect give @s[tag=blaze,tag=!selectedclass] mining_fatigue 1000000 4 true
+#effect give @s[tag=blaze,tag=!selectedclass] mining_fatigue 1000000 4 true
 tag @s add selectedclass
 
 execute as @s[tag=blaze] if predicate dvz:natchance run loot give @s loot dvz:mob_natures

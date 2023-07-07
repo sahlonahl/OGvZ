@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.04.03
-# Last Modified By: Zaffre
+# Last Modified On: 2023.07.06
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -23,7 +23,7 @@ gamemode adventure @s[tag=bee]
 
 give @s[tag=bee,tag=!selectedclass] stick{CustomModelData:70,Levitate:1b,display:{Name:'[{"text":"Levitate","color":"green"}]',Lore:['[{"text":"Place in offhand to use."}]']}} 1
 give @s[tag=bee,tag=!selectedclass] stick{CustomModelData:36,Descend:1b,display:{Name:'[{"text":"Descend","color":"red"}]',Lore:['[{"text":"Place in offhand to use."}]']}} 1
-give @s[tag=bee,tag=!selectedclass] bow{display:{Name:'{"text":"Stinger Sling","color":"dark_green"}'},Unbreakable:1b} 1
+give @s[tag=bee,tag=!selectedclass] bow{display:{Name:'{"text":"Stinger Sling","color":"dark_green"}'},Unbreakable:1b,Enchantments:[{id:"infinity",lvl:1}]} 1
 give @s[tag=bee,tag=!selectedclass] carrot_on_a_stick{CustomModelData:63,Unbreakable:1b,display:{Name:'{"text":"Honey","color":"gold"}',Lore:['[{"text":"Heals and reinforces mobs where you are looking."}]','[{"text":"10 second cooldown!","color":"red"}]']}} 1
 give @s[tag=bee,tag=!selectedclass] cooked_beef 64
 give @s[tag=bee,tag=!selectedclass] splash_potion{CustomPotionColor:16776960,CustomPotionEffects:[{Id:6b,Duration:10,Amplifier:1},{Id:10b,Duration:200}],display:{Name:'[{"text":"Bee\'s Potion"}]'}} 8

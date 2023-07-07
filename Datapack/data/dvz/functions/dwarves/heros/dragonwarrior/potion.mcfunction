@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.10
-# Last Modified By: Zaffre
+# Last Modified On: 2023.07.06
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -20,6 +20,7 @@ execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=30..] run execute a
 execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=30..] run execute as @s run effect give @s speed 10 3
 execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=30..] run execute as @s run effect give @s strength 10 1
 execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=30..] run execute as @s run effect give @s jump_boost 10 1
+execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=30..] run execute as @s run effect give @s slow_falling 10
 execute as @s run title @s[tag=dwarves,tag=!playerboss,level=30..] actionbar {"text":" * [Ultimate Potion] Poof!","color":"red"}
 execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=30..] run execute as @s run xp add @s -30 levels
 
