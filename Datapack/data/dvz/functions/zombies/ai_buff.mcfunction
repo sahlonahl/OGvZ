@@ -17,7 +17,7 @@ data merge entity @s[tag=!AIbuffed] {Attributes:[{Name:generic.follow_range,Base
 effect give @s[type=!silverfish,tag=!AIbuffed,tag=!explode] regeneration 999999 0 true
 effect give @s[type=!silverfish,tag=!AIbuffed,tag=!explode] speed 999999 1 true
 effect give @s[type=!silverfish,tag=!AIbuffed,tag=!explode] dolphins_grace 999999 0 true
-data merge entity @s[type=zombie,tag=!AIbuffed] {HandItems:[{id:"minecraft:wooden_sword",Count:1b},{}],HandDropChances:[0.000F,0.085F]}
+data merge entity @s[type=zombie,tag=!endermine,tag=!AIbuffed] {HandItems:[{id:"minecraft:wooden_sword",Count:1b},{}],HandDropChances:[0.000F,0.085F]}
 data merge entity @s[type=husk,tag=!AIbuffed] {HandItems:[{id:"minecraft:wooden_sword",Count:1b},{}],HandDropChances:[0.000F,0.085F]}
 data merge entity @s[type=wither_skeleton,tag=!AIbuffed] {HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:power",lvl:4s}]}},{}],HandDropChances:[0.000F,0.085F]}
 data merge entity @s[type=stray,tag=!AIbuffed] {HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:power",lvl:4s}]}},{}],HandDropChances:[0.000F,0.085F]}
