@@ -405,6 +405,11 @@ tag @s[tag=golem] remove allay_carried
 tag @s[tag=enderman] remove allay_carried
 execute as @a[team=zMONSTER,scores={DVZ.crouch=1..}] run tag @s remove allay_carried
 
+#Endermite
+execute as @e[tag=endermite,nbt=!{ActiveEffects:[{Id:18}]}] at @s if entity @a[tag=dwarves,distance=..2] run function dvz:zombies/endermite/endermite_explode
+execute as @e[tag=endermite_tag] at @s run execute at @a[limit=1,sort=nearest,tag=endermite] run tp @s ~ ~1.8 ~
+execute as @e[tag=endermite_tag] at @s unless entity @a[distance=..16,tag=endermite] run kill @s
+
 ###Ambient Particles
 execute as @a[tag=hero] at @s run particle end_rod ~ ~0.1 ~ 0.1 0 0.1 0.01 1
 execute as @a[tag=blaze] at @s run particle smoke ^ ^0.1 ^-0.7 0.1 0 0.1 0.01 1
