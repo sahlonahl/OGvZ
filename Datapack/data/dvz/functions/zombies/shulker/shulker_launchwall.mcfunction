@@ -24,6 +24,7 @@ scoreboard players operation #targetX pos -= #playerX pos
 scoreboard players operation #targetY pos -= #playerY pos
 scoreboard players operation #targetZ pos -= #playerZ pos
 summon minecraft:armor_stand ^ ^1 ^1 {Silent:1b,Invulnerable:1b,ShowArms:0b,Small:1b,Invisible:1b,NoBasePlate:1b,Tags:["shulker_wall","shulker_projectile"],Rotation:[0F,0F],ArmorItems:[{},{},{},{id:"minecraft:end_stone",Count:1b}]}
+execute as @e[type=armor_stand,tag=shulker_wall,distance=..2.5] at @s rotated as @a[distance=..3,tag=shulker,limit=1,sort=nearest] run tp @s ~ ~ ~ ~ ~
 execute store result entity @e[type=armor_stand,tag=shulker_projectile,limit=1,sort=nearest] Motion[0] double 0.001 run scoreboard players get #targetX pos
 execute store result entity @e[type=armor_stand,tag=shulker_projectile,limit=1,sort=nearest] Motion[1] double 0.001 run scoreboard players get #targetY pos
 execute store result entity @e[type=armor_stand,tag=shulker_projectile,limit=1,sort=nearest] Motion[2] double 0.001 run scoreboard players get #targetZ pos

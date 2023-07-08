@@ -411,9 +411,9 @@ execute as @e[tag=endermite_tag] at @s run execute at @a[limit=1,sort=nearest,ta
 execute as @e[tag=endermite_tag] at @s unless entity @a[distance=..16,tag=endermite] run kill @s
 
 #Shulker Loop
-execute as @e[type=armor_stand,tag=shulker_wall] at @s run function dvz:zombies/shulker_loopwall
-execute as @e[type=armor_stand,tag=shulker_trap] at @s run function dvz:zombies/shulker_looptrap
-execute as @e[type=armor_stand,tag=shulker_bomb] at @s run function dvz:zombies/shulker_loopbomb
+execute as @e[type=armor_stand,tag=shulker_wall] at @s run function dvz:zombies/shulker/shulker_loopwall
+execute as @e[type=armor_stand,tag=shulker_trap] at @s run function dvz:zombies/shulker/shulker_looptrap
+execute as @e[type=armor_stand,tag=shulker_bomb] at @s run function dvz:zombies/shulker/shulker_loopbomb
 execute as @e[tag=shulker_explosive] at @s run function dvz:zombies/shulker/shulker_loop
 
 #Bat Loop

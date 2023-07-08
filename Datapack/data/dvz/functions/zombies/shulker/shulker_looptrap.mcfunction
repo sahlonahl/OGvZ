@@ -15,4 +15,4 @@
 
 particle minecraft:end_rod ~ ~1 ~ 0 0 0 0.05 2
 execute at @s unless block ~ ~ ~ #dvz:gothrough run function dvz:zombies/shulker/shulker_trapexplode
-execute at @s unless block ~ ~-1 ~ #dvz:gothrough run function dvz:zombies/shulker/shulker_trapexplode
+execute at @s unless block ~ ~-0.5 ~ #dvz:gothrough run function dvz:zombies/shulker/shulker_trapexplode
