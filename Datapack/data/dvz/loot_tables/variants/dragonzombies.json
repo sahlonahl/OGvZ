@@ -630,6 +630,56 @@
             },
             {
               "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Bat\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Support mob that\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"gathers information for monsters\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:114}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Shulker\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Advanced Mob!\",\"color\":\"gold\"}','{\"text\":\"Summoner mob that conjures\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"temporary structures\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:110}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.08
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
               "tag": "{display:{Name:'{\"text\":\"Witch\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Advanced Mob!\",\"color\":\"gold\"}','{\"text\":\"Support mob that brews\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"potions for themselves and allies\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:91}"
             }
           ]

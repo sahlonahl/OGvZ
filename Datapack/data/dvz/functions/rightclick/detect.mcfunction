@@ -123,7 +123,13 @@ execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:107,Unbreakable:1b}}}] at @s run function dvz:zombies/evoker/evoker_ward
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:108,Unbreakable:1b}}}] at @s run function dvz:rightclick/evoker
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:109,Unbreakable:1b}}}] at @s run function dvz:zombies/slime/slime_detonate
-
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:110,Unbreakable:1b}}}] at @s run function dvz:rightclick/shulker
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:111,Unbreakable:1b}}}] at @s run function dvz:zombies/shulker/shulker_throwwall
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:112,Unbreakable:1b}}}] at @s run function dvz:zombies/shulker/shulker_throwtrap
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:113,Unbreakable:1b}}}] at @s run function dvz:zombies/shulker/shulker_throwbomb
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:114,Unbreakable:1b}}}] at @s run function dvz:rightclick/bat
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:115,Unbreakable:1b}}}] at @s run function dvz:zombies/bat/bat_scan
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:116,Unbreakable:1b}}}] at @s run function dvz:zombies/bat/bat_dark
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:1000,Unbreakable:1b}}}] at @s run function dvz:dwarves/yellowbook
 
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{dSpawn:1b,Unbreakable:1b}}}] at @s run function dvz:setup/dspawnpoint

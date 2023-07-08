@@ -193,6 +193,17 @@ scoreboard players set @s DVZ.evokerbomb.ticks 0
 scoreboard players set @s DVZ.evokerbomb.cool 0
 scoreboard players set @s DVZ.evokerward.ticks 0
 scoreboard players set @s DVZ.evokerward.cool 0
+scoreboard players set @s DVZ.shulkerwall.ticks 0
+scoreboard players set @s DVZ.shulkerwall.cool 0
+scoreboard players set @s DVZ.shulkertrap.ticks 0
+scoreboard players set @s DVZ.shulkertrap.cool 0
+scoreboard players set @s DVZ.shulkerbomb.ticks 0
+scoreboard players set @s DVZ.shulkerbomb.cool 0
+scoreboard players set @s DVZ.batscan.ticks 0
+scoreboard players set @s DVZ.batscan.cool 0
+scoreboard players set @s DVZ.batdark.ticks 0
+scoreboard players set @s DVZ.batdark.cool 0
+
 #Miniboss
 scoreboard players set @s DVZ.ghast.ticks 0
 scoreboard players set @s DVZ.ghast.cool 0

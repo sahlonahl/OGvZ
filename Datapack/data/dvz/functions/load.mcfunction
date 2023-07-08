@@ -184,6 +184,20 @@ scoreboard objectives add DVZ.evokerbomb.cool dummy
 scoreboard objectives add DVZ.evokerward.ticks dummy
 scoreboard objectives add DVZ.evokerward.cool dummy
 
+#Shulker
+scoreboard objectives add DVZ.shulkerwall.ticks dummy
+scoreboard objectives add DVZ.shulkerwall.cool dummy
+scoreboard objectives add DVZ.shulkertrap.ticks dummy
+scoreboard objectives add DVZ.shulkertrap.cool dummy
+scoreboard objectives add DVZ.shulkerbomb.ticks dummy
+scoreboard objectives add DVZ.shulkerbomb.cool dummy
+
+#Bat
+scoreboard objectives add DVZ.batscan.ticks dummy
+scoreboard objectives add DVZ.batscan.cool dummy
+scoreboard objectives add DVZ.batdark.ticks dummy
+scoreboard objectives add DVZ.batdark.cool dummy
+
 #Miniboss
 scoreboard objectives add DVZ.ghast.ticks dummy
 scoreboard objectives add DVZ.ghast.cool dummy

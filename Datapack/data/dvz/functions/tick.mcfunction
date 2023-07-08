@@ -410,6 +410,15 @@ execute as @e[tag=endermine,nbt=!{ActiveEffects:[{Id:18}]}] at @s if entity @a[t
 execute as @e[tag=endermite_tag] at @s run execute at @a[limit=1,sort=nearest,tag=endermite] run tp @s ~ ~1.8 ~
 execute as @e[tag=endermite_tag] at @s unless entity @a[distance=..16,tag=endermite] run kill @s
 
+#Shulker Loop
+execute as @e[type=armor_stand,tag=shulker_wall] at @s run function dvz:zombies/shulker_loopwall
+execute as @e[type=armor_stand,tag=shulker_trap] at @s run function dvz:zombies/shulker_looptrap
+execute as @e[type=armor_stand,tag=shulker_bomb] at @s run function dvz:zombies/shulker_loopbomb
+execute as @e[tag=shulker_explosive] at @s run function dvz:zombies/shulker/shulker_loop
+
+#Bat Loop
+execute as @a[tag=dwarves,nbt={ActiveEffects:[{Id:24,Amplifier:6b}]}] at @s run function dvz:zombies/bat/bat_loop
+
 ###Ambient Particles
 execute as @a[tag=hero] at @s run particle end_rod ~ ~0.1 ~ 0.1 0 0.1 0.01 1
 execute as @a[tag=blaze] at @s run particle smoke ^ ^0.1 ^-0.7 0.1 0 0.1 0.01 1

@@ -2,7 +2,7 @@
 # Called By: dvz:rightclick\detect
 # File Name: allay
 # File Purpose: Spawn items for allay class
-# Created By: Sahlonahl
+# Created By: Galactic
 # 
 # Created On: 2020.02.29
 # Last Modified On: 2023.06.27

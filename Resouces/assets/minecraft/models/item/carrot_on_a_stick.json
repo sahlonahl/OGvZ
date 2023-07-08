@@ -111,6 +111,13 @@
 		{"predicate": {"custom_model_data":107}, "model": "items/_evoker_ward"},
 		{"predicate": {"custom_model_data":108}, "model": "items/_evoker_disc"},
 		{"predicate": {"custom_model_data":109}, "model": "items/_slime_virus"},
+		{"predicate": {"custom_model_data":110}, "model": "items/_music_disc_mellohi"},
+		{"predicate": {"custom_model_data":111}, "model": "items/_iron_ingot"},
+		{"predicate": {"custom_model_data":112}, "model": "items/_nether_brick"},
+		{"predicate": {"custom_model_data":113}, "model": "items/_slime_explode"},
+		{"predicate": {"custom_model_data":114}, "model": "items/_music_disc_11"},
+		{"predicate": {"custom_model_data":115}, "model": "items/_ender_eye"},
+		{"predicate": {"custom_model_data":116}, "model": "items/_ink_sac"},
 		{"predicate": {"custom_model_data":1000}, "model": "items/_yellowbook"}
 	]
 }

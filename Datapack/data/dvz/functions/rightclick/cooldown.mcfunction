@@ -215,6 +215,28 @@ execute as @a[scores={DVZ.evokerward.cool=1..}] run scoreboard players add @s DV
 execute as @a[scores={DVZ.evokerward.ticks=20..}] run scoreboard players remove @s DVZ.evokerward.cool 1
 execute as @a[scores={DVZ.evokerward.ticks=20..}] run scoreboard players set @s DVZ.evokerward.ticks 0
 execute as @a[scores={DVZ.evokerward.cool=..0}] run scoreboard players reset @s DVZ.evokerward.ticks
+#Shulker
+execute as @a[scores={DVZ.shulkerwall.cool=1..}] run scoreboard players add @s DVZ.shulkerwall.ticks 1
+execute as @a[scores={DVZ.shulkerwall.ticks=20..}] run scoreboard players remove @s DVZ.shulkerwall.cool 1
+execute as @a[scores={DVZ.shulkerwall.ticks=20..}] run scoreboard players set @s DVZ.shulkerwall.ticks 0
+execute as @a[scores={DVZ.shulkerwall.cool=..0}] run scoreboard players reset @s DVZ.shulkerwall.ticks
+execute as @a[scores={DVZ.shulkertrap.cool=1..}] run scoreboard players add @s DVZ.shulkertrap.ticks 1
+execute as @a[scores={DVZ.shulkertrap.ticks=20..}] run scoreboard players remove @s DVZ.shulkertrap.cool 1
+execute as @a[scores={DVZ.shulkertrap.ticks=20..}] run scoreboard players set @s DVZ.shulkertrap.ticks 0
+execute as @a[scores={DVZ.shulkertrap.cool=..0}] run scoreboard players reset @s DVZ.shulkertrap.ticks
+execute as @a[scores={DVZ.shulkerbomb.cool=1..}] run scoreboard players add @s DVZ.shulkerbomb.ticks 1
+execute as @a[scores={DVZ.shulkerbomb.ticks=20..}] run scoreboard players remove @s DVZ.shulkerbomb.cool 1
+execute as @a[scores={DVZ.shulkerbomb.ticks=20..}] run scoreboard players set @s DVZ.shulkerbomb.ticks 0
+execute as @a[scores={DVZ.shulkerbomb.cool=..0}] run scoreboard players reset @s DVZ.shulkerbomb.ticks
+#Bat
+execute as @a[scores={DVZ.batscan.cool=1..}] run scoreboard players add @s DVZ.batscan.ticks 1
+execute as @a[scores={DVZ.batscan.ticks=20..}] run scoreboard players remove @s DVZ.batscan.cool 1
+execute as @a[scores={DVZ.batscan.ticks=20..}] run scoreboard players set @s DVZ.batscan.ticks 0
+execute as @a[scores={DVZ.batscan.cool=..0}] run scoreboard players reset @s DVZ.batscan.ticks
+execute as @a[scores={DVZ.batdark.cool=1..}] run scoreboard players add @s DVZ.batdark.ticks 1
+execute as @a[scores={DVZ.batdark.ticks=20..}] run scoreboard players remove @s DVZ.batdark.cool 1
+execute as @a[scores={DVZ.batdark.ticks=20..}] run scoreboard players set @s DVZ.batdark.ticks 0
+execute as @a[scores={DVZ.batdark.cool=..0}] run scoreboard players reset @s DVZ.batdark.ticks
 #Dragon Breath
 execute as @a[scores={DVZ.breath.cool=1..}] run scoreboard players add @s DVZ.breath.ticks 1
 execute as @a[scores={DVZ.breath.ticks=20..}] run scoreboard players remove @s DVZ.breath.cool 1

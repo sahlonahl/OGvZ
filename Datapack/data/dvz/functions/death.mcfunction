@@ -91,6 +91,8 @@ tag @s remove allay
 tag @s remove slime
 tag @s remove evoker
 tag @s remove allay_carried
+tag @s remove shulker
+tag @s remove bat
 
 tag @s remove ghast
 tag @s remove johnny

@@ -63,6 +63,10 @@ give @s carrot_on_a_stick{display:{Name:'{"text":"Enchanter","color":"red"}'},Un
 give @s carrot_on_a_stick{display:{Name:'{"text":"Magma Cube","color":"red"}'},Unbreakable:1b,CustomModelData:96} 1
 #Allay
 give @s carrot_on_a_stick{display:{Name:'{"text":"Allay","color":"red"}'},Unbreakable:1b,CustomModelData:99} 1
+#Shulker
+give @s carrot_on_a_stick{display:{Name:'{"text":"Shulker","color":"red"}'},Unbreakable:1b,CustomModelData:110} 1
+#Bat
+give @s carrot_on_a_stick{display:{Name:'{"text":"Bat","color":"red"}'},Unbreakable:1b,CustomModelData:114} 1
 #Slime
 give @s carrot_on_a_stick{display:{Name:'{"text":"Slime","color":"red"}'},Unbreakable:1b,CustomModelData:104} 1
 #Evoker
