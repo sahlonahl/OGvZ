@@ -51,5 +51,4 @@ summon shulker ~-1 ~2 ~-2 {NoGravity:1b,Silent:1b,Team:"zMONSTER",PersistenceReq
 summon shulker ~1 ~ ~-2 {NoGravity:1b,Silent:1b,Team:"zMONSTER",PersistenceRequired:1b,NoAI:1b,Health:7f,AttachFace:1b,Color:16b,Tags:["shulker_block"],CustomName:'{"text":"Shulker Wall","bold":false,"italic":false}',ActiveEffects:[{Id:20,Amplifier:0b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:7}]}
 summon shulker ~1 ~1 ~-2 {NoGravity:1b,Silent:1b,Team:"zMONSTER",PersistenceRequired:1b,NoAI:1b,Health:7f,AttachFace:1b,Color:16b,Tags:["shulker_block"],CustomName:'{"text":"Shulker Wall","bold":false,"italic":false}',ActiveEffects:[{Id:20,Amplifier:0b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:7}]}
 summon shulker ~1 ~2 ~-2 {NoGravity:1b,Silent:1b,Team:"zMONSTER",PersistenceRequired:1b,NoAI:1b,Health:7f,AttachFace:1b,Color:16b,Tags:["shulker_block"],CustomName:'{"text":"Shulker Wall","bold":false,"italic":false}',ActiveEffects:[{Id:20,Amplifier:0b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:7}]}
-data merge entity @e[tag=shulker_block] {Color:16b}
 kill @s
