@@ -20,5 +20,5 @@ execute as @s if entity @s[tag=vex,scores={DVZ.ffly.cool=0}] run playsound entit
 
 execute as @s if entity @s[tag=vex,scores={DVZ.ffly.cool=0}] run gamemode spectator
 execute as @s if entity @s[tag=vex,scores={DVZ.ffly.cool=0}] run tag @s add fireflyactive
-execute as @s if entity @s[tag=vex,scores={DVZ.ffly.cool=0}] run scoreboard players set @s DVZ.ffly.cool 20
+execute as @s if entity @s[tag=vex,scores={DVZ.ffly.cool=0}] run scoreboard players set @s DVZ.ffly.cool 15
 execute as @s if entity @s[tag=vex,scores={DVZ.ffly.cool=0}] run scoreboard players set @s DVZ.rclick 0

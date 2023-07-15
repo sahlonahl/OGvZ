@@ -15,7 +15,7 @@
 
 execute as @s[tag=vex,scores={DVZ.snowb.cool=1..}] run title @s actionbar ["",{"text":" * [Phantom Killer] You have ","color":"#B5E4FF"},{"score":{"name":"@s","objective":"DVZ.snowb.cool"},"color":"dark_aqua"},{"text":" seconds remaining!","color":"#B5E4FF"}]
 
-execute as @s if entity @s[tag=vex,scores={DVZ.snowb.cool=0}] run attribute @s minecraft:generic.attack_damage modifier add d2578518-1f7c-4c10-9145-ff7145eae37b vex_attack 1 multiply
+execute as @s if entity @s[tag=vex,scores={DVZ.snowb.cool=0}] run attribute @s minecraft:generic.attack_damage modifier add d2578518-1f7c-4c10-9145-ff7145eae37b vex_attack 2 multiply
 execute as @s if entity @s[tag=vex,scores={DVZ.snowb.cool=0}] run playsound minecraft:entity.vex.charge player @a ~ ~ ~ 2 1
 execute as @s if entity @s[tag=vex,scores={DVZ.snowb.cool=0}] run tag @s add phantom_killer
 
