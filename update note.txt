@@ -1,0 +1,53 @@
+Added 10 new mob classes!
+Endermite
+- Disguised as dwarves
+- Can Infiltrate the keep with chorus fruit
+Vex
+- Stealthy Assassin
+- Can phase through blocks
+Piglin
+- Builder with an assortment of material
+Piglin Brute
+- Heavy fighter class
+- Enraged when shot with arrow
+Allay
+- Flying mob
+- Can carry other monsters
+Enchanter
+- Pocket Support
+- Buff teammate at cost of its own health
+Witch
+- Brew potions for itself and team
+- Turn teammates into frogs
+Magma Cube
+- Create Magma Cubes to distract dwarves
+- Either from yourself or teammates
+Slime
+- Heavy and deadly ranged class
+- Can melt entire keep if left alone
+Evoker
+- Group fight focused debuffer
+- Channel legions of ai mobs
+
+Patch 2023-6-30
+Endermite
++ Sword buffed
++ Slightly Increase armor value
+> Fixed helmet unbreaking
+Allay
+> Fixed Pickup cooldown
+Enchanter
++ Improve targetting system to better priortize mobs you look at
+Evoker
+- Sword removed
+- Summon cooldown 25s -> 35s
+- Ward cooldown 35s -> 45s Ward Absorp/Resistance duration 20s -> 15s
+Witch
+- Sword Sharpness 5 -> Sharpness 1
+Magma Cube
+- Small magma cubes are now auto killed
++ Weight slightly increased
+Misc
+> Fixes the header of some files
+> Changed some dummy aec to marker
+> Moved new addition to bottom of tick.mcfunction

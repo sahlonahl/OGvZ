@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.14
-# Last Modified By: Zaffre
+# Last Modified On: 2023.06.25
+# Last Modified By: Galactic
 #
 # Credit to:
 #
@@ -47,6 +47,30 @@ give @s carrot_on_a_stick{CustomModelData:68,Unbreakable:1b,display:{Name:'{"tex
 give @s carrot_on_a_stick{CustomModelData:71,Unbreakable:1b,display:{Name:'{"text":"Phantom","color":"red"}'}}
 #Evoker
 give @s carrot_on_a_stick{CustomModelData:74,Unbreakable:1b,display:{Name:'{"text":"Evoker","color":"red"}'}}
+#Piglin
+give @s carrot_on_a_stick{display:{Name:'{"text":"Piglin","color":"red"}'},Unbreakable:1b,CustomModelData:81} 1
+#Piglin_Brute
+give @s carrot_on_a_stick{display:{Name:'{"text":"Piglin Brute","color":"red"}'},Unbreakable:1b,CustomModelData:82} 1
+#Endermite
+give @s carrot_on_a_stick{display:{Name:'{"text":"Endermite","color":"red"}'},Unbreakable:1b,CustomModelData:83} 1
+#Vex
+give @s carrot_on_a_stick{display:{Name:'{"text":"Vex","color":"red"}'},Unbreakable:1b,CustomModelData:86} 1
+#Witch
+give @s carrot_on_a_stick{display:{Name:'{"text":"Witch","color":"red"}'},Unbreakable:1b,CustomModelData:91} 1
+#Enchanter
+give @s carrot_on_a_stick{display:{Name:'{"text":"Enchanter","color":"red"}'},Unbreakable:1b,CustomModelData:92} 1
+#Magma Cube
+give @s carrot_on_a_stick{display:{Name:'{"text":"Magma Cube","color":"red"}'},Unbreakable:1b,CustomModelData:96} 1
+#Allay
+give @s carrot_on_a_stick{display:{Name:'{"text":"Allay","color":"red"}'},Unbreakable:1b,CustomModelData:99} 1
+#Shulker
+give @s carrot_on_a_stick{display:{Name:'{"text":"Shulker","color":"red"}'},Unbreakable:1b,CustomModelData:110} 1
+#Bat
+give @s carrot_on_a_stick{display:{Name:'{"text":"Bat","color":"red"}'},Unbreakable:1b,CustomModelData:114} 1
+#Slime
+give @s carrot_on_a_stick{display:{Name:'{"text":"Slime","color":"red"}'},Unbreakable:1b,CustomModelData:104} 1
+#Evoker
+give @s carrot_on_a_stick{display:{Name:'{"text":"Evoker","color":"red"}'},Unbreakable:1b,CustomModelData:108} 1
 #ravager - miniboss
 give @s carrot_on_a_stick{CustomModelData:59,Unbreakable:1b,display:{Name:'{"text":"Ravager","color":"red"}'}}
 #ghast - miniboss

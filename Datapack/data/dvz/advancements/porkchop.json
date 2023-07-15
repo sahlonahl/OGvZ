@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:cooked_porkchop"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "dvz:zombies/piglin_brute/porkchop"
+  }
+}
