@@ -4,7 +4,7 @@
       "conditions": [
         {
           "condition": "random_chance",
-          "chance": 0.005
+          "chance": 0.01
         }
       ],
       "rolls": 1,
@@ -20,21 +20,10 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:59,Unbreakable:1b,display:{Name:\'{\"text\":\"Ravager\",\"color\":\"gray\",\"bold\":\"true\"}\',Lore:[\'[{\"text\":\"A tank; buff all nearby Zombie variants!\",\"color\":\"aqua\"}]\']}}"
+              "tag": "{CustomModelData:59,Unbreakable:1b,display:{Name:'{\"text\":\"Ravager\",\"color\":\"gray\",\"bold\":\"true\"}',Lore:['[{\"text\":\"A tank; buff all nearby Zombie variants!\",\"color\":\"aqua\"}]']}}"
             }
           ]
-        }
-      ]
-    },
-	{
-      "conditions": [
-        {
-          "condition": "random_chance",
-          "chance": 0.005
-        }
-      ],
-      "rolls": 1,
-      "entries": [
+        },
         {
           "type": "item",
           "name": "minecraft:carrot_on_a_stick",
@@ -46,21 +35,10 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:60,Unbreakable:1b,display:{Name:\'{\"text\":\"Ghast\",\"color\":\"gray\",\"bold\":\"true\"}\',Lore:[\'[{\"text\":\"Special Flight; rain hell from above!\",\"color\":\"aqua\"}]\']}}"
+              "tag": "{CustomModelData:60,Unbreakable:1b,display:{Name:'{\"text\":\"Ghast\",\"color\":\"gray\",\"bold\":\"true\"}',Lore:['[{\"text\":\"Special Flight; rain hell from above!\",\"color\":\"aqua\"}]']}}"
             }
           ]
-        }
-      ]
-    },
-	{
-      "conditions": [
-        {
-          "condition": "random_chance",
-          "chance": 0.005
-        }
-      ],
-      "rolls": 1,
-      "entries": [
+        },
         {
           "type": "item",
           "name": "minecraft:carrot_on_a_stick",
@@ -72,7 +50,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:61,Unbreakable:1b,display:{Name:\'{\"text\":\"Johnny\",\"color\":\"gray\",\"bold\":\"true\"}\',Lore:[\'[{\"text\":\"Massive damage dealer; Kill as fast as you can!\",\"color\":\"aqua\"}]\']}}"
+              "tag": "{CustomModelData:61,Unbreakable:1b,display:{Name:'{\"text\":\"Johnny\",\"color\":\"gray\",\"bold\":\"true\"}',Lore:['[{\"text\":\"Massive damage dealer; Kill as fast as you can!\",\"color\":\"aqua\"}]']}}"
             }
           ]
         }

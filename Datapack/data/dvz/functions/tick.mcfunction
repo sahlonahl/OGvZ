@@ -150,12 +150,11 @@ execute if entity @e[scores={DVZ.timer=35940}] as @a at @s run playsound minecra
 execute if entity @e[scores={DVZ.timer=35960}] as @a at @s run playsound minecraft:entity.armor_stand.break master @s ~ ~ ~ 1 2
 execute if entity @e[scores={DVZ.timer=35980}] as @a at @s run playsound minecraft:entity.armor_stand.break master @s ~ ~ ~ 1 2
 
+#Miniboss
+execute as @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=..18000}] run scoreboard players add @s[scores={DVZ.battletimer=..18001}] DVZ.battletimer 1
 
-
-###Miniboss spawn capability notification
-execute as @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=..18000}] run scoreboard players add @s[scores={DVZ.battletimer=..12001}] DVZ.battletimer 1
 execute if entity @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=18000}] as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.7 2
-execute if entity @a[tag=dvztimer,tag=fight,scores={DVZ.battletimer=18000..}] run title @a actionbar ["",{"text":"Beware:","bold":true,"color":"gold"},{"text":" Minibosses can appear!","bold":true,"color":"red"}] 
+execute if entity @a[tag=dvztimer,tag=fight,scores={DVZ.battletimer=18000..}] run tellraw @a ["",{"text":"Beware:","bold":true,"color":"gold"},{"text":" Minibosses can appear!","bold":true,"color":"red"}] 
 
 
 
@@ -338,6 +337,7 @@ execute as @a[tag=fireflyremove] at @s run tag @s remove fireflyremove
 
 #Blaze fire buffs
 execute as @e[tag=blaze,predicate=dvz:onfire] run effect give @s strength 5 0
+execute as @e[tag=blaze,predicate=!dvz:onfire,nbt={SelectedItem:{id:"minecraft:stick",tag:{Blaze:1}}}] unless block ~ ~-1 ~ air run summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:fire"},Time:1}
 
 #Chicken Fly test
 execute as @a[tag=flyactive] at @s run function dvz:zombies/chicken/flytest
@@ -367,7 +367,7 @@ execute as @a[tag=dwarves] at @s if entity @e[distance=..1.4,type=item,limit=1,s
 execute as @a[tag=dwarves,scores={DVZ.icy.check=1..}] at @s run kill @e[distance=..2,type=item,limit=1,sort=nearest,nbt={Item:{tag:{CustomModelData:53}}}]
 execute as @a[tag=dwarves,scores={DVZ.icy.check=1..}] at @s run function dvz:zombies/chillager/icebomb
 
-#GhastFlight:tm:
+#Ghastflight
 effect give @a[tag=ghastflight,nbt={Inventory:[{Slot:-106b,tag:{Levitate:1b}}]}] minecraft:levitation 1 1 true
 effect give @a[tag=ghastflight,nbt={Inventory:[{Slot:-106b,tag:{Descend:1b}}]}] minecraft:slow_falling 1 253 true
 
