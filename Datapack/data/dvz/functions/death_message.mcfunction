@@ -23,6 +23,16 @@ execute as @a[scores={DVZ.death=1..},tag=golem] run tellraw @a ["",{"text":"The 
 execute as @a[scores={DVZ.death=1..},tag=golem] run playsound entity.iron_golem.death master @a ~ ~ ~ 100 0.8 1
 execute as @a[scores={DVZ.death=1..},tag=golem] run playsound entity.iron_golem.death master @a ~ ~ ~ 100 0.5 1
 
+##Slime death
+execute as @a[scores={DVZ.death=1..},tag=slime] run tellraw @a ["",{"text":"The Slime dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
+execute as @a[scores={DVZ.death=1..},tag=slime] run playsound entity.slime.death master @a ~ ~ ~ 100 0.8 1
+execute as @a[scores={DVZ.death=1..},tag=slime] run playsound entity.slime.death master @a ~ ~ ~ 100 0.5 1
+
+##Evoker death
+execute as @a[scores={DVZ.death=1..},tag=evoker] run tellraw @a ["",{"text":"The Evoker dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
+execute as @a[scores={DVZ.death=1..},tag=evoker] run playsound entity.evoker.death master @a ~ ~ ~ 100 0.8 1
+execute as @a[scores={DVZ.death=1..},tag=evoker] run playsound entity.evoker.death master @a ~ ~ ~ 100 0.5 1
+
 ##Hoglin death
 execute as @a[scores={DVZ.death=1..},tag=pig3] run tellraw @a ["",{"text":"The hoglin dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
 execute as @a[scores={DVZ.death=1..},tag=pig3] run playsound entity.hoglin.death master @a ~ ~ ~ 100 0.8 1
@@ -43,6 +53,20 @@ execute as @a[scores={DVZ.death=1..},tag=johnny] run tellraw @a ["",{"text":"Joh
 execute as @a[scores={DVZ.death=1..},tag=johnny] run playsound entity.vindicator.death master @a ~ ~ ~ 100 0.8 1
 execute as @a[scores={DVZ.death=1..},tag=johnny] run playsound entity.vindicator.death master @a ~ ~ ~ 100 0.5 1
 
+##Endermite death
+execute as @a[scores={DVZ.death=1..},tag=endermite] run summon endermite ~ ~ ~ {Team:"zMONSTER"}
+execute as @a[scores={DVZ.death=1..},tag=endermite] run summon endermite ~ ~ ~ {Team:"zMONSTER"}
+execute as @a[scores={DVZ.death=1..},tag=endermite] run summon endermite ~ ~ ~ {Team:"zMONSTER"}
+execute as @a[scores={DVZ.death=1..},tag=endermite] run summon endermite ~ ~ ~ {Team:"zMONSTER"}
+execute as @a[scores={DVZ.death=1..},tag=endermite] run summon endermite ~ ~ ~ {Team:"zMONSTER"}
+
+##Spawn Magma Cube
+execute as @a[scores={DVZ.death=1..}] at @s if entity @a[distance=0.1..12,tag=magma_cube] run particle minecraft:lava ~ ~ ~ 0.5 0 0.5 0 25
+execute as @a[scores={DVZ.death=1..}] at @s if entity @a[distance=0.1..12,tag=magma_cube] run playsound minecraft:entity.zombie.break_wooden_door player @a ~ ~ ~ 2 0.7
+execute as @a[scores={DVZ.death=1..}] at @s if entity @a[distance=0.1..12,tag=magma_cube] run summon magma_cube ~ ~ ~ {Team:"zMONSTER",Health:16f,Size:3}
+
+#Allay Death
+execute as @a[scores={DVZ.death=1..},tag=allay] at @s run tag @a[distance=..5] remove allay_carried
 
 #Dwarf death
 execute as @a[scores={DVZ.death=1..},tag=deathmessage] run tellraw @a ["",{"text":"A dwarf has fallen ","color":"blue"},{"text":"(","color":"green"},{"selector":"@s","color":"green"},{"text":")","color":"green"},{"text":"! ","color":"blue"},{"score":{"name":"Dwarves","objective":"DVZ.playercount"},"color":"green"},{"text":" remain!","color":"blue"},{"text":"\n\n "}]
