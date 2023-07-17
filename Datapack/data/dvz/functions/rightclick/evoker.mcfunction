@@ -28,6 +28,6 @@ item replace entity @s[tag=evoker,tag=!selectedclass] armor.head with player_hea
 item replace entity @s[tag=evoker,tag=!selectedclass] armor.chest with leather_chestplate{display:{color:0},Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:3s},{id:"minecraft:blast_protection",lvl:4s},{id:"minecraft:binding_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:6,Operation:0,UUID:[I;-1608972337,360663721,-1892408177,-1507998250],Slot:"chest"}]} 1
 item replace entity @s[tag=evoker,tag=!selectedclass] armor.legs with leather_leggings{display:{color:0},Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:3s},{id:"minecraft:blast_protection",lvl:4s},{id:"minecraft:binding_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;-901999363,-1768928511,-2059730753,2084723041],Slot:"legs"}]} 1
 item replace entity @s[tag=evoker,tag=!selectedclass] armor.feet with leather_boots{display:{color:0},Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:3s},{id:"minecraft:blast_protection",lvl:4s},{id:"minecraft:binding_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:2,Operation:0,UUID:[I;-1112946177,306726155,-1585353291,2071380578],Slot:"feet"}]} 1
-effect give @s[tag=slime,tag=!selectedclass] slowness 99999 1 true
+effect give @s[tag=evoker,tag=!selectedclass] slowness 99999 1 true
 tag @s add selectedclass
 execute as @s[tag=evoker] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
