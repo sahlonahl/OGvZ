@@ -17,7 +17,7 @@ execute as @s[tag=witch,scores={DVZ.witchbuff.cool=1..}] run title @s actionbar 
 
 execute as @s if entity @s[tag=witch,scores={DVZ.witchbuff.cool=0}] run title @s actionbar {"text":" * [Soothing Alchemy] Poof!","color":"#510080"}
 execute as @s if entity @s[tag=witch,scores={DVZ.witchbuff.cool=0}] run playsound minecraft:block.brewing_stand.brew player @a ~ ~ ~ 2 0.1
-execute as @s if entity @s[tag=witch,scores={DVZ.witchdebuff.cool=0}] run clear @a[team=zMONSTER,distance=..8] splash_potion{witch_buff:1}
+execute as @s if entity @s[tag=witch,scores={DVZ.witchbuff.cool=0}] run clear @a[team=zMONSTER,distance=..8] splash_potion{witch_buff:1}
 
 execute as @s at @s if entity @s[tag=witch,scores={DVZ.witchbuff.cool=0}] run execute as @a[team=zMONSTER,distance=..8] run loot give @s loot dvz:classes/witch_buff
 execute as @s if entity @s[tag=witch,scores={DVZ.witchbuff.cool=0}] run scoreboard players set @s DVZ.witchbuff.cool 15
