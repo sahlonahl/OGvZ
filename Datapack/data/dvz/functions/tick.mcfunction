@@ -407,7 +407,7 @@ execute as @a[team=zMONSTER,scores={DVZ.crouch=1..}] run tag @s remove allay_car
 execute as @e[tag=endermine,nbt=!{ActiveEffects:[{Id:18}]}] at @s if entity @a[tag=dwarves,distance=..2.5] run function dvz:zombies/endermite/endermite_explode
 execute as @e[tag=endermite_tag] at @s run execute at @a[limit=1,sort=nearest,tag=endermite] run tp @s ~ ~1.8 ~
 execute as @e[tag=endermite_tag] at @s unless entity @a[distance=..16,tag=endermite] run kill @s
-execute as @a[tag=endermite] at @s run particle dust 0.467 0.000 1.000 1.5 ~ ~0.9 ~ 0.4 1.2 0.4 0.02 2 force @a[team=zMONSTER]
+execute as @a[tag=endermite] at @s run particle dust 0.467 0.000 1.000 1 ~ ~0.9 ~ 0.4 0.8 0.4 0.02 1 force @a[team=zMONSTER]
 
 #Shulker Loop
 execute as @e[type=armor_stand,tag=shulker_wall] at @s run function dvz:zombies/shulker/shulker_loopwall
