@@ -28,7 +28,7 @@
     {
       "rolls": {
         "min": 2,
-        "max": 3
+        "max": 4
       },
       "entries": [
         {
@@ -39,6 +39,21 @@
             {
               "function": "set_count",
               "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"knockback\",lvl:1}]}"
             }
           ]
         },
@@ -78,30 +93,11 @@
         {
           "type": "item",
           "name": "minecraft:crossbow",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
               "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"piercing\",lvl:3s},{id:\"quick_charge\",lvl:3s}]}"
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "name": "minecraft:crossbow",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Enchantments:[{id:\"multishot\",lvl:1s},{id:\"quick_charge\",lvl:3s}]}"
             }
           ]
         }
@@ -110,7 +106,7 @@
     {
       "rolls": {
         "min": 1,
-        "max": 2
+        "max": 1
       },
       "entries": [
         {
@@ -229,40 +225,6 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_axe",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Enchantments:[{id:\"knockback\",lvl:1}]}"
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "minecraft:generic.attack_damage",
-                  "name": "",
-                  "amount": 13,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                },
-                {
-                  "attribute": "minecraft:generic.attack_speed",
-                  "name": "",
-                  "amount": -2.9,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_axe",
           "weight": 1,
           "functions": [
             {
@@ -321,7 +283,7 @@
                 {
                   "attribute": "minecraft:generic.attack_damage",
                   "name": "",
-                  "amount": 20,
+                  "amount": 17,
                   "operation": "addition",
                   "slot": "mainhand"
                 },
@@ -439,7 +401,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{display:{Lore:[\'[{\"text\":\"Give to the Enchanter!\",\"color\":\"blue\"}]\']}}"
+              "tag": "{display:{Lore:['[{\"text\":\"Give to the Enchanter!\",\"color\":\"blue\"}]']}}"
             }
           ]
         }
@@ -465,7 +427,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:16575,display:{Name:\'{\"text\":\"Legendary Shard\",\"color\":\"dark_purple\"}\',Lore:[\'[{\"text\":\"Use with a Legendary Book to make Legendary Items.\",\"color\":\"blue\"}]\']}}"
+              "tag": "{CustomModelData:16575,display:{Name:'{\"text\":\"Legendary Shard\",\"color\":\"dark_purple\"}',Lore:['[{\"text\":\"Use with a Legendary Book to make Legendary Items.\",\"color\":\"blue\"}]']}}"
             }
           ]
         }

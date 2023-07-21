@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.02.19
-# Last Modified By: Zaffre
+# Last Modified On: 2023.07.21
+# Last Modified By: wilkekids
 #
 # Credit to:
 #
@@ -60,14 +60,16 @@ tag @a[tag=playerboss] remove ePortal
 
 clear @a[tag=playerboss] 
 effect clear @a[tag=playerboss]
-gamemode creative @a[tag=playerboss]
+gamemode survival @a[tag=playerboss]
 effect give @a[tag=playerboss] invisibility 1000000 2 true
 effect give @a[tag=playerboss] conduit_power 1000000 2 true
 effect give @a[tag=playerboss] dolphins_grace 1000000 0 true
 effect give @a[tag=playerboss] regeneration 1000000 9 true
 
 give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:43,Unbreakable:1b,display:{Name:'{"text":"Guardian Beam","color":"red"}'}}
-give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:44,Unbreakable:1b,display:{Name:'{"text":"Invisibility","color":"red"}'}}
+# give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:44,Unbreakable:1b,display:{Name:'{"text":"Invisibility","color":"red"}'}}
+give @a[tag=playerboss] trident{ Unbreakable:1b , Enchantments: [{id: "riptide", lvl: 3}] }
+item replace entity @s armor.feet with chainmail_boots{AttributeModifiers: [{Slot: "feet", AttributeName: "generic.armor", Name: "generic.armor", Amount: 3.0d, Operation: 0, UUID: [I; 4804, 4804, 4804, -4804]}, {Slot: "feet", AttributeName: "generic.armor_toughness", Name: "generic.armor_toughness", Amount: 2.0d, Operation: 0, UUID: [I; 70264, 70264, 70264, -70264]}], Enchantments: [{id: "binding_curse", lvl: 1}, {id: "feather_falling", lvl: 5}], Unbreakable: 1b, display: {Name: '{"text":"Guard Boots","color":"gold"}'}}
 give @a[tag=playerboss] guardian_spawn_egg 16
 give @a[tag=playerboss] drowned_spawn_egg 16
 give @a[tag=playerboss] pufferfish_spawn_egg 16

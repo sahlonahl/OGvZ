@@ -78,7 +78,7 @@
               "enchantments": {
                 "protection": 4,
                 "fire_protection": 4,
-                "thorns": 7
+                "thorns": 4
               }
             }
           ]
@@ -173,7 +173,7 @@
                 {
                   "attribute": "minecraft:generic.attack_damage",
                   "name": "",
-                  "amount": 4,
+                  "amount": 2,
                   "operation": "addition",
                   "slot": [
                     
