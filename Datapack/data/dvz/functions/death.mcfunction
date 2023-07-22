@@ -79,6 +79,20 @@ tag @s remove phantom
 tag @s remove chargecrp
 tag @s remove natured
 tag @s remove evoker
+tag @s remove evoker
+tag @s remove piglin
+tag @s remove piglin_brute
+tag @s remove endermite
+tag @s remove vex
+tag @s remove witch
+tag @s remove zenchanter
+tag @s remove magma_cube
+tag @s remove allay
+tag @s remove slime
+tag @s remove evoker
+tag @s remove allay_carried
+tag @s remove shulker
+tag @s remove bat
 
 tag @s remove ghast
 tag @s remove johnny
@@ -93,6 +107,8 @@ tag @s remove playerboss
 
 tag @s remove noboss
 tag @s remove selectedclass
+
+attribute @s minecraft:generic.attack_damage modifier remove d2578518-1f7c-4c10-9145-ff7145eae37b
 
 execute as @s at @e[type=marker,tag=zSpawn,sort=random] run spawnpoint @s ~ ~ ~
 

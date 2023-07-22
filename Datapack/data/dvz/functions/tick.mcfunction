@@ -13,6 +13,7 @@
 # Comments:
 # -------------------------------------------
 
+###Mandatory Starting Sub-Ticks
 #Player Checks
 schedule function dvz:unload 5s
 execute as @a[tag=!DVZready] run function dvz:dvzready
@@ -62,27 +63,39 @@ execute at @e[type=marker,tag=zProtect] run kill @a[tag=dwarves,tag=!admin,dista
 #execute at @a[tag=dwarves,scores={DVZ.health=..9}] run particle minecraft:dust 0.961 0 0 1 ~ ~ ~ 0.3 1 0.3 0.02 1
 #execute at @a[tag=dwarves,predicate=dvz:lowxp] run particle minecraft:rain ~ ~1 ~ 0.2 0.5 0.2 0.02 1
 
+
+
+###Lobby Effects
+#execute as @e[type=marker,tag=worldspawn] run effect give @a[distance=..15] weakness 10 0 true
+execute as @e[type=marker,tag=worldspawn] run effect give @a[distance=..15] saturation 10 0 true
+
+
+
 ###Unique Weapon Kills
 #Whispersong
 execute as @a[tag=zombies,scores={DVZ.killedby=1..}] at @s if entity @a[tag=wither,tag=dwarves,scores={DVZ.kills=1..},nbt={SelectedItem:{tag:{Whispersong:1b}}}] run execute as @a[tag=wither,tag=dwarves,scores={DVZ.kills=1..},nbt={SelectedItem:{tag:{Whispersong:1b}}}] at @s run function dvz:dwarves/heros/witherwarrior/whispersong
 execute as @a[tag=wither,tag=dwarves,scores={DVZ.bow=1..},nbt={SelectedItem:{tag:{Whispersong:1b}}}] at @s run tag @e[type=arrow,sort=nearest,limit=1] add whisperarrow
 execute at @e[type=arrow,tag=whisperarrow,nbt={inGround:0b}] run particle minecraft:soul ~ ~ ~ 0 0 0 .01 1 force
 
-###Variable Potions
-#Luck
+
+
+###Variable Potion Effects
+#Luck Effect
 execute as @a[nbt={ActiveEffects:[{Id:26,Ambient:1b}]}] run tag @s add luck
 execute as @a[tag=luck,tag=dwarves] run effect give @s regeneration 15 2
 execute as @a[tag=luck,tag=zombies] run effect give @s poison 15 2
 execute as @a[tag=luck] run effect clear @s luck
 execute as @a[tag=luck] run tag @s remove luck
 
-#Wither
+#Wither Effect
 execute as @a[tag=zombies,nbt={ActiveEffects:[{Id:20,Ambient:1b}]}] run tag @s add withering
 execute as @a[tag=withering,tag=zombies] run effect give @s regeneration 10 1
 execute as @a[tag=withering] run effect clear @s wither
 execute as @a[tag=withering] run tag @s remove withering
 
-###AoE Buffs
+
+
+###"Zombie Variants" AoE Buffs
 execute at @a[tag=zombie] run effect give @a[tag=zombie,distance=10..15,nbt=!{ActiveEffects:[{Id:10}]}] regeneration 2 0
 execute at @a[tag=zombie] run effect give @a[tag=zombie,distance=5..10,nbt=!{ActiveEffects:[{Id:10}]}] regeneration 2 1
 execute at @a[tag=zombie] run effect give @a[tag=zombie,distance=0.2..5,nbt=!{ActiveEffects:[{Id:10}]}] regeneration 2 2
@@ -95,15 +108,17 @@ execute at @a[tag=drowned] run effect give @a[tag=!drowned,tag=!zlguardian,tag=z
 execute at @a[tag=drowned] run effect give @a[tag=!drowned,tag=!zlguardian,tag=zombies,distance=5..10] dolphins_grace 15 0
 execute at @a[tag=drowned] run effect give @a[tag=!drowned,tag=!zlguardian,tag=zombies,distance=0.2..5] dolphins_grace 25 0
 
-execute at @a[tag=vindicator] run effect give @a[tag=husk,distance=10..15] haste 2 0
-execute at @a[tag=vindicator] run effect give @a[tag=husk,distance=5..10] haste 4 1
-execute at @a[tag=vindicator] run effect give @a[tag=husk,distance=0.2..5] haste 6 2
+execute at @a[tag=vindicator] run effect give @a[tag=vindicator,distance=10..15] haste 2 0
+execute at @a[tag=vindicator] run effect give @a[tag=vindicator,distance=5..10] haste 4 1
+execute at @a[tag=vindicator] run effect give @a[tag=vindicator,distance=0.2..5] haste 6 2
 
 effect give @a[tag=zombies] night_vision 1000000 1 true
 effect give @a[tag=zombies] conduit_power 1000000 1 true
 execute as @a[tag=blaze] at @s run effect give @a[tag=zombies,distance=..6] fire_resistance 4 1
 
-#Boss Spawn Timer
+
+
+###Boss Spawn Timer
 scoreboard players add @e[tag=dvztimer,tag=begin] DVZ.timer 1
 execute if entity @e[scores={DVZ.timer=12000}] run title @a actionbar ["",{"text":"FIGHT STARTS IN:","bold":true,"color":"green"},{"text":" 20m","bold":true,"color":"yellow"}]
 execute if entity @e[scores={DVZ.timer=24000}] run title @a actionbar ["",{"text":"FIGHT STARTS IN:","bold":true,"color":"green"},{"text":" 10m","bold":true,"color":"yellow"}]
@@ -146,9 +161,9 @@ execute if entity @e[scores={DVZ.timer=35980}] as @a at @s run playsound minecra
 
 #Miniboss spawn capability notification
 execute as @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=..18010}] run scoreboard players add @s[scores={DVZ.battletimer=..18010}] DVZ.battletimer 1
+
 execute if entity @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=18000}] as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.7 2
 execute if entity @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=18000}] run tellraw @a ["",{"text":"Beware:","bold":true,"color":"gold"},{"text":" Minibosses can appear!","bold":true,"color":"red"}] 
-
 
 
 
@@ -167,7 +182,6 @@ execute if entity @e[tag=dvztimer,scores={DVZ.wither.heal=..149}] run gamemode s
 execute if entity @e[tag=dvztimer,scores={DVZ.wither.heal=150..}] run gamemode creative @p[tag=playerwitherpick]
 execute as @a[scores={DVZ.wither=1..},tag=dwarves,tag=!wither] run function dvz:dwarves/special/witherwarrior
 execute as @p[tag=wither] at @s run effect give @a[tag=dwarves,tag=!hero,distance=..4] regeneration 2 0 true
-
 
 execute as @a[tag=playerwitherpick,predicate=dvz:sprinting,nbt={abilities:{flying:1b}}] run tag @s add speeding
 execute as @a[tag=playerwitherpick,predicate=dvz:sprinting,nbt={abilities:{flying:1b}}] run effect give @s blindness 1
@@ -204,11 +218,7 @@ execute if entity @a[tag=assassinpick] as @a[tag=playerboss] store result bossba
 
 
 
-
-#Lobby Effects
-#execute as @e[type=marker,tag=worldspawn] run effect give @a[distance=..15] weakness 10 0 true
-execute as @e[type=marker,tag=worldspawn] run effect give @a[distance=..15] saturation 10 0 true
-
+###Zombies Team Effects
 #Zombies Blindness
 execute as @a[tag=zombies,tag=!fight] run effect give @s blindness 30 255 true
 execute as @a[tag=zombies,tag=!fight] run effect give @s slowness 30 255 true
@@ -230,6 +240,24 @@ execute as @a[scores={DVZ.suicide.cool=..0},tag=zombies] at @s run playsound ite
 execute as @a[scores={DVZ.suicide.cool=..0},tag=zombies] run tellraw @s {"text":"[Suicide pill] Your suicide pill is ready.","color":"gray"}
 execute as @a[scores={DVZ.suicide.cool=..0},tag=zombies] run scoreboard players reset @s DVZ.suicide.cool
 
+#Mob Sound
+execute as @a[nbt={DeathTime:19s}] at @s run playsound minecraft:entity.shulker_bullet.hit player @a ~ ~ ~ 1 1
+execute if entity @a[scores={DVZ.death=1..}] run function dvz:zombies/mob_death
+execute if entity @a[nbt={HurtTime:10s}] run function dvz:zombies/mob_hurt
+
+#AI mob stuff
+execute as @e[type=#dvz:aimob,type=!player,tag=!AIbuffed] run function dvz:zombies/ai_buff
+effect clear @e[type=creeper,nbt={ignited:1b}]
+
+#AI mob aggro
+#execute as @e[type=#dvz:ai_monster,tag=!aggro] at @s run function dvz:zombies/ai_aggro 
+
+#Mob nature giving
+execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
+
+
+
+###Dwarves Team Effects
 #Shrine + Assassin Slayer + daytime mana regen
 execute as @e[type=marker,tag=dSpawn] at @s run scoreboard players add @a[tag=dwarves,tag=nomana,level=..99,distance=..5] DVZ.mana.ticks 1
 execute at @e[type=marker,tag=dSpawn] at @a[tag=dwarves,tag=nomana,level=..99,distance=..5] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
@@ -266,12 +294,7 @@ execute as @a[tag=golem,nbt={HurtTime:1s}] at @s if block ~ ~-5 ~ minecraft:air 
 
 
 
-#JBG Prevention for mobs
-#execute as @a[tag=golem,predicate=dvz:jbg] at @s if block ~ ~-5 ~ minecraft:air run effect give @s minecraft:levitation 1 128
-#execute as @a[tag=phantom,predicate=dvz:flyerjbg] at @s if block ~ ~-5 ~ minecraft:air run effect give @s minecraft:levitation 1 128
-#execute as @a[tag=bee,predicate=dvz:flyerjbg] at @s if block ~ ~-5 ~ minecraft:air run effect give @s minecraft:levitation 1 128
-#execute as @a[tag=chicken,predicate=dvz:flyerjbg] at @s if block ~ ~-5 ~ minecraft:air run effect give @s minecraft:levitation 1 128
-
+###Individual Zombies Team Class Branches
 #Enderman Invulnerability Penalty
 effect give @a[tag=enderman,tag=ePortal] minecraft:instant_health 60 200 true
 execute as @a[tag=enderman,tag=ePortal] at @a[tag=enderman,tag=ePortal] run execute as @e[type=!player,distance=..5] run effect give @s resistance 3 50
@@ -350,7 +373,7 @@ execute as @a[tag=dwarves] at @s if entity @e[distance=..1.4,type=item,limit=1,s
 execute as @a[tag=dwarves,scores={DVZ.icy.check=1..}] at @s run kill @e[distance=..2,type=item,limit=1,sort=nearest,nbt={Item:{tag:{CustomModelData:53}}}]
 execute as @a[tag=dwarves,scores={DVZ.icy.check=1..}] at @s run function dvz:zombies/chillager/icebomb
 
-#GhastFlight
+#Ghastflight
 effect give @a[tag=ghastflight,nbt={Inventory:[{Slot:-106b,tag:{Levitate:1b}}]}] minecraft:levitation 1 1 true
 effect give @a[tag=ghastflight,nbt={Inventory:[{Slot:-106b,tag:{Descend:1b}}]}] minecraft:slow_falling 1 253 true
 
@@ -365,7 +388,43 @@ execute as @e[type=fireball,tag=fballage,scores={DVZ.fballage.cool=..39}] at @s 
 execute as @e[type=fireball,tag=fballage,scores={DVZ.fballage.cool=40..59}] at @s run particle dust 0.275 0.275 0.275 3 ^ ^ ^ 1.000 0.000 0.000 0.01 2 normal
 execute as @e[type=fireball,tag=fballage,scores={DVZ.fballage.cool=60..}] at @s run particle dust 1 1 1 3 ^ ^ ^ 1.000 0.000 0.000 0.01 2 normal
 
-#Ambient Particles
+#Enchanter Loop
+execute as @a[team=zMONSTER,scores={DVZ.enchanterloop.ticks=1..}] at @s run function dvz:zombies/enchanter/enchant_loop
+
+#Magma Cube Loop
+execute as @e[type=armor_stand,tag=magma_grenade] at @s run function dvz:zombies/magma_cube/magma_loop
+team join zMONSTER @e[type=minecraft:magma_cube]
+tp @e[type=minecraft:magma_cube,nbt={Size:0}] ~ -1000 ~
+
+#Slime Loop
+execute as @e[type=armor_stand,tag=slime_spit] at @s run function dvz:zombies/slime/slime_spit_loop
+execute as @e[type=armor_stand,tag=slime_bomb] at @s run function dvz:zombies/slime/slime_bomb_loop
+
+#Evoker Loop
+execute as @e[type=armor_stand,tag=evoker_bolt] at @s run function dvz:zombies/evoker/evoker_bolt_loop
+execute as @a at @s run function dvz:zombies/evoker/evoker_loop
+execute as @a[tag=evoker,nbt={HurtTime:9s}] at @s run execute at @a[tag=dwarves,distance=..16] run summon evoker_fangs ~ ~ ~
+
+#Allay Loop
+execute as @a[tag=allay_carried] at @s run function dvz:zombies/allay/allay_loop
+execute as @a[team=zMONSTER,scores={DVZ.crouch=1..}] run tag @s remove allay_carried
+
+#Endermite
+execute as @e[tag=endermine,nbt=!{ActiveEffects:[{Id:18}]}] at @s if entity @a[tag=dwarves,distance=..2.5] run function dvz:zombies/endermite/endermite_explode
+execute as @e[tag=endermite_tag] at @s run execute at @a[limit=1,sort=nearest,tag=endermite] run tp @s ~ ~1.8 ~
+execute as @e[tag=endermite_tag] at @s unless entity @a[distance=..16,tag=endermite] run kill @s
+execute as @a[tag=endermite] at @s run particle dust 0.467 0.000 1.000 1 ~ ~0.9 ~ 0.4 0.8 0.4 0.02 1 force @a[team=zMONSTER]
+
+#Shulker Loop
+execute as @e[type=armor_stand,tag=shulker_wall] at @s run function dvz:zombies/shulker/shulker_loopwall
+execute as @e[type=armor_stand,tag=shulker_trap] at @s run function dvz:zombies/shulker/shulker_looptrap
+execute as @e[type=armor_stand,tag=shulker_bomb] at @s run function dvz:zombies/shulker/shulker_loopbomb
+execute as @e[tag=shulker_explosive] at @s run function dvz:zombies/shulker/shulker_loop
+
+#Bat Loop
+execute as @a[tag=dwarves,nbt={ActiveEffects:[{Id:24,Amplifier:6b}]}] at @s run function dvz:zombies/bat/bat_loop
+
+###Ambient Particles
 execute as @a[tag=hero] at @s run particle end_rod ~ ~0.1 ~ 0.1 0 0.1 0.01 1
 execute as @a[tag=blaze] at @s run particle smoke ^ ^0.1 ^-0.7 0.1 0 0.1 0.01 1
 execute as @a[tag=enderman] at @s run particle minecraft:portal ^ ^1 ^-0.5 0.5 0.5 0.5 0.5 1
@@ -378,21 +437,6 @@ execute as @a[tag=creeper,tag=chargecrp] at @s run particle firework ~ ~1 ~ 0.2 
 execute as @e[tag=soul] at @s run particle dust 0.000 0.867 1.000 2 ~ ~0.9 ~ 0.1 0.1 0.1 0.01 0 normal
 tp @e[tag=soulbody] @e[tag=soul,limit=1,sort=nearest]
 execute as @e[tag=soulbody] unless entity @e[tag=soul,distance=..2] run kill @s
-
-#Mob Sound
-execute as @a[nbt={DeathTime:19s}] at @s run playsound minecraft:entity.shulker_bullet.hit player @a ~ ~ ~ 1 1
-execute if entity @a[scores={DVZ.death=1..}] run function dvz:zombies/mob_death
-execute if entity @a[nbt={HurtTime:10s}] run function dvz:zombies/mob_hurt
-
-#AI mob stuff
-execute as @e[type=#dvz:aimob,type=!player,tag=!AIbuffed] run function dvz:zombies/ai_buff
-effect clear @e[type=creeper,nbt={ignited:1b}]
-
-#AI mob aggro
-#execute as @e[type=#dvz:ai_monster,tag=!aggro] at @s run function dvz:zombies/ai_aggro 
-
-#Mob nature giving
-execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
 
 
 
@@ -421,6 +465,9 @@ execute as @a[scores={DVZ.leave=1..}] run scoreboard players set @s DVZ.leave 0
 execute as @e[type=silverfish] run scoreboard players add @s DVZ.silver.kill 1
 execute as @e[type=silverfish,scores={DVZ.silver.kill=2400..}] run kill @s
 
+
+
+###Mandatory Ending Sub-Ticks
 #Player Counter & Game overs
 execute store result score Dwarves DVZ.playercount if entity @a[tag=dwarves]
 execute store result score Mobs DVZ.playercount if entity @a[tag=zombies]

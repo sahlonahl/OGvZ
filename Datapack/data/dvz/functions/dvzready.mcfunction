@@ -63,6 +63,16 @@ tag @s remove bee
 tag @s remove ghastflight
 tag @s remove chicken
 tag @s remove phantom
+tag @s remove piglin
+tag @s remove piglin_brute
+tag @s remove endermite
+tag @s remove vex
+tag @s remove witch
+tag @s remove zenchanter
+tag @s remove magma_cube
+tag @s remove allay
+tag @s remove slime
+tag @s remove evoker
 
 tag @s remove ghast
 tag @s remove johnny
@@ -158,6 +168,42 @@ scoreboard players set @s DVZ.summon.ticks 0
 scoreboard players set @s DVZ.summon.cool 0
 scoreboard players set @s DVZ.evothrow.ticks 0
 scoreboard players set @s DVZ.evothrow.cool 0
+scoreboard players set @s DVZ.witchdebuff.ticks 0
+scoreboard players set @s DVZ.witchdebuff.cool 0
+scoreboard players set @s DVZ.witchbuff.ticks 0
+scoreboard players set @s DVZ.witchbuff.cool 0
+scoreboard players set @s DVZ.witchfrog.ticks 0
+scoreboard players set @s DVZ.witchfrog.cool 0
+scoreboard players set @s DVZ.enchanterbook.ticks 0
+scoreboard players set @s DVZ.enchanterbook.cool 0
+scoreboard players set @s DVZ.enchanterloop.ticks 0
+scoreboard players set @s DVZ.magmathrow.ticks 0
+scoreboard players set @s DVZ.magmathrow.cool 0
+scoreboard players set @s DVZ.allaypick.ticks 0
+scoreboard players set @s DVZ.allaypick.cool 0
+scoreboard players set @s DVZ.slimespit.ticks 0
+scoreboard players set @s DVZ.slimespit.cool 0
+scoreboard players set @s DVZ.slimebomb.ticks 0
+scoreboard players set @s DVZ.slimebomb.cool 0
+scoreboard players set @s DVZ.slimeexplode.ticks 0
+scoreboard players set @s DVZ.slimeexplode.cool 0
+scoreboard players set @s DVZ.evokersummon.ticks 0
+scoreboard players set @s DVZ.evokersummon.cool 0
+scoreboard players set @s DVZ.evokerbomb.ticks 0
+scoreboard players set @s DVZ.evokerbomb.cool 0
+scoreboard players set @s DVZ.evokerward.ticks 0
+scoreboard players set @s DVZ.evokerward.cool 0
+scoreboard players set @s DVZ.shulkerwall.ticks 0
+scoreboard players set @s DVZ.shulkerwall.cool 0
+scoreboard players set @s DVZ.shulkertrap.ticks 0
+scoreboard players set @s DVZ.shulkertrap.cool 0
+scoreboard players set @s DVZ.shulkerbomb.ticks 0
+scoreboard players set @s DVZ.shulkerbomb.cool 0
+scoreboard players set @s DVZ.batscan.ticks 0
+scoreboard players set @s DVZ.batscan.cool 0
+scoreboard players set @s DVZ.batdark.ticks 0
+scoreboard players set @s DVZ.batdark.cool 0
+
 #Miniboss
 scoreboard players set @s DVZ.ghast.ticks 0
 scoreboard players set @s DVZ.ghast.cool 0
