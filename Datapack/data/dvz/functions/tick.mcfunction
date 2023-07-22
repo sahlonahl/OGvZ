@@ -145,7 +145,7 @@ execute if entity @e[scores={DVZ.timer=35960}] as @a at @s run playsound minecra
 execute if entity @e[scores={DVZ.timer=35980}] as @a at @s run playsound minecraft:entity.armor_stand.break master @s ~ ~ ~ 1 2
 
 #Miniboss spawn capability notification
-execute as @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=..18000}] run scoreboard players add @s[scores={DVZ.battletimer=..18001}] DVZ.battletimer 1
+execute as @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=..18010}] run scoreboard players add @s[scores={DVZ.battletimer=..18010}] DVZ.battletimer 1
 execute if entity @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=18000}] as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.7 2
 execute if entity @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=18000}] run tellraw @a ["",{"text":"Beware:","bold":true,"color":"gold"},{"text":" Minibosses can appear!","bold":true,"color":"red"}] 
 

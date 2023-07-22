@@ -77,7 +77,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{LegendItem:1b,WickedCrossbow:1b,Enchantments:[{id:\"piercing\",lvl:5s},{id:\"multishot\",lvl:1s},{id:\"quick_charge\",lvl:3s}],Unbreakable:1b,display:{Name:'{\"text\":\"Wicked Crossbow\",\"color\":\"dark_green\"}'}}"
+              "tag": "{LegendItem:1b,Enchantments:[{id:\"piercing\",lvl:5s},{id:\"multishot\",lvl:1s},{id:\"quick_charge\",lvl:3s}],WickedCrossbow:1b,Unbreakable:1b,display:{Name:'{\"text\":\"Wicked Crossbow\",\"color\":\"dark_green\"}'}}"
             }
           ]
         }
