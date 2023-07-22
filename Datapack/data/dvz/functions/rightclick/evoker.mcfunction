@@ -10,7 +10,7 @@
 #
 # Credit to:
 #
-# Comments:
+# Comments: The functions and disks that call this function have been disabled
 # -------------------------------------------
 
 tag @s[tag=!selectedclass] remove nopill

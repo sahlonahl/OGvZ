@@ -14,7 +14,7 @@
 # -------------------------------------------
 
 #Portal Errors
-execute as @s if entity @a[tag=enderman,tag=ePortal] run title @s actionbar {"text":" * [Portal] There's another ender portal open!","color":"dark_red"}
+execute as @s if entity @a[tag=enderman,tag=ePortal] run tellraw @s {"text":" * [Portal] There's another ender portal open!","color":"dark_red"}
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=..4}] if entity @a[tag=enderman,tag=ePortal] run scoreboard players set @s DVZ.portal.cool 5
 execute as @s[tag=enderman,scores={DVZ.portal.cool=1..}] run title @s actionbar ["",{"text":" * [Portal] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.portal.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 

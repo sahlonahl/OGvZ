@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.30
-# Last Modified By: Zaffre
+# Last Modified On: 2023.07.21
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -29,30 +29,39 @@ function dvz:itemeffects
 function dvz:nodrop
 execute as @a[tag=dwarves,scores={DVZ.death=1..}] at @s run function dvz:customdeath/customdeath
 
-#Player Notices
-execute at @e[type=marker,tag=zProtect] run kill @a[tag=dwarves,tag=!admin,distance=..30]
-execute at @e[type=marker,tag=dSpawn] run kill @a[tag=dwarves,tag=!admin,distance=150..]
-execute at @e[type=marker,tag=dSpawn] run execute at @a[tag=dwarves,tag=!admin,distance=130..] run particle minecraft:angry_villager ~ ~ ~ 1 2 1 0.2 5 force
-execute at @e[type=marker,tag=dSpawn] run execute at @a[tag=dwarves,tag=!admin,distance=130..] run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.1 0.7
+# - Player Notices - 
 
-execute at @e[type=marker,tag=zProtect] if entity @a[tag=dwarves,distance=..45,tag=!mobnotice] run title @a[tag=dwarves,distance=..45,tag=!mobnotice] subtitle {"text":"You're too close to mobs' spawn!","color":"yellow"}
-execute at @e[type=marker,tag=zProtect] if entity @a[tag=dwarves,distance=..45,tag=!mobnotice] run title @a[tag=dwarves,distance=..45,tag=!mobnotice] title ""
-execute at @e[type=marker,tag=zProtect] if entity @a[tag=dwarves,distance=..45,tag=!mobnotice] run tag @a[tag=dwarves,distance=..45] add mobnotice
-
+# dwarf too far from shrine
 execute at @e[type=marker,tag=dSpawn] if entity @a[tag=dwarves,distance=100..,tag=!dfarnotice] run title @a[tag=dwarves,distance=100..,tag=!dfarnotice] subtitle {"text":"You're too far from the shrine!","color":"yellow"}
 execute at @e[type=marker,tag=dSpawn] if entity @a[tag=dwarves,distance=100..,tag=!dfarnotice] run title @a[tag=dwarves,distance=100..,tag=!dfarnotice] title ""
 execute at @e[type=marker,tag=dSpawn] if entity @a[tag=dwarves,distance=100..,tag=!dfarnotice] run tag @a[tag=dwarves,distance=100..] add dfarnotice
+execute at @e[type=marker,tag=dSpawn] run tag @a[tag=dwarves,distance=..100] remove dfarnotice
 
+execute at @e[type=marker,tag=dSpawn] run execute at @a[tag=dwarves,tag=!admin,distance=130..] run particle minecraft:angry_villager ~ ~ ~ 1 2 1 0.2 5 force
+execute at @e[type=marker,tag=dSpawn] run execute at @a[tag=dwarves,tag=!admin,distance=130..] run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.1 0.7
+
+execute at @e[type=marker,tag=dSpawn] run kill @a[tag=dwarves,tag=!admin,distance=150..]
+
+# dwarf too close to mob spawn
+execute at @e[type=marker,tag=zProtect] if entity @a[tag=dwarves,distance=..45,tag=!mobnotice] run title @a[tag=dwarves,distance=..45,tag=!mobnotice] subtitle {"text":"You're too close to mobs' spawn!","color":"yellow"}
+execute at @e[type=marker,tag=zProtect] if entity @a[tag=dwarves,distance=..45,tag=!mobnotice] run title @a[tag=dwarves,distance=..45,tag=!mobnotice] title ""
+execute at @e[type=marker,tag=zProtect] if entity @a[tag=dwarves,distance=..45,tag=!mobnotice] run tag @a[tag=dwarves,distance=..45] add mobnotice
+execute at @e[type=marker,tag=zProtect] run tag @a[tag=dwarves,distance=45..] remove mobnotice
+
+execute at @e[type=marker,tag=zProtect] run execute at @a[tag=dwarves,tag=!admin,distance=..45] run particle minecraft:angry_villager ~ ~ ~ 1 2 1 0.2 5 force
+execute at @e[type=marker,tag=zProtect] run execute at @a[tag=dwarves,tag=!admin,distance=..45] run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.1 0.7
+
+execute at @e[type=marker,tag=zProtect] run kill @a[tag=dwarves,tag=!admin,distance=..30]
+
+# mobs too far from spawn
 #execute as @a[tag=zombies] at @s at @e[type=marker,tag=zProtect,sort=nearest,limit=1] if entity @s[tag=zombies,distance=300..,tag=!zfarnotice] run title @s[tag=zombies,distance=300..,tag=!zfarnotice] subtitle {"text":"Return to battle!","color":"red"}
 #execute as @a[tag=zombies] at @s at @e[type=marker,tag=zProtect,sort=nearest,limit=1] if entity @s[tag=zombies,distance=300..,tag=!zfarnotice] run title @s[tag=zombies,distance=300..,tag=!zfarnotice] title ""
 #execute as @a[tag=zombies] at @s at @e[type=marker,tag=zProtect,sort=nearest,limit=1] if entity @s[tag=zombies,distance=300..,tag=!zfarnotice] run tag @s[tag=zombies,distance=300..] add zfarnotice
+#execute at @e[type=marker,tag=zProtect] run tag @a[tag=zombies,distance=..300] remove zfarnotice
 
-execute at @e[type=marker,tag=zProtect] run tag @a[tag=dwarves,distance=45..] remove mobnotice
-execute at @e[type=marker,tag=dSpawn] run tag @a[tag=dwarves,distance=..100] remove dfarnotice
-execute at @e[type=marker,tag=zProtect] run tag @a[tag=zombies,distance=..300] remove zfarnotice
-
+# dwarf particles for low health/mana
 #execute at @a[tag=dwarves,scores={DVZ.health=..9}] run particle minecraft:dust 0.961 0 0 1 ~ ~ ~ 0.3 1 0.3 0.02 1
-execute at @a[tag=dwarves,predicate=dvz:lowxp] run particle minecraft:rain ~ ~1 ~ 0.2 0.5 0.2 0.02 1
+#execute at @a[tag=dwarves,predicate=dvz:lowxp] run particle minecraft:rain ~ ~1 ~ 0.2 0.5 0.2 0.02 1
 
 
 
@@ -150,11 +159,11 @@ execute if entity @e[scores={DVZ.timer=35940}] as @a at @s run playsound minecra
 execute if entity @e[scores={DVZ.timer=35960}] as @a at @s run playsound minecraft:entity.armor_stand.break master @s ~ ~ ~ 1 2
 execute if entity @e[scores={DVZ.timer=35980}] as @a at @s run playsound minecraft:entity.armor_stand.break master @s ~ ~ ~ 1 2
 
-#Miniboss
-execute as @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=..18000}] run scoreboard players add @s[scores={DVZ.battletimer=..18001}] DVZ.battletimer 1
+#Miniboss spawn capability notification
+execute as @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=..18010}] run scoreboard players add @s[scores={DVZ.battletimer=..18010}] DVZ.battletimer 1
 
 execute if entity @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=18000}] as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.7 2
-execute if entity @a[tag=dvztimer,tag=fight,scores={DVZ.battletimer=18000..}] run tellraw @a ["",{"text":"Beware:","bold":true,"color":"gold"},{"text":" Minibosses can appear!","bold":true,"color":"red"}] 
+execute if entity @e[tag=dvztimer,tag=fight,scores={DVZ.battletimer=18000}] run tellraw @a ["",{"text":"Beware:","bold":true,"color":"gold"},{"text":" Minibosses can appear!","bold":true,"color":"red"}] 
 
 
 
@@ -304,9 +313,6 @@ execute as @a[tag=pigman,scores={DVZ.pigeat=1..}] run scoreboard players set @s 
 execute as @a[tag=pig3,nbt={SelectedItem:{id:"minecraft:iron_sword",tag:{Unbreakable:1b}}},scores={DVZ.attack.hit=1..}] at @s run playsound entity.hoglin.attack master @a ~ ~ ~ 1 1
 execute as @a[tag=pig3,nbt={SelectedItem:{id:"minecraft:iron_sword",tag:{Unbreakable:1b}}},scores={DVZ.attack.hit=1..}] at @s run effect give @p[tag=dwarves,distance=..4,nbt={HurtTime:10s},limit=1] hunger 2 75
 
-#Ravager weakness
-execute if entity @a[tag=ravager] run function dvz:zombies/miniboss/ravagerpenalty
-
 #Spider hit detection
 execute as @a[tag=spider,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:25,Unbreakable:1b}}},scores={DVZ.attack.hit=1..}] at @s run playsound entity.spider.ambient master @a ~ ~ ~ 1 1.5
 execute as @a[tag=spider,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:25,Unbreakable:1b}}},scores={DVZ.attack.hit=1..}] at @s run effect give @p[tag=dwarves,distance=..4,nbt={HurtTime:10s}] poison 4 2
@@ -344,7 +350,7 @@ execute as @a[tag=flyactive] at @s run function dvz:zombies/chicken/flytest
 execute as @a[tag=flyactive,scores={DVZ.fly.airtime=100}] run tag @s add flyremove
 execute as @a[tag=flyremove] at @s run scoreboard players reset @s DVZ.fly.airtime
 execute as @a[tag=flyremove] at @s run tag @s remove flyactive
-execute as @a[tag=flyremove] at @s run gamemode survival
+execute as @a[tag=flyremove] at @s run gamemode adventure
 execute as @a[tag=flyremove] at @s run tag @s remove flyremove
 
 #Chicken eggsplosion
