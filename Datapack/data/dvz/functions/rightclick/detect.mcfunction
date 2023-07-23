@@ -129,6 +129,7 @@ execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:113,Unbreakable:1b}}}] at @s run function dvz:zombies/shulker/shulker_throwbomb
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:114,Unbreakable:1b}}}] at @s run function dvz:rightclick/bat
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:115,Unbreakable:1b}}}] at @s run function dvz:zombies/bat/bat_scan
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:116,Unbreakable:1b}}}] at @s run function dvz:zombies/bat/bat_dark
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:1000,Unbreakable:1b}}}] at @s run function dvz:dwarves/yellowbook
 
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{dSpawn:1b,Unbreakable:1b}}}] at @s run function dvz:setup/dspawnpoint
