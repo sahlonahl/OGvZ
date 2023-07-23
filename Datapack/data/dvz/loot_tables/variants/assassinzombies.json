@@ -415,6 +415,306 @@
           ]
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Endermite\",\"color\":\"red\",\"bold\":false}',Lore:['{\"text\":\"Disguise as dwarves\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"and infiltrate the keep\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:83}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Piglin\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Builder class with a\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"variety of tools\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:81}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.15
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Vex\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Stealthy assassin that can\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"phase through blocks\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:86}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Piglin Brute\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Heavy melee fighter, angered\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"when shot\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:82}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Allay\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Flying mob that can\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"transport other mobs\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:99}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Mooshroom\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Support mob that\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"acts as a pocket buffer\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:92}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Magma Cube\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Advanced Mob!\",\"color\":\"gold\"}','{\"text\":\"Summoner mob that conjures\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"large amounts of magma cubes\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:96}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.09
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Bat\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Support mob that\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"gathers information for monsters\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:114}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Shulker\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Advanced Mob!\",\"color\":\"gold\"}','{\"text\":\"Summoner mob that conjures\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"temporary structures\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:110}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.08
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Witch\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Advanced Mob!\",\"color\":\"gold\"}','{\"text\":\"Support mob that brews\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"potions for themselves and allies\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:91}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.07
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Slime\",\"color\":\"dark_purple\",\"bold\":false}',Lore:['{\"text\":\"Advanced Mob!\",\"color\":\"gold\"}','{\"text\":\"Powerful mob that focuses on ranged\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"attack and keep destruction\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:104} "
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.01
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Evoker\",\"color\":\"dark_purple\",\"bold\":false}',Lore:['{\"text\":\"Advanced Mob!\",\"color\":\"gold\"}','{\"text\":\"Powerful mob that focuses on debuff,\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"summoning and group support\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:108}"
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.01
+        }
+      ]
     }
   ]
 }

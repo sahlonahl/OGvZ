@@ -1,0 +1,53 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Witch Brew\",\"color\":\"dark_purple\",\"bold\":false,\"italic\":false}'},CustomPotionEffects:[{Id:3,Amplifier:2b,Duration:200},{Id:6,Amplifier:1b,Duration:1}],witch_buff:1,Potion:\"minecraft:thick\",CustomPotionColor:16773754}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Witch Brew\",\"color\":\"dark_purple\",\"bold\":false,\"italic\":false}'},CustomPotionEffects:[{Id:1,Amplifier:2b,Duration:160},{Id:6,Amplifier:1b,Duration:1}],witch_buff:1,Potion:\"minecraft:thick\",CustomPotionColor:49916}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Witch Brew\",\"color\":\"dark_purple\",\"bold\":false,\"italic\":false}'},CustomPotionEffects:[{Id:6,Amplifier:2b,Duration:1},{Id:10,Amplifier:1b,Duration:200}],witch_buff:1,Potion:\"minecraft:thick\",CustomPotionColor:16727026}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Witch Brew\",\"color\":\"dark_purple\",\"bold\":false,\"italic\":false}'},CustomPotionEffects:[{Id:5,Amplifier:0b,Duration:300},{Id:6,Amplifier:1b,Duration:1}],witch_buff:1,Potion:\"minecraft:thick\",CustomPotionColor:5181462}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
