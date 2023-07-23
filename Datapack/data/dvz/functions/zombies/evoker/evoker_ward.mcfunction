@@ -26,7 +26,7 @@ execute as @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run partic
 execute as @s at @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run effect give @e[team=zMONSTER,distance=0.1..15] instant_health 1 1 true
 execute as @s at @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run effect give @e[team=zMONSTER,distance=0.1..15] regeneration 10 1 true
 execute as @s at @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run effect give @e[team=zMONSTER,distance=0.1..15] resistance 15 0 true
-execute as @s at @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run effect give @e[team=zMONSTER,distance=0.1..15] absorption 15 4 true
+execute as @s at @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run effect give @a[team=zMONSTER,distance=0.1..15] absorption 15 4 true
 
 execute as @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run scoreboard players set @s DVZ.evokerward.cool 45
 execute as @s if entity @s[tag=evoker,scores={DVZ.evokerward.cool=0}] run scoreboard players set @s DVZ.rclick 0
