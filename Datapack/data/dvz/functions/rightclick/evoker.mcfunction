@@ -8,7 +8,7 @@
 # Last Modified On: 2023.07.21
 # Last Modified By: Wilkekids
 #
-# Credit to: MMMEEEEEEEEEEEEEEEE 
+# Credit to: MMMEEEEEEEEEEEEEEEE (Zaffre)
 #
 # Comments: The functions and disks that call this function have been disabled
 # -------------------------------------------

@@ -5,8 +5,8 @@
 # Created By: Zaffre
 # 
 # Created On: 2023.03.05
-# Last Modified On: 2023.06.13
-# Last Modified By: Zaffre
+# Last Modified On: 2023.07.27
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -33,6 +33,7 @@ effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Naughty:1b}}]}] st
 effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Naughty:1b}}]}] hunger 999999 1
 tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Naughty:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"NAUGHTY","bold":true,"color":"yellow"}]
 tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Naughty:1b}}]}] add natured
+
 
 
 #Bold
@@ -128,6 +129,8 @@ effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] sl
 effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] mining_fatigue 999999 1
 tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"SASSY","bold":true,"color":"yellow"}]
 tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] add natured
+
+
 
 #Gluttonous
 effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Gluttonous:1b}}]}] health_boost 999999 1
