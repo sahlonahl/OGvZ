@@ -8,7 +8,7 @@
 # Last Modified On: 2023.06.22
 # Last Modified By: Zaffre
 #
-# Credit to: MEEEEEEE -Zaff
+# Credit to:
 #
 # Comments: Shrine uses a structure template.
 # -------------------------------------------

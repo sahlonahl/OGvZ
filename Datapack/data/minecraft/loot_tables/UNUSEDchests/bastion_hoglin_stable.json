@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:chest",
-  "pools": [
-    {
-      "entries": [],
-      "rolls": 1.0
-    }
-  ]
-}

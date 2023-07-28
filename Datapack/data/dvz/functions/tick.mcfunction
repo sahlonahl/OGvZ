@@ -190,7 +190,7 @@ execute if entity @a[tag=assassinpick] as @a[scores={DVZ.death=1..}] run team le
 execute if entity @a[tag=assassinpick] if entity @a[tag=dwarves,scores={DVZ.death=1..}] run team leave @a[scores={DVZ.death=1..}]
 execute if entity @a[tag=assassinpick] if entity @a[tag=dwarves,tag=!assassinpick,scores={DVZ.death=1..}] run title @a subtitle ["",{"selector":"@a[scores={DVZ.death=1..}]","color":"red"},{"text":" is not the assassin!","color":"red"}]
 execute if entity @a[tag=assassinpick] if entity @a[tag=dwarves,tag=!assassinpick,scores={DVZ.death=1..}] run scoreboard players set @a[tag=assassinpick] DVZ.timer 1200
-execute if entity @a[tag=assassinpick] if entity @a[tag=dwarves,tag=assassinpick,scores={DVZ.death=1..}] run tellraw @a ["",{"text":" [*] ","color":"red","bold":"true"},{"selector":"@a[tag=assassinpick]","color":"dark_red"},{"text":" was the assassin!","color":"red"}]
+execute if entity @a[tag=assassinpick] if entity @a[tag=dwarves,tag=assassinpick,scores={DVZ.death=1..}] run tellraw @a ["",{"text":" [*] ","color":"red","bold":true},{"selector":"@a[tag=assassinpick]","color":"dark_red"},{"text":" was the assassin!","color":"red"}]
 execute if entity @a[tag=assassinpick] if entity @a[tag=dwarves,scores={DVZ.death=1..}] run title @a title ""
 execute if entity @a[tag=assassinpick] if entity @a[tag=dwarves,tag=assassinpick,scores={DVZ.death=1..}] unless entity @a[tag=!assassinpick,scores={DVZ.kills=1},tag=dwarves] run execute as @r[tag=!assassinpick,tag=dwarves] run function dvz:dwarves/special/assassinslayer
 execute if entity @a[tag=assassinpick] if entity @a[tag=dwarves,tag=assassinpick,scores={DVZ.death=1..}] run execute as @a[tag=!assassinpick,scores={DVZ.kills=1},tag=dwarves] run function dvz:dwarves/special/assassinslayer

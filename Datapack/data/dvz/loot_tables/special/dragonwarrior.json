@@ -14,7 +14,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:9,Unbreakable:1b,AttributeModifiers:[{Slot:\"mainhand\", AttributeName:\"generic.attack_damage\", Name:\"generic.attack_damage\", Amount:8.0, Operation:0, UUID:[I; 1, 1, -1, -1]}],display:{Name:\'{\"text\":\"Golden Flail\",\"color\":\"gold\"}\',Lore:[\'[{\"text\":\"Builds walls in front of you.\"}]'\','\'[{\"text\":\"Requires 10 levels!\",\"color\":\"red\"}]\',\'[{\"text\":\"10 second cooldown!\",\"color\":\"red\"}]\']}}"
+              "tag": "{CustomModelData:9,Unbreakable:1b,AttributeModifiers:[{Slot:\"mainhand\", AttributeName:\"generic.attack_damage\", Name:\"generic.attack_damage\", Amount:8.0, Operation:0, UUID:[I; 1, 1, -1, -1]}],display:{Name:\'{\"text\":\"Golden Flail\",\"color\":\"gold\"}\',Lore:[\'[{\"text\":\"Builds walls in front of you.\"}]\',\'[{\"text\":\"Requires 10 levels!\",\"color\":\"red\"}]\',\'[{\"text\":\"10 second cooldown!\",\"color\":\"red\"}]\']}}"
             }
           ]
         }
