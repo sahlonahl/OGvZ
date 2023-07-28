@@ -9,11 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Lonely:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Lonely"
+              "tag": "{Lonely:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Lonely\"}',Lore:['{\"text\":\"You are strong and slow\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -23,11 +19,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Brave:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Brave"
+              "tag": "{Brave:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Brave\"}',Lore:['{\"text\":\"You are strong and slow\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -37,11 +29,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Adamant:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Adamant"
+              "tag": "{Adamant:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Adamant\"}',Lore:['{\"text\":\"You are strong and fatigued\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -51,11 +39,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Naughty:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Naughty"
+              "tag": "{Naughty:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Naughty\"}',Lore:['{\"text\":\"You are strong and hungry\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -65,11 +49,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Bold:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Bold"
+              "tag": "{Bold:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Bold\"}',Lore:['{\"text\":\"You are slow and resistant\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -79,11 +59,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Relaxed:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Relaxed"
+              "tag": "{Relaxed:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Relaxed\"}',Lore:['{\"text\":\"You are fatigued and resistant\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -93,11 +69,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Impish:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Impish"
+              "tag": "{Impish:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Impish\"}',Lore:['{\"text\":\"You are hungry and resistant\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -107,11 +79,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Lax:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Lax"
+              "tag": "{Lax:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Lax\"}',Lore:['{\"text\":\"You are hungry and resistant\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -121,11 +89,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Timid:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Timid"
+              "tag": "{Timid:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Timid\"}',Lore:['{\"text\":\"You are fast and weak\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -135,11 +99,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Hasty:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Hasty"
+              "tag": "{Hasty:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Hasty\"}',Lore:['{\"text\":\"You are fast, just fast\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -149,11 +109,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Jolly:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Jolly"
+              "tag": "{Jolly:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Jolly\"}',Lore:['{\"text\":\"You are fast and fatigued\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -163,11 +119,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Naive:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Naive"
+              "tag": "{Naive:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Naive\"}',Lore:['{\"text\":\"You are fast and hungry\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -177,11 +129,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Modest:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Modest"
+              "tag": "{Modest:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Modest\"}',Lore:['{\"text\":\"You are weak and hasty\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -191,11 +139,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Mild:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Mild"
+              "tag": "{Mild:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Mild\"}',Lore:['{\"text\":\"You are hasty, just hasty\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -205,11 +149,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Quiet:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Quiet"
+              "tag": "{Quiet:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Quiet\"}',Lore:['{\"text\":\"You are slow and hasty\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -219,11 +159,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Rash:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Rash"
+              "tag": "{Rash:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Rash\"}',Lore:['{\"text\":\"You are hungry and hasty\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -233,11 +169,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Calm:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Calm"
+              "tag": "{Calm:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Calm\"}',Lore:['{\"text\":\"You have slow falling and fire resistance and weakness\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -247,11 +179,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Gentle:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Gentle"
+              "tag": "{Gentle:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Gentle\"}',Lore:['{\"text\":\"You have slow falling and fire resistance\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -261,11 +189,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Sassy:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Sassy"
+              "tag": "{Sassy:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Sassy\"}',Lore:['{\"text\":\"You have slow falling and fire resistance and slowness\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -275,11 +199,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Careful:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Careful"
+              "tag": "{Careful:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Careful\"}',Lore:['{\"text\":\"You have slow falling and fire resistance and mining fatigue\",\"color\":\"blue\"}']}}"
             }
           ]
         },
@@ -289,11 +209,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Gluttonous:1b,Nature:1b}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Nature: Gluttonous"
+              "tag": "{Gluttonous:1b,Nature:1b,display:{Name:'{\"text\":\"Nature: Gluttonous\"}',Lore:['{\"text\":\"You are healthy, regenerative, slow and fatigued\",\"color\":\"blue\"}']}}"
             }
           ]
         }

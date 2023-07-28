@@ -4,7 +4,7 @@
       "conditions": [
         {
           "condition": "random_chance",
-          "chance": 0.5
+          "chance": 0.75
         }
       ],
       "rolls": 1,
@@ -28,7 +28,7 @@
     {
       "rolls": {
         "min": 2,
-        "max": 3
+        "max": 4
       },
       "entries": [
         {
@@ -39,6 +39,21 @@
             {
               "function": "set_count",
               "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"knockback\",lvl:1}]}"
             }
           ]
         },
@@ -78,7 +93,7 @@
         {
           "type": "item",
           "name": "minecraft:crossbow",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
@@ -91,7 +106,7 @@
     {
       "rolls": {
         "min": 1,
-        "max": 2
+        "max": 1
       },
       "entries": [
         {
@@ -117,7 +132,7 @@
                 {
                   "attribute": "minecraft:generic.attack_damage",
                   "name": "",
-                  "amount": 9,
+                  "amount": 11,
                   "operation": "addition",
                   "slot": "mainhand"
                 },
@@ -162,7 +177,7 @@
                 {
                   "attribute": "minecraft:generic.attack_speed",
                   "name": "",
-                  "amount": -1.9,
+                  "amount": -1.5,
                   "operation": "addition",
                   "slot": "mainhand"
                 }
@@ -185,14 +200,14 @@
                 {
                   "attribute": "minecraft:generic.attack_damage",
                   "name": "",
-                  "amount": 9,
+                  "amount": 10,
                   "operation": "addition",
                   "slot": "mainhand"
                 },
                 {
                   "attribute": "minecraft:generic.attack_speed",
                   "name": "",
-                  "amount": -2.9,
+                  "amount": -2.6,
                   "operation": "addition",
                   "slot": "mainhand"
                 },
@@ -200,85 +215,6 @@
                   "attribute": "minecraft:generic.armor",
                   "name": "",
                   "amount": -2,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:trident",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:1}"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "Spear"
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "minecraft:generic.attack_damage",
-                  "name": "",
-                  "amount": 7,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                },
-                {
-                  "attribute": "minecraft:generic.attack_speed",
-                  "name": "",
-                  "amount": -2.5,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                },
-                {
-                  "attribute": "minecraft:generic.armor",
-                  "name": "",
-                  "amount": -2.5,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_axe",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Enchantments:[{id:\"knockback\",lvl:1}]}"
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "minecraft:generic.attack_damage",
-                  "name": "",
-                  "amount": 9,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                },
-                {
-                  "attribute": "minecraft:generic.attack_speed",
-                  "name": "",
-                  "amount": -2.9,
                   "operation": "addition",
                   "slot": "mainhand"
                 }
@@ -309,14 +245,14 @@
                 {
                   "attribute": "minecraft:generic.attack_damage",
                   "name": "",
-                  "amount": 9,
+                  "amount": 11,
                   "operation": "addition",
                   "slot": "mainhand"
                 },
                 {
                   "attribute": "minecraft:generic.attack_speed",
                   "name": "",
-                  "amount": -3.1,
+                  "amount": -2.9,
                   "operation": "addition",
                   "slot": "mainhand"
                 }
@@ -347,14 +283,14 @@
                 {
                   "attribute": "minecraft:generic.attack_damage",
                   "name": "",
-                  "amount": 13,
+                  "amount": 17,
                   "operation": "addition",
                   "slot": "mainhand"
                 },
                 {
                   "attribute": "minecraft:generic.attack_speed",
                   "name": "",
-                  "amount": -3.2,
+                  "amount": -3.3,
                   "operation": "addition",
                   "slot": "mainhand"
                 }
@@ -465,7 +401,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{display:{Lore:[\'[{\"text\":\"Give to the Enchanter!\",\"color\":\"blue\"}]\']}}"
+              "tag": "{display:{Lore:['[{\"text\":\"Give to the Enchanter!\",\"color\":\"blue\"}]']}}"
             }
           ]
         }
@@ -491,7 +427,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:16575,display:{Name:\'{\"text\":\"Legendary Shard\",\"color\":\"dark_purple\"}\',Lore:[\'[{\"text\":\"Use with a Legendary Book to make Legendary Items.\",\"color\":\"blue\"}]\']}}"
+              "tag": "{CustomModelData:16575,display:{Name:'{\"text\":\"Legendary Shard\",\"color\":\"dark_purple\"}',Lore:['[{\"text\":\"Use with a Legendary Book to make Legendary Items.\",\"color\":\"blue\"}]']}}"
             }
           ]
         }

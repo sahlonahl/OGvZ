@@ -15,9 +15,9 @@
 
 team leave @s[tag=!selectedclass]
 tag @s[tag=!selectedclass] add miniboss
-title @a subtitle ["",{"selector":"@s[tag=miniboss]","color":"red"},{"text":" is a ravager!","color":"red"}]
+title @a subtitle ["",{"selector":"@s[tag=miniboss]","color":"red"},{"text":" is a Ravager!","color":"red"}]
 title @a title ""
-tellraw @a ["",{"selector":"@s[tag=miniboss]","color":"red"},{"text":" is a ravager!","color":"red","bold":true}]
+tellraw @a ["",{"selector":"@s[tag=miniboss]","color":"red"},{"text":" is a Ravager!","color":"red","bold":true}]
 playsound event.raid.horn master @a ~ ~ ~ 200 0.8
 playsound entity.ravager.roar master @a ~ ~ ~ 200
 

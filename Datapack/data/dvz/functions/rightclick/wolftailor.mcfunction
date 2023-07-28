@@ -21,7 +21,7 @@ clear @s[tag=!selectedclass]
 give @s[tag=wolf,tag=!selectedclass] cooked_beef 64
 give @s[tag=wolf,tag=!selectedclass] diamond_sword{Enchantments:[{id:"sharpness",lvl:5}]} 1
 give @s[tag=wolf,tag=!selectedclass] golden_sword{Enchantments:[{id:"fire_aspect",lvl:2},{id:"knockback",lvl:2}]} 1
-give @s[tag=wolf,tag=!selectedclass] bone 64
+give @s[tag=wolf,tag=!selectedclass] bone 32
 give @s[tag=wolf,tag=!selectedclass] wolf_spawn_egg 6
 item replace entity @s[tag=wolf,tag=!selectedclass] armor.head with firework_star{CustomModelData:14,display:{Name:'{"text":"Wolf Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"protection",lvl:1},{id:"binding_curse",lvl:1}]} 1
 item replace entity @s[tag=wolf,tag=!selectedclass] armor.chest with chainmail_chestplate{Unbreakable: 1b, display: {color: 14539483}, AttributeModifiers: [{Slot: "chest", AttributeName: "generic.armor", Name: "generic.armor", Amount: 5.0d, Operation: 0, UUID: [I; 64800, -64800, 64800, 64800]}], Enchantments: [{id: "blast_protection", lvl: 4}, {id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1

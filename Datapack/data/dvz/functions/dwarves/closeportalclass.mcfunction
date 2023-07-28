@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.09
+# Last Modified On: 2023.06.10
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -19,8 +19,8 @@ tag @s[tag=!slay] add giveslay
 tag @s[tag=takeslay] remove slay
 tag @s[tag=giveslay] add slay
 
-tellraw @s[tag=slay] {"text":" * [Slay] You will become a mob automatically!","color":"red","italic":"true"}
-tellraw @s[tag=takeslay] {"text":" * [Slay] You will no longer become a mob automatically.","color":"red","italic":"true"}
+title @s[tag=slay] actionbar {"text":" * [Slay] You will become a mob automatically!","color":"red","italic":"true"}
+title @s[tag=takeslay] actionbar {"text":" * [Slay] You will no longer become a mob automatically.","color":"red","italic":"true"}
 
 tag @s remove giveslay
 tag @s remove takeslay

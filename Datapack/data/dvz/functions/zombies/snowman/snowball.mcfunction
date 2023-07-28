@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.01.18
+# Last Modified On: 2023.06.13
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -13,8 +13,8 @@
 # Comments:
 # -------------------------------------------
 
-execute as @s[tag=snowman,scores={DVZ.snowb.cool=1..}] run tellraw @s ["",{"text":" * [Snowball] You have ","color":"dark_aqua"},{"score":{"name":"@s","objective":"DVZ.snowb.cool"},"color":"dark_aqua"},{"text":" seconds remaining!","color":"dark_aqua"}]
-execute as @s if entity @s[tag=snowman,scores={DVZ.snowb.cool=0}] run tellraw @s {"text":" * [Snowball] Poof!","color":"aqua"}
+execute as @s[tag=snowman,scores={DVZ.snowb.cool=1..}] run title @s actionbar ["",{"text":" * [Snowball] You have ","color":"dark_aqua"},{"score":{"name":"@s","objective":"DVZ.snowb.cool"},"color":"dark_aqua"},{"text":" seconds remaining!","color":"dark_aqua"}]
+execute as @s if entity @s[tag=snowman,scores={DVZ.snowb.cool=0}] run title @s actionbar {"text":" * [Snowball] Poof!","color":"aqua"}
 execute as @s if entity @s[tag=snowman,scores={DVZ.snowb.cool=0}] run playsound entity.witch.throw master @a ~ ~ ~
 
 execute if entity @s[tag=snowman,scores={DVZ.snowb.cool=0}] run function dvz:zombies/snowman/snowballsummon

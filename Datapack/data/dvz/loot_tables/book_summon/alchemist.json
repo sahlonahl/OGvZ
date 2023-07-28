@@ -3,13 +3,13 @@
     {
       "rolls": {
         "min": 1,
-        "max": 3
+        "max": 2
       },
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:sand",
-          "weight": 10,
+          "name": "minecraft:glass",
+          "weight": 3,
           "functions": [
             {
               "function": "set_count",
@@ -31,37 +31,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:27,Unbreakable:1b,display:{Name:\'{\"text\":\"Health Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 30 mana!\",\"color\":\"red\"}]\']}}"
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "name": "minecraft:carrot_on_a_stick",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{CustomModelData:28,Unbreakable:1b,display:{Name:\'{\"text\":\"Strength Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 20 mana!\",\"color\":\"red\"}]\']}}"
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "name": "minecraft:carrot_on_a_stick",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{CustomModelData:29,Unbreakable:1b,display:{Name:\'{\"text\":\"Jump Boost Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 20 mana!\",\"color\":\"red\"}]\']}}"
+              "tag": "{CustomModelData:27,Unbreakable:1b,display:{Name:\'{\"text\":\"Health Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 20 mana!\",\"color\":\"red\"}]\']}}"
             }
           ]
         },
@@ -76,7 +46,37 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:30,Unbreakable:1b,display:{Name:\'{\"text\":\"Speed Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 20 mana!\",\"color\":\"red\"}]\']}}"
+              "tag": "{CustomModelData:28,Unbreakable:1b,display:{Name:\'{\"text\":\"Strength Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 15 mana!\",\"color\":\"red\"}]\']}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:29,Unbreakable:1b,display:{Name:\'{\"text\":\"Jump Boost Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 15 mana!\",\"color\":\"red\"}]\']}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomModelData:30,Unbreakable:1b,display:{Name:\'{\"text\":\"Speed Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 15 mana!\",\"color\":\"red\"}]\']}}"
             }
           ]
         }

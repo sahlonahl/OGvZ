@@ -14,27 +14,27 @@
 # -------------------------------------------
 
 ##Enderman death
-execute as @a[scores={DVZ.death=1..},tag=enderman] run tellraw @a ["",{"text":"The enderman dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
+execute as @a[scores={DVZ.death=1..},tag=enderman] run tellraw @a ["",{"text":"The Enderman dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
 execute as @a[scores={DVZ.death=1..},tag=enderman] run playsound entity.enderman.death master @a ~ ~ ~ 100 0.8 1
 execute as @a[scores={DVZ.death=1..},tag=enderman] run playsound entity.enderman.death master @a ~ ~ ~ 100 0.5 0.5
 
 ##Iron golem death
-execute as @a[scores={DVZ.death=1..},tag=golem] run tellraw @a ["",{"text":"The iron golem dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
+execute as @a[scores={DVZ.death=1..},tag=golem] run tellraw @a ["",{"text":"The Golem dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
 execute as @a[scores={DVZ.death=1..},tag=golem] run playsound entity.iron_golem.death master @a ~ ~ ~ 100 0.8 1
 execute as @a[scores={DVZ.death=1..},tag=golem] run playsound entity.iron_golem.death master @a ~ ~ ~ 100 0.5 1
 
 ##Hoglin death
-execute as @a[scores={DVZ.death=1..},tag=pig3] run tellraw @a ["",{"text":"The hoglin dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
+execute as @a[scores={DVZ.death=1..},tag=pig3] run tellraw @a ["",{"text":"The Hoglin dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
 execute as @a[scores={DVZ.death=1..},tag=pig3] run playsound entity.hoglin.death master @a ~ ~ ~ 100 0.8 1
 execute as @a[scores={DVZ.death=1..},tag=pig3] run playsound entity.hoglin.death master @a ~ ~ ~ 100 0.5 1
 
 ##Ravager death
-execute as @a[scores={DVZ.death=1..},tag=ravager] run tellraw @a ["",{"text":"The ravager dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
+execute as @a[scores={DVZ.death=1..},tag=ravager] run tellraw @a ["",{"text":"The Ravager dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
 execute as @a[scores={DVZ.death=1..},tag=ravager] run playsound entity.ravager.death master @a ~ ~ ~ 100 0.8 1
 execute as @a[scores={DVZ.death=1..},tag=ravager] run playsound entity.ravager.death master @a ~ ~ ~ 100 0.5 1
 
 ##Ghast death
-execute as @a[scores={DVZ.death=1..},tag=ghast] run tellraw @a ["",{"text":"The ghast dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
+execute as @a[scores={DVZ.death=1..},tag=ghast] run tellraw @a ["",{"text":"The Ghast dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
 execute as @a[scores={DVZ.death=1..},tag=ghast] run playsound entity.ghast.death master @a ~ ~ ~ 100 0.8 1
 execute as @a[scores={DVZ.death=1..},tag=ghast] run playsound entity.ghast.death master @a ~ ~ ~ 100 0.5 1
 
@@ -60,7 +60,7 @@ execute as @a[scores={DVZ.death=1..},tag=deathmessage] at @s run playsound minec
 execute as @a[scores={DVZ.death=1..},tag=deathmessage] run summon minecraft:armor_stand ~ ~-1.25 ~ {Tags:["grave"],Marker:1b,Invisible:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:stone_brick_wall",Count:1b}]}
 execute as @a[scores={DVZ.death=1..},tag=deathmessage] run summon bat ~ ~ ~ {Silent:1b,Tags:["soul"],ActiveEffects:[{Id:14,Amplifier:0b,Duration:1999980,ShowParticles:0b},{Id:20,Amplifier:0b,Duration:1999980,ShowParticles:0b}]}
 execute as @a[scores={DVZ.death=1..},tag=deathmessage] run summon armor_stand ~ ~0.5 ~ {Small:1,Marker:1b,Invisible:1b,Invulnerable:1b,Tags:["soulbody"],ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"Jellyfish"}}]}
-execute as @a[scores={DVZ.death=1..},tag=deathmessage] unless entity @a[tag=!fight] run summon skeleton ~ ~ ~ {CustomName:'{"text":"Fallen Dwarf","color":"red","bold":true}',HandItems:[{id:"minecraft:diamond_sword",Count:1b},{id:"minecraft:shield",Count:1b}],HandDropChances:[0.000F,0.000F],ArmorItems:[{id:"minecraft:diamond_boots",Count:1b},{id:"minecraft:diamond_leggings",Count:1b},{id:"minecraft:diamond_chestplate",Count:1b},{id:"minecraft:oak_button",Count:1b}],ArmorDropChances:[0.000F,0.000F,0.000F,0.000F]}
+execute as @a[scores={DVZ.death=1..},tag=deathmessage] unless entity @a[tag=!fight] run summon skeleton ~ ~ ~ {CustomName:'{"text":"Fallen Dwarf","color":"red","bold":true}',HandItems:[{id:"minecraft:iron_sword",Count:1b},{id:"minecraft:shield",Count:1b}],HandDropChances:[0.000F,0.000F],ArmorItems:[{id:"minecraft:diamond_boots",Count:1b},{id:"minecraft:diamond_leggings",Count:1b},{id:"minecraft:diamond_chestplate",Count:1b},{id:"minecraft:oak_button",Count:1b}],ArmorDropChances:[0.000F,0.000F,0.000F,0.000F]}
 
 #Hero dwarf death
 execute as @a[scores={DVZ.death=1..},tag=hero] run tellraw @a ["",{"text":"The dwarven hero has fallen ","color":"blue"},{"text":"(","bold":true,"color":"yellow"},{"selector":"@s","bold":true,"color":"yellow"},{"text":")","bold":true,"color":"yellow"},{"text":"! ","color":"blue"},{"score":{"name":"Dwarves","objective":"DVZ.playercount"},"color":"green"},{"text":" remain!","color":"blue"},{"text":"\n\n "}]

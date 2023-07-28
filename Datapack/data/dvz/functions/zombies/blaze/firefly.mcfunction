@@ -5,17 +5,17 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.01.29
-# Last Modified By: Zaffre
+# Last Modified On: 2023.07.06
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
 # Comments: controlled entirely by dvz:tick
 # -------------------------------------------
 
-execute as @s[tag=blaze,scores={DVZ.ffly.cool=1..}] run tellraw @s ["",{"text":" * [Firefly] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.ffly.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
+execute as @s[tag=blaze,scores={DVZ.ffly.cool=1..}] run title @s actionbar ["",{"text":" * [Firefly] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.ffly.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 
-execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run tellraw @s {"text":" * [Firefly] Poof!","color":"red"}
+execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run title @s actionbar {"text":" * [Firefly] Poof!","color":"red"}
 execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run playsound entity.blaze.ambient master @a ~ ~ ~ 1 2
 
 execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run gamemode spectator

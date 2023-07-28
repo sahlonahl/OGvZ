@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.01.29
+# Last Modified On: 2023.06.10
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -13,11 +13,11 @@
 # Comments: Teleports behind a zombie and weakens them for a final blow
 # -------------------------------------------
 
-execute as @s[tag=wither,scores={DVZ.sfury.cool=1..}] run tellraw @s ["",{"text":" * [Sunfury] You have ","color":"gold"},{"score":{"name":"@s","objective":"DVZ.sfury.cool"},"color":"gold"},{"text":" seconds remaining!","color":"gold"}]
-execute if entity @s[tag=wither,level=..29] run tellraw @s {"text":" * [Sunfury] You need at least 30 Mana!","color":"gold"}
+execute as @s[tag=wither,scores={DVZ.sfury.cool=1..}] run title @s actionbar ["",{"text":" * [Sunfury] You have ","color":"gold"},{"score":{"name":"@s","objective":"DVZ.sfury.cool"},"color":"gold"},{"text":" seconds remaining!","color":"gold"}]
+execute if entity @s[tag=wither,level=..29] run title @s actionbar {"text":" * [Sunfury] You need at least 30 Mana!","color":"gold"}
 tag @s[tag=wither,scores={DVZ.sfury.cool=0},level=30..] add SFURYuse
 
-execute if entity @s[tag=SFURYuse] run tellraw @s {"text":" * [Sunfury] Poof!","color":"yellow"}
+execute if entity @s[tag=SFURYuse] run title @s actionbar {"text":" * [Sunfury] Poof!","color":"yellow"}
 execute if entity @s[tag=SFURYuse] as @s at @s run playsound item.trident.return master @a ~ ~ ~ 1 1.5
 
 execute as @s if entity @s[tag=SFURYuse] run summon marker ~ ~ ~ {Tags:[ray]}

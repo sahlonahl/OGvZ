@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.14
-# Last Modified By: Zaffre
+# Last Modified On: 2023.07.21
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -45,8 +45,8 @@ give @s carrot_on_a_stick{CustomModelData:62,Unbreakable:1b,display:{Name:'{"tex
 give @s carrot_on_a_stick{CustomModelData:68,Unbreakable:1b,display:{Name:'{"text":"Chicken","color":"red"}'}}
 #Phantom
 give @s carrot_on_a_stick{CustomModelData:71,Unbreakable:1b,display:{Name:'{"text":"Phantom","color":"red"}'}}
-#Evoker
-give @s carrot_on_a_stick{CustomModelData:74,Unbreakable:1b,display:{Name:'{"text":"Evoker","color":"red"}'}}
+#Evoker (unused)
+# give @s carrot_on_a_stick{CustomModelData:74,Unbreakable:1b,display:{Name:'{"text":"Evoker","color":"red"}'}}
 #ravager - miniboss
 give @s carrot_on_a_stick{CustomModelData:59,Unbreakable:1b,display:{Name:'{"text":"Ravager","color":"red"}'}}
 #ghast - miniboss

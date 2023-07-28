@@ -8,7 +8,7 @@
 # Last Modified On: 2023.03.11
 # Last Modified By: Zaffre
 #
-# Credit to: MEEEEEEE -Zaff
+# Credit to:
 #
 # Comments: Shrine uses a full structure than a placed template
 # -------------------------------------------

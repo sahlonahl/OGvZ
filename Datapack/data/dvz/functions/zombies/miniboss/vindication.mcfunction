@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.02.14
+# Last Modified On: 2023.06.13
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -13,7 +13,7 @@
 # Comments:
 # -------------------------------------------
 
-execute as @s[tag=johnny,scores={DVZ.vindic.cool=1..}] run tellraw @s ["",{"text":" * [Vindication] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.vindic.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
+execute as @s[tag=johnny,scores={DVZ.vindic.cool=1..}] run title @s actionbar ["",{"text":" * [Vindication] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.vindic.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 execute as @s[tag=johnny,scores={DVZ.vindic.cool=0}] run teleport @e[type=player,tag=zombie] @s
 execute as @s[tag=johnny,scores={DVZ.vindic.cool=0}] run teleport @e[type=player,tag=husk] @s
 execute as @s[tag=johnny,scores={DVZ.vindic.cool=0}] run teleport @e[type=player,tag=vindicator] @s
