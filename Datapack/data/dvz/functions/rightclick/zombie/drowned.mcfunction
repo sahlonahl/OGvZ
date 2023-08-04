@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.13
-# Last Modified By: Zaffre
+# Last Modified On: 2023.08.04
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -26,7 +26,7 @@ loot give @s[tag=drowned,tag=!selectedclass] loot dvz:classes/drownedtrident
 give @s[tag=drowned,tag=!selectedclass] splash_potion{Potion:"minecraft:strong_healing"} 2
 loot give @s[tag=drowned,tag=!selectedclass] loot dvz:classes/zombiepotion
 loot give @s[tag=drowned,tag=!selectedclass] loot dvz:classes/zombietoys
-give @s[tag=drowned,tag=!selectedclass] shield{Damage:286}
+give @s[tag=drowned,tag=!selectedclass] shield
 
 #item replace entity @s[tag=drowned,tag=!selectedclass] armor.head with pumpkin{display:{Name:'{"text":"Drowned Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1},{id:"protection",lvl:2}],AttributeModifiers:[{Slot:"head",AttributeName:"generic.armor", Name:"generic.armor", Amount:2.0, Operation:0, UUID:[I; -64585, 64804, 64804, 64804]}]}
 item replace entity @s[tag=drowned,tag=!selectedclass] armor.head with player_head{SkullOwner:{Id:[I;790009440,1639859901,-1397417282,-100772047],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNmN2NjZjYxZGJjM2Y5ZmU5YTYzMzNjZGUwYzBlMTQzOTllYjJlZWE3MWQzNGNmMjIzYjNhY2UyMjA1MSJ9fX0="}]}},display:{Name:'{"text":"Drowned Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1},{id:"protection",lvl:2}],AttributeModifiers:[{Slot:"head",AttributeName:"generic.armor", Name:"generic.armor", Amount:2.0, Operation:0, UUID:[I; -64585, 64804, 64804, 64804]}]}

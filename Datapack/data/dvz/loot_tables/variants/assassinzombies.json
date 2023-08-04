@@ -384,7 +384,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:34,Unbreakable:1b,display:{Name:\'{\"text\":\"Enderman\",\"color\":\"dark_purple\"}\',Lore:[\'[{\"text\":\"Advanced class!\",\"color\":\"gold\"}]\',\'[{\"text\":\"Survive for 2 minutes, then summon a portal.\",\"color\":\"aqua\"}]\']}}"
+              "tag": "{CustomModelData:34,Unbreakable:1b,display:{Name:\'{\"text\":\"Enderman\",\"color\":\"dark_purple\"}\',Lore:[\'[{\"text\":\"Advanced class!\",\"color\":\"gold\"}]\',\'[{\"text\":\"Survive for 30 seconds, then summon a portal.\",\"color\":\"aqua\"}]\']}}"
             }
           ]
         }

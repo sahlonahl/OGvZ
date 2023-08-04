@@ -5,17 +5,17 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.02.08
-# Last Modified By: Zaffre
+# Last Modified On: 2023.08.04
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
 # Comments:
 # -------------------------------------------
 
-execute as @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=1..}] run tellraw @s ["",{"text":" * [Beam] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.Gbeam.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
+execute as @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=1..}] run title @s actionbar ["",{"text":" * [Beam] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.Gbeam.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 
-execute as @s if entity @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=0}] run tellraw @s {"text":" * [Beam] Poof!","color":"red"}
+execute as @s if entity @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=0}] run title @s actionbar {"text":" * [Beam] Poof!","color":"red"}
 execute as @s if entity @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=0}] run playsound minecraft:block.respawn_anchor.deplete master @a ~ ~ ~ 1 2
 
 execute as @s if entity @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=0}] run summon marker ~ ~ ~ {Tags:[ray]}

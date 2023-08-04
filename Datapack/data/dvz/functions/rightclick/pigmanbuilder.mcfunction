@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.05.13
+# Last Modified On: 2023.08.04
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -49,7 +49,7 @@ give @s[tag=builder,tag=!selectedclass] torch 32
 give @s[tag=builder,tag=!selectedclass] iron_pickaxe{display:{Name:'{"text":"Builder Pickaxe","color":"green"}'},Enchantments:[{id:"minecraft:efficiency",lvl:4s}]} 1
 give @s[tag=builder,tag=!selectedclass] iron_shovel{display:{Name:'{"text":"Builder Shovel","color":"green"}'},Enchantments:[{id:"minecraft:efficiency",lvl:4s}]} 1
 give @s[tag=builder,tag=!selectedclass] iron_axe{Enchantments:[{id:"silk_touch",lvl:1},{id:"minecraft:efficiency",lvl:4s}],display:{Name:'{"text":"Builder Axe","color":"green"}'}}
-give @s[tag=builder,tag=!selectedclass] fire_charge 2
+give @s[tag=builder,tag=!selectedclass] fire_charge 32
 execute if predicate dvz:50chance run give @s[tag=builder,tag=!selectedclass] carrot_on_a_stick{CustomModelData:1000,Unbreakable:1b,display:{Name:'{"text":"Legendary Book","color":"gold"}',Lore:['[{"text":"Used with 5 Legendary Shards to make Legendary Items.","color":"blue"}]','[{"text":"Single-use item!","color":"red"}]']}}
 tag @s add selectedclass
 tellraw @s[tag=builder,tag=selectedclass] ["",{"text":"\u25b6","bold":true},{"text":"You are a ","color":"gold"},{"text":"BUILDER","color":"yellow"},{"text":". You make the fort for the dwarves.","color":"gold"}]

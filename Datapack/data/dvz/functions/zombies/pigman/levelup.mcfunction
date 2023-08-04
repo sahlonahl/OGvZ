@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.11.12
-# Last Modified By: Zaffre
+# Last Modified On: 2023.08.04
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -18,6 +18,7 @@ item replace entity @s[tag=pigman,tag=pig2] armor.head with firework_star{Custom
 item replace entity @s[tag=pigman,tag=pig2] armor.chest with iron_chestplate{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "protection", lvl: 3}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=pigman,tag=pig2] armor.legs with iron_leggings{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=pigman,tag=pig2] armor.feet with iron_boots{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
+execute as @s[tag=pigman,tag=pig2] run effect clear @s weakness
 execute as @s[tag=pigman,tag=pig2] run effect give @s health_boost 999999 2
 execute as @s[tag=pigman,tag=pig2] run effect give @s instant_health 1 10
 execute if entity @s[tag=pigman,tag=pig2] run clear @s carrot_on_a_stick{CustomModelData:37,Unbreakable:1b}

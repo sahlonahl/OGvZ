@@ -5,16 +5,16 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.08.19
-# Last Modified By: Sahlonahl
+# Last Modified On: 2023.08.04
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
 # Comments:
 # -------------------------------------------
-execute as @s[tag=playerdragonpick,scores={DVZ.breath.cool=1..}] run tellraw @s ["",{"text":" * [Breath] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.breath.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
+execute as @s[tag=playerdragonpick,scores={DVZ.breath.cool=1..}] run title @s actionbar ["",{"text":" * [Breath] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.breath.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 
-execute as @s if entity @s[tag=playerdragonpick,scores={DVZ.breath.cool=0}] run tellraw @s {"text":" * [Breath] Poof!","color":"red"}
+execute as @s if entity @s[tag=playerdragonpick,scores={DVZ.breath.cool=0}] run title @s actionbar {"text":" * [Breath] Poof!","color":"red"}
 execute as @s if entity @s[tag=playerdragonpick,scores={DVZ.breath.cool=0}] run playsound entity.ender_dragon.shoot hostile @a ~ ~ ~ 100 1 0.1
 
 execute as @s if entity @s[tag=playerdragonpick,scores={DVZ.breath.cool=0}] run summon marker ~ ~ ~ {Tags:[ray]}

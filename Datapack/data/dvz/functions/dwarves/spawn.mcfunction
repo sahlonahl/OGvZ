@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.22
-# Last Modified By: Zaffre
+# Last Modified On: 2023.08.04
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -48,5 +48,7 @@ clear @s minecraft:carrot_on_a_stick{CustomModelData:13,Unbreakable:1b} 1
 effect give @s instant_health 10 30 true
 effect give @s saturation 10 30 true
 
-execute as @s at @e[type=marker,tag=dSpawn,limit=1] positioned ~ ~3 ~ unless entity @e[tag=tower] run tp @s ~ ~ ~ facing entity @e[type=marker,tag=zSpawn,limit=1]
-execute as @s at @e[type=marker,tag=dSpawn,limit=1] positioned ~ ~ ~ if entity @e[tag=tower] run tp @s ~4.5 ~-20 ~ facing entity @e[type=marker,tag=zSpawn,limit=1]
+execute as @s at @e[type=marker,tag=dSpawn,limit=1] positioned ~ ~3 ~ run tp @s ~ ~ ~ facing entity @e[type=marker,tag=zSpawn,limit=1]
+# old tp commands have differences between tower shrine and non-tower shrine, which could be causing the issues
+#execute as @s at @e[type=marker,tag=dSpawn,limit=1] positioned ~ ~3 ~ unless entity @e[tag=tower] run tp @s ~ ~ ~ facing entity @e[type=marker,tag=zSpawn,limit=1]
+#execute as @s at @e[type=marker,tag=dSpawn,limit=1] positioned ~ ~ ~ if entity @e[tag=tower] run tp @s ~4.5 ~-20 ~ facing entity @e[type=marker,tag=zSpawn,limit=1]

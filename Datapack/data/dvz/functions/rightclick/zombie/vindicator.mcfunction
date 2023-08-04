@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.24
-# Last Modified By: Zaffre
+# Last Modified On: 2023.08.04
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -25,7 +25,7 @@ give @s[tag=vindicator,tag=!selectedclass] splash_potion{Potion:"minecraft:stron
 loot give @s[tag=vindicator,tag=!selectedclass] loot dvz:classes/zombiepotion
 loot give @s[tag=vindicator,tag=!selectedclass] loot dvz:classes/zombietoys
 
-item replace entity @s[tag=vindicator,tag=!selectedclass] weapon.offhand with shield{Damage:286}
+item replace entity @s[tag=vindicator,tag=!selectedclass] weapon.offhand with shield
 #item replace entity @s[tag=vindicator,tag=!selectedclass] armor.head with pumpkin{display:{Name:'{"text":"Vindicator Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1},{id:"protection",lvl:2}],AttributeModifiers:[{Slot:"head",AttributeName:"generic.armor", Name:"generic.armor", Amount:2.0, Operation:0, UUID:[I; -64585, 64804, 64804, 64804]}]}
 item replace entity @s[tag=vindicator,tag=!selectedclass] armor.head with firework_star{CustomModelData:13,display:{Name:'{"text":"Vindicator Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1},{id:"protection",lvl:2}],AttributeModifiers:[{Slot:"head",AttributeName:"generic.armor", Name:"generic.armor", Amount:2.0, Operation:0, UUID:[I; -64585, 64804, 64804, 64804]}]}
 item replace entity @s[tag=vindicator,tag=!selectedclass] armor.chest with leather_chestplate{display: {color: 4209720}, Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}, {id: "protection", lvl: 2}], AttributeModifiers: [{Slot: "chest", AttributeName: "generic.armor", Name: "generic.armor", Amount: 6.0d, Operation: 0, UUID: [I; 64585, -64804, 64804, 64804]}]}
