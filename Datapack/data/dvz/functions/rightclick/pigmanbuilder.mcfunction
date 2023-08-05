@@ -56,7 +56,7 @@ tellraw @s[tag=builder,tag=selectedclass] ["",{"text":"\u25b6","bold":true},{"te
 playsound block.note_block.pling master @s ~ ~ ~ 1 2
 particle happy_villager ~ ~1 ~ 0.1 0.5 0.1 0.01 10
 
-execute as @s[tag=builder] if predicate dvz:buildchance run loot give @s loot dvz:starter_buildings
+execute as @s[tag=builder,tag=!selectedclass] if predicate dvz:buildchance run loot give @s loot dvz:starter_buildings
 
 execute if entity @e[type=marker,tag=dvztimer,tag=aidragonselected] run tellraw @s[tag=builder] ["",{"text":"The doom event is: "},{"text":"AI Dragon","bold":true,"color":"light_purple"}]
 execute if entity @e[type=marker,tag=dvztimer,tag=playerdragonselected] run tellraw @s[tag=builder] ["",{"text":"The doom event is: "},{"text":"Player Dragon","bold":true,"color":"light_purple"}]
