@@ -13,7 +13,6 @@
 # -------------------------------------------
 
 execute as @s[tag=evoker,scores={DVZ.evokersummon.cool=1..}] run title @s actionbar ["",{"text":" * [Summon Legion] You have ","color":"#D7B740"},{"score":{"name":"@s","objective":"DVZ.evokersummon.cool"},"color":"dark_aqua"},{"text":" seconds remaining!","color":"#D7B740"}]
-execute as @s[tag=evoker,scores={DVZ.evokersummon.cool=1..}] at @s run tp @e[tag=legion] @s
 
 execute as @s if entity @s[tag=evoker,scores={DVZ.evokersummon.cool=0}] run title @s actionbar {"text":" * [Summon Legion] Poof!","color":"#D7B740"}
 execute as @s if entity @s[tag=evoker,scores={DVZ.evokersummon.cool=0}] at @s run kill @e[tag=legion]
