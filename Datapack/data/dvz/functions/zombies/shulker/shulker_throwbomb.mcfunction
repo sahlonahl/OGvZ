@@ -19,5 +19,5 @@ execute as @s if entity @s[tag=shulker,scores={DVZ.shulkerbomb.cool=0}] run titl
 execute as @s if entity @s[tag=shulker,scores={DVZ.shulkerbomb.cool=0}] run playsound minecraft:entity.shulker.shoot master @s ~ ~ ~ 1 1
 execute as @s if entity @s[tag=shulker,scores={DVZ.shulkerbomb.cool=0}] at @s run function dvz:zombies/shulker/shulker_launchbomb
 
-execute as @s if entity @s[tag=shulker,scores={DVZ.shulkerbomb.cool=0}] run scoreboard players set @s DVZ.shulkerbomb.cool 25
+execute as @s if entity @s[tag=shulker,scores={DVZ.shulkerbomb.cool=0}] run scoreboard players set @s DVZ.shulkerbomb.cool 15
 execute as @s if entity @s[tag=shulker,scores={DVZ.shulkerbomb.cool=0}] run scoreboard players set @s DVZ.rclick 0

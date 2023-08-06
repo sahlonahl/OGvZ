@@ -203,6 +203,8 @@ scoreboard players set @s DVZ.batscan.ticks 0
 scoreboard players set @s DVZ.batscan.cool 0
 scoreboard players set @s DVZ.batdark.ticks 0
 scoreboard players set @s DVZ.batdark.cool 0
+scoreboard players set @s DVZ.piglinrefill.ticks 0
+scoreboard players set @s DVZ.piglinrefill.cool 0
 
 #Miniboss
 scoreboard players set @s DVZ.ghast.ticks 0

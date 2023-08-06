@@ -463,7 +463,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.25
+          "chance": 0.20
         }
       ]
     },
@@ -480,7 +480,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"Piglin\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Builder class with a\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"variety of tools\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:81}"
+              "tag": "{display:{Name:'{\"text\":\"Piglin\",\"color\":\"dark_red\",\"bold\":false}',Lore:['{\"text\":\"Demolitionist class with a\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}','{\"text\":\"variety of tools\",\"color\":\"aqua\"}']},Unbreakable:1b,CustomModelData:81}"
             }
           ]
         }
@@ -488,7 +488,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.15
+          "chance": 0.08
         }
       ]
     },

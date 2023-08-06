@@ -237,6 +237,11 @@ execute as @a[scores={DVZ.batdark.cool=1..}] run scoreboard players add @s DVZ.b
 execute as @a[scores={DVZ.batdark.ticks=20..}] run scoreboard players remove @s DVZ.batdark.cool 1
 execute as @a[scores={DVZ.batdark.ticks=20..}] run scoreboard players set @s DVZ.batdark.ticks 0
 execute as @a[scores={DVZ.batdark.cool=..0}] run scoreboard players reset @s DVZ.batdark.ticks
+#Piglin
+execute as @a[scores={DVZ.piglinrefill.cool=1..}] run scoreboard players add @s DVZ.piglinrefill.ticks 1
+execute as @a[scores={DVZ.piglinrefill.ticks=20..}] run scoreboard players remove @s DVZ.piglinrefill.cool 1
+execute as @a[scores={DVZ.piglinrefill.ticks=20..}] run scoreboard players set @s DVZ.piglinrefill.ticks 0
+execute as @a[scores={DVZ.piglinrefill.cool=..0}] run scoreboard players reset @s DVZ.piglinrefill.ticks
 #Dragon Breath
 execute as @a[scores={DVZ.breath.cool=1..}] run scoreboard players add @s DVZ.breath.ticks 1
 execute as @a[scores={DVZ.breath.ticks=20..}] run scoreboard players remove @s DVZ.breath.cool 1

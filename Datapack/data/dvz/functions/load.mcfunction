@@ -184,6 +184,10 @@ scoreboard objectives add DVZ.evokerbomb.cool dummy
 scoreboard objectives add DVZ.evokerward.ticks dummy
 scoreboard objectives add DVZ.evokerward.cool dummy
 
+#Piglin
+scoreboard objectives add DVZ.piglinrefill.ticks dummy
+scoreboard objectives add DVZ.piglinrefill.cool dummy
+
 #Shulker
 scoreboard objectives add DVZ.shulkerwall.ticks dummy
 scoreboard objectives add DVZ.shulkerwall.cool dummy

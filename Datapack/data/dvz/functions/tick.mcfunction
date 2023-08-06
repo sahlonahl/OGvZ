@@ -396,10 +396,10 @@ execute as @e[type=armor_stand,tag=magma_grenade] at @s run function dvz:zombies
 team join zMONSTER @e[type=minecraft:magma_cube]
 tp @e[type=minecraft:magma_cube,nbt={Size:0}] ~ -1000 ~
 execute as @e[type=magma_cube] at @s run scoreboard players add @s bullet_age 1
-execute as @e[type=magma_cube] at @s if entity @s[scores={bullet_age=800..},nbt={Size:1}] run kill @s
-execute as @e[type=magma_cube] at @s if entity @s[scores={bullet_age=1200..},nbt={Size:2}] run kill @s
-execute as @e[type=magma_cube] at @s if entity @s[scores={bullet_age=1200..},nbt={Size:3}] run kill @s
-execute as @e[type=magma_cube] at @s if entity @s[scores={bullet_age=3600..},nbt={Size:7}] run kill @s
+execute as @e[type=magma_cube] at @s if entity @s[scores={bullet_age=400..},nbt={Size:1}] run kill @s
+execute as @e[type=magma_cube] at @s if entity @s[scores={bullet_age=600..},nbt={Size:2}] run kill @s
+execute as @e[type=magma_cube] at @s if entity @s[scores={bullet_age=600..},nbt={Size:3}] run kill @s
+execute as @e[type=magma_cube] at @s if entity @s[scores={bullet_age=1800..},nbt={Size:7}] run kill @s
 
 #Slime Loop
 execute as @e[type=armor_stand,tag=slime_spit] at @s run function dvz:zombies/slime/slime_spit_loop
