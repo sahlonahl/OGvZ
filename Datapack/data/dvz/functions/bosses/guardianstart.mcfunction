@@ -60,7 +60,7 @@ tag @a[tag=playerboss] remove ePortal
 
 clear @a[tag=playerboss] 
 effect clear @a[tag=playerboss]
-gamemode survival @a[tag=playerboss]
+gamemode creative @a[tag=playerboss]
 effect give @a[tag=playerboss] invisibility 1000000 2 true
 effect give @a[tag=playerboss] conduit_power 1000000 2 true
 effect give @a[tag=playerboss] dolphins_grace 1000000 0 true

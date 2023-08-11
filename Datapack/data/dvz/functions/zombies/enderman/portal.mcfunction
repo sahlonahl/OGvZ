@@ -31,6 +31,7 @@ execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] 
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s resistance 1000000 100 true
 
 #Portal Message
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run tellraw @a ["",{"text":" * [Portal] ","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":" has created an Ender portal!!!","color":"light_purple"}]
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run title @a actionbar ["",{"text":" * [Portal] ","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":" has created an Ender portal!!!","color":"light_purple"}]
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run summon lightning_bolt ~ ~256 ~
 
