@@ -33,7 +33,7 @@ execute as @s[tag=endermine_debuff] at @s run playsound minecraft:block.end_port
 execute as @s[tag=endermine_debuff] at @s run playsound minecraft:block.respawn_anchor.deplete master @a ~ ~ ~ 1 1
 execute as @s[tag=endermine_debuff] at @s run playsound minecraft:entity.firework_rocket.large_blast master @a ~ ~ ~ 1 0.5
 execute as @s[tag=endermine_debuff] at @s run effect give @a[tag=dwarves,distance=..5] blindness 5 0
-execute as @s[tag=endermine_debuff] at @s if entity @e[type=marker,tag=dSpawn,distance=..8] run effect give @a[tag=dwarves,distance=..5] slowness 5 9
+execute as @s[tag=endermine_debuff] at @s unless entity @e[type=marker,tag=dSpawn,distance=..8] run effect give @a[tag=dwarves,distance=..5] slowness 5 9
 execute as @s[tag=endermine_debuff] at @s run effect give @a[tag=dwarves,distance=..5] mining_fatigue 5 4
 execute as @s[tag=endermine_debuff] at @s run effect give @a[tag=dwarves,distance=..5] weakness 5 0
 execute as @s[tag=endermine_debuff] at @s run effect give @a[tag=dwarves,distance=..5] instant_damage
@@ -52,6 +52,6 @@ execute as @s[tag=endermine_summon] at @s run summon endermite ~ ~0.5 ~ {Invulne
 execute as @s[tag=endermine_displace] at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.2 0.5 0.2 1 100
 execute as @s[tag=endermine_displace] at @s run playsound minecraft:entity.enderman.teleport master @a ~ ~ ~ 1 1
 execute as @s[tag=endermine_displace] at @s run effect give @a[tag=dwarves,distance=..5] blindness 3 0
-execute as @s[tag=endermine_displace] at @s if entity @e[type=marker,tag=dSpawn,distance=..8] run tp @a[tag=dwarves,distance=..5] @a[limit=1,sort=random,team=zMONSTER,tag=!endermite,distance=..12]
-execute as @s[tag=endermine_displace] at @s unless entity @e[type=marker,tag=dSpawn,distance=..8] run tp @a[tag=dwarves,distance=..5] @a[limit=1,sort=random,team=zMONSTER,tag=!endermite,distance=..6]
+execute as @s[tag=endermine_displace] at @s unless entity @e[type=marker,tag=dSpawn,distance=..8] run tp @a[tag=dwarves,distance=..5] @a[limit=1,sort=random,team=zMONSTER,tag=!endermite,distance=..12]
+execute as @s[tag=endermine_displace] at @s if entity @e[type=marker,tag=dSpawn,distance=..8] run tp @a[tag=dwarves,distance=..5] @a[limit=1,sort=random,team=zMONSTER,tag=!endermite,distance=..6]
 kill @s
