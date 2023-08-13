@@ -17,23 +17,23 @@ execute as @s[tag=endermine_explode] at @s run particle minecraft:explosion ~ ~ 
 execute as @s[tag=endermine_explode] at @s run particle minecraft:explosion_emitter ~ ~ ~ 1 1 1 0.1 2
 execute as @s[tag=endermine_explode] at @s run particle minecraft:cloud ~ ~ ~ 1 1 1 0.1 100
 execute as @s[tag=endermine_explode] at @s run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 2 0.1
-execute as @s[tag=endermine_explode] at @s unless entity @e[type=marker,tag=dSpawn,distance=..8] run summon creeper ~ ~ ~ {Invulnerable:1b,Team:"zMONSTER",ExplosionRadius:3b,Fuse:0,ignited:1b,CustomName:'{"text":"Explosive Charge","color":"red","bold":false,"italic":false}'}
-execute as @s[tag=endermine_explode] at @s if entity @e[type=marker,tag=dSpawn,distance=..8] run summon creeper ~ ~ ~ {Invulnerable:1b,Team:"zMONSTER",ExplosionRadius:1b,Fuse:0,ignited:1b,CustomName:'{"text":"Explosive Charge","color":"red","bold":false,"italic":false}'}
+execute as @s[tag=endermine_explode] at @s unless entity @e[type=marker,tag=dSpawn,distance=..8] run summon creeper ~ ~ ~ {Invulnerable:1b,Team:"zMONSTER",ExplosionRadius:3b,Fuse:1,ignited:1b,CustomName:'{"text":"Explosive Charge","color":"red","bold":false,"italic":false}'}
+execute as @s[tag=endermine_explode] at @s if entity @e[type=marker,tag=dSpawn,distance=..8] run summon creeper ~ ~ ~ {Invulnerable:1b,Team:"zMONSTER",ExplosionRadius:1b,Fuse:1,ignited:1b,CustomName:'{"text":"Explosive Charge","color":"red","bold":false,"italic":false}'}
 execute as @s[tag=endermine_explode_big] at @s run particle minecraft:explosion ~ ~ ~ 1 1 1 0.1 25
 execute as @s[tag=endermine_explode_big] at @s run particle minecraft:explosion_emitter ~ ~ ~ 1 1 1 0.1 2
 execute as @s[tag=endermine_explode_big] at @s run particle minecraft:cloud ~ ~ ~ 1 1 1 0.1 100
 execute as @s[tag=endermine_explode_big] at @s run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 2 0.1
-execute as @s[tag=endermine_explode_big] at @s unless entity @e[type=marker,tag=dSpawn,distance=..8] run summon creeper ~ ~ ~ {Invulnerable:1b,Team:"zMONSTER",ExplosionRadius:5b,Fuse:0,ignited:1b,CustomName:'{"text":"Enchanted Explosive Charge","color":"red","bold":false,"italic":false}'}
-execute as @s[tag=endermine_explode_big] at @s unless entity @e[type=marker,tag=dSpawn,distance=..8] run summon creeper ~ ~ ~ {Invulnerable:1b,Team:"zMONSTER",ExplosionRadius:5b,Fuse:0,ignited:1b,CustomName:'{"text":"Enchanted Explosive Charge","color":"red","bold":false,"italic":false}'}
-execute as @s[tag=endermine_explode_big] at @s if entity @e[type=marker,tag=dSpawn,distance=..8] run summon creeper ~ ~ ~ {Invulnerable:1b,Team:"zMONSTER",ExplosionRadius:1b,Fuse:0,ignited:1b,CustomName:'{"text":"Enchanted Explosive Charge","color":"red","bold":false,"italic":false}'}
-execute as @s[tag=endermine_explode_big] at @s if entity @e[type=marker,tag=dSpawn,distance=..8] run summon creeper ~ ~ ~ {Invulnerable:1b,Invulnerable:1b,Team:"zMONSTER",ExplosionRadius:1b,Fuse:0,ignited:1b,CustomName:'{"text":"Enchanted Explosive Charge","color":"red","bold":false,"italic":false}'}
+execute as @s[tag=endermine_explode_big] at @s unless entity @e[type=marker,tag=dSpawn,distance=..8] run summon creeper ~ ~ ~ {Invulnerable:1b,Team:"zMONSTER",ExplosionRadius:5b,Fuse:1,ignited:1b,CustomName:'{"text":"Enchanted Explosive Charge","color":"red","bold":false,"italic":false}'}
+execute as @s[tag=endermine_explode_big] at @s unless entity @e[type=marker,tag=dSpawn,distance=..8] run summon creeper ~ ~ ~ {Invulnerable:1b,Team:"zMONSTER",ExplosionRadius:5b,Fuse:1,ignited:1b,CustomName:'{"text":"Enchanted Explosive Charge","color":"red","bold":false,"italic":false}'}
+execute as @s[tag=endermine_explode_big] at @s if entity @e[type=marker,tag=dSpawn,distance=..8] run summon creeper ~ ~ ~ {Invulnerable:1b,Team:"zMONSTER",ExplosionRadius:1b,Fuse:1,ignited:1b,CustomName:'{"text":"Enchanted Explosive Charge","color":"red","bold":false,"italic":false}'}
+execute as @s[tag=endermine_explode_big] at @s if entity @e[type=marker,tag=dSpawn,distance=..8] run summon creeper ~ ~ ~ {Invulnerable:1b,Invulnerable:1b,Team:"zMONSTER",ExplosionRadius:1b,Fuse:1,ignited:1b,CustomName:'{"text":"Enchanted Explosive Charge","color":"red","bold":false,"italic":false}'}
 execute as @s[tag=endermine_debuff] at @s run particle minecraft:dust 1 0 1 2.5 ~ ~0.9 ~ 2 2 2 0 100
 execute as @s[tag=endermine_debuff] at @s run particle minecraft:reverse_portal ~ ~0.9 ~ 0 0 0 1 150
 execute as @s[tag=endermine_debuff] at @s run playsound minecraft:block.end_portal_frame.fill master @a ~ ~ ~ 1 0.1
 execute as @s[tag=endermine_debuff] at @s run playsound minecraft:block.respawn_anchor.deplete master @a ~ ~ ~ 1 1
 execute as @s[tag=endermine_debuff] at @s run playsound minecraft:entity.firework_rocket.large_blast master @a ~ ~ ~ 1 0.5
 execute as @s[tag=endermine_debuff] at @s run effect give @a[tag=dwarves,distance=..5] blindness 5 0
-execute as @s[tag=endermine_debuff] at @s run effect give @a[tag=dwarves,distance=..5] slowness 5 9
+execute as @s[tag=endermine_debuff] at @s if entity @e[type=marker,tag=dSpawn,distance=..8] run effect give @a[tag=dwarves,distance=..5] slowness 5 9
 execute as @s[tag=endermine_debuff] at @s run effect give @a[tag=dwarves,distance=..5] mining_fatigue 5 4
 execute as @s[tag=endermine_debuff] at @s run effect give @a[tag=dwarves,distance=..5] weakness 5 0
 execute as @s[tag=endermine_debuff] at @s run effect give @a[tag=dwarves,distance=..5] instant_damage
@@ -52,5 +52,6 @@ execute as @s[tag=endermine_summon] at @s run summon endermite ~ ~0.5 ~ {Invulne
 execute as @s[tag=endermine_displace] at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.2 0.5 0.2 1 100
 execute as @s[tag=endermine_displace] at @s run playsound minecraft:entity.enderman.teleport master @a ~ ~ ~ 1 1
 execute as @s[tag=endermine_displace] at @s run effect give @a[tag=dwarves,distance=..5] blindness 3 0
-execute as @s[tag=endermine_displace] at @s run tp @a[tag=dwarves,distance=..5] @a[limit=1,sort=random,team=zMONSTER,tag=!endermite,distance=..12]
+execute as @s[tag=endermine_displace] at @s if entity @e[type=marker,tag=dSpawn,distance=..8] run tp @a[tag=dwarves,distance=..5] @a[limit=1,sort=random,team=zMONSTER,tag=!endermite,distance=..12]
+execute as @s[tag=endermine_displace] at @s unless entity @e[type=marker,tag=dSpawn,distance=..8] run tp @a[tag=dwarves,distance=..5] @a[limit=1,sort=random,team=zMONSTER,tag=!endermite,distance=..6]
 kill @s

@@ -24,9 +24,12 @@ execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run effect give 
 execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run effect give @s slowness 2 0 true
 execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run damage @s 1 minecraft:out_of_world
 
-execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] at @s positioned ^ ^ ^9 run execute as @a[team=zMONSTER,distance=..12,limit=1,sort=nearest,tag=!zenchanter] at @s run scoreboard players set @s DVZ.enchanterloop.ticks 50
+execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] at @s positioned ^ ^ ^3 run execute as @a[team=zMONSTER,distance=..5,tag=!zenchanter] at @s run scoreboard players set @s DVZ.enchanterloop.ticks 50
+execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] at @s positioned ^ ^ ^5 run execute as @a[team=zMONSTER,distance=..5,tag=!zenchanter] at @s run scoreboard players set @s DVZ.enchanterloop.ticks 50
+execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] at @s positioned ^ ^ ^7 run execute as @a[team=zMONSTER,distance=..5,tag=!zenchanter] at @s run scoreboard players set @s DVZ.enchanterloop.ticks 50
+execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] at @s positioned ^ ^ ^9 run execute as @a[team=zMONSTER,distance=..7,tag=!zenchanter] at @s run scoreboard players set @s DVZ.enchanterloop.ticks 50
+execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] at @s positioned ^ ^ ^11 run execute as @a[team=zMONSTER,distance=..7,tag=!zenchanter] at @s run scoreboard players set @s DVZ.enchanterloop.ticks 50
 
-execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run effect give @a[scores={DVZ.enchanterloop.ticks=1..}] glowing 3 0
 execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run effect give @a[scores={DVZ.enchanterloop.ticks=1..}] haste 3 2
 execute as @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] run effect give @a[scores={DVZ.enchanterloop.ticks=1..},tag=!golem,tag=!enderman,tag=!miniboss,tag=!chargecrp,tag=!pig3,tag=!slime,tag=!evoker] resistance 3 1
 execute if entity @s[tag=zenchanter,scores={DVZ.enchanterbook.cool=0}] as @a[scores={DVZ.enchanterloop.ticks=1..}] run function dvz:zombies/enchanter/enchant_attribute
