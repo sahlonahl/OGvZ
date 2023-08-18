@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.08.04
+# Last Modified On: 2023.08.18
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -25,5 +25,5 @@ execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=30..] run execute a
 execute as @s run title @s[tag=dwarves,tag=!playerboss,level=30..] actionbar {"text":" * [Ultimate Potion] Poof!","color":"red"}
 execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=30..] run execute as @s run xp add @s -30 levels
 
-execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=20..] run playsound minecraft:entity.witch.drink master @a ~ ~ ~ 1
-execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=20..] run playsound minecraft:entity.wandering_trader.reappeared master @a ~ ~ ~
+execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=30..] run playsound minecraft:entity.witch.drink master @a ~ ~ ~ 1
+execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=30..] run playsound minecraft:entity.wandering_trader.reappeared master @a ~ ~ ~

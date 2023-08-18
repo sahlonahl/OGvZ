@@ -163,7 +163,7 @@
                 {
                   "attribute": "minecraft:generic.attack_speed",
                   "name": "",
-                  "amount": 1,
+                  "amount": 0.5,
                   "operation": "addition",
                   "slot": [
                     
