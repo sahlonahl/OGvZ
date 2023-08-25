@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.08.24
-# Last Modified By: Wilkekids
+# Last Modified On: 2023.08.25
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
@@ -31,15 +31,15 @@ execute as @a[tag=dwarves,scores={DVZ.death=1..}] at @s run function dvz:customd
 # - Player Notices - 
 
 # dwarf too far from shrine
-execute at @e[type=marker,tag=dSpawn] if entity @a[tag=dwarves,distance=100..,tag=!dfarnotice] run title @a[tag=dwarves,distance=100..,tag=!dfarnotice] subtitle {"text":"You're too far from the shrine!","color":"yellow"}
-execute at @e[type=marker,tag=dSpawn] if entity @a[tag=dwarves,distance=100..,tag=!dfarnotice] run title @a[tag=dwarves,distance=100..,tag=!dfarnotice] title ""
-execute at @e[type=marker,tag=dSpawn] if entity @a[tag=dwarves,distance=100..,tag=!dfarnotice] run tag @a[tag=dwarves,distance=100..] add dfarnotice
-execute at @e[type=marker,tag=dSpawn] run tag @a[tag=dwarves,distance=..100] remove dfarnotice
+execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dSpawn] if entity @a[tag=dwarves,distance=100..,tag=!dfarnotice] run title @a[tag=dwarves,distance=100..,tag=!dfarnotice] subtitle {"text":"You're too far from the shrine!","color":"yellow"}
+execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dSpawn] if entity @a[tag=dwarves,distance=100..,tag=!dfarnotice] run title @a[tag=dwarves,distance=100..,tag=!dfarnotice] title ""
+execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dSpawn] if entity @a[tag=dwarves,distance=100..,tag=!dfarnotice] run tag @a[tag=dwarves,distance=100..] add dfarnotice
+execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dSpawn] run tag @a[tag=dwarves,distance=..100] remove dfarnotice
 
-execute at @e[type=marker,tag=dSpawn] run execute at @a[tag=dwarves,tag=!admin,distance=130..] run particle minecraft:angry_villager ~ ~ ~ 1 2 1 0.2 5 force
-execute at @e[type=marker,tag=dSpawn] run execute at @a[tag=dwarves,tag=!admin,distance=130..] run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.1 0.7
+execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dSpawn] run execute at @a[tag=dwarves,tag=!admin,distance=130..] run particle minecraft:angry_villager ~ ~ ~ 1 2 1 0.2 5 force
+execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dSpawn] run execute at @a[tag=dwarves,tag=!admin,distance=130..] run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.1 0.7
 
-execute at @e[type=marker,tag=dSpawn] run kill @a[tag=dwarves,tag=!admin,distance=150..]
+execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dSpawn] run kill @a[tag=dwarves,tag=!admin,distance=150..]
 
 # dwarf too close to mob spawn
 execute at @e[type=marker,tag=zProtect] if entity @a[tag=dwarves,distance=..45,tag=!mobnotice] run title @a[tag=dwarves,distance=..45,tag=!mobnotice] subtitle {"text":"You're too close to mobs' spawn!","color":"yellow"}
@@ -53,10 +53,10 @@ execute at @e[type=marker,tag=zProtect] run execute at @a[tag=dwarves,tag=!admin
 execute at @e[type=marker,tag=zProtect] run kill @a[tag=dwarves,tag=!admin,distance=..30]
 
 # mobs too far from spawn
-#execute as @a[tag=zombies] at @s at @e[type=marker,tag=zProtect,sort=nearest,limit=1] if entity @s[tag=zombies,distance=300..,tag=!zfarnotice] run title @s[tag=zombies,distance=300..,tag=!zfarnotice] subtitle {"text":"Return to battle!","color":"red"}
-#execute as @a[tag=zombies] at @s at @e[type=marker,tag=zProtect,sort=nearest,limit=1] if entity @s[tag=zombies,distance=300..,tag=!zfarnotice] run title @s[tag=zombies,distance=300..,tag=!zfarnotice] title ""
-#execute as @a[tag=zombies] at @s at @e[type=marker,tag=zProtect,sort=nearest,limit=1] if entity @s[tag=zombies,distance=300..,tag=!zfarnotice] run tag @s[tag=zombies,distance=300..] add zfarnotice
-#execute at @e[type=marker,tag=zProtect] run tag @a[tag=zombies,distance=..300] remove zfarnotice
+#execute if entity @e[tag=dvztimer,tag=!nozombiedistance] as @a[tag=zombies] at @s at @e[type=marker,tag=zProtect,sort=nearest,limit=1] if entity @s[tag=zombies,distance=300..,tag=!zfarnotice] run title @s[tag=zombies,distance=300..,tag=!zfarnotice] subtitle {"text":"Return to battle!","color":"red"}
+#execute if entity @e[tag=dvztimer,tag=!nozombiedistance] as @a[tag=zombies] at @s at @e[type=marker,tag=zProtect,sort=nearest,limit=1] if entity @s[tag=zombies,distance=300..,tag=!zfarnotice] run title @s[tag=zombies,distance=300..,tag=!zfarnotice] title ""
+#execute if entity @e[tag=dvztimer,tag=!nozombiedistance] as @a[tag=zombies] at @s at @e[type=marker,tag=zProtect,sort=nearest,limit=1] if entity @s[tag=zombies,distance=300..,tag=!zfarnotice] run tag @s[tag=zombies,distance=300..] add zfarnotice
+#execute if entity @e[tag=dvztimer,tag=!nozombiedistance] at @e[type=marker,tag=zProtect] run tag @a[tag=zombies,distance=..300] remove zfarnotice
 
 # dwarf particles for low health/mana
 #execute at @a[tag=dwarves,scores={DVZ.health=..9}] run particle minecraft:dust 0.961 0 0 1 ~ ~ ~ 0.3 1 0.3 0.02 1
