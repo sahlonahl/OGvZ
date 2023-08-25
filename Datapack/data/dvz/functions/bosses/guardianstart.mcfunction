@@ -69,10 +69,10 @@ effect give @a[tag=playerboss] regeneration 1000000 9 true
 give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:43,Unbreakable:1b,display:{Name:'{"text":"Guardian Beam","color":"red"}'}}
 # give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:44,Unbreakable:1b,display:{Name:'{"text":"Invisibility","color":"red"}'}}
 give @a[tag=playerboss] trident{ Unbreakable:1b , Enchantments: [{id: "riptide", lvl: 3}] }
-item replace entity @s armor.feet with chainmail_boots{AttributeModifiers: [{Slot: "feet", AttributeName: "generic.armor", Name: "generic.armor", Amount: 3.0d, Operation: 0, UUID: [I; 4804, 4804, 4804, -4804]}, {Slot: "feet", AttributeName: "generic.armor_toughness", Name: "generic.armor_toughness", Amount: 2.0d, Operation: 0, UUID: [I; 70264, 70264, 70264, -70264]}], Enchantments: [{id: "binding_curse", lvl: 1}, {id: "feather_falling", lvl: 5}], Unbreakable: 1b, display: {Name: '{"text":"Guard Boots","color":"gold"}'}}
+item replace entity @a[tag=playerboss] armor.feet with chainmail_boots{AttributeModifiers: [{Slot: "feet", AttributeName: "generic.armor", Name: "generic.armor", Amount: 3.0d, Operation: 0, UUID: [I; 4804, 4804, 4804, -4804]}, {Slot: "feet", AttributeName: "generic.armor_toughness", Name: "generic.armor_toughness", Amount: 2.0d, Operation: 0, UUID: [I; 70264, 70264, 70264, -70264]}], Enchantments: [{id: "binding_curse", lvl: 1}, {id: "feather_falling", lvl: 5}], Unbreakable: 1b, display: {Name: '{"text":"Guard Boots","color":"gold"}'}}
 give @a[tag=playerboss] guardian_spawn_egg 16
 give @a[tag=playerboss] drowned_spawn_egg 16
 give @a[tag=playerboss] pufferfish_spawn_egg 16
 
-execute at @r[tag=dwarves] positioned ~30 ~30 ~30 run summon minecraft:elder_guardian ~ ~ ~ {Tags:[tpguardian],NoAI:1b,Health:200f,Attributes:[{Name:generic.max_health,Base:200}]}
+execute at @r[tag=dwarves] positioned ~30 ~30 ~30 run summon minecraft:elder_guardian ~ ~ ~ {Tags:[tpguardian],NoAI:1b,Health:200f,Attributes:[{Name:"generic.max_health",Base:200}]}
 tp @a[tag=playerboss] @e[tag=tpguardian,limit=1]

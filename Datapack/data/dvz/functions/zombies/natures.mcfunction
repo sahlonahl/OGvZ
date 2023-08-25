@@ -5,7 +5,7 @@
 # Created By: Zaffre
 # 
 # Created On: 2023.03.05
-# Last Modified On: 2023.07.27
+# Last Modified On: 2023.08.24
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -127,7 +127,7 @@ tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Sassy:1b}}]}] add natured
 effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] fire_resistance 999999 0
 effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] slow_falling 999999 0
 effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] mining_fatigue 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"SASSY","bold":true,"color":"yellow"}]
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"CAREFUL","bold":true,"color":"yellow"}]
 tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] add natured
 
 

@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.08.18
+# Last Modified On: 2023.08.24
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -29,7 +29,7 @@ item replace entity @s[tag=pigman,tag=!selectedclass] armor.feet with leather_bo
 effect give @s[tag=pigman] weakness infinite 1 true
 gamemode adventure @s[tag=pigman]
 
-execute as @s[tag=pigman] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
+#execute as @s[tag=pigman] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
 
 #=========================================
 

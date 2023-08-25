@@ -5,7 +5,7 @@
 # Created By: Zaffre
 # 
 # Created On: 2022.01.19
-# Last Modified On: 2023.05.13
+# Last Modified On: 2023.08.24
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -27,6 +27,11 @@ execute as @a[scores={DVZ.death=1..},tag=golem] run playsound entity.iron_golem.
 execute as @a[scores={DVZ.death=1..},tag=pig3] run tellraw @a ["",{"text":"The Hoglin dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
 execute as @a[scores={DVZ.death=1..},tag=pig3] run playsound entity.hoglin.death master @a ~ ~ ~ 100 0.8 1
 execute as @a[scores={DVZ.death=1..},tag=pig3] run playsound entity.hoglin.death master @a ~ ~ ~ 100 0.5 1
+
+##Charged Creeper death
+execute as @a[scores={DVZ.death=1..},tag=chargecrp] run tellraw @a ["",{"text":"The Charged Creeper dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
+execute as @a[scores={DVZ.death=1..},tag=chargecrp] run playsound entity.creeper.death master @a ~ ~ ~ 100 0.8 1
+execute as @a[scores={DVZ.death=1..},tag=chargecrp] run playsound entity.creeper.death master @a ~ ~ ~ 100 0.5 1
 
 ##Ravager death
 execute as @a[scores={DVZ.death=1..},tag=ravager] run tellraw @a ["",{"text":"The Ravager dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]

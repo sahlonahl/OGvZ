@@ -5,7 +5,7 @@
 # Created By: Zaffre
 # 
 # Created On: 2022.01.24
-# Last Modified On: 2022.09.11
+# Last Modified On: 2023.08.24
 # Last Modified By: Zaffre
 #
 # Credit to:
@@ -25,4 +25,7 @@ tellraw @a ["",{"text":"The shrine is destroyed.","color":"blue"},{"text":" THE 
 tag @e[tag=dvztimer] add gameover
 particle cloud ^ ^1 ^ 1 0.25 1 0.7 250
 
-effect give @a[tag=dwarves] glowing 1000000
+effect give @a[tag=dwarves] glowing infinite
+effect give @a[tag=dwarves] weakness infinite 0 true
+effect give @a[tag=dwarves] slowness infinite 0 true
+effect give @a[tag=dwarves] slow_falling infinite 0 true

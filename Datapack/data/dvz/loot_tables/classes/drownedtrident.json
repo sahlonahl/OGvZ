@@ -12,11 +12,29 @@
         {
           "type": "item",
           "name": "minecraft:trident",
-          "weight": 1,
+          "weight": 9,
           "functions": [
             {
               "function": "set_nbt",
               "tag": "{Unbreakable:1b}"
+            },
+			      {
+              "function": "enchant_randomly",
+              "enchantments": [
+                "loyalty",
+				        "riptide"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:trident",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Unbreakable:1b,Enchantments:[{id:\"channeling\",lvl:1s}]}"
             },
 			      {
               "function": "enchant_randomly",

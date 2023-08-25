@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.01.12
-# Last Modified By: Sahlonahl
+# Last Modified On: 2023.08.24
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -25,9 +25,9 @@ execute store result score #tmpZ DVZppos as @e[x=0,y=0,z=0,type=fireball,tag=pro
 execute anchored eyes run tp @e[x=0,y=0,z=0,type=fireball,tag=projectile,sort=nearest,limit=1] ^ ^ ^1
 
 #Applies new trajectory, scaling back down.
-execute store result entity @e[type=fireball,tag=projectile,sort=nearest,limit=1] power[0] double 0.00004 run scoreboard players get #tmpX DVZppos
-execute store result entity @e[type=fireball,tag=projectile,sort=nearest,limit=1] power[1] double 0.00004 run scoreboard players get #tmpY DVZppos
-execute store result entity @e[type=fireball,tag=projectile,sort=nearest,limit=1] power[2] double 0.00004 run scoreboard players get #tmpZ DVZppos
+execute store result entity @e[type=fireball,tag=projectile,sort=nearest,limit=1] power[0] double 0.00002 run scoreboard players get #tmpX DVZppos
+execute store result entity @e[type=fireball,tag=projectile,sort=nearest,limit=1] power[1] double 0.00002 run scoreboard players get #tmpY DVZppos
+execute store result entity @e[type=fireball,tag=projectile,sort=nearest,limit=1] power[2] double 0.00002 run scoreboard players get #tmpZ DVZppos
 
 #Removes this fireball from sorting and adds it to be tested later
 tag @e[type=fireball,tag=projectile,sort=nearest,limit=1] add fballage

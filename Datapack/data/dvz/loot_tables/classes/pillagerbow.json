@@ -25,7 +25,7 @@
                 "minecraft:piercing"
               ]
             },
-			{
+			      {
               "function": "minecraft:enchant_randomly",
               "enchantments": [
                 "minecraft:quick_charge",
