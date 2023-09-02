@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.08.25
-# Last Modified By: Sahlonahl
+# Last Modified On: 2023.09.02
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -36,7 +36,7 @@ execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dS
 execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dSpawn] if entity @a[tag=dwarves,distance=100..,tag=!dfarnotice] run tag @a[tag=dwarves,distance=100..] add dfarnotice
 execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dSpawn] run tag @a[tag=dwarves,distance=..100] remove dfarnotice
 
-execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dSpawn] run execute at @a[tag=dwarves,tag=!admin,distance=130..] run particle minecraft:angry_villager ~ ~ ~ 1 2 1 0.2 5 force
+execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dSpawn] run execute at @a[tag=dwarves,tag=!admin,distance=130..] run particle minecraft:angry_villager ~ ~ ~ 1 2 1 0.2 2 force
 execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dSpawn] run execute at @a[tag=dwarves,tag=!admin,distance=130..] run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.1 0.7
 
 execute if entity @e[tag=dvztimer,tag=!nodwarfdistance] at @e[type=marker,tag=dSpawn] run kill @a[tag=dwarves,tag=!admin,distance=150..]
@@ -47,7 +47,7 @@ execute at @e[type=marker,tag=zProtect] if entity @a[tag=dwarves,distance=..45,t
 execute at @e[type=marker,tag=zProtect] if entity @a[tag=dwarves,distance=..45,tag=!mobnotice] run tag @a[tag=dwarves,distance=..45] add mobnotice
 execute at @e[type=marker,tag=zProtect] run tag @a[tag=dwarves,distance=45..] remove mobnotice
 
-execute at @e[type=marker,tag=zProtect] run execute at @a[tag=dwarves,tag=!admin,distance=..45] run particle minecraft:angry_villager ~ ~ ~ 1 2 1 0.2 5 force
+execute at @e[type=marker,tag=zProtect] run execute at @a[tag=dwarves,tag=!admin,distance=..45] run particle minecraft:dust 0.9 0 0 1 ~ ~ ~ 1 2 1 0.2 2 force
 execute at @e[type=marker,tag=zProtect] run execute at @a[tag=dwarves,tag=!admin,distance=..45] run playsound minecraft:entity.generic.extinguish_fire ambient @a ~ ~ ~ 0.1 0.7
 
 execute at @e[type=marker,tag=zProtect] run kill @a[tag=dwarves,tag=!admin,distance=..30]
@@ -366,7 +366,7 @@ execute as @e[type=fireball,tag=fballage,scores={DVZ.fballage.cool=40..59}] at @
 execute as @e[type=fireball,tag=fballage,scores={DVZ.fballage.cool=60..}] at @s run particle dust 1 1 1 3 ^ ^ ^ 1.000 0.000 0.000 0.01 2 normal
 
 #Ambient Particles
-execute as @a[tag=hero] at @s run particle end_rod ~ ~0.1 ~ 0.1 0 0.1 0.01 1
+execute as @a[tag=hero] at @s run particle dust 1 1 1 1 ~ ~0.1 ~ 0.1 0 0.1 0.01 1
 execute as @a[tag=blaze] at @s run particle smoke ^ ^0.1 ^-0.7 0.1 0 0.1 0.01 1
 execute as @a[tag=enderman] at @s run particle minecraft:portal ^ ^1 ^-0.5 0.5 0.5 0.5 0.5 1
 execute as @a[tag=phantom] at @s run particle minecraft:mycelium ~ ~1 ~ 0.2 0.2 0.2 0.01 5

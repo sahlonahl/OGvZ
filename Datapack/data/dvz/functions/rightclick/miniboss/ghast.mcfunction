@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.04.03
-# Last Modified By: Zaffre
+# Last Modified On: 2023.09.02
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -28,7 +28,7 @@ execute if entity @s[tag=ghast,tag=!selectedclass] run tag @s add ghastflight
 team join zMONSTER @s[tag=ghast,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 
-give @s[tag=ghast,tag=!selectedclass] pumpkin_pie 64
+give @s[tag=ghast,tag=!selectedclass] bread 64
 give @s[tag=ghast,tag=!selectedclass] stick{CustomModelData:70,Levitate:1b,display:{Name:'[{"text":"Levitate","color":"green"}]',Lore:['[{"text":"Place in offhand to use."}]']}} 1
 give @s[tag=ghast,tag=!selectedclass] stick{CustomModelData:36,Descend:1b,display:{Name:'[{"text":"Descend","color":"red"}]',Lore:['[{"text":"Place in offhand to use."}]']}} 1
 give @s[tag=ghast,tag=!selectedclass] carrot_on_a_stick{CustomModelData:64,Unbreakable:1b,display:{Name:'{"text":"Fireball","color":"gold"}',Lore:['[{"text":"Fires 1 HUGE fireball."}]','[{"text":"5 second cooldown!","color":"red"}]']}} 1
