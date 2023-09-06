@@ -34,4 +34,4 @@ scoreboard players set @a[tag=playerboss] DVZ.timer 2400
 bossbar set dvz:assassintimer visible true
 
 tellraw @s[tag=playerboss] ["",{"text":"\u25b6","bold":true},{"text":"You're the ASSASSIN! KILL THE OTHER DWARVES!","color":"dark_red"}]
-give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:40,Unbreakable:1b,display:{Name:'{"text":"Knife - Right-click to instantly KILL a nearby dwarf!","color":"red","bold":"true","italic":"true"}'}}
+give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:40,Unbreakable:1b,display:{Name:'{"text":"Knife - Right-click to instantly KILL a nearby dwarf!","color":"red","bold":true,"italic":true}'}}

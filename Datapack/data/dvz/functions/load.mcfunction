@@ -33,25 +33,25 @@ forceload add 0 0
 summon marker 0 0 0 {Tags:[dvztimer]}
 
 #Bossbars
-bossbar add dvz:bosstimer {"text":"Timer","italic":"true","color":"gray"}
+bossbar add dvz:bosstimer {"text":"Timer","italic":true,"color":"gray"}
 bossbar set dvz:bosstimer color green
 bossbar set dvz:bosstimer max 36000
 bossbar set dvz:bosstimer style notched_10
 bossbar set dvz:bosstimer visible false
 
-bossbar add dvz:dragonhealth {"text":"Ender Dragon","italic":"true","color":"light_purple"}
+bossbar add dvz:dragonhealth {"text":"Ender Dragon","italic":true,"color":"light_purple"}
 bossbar set dvz:dragonhealth color purple
 bossbar set dvz:dragonhealth max 200
 bossbar set dvz:dragonhealth style progress
 bossbar set dvz:dragonhealth visible false
 
-bossbar add dvz:guardianhealth {"text":"Elder Guardian","italic":"true","color":"aqua"}
+bossbar add dvz:guardianhealth {"text":"Elder Guardian","italic":true,"color":"aqua"}
 bossbar set dvz:guardianhealth color blue
 bossbar set dvz:guardianhealth max 200
 bossbar set dvz:guardianhealth style progress
 bossbar set dvz:guardianhealth visible false
 
-bossbar add dvz:assassintimer {"text":"Assassin dies in...","italic":"true","color":"gray"}
+bossbar add dvz:assassintimer {"text":"Assassin dies in...","italic":true,"color":"gray"}
 bossbar set dvz:assassintimer color red
 bossbar set dvz:assassintimer max 2400
 bossbar set dvz:assassintimer style notched_12
@@ -255,24 +255,24 @@ team modify zWITHER color light_purple
 team modify zGUARDIAN color light_purple
 
 ### Modify team suffix
-team modify dDWARVES suffix {"text":", a Dwarf","italic":"true","color":"aqua"}
-team modify dBUILDER suffix {"text":", the Builder","italic":"true","color":"green"}
-team modify dALCHEMIST suffix {"text":", the Alchemist","italic":"true","color":"blue"}
-team modify dBAKER suffix {"text":", the Baker","italic":"true","color":"blue"}
-team modify dBLACKSMITH suffix {"text":", the Blacksmith","italic":"true","color":"blue"}
-team modify dENCHANTER suffix {"text":", the Enchanter","italic":"true","color":"blue"}
-team modify dTAILOR suffix {"text":", the Tailor","italic":"true","color":"blue"}
-team modify dDRAGON suffix {"text":", the Dragon Warrior","italic":"true","color":"gold"}
-team modify dSLAYER suffix {"text":", the Assassin Slayer","italic":"true","color":"gold"}
-team modify dWARRIOR suffix {"text":", the Wither Warrior","italic":"true","color":"gold"}
-team modify dGUARD suffix {"text":", the Dwarven Guard","italic":"true","color":"gold"}
+team modify dDWARVES suffix {"text":", a Dwarf","italic":true,"color":"aqua"}
+team modify dBUILDER suffix {"text":", the Builder","italic":true,"color":"green"}
+team modify dALCHEMIST suffix {"text":", the Alchemist","italic":true,"color":"blue"}
+team modify dBAKER suffix {"text":", the Baker","italic":true,"color":"blue"}
+team modify dBLACKSMITH suffix {"text":", the Blacksmith","italic":true,"color":"blue"}
+team modify dENCHANTER suffix {"text":", the Enchanter","italic":true,"color":"blue"}
+team modify dTAILOR suffix {"text":", the Tailor","italic":true,"color":"blue"}
+team modify dDRAGON suffix {"text":", the Dragon Warrior","italic":true,"color":"gold"}
+team modify dSLAYER suffix {"text":", the Assassin Slayer","italic":true,"color":"gold"}
+team modify dWARRIOR suffix {"text":", the Wither Warrior","italic":true,"color":"gold"}
+team modify dGUARD suffix {"text":", the Dwarven Guard","italic":true,"color":"gold"}
 
-team modify zMONSTER suffix {"text":", the Monster","italic":"true","color":"red"}
-team modify zDEAD suffix {"text":" is dead...","italic":"true","color":"yellow"}
+team modify zMONSTER suffix {"text":", the Monster","italic":true,"color":"red"}
+team modify zDEAD suffix {"text":" is dead...","italic":true,"color":"yellow"}
 
-team modify zDRAGON suffix {"text":", the Dragon","italic":"true","color":"light_purple"}
-team modify zWITHER suffix {"text":", the Wither","italic":"true","color":"light_purple"}
-team modify zGUARDIAN suffix {"text":", the Guardian","italic":"true","color":"light_purple"}
+team modify zDRAGON suffix {"text":", the Dragon","italic":true,"color":"light_purple"}
+team modify zWITHER suffix {"text":", the Wither","italic":true,"color":"light_purple"}
+team modify zGUARDIAN suffix {"text":", the Guardian","italic":true,"color":"light_purple"}
 
 ### Zombies have invisible nametags
 team modify zMONSTER nametagVisibility hideForOtherTeams

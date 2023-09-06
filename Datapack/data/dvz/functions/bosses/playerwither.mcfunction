@@ -16,4 +16,4 @@
 function dvz:bosses/removetags
 tag @e[tag=dvztimer] add selected
 tag @e[tag=dvztimer] add playerwitherselected
-tellraw @a[tag=admin] {"text":" * [OGvZ] Player wither selected!","color":"light_purple","italic":"true"}
+tellraw @a[tag=admin] {"text":" * [OGvZ] Player wither selected!","color":"light_purple","italic":true}

@@ -19,8 +19,8 @@ tag @s[tag=!slay] add giveslay
 tag @s[tag=takeslay] remove slay
 tag @s[tag=giveslay] add slay
 
-title @s[tag=slay] actionbar {"text":" * [Slay] You will become a mob automatically!","color":"red","italic":"true"}
-title @s[tag=takeslay] actionbar {"text":" * [Slay] You will no longer become a mob automatically.","color":"red","italic":"true"}
+title @s[tag=slay] actionbar {"text":" * [Slay] You will become a mob automatically!","color":"red","italic":true}
+title @s[tag=takeslay] actionbar {"text":" * [Slay] You will no longer become a mob automatically.","color":"red","italic":true}
 
 tag @s remove giveslay
 tag @s remove takeslay
@@ -31,8 +31,8 @@ tag @s remove takeslay
 #tag @s[tag=givenotboss] add noboss
 #tag @s[tag=takenotboss] remove noboss
 
-#tellraw @s[tag=noboss] {"text":" * [Remove] You will have lower piority to be selected for the plague event!","color":"red","italic":"true"}
-#tellraw @s[tag=!noboss] {"text":" * [Remove] You will have normal piority to be selected for the plague event!","color":"gold","italic":"true"}
+#tellraw @s[tag=noboss] {"text":" * [Remove] You will have lower piority to be selected for the plague event!","color":"red","italic":true}
+#tellraw @s[tag=!noboss] {"text":" * [Remove] You will have normal piority to be selected for the plague event!","color":"gold","italic":true}
 
 #tag @s remove givenotboss
 #tag @s remove takenotboss
