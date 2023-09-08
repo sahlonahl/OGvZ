@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.04.01
-# Last Modified By: Zaffre
+# Last Modified On: 2023.09.08
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -23,7 +23,7 @@ give @s[tag=wolf,tag=!selectedclass] diamond_sword{Enchantments:[{id:"sharpness"
 give @s[tag=wolf,tag=!selectedclass] golden_sword{Enchantments:[{id:"fire_aspect",lvl:2},{id:"knockback",lvl:2}]} 1
 give @s[tag=wolf,tag=!selectedclass] bone 32
 give @s[tag=wolf,tag=!selectedclass] wolf_spawn_egg 6
-item replace entity @s[tag=wolf,tag=!selectedclass] armor.head with firework_star{CustomModelData:14,display:{Name:'{"text":"Wolf Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"protection",lvl:1},{id:"binding_curse",lvl:1}]} 1
+item replace entity @s[tag=wolf,tag=!selectedclass] armor.head with firework_star{CustomModelData:14,display:{Name:'{"text":"Wolf Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"protection",lvl:1},{id:"binding_curse",lvl:1}]} 1
 item replace entity @s[tag=wolf,tag=!selectedclass] armor.chest with chainmail_chestplate{Unbreakable: 1b, display: {color: 14539483}, AttributeModifiers: [{Slot: "chest", AttributeName: "generic.armor", Name: "generic.armor", Amount: 5.0d, Operation: 0, UUID: [I; 64800, -64800, 64800, 64800]}], Enchantments: [{id: "blast_protection", lvl: 4}, {id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=wolf,tag=!selectedclass] armor.legs with chainmail_leggings{Unbreakable: 1b, display: {color: 13289416}, AttributeModifiers: [{Slot: "legs", AttributeName: "generic.armor", Name: "generic.armor", Amount: 4.0d, Operation: 0, UUID: [I; 64800, 64800, -64800, 64800]}], Enchantments: [{id: "blast_protection", lvl: 4}, {id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=wolf,tag=!selectedclass] armor.feet with chainmail_boots{Unbreakable: 1b, display: {color: 11578023}, AttributeModifiers: [{Slot: "feet", AttributeName: "generic.armor", Name: "generic.armor", Amount: 1.0d, Operation: 0, UUID: [I; 64800, 64800, 64800, -64800]}], Enchantments: [{id: "blast_protection", lvl: 4}, {id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
@@ -32,6 +32,7 @@ effect give @s[tag=wolf,tag=!selectedclass] jump_boost 999999 1 true
 #effect give @s[tag=wolf,tag=!selectedclass] strength 999999 0 true
 
 execute as @s[tag=wolf] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
+execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
 
 #=========================================
 

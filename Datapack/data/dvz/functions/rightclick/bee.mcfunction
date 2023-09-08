@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.07.06
+# Last Modified On: 2023.09.08
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -30,7 +30,7 @@ give @s[tag=bee,tag=!selectedclass] splash_potion{CustomPotionColor:16776960,Cus
 give @s[tag=bee,tag=!selectedclass] lingering_potion{CustomPotionColor:16776960,CustomPotionEffects:[{Id:6b,Duration:10,Amplifier:1},{Id:10b,Duration:200}],display:{Name:'[{"text":"Bee\'s Potion"}]'}} 8
 give @s[tag=bee,tag=!selectedclass] tipped_arrow{Potion:"minecraft:long_poison"} 16
 
-item replace entity @s[tag=bee,tag=!selectedclass] armor.head with firework_star{CustomModelData:1,display:{Name:'{"text":"Bee Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1}]} 1
+item replace entity @s[tag=bee,tag=!selectedclass] armor.head with firework_star{CustomModelData:1,display:{Name:'{"text":"Bee Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1}]} 1
 item replace entity @s[tag=bee,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 6238757}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=bee,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 15582019}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=bee,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 6238757}, Enchantments: [{id: "feather_falling", lvl: 100}, {id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
@@ -40,4 +40,5 @@ item replace entity @s[tag=bee,tag=!selectedclass] armor.feet with leather_boots
 tag @s add selectedclass
 
 execute as @s[tag=bee] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
+execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
 

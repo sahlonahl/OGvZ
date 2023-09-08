@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.08.24
+# Last Modified On: 2023.09.08
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -22,14 +22,15 @@ clear @s[tag=!selectedclass]
 give @s[tag=pigman,tag=!selectedclass] cooked_beef 64
 give @s[tag=pigman,tag=!selectedclass] golden_pickaxe{CanDestroy:["minecraft:terracotta","minecraft:stone_bricks","minecraft:stone_brick_slab","minecraft:stone_brick_stairs","minecraft:stone_brick_wall","minecraft:mossy_stone_bricks","minecraft:cracked_stone_bricks","minecraft:chiseled_stone_bricks","minecraft:mossy_stone_brick_slab","minecraft:mossy_stone_brick_wall","minecraft:mossy_stone_brick_stairs","minecraft:infested_stone_bricks","minecraft:infested_mossy_stone_bricks","minecraft:infested_cracked_stone_bricks","minecraft:infested_chiseled_stone_bricks","minecraft:smooth_quartz","minecraft:smooth_quartz_slab","minecraft:smooth_quartz_stairs","minecraft:bricks","minecraft:brick_slab","minecraft:brick_stairs","minecraft:brick_wall","minecraft:nether_bricks","minecraft:nether_brick_slab","minecraft:nether_brick_stairs","minecraft:nether_brick_fence","minecraft:nether_brick_wall","minecraft:dark_prismarine","minecraft:dark_prismarine_slab","minecraft:dark_prismarine_stairs"],display:{Name:'{"text":"Eat/Destroy block","color":"yellow"}'},Unbreakable:1b,CustomModelData:1} 1
 #give @s[tag=pigman,tag=!selectedclass] carrot_on_a_stick{CustomModelData:37,Unbreakable:1b,display:{Name:'{"text":"Eat","color":"red"}',Lore:['[{"text":"Eat 50 blocks to level up!"}]','[{"text":"Your level reflects your current block count."}]','[{"text":"Level 2 - sword!"}]','[{"text":"Level 3 - armor!"}]','[{"text":"You must be standing next to stone bricks!","color":"red"}]']}} 1
-item replace entity @s[tag=pigman,tag=!selectedclass] armor.head with player_head{SkullOwner:"MHF_Pig",display:{Name:'{"text":"Hoglin Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1}]} 1
+item replace entity @s[tag=pigman,tag=!selectedclass] armor.head with player_head{SkullOwner:"MHF_Pig",display:{Name:'{"text":"Hoglin Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1}]} 1
 item replace entity @s[tag=pigman,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 14516085}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=pigman,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 14516085}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=pigman,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 14516085}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
 effect give @s[tag=pigman] weakness infinite 1 true
 gamemode adventure @s[tag=pigman]
 
-#execute as @s[tag=pigman] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
+execute as @s[tag=pigman] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
+execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
 
 #=========================================
 

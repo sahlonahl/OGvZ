@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.09.02
+# Last Modified On: 2023.09.08
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -392,7 +392,7 @@ effect clear @e[type=creeper,nbt={ignited:1b}]
 #execute as @e[type=#dvz:ai_monster,tag=!aggro] at @s run function dvz:zombies/ai_aggro 
 
 #Mob nature giving
-execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
+#execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
 
 
 

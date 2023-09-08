@@ -5,7 +5,7 @@
 # Created By: Zaffre
 # 
 # Created On: 2022.01.24
-# Last Modified On: 2023.09.02
+# Last Modified On: 2023.09.08
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -25,7 +25,13 @@ tellraw @a ["",{"text":"The shrine is destroyed.","color":"blue"},{"text":" THE 
 tag @e[tag=dvztimer] add gameover
 particle cloud ^ ^1 ^ 1 0.25 1 0.7 250
 
+weather thunder
+
+# Give potion effects to everyone to allow post-shrine killing
 effect give @a[tag=dwarves] glowing infinite
 effect give @a[tag=dwarves] weakness infinite 0 true
 effect give @a[tag=dwarves] slowness infinite 0 true
-#effect give @a[tag=dwarves] slow_falling infinite 0 true
+
+effect give @a[tag=zombies] resistance infinite 0 true
+effect give @a[tag=zombies] strength infinite 0 true
+effect give @a[tag=zombies] speed infinite 0 true

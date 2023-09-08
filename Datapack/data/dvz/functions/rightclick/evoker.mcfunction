@@ -5,7 +5,7 @@
 # Created By: Zaffre
 # 
 # Created On: 2023.03.03
-# Last Modified On: 2023.07.21
+# Last Modified On: 2023.09.08
 # Last Modified By: Wilkekids
 #
 # Credit to: Zaffre
@@ -32,3 +32,4 @@ item replace entity @s[tag=evoker,tag=!selectedclass] armor.legs with leather_le
 
 
 execute as @s[tag=evoker] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
+execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures

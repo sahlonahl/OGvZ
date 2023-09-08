@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.09.02
+# Last Modified On: 2023.09.08
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -37,7 +37,7 @@ give @s[tag=ghast,tag=!selectedclass] carrot_on_a_stick{CustomModelData:64,Unbre
 effect give @s[tag=ghast,tag=!selectedclass] health_boost 1000000 4 true
 #effect give @s[tag=ghast,tag=!selectedclass] jump_boost 1000000 255 true
 
-item replace entity @s[tag=ghast,tag=!selectedclass] armor.head with firework_star{CustomModelData:5,display:{Name:'{"text":"Ghast Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:20},{id:"binding_curse",lvl:1},{id:"protection",lvl:2}],AttributeModifiers:[{Slot:"head",AttributeName:"generic.armor", Name:"generic.armor", Amount:2.0, Operation:0, UUID:[I; -64585, 64804, 64804, 64804]}]}
+item replace entity @s[tag=ghast,tag=!selectedclass] armor.head with firework_star{CustomModelData:5,display:{Name:'{"text":"Ghast Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:20},{id:"binding_curse",lvl:1},{id:"protection",lvl:2}],AttributeModifiers:[{Slot:"head",AttributeName:"generic.armor", Name:"generic.armor", Amount:2.0, Operation:0, UUID:[I; -64585, 64804, 64804, 64804]}]}
 item replace entity @s[tag=ghast,tag=!selectedclass] armor.chest with iron_chestplate{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 20}, {id: "binding_curse", lvl: 1}, {id: "protection", lvl: 2}], AttributeModifiers: [{Slot: "chest", AttributeName: "generic.armor", Name: "generic.armor", Amount: 6.0d, Operation: 0, UUID: [I; 64585, -64804, 64804, 64804]}]}
 item replace entity @s[tag=ghast,tag=!selectedclass] armor.legs with iron_leggings{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 20}, {id: "binding_curse", lvl: 1}, {id: "protection", lvl: 2}], AttributeModifiers: [{Slot: "legs", AttributeName: "generic.armor", Name: "generic.armor", Amount: 5.0d, Operation: 0, UUID: [I; 64585, 64804, -64804, 64804]}]}
 item replace entity @s[tag=ghast,tag=!selectedclass] armor.feet with iron_boots{Unbreakable: 1b, Enchantments: [{id: "feather_falling", lvl: 100}, {id: "blast_protection", lvl: 20}, {id: "binding_curse", lvl: 1}, {id: "protection", lvl: 2}], AttributeModifiers: [{Slot: "feet", AttributeName: "generic.armor", Name: "generic.armor", Amount: 2.0d, Operation: 0, UUID: [I; 64585, 64804, 64804, -64804]}]}
