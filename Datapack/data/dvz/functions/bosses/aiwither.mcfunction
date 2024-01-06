@@ -15,4 +15,4 @@
 function dvz:bosses/removetags
 tag @e[tag=dvztimer] add selected
 tag @e[tag=dvztimer] add aiwitherselected
-tellraw @a[tag=admin] {"text":" * [OGvZ] AI wither selected!","color":"light_purple","italic":"true"}
+tellraw @a[tag=admin] {"text":" * [OGvZ] AI wither selected!","color":"light_purple","italic":true}

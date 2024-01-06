@@ -5,17 +5,17 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.04.07
-# Last Modified By: Zaffre
+# Last Modified On: 2023.08.04
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
 # Comments:
 # -------------------------------------------
 
-execute as @s[tag=playerwitherpick,scores={DVZ.Wskull.cool=1..}] run tellraw @s ["",{"text":" * [Skull] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.Wskull.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
+execute as @s[tag=playerwitherpick,scores={DVZ.Wskull.cool=1..}] run title @s actionbar ["",{"text":" * [Skull] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.Wskull.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 
-execute as @s[tag=playerwitherpick,scores={DVZ.Wskull.cool=0},tag=!speeding] run tellraw @s {"text":" * [Skull] Poof!","color":"red"}
+execute as @s[tag=playerwitherpick,scores={DVZ.Wskull.cool=0},tag=!speeding] run title @s actionbar {"text":" * [Skull] Poof!","color":"red"}
 execute as @s[tag=playerwitherpick,scores={DVZ.Wskull.cool=0},tag=!speeding] run playsound entity.wither.shoot master @a ~ ~ ~ 1
 
 execute as @s if entity @s[tag=playerwitherpick,scores={DVZ.Wskull.cool=0},tag=!speeding] run summon marker ~ ~ ~ {Tags:[ray]}

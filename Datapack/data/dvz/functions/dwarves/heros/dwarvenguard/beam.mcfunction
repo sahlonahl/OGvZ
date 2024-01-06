@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.17
-# Last Modified By: Zaffre
+# Last Modified On: 2023.08.18
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -25,7 +25,7 @@ execute as @s if entity @s[tag=BEAMuse] run tp @e[tag=ray,limit=1,sort=nearest] 
 execute as @s if entity @s[tag=BEAMuse] run tp @e[tag=ray,limit=1,sort=nearest] ~ ~1.5 ~
 execute as @s if entity @s[tag=BEAMuse] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run function dvz:dwarves/heros/dwarvenguard/beamloop
 execute as @s if entity @s[tag=BEAMuse] run execute as @e[tag=ray,limit=1,sort=nearest] at @s if entity @a[tag=zombies,distance=..3] run playsound minecraft:entity.experience_orb.pickup neutral @p[tag=BEAMuse] ~ ~ ~ 1 .5
-execute as @s if entity @s[tag=BEAMuse] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run damage @p[tag=zombies,distance=..3] 12 magic by @p[tag=BEAMuse]
+execute as @s if entity @s[tag=BEAMuse] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @p[tag=zombies,distance=..3] instant_damage 1 1 true
 execute as @s if entity @s[tag=BEAMuse] run kill @e[type=marker,tag=ray]
 
 execute if entity @s[tag=BEAMuse] run execute as @s run xp add @s -10 levels

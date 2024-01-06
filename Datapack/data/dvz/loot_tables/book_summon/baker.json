@@ -78,7 +78,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:16575,display:{Name:\'{\"text\":\"Legendary Shard\",\"color\":\"dark_purple\"}\',Lore:[\'[{\"text\":\"Use with a Legendary Book to make Legendary Items.\",\"color\":\"blue\"}]\']}}"
+              "tag": "{CustomModelData:16575,display:{Name:'{\"text\":\"Legendary Shard\",\"color\":\"dark_purple\"}',Lore:['[{\"text\":\"Use with a Legendary Book to make Legendary Items.\",\"color\":\"blue\"}]']}}"
             }
           ]
         }
@@ -104,7 +104,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{display:{Lore:[\'[{\"text\":\"Give to the Enchanter!\",\"color\":\"blue\"}]\']}}"
+              "tag": "{display:{Lore:['[{\"text\":\"Give to the Enchanter!\",\"color\":\"blue\"}]']}}"
             }
           ]
         }

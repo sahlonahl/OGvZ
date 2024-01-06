@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.14
-# Last Modified By: Zaffre
+# Last Modified On: 2023.09.08
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -16,13 +16,13 @@
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add spider
-team join zMONSTER @s[tag=spider,tag=!selectedclass]
+team join zSPIDER @s[tag=spider,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=spider,tag=!selectedclass] cooked_beef 64
 give @s[tag=spider,tag=!selectedclass] carrot_on_a_stick{CustomModelData:25,Unbreakable:1b,display:{Name:'{"text":"Poison","color":"dark_green"}',Lore:['[{"text":"Debuffs dwarves on hit."}]']}}
 give @s[tag=spider,tag=!selectedclass] carrot_on_a_stick{CustomModelData:39,Unbreakable:1b,display:{Name:'{"text":"Web","color":"gray"}',Lore:['[{"text":"Throw webs and trap dwarves."}]','[{"text":"15 second cooldown.","color":"red"}]']}}
 give @s[tag=spider,tag=!selectedclass] shears{display:{Name:'{"text":"Web cleaner"}'},Unbreakable:1b,Enchantments:[{id:"minecraft:efficiency",lvl:10s}]} 1
-item replace entity @s[tag=spider,tag=!selectedclass] armor.head with player_head{SkullOwner:"MHF_CaveSpider",display:{Name:'{"text":"Spider Head","italic":"false"}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1}]} 1
+item replace entity @s[tag=spider,tag=!selectedclass] armor.head with player_head{SkullOwner:"MHF_CaveSpider",display:{Name:'{"text":"Spider Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1}]} 1
 item replace entity @s[tag=spider,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 1391156}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=spider,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 11826}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=spider,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 727832}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "feather_falling", lvl: 10}, {id: "binding_curse", lvl: 1}]} 1
@@ -32,6 +32,7 @@ effect give @s[tag=spider,tag=!selectedclass] speed 1000000 2 true
 execute as @s if entity @s[tag=spider,scores={DVZ.web.cool=0}] run scoreboard players set @s DVZ.web.cool 2
 
 execute as @s[tag=spider] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
+execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
 
 #=========================================
 

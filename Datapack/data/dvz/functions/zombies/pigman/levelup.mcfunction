@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.11.12
-# Last Modified By: Zaffre
+# Last Modified On: 2023.08.04
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -18,7 +18,8 @@ item replace entity @s[tag=pigman,tag=pig2] armor.head with firework_star{Custom
 item replace entity @s[tag=pigman,tag=pig2] armor.chest with iron_chestplate{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "protection", lvl: 3}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=pigman,tag=pig2] armor.legs with iron_leggings{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=pigman,tag=pig2] armor.feet with iron_boots{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
-execute as @s[tag=pigman,tag=pig2] run effect give @s health_boost 999999 2
+execute as @s[tag=pigman,tag=pig2] run effect clear @s weakness
+execute as @s[tag=pigman,tag=pig2] run effect give @s health_boost infinite 2
 execute as @s[tag=pigman,tag=pig2] run effect give @s instant_health 1 10
 execute if entity @s[tag=pigman,tag=pig2] run clear @s carrot_on_a_stick{CustomModelData:37,Unbreakable:1b}
 #execute if entity @s[tag=pigman,tag=pig2] run effect give @s minecraft:regeneration 1000000 0 true
@@ -29,6 +30,8 @@ execute as @s[tag=pigman,tag=pig2] at @s run playsound entity.player.burp master
 execute if entity @s[tag=pigman,tag=pig2] as @a run playsound entity.zoglin.angry master @s ~ ~ ~ 100 0.8
 execute if entity @s[tag=pigman,tag=pig2] as @a run playsound entity.zoglin.angry master @s ~ ~ ~ 100 1.5
 execute as @s[tag=pigman,tag=pig2] run gamemode survival @s
+execute as @s[tag=pigman,tag=pig2] run team leave @s
+execute as @s[tag=pigman,tag=pig2] run team join zMAX_PIGMAN @s
 execute as @s[tag=pigman,tag=pig2] run clear @s #dvz:builderblocks
 execute if entity @s[tag=pigman,tag=pig2] run tag @s add pig3
 execute if entity @s[tag=pigman,tag=pig2] run tag @s remove pig2

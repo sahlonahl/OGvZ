@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.02.19
-# Last Modified By: Zaffre
+# Last Modified On: 2023.10.01
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -60,12 +60,13 @@ tag @a[tag=playerboss] remove ePortal
 clear @a[tag=playerboss] 
 effect clear @a[tag=playerboss]
 gamemode creative @a[tag=playerboss]
-effect give @a[tag=playerboss] invisibility 1000000 2 true
-effect give @a[tag=playerboss] resistance 1000000 9 true
-effect give @a[tag=playerboss] regeneration 1000000 9 true
+effect give @a[tag=playerboss] invisibility infinite 2 true
+effect give @a[tag=playerboss] resistance infinite 9 true
+effect give @a[tag=playerboss] regeneration infinite 9 true
 
 give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:41,Unbreakable:1b,display:{Name:'{"text":"Wither Skull","color":"red"}'}}
 give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:42,Unbreakable:1b,display:{Name:'{"text":"Mass Wither","color":"red"}'}}
+give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:44,Unbreakable:1b,display:{Name:'{"text":"Summon Followers","color":"red"}'}}
 
 execute at @r[tag=dwarves] positioned ~ ~30 ~ run summon minecraft:wither ~ ~ ~ {Tags:[tpwither]}
 tp @a[tag=playerboss] @e[tag=tpwither,limit=1]

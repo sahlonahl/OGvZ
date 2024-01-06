@@ -22,7 +22,7 @@ execute as @a[name="MunchieMan321",scores={DVZ.timer=18}] at @s run playsound en
 execute as @a[name="MunchieMan321",scores={DVZ.timer=22}] at @s run playsound entity.witch.celebrate master @a ~ ~ ~ 1 1 0
 execute as @a[name="MunchieMan321",scores={DVZ.timer=24}] at @s run summon firework_rocket ~ ~1 ~ {LifeTime:30,FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:1,Trail:0,Colors:[I;4312372],FadeColors:[I;3887386]}]}}}}
 execute as @a[name="MunchieMan321",scores={DVZ.timer=24}] run title @a actionbar {"text":"Impressed he lasted that long...","color":"dark_green","italic":true}
-execute as @a[name="MunchieMan321",scores={DVZ.timer=24}] run title @a title ""
+
 execute as @a[name="MunchieMan321"] at @s run scoreboard players add @s DVZ.timer 1
 execute as @a[name="MunchieMan321",scores={DVZ.timer=..24}] at @s run schedule function dvz:customdeath/munchieman321 1t
 execute as @a[name="MunchieMan321",scores={DVZ.timer=25}] at @s run scoreboard players reset @s DVZ.timer

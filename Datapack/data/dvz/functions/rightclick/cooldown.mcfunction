@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.09
-# Last Modified By: Zaffre
+# Last Modified On: 2023.10.04
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -159,7 +159,6 @@ execute as @a[scores={DVZ.evothrow.cool=1..}] run scoreboard players add @s DVZ.
 execute as @a[scores={DVZ.evothrow.ticks=20..}] run scoreboard players remove @s DVZ.evothrow.cool 1
 execute as @a[scores={DVZ.evothrow.ticks=20..}] run scoreboard players set @s DVZ.evothrow.ticks 0
 execute as @a[scores={DVZ.evothrow.cool=..0}] run scoreboard players reset @s DVZ.evothrow.ticks
-
 #Dragon Breath
 execute as @a[scores={DVZ.breath.cool=1..}] run scoreboard players add @s DVZ.breath.ticks 1
 execute as @a[scores={DVZ.breath.ticks=20..}] run scoreboard players remove @s DVZ.breath.cool 1
@@ -215,3 +214,8 @@ execute as @a[scores={DVZ.vindic.cool=1..}] run scoreboard players add @s DVZ.vi
 execute as @a[scores={DVZ.vindic.ticks=20..}] run scoreboard players remove @s DVZ.vindic.cool 1
 execute as @a[scores={DVZ.vindic.ticks=20..}] run scoreboard players set @s DVZ.vindic.ticks 0
 execute as @a[scores={DVZ.vindic.cool=..0}] run scoreboard players reset @s DVZ.vindic.ticks
+#Boss Minion Summon
+execute as @a[scores={DVZ.minion_summon.cool=1..}] run scoreboard players add @s DVZ.minion_summon.ticks 1
+execute as @a[scores={DVZ.minion_summon.ticks=20..}] run scoreboard players remove @s DVZ.minion_summon.cool 1
+execute as @a[scores={DVZ.minion_summon.ticks=20..}] run scoreboard players set @s DVZ.minion_summon.ticks 0
+execute as @a[scores={DVZ.minion_summon.cool=..0}] run scoreboard players reset @s DVZ.minion_summon.ticks

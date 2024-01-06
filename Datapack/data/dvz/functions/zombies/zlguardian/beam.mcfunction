@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.13
-# Last Modified By: Zaffre
+# Last Modified On: 2023.08.24
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -23,7 +23,7 @@ execute as @s if entity @s[tag=zlguardian,scores={DVZ.zlbeam.cool=0}] run summon
 execute as @s if entity @s[tag=zlguardian,scores={DVZ.zlbeam.cool=0}] run tp @e[tag=ray,limit=1,sort=nearest] @s
 execute as @s if entity @s[tag=zlguardian,scores={DVZ.zlbeam.cool=0}] run tp @e[tag=ray,limit=1,sort=nearest] ~ ~1.5 ~
 execute as @s if entity @s[tag=zlguardian,scores={DVZ.zlbeam.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run function dvz:zombies/zlguardian/beamloop
-execute as @s if entity @s[tag=zlguardian,scores={DVZ.zlbeam.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s if entity @a[tag=dwarves,distance=..3] run playsound minecraft:entity.experience_orb.pickup neutral @p[tag=zlBEAMuse] ~ ~ ~ 1 .5
+execute as @s if entity @s[tag=zlguardian,scores={DVZ.zlbeam.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s if entity @a[tag=dwarves,distance=..3] run execute as @s[tag=zlBEAMuse] at @s run playsound minecraft:entity.experience_orb.pickup neutral @s[tag=zlBEAMuse] ~ ~ ~ 1 .5
 execute as @s if entity @s[tag=zlguardian,scores={DVZ.zlbeam.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @p[tag=dwarves,distance=..3] instant_damage 1 1 true
 execute as @s if entity @s[tag=zlguardian,scores={DVZ.zlbeam.cool=0}] run kill @e[type=marker,tag=ray]
 execute as @s if entity @s[tag=zlguardian,scores={DVZ.zlbeam.cool=0}] run scoreboard players set @s DVZ.zlbeam.cool 5

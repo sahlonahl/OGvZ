@@ -2,6 +2,316 @@
 ADD NEW UPDATES ABOVE
 [][][][][][][][][][][]
 
+Collected Bugfixes and Balance Changes
+=== 2023.07.28 - 2023.08.11  ===
+= dwarf changes =
+- removed large numbers of blocks from inventories in the builder workshop
+    * either mosters steal them or dwarves have to deal with them
+    * leaving them is against the no blocks in chests rule
+    + replaced wool blocks with banners
+    - reduced the amount of coal to 2 stacks of blocks
+    - replaced gold ore blocks with raw gold
+    - removed wooden planks
+    - reduced the the amount of dye available to 1/2 stack of each
++ increased number of builder fire charges to 32
++ added dolphin's grace to the ultimate potion
+- builders using the builder disk can no longer generate infinite legendary structures
+= monster changes =
++ added descriptions to mob natures
+- reduced the number of wolf bones from 64 to 32
++ Ravager spawn message is properly capitalized
++ Rare mobs death messages have been properly capitalized
++ move all boss ability cooldowns to taskbar
++ clear weakness from hoglin when it levels up
++ fix snowman snowball tooltip to be the correct cooldown
++ increase zombie shield health to full but keep them breakable
++ make the enderman mob description match the in game timer
++ added enderman portal announcement back into the chat
+= bosses =
++ gave creative mode back to guardian boss
+==============
+
+Collected Bugfixes and Balance Changes
+=== 2023.07.06 - 2023.07.21 ===
+= dwarves =
++ ultimate potion gets slowfalling
++ add dolphins grace to speed potion
+- made the wicked crossbow weaker than before, but better than natural crossbows
++ added particles for getting too close to mob spawn
+- removed low mana particles
++ increased blacksmith weapon output
+- removed encahntments from crossbows
+- decreased halberd attack damage
+- decreased tailor armor output
+- decreased level of thorns on netherrite chestplate
+- reduced attack bonus from the bracer
++ baker legendary guaranteed
+- removed flavor text from wither bow
+- removed slow falling from ultimate potion
++ give effects ffrom holding the wicked crossbow
+= monsters =
++ gave bee bow infinity
++ increased blaze firefly cooldown
++ increased mob shield durability
+- chicken in adventure mode after flight
++ put enderman pearl cooldown messages into the chat again
+= bosses =
++ increased autokill percentage
+- removed guardian boss invis
+- removed guardian boss creative mode
++ gave guardian boss a trident and feather falling boots
+= minibosses =
++ put probability back to 1%
++ notification should appear in the chat
+- johnny's potion effects were reduced
+==============
+
+Collected Bugfixes and Balance Changes
+=== 2023.06.22 - 2023.06.30 ===
+= dwarves =
++ alchemist gets glass instead of sand
++ trying to get tower shrine to cooperate
++ fixed potion mana cost displayed
++ fixed dwarven guard beam damage
+- removed low health perticles
++ jump boost potions now jump higher and grant slowfalling
++ increased blacksmith redstone
++ increased enchanter lapis
+- crossbows are pre-enchanted
+- reduced tailor gold
+= monsters =
++ closed portal altert moved back to the chat
++ fixed blaze firefly
++ increased zombie shield durability
+- halved blaze firefly cooldown
+- barrels are no longer craftable
++ fixed planks not dropping
+= misc =
+- marked for mob removed
+==============
+
+Collected Bugfixes and Balance Changes
+=== 2023.05.13 - 2023.06.17 ===
+= dwarves =
+- removed spear (trident variant)
++ moved several chat messages to the action bar to decrease clutter
++ enchanter gets more chests
++ increased enchanter lapis
++ inicreased chance of builder wands
++ magnified several sidegrade attributes
+= monsters =
++ friendly fire returned
++ blaze fireball cooldwon reduced
+- guardian no longer have shields
++ wooden planks and chests drop for mobs now
+- reduced number of phantom fireworks
++ mob abilities appear in the action bar now
++ moster friendly fire re-enabled
++ golem makes sound when it get JBGed
+- golem no longer has leap
+- mob shields have low durability
+- mob natures less common
+- ocelot mana steal range halved
++ snowman ice will no longer melt during the day
+= minibosses =
+- minibosses chances halved (this would cause unforseen consequences later)
+= misc =
+- AI monsters no longer spawn naturally
++ wooden pickaxes can be crafted again
+- difficulty set to normal
++ generated loot chests are back
+- chest cannot be crafted
+==========
+
+Collected Bugfixes and Balance Changes
+=== 2023.05.13 - 2023.05.26 ===
+= dwarves =
++ make effects of shields always apply to the offhand
++ arrows of legend work again
++ blacksmith loot table cahnged to prefer regular weapons
+- removed dolphins grace from speed potions
+- slightly decreased amount of blacksmith items
+= monsters =
+- make golem leap shorter
+- give hoglins weakness so that they have to mine blocks to level up
+- zombie buckets removed
+- reduced skeleton bow power from 5 to 4
+- wolf no longer has strength
+- removed chicken ascend item
++ chickens get eggs when punching a dwarf
+= minibosses =
++ can spawn again
++ set miniboss timer to be 10 minutes after the boss
+- ravager strenght removed
++ ravager's "bash" item deals damage equal to strength 4
+= misc =
++ added muff1n's custom death message
+==========
+
+Collected Bugfixes and Balance Changes
+=== 2023.04.02 - 2023.04.29 ===
+= dwarves =
++ tweaked sidegrades
++ reduced sidegrade frequency
+- heros no longer get last dwarf buffs
+= monsters =
+- reduced charged creeper chance
++ flyers have much greater feather falling
++ fixed elder guardian health bar
++ fixed lingering assassin timer
++ non-dwarves will no longer get assassin slayer
++ fixed ender portal symmetry
+- fixed silverfish egg consumption
++ added announcement for charged creeper
+- decreased time and intensity to ocelot disarm
+- decreased time and intensity of spider poison
++ increased spider web size to 3x3x3
+- tweaked hoglin hunger to be longer and less intense
++ fixed silverfish egge lay cooldown
++ changed golem leap cooldown to match the tooltip
+- nodrop sounds can only be heard by the player who is dropping the item
++ changed ocelot disarm to have a longer cooldown than the length of the weakness
+- decrease mob nature effects from level 2 to level 1
++ increased the number of phantom fireworks from 16 to 48
++ made phantom leap higher
++ made golem leap a full replacement for JBG
+= misc =
++ re-enable pvp in the lobby (for fun)
+==========
+
+Collected Bugfixes and Balance Changes
+=== 2023.04.02 ===
+= dwarves =
++ builders spawn with stonecutters
++ fixed dwarf potion cost and item description
++ fixed tailor book item description
++ fixed builder book not working after the boss
++ fixed last dwarf message spam
+- reduced shiv frequency
+- reduced last dwarf regen
++ alchemist has chance to make fireworks
+= monsters =
++ charged creeper play a sound when spawning and emit particles
+= misc =
+- removed istant respawn
+==========
+
+Collected Bugfixes and Balance Changes
+=== 2023.03.03 - 2023.03.29 ===
+= dwarves =
++ the last dwarf alive recieves buffs
++ tailor sidegrade: scutum shields
+- removed rule book from blacksmith kit
++ builders have a change to spawn with structures
++ builders get a full set of armor
+- clay blocks no longer smelt into terracotta
++ dwarf health potions only need 20 mana now
++ dwarf buff potions only use 15 mana
++ netherrite amor added to the legendary item pool
+= monsters =
++ added charged creeper as a creeper variant
+- blaze particles are less intrusive
++ chillager ice path spawns closer to the player
++ ender portals are larger with light blocks
++ golem takes less knockback
+- ender portals spawn slightly lower
++ all flyers have fall damage reduction
+- enderman can take knockback whne on the portal
++ ocelot disarm has a longer range
++ chicken can get eggs when damaging dwarves
+- removed blaze regen when on fire
+= minibosses =
+- ghast fireball damage curve is less harsh
+= misc =
++ replaced assisted shrine with temple shrine
+==========
+
+
+Collected Bugfixes and Balance Changes
+=== 2023.02.01 - 2023.02.24 ===
+= dwarves =
+- reduced number of dye needed for tailor transmute
++ baker starts with clay balls
++ dwarves now emit particles whne they have low mana/health
++ distance warning plays a sound
++ added become mob option at game start
++ dwarf speed potions grant dolphins grace
+- dwaves no longer get blue bricks once the boss spawns
++ builders get enchantedd tools
++ builders get fire charges
++ dwarf sidegrades added
++ added the builder wand
+= monsters =
++ increased blaze fire res radius
+- removed "return to battle" message
++ ocelot can now see what mana a dwarf has left
+- ocelots no longer take fall damage
++ bee gets a bow again
++ blaze gets fire charges
++ blaze gets regen and strength when on fire
++ when it rains, mobs have a chance to be drowned or guardian
++ spiders get a pair of shears
+- reduced enchantments on Golem armor
+- fixed golem JBG
+- spider web height reduced
+- reduced phantom fireworks
+- all fyers put in adventure mode
+= bosses =
++ shortened assassin chat message
++ added assassin timer bar
++ buffed dragon's world cracker
++ elder guardian can spawn AI mobs
++ elder guardian is in creative
+- shortened boss timer messages
++ guardian boss death will now kill AI guardians
++ a message displays when boss autokill occurs
+= minibosses =
+- minibosses can not spwan until 10 minutes after the boss dies
++ ravager now has knockback resistance
+- ghast gets pies instead of beef
+- johnny no longer gets invincibility whne using vindication
+- johnny vidication cooldown increased
+= misc =
++ added tower shrine
++ weather can change and day/night cycle continues
+- shotened chat message whn the game begins
+- obsidian can not longer be picked up
+===========
+
+Collected Bugfixes and Balance Changes
+=== 2022.10.02 - 2022.12.10 ===
+= dwarves =
++ fixed EZ-fix slab description
++ builder legendary buildings are more common
++ death spawns a tombstone and a skeleton
++ fixed problem with Astra's death message
++ blacksmiths spawn with 1 netherrack
++ baker legendary golden foods more common
++ tailor blocks are terracotta instead of mushroom
++ updated stables and storage room structures
++ builder legendary structures can be used by all dwarves
+= mosters =
++ fixed enderman and golem chat messages
++ guardian beam tweaked
++ fixed phantom potions and delirium
++ increased Hoglin Tankiness
+- decreased Hoglin Tankiness
++ closed portal announced to everyone
++ mob horses farter and healthier
++ prevented ghast taking fall damage
+= bosses =
++ fixed assassin chat messages
++ increased elder guardian health
+= minibosses =
++ added custom texture to johnny's axe
+= misc =
++ lightning stikes the shrine whne all dwarves aare killed
++ iron and gold armor can be crafted
+- removed weakness in spawnin lobby
++ fallen dwarves dont spawn during build phase
+- decreased hrose speed
+==========
+
 The "Structurally Sound" Update
 === 2022.09.24 ===
 + BUILDER STRUCTURES

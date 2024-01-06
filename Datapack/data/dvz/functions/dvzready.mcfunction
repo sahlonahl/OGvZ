@@ -175,6 +175,9 @@ scoreboard players set @s DVZ.Wskull.cool 0
 scoreboard players set @s DVZ.Wskull.ticks 0
 scoreboard players set @s DVZ.Gbeam.cool 0
 scoreboard players set @s DVZ.Gbeam.ticks 0
+scoreboard players set @s DVZ.minion_summon.cool 0
+scoreboard players set @s DVZ.minion_summon.ticks 0
+
 #Hero
 scoreboard players set @s DVZ.flail.cool 0
 scoreboard players set @s DVZ.flail.ticks 0

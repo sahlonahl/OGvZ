@@ -13,9 +13,9 @@
 # Comments:
 # -------------------------------------------
 
-execute as @s[tag=enderman,scores={DVZ.pearl.cool=1..}] run title @s actionbar ["",{"text":" * [Pearl] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.pearl.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
+execute as @s[tag=enderman,scores={DVZ.pearl.cool=1..}] run tellraw @s ["",{"text":" * [Pearl] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.pearl.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 
-execute as @s if entity @s[tag=enderman,scores={DVZ.pearl.cool=0}] run title @s actionbar {"text":" * [Pearl] Poof!","color":"red"}
+execute as @s if entity @s[tag=enderman,scores={DVZ.pearl.cool=0}] run tellraw @s {"text":" * [Pearl] Poof!","color":"red"}
 execute as @s if entity @s[tag=enderman,scores={DVZ.pearl.cool=0}] run playsound entity.enderman.teleport master @a ~ ~ ~ 1
 
 execute as @s if entity @s[tag=enderman,scores={DVZ.pearl.cool=0}] run summon marker ~ ~ ~ {Tags:[ray]}

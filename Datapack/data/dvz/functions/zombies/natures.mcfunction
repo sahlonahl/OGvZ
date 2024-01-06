@@ -5,134 +5,108 @@
 # Created By: Zaffre
 # 
 # Created On: 2023.03.05
-# Last Modified On: 2023.06.13
-# Last Modified By: Zaffre
+# Last Modified On: 2023.09.02
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
 # Comments:
 # -------------------------------------------
 
-#Lonely
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Lonely:1b}}]}] strength 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Lonely:1b}}]}] slowness 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Lonely:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"LONELY","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Lonely:1b}}]}] add natured
-#Brave
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Brave:1b}}]}] strength 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Brave:1b}}]}] slowness 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Brave:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"BRAVE","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Brave:1b}}]}] add natured
-#Adamant
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Adamant:1b}}]}] strength 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Adamant:1b}}]}] mining_fatigue 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Adamant:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"ADAMANT","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Adamant:1b}}]}] add natured
-#Naughty
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Naughty:1b}}]}] strength 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Naughty:1b}}]}] hunger 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Naughty:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"NAUGHTY","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Naughty:1b}}]}] add natured
-
-
-#Bold
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Bold:1b}}]}] resistance 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Bold:1b}}]}] slowness 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Bold:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"BOLD","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Bold:1b}}]}] add natured
-#Relaxed
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Relaxed:1b}}]}] resistance 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Relaxed:1b}}]}] mining_fatigue 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Relaxed:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"RELAXED","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Relaxed:1b}}]}] add natured
-#Impish
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Impish:1b}}]}] resistance 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Impish:1b}}]}] hunger 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Impish:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"IMPISH","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Impish:1b}}]}] add natured
-#Lax
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Lax:1b}}]}] resistance 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Lax:1b}}]}] hunger 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Lax:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"LAX","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Lax:1b}}]}] add natured
-
-
-
-#Timid
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Timid:1b}}]}] speed 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Timid:1b}}]}] weakness 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Timid:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"TIMID","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Timid:1b}}]}] add natured
+# Level 1 effects
+#Strong
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Strong:1b}}]}] strength infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Strong:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Strong","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Strong:1b}}]}] add natured
+#Tough
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Tough:1b}}]}] resistance infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Tough:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Tough","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Tough:1b}}]}] add natured
+#Fast
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Fast:1b}}]}] speed infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Fast:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Fast","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Fast:1b}}]}] add natured
 #Hasty
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hasty:1b}}]}] speed 999999 1
-#effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hasty:1b}}]}] blah 999999 0
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hasty:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"HASTY","bold":true,"color":"yellow"}]
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hasty:1b}}]}] haste infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hasty:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Hasty","bold":true,"color":"yellow"}]
 tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hasty:1b}}]}] add natured
-#Jolly
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Jolly:1b}}]}] speed 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Jolly:1b}}]}] mining_fatigue 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Jolly:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"JOLLY","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Jolly:1b}}]}] add natured
-#Naive
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Naive:1b}}]}] speed 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Naive:1b}}]}] hunger 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Naive:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"NAIVE","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Naive:1b}}]}] add natured
 
 
-
-#Modest
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Modest:1b}}]}] haste 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Modest:1b}}]}] weakness 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Modest:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"MODEST","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Modest:1b}}]}] add natured
-#Mild
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Mild:1b}}]}] haste 999999 1
-#effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Mild:1b}}]}] blah 999999 0
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Mild:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"MILD","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Mild:1b}}]}] add natured
-#Quiet
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Quiet:1b}}]}] haste 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Quiet:1b}}]}] slowness 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Quiet:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"QUIET","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Quiet:1b}}]}] add natured
-#Rash
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Rash:1b}}]}] haste 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Rash:1b}}]}] hunger 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Rash:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"RASH","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Rash:1b}}]}] add natured
+# level 2 strength effects
+#Burly
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Burly:1b}}]}] strength infinite 1
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Burly:1b}}]}] slowness infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Burly:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Burly","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Burly:1b}}]}] add natured
+#Brawny 
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Brawny:1b}}]}] strength infinite 1
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Brawny:1b}}]}] mining_fatigue infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Brawny:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Brawny","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Brawny:1b}}]}] add natured
 
 
+# level 2 resistance effects
+#Hardy
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hardy:1b}}]}] resistance infinite 1
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hardy:1b}}]}] weakness infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hardy:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Hardy","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hardy:1b}}]}] add natured
+#Sturdy
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Sturdy:1b}}]}] resistance infinite 1
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Sturdy:1b}}]}] slowness infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Sturdy:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Sturdy","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Sturdy:1b}}]}] add natured
+#Stout
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Stout:1b}}]}] resistance infinite 1
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Stout:1b}}]}] mining_fatigue infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Stout:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Stout","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Stout:1b}}]}] add natured
 
-#Calm
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Calm:1b}}]}] slow_falling 999999 0
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Calm:1b}}]}] fire_resistance 999999 0
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Calm:1b}}]}] weakness 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Calm:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"CALM","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Calm:1b}}]}] add natured
-#Gentle
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Gentle:1b}}]}] fire_resistance 999999 0
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Gentle:1b}}]}] slow_falling 999999 0
-#effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Gentle:1b}}]}] blah 999999 0
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Gentle:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"GENTLE","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Gentle:1b}}]}] add natured
-#Sassy
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Sassy:1b}}]}] fire_resistance 999999 0
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Sassy:1b}}]}] slow_falling 999999 0
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Sassy:1b}}]}] slowness 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Sassy:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"SASSY","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Sassy:1b}}]}] add natured
-#Careful
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] fire_resistance 999999 0
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] slow_falling 999999 0
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] mining_fatigue 999999 1
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"SASSY","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Careful:1b}}]}] add natured
 
-#Gluttonous
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Gluttonous:1b}}]}] health_boost 999999 1
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Gluttonous:1b}}]}] regeneration 999999 0
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Gluttonous:1b}}]}] slowness 999999 0
-effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Gluttonous:1b}}]}] mining_fatigue 999999 0
-tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Gluttonous:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Gluttonous","bold":true,"color":"yellow"}]
-tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Gluttonous:1b}}]}] add natured
+# level 2 speed effects
+#Quick
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Quick:1b}}]}] speed infinite 1
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Quick:1b}}]}] weakness infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Quick:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Quick","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Quick:1b}}]}] add natured
+#Fleet
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Fleet:1b}}]}] speed infinite 1
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Fleet:1b}}]}] mining_fatigue infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Fleet:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Fleet","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Fleet:1b}}]}] add natured
+#Swift
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Swift:1b}}]}] speed infinite 1
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Swift:1b}}]}] hunger infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Swift:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Swift","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Swift:1b}}]}] add natured
+
+
+# level 2 haste effects
+#Miner
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Miner:1b}}]}] haste infinite 1
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Miner:1b}}]}] slowness infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Miner:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Miner","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Miner:1b}}]}] add natured
+#Hungry
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hungry:1b}}]}] haste infinite 1
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hungry:1b}}]}] hunger infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hungry:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Hungry","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Hungry:1b}}]}] add natured
+
+
+# level 3 effects
+#Juggernaut
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Juggernaut:1b}}]}] health_boost infinite 2
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Juggernaut:1b}}]}] regeneration infinite 0
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Juggernaut:1b}}]}] slowness infinite 1
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Juggernaut:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Juggernaut","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Juggernaut:1b}}]}] add natured
+#Wildcard
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Wildcard:1b}}]}] slow_falling infinite 0
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Wildcard:1b}}]}] fire_resistance infinite 0
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Wildcard:1b}}]}] jump_boost infinite 1
+effect give @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Wildcard:1b}}]}] dolphins_grace infinite 0
+tellraw @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Wildcard:1b}}]}] ["",{"text":" \u2022 Your mob nature is ","color":"yellow"},{"text":"Wildcard","bold":true,"color":"yellow"}]
+tag @s[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Wildcard:1b}}]}] add natured
+
+
