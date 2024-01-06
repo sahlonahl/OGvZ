@@ -16,7 +16,7 @@
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add wolf
-team join zMONSTER @s[tag=wolf,tag=!selectedclass]
+team join zWOLF @s[tag=wolf,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=wolf,tag=!selectedclass] cooked_beef 64
 give @s[tag=wolf,tag=!selectedclass] diamond_sword{Enchantments:[{id:"sharpness",lvl:5}]} 1

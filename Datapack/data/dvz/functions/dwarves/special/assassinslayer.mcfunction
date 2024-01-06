@@ -52,6 +52,7 @@ clear @s carrot_on_a_stick{CustomModelData:3,Unbreakable:1b}
 clear @s minecraft:carrot_on_a_stick{CustomModelData:13,Unbreakable:1b} 1 
 
 give @s carrot_on_a_stick{display:{Name:'{"text":"Regrowth Star","color":"gold"}',Lore:['{"text":"[R-Click] Heals and restores mana for targeted dwarves.","color":"yellow"}','{"text":"[R-click + Shift] Teleports targeted dwarf to you.","color":"yellow"}','{"text":"Requires 5 mana!","color":"red"}','{"text":"5 second cooldown!","color":"red"}']},Unbreakable:1b,CustomModelData:50} 1
+give @s glow_squid_spawn_egg{display:{Name:'{"text":"Slayer Totem"}',Lore:['{"text":"Summons a stucture that restores mana to all dwarves"}']}} 5
 #loot give @s loot dvz:special/assassinslayer
 
 item replace entity @s armor.head with iron_helmet{AttributeModifiers: [{Slot: "head", AttributeName: "generic.armor", Name: "generic.armor", Amount: 3.0d, Operation: 0, UUID: [I; -4804, 4804, 4804, 4804]}, {Slot: "head", AttributeName: "generic.armor_toughness", Name: "generic.armor_toughness", Amount: 2.0d, Operation: 0, UUID: [I; -70264, 70264, 70264, 70264]}], Enchantments: [{id: "protection", lvl: 3}, {id: "blast_protection", lvl: 3}, {id: "binding_curse", lvl: 1}], Unbreakable: 1b, display: {Name: '{"text":"Slayer Helmet","color":"gold"}'}}

@@ -24,7 +24,7 @@ playsound entity.ravager.roar master @a ~ ~ ~ 200
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add ravager
-team join zMONSTER @s[tag=ravager,tag=!selectedclass]
+team join zRAVAGER @s[tag=ravager,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 
 give @s[tag=ravager,tag=!selectedclass] cooked_beef 64

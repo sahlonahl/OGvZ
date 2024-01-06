@@ -19,7 +19,7 @@ tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add enderman
 tellraw @a ["",{"text":"ALERT:","bold":true,"color":"red"},{"text":" An ","color":"gold"},{"text":"Enderman ","italic":true,"color":"light_purple"},{"text":"(","color":"light_purple"},{"selector":"@s[tag=enderman,tag=!selectedclass]","color":"light_purple"},{"text":")","color":"light_purple"},{"text":" approaches!","color":"gold"}]
-team join zMONSTER @s[tag=enderman,tag=!selectedclass]
+team join zENDERMAN @s[tag=enderman,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 scoreboard players set @s[tag=!selectedclass] DVZ.portal.cool 30
 give @s[tag=enderman,tag=!selectedclass] cooked_beef 64

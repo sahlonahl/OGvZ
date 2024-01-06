@@ -16,7 +16,7 @@
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add spider
-team join zMONSTER @s[tag=spider,tag=!selectedclass]
+team join zSPIDER @s[tag=spider,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=spider,tag=!selectedclass] cooked_beef 64
 give @s[tag=spider,tag=!selectedclass] carrot_on_a_stick{CustomModelData:25,Unbreakable:1b,display:{Name:'{"text":"Poison","color":"dark_green"}',Lore:['[{"text":"Debuffs dwarves on hit."}]']}}

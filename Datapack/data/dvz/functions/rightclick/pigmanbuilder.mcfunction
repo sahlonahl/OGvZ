@@ -17,7 +17,7 @@ tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add pigman
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add pig1
-team join zMONSTER @s[tag=pigman,tag=!selectedclass]
+team join zPIGMAN @s[tag=pigman,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=pigman,tag=!selectedclass] cooked_beef 64
 give @s[tag=pigman,tag=!selectedclass] golden_pickaxe{CanDestroy:["minecraft:terracotta","minecraft:stone_bricks","minecraft:stone_brick_slab","minecraft:stone_brick_stairs","minecraft:stone_brick_wall","minecraft:mossy_stone_bricks","minecraft:cracked_stone_bricks","minecraft:chiseled_stone_bricks","minecraft:mossy_stone_brick_slab","minecraft:mossy_stone_brick_wall","minecraft:mossy_stone_brick_stairs","minecraft:infested_stone_bricks","minecraft:infested_mossy_stone_bricks","minecraft:infested_cracked_stone_bricks","minecraft:infested_chiseled_stone_bricks","minecraft:smooth_quartz","minecraft:smooth_quartz_slab","minecraft:smooth_quartz_stairs","minecraft:bricks","minecraft:brick_slab","minecraft:brick_stairs","minecraft:brick_wall","minecraft:nether_bricks","minecraft:nether_brick_slab","minecraft:nether_brick_stairs","minecraft:nether_brick_fence","minecraft:nether_brick_wall","minecraft:dark_prismarine","minecraft:dark_prismarine_slab","minecraft:dark_prismarine_stairs"],display:{Name:'{"text":"Eat/Destroy block","color":"yellow"}'},Unbreakable:1b,CustomModelData:1} 1

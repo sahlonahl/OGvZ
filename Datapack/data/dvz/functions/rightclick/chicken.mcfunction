@@ -17,7 +17,7 @@ tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add chicken
 execute if entity @s[tag=chicken,tag=!selectedclass] run tag @s add ghastflight
-team join zMONSTER @s[tag=chicken,tag=!selectedclass]
+team join zCHICKEN @s[tag=chicken,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 gamemode adventure @s[tag=chicken]
 

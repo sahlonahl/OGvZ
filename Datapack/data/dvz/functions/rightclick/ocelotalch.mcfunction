@@ -16,7 +16,7 @@
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add ocelot
-team join zMONSTER @s[tag=ocelot,tag=!selectedclass]
+team join zOCELOT @s[tag=ocelot,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 
 give @s[tag=ocelot,tag=!selectedclass] cooked_beef 64

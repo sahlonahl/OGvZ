@@ -193,32 +193,6 @@
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_attributes",
-              "modifiers": [
-                {
-                  "attribute": "minecraft:generic.attack_damage",
-                  "name": "",
-                  "amount": 10,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                },
-                {
-                  "attribute": "minecraft:generic.attack_speed",
-                  "name": "",
-                  "amount": -2.6,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                },
-                {
-                  "attribute": "minecraft:generic.armor",
-                  "name": "",
-                  "amount": -2,
-                  "operation": "addition",
-                  "slot": "mainhand"
-                }
-              ]
             }
           ]
         },

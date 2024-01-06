@@ -23,6 +23,9 @@ execute as @e[name="Builder Talltower",type=minecraft:glow_squid] at @s run plac
 execute as @e[name="Builder Tower",type=minecraft:glow_squid] at @s run place template dvz:builder_tower ~-5 ~ ~-2
 execute as @e[name="Builder Workshop",type=minecraft:glow_squid] at @s run place template dvz:builder_workshop ~-9 ~ ~-4
 
+execute as @e[name="Slayer Totem",type=minecraft:glow_squid] at @s run place template dvz:slayer_totem ~-1 ~ ~-1
+execute as @e[name="Slayer Totem",type=minecraft:glow_squid] at @s run summon marker ~ ~2 ~ {Tags:[slayer_totem]}
+
 execute as @s[type=minecraft:glow_squid] run particle minecraft:explosion ~ ~3 ~ 4 4 4 0.01 50
 execute as @s[type=minecraft:glow_squid] run playsound minecraft:block.nether_bricks.break master @a ~ ~ ~ 10 0.5
 execute as @s[type=minecraft:glow_squid] run playsound minecraft:block.chain.break master @a ~ ~ ~ 10 0.5

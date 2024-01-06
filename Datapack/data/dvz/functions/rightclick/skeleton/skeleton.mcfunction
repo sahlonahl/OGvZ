@@ -15,7 +15,7 @@
 
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
-team join zMONSTER @s[tag=skeleton,tag=!selectedclass]
+team join zSKELETON @s[tag=skeleton,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 
 give @s[tag=skeleton,tag=!selectedclass] cooked_beef 64

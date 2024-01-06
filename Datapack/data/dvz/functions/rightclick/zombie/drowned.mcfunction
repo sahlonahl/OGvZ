@@ -16,9 +16,9 @@
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 tag @s[tag=!selectedclass] add drowned
-team join zMONSTER @s[tag=drowned,tag=!selectedclass]
+team join zDROWNED @s[tag=drowned,tag=!selectedclass]
 clear @s[tag=!selectedclass]
-effect give @s[tag=drowned,tag=!selectedclass] conduit_power 1000000 0
+#effect give @s[tag=drowned,tag=!selectedclass] conduit_power 1000000 0
 
 give @s[tag=drowned,tag=!selectedclass] cooked_beef 64
 give @s[tag=drowned,tag=!selectedclass] iron_sword{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:2}]}

@@ -16,7 +16,7 @@
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add silverfish
-team join zMONSTER @s[tag=silverfish,tag=!selectedclass]
+team join zSILVERFISH @s[tag=silverfish,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 
 give @s[tag=silverfish,tag=!selectedclass] carrot_on_a_stick{CustomModelData:35,Unbreakable:1b,display:{Name:'{"text":"Lay Egg","color":"light_purple"}',Lore:['[{"text":"Lay eggs and infest dwarven stone."}]','[{"text":"You must be standing next to stone bricks.","color":"red"}]']}} 1

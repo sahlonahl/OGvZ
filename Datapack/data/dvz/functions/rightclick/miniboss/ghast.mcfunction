@@ -25,7 +25,7 @@ tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add ghast
 execute if entity @s[tag=ghast,tag=!selectedclass] run tag @s add ghastflight
-team join zMONSTER @s[tag=ghast,tag=!selectedclass]
+team join zGHAST @s[tag=ghast,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 
 give @s[tag=ghast,tag=!selectedclass] bread 64

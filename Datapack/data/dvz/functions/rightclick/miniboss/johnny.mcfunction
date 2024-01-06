@@ -26,7 +26,7 @@ playsound entity.vindicator.celebrate master @a ~ ~ ~ 200
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add johnny
-team join zMONSTER @s[tag=johnny,tag=!selectedclass]
+team join zJOHNNY @s[tag=johnny,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 
 give @s[tag=johnny,tag=!selectedclass] cooked_beef 64

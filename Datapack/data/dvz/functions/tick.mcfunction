@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.09.08
+# Last Modified On: 2023.10.01
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -99,8 +99,8 @@ execute at @a[tag=vindicator] run effect give @a[tag=husk,distance=10..15] haste
 execute at @a[tag=vindicator] run effect give @a[tag=husk,distance=5..10] haste 4 1
 execute at @a[tag=vindicator] run effect give @a[tag=husk,distance=0.2..5] haste 6 2
 
-effect give @a[tag=zombies] night_vision 1000000 1 true
-effect give @a[tag=zombies] conduit_power 1000000 1 true
+effect give @a[tag=zombies] night_vision infinite 1 true
+effect give @a[tag=zombies] conduit_power infinite 1 true
 execute as @a[tag=blaze] at @s run effect give @a[tag=zombies,distance=..6] fire_resistance 4 1
 
 #Boss Spawn Timer
@@ -236,6 +236,12 @@ execute at @e[type=marker,tag=dSpawn] at @a[tag=dwarves,tag=nomana,level=..99,di
 
 execute as @a[tag=assassinslayer] run scoreboard players add @a[tag=dwarves,level=..99,distance=..4] DVZ.mana.ticks 1
 execute as @a[tag=assassinslayer] at @a[tag=dwarves,level=..99,distance=..4] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
+
+# slayer totem mana and hp regen
+execute as @e[type=marker,tag=slayer_totem] at @s run scoreboard players add @a[tag=dwarves,level=..99,distance=..5] DVZ.mana.ticks 1
+execute at @e[type=marker,tag=slayer_totem] at @a[tag=dwarves,level=..99,distance=..5] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
+execute as @e[type=marker,tag=slayer_totem] at @s unless block ~ ~ ~ minecraft:diamond_block run tag @s add totem_death
+execute as @e[type=marker,tag=slayer_totem,tag=totem_death] at @s run function dvz:dwarves/heros/assassinslayer/totem_destroy
 
 #Daytime buffs
 execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime run scoreboard players add @a[tag=dwarves,tag=nomana,level=..99,distance=..5] DVZ.mana.ticks 1
@@ -386,12 +392,13 @@ execute if entity @a[nbt={HurtTime:10s}] run function dvz:zombies/mob_hurt
 
 #AI mob stuff
 execute as @e[type=#dvz:aimob,type=!player,tag=!AIbuffed] run function dvz:zombies/ai_buff
-effect clear @e[type=creeper,nbt={ignited:1b}]
+#effect clear @e[type=creeper,nbt={ignited:1b}]
+#execute if entity @e[type=creeper,nbt={ignited:1b}] run tellraw @a "charging"
 
 #AI mob aggro
 #execute as @e[type=#dvz:ai_monster,tag=!aggro] at @s run function dvz:zombies/ai_aggro 
 
-#Mob nature giving
+#Mob nature giving (moved to each mob's spawning function)
 #execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
 
 
@@ -425,7 +432,9 @@ execute as @e[type=silverfish,scores={DVZ.silver.kill=2400..}] run kill @s
 execute store result score Dwarves DVZ.playercount if entity @a[tag=dwarves]
 execute store result score Mobs DVZ.playercount if entity @a[tag=zombies]
 
+# this line tests for player count
 execute as @e[tag=!gameover,tag=dvztimer,tag=fight] store result score @s DVZ.playertest run scoreboard players get Dwarves DVZ.playercount
+# this line ends the game when playercount == 0
 execute as @e[tag=!gameover,tag=dvztimer,tag=fight,scores={DVZ.playertest=0}] at @e[tag=dSpawn] run function dvz:gameoverkill
 #Game over with typical shrine
 execute as @e[tag=!gameover,tag=dvztimer,tag=fight] at @e[tag=dSpawn] unless block ~ ~-1 ~ minecraft:gold_block unless block ~-1 ~-1 ~ minecraft:gold_block unless block ~ ~-1 ~-1 minecraft:gold_block unless block ~-1 ~-1 ~-1 minecraft:gold_block unless block ~1 ~-2 ~ minecraft:gold_block unless block ~1 ~-2 ~-1 minecraft:gold_block unless block ~ ~-2 ~-2 minecraft:gold_block unless block ~-1 ~-2 ~-2 minecraft:gold_block unless block ~-2 ~-2 ~-1 minecraft:gold_block unless block ~-2 ~-2 ~ minecraft:gold_block unless block ~-1 ~-2 ~1 minecraft:gold_block unless block ~ ~-2 ~1 minecraft:gold_block run function dvz:gameovershrine

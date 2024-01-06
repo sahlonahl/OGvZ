@@ -56,7 +56,7 @@ execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:41,Unbreakable:1b}}}] at @s run function dvz:bosses/wither/witherskull
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:42,Unbreakable:1b}}}] at @s run function dvz:bosses/wither/masswither
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:43,Unbreakable:1b}}}] at @s run function dvz:bosses/guardian/beam
-execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:44,Unbreakable:1b}}}] at @s run function dvz:bosses/guardian/invisibility
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:44,Unbreakable:1b}}}] at @s run function dvz:bosses/guardian/summon_followers
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:45,Unbreakable:1b}}}] at @s run function dvz:dwarves/heros/witherwarrior/drain
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:46,Unbreakable:1b}}}] at @s run function dvz:dwarves/heros/witherwarrior/sunfury
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:47,Unbreakable:1b}}}] at @s run function dvz:dwarves/heros/dwarvenguard/rally

@@ -16,7 +16,7 @@
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add chillager
-team join zMONSTER @s[tag=chillager,tag=!selectedclass]
+team join zCHILLAGER @s[tag=chillager,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=chillager,tag=!selectedclass] cooked_beef 64
 give @s[tag=chillager,tag=!selectedclass] stick{Enchantments:[{id:"knockback",lvl:2}],display:{Name:'{"text":"Knockback Stick"}',Lore:['[{"text":"SMACK","color":"yellow"}]']}} 1

@@ -18,7 +18,7 @@ tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add golem
 tellraw @a ["",{"text":"ALERT:","bold":true,"color":"red"},{"text":" A ","color":"gold"},{"text":"Golem ","italic":true,"color":"gray"},{"text":"(","color":"gray"},{"selector":"@s[tag=golem,tag=!selectedclass]","color":"gray"},{"text":")","color":"gray"},{"text":" approaches!","color":"gold"}]
-team join zMONSTER @s[tag=golem,tag=!selectedclass]
+team join zGOLEM @s[tag=golem,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=golem,tag=!selectedclass] cooked_beef 64
 give @s[tag=golem,tag=!selectedclass] carrot_on_a_stick{CustomModelData:57,Unbreakable:1b,display:{Name:'{"text":"Fissure","color":"gold"}',Lore:['[{"text":"Raise the dirt in a straight line."}]','[{"text":"Good for making cover."}]','[{"text":"5 second cooldown!","color":"red"}]']}} 1

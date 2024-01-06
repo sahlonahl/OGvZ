@@ -17,7 +17,7 @@ tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add blaze
 execute if entity @s[tag=blaze,tag=!selectedclass] run tag @s add ghastflight
-team join zMONSTER @s[tag=blaze,tag=!selectedclass]
+team join zBLAZE @s[tag=blaze,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 
 give @s[tag=blaze,tag=!selectedclass] cooked_beef 64

@@ -26,9 +26,9 @@ execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] 
 #Initial Setup
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run clear @s carrot_on_a_stick{Unbreakable:1b}
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s minecraft:instant_health 1 200
-execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s slowness 1000000 4 true
-execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s jump_boost 1000000 128 true
-execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s resistance 1000000 100 true
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s slowness infinite 4 true
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s jump_boost infinite 128 true
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s resistance infinite 100 true
 
 #Portal Message
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run tellraw @a ["",{"text":" * [Portal] ","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":" has created an Ender portal!!!","color":"light_purple"}]

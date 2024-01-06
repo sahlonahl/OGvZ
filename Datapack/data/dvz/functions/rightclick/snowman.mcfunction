@@ -16,7 +16,7 @@
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add snowman
-team join zMONSTER @s[tag=snowman,tag=!selectedclass]
+team join zSNOWMAN @s[tag=snowman,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=snowman,tag=!selectedclass] cooked_beef 64
 give @s[tag=snowman,tag=!selectedclass] carrot_on_a_stick{CustomModelData:52,Unbreakable:1b,display:{Name:'{"text":"Snowball Barrage","color":"aqua"}',Lore:['[{"text":"Long-range snowball barrage!"}]','[{"text":"8 second cooldown.","color":"red"}]']}} 1

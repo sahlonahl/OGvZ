@@ -16,7 +16,7 @@
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 tag @s[tag=!selectedclass] add zlguardian
-team join zMONSTER @s[tag=zlguardian,tag=!selectedclass]
+team join zGUARDIAN @s[tag=zlguardian,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 effect give @s[tag=zlguardian,tag=!selectedclass] conduit_power 1000000 0
 

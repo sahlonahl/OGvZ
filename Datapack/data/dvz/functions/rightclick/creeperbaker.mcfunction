@@ -16,7 +16,7 @@
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add creeper
-team join zMONSTER @s[tag=creeper,tag=!selectedclass]
+team join zCREEPER @s[tag=creeper,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=creeper,tag=!selectedclass] cooked_beef 64
 give @s[tag=creeper,tag=!selectedclass] carrot_on_a_stick{CustomModelData:10,Unbreakable:1b,display:{Name:'{"text":"Explode!","color":"red"}',Lore:['[{"text":"Obvisouly a single-use item!","color":"dark_red"}]']}}

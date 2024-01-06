@@ -15,7 +15,7 @@
 
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
-team join zMONSTER @s[tag=pillager,tag=!selectedclass]
+team join zPILLAGER @s[tag=pillager,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 
 give @s[tag=pillager,tag=!selectedclass] cooked_beef 64
