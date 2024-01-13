@@ -9,7 +9,7 @@
         {
           "type": "item",
           "name": "minecraft:glass",
-          "weight": 3,
+          "weight": 6,
           "functions": [
             {
               "function": "set_count",

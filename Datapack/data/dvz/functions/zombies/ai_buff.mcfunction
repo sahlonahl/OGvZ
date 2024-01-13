@@ -5,8 +5,8 @@
 # Created By: Zaffre
 # 
 # Created On: 2020.04.15
-# Last Modified On: 2022.12.10
-# Last Modified By: Zaffre
+# Last Modified On: 2024.01.05
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -37,6 +37,9 @@ data merge entity @s[type=skeleton_horse,tag=!AIbuffed] {Health:20f,Tame:1b,Attr
 # team joining commands
 #team join zMONSTER @s[tag=!explode]
 #data merge entity @s[tag=!explode] {Team:"zMONSTER"}
-data merge entity @s[type=!silverfish,tag=!explode] {Team:"zENDERMAN"}
+data merge entity @s[tag=!explode] {Team:"zENDERMAN"}
 data merge entity @s[type=silverfish,tag=!explode] {Team:"zSILVERFISH"}
+data merge entity @s[type=wither_skeleton,tag=!explode] {Team:"zWITHER"}
+data merge entity @s[type=drowned,tag=!explode] {Team:"zGUARDIAN_BOSS"}
+data merge entity @s[type=guardian,tag=!explode] {Team:"zGUARDIAN_BOSS"}
 tag @s add AIbuffed

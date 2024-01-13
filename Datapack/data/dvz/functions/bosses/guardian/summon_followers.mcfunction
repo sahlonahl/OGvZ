@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.10.01
+# Last Modified On: 2024.01.05
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -24,5 +24,5 @@ execute if entity @s[tag=playerguardianpick,scores={DVZ.minion_summon.cool=0}] a
 execute if entity @s[tag=playerguardianpick,scores={DVZ.minion_summon.cool=0}] as @a[tag=dwarves] if predicate dvz:50chance run summon guardian ^ ^1 ^-1 {CustomName:'{"text":"the Guardian\'s minion"}',ActiveEffects:[{Id:11,Amplifier:1b,Duration:99999}]}
 execute if entity @s[tag=playerwitherpick,scores={DVZ.minion_summon.cool=0}] as @a[tag=dwarves] run summon wither_skeleton ^ ^1 ^-1 {CustomName:'{"text":"the Wither\'s minion"}',HandItems:[{id:"minecraft:stone_sword",Count:1b},{}],ActiveEffects:[{Id:11,Amplifier:1b,Duration:99999}]}
 
-execute as @s if entity @s[scores={DVZ.minion_summon.cool=0}] run scoreboard players set @s DVZ.minion_summon.cool 30
+execute as @s if entity @s[scores={DVZ.minion_summon.cool=0}] run scoreboard players set @s DVZ.minion_summon.cool 45
 execute as @s if entity @s[scores={DVZ.minion_summon.cool=0}] run scoreboard players set @s DVZ.rclick 0
