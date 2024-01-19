@@ -170,6 +170,21 @@
               "tag": "{display:{Name:'{\"text\":\"Builder Workshop\"}',Lore:['{\"text\":\"Instantly conjure this structure!\",\"color\":\"green\"}','{\"text\":\"CONSUMED ON USE!\",\"color\":\"red\",\"underlined\":true}','{\"text\":\"Requires 0 mana!\",\"color\":\"gold\"}']}}"
             }
           ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glow_squid_spawn_egg",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"TNT Cannon\"}',Lore:['{\"text\":\"Instantly conjure this structure!\",\"color\":\"green\"}','{\"text\":\"CONSUMED ON USE!\",\"color\":\"red\",\"underlined\":true}','{\"text\":\"Requires 0 mana!\",\"color\":\"gold\"}']}}"
+            }
+          ]
         }
       ]
     }

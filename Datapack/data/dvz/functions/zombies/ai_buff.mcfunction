@@ -5,7 +5,7 @@
 # Created By: Zaffre
 # 
 # Created On: 2020.04.15
-# Last Modified On: 2024.01.05
+# Last Modified On: 2024.01.18
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -19,7 +19,7 @@ effect give @s[type=!silverfish,type=!creeper,tag=!AIbuffed,tag=!explode] speed 
 effect give @s[type=!silverfish,type=!creeper,tag=!AIbuffed,tag=!explode] dolphins_grace 999999 0 true
 data merge entity @s[type=zombie,tag=!AIbuffed] {HandItems:[{id:"minecraft:wooden_sword",Count:1b},{}],HandDropChances:[0.000F,0.085F]}
 data merge entity @s[type=husk,tag=!AIbuffed] {HandItems:[{id:"minecraft:wooden_sword",Count:1b},{}],HandDropChances:[0.000F,0.085F]}
-data merge entity @s[type=wither_skeleton,tag=!AIbuffed] {HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:power",lvl:4s}]}},{}],HandDropChances:[0.000F,0.085F]}
+#data merge entity @s[type=wither_skeleton,tag=!AIbuffed] {HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:power",lvl:4s}]}},{}],HandDropChances:[0.000F,0.085F]}
 data merge entity @s[type=stray,tag=!AIbuffed] {HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantments:[{id:"minecraft:power",lvl:4s}]}},{}],HandDropChances:[0.000F,0.085F]}
 data merge entity @s[type=creeper,tag=!AIbuffed,tag=!explode] {Fuse:25}
 data merge entity @s[type=drowned,tag=!AIbuffed] {HandItems:[{id:"minecraft:trident",Count:1b,tag:{Enchantments:[{id:"minecraft:impaling",lvl:5s},{id:"minecraft:channeling",lvl:1s}]}},{}],HandDropChances:[0.000F,0.085F],ArmorItems:[{},{},{},{id:"minecraft:golden_helmet",Count:1b,tag:{Enchantments:[{id:"minecraft:protection",lvl:4s}]}}],ArmorDropChances:[0.000F,0.085F,0.085F,0.085F]}
