@@ -52,12 +52,12 @@ give @s[tag=builder,tag=!selectedclass] iron_shovel{display:{Name:'{"text":"Buil
 give @s[tag=builder,tag=!selectedclass] iron_axe{Enchantments:[{id:"silk_touch",lvl:1},{id:"minecraft:efficiency",lvl:4s}],display:{Name:'{"text":"Builder Axe","color":"green"}'}}
 give @s[tag=builder,tag=!selectedclass] fire_charge 32
 execute if predicate dvz:50chance run give @s[tag=builder,tag=!selectedclass] carrot_on_a_stick{CustomModelData:1000,Unbreakable:1b,display:{Name:'{"text":"Legendary Book","color":"gold"}',Lore:['[{"text":"Used with 5 Legendary Shards to make Legendary Items.","color":"blue"}]','[{"text":"Single-use item!","color":"red"}]']}}
+execute if predicate dvz:buildchance as @s[tag=builder,tag=!selectedclass] run loot give @s loot dvz:starter_buildings
 tag @s add selectedclass
 tellraw @s[tag=builder,tag=selectedclass] ["",{"text":"\u25b6","bold":true},{"text":"You are a ","color":"gold"},{"text":"BUILDER","color":"yellow"},{"text":". You make the fort for the dwarves.","color":"gold"}]
 playsound block.note_block.pling master @s ~ ~ ~ 1 2
 particle happy_villager ~ ~1 ~ 0.1 0.5 0.1 0.01 10
 
-execute as @s[tag=builder,tag=!selectedclass] if predicate dvz:buildchance run loot give @s loot dvz:starter_buildings
 
 execute if entity @e[type=marker,tag=dvztimer,tag=aidragonselected] run tellraw @s[tag=builder] ["",{"text":"The doom event is: "},{"text":"AI Dragon","bold":true,"color":"light_purple"}]
 execute if entity @e[type=marker,tag=dvztimer,tag=playerdragonselected] run tellraw @s[tag=builder] ["",{"text":"The doom event is: "},{"text":"Player Dragon","bold":true,"color":"light_purple"}]

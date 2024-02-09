@@ -2,14 +2,14 @@
   "pools": [
     {
       "rolls": {
-        "min": 2,
+        "min": 4,
         "max": 6
       },
       "entries": [
         {
           "type": "item",
           "name": "minecraft:carrot_on_a_stick",
-          "weight": 5,
+          "weight": 3,
           "functions": [
             {
               "function": "set_count",
@@ -54,7 +54,7 @@
         {
           "type": "item",
           "name": "minecraft:glow_squid_spawn_egg",
-          "weight": 1,
+          "weight": 0,
           "functions": [
             {
               "function": "set_count",
@@ -69,7 +69,7 @@
         {
           "type": "item",
           "name": "minecraft:glow_squid_spawn_egg",
-          "weight": 1,
+          "weight": 0,
           "functions": [
             {
               "function": "set_count",
@@ -84,7 +84,7 @@
         {
           "type": "item",
           "name": "minecraft:glow_squid_spawn_egg",
-          "weight": 1,
+          "weight": 0,
           "functions": [
             {
               "function": "set_count",
@@ -99,7 +99,7 @@
         {
           "type": "item",
           "name": "minecraft:glow_squid_spawn_egg",
-          "weight": 1,
+          "weight": 0,
           "functions": [
             {
               "function": "set_count",
@@ -129,7 +129,7 @@
         {
           "type": "item",
           "name": "minecraft:glow_squid_spawn_egg",
-          "weight": 1,
+          "weight": 0,
           "functions": [
             {
               "function": "set_count",
