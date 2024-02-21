@@ -302,6 +302,10 @@ execute as @a[tag=spider,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag
 execute as @a[tag=spider,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:25,Unbreakable:1b}}},scores={DVZ.attack.hit=1..}] at @s run effect give @p[tag=dwarves,distance=..4,nbt={HurtTime:10s}] nausea 4 2
 execute as @a[tag=spider,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:25,Unbreakable:1b}}},scores={DVZ.attack.hit=1..}] at @s run effect give @p[tag=dwarves,distance=..4,nbt={HurtTime:10s}] blindness 4 2
 
+#Snow Golem hit detection
+execute as @a[tag=snowman,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={DVZ.attack.hit=1..}] at @s run playsound entity.player.hurt_freeze master @a ~ ~ ~ .5 1
+execute as @a[tag=snowman,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},scores={DVZ.attack.hit=1..}] at @s run effect give @p[tag=dwarves,distance=..4,nbt={HurtTime:10s},limit=1] slowness 3 2
+
 #Snow Golem Snowball
 execute as @e[tag=customsnowball] at @s if entity @a[tag=dwarves,distance=..1.5] run effect give @p[tag=dwarves,distance=..1.5] instant_damage 1 1 true
 execute as @e[tag=customsnowball] at @s if entity @a[tag=dwarves,distance=..1.5] run kill @s

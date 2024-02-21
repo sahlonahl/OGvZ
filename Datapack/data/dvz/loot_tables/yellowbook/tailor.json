@@ -21,7 +21,7 @@
             }
           ]
         },
-		{
+		    {
           "type": "item",
           "name": "minecraft:iron_helmet",
           "weight": 1,
@@ -36,7 +36,22 @@
             }
           ]
         },
-		{
+        {
+          "type": "item",
+          "name": "minecraft:iron_boots",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{LegendItem:1b,Traveler:1b,Unbreakable:1b,display:{Name:'{\"text\":\"Boots of the Traveller\",\"color\":\"aqua\"}'}}"
+            }
+          ]
+        },
+		    {
           "type": "item",
           "name": "minecraft:netherite_helmet",
           "weight": 1,
@@ -60,7 +75,7 @@
             }
           ]
         },
-		{
+		    {
           "type": "item",
           "name": "minecraft:netherite_chestplate",
           "weight": 1,
@@ -83,7 +98,7 @@
             }
           ]
         },
-		{
+		    {
           "type": "item",
           "name": "minecraft:netherite_leggings",
           "weight": 1,
@@ -106,7 +121,7 @@
             }
           ]
         },
-		{
+		    {
           "type": "item",
           "name": "minecraft:netherite_boots",
           "weight": 1,

@@ -24,7 +24,7 @@ gamemode adventure @s[tag=chicken]
 give @s[tag=chicken,tag=!selectedclass] cooked_chicken 64
 give @s[tag=chicken,tag=!selectedclass] carrot_on_a_stick{CustomModelData:69,Unbreakable:1b,display:{Name:'[{"text":"Fly","color":"gold"}]',Lore:['[{"text":"Fly for a short time."}]']}} 1
 give @s[tag=chicken,tag=!selectedclass] egg{team:"zMONSTER"} 16
-give @s[tag=chicken,tag=!selectedclass] chicken{display:{Name:'{"text":"NUGGET NUDGE","color":"gold"}',Lore:['{"text":"ITZ DA CHIKIN NUGGY! Really though, just slap people. That\'s it.","color":"gold"}']},Enchantments:[{id:"minecraft:knockback",lvl:2s}]}
+give @s[tag=chicken,tag=!selectedclass] chicken{display:{Name:'{"text":"NUGGET NUDGE","color":"gold"}',Lore:['{"text":"ITZ DA CHIKIN NUGGY! Really though, just slap people. That\'s it.","color":"gold"}']},AttributeModifiers:[{Slot:"mainhand", AttributeName:"generic.attack_damage", Name:"generic.attack_damage", Amount:1.0, Operation:0, UUID:[I; 1, 1, -1, -1]}] ,Enchantments:[{id:"minecraft:knockback",lvl:2s}]}
 give @s[tag=chicken,tag=!selectedclass] stick{CustomModelData:36,Descend:1b,display:{Name:'[{"text":"Descend","color":"red"}]',Lore:['[{"text":"Place in offhand to use."}]']}} 1
 #give @s[tag=chicken,tag=!selectedclass] stick{CustomModelData:70,Levitate:1b,display:{Name:'[{"text":"Levitate","color":"green"}]',Lore:['[{"text":"Place in offhand to use."}]']}} 1
 

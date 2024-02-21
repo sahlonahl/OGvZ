@@ -18,6 +18,7 @@ execute as @a store result score @s DVZ.legenditems run clear @s #dvz:legenditem
 #Inventory
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:103b,tag:{Invis:1b}}]}] minecraft:invisibility 1 0 true
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:103b,tag:{Warrior:1b}}]}] minecraft:strength 1 1 true
+effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:100b,tag:{Traveler:1b}}]}] minecraft:speed 1 1 true
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={foodLevel:18,Inventory:[{tag:{Papaya:1b}}]}] minecraft:saturation 3 0 true
 
 #Held
