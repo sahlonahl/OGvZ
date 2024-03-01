@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.07.21
+# Last Modified On: 2024.02.28
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -212,6 +212,7 @@ scoreboard objectives add DVZ.suicide.tick dummy
 ###Player counter
 scoreboard objectives add DVZ.playercount dummy ["",{"text":"OG","bold":true,"color":"dark_aqua"},{"text":"v","color":"gray"},{"text":"Z","bold":true,"color":"dark_red"}] 
 scoreboard objectives add DVZ.playertest dummy
+scoreboard objectives add DVZ.monstertest dummy
 #Percent of dwarves needed to die to end plague (whole number percentages only)
 scoreboard players set #percentdead DVZ.playertest 50
 scoreboard players set #100 DVZ.playertest 100
@@ -245,16 +246,18 @@ team add zBLAZE
 team add zCHICKEN
 team add zCHILLAGER
 team add zCREEPER
-team add zENDERMAN
-team add zGOLEM
 team add zOCELOT
 team add zPHANTOM
 team add zPIGMAN
-team add zMAX_PIGMAN
 team add zSILVERFISH
 team add zSNOWMAN
 team add zSPIDER
 team add zWOLF
+
+team add zENDERMAN
+team add zGOLEM
+team add zMAX_PIGMAN
+team add zCHARGED_CREEPER
 
 team add zGHAST
 team add zRAVAGER
@@ -305,6 +308,7 @@ team modify zWOLF color dark_red
 team modify zENDERMAN color dark_purple
 team modify zGOLEM color dark_purple
 team modify zMAX_PIGMAN color dark_purple
+team modify zCHARGED_CREEPER color dark_purple
 
 team modify zGHAST color light_purple
 team modify zRAVAGER color light_purple
@@ -355,6 +359,7 @@ team modify zWOLF suffix {"text":", the Wolf","italic":true,"color":"dark_red"}
 team modify zENDERMAN suffix {"text":", the Enderman","italic":true,"color":"dark_purple"}
 team modify zGOLEM suffix {"text":", the Golem","italic":true,"color":"dark_purple"}
 team modify zMAX_PIGMAN suffix {"text":", the Hoglin","italic":true,"color":"dark_purple"}
+team modify zCHARGED_CREEPER suffix {"text":", the Charged Creeper","italic":true,"color":"dark_purple"}
 
 team modify zGHAST suffix {"text":", the Ghast","italic":true,"color":"light_purple"}
 team modify zRAVAGER suffix {"text":", the Ravager","italic":true,"color":"light_purple"}
@@ -397,6 +402,7 @@ team modify zWOLF nametagVisibility hideForOtherTeams
 team modify zENDERMAN nametagVisibility hideForOtherTeams
 team modify zGOLEM nametagVisibility hideForOtherTeams
 team modify zMAX_PIGMAN nametagVisibility hideForOtherTeams
+team modify zCHARGED_CREEPER nametagVisibility hideForOtherTeams
 
 team modify zGHAST nametagVisibility never
 team modify zRAVAGER nametagVisibility never

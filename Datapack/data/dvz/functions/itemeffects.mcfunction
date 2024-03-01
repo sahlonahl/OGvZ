@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.02.21
+# Last Modified On: 2024.02.28
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -24,9 +24,11 @@ effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpic
 #Held
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={SelectedItem:{tag:{Bezerker:1b}}}] minecraft:speed 1 1
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={SelectedItem:{tag:{EmeraldBow:1b}}}] minecraft:jump_boost 1 1
+effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:-106b,tag:{EmeraldBow:1b}}]}] minecraft:jump_boost 1 1
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={SelectedItem:{tag:{WickedCrossbow:1b}}}] minecraft:slowness 1 1
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={SelectedItem:{tag:{WickedCrossbow:1b}}}] minecraft:resistance 1 1
-effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:-106b,tag:{EmeraldBow:1b}}]}] minecraft:jump_boost 1 1
+effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:-106b,tag:{WickedCrossbow:1b}}]}] minecraft:slowness 1 1
+effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:-106b,tag:{WickedCrossbow:1b}}]}] minecraft:resistance 1 1
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt=!{ActiveEffects:[{Id:21}]},nbt={SelectedItem:{tag:{HealthBoost:1b}}}] minecraft:health_boost infinite 1
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt=!{ActiveEffects:[{Id:21}]},nbt={Inventory:[{Slot:-106b,tag:{HealthBoost:1b}}]}] minecraft:health_boost infinite 1
 effect clear @a[tag=dwarves,tag=!hero,tag=!assassinpick,nbt={ActiveEffects:[{Id:21}]},nbt=!{Inventory:[{tag:{HealthBoost:1b}}]}] minecraft:health_boost

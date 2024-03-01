@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.09.08
+# Last Modified On: 2024.02.28
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -19,8 +19,8 @@ execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add wolf
 team join zWOLF @s[tag=wolf,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=wolf,tag=!selectedclass] cooked_beef 64
-give @s[tag=wolf,tag=!selectedclass] diamond_sword{Enchantments:[{id:"sharpness",lvl:5}]} 1
-give @s[tag=wolf,tag=!selectedclass] golden_sword{Enchantments:[{id:"fire_aspect",lvl:2},{id:"knockback",lvl:2}]} 1
+give @s[tag=wolf,tag=!selectedclass] diamond_sword{Unbreakable: 1b,Enchantments:[{id:"sharpness",lvl:5}]} 1
+give @s[tag=wolf,tag=!selectedclass] golden_sword{Unbreakable: 1b,Enchantments:[{id:"fire_aspect",lvl:2},{id:"knockback",lvl:2}]} 1
 give @s[tag=wolf,tag=!selectedclass] bone 32
 give @s[tag=wolf,tag=!selectedclass] wolf_spawn_egg 6
 item replace entity @s[tag=wolf,tag=!selectedclass] armor.head with firework_star{CustomModelData:14,display:{Name:'{"text":"Wolf Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"protection",lvl:1},{id:"binding_curse",lvl:1}]} 1

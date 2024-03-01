@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.14
-# Last Modified By: Zaffre
+# Last Modified On: 2024.02.28
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -76,7 +76,7 @@ tag @s remove bee
 tag @s remove ghastflight
 tag @s remove chicken
 tag @s remove phantom
-tag @s remove chargecrp
+tag @s remove charged_creeper
 tag @s remove natured
 tag @s remove evoker
 

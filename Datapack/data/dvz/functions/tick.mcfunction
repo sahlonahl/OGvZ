@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.02.21
+# Last Modified On: 2024.02.28
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -380,9 +380,9 @@ execute as @a[tag=hero] at @s run particle dust 1 1 1 1 ~ ~0.1 ~ 0.1 0 0.1 0.01 
 execute as @a[tag=blaze] at @s run particle smoke ^ ^0.1 ^-0.7 0.1 0 0.1 0.01 1
 execute as @a[tag=enderman] at @s run particle minecraft:portal ^ ^1 ^-0.5 0.5 0.5 0.5 0.5 1
 execute as @a[tag=phantom] at @s run particle minecraft:mycelium ~ ~1 ~ 0.2 0.2 0.2 0.01 5
-#execute as @a[tag=creeper,tag=chargecrp] at @s run particle end_rod ~ ~1 ~ 0.3 0.5 0.3 0.05 1 normal
-execute as @a[tag=creeper,tag=chargecrp] at @s run particle dust 0.000 0.800 1.000 1 ~ ~1 ~ 0.3 0.5 0.3 0.1 2 normal
-execute as @a[tag=creeper,tag=chargecrp] at @s run particle firework ~ ~1 ~ 0.2 0.5 0.2 0.01 1
+#execute as @a[tag=creeper,tag=charged_creeper] at @s run particle end_rod ~ ~1 ~ 0.3 0.5 0.3 0.05 1 normal
+execute as @a[tag=creeper,tag=charged_creeper] at @s run particle dust 0.000 0.800 1.000 1 ~ ~1 ~ 0.3 0.5 0.3 0.1 2 normal
+execute as @a[tag=creeper,tag=charged_creeper] at @s run particle firework ~ ~1 ~ 0.2 0.5 0.2 0.01 1
 
 #Dwarf soul effect
 execute as @e[tag=soul] at @s run particle dust 0.000 0.867 1.000 2 ~ ~0.9 ~ 0.1 0.1 0.1 0.01 0 normal
