@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.07.21
+# Last Modified On: 2024.03.08
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -35,6 +35,7 @@ execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:20,Unbreakable:1b}}}] at @s run function dvz:rightclick/silverench
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:21,Unbreakable:1b}}}] at @s run function dvz:rightclick/wolftailor
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:22,Unbreakable:1b}}}] at @s run function dvz:zombies/blaze/fireball
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:64,Unbreakable:1b}}}] at @s run function dvz:zombies/blaze/fireball3
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:23,Unbreakable:1b}}}] at @s run function dvz:dwarves/heros/dragonwarrior/potion
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:24,Unbreakable:1b}}}] at @s run function dvz:dwarves/heros/dragonwarrior/ruby
 #execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:25,Unbreakable:1b}}}] at @s run function dvz:zombies/spider/poison

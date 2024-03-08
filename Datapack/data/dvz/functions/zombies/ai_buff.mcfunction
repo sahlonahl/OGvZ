@@ -5,12 +5,12 @@
 # Created By: Zaffre
 # 
 # Created On: 2020.04.15
-# Last Modified On: 2024.02.21
+# Last Modified On: 2024.03.08
 # Last Modified By: Wilkekids
 #
 # Credit to:
 #
-# Comments:
+# Comments: In order to be modified, a mob type nust be in aimob.json
 # -------------------------------------------
 
 data merge entity @s[tag=!AIbuffed] {Attributes:[{Name:"generic.follow_range",Base:60}]}
@@ -38,6 +38,7 @@ data merge entity @s[type=skeleton_horse,tag=!AIbuffed] {Health:20f,Tame:1b,Attr
 #team join zMONSTER @s[tag=!explode]
 #data merge entity @s[tag=!explode] {Team:"zMONSTER"}
 data merge entity @s[tag=!explode] {Team:"zENDERMAN"}
+data merge entity @s[type=blaze,tag=!explode] {Team:"zBLAZE"}
 data merge entity @s[type=silverfish,tag=!explode] {Team:"zSILVERFISH"}
 data merge entity @s[type=wither_skeleton,tag=!explode] {Team:"zWITHER"}
 data merge entity @s[type=drowned,tag=!explode] {Team:"zGUARDIAN_BOSS"}

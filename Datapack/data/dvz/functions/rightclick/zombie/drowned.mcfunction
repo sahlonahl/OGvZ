@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.09.08
+# Last Modified On: 2024.03.08
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -21,7 +21,7 @@ clear @s[tag=!selectedclass]
 #effect give @s[tag=drowned,tag=!selectedclass] conduit_power 1000000 0
 
 give @s[tag=drowned,tag=!selectedclass] cooked_beef 64
-give @s[tag=drowned,tag=!selectedclass] iron_sword{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:2}]}
+give @s[tag=drowned,tag=!selectedclass] iron_sword{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:3}]}
 loot give @s[tag=drowned,tag=!selectedclass] loot dvz:classes/drownedtrident
 give @s[tag=drowned,tag=!selectedclass] splash_potion{Potion:"minecraft:strong_healing"} 2
 loot give @s[tag=drowned,tag=!selectedclass] loot dvz:classes/zombiepotion

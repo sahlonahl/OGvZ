@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.02.28
+# Last Modified On: 2024.03.08
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -258,8 +258,8 @@ execute as @a[tag=guardian,tag=dwarves,scores={DVZ.mana.ticks=10},level=..99] ru
 execute as @a[tag=dwarves,scores={DVZ.mana.ticks=20..}] run scoreboard players set @s DVZ.mana.ticks 0
 
 #Scutum shield slowness
-effect give @a[tag=dwarves,nbt={Inventory:[{Slot:-106b,tag:{Scutum:1b}}]}] slowness 1 0 true
-effect give @a[tag=dwarves,nbt={Inventory:[{Slot:-106b,tag:{Scutum:1b}}]}] mining_fatigue 1 0 true
+#effect give @a[nbt={Inventory:[{Slot:-106b,tag:{Scutum:1b}}]}] slowness 1 0 true
+effect give @a[nbt={Inventory:[{Slot:-106b,tag:{Scutum:1b}}]}] mining_fatigue 1 0 true
 
 #JBG Prevention for dwarves
 execute as @a[tag=dwarves,predicate=dvz:jbg] at @s if block ~ ~-5 ~ minecraft:air run effect give @s minecraft:levitation 1 128

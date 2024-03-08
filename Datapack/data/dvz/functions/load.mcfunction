@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.02.28
+# Last Modified On: 2024.03.08
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -122,6 +122,8 @@ scoreboard objectives add DVZ.reinf.ticks dummy
 scoreboard objectives add DVZ.reinf.msg dummy
 scoreboard objectives add DVZ.fball.cool dummy
 scoreboard objectives add DVZ.fball.ticks dummy
+scoreboard objectives add DVZ.fball3.cool dummy
+scoreboard objectives add DVZ.fball3.ticks dummy
 scoreboard objectives add DVZ.poison.cool dummy
 scoreboard objectives add DVZ.poison.ticks dummy
 scoreboard objectives add DVZ.web.cool dummy
@@ -187,6 +189,8 @@ scoreboard objectives add DVZ.drain.cool dummy
 scoreboard objectives add DVZ.drain.ticks dummy
 scoreboard objectives add DVZ.sfury.cool dummy
 scoreboard objectives add DVZ.sfury.ticks dummy
+scoreboard objectives add DVZ.mindseye.cool dummy
+scoreboard objectives add DVZ.mindseye.ticks dummy
 
 ### Dwarf Summoning Items
 scoreboard objectives add DVZ.alch.potions dummy

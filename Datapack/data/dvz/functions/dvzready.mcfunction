@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.14
-# Last Modified By: Zaffre
+# Last Modified On: 2024.03.08
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -125,6 +125,8 @@ scoreboard players set @s DVZ.reinf.ticks 0
 scoreboard players set @s DVZ.reinf.msg 0
 scoreboard players set @s DVZ.fball.cool 0
 scoreboard players set @s DVZ.fball.ticks 0
+scoreboard players set @s DVZ.fball3.cool 0
+scoreboard players set @s DVZ.fball3.ticks 0
 scoreboard players set @s DVZ.poison.cool 0
 scoreboard players set @s DVZ.poison.ticks 0
 scoreboard players set @s DVZ.web.cool 0

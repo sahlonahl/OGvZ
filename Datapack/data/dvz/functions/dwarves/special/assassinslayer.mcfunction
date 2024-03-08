@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.02.28
+# Last Modified On: 2024.03.08
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -46,8 +46,8 @@ execute as @a[tag=zombies] run effect clear @a[tag=zombies] invisibility
 execute store result score Mobs DVZ.playercount if entity @a[tag=zombies]
 # this line stores the number of mob players into a variable owned by the game's primary marker
 execute as @e[tag=!gameover,tag=dvztimer,tag=fight] store result score @s DVZ.monstertest run scoreboard players get Mobs DVZ.playercount
-# this line kills a random non-hero dwarf if the number of mob players is equal to one (only the assassin died)
-execute as @e[tag=!gameover,tag=dvztimer,tag=fight,scores={DVZ.monstertest=1}] at @e[tag=dSpawn] run kill @r[tag=dwarves,tag=!hero]
+# this line kills a random non-hero dwarf if the number of mob players is equal to zero (nobody besides the assassin died)
+execute as @e[tag=!gameover,tag=dvztimer,tag=fight,scores={DVZ.monstertest=0}] at @e[tag=dSpawn] run kill @r[tag=dwarves,tag=!hero]
 
 execute as @a[tag=dwarves] at @s run playsound minecraft:entity.ravager.roar master @s ~ ~ ~
 execute as @a[tag=dwarves] at @s run playsound ambient.soul_sand_valley.mood master @s ~ ~ ~ 100 2

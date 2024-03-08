@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.10.04
+# Last Modified On: 2024.03.08
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -69,6 +69,11 @@ execute as @a[scores={DVZ.fball.cool=1..}] run scoreboard players add @s DVZ.fba
 execute as @a[scores={DVZ.fball.ticks=20..}] run scoreboard players remove @s DVZ.fball.cool 1
 execute as @a[scores={DVZ.fball.ticks=20..}] run scoreboard players set @s DVZ.fball.ticks 0
 execute as @a[scores={DVZ.fball.cool=..0}] run scoreboard players reset @s DVZ.fball.ticks
+#Blaze Explosive Fireball
+execute as @a[scores={DVZ.fball3.cool=1..}] run scoreboard players add @s DVZ.fball3.ticks 1
+execute as @a[scores={DVZ.fball3.ticks=20..}] run scoreboard players remove @s DVZ.fball3.cool 1
+execute as @a[scores={DVZ.fball3.ticks=20..}] run scoreboard players set @s DVZ.fball3.ticks 0
+execute as @a[scores={DVZ.fball3.cool=..0}] run scoreboard players reset @s DVZ.fball3.ticks
 #Dragon Ruby
 execute as @a[scores={DVZ.ruby.cool=1..}] run scoreboard players add @s DVZ.ruby.ticks 1
 execute as @a[scores={DVZ.ruby.ticks=20..}] run scoreboard players remove @s DVZ.ruby.cool 1
@@ -174,6 +179,11 @@ execute as @a[scores={DVZ.Gbeam.cool=1..}] run scoreboard players add @s DVZ.Gbe
 execute as @a[scores={DVZ.Gbeam.ticks=20..}] run scoreboard players remove @s DVZ.Gbeam.cool 1
 execute as @a[scores={DVZ.Gbeam.ticks=20..}] run scoreboard players set @s DVZ.Gbeam.ticks 0
 execute as @a[scores={DVZ.Gbeam.cool=..0}] run scoreboard players reset @s DVZ.Gbeam.ticks
+#Dwarven Guard Minds Eye
+execute as @a[scores={DVZ.mindseye.cool=1..}] run scoreboard players add @s DVZ.mindseye.ticks 1
+execute as @a[scores={DVZ.mindseye.ticks=20..}] run scoreboard players remove @s DVZ.mindseye.cool 1
+execute as @a[scores={DVZ.mindseye.ticks=20..}] run scoreboard players set @s DVZ.mindseye.ticks 0
+execute as @a[scores={DVZ.mindseye.cool=..0}] run scoreboard players reset @s DVZ.mindseye.ticks
 #Assassin Kill
 execute as @a[scores={DVZ.Akill.cool=1..}] run scoreboard players add @s DVZ.Akill.ticks 1
 execute as @a[scores={DVZ.Akill.ticks=20..}] run scoreboard players remove @s DVZ.Akill.cool 1

@@ -111,6 +111,13 @@
                     
                     "offhand"
                   ]
+                },
+                {
+                  "attribute": "minecraft:generic.movement_speed",
+                  "name": "",
+                  "amount": -0.02,
+                  "operation": "addition",
+                  "slot": "offhand"
                 }
               ]
             }
