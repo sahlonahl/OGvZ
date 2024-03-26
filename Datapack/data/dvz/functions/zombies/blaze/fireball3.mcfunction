@@ -16,10 +16,10 @@
 execute as @s[tag=blaze,scores={DVZ.fball3.cool=1..}] run title @s actionbar ["",{"text":" * [Explosive Fireball] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.fball3.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 execute as @s if entity @s[tag=blaze,scores={DVZ.fball3.cool=0}] run title @s actionbar {"text":" * [Explosive Fireball] Poof!","color":"red"}
 
-execute if entity @s[tag=blaze,scores={DVZ.fball3.cool=0}] run execute positioned 0.0 0 0.0 run summon fireball ^ ^ ^1 {Tags:["projectile"],ExplosionPower:1b,HasBeenShot:1b}
+execute if entity @s[tag=blaze,scores={DVZ.fball3.cool=0}] run execute positioned 0.0 0 0.0 run summon fireball ^ ^ ^1 {Tags:["projectile"],ExplosionPower:2b,HasBeenShot:1b}
 execute if entity @s[tag=blaze,scores={DVZ.fball3.cool=0}] run function dvz:zombies/blaze/fireball4
 
 execute as @s at @s if entity @s[tag=blaze,scores={DVZ.fball3.cool=0}] run playsound entity.blaze.shoot master @a ~ ~ ~ 1
 
-execute as @s if entity @s[tag=blaze,scores={DVZ.fball3.cool=0}] run scoreboard players set @s DVZ.fball3.cool 5
+execute as @s if entity @s[tag=blaze,scores={DVZ.fball3.cool=0}] run scoreboard players set @s DVZ.fball3.cool 10
 execute as @s if entity @s[tag=blaze,scores={DVZ.fball3.cool=0}] run scoreboard players set @s DVZ.rclick 0

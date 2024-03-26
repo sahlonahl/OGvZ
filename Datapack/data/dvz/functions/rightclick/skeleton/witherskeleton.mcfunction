@@ -20,7 +20,7 @@ clear @s[tag=!selectedclass]
 
 give @s[tag=witherskeleton,tag=!selectedclass] cooked_beef 64
 give @s[tag=witherskeleton,tag=!selectedclass] bow{Unbreakable:1b,Enchantments:[{id:"infinity",lvl:1},{id:"power",lvl:3}]} 1
-give @s[tag=witherskeleton,tag=!selectedclass] stone_sword
+give @s[tag=witherskeleton,tag=!selectedclass] stone_sword{Unbreakable:1b}
 give @s[tag=witherskeleton,tag=!selectedclass] vine 24
 give @s[tag=witherskeleton,tag=!selectedclass] splash_potion{CustomPotionEffects:[{Id:20b,Duration:200,Ambient:1b}],CustomPotionColor:6041600,display:{Name:'[{"text":"Splash Potion of Withering","italic":false}]'}} 2
 give @s[tag=witherskeleton,tag=!selectedclass] tipped_arrow{CustomPotionColor:6041600,CustomPotionEffects:[{Id:20b,Duration:200,Ambient:1b}],display:{Name:'[{"text":"Arrow of Withering","italic":false}]'}} 16

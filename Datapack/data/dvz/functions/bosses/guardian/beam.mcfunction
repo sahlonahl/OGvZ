@@ -22,7 +22,7 @@ execute as @s if entity @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=0}] run
 execute as @s if entity @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=0}] run tp @e[tag=ray,limit=1,sort=nearest] @s
 execute as @s if entity @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=0}] run tp @e[tag=ray,limit=1,sort=nearest] ~ ~1.5 ~
 execute as @s if entity @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run function dvz:bosses/guardian/beamloop
-execute as @s if entity @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @p[tag=dwarves,distance=..3] instant_damage 1 1 true
+execute as @s if entity @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @p[tag=dwarves,distance=..3] instant_damage 1 2 true
 execute as @s if entity @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @p[tag=dwarves,distance=..3] blindness 4 0 true
 #execute as @s if entity @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @p[tag=dwarves,distance=..3] run summon lightning_bolt
 execute as @s if entity @s[tag=playerguardianpick,scores={DVZ.Gbeam.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run playsound minecraft:entity.experience_orb.pickup neutral @p[tag=playerguardianpick] ~ ~ ~ 1 .5

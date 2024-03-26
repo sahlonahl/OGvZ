@@ -31,6 +31,7 @@ item replace entity @s[tag=enderman,tag=!selectedclass] armor.chest with leather
 item replace entity @s[tag=enderman,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 0}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=enderman,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 0}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
 tag @s add selectedclass
+execute as @e[tag=dvztimer,tag=fight] run scoreboard players add @s DVZ.purplemob 1
 
 execute as @s[tag=enderman] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
 execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures

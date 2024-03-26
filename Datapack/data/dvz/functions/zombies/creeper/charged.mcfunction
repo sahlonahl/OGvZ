@@ -21,4 +21,5 @@ give @s[tag=charged_creeper] carrot_on_a_stick{CustomModelData:76,Unbreakable:1b
 tellraw @s[tag=charged_creeper] {"text":"You've become charged!","bold":true,"color":"yellow"}
 execute at @s[tag=charged_creeper] run playsound entity.creeper.hurt master @a ~ ~ ~ 100
 tellraw @a ["",{"text":"ALERT:","bold":true,"color":"red"},{"text":" A ","color":"gold"},{"text":"Charged Creeper ","italic":true,"color":"gray"},{"text":"(","color":"gray"},{"selector":"@s[tag=charged_creeper,tag=!selectedclass]","color":"gray"},{"text":")","color":"gray"},{"text":" approaches!","color":"gold"}]
-effect give @s[tag=charged_creeper] slowness 1000000 1 true
+effect give @s[tag=charged_creeper] slowness infinite 1 true
+execute as @e[tag=dvztimer,tag=fight] run scoreboard players add @s DVZ.purplemob 1

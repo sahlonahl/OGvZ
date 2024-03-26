@@ -95,6 +95,7 @@ scoreboard objectives add DVZ.bow minecraft.used:minecraft.bow
 scoreboard objectives add DVZ.legenditems dummy
 scoreboard objectives add DVZ.health health
 scoreboard objectives add DVZ.battletimer dummy
+scoreboard objectives add DVZ.purplemob dummy
 
 ### Cooldown objectives
 #Dwarves
@@ -218,7 +219,7 @@ scoreboard objectives add DVZ.playercount dummy ["",{"text":"OG","bold":true,"co
 scoreboard objectives add DVZ.playertest dummy
 scoreboard objectives add DVZ.monstertest dummy
 #Percent of dwarves needed to die to end plague (whole number percentages only)
-scoreboard players set #percentdead DVZ.playertest 50
+scoreboard players set #percentdead DVZ.playertest 35
 scoreboard players set #100 DVZ.playertest 100
 
 ### Add teams

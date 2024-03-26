@@ -25,8 +25,9 @@ execute as @s if entity @s[tag=bee,scores={DVZ.honey.cool=0}] run execute as @e[
 execute as @s if entity @s[tag=bee,scores={DVZ.honey.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run playsound entity.bee.hurt master @a ~ ~ ~ 1 1.2
 execute as @s if entity @s[tag=bee,scores={DVZ.honey.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run particle heart ~ ~ ~ 1 0 1 0.1 50
 execute as @s if entity @s[tag=bee,scores={DVZ.honey.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @a[distance=..4,tag=zombies] instant_health 1 1
-execute as @s if entity @s[tag=bee,scores={DVZ.honey.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @a[distance=..4,tag=zombies] resistance 10 1
-execute as @s if entity @s[tag=bee,scores={DVZ.honey.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @a[distance=..4,tag=zombies] regeneration 10 1
+execute as @s if entity @s[tag=bee,scores={DVZ.honey.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @a[distance=..4,tag=zombies] resistance 10 0
+execute as @s if entity @s[tag=bee,scores={DVZ.honey.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @a[distance=..4,tag=zombies] regeneration 10 0
+execute as @s if entity @s[tag=bee,scores={DVZ.honey.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @a[distance=..4,tag=zombies] absorption 10 0
 execute as @s if entity @s[tag=bee,scores={DVZ.honey.cool=0}] run kill @e[type=marker,tag=ray]
 execute as @s if entity @s[tag=bee,scores={DVZ.honey.cool=0}] run scoreboard players set @s DVZ.honey.cool 10
 execute as @s if entity @s[tag=bee,scores={DVZ.honey.cool=0}] run scoreboard players set @s DVZ.rclick 0

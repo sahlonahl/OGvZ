@@ -389,58 +389,6 @@
           ]
         }
       ]
-    },
-    {
-      "conditions": [
-        {
-          "condition": "random_chance",
-          "chance": 0.01
-        }
-      ],
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "item",
-          "name": "minecraft:carrot_on_a_stick",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{CustomModelData:34,Unbreakable:1b,display:{Name:\'{\"text\":\"Enderman\",\"color\":\"dark_purple\"}\',Lore:[\'[{\"text\":\"Advanced class!\",\"color\":\"gold\"}]\',\'[{\"text\":\"Survive for 30 seconds, then summon a portal.\",\"color\":\"aqua\"}]\']}}"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "conditions": [
-        {
-          "condition": "random_chance",
-          "chance": 0.01
-        }
-      ],
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "item",
-          "name": "minecraft:carrot_on_a_stick",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": 1
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{CustomModelData:56,Unbreakable:1b,display:{Name:\'{\"text\":\"Golem\",\"color\":\"dark_purple\"}\',Lore:[\'[{\"text\":\"Advanced class!\",\"color\":\"gold\"}\',\'[{\"text\":\"Slow moving, instant-kill class.\",\"color\":\"aqua\"}]\',\'[{\"text\":\"Build walls to provide cover for you and your teammates.\",\"color\":\"aqua\"}]\']}}"
-            }
-          ]
-        }
-      ]
     }
   ]
 }

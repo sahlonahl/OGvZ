@@ -33,7 +33,8 @@ effect give @s[tag=golem,tag=!selectedclass] slowness 1000000 4 true
 effect give @s[tag=golem,tag=!selectedclass] strength 1000000 255 true
 effect give @s[tag=golem,tag=!selectedclass] mining_fatigue 1000000 255 true
 effect give @s[tag=golem,tag=!selectedclass] regeneration 1000000 2 true
-tag @s add selectedclass 
+tag @s add selectedclass
+execute as @e[tag=dvztimer,tag=fight] run scoreboard players add @s DVZ.purplemob 1
 
 execute as @s[tag=golem] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
 execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
