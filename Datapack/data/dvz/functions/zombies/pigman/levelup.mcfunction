@@ -36,7 +36,7 @@ execute as @s[tag=pigman,tag=pig2] run clear @s #dvz:builderblocks
 execute if entity @s[tag=pigman,tag=pig2] run tag @s add pig3
 execute if entity @s[tag=pigman,tag=pig2] run tag @s remove pig2
 execute if entity @s[tag=pigman,tag=pig3] run tellraw @a ["",{"text":"ALERT:","bold":true,"color":"red"},{"text":" A ","color":"gold"},{"text":"Hoglin ","italic":true,"color":"#FAB6A1"},{"text":"(","color":"#FAB6A1"},{"selector":"@s","color":"#FAB6A1"},{"text":")","color":"#FAB6A1"},{"text":" has risen!","color":"gold"}]
-execute if entity @s[tag=pigman,tag=pig3] run scoreboard players add @e[tag=dvztimer,tag=fight] DVZ.purplemob 1
+# execute if entity @s[tag=pigman,tag=pig3] run scoreboard players add @e[tag=dvztimer,tag=fight] DVZ.purplemob 1
 
 # level up number 1
 execute as @s[tag=pigman,tag=pig1] at @s run playsound block.chorus_flower.grow master @a ~ ~ ~ 2

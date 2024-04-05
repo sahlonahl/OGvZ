@@ -29,7 +29,7 @@ execute as @a[scores={DVZ.death=1..},tag=golem] run scoreboard players remove @e
 execute as @a[scores={DVZ.death=1..},tag=pig3] run tellraw @a ["",{"text":"The Hoglin dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]
 execute as @a[scores={DVZ.death=1..},tag=pig3] run playsound entity.hoglin.death master @a ~ ~ ~ 100 0.8 1
 execute as @a[scores={DVZ.death=1..},tag=pig3] run playsound entity.hoglin.death master @a ~ ~ ~ 100 0.5 1
-execute as @a[scores={DVZ.death=1..},tag=pig3] run scoreboard players remove @e[tag=dvztimer,tag=fight] DVZ.purplemob 1
+# execute as @a[scores={DVZ.death=1..},tag=pig3] run scoreboard players remove @e[tag=dvztimer,tag=fight] DVZ.purplemob 1
 
 ##Charged Creeper death
 execute as @a[scores={DVZ.death=1..},tag=charged_creeper] run tellraw @a ["",{"text":"The Charged Creeper dies ","color":"blue"},{"text":"(","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":")","color":"light_purple"},{"text":"!","color":"blue"}]

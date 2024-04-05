@@ -27,7 +27,9 @@ item replace entity @s[tag=creeper,tag=!selectedclass] armor.feet with leather_b
 
 execute as @s[tag=creeper] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
 execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
-execute as @s[tag=creeper] if predicate dvz:chargedchance unless entity @e[tag=dvztimer,scores={DVZ.purplemob=2..}] run function dvz:zombies/creeper/charged
+execute as @s[tag=creeper] if predicate dvz:chargedchance run function dvz:zombies/creeper/charged
+# the following line can be used in the previous to control charged creeper spawning based on the number of purples
+# unless entity @e[tag=dvztimer,scores={DVZ.purplemob=2..}]
 
 #=========================================
 

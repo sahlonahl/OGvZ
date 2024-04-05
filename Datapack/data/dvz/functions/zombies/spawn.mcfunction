@@ -21,7 +21,7 @@ execute if entity @e[tag=dvztimer,tag=guardianselected] run loot give @s loot dv
 execute if entity @e[tag=dvztimer,tag=assassinselected] run loot give @s loot dvz:variants/assassinzombies
 
 execute if entity @e[tag=dvztimer,scores={DVZ.purplemob=0}] run loot give @s loot dvz:variants/purplemobs
-execute if predicate dvz:25chance if entity @e[tag=dvztimer,scores={DVZ.purplemob=1}] run loot give @s loot dvz:variants/purplemobs
+execute if predicate dvz:25chance if entity @e[tag=dvztimer,scores={DVZ.purplemob=1..}] run loot give @s loot dvz:variants/purplemobs
 
 execute if entity @e[tag=dvztimer,tag=!miniboss,scores={DVZ.battletimer=18000..}] run loot give @s loot dvz:minibosses
 execute if predicate dvz:rain if entity @e[tag=dvztimer,tag=!guardianselected] run loot give @s loot dvz:variants/rain
