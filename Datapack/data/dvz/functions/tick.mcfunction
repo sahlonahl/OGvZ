@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.03.08
+# Last Modified On: 2024.04.25
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -246,7 +246,7 @@ execute as @e[type=marker,tag=slayer_totem,tag=totem_death] at @s run function d
 #Daytime buffs
 execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime run scoreboard players add @a[tag=dwarves,tag=nomana,level=..99,distance=..5] DVZ.mana.ticks 1
 execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime at @a[tag=dwarves,tag=nomana,level=..99] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
-execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime run effect give @a[tag=hero] speed 1 1
+# execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime run effect give @a[tag=hero] speed 1 1
 
 
 #Dwarves Mana

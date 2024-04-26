@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.02.21
+# Last Modified On: 2024.04.25
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -25,5 +25,5 @@ execute as @s if entity @s[tag=playerwitherpick,scores={DVZ.Wskull.cool=0},tag=!
 execute as @s if entity @s[tag=playerwitherpick,scores={DVZ.Wskull.cool=0},tag=!speeding] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @a[tag=dwarves,distance=..1] wither 3 3
 execute as @s if entity @s[tag=playerwitherpick,scores={DVZ.Wskull.cool=0},tag=!speeding] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run summon creeper ~ ~ ~ {Tags:["explode"],ExplosionRadius:2b,Fuse:0,NoAI:1,CustomName:'{"text":"Wither Skull"}'}
 execute as @s if entity @s[tag=playerwitherpick,scores={DVZ.Wskull.cool=0},tag=!speeding] run kill @e[type=marker,tag=ray]
-execute as @s if entity @s[tag=playerwitherpick,scores={DVZ.Wskull.cool=0},tag=!speeding] run scoreboard players set @s DVZ.Wskull.cool 1
+execute as @s if entity @s[tag=playerwitherpick,scores={DVZ.Wskull.cool=0},tag=!speeding] run scoreboard players set @s DVZ.Wskull.cool 2
 execute as @s if entity @s[tag=playerwitherpick,scores={DVZ.Wskull.cool=0},tag=!speeding] run scoreboard players set @s DVZ.rclick 0

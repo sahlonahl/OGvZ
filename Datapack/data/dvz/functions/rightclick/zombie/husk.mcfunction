@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.09.08
+# Last Modified On: 2024.04.25
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -19,9 +19,9 @@ team join zHUSK @s[tag=husk,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 
 give @s[tag=husk,tag=!selectedclass] cooked_beef 64
-give @s[tag=husk,tag=!selectedclass] stone_sword{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:3}]}
-give @s[tag=husk,tag=!selectedclass] stone_axe{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:3}]}
-give @s[tag=husk,tag=!selectedclass] splash_potion{Potion:"minecraft:strong_healing"} 1
+give @s[tag=husk,tag=!selectedclass] stone_sword{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:4}]}
+give @s[tag=husk,tag=!selectedclass] stone_axe{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:4}]}
+give @s[tag=husk,tag=!selectedclass] splash_potion{Potion:"minecraft:strong_healing"} 2
 loot give @s[tag=husk,tag=!selectedclass] loot dvz:classes/huskpotion
 loot give @s[tag=husk,tag=!selectedclass] loot dvz:classes/zombietoys
 

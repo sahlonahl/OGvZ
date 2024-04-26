@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.03.08
+# Last Modified On: 2024.04.25
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -19,7 +19,7 @@ execute if entity @s[tag=guardian,scores={DVZ.mindseye.cool=1..}] run title @s a
 execute as @s if entity @s[tag=guardian,level=30..,scores={DVZ.mindseye.cool=0}] run execute as @s run effect give @a[tag=zombies] glowing 10 0 true
 execute as @s if entity @s[tag=guardian,level=30..,scores={DVZ.mindseye.cool=0}] run execute as @s run effect give @s blindness 10 0 true
 execute as @s run title @s[tag=guardian,level=30..,scores={DVZ.mindseye.cool=0}] actionbar {"text":" * [Minds Eye] Poof!","color":"red"}
-execute as @s at @s run playsound block.conduit.attack.target master @a ~ ~ ~ 100
+execute as @s if entity @s[tag=guardian,level=30..,scores={DVZ.mindseye.cool=0}] at @s run playsound block.conduit.attack.target master @a ~ ~ ~ 100
 
 execute as @s if entity @s[tag=guardian,level=30..,scores={DVZ.mindseye.cool=0}] run execute as @s run xp add @s -30 levels
 execute if entity @s[tag=guardian,level=30..,scores={DVZ.mindseye.cool=0}] run scoreboard players set @s DVZ.mindseye.cool 10

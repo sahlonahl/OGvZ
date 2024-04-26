@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.09.30
+# Last Modified On: 2024.04.25
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -32,7 +32,7 @@ execute if entity @s[tag=baker,scores={DVZ.baker.bricks=..9}] run title @s actio
 execute if entity @s[tag=blacksmith,level=..29] run title @s actionbar {"text":" * [Summoning Book] You need at least 30 Mana!","color":"dark_aqua"}
 execute if entity @s[tag=blacksmith,scores={DVZ.smith.clocks=..4}] run title @s actionbar {"text":" * [Summoning Book] You need at least 5 clocks!","color":"dark_aqua"}
 execute if entity @s[tag=tailor,level=..29] run title @s actionbar {"text":" * [Summoning Book] You need at least 30 Mana!","color":"dark_aqua"}
-execute if entity @s[tag=tailor,scores={DVZ.tailor.dyes=..15}] run title @s actionbar {"text":" * [Summoning Book] You need at least 10 dyes!","color":"dark_aqua"}
+execute if entity @s[tag=tailor,scores={DVZ.tailor.dyes=..9}] run title @s actionbar {"text":" * [Summoning Book] You need at least 10 dyes!","color":"dark_aqua"}
 
 # standard builder loot
 execute as @s if entity @s[tag=builder,scores={DVZ.book.cool=0}] run function dvz:dwarves/book/builder

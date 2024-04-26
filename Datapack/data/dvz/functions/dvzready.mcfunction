@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.03.08
+# Last Modified On: 2024.04.25
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -193,6 +193,8 @@ scoreboard players set @s DVZ.drain.cool 0
 scoreboard players set @s DVZ.drain.ticks 0
 scoreboard players set @s DVZ.sfury.cool 0
 scoreboard players set @s DVZ.sfury.ticks 0
+scoreboard players set @s DVZ.mindseye.cool 0
+scoreboard players set @s DVZ.mindseye.ticks 0
 
 ### Dwarf Summoning Items
 scoreboard players set @s DVZ.alch.potions 0

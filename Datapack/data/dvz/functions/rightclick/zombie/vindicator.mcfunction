@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.09.08
+# Last Modified On: 2024.04.25
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -19,8 +19,8 @@ team join zVINDICATOR @s[tag=vindicator,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 
 give @s[tag=vindicator,tag=!selectedclass] cooked_beef 64
-give @s[tag=vindicator,tag=!selectedclass] iron_axe{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:3}]}
-give @s[tag=vindicator,tag=!selectedclass] iron_sword{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:1}]}
+give @s[tag=vindicator,tag=!selectedclass] iron_axe{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:4}]}
+give @s[tag=vindicator,tag=!selectedclass] iron_sword{Unbreakable:1b,Enchantments:[{id:"sharpness",lvl:2}]}
 give @s[tag=vindicator,tag=!selectedclass] splash_potion{Potion:"minecraft:strong_healing"} 2
 loot give @s[tag=vindicator,tag=!selectedclass] loot dvz:classes/zombiepotion
 loot give @s[tag=vindicator,tag=!selectedclass] loot dvz:classes/zombietoys
