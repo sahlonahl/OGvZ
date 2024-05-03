@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.03.08
+# Last Modified On: 2024.05.03
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -22,7 +22,9 @@ effect give @s[tag=zlguardian,tag=!selectedclass] conduit_power 1000000 0
 
 give @s[tag=zlguardian,tag=!selectedclass] cooked_beef 64
 give @s[tag=zlguardian,tag=!selectedclass] carrot_on_a_stick{CustomModelData:51,Unbreakable:1b,display:{Name:'{"text":"Beam","italic":false,"color":"red"}'}}
+give @s[tag=zlguardian,tag=!selectedclass] bow 1
 give @s[tag=zlguardian,tag=!selectedclass] vine 24
+give @s[tag=zlguardian,tag=!selectedclass] arrow 16
 
 
 item replace entity @s[tag=zlguardian,tag=!selectedclass] armor.head with firework_star{CustomModelData:9,display:{Name:'{"text":"Guardian Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1}]}

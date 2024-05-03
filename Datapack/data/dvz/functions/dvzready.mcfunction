@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.04.25
+# Last Modified On: 2024.05.03
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -99,6 +99,7 @@ scoreboard players set @s DVZ.whispersong 0
 scoreboard players set @s DVZ.bow 0
 scoreboard players set @s DVZ.legenditems 0
 scoreboard players set @s DVZ.health 0
+scoreboard players set @s DVZ.hunger 20
 
 ### Cooldown objectives
 #Dwarves

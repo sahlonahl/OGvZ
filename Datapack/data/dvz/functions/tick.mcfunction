@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.04.25
+# Last Modified On: 2024.05.03
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -21,6 +21,7 @@ execute as @a run execute store result score @s DVZ.lava run clear @s minecraft:
 execute as @a[scores={DVZ.lava=1..}] run function dvz:lava
 execute at @a[tag=!admin] run fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air replace nether_portal
 execute at @a[tag=!admin] run fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air replace end_portal
+execute as @a[tag=dwarves] store result score @s DVZ.hunger run data get entity @s foodLevel 1
 
 xp set @a 0 points
 function dvz:rightclick/detect
@@ -396,14 +397,18 @@ execute if entity @a[nbt={HurtTime:10s}] run function dvz:zombies/mob_hurt
 
 #AI mob stuff
 execute as @e[type=#dvz:aimob,type=!player,tag=!AIbuffed] run function dvz:zombies/ai_buff
-#effect clear @e[type=creeper,nbt={ignited:1b}]
-#execute if entity @e[type=creeper,nbt={ignited:1b}] run tellraw @a "charging"
 
-#AI mob aggro
-#execute as @e[type=#dvz:ai_monster,tag=!aggro] at @s run function dvz:zombies/ai_aggro 
-
-#Mob nature giving (moved to each mob's spawning function)
-#execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
+# Golem horse riding restrictions
+#execute if entity @a[tag=golem,nbt={RootVehicle:{Entity:{"id":"minecraft:horse"}}}] run tellraw @s ["",{"text":"You are too heavy for this mount"}]
+#execute if entity @a[tag=golem,nbt={RootVehicle:{Entity:{"id":"minecraft:horse"}}}] run tp @s ~ ~ ~
+#execute if entity @a[tag=golem,nbt={RootVehicle:{Entity:{"id":"minecraft:zombie_horse"}}}] run tellraw @s ["",{"text":"You are too heavy for this mount"}]
+#execute if entity @a[tag=golem,nbt={RootVehicle:{Entity:{"id":"minecraft:zombie_horse"}}}] run tp @s ~ ~ ~
+#execute if entity @a[tag=golem,nbt={RootVehicle:{Entity:{"id":"minecraft:skeleton_horse"}}}] run tellraw @s ["",{"text":"You are too heavy for this mount"}]
+#execute if entity @a[tag=golem,nbt={RootVehicle:{Entity:{"id":"minecraft:skeleton_horse"}}}] run tp @s ~ ~ ~
+#execute if entity @a[tag=golem,nbt={RootVehicle:{Entity:{"id":"minecraft:donkey"}}}] run tellraw @s ["",{"text":"You are too heavy for this mount"}]
+#execute if entity @a[tag=golem,nbt={RootVehicle:{Entity:{"id":"minecraft:donkey"}}}] run tp @s ~ ~ ~
+#execute if entity @a[tag=golem,nbt={RootVehicle:{Entity:{"id":"minecraft:mule"}}}] run tellraw @s ["",{"text":"You are too heavy for this mount"}]
+#execute if entity @a[tag=golem,nbt={RootVehicle:{Entity:{"id":"minecraft:mule"}}}] run tp @s ~ ~ ~
 
 
 
@@ -417,6 +422,7 @@ tag @a[gamemode=survival,tag=messaged] remove messaged
 execute as @a[tag=dwarves,scores={DVZ.build.struc=1..}] run function dvz:dwarves/tools/builder_structures
 
 execute as @a[tag=enderman,tag=!ePortal] run title @s actionbar ["",{"text":"Time until Portal available: ","color":"red"},{"score":{"name":"@s","objective":"DVZ.portal.cool"},"bold":true,"italic":true,"color":"red"}]
+execute as @a[tag=johnny] run title @s actionbar ["",{"text":"Time until Vindication available: ","color":"red"},{"score":{"name":"@s","objective":"DVZ.vindic.cool"},"bold":true,"italic":true,"color":"red"}]
 execute as @e[type=marker,tag=aidragon] run function dvz:bosses/aidragon
 execute as @e[type=marker,tag=playerdragon] run function dvz:bosses/playerdragon
 execute as @e[type=marker,tag=assassin] run function dvz:bosses/assassin

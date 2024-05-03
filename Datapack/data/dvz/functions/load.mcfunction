@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.03.08
+# Last Modified On: 2024.05.03
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -96,6 +96,7 @@ scoreboard objectives add DVZ.legenditems dummy
 scoreboard objectives add DVZ.health health
 scoreboard objectives add DVZ.battletimer dummy
 scoreboard objectives add DVZ.purplemob dummy
+scoreboard objectives add DVZ.hunger food
 
 ### Cooldown objectives
 #Dwarves
