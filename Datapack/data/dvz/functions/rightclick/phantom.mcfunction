@@ -5,7 +5,7 @@
 # Created By: Zaffre
 # 
 # Created On: 2022.06.30
-# Last Modified On: 2023.09.08
+# Last Modified On: 2024.05.1
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -23,7 +23,7 @@ gamemode adventure @s[tag=phantom]
 give @s[tag=phantom,tag=!selectedclass] cooked_beef 64
 give @s[tag=phantom,tag=!selectedclass] stone_sword{Unbreakable:1b,Enchantments:[{id:"knockback",lvl:1}]}
 give @s[tag=phantom,tag=!selectedclass] carrot_on_a_stick{CustomModelData:72,Unbreakable:1b,display:{Name:'{"text":"Delirium - Debuff dwarves","color":"blue"}',Lore:['[{"text":"Launches a projectile that applies an AoE debuff to dwarves."}]','[{"text":"8 second cooldown!","color":"red"}]']}} 1
-give @s[tag=phantom,tag=!selectedclass] carrot_on_a_stick{CustomModelData:11,Unbreakable:1b,display:{Name:'{"text":"Steal Mana","color":"blue"}',Lore:['[{"text":"Drains 20 mana from a dwarf in range."}]','[{"text":"15 second cooldown!","color":"red"}]']}} 1
+give @s[tag=phantom,tag=!selectedclass] carrot_on_a_stick{CustomModelData:11,Unbreakable:1b,display:{Name:'{"text":"Steal Mana","color":"blue"}',Lore:['[{"text":"Drains 35 mana from a dwarf in range."}]','[{"text":"15 second cooldown!","color":"red"}]']}} 1
 give @s[tag=phantom,tag=!selectedclass] carrot_on_a_stick{CustomModelData:75,Unbreakable:1b,display:{Name:'{"text":"Leap","color":"gold"}',Lore:['[{"text":"Leap into the air!."}]','[{"text":"Good for getting air."}]','[{"text":"15 second cooldown!","color":"red"}]']}} 1
 give @s[tag=phantom,tag=!selectedclass] firework_rocket 32
 #give @s[tag=phantom,tag=!selectedclass] splash_potion{CustomPotionEffects:[{Id:2,Amplifier:1b,Duration:200},{Id:4,Amplifier:1b,Duration:200},{Id:18,Amplifier:1b,Duration:200}],CustomPotionColor:0} 8

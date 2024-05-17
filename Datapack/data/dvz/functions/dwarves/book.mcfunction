@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.04.25
+# Last Modified On: 2024.05.17
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -35,9 +35,9 @@ execute if entity @s[tag=tailor,level=..29] run title @s actionbar {"text":" * [
 execute if entity @s[tag=tailor,scores={DVZ.tailor.dyes=..9}] run title @s actionbar {"text":" * [Summoning Book] You need at least 10 dyes!","color":"dark_aqua"}
 
 # standard builder loot
-execute as @s if entity @s[tag=builder,scores={DVZ.book.cool=0}] run function dvz:dwarves/book/builder
+execute as @s if entity @s[tag=builder,tag=!fight,scores={DVZ.book.cool=0}] run function dvz:dwarves/book/builder
 # fight builder loot
-#execute as @s if entity @s[tag=builder,tag=fight,scores={DVZ.book.cool=0}] run function dvz:dwarves/book/builderfight
+execute as @s if entity @s[tag=builder,tag=fight,scores={DVZ.book.cool=0}] run function dvz:dwarves/book/builderfight
 
 execute as @s if entity @s[tag=alchemist,level=30..,scores={DVZ.alch.potions=3..}] run function dvz:dwarves/book/alchemist
 execute as @s if entity @s[tag=baker,level=30..,scores={DVZ.baker.bricks=10..}] run function dvz:dwarves/book/baker

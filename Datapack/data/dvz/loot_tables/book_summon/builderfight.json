@@ -78,6 +78,20 @@
         },
         {
           "type": "item",
+          "name": "minecraft:end_stone_bricks",
+          "weight": 12,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 16,
+                "max": 32
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
           "name": "minecraft:sea_lantern",
           "weight": 1,
           "functions": [
