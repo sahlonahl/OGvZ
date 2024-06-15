@@ -100,6 +100,7 @@ execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on
 
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{dSpawn:1b,Unbreakable:1b}}}] at @s run function dvz:setup/dspawnpoint
 execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{zSpawn:1b,Unbreakable:1b}}}] at @s run function dvz:setup/zspawnpoint
+execute as @a[scores={DVZ.rclick=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{lobbySpawn:1b,Unbreakable:1b}}}] at @s run function dvz:setup/lobbyspawn
 
 scoreboard players reset @a[scores={DVZ.rclick=1..}] DVZ.rclick
 

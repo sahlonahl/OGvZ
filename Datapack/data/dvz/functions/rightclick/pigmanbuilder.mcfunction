@@ -34,6 +34,7 @@ execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run 
 
 #=========================================
 
+tag @s[tag=!selectedclass] add nomana
 execute if entity @s[tag=dwarves,tag=!selectedclass] run tag @s add builder
 team join dBUILDER @s[tag=builder,tag=!selectedclass]
 

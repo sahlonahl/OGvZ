@@ -36,7 +36,6 @@ execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run 
 
 #=========================================
 
-tag @s[tag=!selectedclass] remove nomana
 execute if entity @s[tag=dwarves,tag=!selectedclass] run tag @s add tailor
 team join dTAILOR @s[tag=tailor,tag=!selectedclass]
 give @s[tag=tailor,tag=!selectedclass] cooked_porkchop 1

@@ -218,6 +218,7 @@ scoreboard players set @s DVZ.smash.check 0
 scoreboard players set @s DVZ.mana.ticks 0
 #scoreboard players set @s DVZ.suicide.cool 0
 scoreboard players set @s DVZ.suicide.tick 0
+scoreboard players set @s DVZ.distdam.tick 0
 
 #####END OF SCOREBOARD RESETS
 

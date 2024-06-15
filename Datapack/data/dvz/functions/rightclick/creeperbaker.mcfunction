@@ -33,7 +33,6 @@ execute as @s[tag=creeper] if predicate dvz:chargedchance run function dvz:zombi
 
 #=========================================
 
-tag @s[tag=!selectedclass] remove nomana
 execute if entity @s[tag=dwarves,tag=!selectedclass] run tag @s add baker
 team join dBAKER @s[tag=baker,tag=!selectedclass]
 #give @s[tag=baker,tag=!selectedclass] cow_spawn_egg{display:{Name:'{"text":"Conjure Milk Dispenser"}'},EntityTag:{Invulnerable:0b,CustomNameVisible:0b,Health:40f,CustomName:'{"text":"Magic Milk Dispenser","color":"white","italic":true}',ActiveEffects:[{Id:10,Amplifier:0b,Duration:199999980,ShowParticles:0b},{Id:11b,Amplifier:3b,Duration:199999980,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:40}]}} 1

@@ -214,6 +214,7 @@ scoreboard objectives add DVZ.smash.check dummy
 scoreboard objectives add DVZ.mana.ticks dummy
 scoreboard objectives add DVZ.suicide.cool dummy
 scoreboard objectives add DVZ.suicide.tick dummy
+scoreboard objectives add DVZ.distdam.tick dummy
 
 ###Player counter
 scoreboard objectives add DVZ.playercount dummy ["",{"text":"OG","bold":true,"color":"dark_aqua"},{"text":"v","color":"gray"},{"text":"Z","bold":true,"color":"dark_red"}] 

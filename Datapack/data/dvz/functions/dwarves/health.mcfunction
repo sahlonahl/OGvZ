@@ -14,9 +14,10 @@
 # -------------------------------------------
 
 execute if entity @s[tag=dwarves,tag=!playerboss,level=..19] run title @s actionbar {"text":" * [Health Potion] You need at least 20 Mana!","color":"dark_red"}
+execute if entity @s[tag=playerboss] run title @s actionbar {"text":" * [Health Potion] You are the assassin, you cant use this!","color":"dark_red"}
 
-execute as @s if entity @s[tag=dwarves,level=20..] run playsound minecraft:entity.witch.drink master @a ~ ~ ~ 1
-execute as @s if entity @s[tag=dwarves,level=20..] run execute as @s run effect give @s instant_health 1 1 true
-execute as @s if entity @s[tag=dwarves,level=20..] run execute as @s run effect give @s regeneration 5 3 true
-execute as @s run title @s[tag=dwarves,level=20..] actionbar {"text":" * [Health Potion] Poof!","color":"red"}
-execute as @s if entity @s[tag=dwarves,level=20..] run execute as @s run xp add @s -20 levels
+execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=20..] run playsound minecraft:entity.witch.drink master @a ~ ~ ~ 1
+execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=20..] run execute as @s run effect give @s instant_health 1 1 true
+execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=20..] run execute as @s run effect give @s regeneration 5 3 true
+execute as @s run title @s[tag=dwarves,tag=!playerboss,level=20..] actionbar {"text":" * [Health Potion] Poof!","color":"red"}
+execute as @s if entity @s[tag=dwarves,tag=!playerboss,level=20..] run execute as @s run xp add @s -20 levels

@@ -82,7 +82,7 @@ execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] 
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] at @s run fill ~5 ~-1 ~5 ~5 ~-4 ~5 pearlescent_froglight replace #dvz:gothrough
 
 
-
+#sound + marker
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] at @s run summon marker ~ ~-1 ~ {Tags:[ePortalStand]}
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run playsound item.totem.use master @a ~ ~ ~
 
@@ -91,5 +91,6 @@ execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] 
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run give @s zombie_spawn_egg 8
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run give @s skeleton_spawn_egg 8
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run give @s creeper_spawn_egg 8
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run function dvz:zombies/enderman/reinforce
 
 execute as @s if entity @a[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run scoreboard players reset @s DVZ.portal.cool

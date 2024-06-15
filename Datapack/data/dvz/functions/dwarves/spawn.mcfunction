@@ -40,7 +40,6 @@ tag @s remove blaze
 tag @s remove enderman
 tag @s remove ePortal
 
-tag @s add nomana
 #give @s[tag=!dwarves] carrot_on_a_stick{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"Mark for mob","color":"red"}',Lore:['[{"text":"Become a monster when the boss arrives!"}]']}} 1
 loot give @s[tag=!dwarves] loot dvz:dwarves
 tag @s add dwarves

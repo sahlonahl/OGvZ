@@ -17,6 +17,7 @@ playsound entity.iron_golem.repair master @a ~ ~ ~ 200
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add golem
+execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add purplemob
 tellraw @a ["",{"text":"ALERT:","bold":true,"color":"red"},{"text":" A ","color":"gold"},{"text":"Golem ","italic":true,"color":"gray"},{"text":"(","color":"gray"},{"selector":"@s[tag=golem,tag=!selectedclass]","color":"gray"},{"text":")","color":"gray"},{"text":" approaches!","color":"gold"}]
 team join zGOLEM @s[tag=golem,tag=!selectedclass]
 clear @s[tag=!selectedclass]

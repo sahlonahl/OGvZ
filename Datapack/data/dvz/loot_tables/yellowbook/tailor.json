@@ -61,16 +61,13 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{LegendItem:1b,Unbreakable:1b}"
-            },
-            {
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "protection": 4,
                 "fire_protection": 4,
                 "respiration": 3,
-                "aqua_affinity": 1
+                "aqua_affinity": 1,
+                "unbreaking":3
               }
             }
           ]
@@ -85,15 +82,12 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{LegendItem:1b,Unbreakable:1b}"
-            },
-            {
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "protection": 4,
                 "fire_protection": 4,
-                "thorns": 4
+                "thorns": 4,
+                "unbreaking":3
               }
             }
           ]
@@ -108,15 +102,12 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{LegendItem:1b,Unbreakable:1b}"
-            },
-            {
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "protection": 4,
                 "fire_protection": 4,
-                "swift_sneak": 4
+                "swift_sneak": 4,
+                "unbreaking":3
               }
             }
           ]
@@ -131,17 +122,14 @@
               "count": 1
             },
             {
-              "function": "set_nbt",
-              "tag": "{LegendItem:1b,Unbreakable:1b}"
-            },
-            {
               "function": "minecraft:set_enchantments",
               "enchantments": {
                 "protection": 4,
                 "fire_protection": 4,
                 "depth_strider": 3,
                 "soul_speed": 3,
-                "frost_walker": 1
+                "frost_walker": 1,
+                "unbreaking":3
               }
             }
           ]
