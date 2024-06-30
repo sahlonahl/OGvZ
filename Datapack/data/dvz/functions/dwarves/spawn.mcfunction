@@ -43,6 +43,7 @@ tag @s remove ePortal
 #give @s[tag=!dwarves] carrot_on_a_stick{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"Mark for mob","color":"red"}',Lore:['[{"text":"Become a monster when the boss arrives!"}]']}} 1
 loot give @s[tag=!dwarves] loot dvz:dwarves
 tag @s add dwarves
+tag @s add nomana
 clear @s minecraft:carrot_on_a_stick{CustomModelData:13,Unbreakable:1b} 1
 effect give @s instant_health 10 30 true
 effect give @s saturation 10 30 true
