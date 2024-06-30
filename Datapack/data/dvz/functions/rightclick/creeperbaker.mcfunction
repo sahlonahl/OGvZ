@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.09.08
-# Last Modified By: Wilkekids
+# Last Modified On: 2024.06.14
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
@@ -34,7 +34,7 @@ execute as @s[tag=creeper] if predicate dvz:chargedchance run function dvz:zombi
 #=========================================
 
 tag @s[tag=!selectedclass] remove nomana
-execute if entity @s[tag=dwarves,tag=!selectedclass] run tag @s add baker
+tag @s[tag=dwarves,tag=!selectedclass] add baker
 team join dBAKER @s[tag=baker,tag=!selectedclass]
 #give @s[tag=baker,tag=!selectedclass] cow_spawn_egg{display:{Name:'{"text":"Conjure Milk Dispenser"}'},EntityTag:{Invulnerable:0b,CustomNameVisible:0b,Health:40f,CustomName:'{"text":"Magic Milk Dispenser","color":"white","italic":true}',ActiveEffects:[{Id:10,Amplifier:0b,Duration:199999980,ShowParticles:0b},{Id:11b,Amplifier:3b,Duration:199999980,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:40}]}} 1
 give @s[tag=baker,tag=!selectedclass] cooked_porkchop 1

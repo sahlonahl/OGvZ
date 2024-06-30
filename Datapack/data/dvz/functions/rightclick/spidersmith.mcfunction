@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.09.08
-# Last Modified By: Wilkekids
+# Last Modified On: 2024.06.14
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
@@ -37,7 +37,7 @@ execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run 
 #=========================================
 
 tag @s[tag=!selectedclass] remove nomana
-execute if entity @s[tag=dwarves,tag=!selectedclass] run tag @s add blacksmith
+tag @s[tag=dwarves,tag=!selectedclass] add blacksmith
 team join dBLACKSMITH @s[tag=blacksmith,tag=!selectedclass]
 give @s[tag=blacksmith,tag=!selectedclass] cooked_porkchop 1
 give @s[tag=blacksmith,tag=!selectedclass] nether_bricks 96

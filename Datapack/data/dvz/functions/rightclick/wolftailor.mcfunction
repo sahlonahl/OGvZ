@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.04.25
-# Last Modified By: Wilkekids
+# Last Modified On: 2024.06.14
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
@@ -37,7 +37,7 @@ execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run 
 #=========================================
 
 tag @s[tag=!selectedclass] remove nomana
-execute if entity @s[tag=dwarves,tag=!selectedclass] run tag @s add tailor
+tag @s[tag=dwarves,tag=!selectedclass] add tailor
 team join dTAILOR @s[tag=tailor,tag=!selectedclass]
 give @s[tag=tailor,tag=!selectedclass] cooked_porkchop 1
 give @s[tag=tailor,tag=!selectedclass] terracotta 96

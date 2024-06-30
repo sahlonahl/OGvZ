@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.02.28
-# Last Modified By: Wilkekids
+# Last Modified On: 2024.06.14
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
@@ -34,7 +34,7 @@ execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run 
 
 #=========================================
 
-execute if entity @s[tag=dwarves,tag=!selectedclass] run tag @s add builder
+tag @s[tag=dwarves,tag=!selectedclass] add builder
 team join dBUILDER @s[tag=builder,tag=!selectedclass]
 
 item replace entity @s[tag=builder,tag=!selectedclass] armor.head with leather_helmet{Enchantments: [{id: "aqua_affinity", lvl: 1},{id: "respiration", lvl: 3}], display: {Name: '{"text":"Builder Helmet","color":"green"}'}}

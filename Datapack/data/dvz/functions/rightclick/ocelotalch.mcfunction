@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.05.1
-# Last Modified By: Wilkekids
+# Last Modified On: 2024.06.14
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
@@ -38,7 +38,7 @@ execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run 
 #=========================================
 
 tag @s[tag=!selectedclass] remove nomana
-execute if entity @s[tag=dwarves,tag=!selectedclass] run tag @s add alchemist
+tag @s[tag=dwarves,tag=!selectedclass] add alchemist
 team join dALCHEMIST @s[tag=alchemist,tag=!selectedclass]
 give @s[tag=alchemist,tag=!selectedclass] cooked_porkchop 1
 give @s[tag=alchemist,tag=!selectedclass] dark_prismarine 96

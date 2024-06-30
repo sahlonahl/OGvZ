@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.09.08
-# Last Modified By: Wilkekids
+# Last Modified On: 2024.06.14
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
@@ -35,7 +35,7 @@ execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run 
 
 #=========================================
 
-execute if entity @s[tag=dwarves,tag=!selectedclass] run tag @s add enchanter
+tag @s[tag=dwarves,tag=!selectedclass] add enchanter
 team join dENCHANTER @s[tag=enchanter,tag=!selectedclass]
 give @s[tag=enchanter,tag=!selectedclass] cooked_porkchop 1
 give @s[tag=enchanter,tag=!selectedclass] smooth_quartz 96

@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.05.03
-# Last Modified By: Wilkekids
+# Last Modified On: 2024.06.14
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
@@ -218,6 +218,7 @@ scoreboard players set @s DVZ.smash.check 0
 scoreboard players set @s DVZ.mana.ticks 0
 #scoreboard players set @s DVZ.suicide.cool 0
 scoreboard players set @s DVZ.suicide.tick 0
+scoreboard players set @s DVZ.distdam.tick 0
 
 #####END OF SCOREBOARD RESETS
 

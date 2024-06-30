@@ -18,7 +18,7 @@ execute as @s[tag=blaze,scores={DVZ.ffly.cool=1..}] run title @s actionbar ["",{
 execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run title @s actionbar {"text":" * [Firefly] Poof!","color":"red"}
 execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run playsound entity.blaze.ambient master @a ~ ~ ~ 1 2
 
-execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run gamemode spectator
+execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run gamemode survival
 execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run tag @s add fireflyactive
 execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run scoreboard players set @s DVZ.ffly.cool 15
 execute as @s if entity @s[tag=blaze,scores={DVZ.ffly.cool=0}] run scoreboard players set @s DVZ.rclick 0
