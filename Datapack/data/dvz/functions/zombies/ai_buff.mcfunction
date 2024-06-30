@@ -30,7 +30,7 @@ effect give @s[type=spider,tag=!AIbuffed] speed 999999 2 true
 data merge entity @s[type=spider,tag=!AIbuffed] {Health:24f,Attributes:[{Name:"generic.max_health",Base:24}]}
 
 # horse attributes commands
-data merge entity @s[type=horse,tag=!AIbuffed] {Health:30f,Tame:1b,ActiveEffects:[{Id:10,Amplifier:0b,Duration:199980,ShowParticles:0b}],Attributes:[{Name:"generic.max_health",Base:30},{Name:"generic.movement_speed",Base:0.18}],SaddleItem:{},ArmorItem:{}}
+data merge entity @s[type=horse,tag=!AIbuffed] {Health:30f,ActiveEffects:[{Id:10,Amplifier:0b,Duration:199980,ShowParticles:0b}],Attributes:[{Name:"generic.max_health",Base:30},{Name:"generic.movement_speed",Base:0.18}],SaddleItem:{},ArmorItem:{}}
 data merge entity @s[type=zombie_horse,tag=!AIbuffed] {Health:20f,Tame:1b,Attributes:[{Name:"generic.max_health",Base:20},{Name:"generic.movement_speed",Base:0.2},{Name:"horse.jump_strength",Base:1}],SaddleItem:{id:"minecraft:saddle",Count:1b},ArmorItem:{}}
 data merge entity @s[type=skeleton_horse,tag=!AIbuffed] {Health:20f,Tame:1b,Attributes:[{Name:"generic.max_health",Base:20},{Name:"generic.movement_speed",Base:0.2},{Name:"horse.jump_strength",Base:1}],SaddleItem:{id:"minecraft:saddle",Count:1b},ArmorItem:{}}
 

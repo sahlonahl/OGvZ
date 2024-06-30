@@ -242,21 +242,21 @@ execute as @a[scores={DVZ.suicide.cool=..0},tag=zombies] run tellraw @s {"text":
 execute as @a[scores={DVZ.suicide.cool=..0},tag=zombies] run scoreboard players reset @s DVZ.suicide.cool
 
 #Shrine + Assassin Slayer + daytime mana regen
-execute at @e[type=marker,tag=dSpawn] run scoreboard players add @a[tag=dwarves,tag=selectedclass,tag=nomana,level=..99,distance=..5] DVZ.mana.ticks 1
-execute at @e[type=marker,tag=dSpawn] at @a[tag=dwarves,tag=selectedclass,tag=nomana,level=..99,distance=..5] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
+execute as @e[type=marker,tag=dSpawn] at @s run scoreboard players add @a[tag=dwarves,tag=nomana,level=..99,distance=..5] DVZ.mana.ticks 1
+execute at @e[type=marker,tag=dSpawn] at @a[tag=dwarves,tag=nomana,level=..99,distance=..5] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
 
-execute at @a[tag=assassinslayer] run scoreboard players add @a[tag=dwarves,level=..99,distance=..4] DVZ.mana.ticks 1
-execute at @a[tag=assassinslayer] at @a[tag=dwarves,level=..99,distance=..4] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
+execute as @a[tag=assassinslayer] run scoreboard players add @a[tag=dwarves,level=..99,distance=..4] DVZ.mana.ticks 1
+execute as @a[tag=assassinslayer] at @a[tag=dwarves,level=..99,distance=..4] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
 
 # slayer totem mana and hp regen
-execute at @e[type=marker,tag=slayer_totem] run scoreboard players add @a[tag=dwarves,level=..99,distance=..5] DVZ.mana.ticks 1
+execute as @e[type=marker,tag=slayer_totem] at @s run scoreboard players add @a[tag=dwarves,level=..99,distance=..5] DVZ.mana.ticks 1
 execute at @e[type=marker,tag=slayer_totem] at @a[tag=dwarves,level=..99,distance=..5] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
 execute as @e[type=marker,tag=slayer_totem] at @s unless block ~ ~ ~ minecraft:diamond_block run tag @s add totem_death
 execute as @e[type=marker,tag=slayer_totem,tag=totem_death] at @s run function dvz:dwarves/heros/assassinslayer/totem_destroy
 
 #Daytime buffs
-execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime run scoreboard players add @a[tag=dwarves,level=..99] DVZ.mana.ticks 1
-execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime at @a[tag=dwarves,level=..99] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
+execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime run scoreboard players add @a[tag=dwarves,tag=nomana,level=..99,distance=..5] DVZ.mana.ticks 1
+execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime at @a[tag=dwarves,tag=nomana,level=..99] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
 # execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime run effect give @a[tag=hero] speed 1 1
 
 
