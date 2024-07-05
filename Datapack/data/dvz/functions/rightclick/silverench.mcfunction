@@ -35,6 +35,7 @@ execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run 
 
 #=========================================
 
+tag @s[tag=!selectedclass] remove nomana
 tag @s[tag=dwarves,tag=!selectedclass] add enchanter
 team join dENCHANTER @s[tag=enchanter,tag=!selectedclass]
 give @s[tag=enchanter,tag=!selectedclass] cooked_porkchop 1

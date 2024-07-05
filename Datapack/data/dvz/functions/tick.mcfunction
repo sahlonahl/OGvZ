@@ -102,9 +102,9 @@ execute at @a[tag=husk] run effect give @a[tag=husk,distance=10..15] speed 2 0
 execute at @a[tag=husk] run effect give @a[tag=husk,distance=5..10] speed 2 1
 execute at @a[tag=husk] run effect give @a[tag=husk,distance=0.2..5] speed 2 2
 
-execute at @a[tag=drowned] run effect give @a[tag=!drowned,tag=!zlguardian,tag=zombies,distance=10..15] dolphins_grace 5 0
-execute at @a[tag=drowned] run effect give @a[tag=!drowned,tag=!zlguardian,tag=zombies,distance=5..10] dolphins_grace 15 0
-execute at @a[tag=drowned] run effect give @a[tag=!drowned,tag=!zlguardian,tag=zombies,distance=0.2..5] dolphins_grace 25 0
+execute at @a[tag=drowned] run effect give @a[tag=zombies,distance=10..15] dolphins_grace 5 0
+execute at @a[tag=drowned] run effect give @a[tag=zombies,distance=5..10] dolphins_grace 15 0
+execute at @a[tag=drowned] run effect give @a[tag=zombies,distance=0.2..5] dolphins_grace 25 0
 
 execute at @a[tag=vindicator] run effect give @a[tag=husk,distance=10..15] haste 2 0
 execute at @a[tag=vindicator] run effect give @a[tag=husk,distance=5..10] haste 4 1
@@ -241,7 +241,7 @@ execute as @a[scores={DVZ.suicide.cool=..0},tag=zombies] at @s run playsound ite
 execute as @a[scores={DVZ.suicide.cool=..0},tag=zombies] run tellraw @s {"text":"[Suicide pill] Your suicide pill is ready.","color":"gray"}
 execute as @a[scores={DVZ.suicide.cool=..0},tag=zombies] run scoreboard players reset @s DVZ.suicide.cool
 
-#Shrine + Assassin Slayer + daytime mana regen
+#Shrine + Assassin Slayer mana regen
 execute as @e[type=marker,tag=dSpawn] at @s run scoreboard players add @a[tag=dwarves,tag=nomana,level=..99,distance=..5] DVZ.mana.ticks 1
 execute at @e[type=marker,tag=dSpawn] at @a[tag=dwarves,tag=nomana,level=..99,distance=..5] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
 
@@ -254,9 +254,9 @@ execute at @e[type=marker,tag=slayer_totem] at @a[tag=dwarves,level=..99,distanc
 execute as @e[type=marker,tag=slayer_totem] at @s unless block ~ ~ ~ minecraft:diamond_block run tag @s add totem_death
 execute as @e[type=marker,tag=slayer_totem,tag=totem_death] at @s run function dvz:dwarves/heros/assassinslayer/totem_destroy
 
-#Daytime buffs
-execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime run scoreboard players add @a[tag=dwarves,tag=nomana,level=..99,distance=..5] DVZ.mana.ticks 1
-execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime at @a[tag=dwarves,tag=nomana,level=..99] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
+#Daytime buffs + mana regen
+#execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime run scoreboard players add @a[tag=dwarves,tag=nomana,level=..99,distance=..5] DVZ.mana.ticks 1
+#execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime at @a[tag=dwarves,tag=nomana,level=..99] run particle minecraft:wax_on ~ ~0.5 ~ 0.1 0.5 0.1 0.01 1
 # execute if entity @e[tag=dvztimer,tag=fight] if predicate dvz:daytime run effect give @a[tag=hero] speed 1 1
 
 
@@ -377,8 +377,8 @@ effect give @a[tag=ghastflight,nbt={Inventory:[{Slot:-106b,tag:{Descend:1b}}]}] 
 
 #Ghast fireball power reduction 
 scoreboard players add @e[type=fireball,tag=fballage] DVZ.fballage.cool 1
-execute as @e[type=fireball,tag=fballage,scores={DVZ.fballage.cool=40}] run data merge entity @s {ExplosionPower:3b}
-execute as @e[type=fireball,tag=fballage,scores={DVZ.fballage.cool=60}] run data merge entity @s {ExplosionPower:2b}
+execute as @e[type=fireball,tag=fballage,scores={DVZ.fballage.cool=40}] run data merge entity @s {ExplosionPower:2b}
+execute as @e[type=fireball,tag=fballage,scores={DVZ.fballage.cool=60}] run data merge entity @s {ExplosionPower:1b}
 execute as @e[type=fireball,tag=fballage,scores={DVZ.fballage.cool=80}] run kill @s
 
 #Ghast fireball particles
