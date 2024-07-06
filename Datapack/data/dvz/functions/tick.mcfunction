@@ -60,7 +60,7 @@ execute at @e[type=marker,tag=zProtect] run scoreboard players add @a[tag=dwarve
 execute at @e[type=marker,tag=zProtect] run effect give @a[tag=dwarves,tag=!admin,distance=..30] blindness 1
 
 # distance damage command
-damage @a[tag=dwarves,scores={DVZ.distdam.tick=20..},limit=1] 4 out_of_world
+damage @a[tag=dwarves,scores={DVZ.distdam.tick=20..},limit=1] 10 out_of_world
 scoreboard players set @a[tag=dwarves,scores={DVZ.distdam.tick=20..}] DVZ.distdam.tick 0
 
 # mobs too far from spawn
