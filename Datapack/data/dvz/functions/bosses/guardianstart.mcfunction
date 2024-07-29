@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.07.21
-# Last Modified By: wilkekids
+# Last Modified On: 2024.07.29
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
@@ -58,7 +58,7 @@ tag @a[tag=playerboss] remove blaze
 tag @a[tag=playerboss] remove enderman
 tag @a[tag=playerboss] remove ePortal
 
-clear @a[tag=playerboss] 
+clear @a[tag=playerboss]
 effect clear @a[tag=playerboss]
 gamemode creative @a[tag=playerboss]
 effect give @a[tag=playerboss] invisibility 1000000 2 true

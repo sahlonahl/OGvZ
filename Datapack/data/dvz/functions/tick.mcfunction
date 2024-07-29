@@ -14,13 +14,12 @@
 # -------------------------------------------
 
 #Player Checks
-schedule function dvz:unload 5s
 execute as @a[tag=!DVZready] run function dvz:dvzready
 execute at @e[type=marker,tag=zProtect] run effect give @a[tag=zombies,tag=!miniboss,distance=..25,nbt=!{ActiveEffects:[{Id:10,Amplifier:4b}]}] regeneration 2 4 true
 execute as @a run execute store result score @s DVZ.lava run clear @s minecraft:lava_bucket
 execute as @a[scores={DVZ.lava=1..}] run function dvz:lava
-execute at @a[tag=!admin] run fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air replace nether_portal
-execute at @a[tag=!admin] run fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air replace end_portal
+execute at @a[tag=!admin] run fill ~1 ~2 ~1 ~-1 ~-1 ~-1 air replace nether_portal
+execute at @a[tag=!admin] run fill ~1 ~1 ~1 ~-1 ~-2 ~-1 air replace end_portal
 execute as @a[tag=dwarves] store result score @s DVZ.hunger run data get entity @s foodLevel 1
 
 xp set @a 0 points
@@ -423,10 +422,11 @@ execute as @e[type=#dvz:aimob,type=!player,tag=!AIbuffed] run function dvz:zombi
 
 
 ##Core Branch
-tag @a[gamemode=!survival,tag=!admin] add admin
+tag @a[gamemode=!survival,gamemode=!adventure,tag=!admin,tag=!playerboss] add admin
 execute as @a[tag=admin,tag=!messaged] unless entity @e[tag=begin] run tellraw @s ["",{"text":"=---------------------- \u0020OGvZ Menu \u0020----------------------=\n\n \u0020 \u0020 Click "},{"text":"[HERE]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function dvz:lobby"},"hoverEvent":{"action":"show_text","value":{"text":"Spawn-in Lobby","color":"green"}}},{"text":" to make the "},{"text":"spawn-in lobby","color":"green"},{"text":"\n\n \u0020 \u0020 Click "},{"text":"[HERE]","color":"dark_aqua","clickEvent":{"action":"run_command","value":"/function dvz:shrine"},"hoverEvent":{"action":"show_text","value":{"text":"Bare Shrine","color":"aqua"}}},{"text":" to make the "},{"text":"Bare shrine","color":"aqua"},{"text":"\n \u0020 \u0020 Click "},{"text":"[HERE]","color":"dark_aqua","clickEvent":{"action":"run_command","value":"/function dvz:shrine_temple"},"hoverEvent":{"action":"show_text","value":{"text":"Temple Dwarf Shrine","color":"aqua"}}},{"text":" to make the "},{"text":"Temple Dwarf Shrine","color":"aqua"},{"text":"\n \u0020 \u0020 Click "},{"text":"[HERE]","color":"dark_aqua","clickEvent":{"action":"run_command","value":"/function dvz:shrine_tower"},"hoverEvent":{"action":"show_text","value":{"text":"Tower Dwarf Shrine","color":"aqua"}}},{"text":" to make the "},{"text":"Tower dwarf shrine","color":"aqua"},{"text":"\n \u0020 \u0020 Click "},{"text":"[HERE]","color":"dark_aqua","clickEvent":{"action":"run_command","value":"/function dvz:shrine_fort"},"hoverEvent":{"action":"show_text","value":{"text":"Fort Dwarf Shrine","color":"aqua"}}},{"text":" to make the "},{"text":"fort dwarf shrine","color":"aqua"},{"text":"\n\n \u0020 \u0020 Click "},{"text":"[HERE]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function dvz:zombiespawn"},"hoverEvent":{"action":"show_text","value":{"text":"Zombie Spawn","color":"red"}}},{"text":" to make the "},{"text":"zombie's spawn","color":"red"},{"text":"\n\n \u0020 \u0020 Click "},{"text":"[HERE]","color":"gold","clickEvent":{"action":"run_command","value":"/function dvz:begintest"},"hoverEvent":{"action":"show_text","value":{"text":"Start the Game!","color":"yellow"}}},{"text":" to "},{"text":"start the game!","color":"yellow"},{"text":"\n\n \u0020 \u0020 Select Mob Boss "},{"text":"[AI dragon]","color":"gray","clickEvent":{"action":"run_command","value":"/tag @e[tag=dvztimer] add aidragon"},"hoverEvent":{"action":"show_text","value":{"text":"OGvZ's Default!","color":"white"}}},{"text":", "},{"text":"[Player Dragon]","color":"dark_purple","clickEvent":{"action":"run_command","value":"/tag @e[tag=dvztimer] add playerdragon"},"hoverEvent":{"action":"show_text","value":{"text":"A player controlled dragon!","color":"light_purple"}}},{"text":", "},{"text":"[AI Wither]","color":"gray","clickEvent":{"action":"run_command","value":"/tag @e[tag=dvztimer] add aiwither"},"hoverEvent":{"action":"show_text","value":{"text":"OGvZ's second pick!","color":"white"}}},{"text":", "},{"text":"[Player Wither]","color":"dark_gray","clickEvent":{"action":"run_command","value":"/tag @e[tag=dvztimer] add playerwither"},"hoverEvent":{"action":"show_text","value":{"text":"A player controlled wither!","color":"gray"}}},{"text":", "},{"text":"[Guardian]","color":"dark_aqua","clickEvent":{"action":"run_command","value":"/tag @e[tag=dvztimer] add guardian"},"hoverEvent":{"action":"show_text","value":{"text":"An aquatic boss!","color":"aqua"}}},{"text":", "},{"text":"[Assassin]","color":"dark_red","clickEvent":{"action":"run_command","value":"/tag @e[tag=dvztimer] add assassin"},"hoverEvent":{"action":"show_text","value":{"text":"A dwarf turned evil!","color":"red"}}},{"text":"\n\n=--------------------------------------------------------="}]
 tag @a[tag=admin] add messaged
 tag @a[gamemode=survival,tag=admin] remove admin
+tag @a[gamemode=adventure,tag=admin] remove admin
 tag @a[gamemode=survival,tag=messaged] remove messaged
 
 execute as @a[tag=dwarves,scores={DVZ.build.struc=1..}] run function dvz:dwarves/tools/builder_structures
@@ -441,7 +441,6 @@ execute as @e[type=marker,tag=playerwither] run function dvz:bosses/playerwither
 execute as @e[type=marker,tag=guardian] run function dvz:bosses/guardian
 
 execute as @a[scores={DVZ.death=1..}] run function dvz:death
-execute as @a[scores={DVZ.spawn=1..}] run function dvz:spawn
 execute as @a[scores={DVZ.leave=1..}] if entity @e[tag=dvztimer,tag=fight] run kill @s
 execute as @a[scores={DVZ.leave=1..}] run scoreboard players set @s DVZ.leave 0
 

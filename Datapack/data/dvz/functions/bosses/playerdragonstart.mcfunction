@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.02.19
-# Last Modified By: Zaffre
+# Last Modified On: 2024.07.29
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
@@ -58,12 +58,12 @@ tag @a[tag=playerboss] remove blaze
 tag @a[tag=playerboss] remove enderman
 tag @a[tag=playerboss] remove ePortal
 
-clear @a[tag=playerboss] 
+clear @a[tag=playerboss]
 effect clear @a[tag=playerboss]
 gamemode creative @a[tag=playerboss]
-effect give @a[tag=playerboss] invisibility 1000000 2 true
+effect give @a[tag=playerboss] invisibility infinite 2 true
 
-give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:31,Unbreakable:1b,display:{Name:'{"text":"Dragon Breath","color":"purple"}'}}
+give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:31,Unbreakable:1b,display:{Name:'{"text":"Dragon Breath","color":"light_purple"}'}}
 give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:32,Unbreakable:1b,display:{Name:'{"text":"World Cracker","color":"red"}'}}
 
 execute at @r[tag=dwarves] positioned ~ ~30 ~ run summon minecraft:ender_dragon ~ ~ ~ {DragonPhase:10,Tags:[tpdragon]}
