@@ -16,7 +16,7 @@
 execute if entity @s[tag=guardian,level=..29] run title @s actionbar {"text":" * [Minds Eye] You need at least 30 Mana!","color":"dark_red"}
 execute if entity @s[tag=guardian,scores={DVZ.mindseye.cool=1..}] run title @s actionbar ["",{"text":" * [Minds Eye] You have ","color":"gold"},{"score":{"name":"@s","objective":"DVZ.mindseye.cool"},"color":"gold"},{"text":" seconds remaining!","color":"gold"}]
 
-execute as @s if entity @s[tag=guardian,level=30..,scores={DVZ.mindseye.cool=0}] run execute as @s run effect give @a[tag=zombies] glowing 10 0 true
+execute as @s if entity @s[tag=guardian,level=30..,scores={DVZ.mindseye.cool=0}] run execute as @s run effect give @a[tag=zombies,distance=..30] glowing 10 0 true
 execute as @s if entity @s[tag=guardian,level=30..,scores={DVZ.mindseye.cool=0}] run execute as @s run effect give @s blindness 10 0 true
 execute as @s run title @s[tag=guardian,level=30..,scores={DVZ.mindseye.cool=0}] actionbar {"text":" * [Minds Eye] Poof!","color":"red"}
 execute as @s if entity @s[tag=guardian,level=30..,scores={DVZ.mindseye.cool=0}] at @s run playsound block.conduit.attack.target master @a ~ ~ ~ 100

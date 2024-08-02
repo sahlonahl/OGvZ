@@ -36,4 +36,4 @@ bossbar set dvz:assassintimer visible true
 tellraw @s[tag=playerboss] ["",{"text":"\u25b6","bold":true},{"text":"You're the ASSASSIN! KILL THE OTHER DWARVES!","color":"dark_red"}]
 clear @a[tag=playerboss] carrot_on_a_stick{CustomModelData:38}
 clear @a[tag=playerboss] carrot_on_a_stick{CustomModelData:27}
-give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:40,Unbreakable:1b,display:{Name:'{"text":"Knife - Right-click to instantly KILL a nearby dwarf!","color":"red","bold":true,"italic":true}'}}
+give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:40,Unbreakable:1b,display:{Name:'{"text":"Knife - Right-click to instantly KILL a nearby dwarf!","color":"red","bold":true,"italic":true}'},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:5,Operation:0,UUID:[I;1,1,-1,-1],Slot:"mainhand"}]}

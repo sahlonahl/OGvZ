@@ -37,7 +37,7 @@ execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] 
 
 ##Portal Structure
 #Core
-execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run tp @s ~ ~20 ~
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run tp @s ~ ~30 ~
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] at @s run fill ~-1 ~-5 ~-1 ~1 ~-2 ~1 end_stone replace #dvz:gothrough
 #First ring
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] at @s run fill ~-3 ~-2 ~-1 ~-3 ~-4 ~1 end_stone replace #dvz:gothrough
