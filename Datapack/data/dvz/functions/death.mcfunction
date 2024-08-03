@@ -48,6 +48,7 @@ tag @s remove assassinslayer
 tag @s remove guardian
 tag @s remove hero
 tag @s remove lbookused
+tag @s remove pearlwarmup
 
 tag @s remove zombie
 tag @s remove drowned

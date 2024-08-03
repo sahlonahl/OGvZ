@@ -20,10 +20,10 @@ team join zCREEPER @s[tag=creeper,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=creeper,tag=!selectedclass] cooked_beef 64
 give @s[tag=creeper,tag=!selectedclass] carrot_on_a_stick{CustomModelData:10,Unbreakable:1b,display:{Name:'{"text":"Explode!","color":"red"}',Lore:['[{"text":"Obvisouly a single-use item!","color":"dark_red"}]']}}
-item replace entity @s[tag=creeper,tag=!selectedclass] armor.head with creeper_head{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
-item replace entity @s[tag=creeper,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 42240}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
-item replace entity @s[tag=creeper,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 10082192}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
-item replace entity @s[tag=creeper,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 1854485}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=creeper,tag=!selectedclass] armor.head with creeper_head{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=creeper,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 42240}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=creeper,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 10082192}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=creeper,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 1854485}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
 
 execute as @s[tag=creeper] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
 execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures

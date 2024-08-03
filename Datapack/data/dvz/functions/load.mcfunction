@@ -137,6 +137,8 @@ scoreboard objectives add DVZ.slab.cool dummy
 scoreboard objectives add DVZ.slab.ticks dummy
 scoreboard objectives add DVZ.prod.cool dummy
 scoreboard objectives add DVZ.prod.ticks dummy
+scoreboard objectives add DVZ.pearl_warmup dummy
+scoreboard objectives add DVZ.pearl_warmup.ticks dummy
 scoreboard objectives add DVZ.build.struc minecraft.used:minecraft.glow_squid_spawn_egg
 
 # Zombie

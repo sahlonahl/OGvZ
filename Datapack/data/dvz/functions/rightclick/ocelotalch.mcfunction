@@ -24,10 +24,10 @@ give @s[tag=ocelot,tag=!selectedclass] salmon{display:{Name:'{"text":"Fish Slapp
 give @s[tag=ocelot,tag=!selectedclass] vine 24
 give @s[tag=ocelot,tag=!selectedclass] carrot_on_a_stick{CustomModelData:11,Unbreakable:1b,display:{Name:'{"text":"Steal Mana","color":"blue"}',Lore:['[{"text":"Drains 75 mana from a dwarf in range."}]','[{"text":"10 second cooldown!","color":"red"}]']}} 1
 give @s[tag=ocelot,tag=!selectedclass] carrot_on_a_stick{CustomModelData:26,Unbreakable:1b,display:{Name:'{"text":"Disarm Dwarves","color":"blue"}',Lore:['[{"text":"Inflicts weakness on dwarves near you."}]','[{"text":"10 second cooldown!","color":"red"}]']}} 1
-item replace entity @s[tag=ocelot,tag=!selectedclass] armor.head with firework_star{CustomModelData:2,display:{Name:'{"text":"Ocelot Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1}]} 1
-item replace entity @s[tag=ocelot,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 16768372}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
-item replace entity @s[tag=ocelot,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 16180138}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
-item replace entity @s[tag=ocelot,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 9327914}, Enchantments: [{id: "feather_falling", lvl: 100}, {id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=ocelot,tag=!selectedclass] armor.head with firework_star{CustomModelData:2,display:{Name:'{"text":"Ocelot Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id: "protection", lvl: 1},{id:"binding_curse",lvl:1}]} 1
+item replace entity @s[tag=ocelot,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 16768372}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=ocelot,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 16180138}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=ocelot,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 9327914}, Enchantments: [{id: "feather_falling", lvl: 100}, {id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
 
 effect give @s[tag=ocelot,tag=!selectedclass] speed 1000000 1 true
 #effect give @s[tag=ocelot,tag=!selectedclass] jump_boost 1000000 255 true

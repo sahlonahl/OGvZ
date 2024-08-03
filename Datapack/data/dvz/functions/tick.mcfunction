@@ -28,6 +28,8 @@ function dvz:itemeffects
 function dvz:nodrop
 execute as @a[tag=dwarves,scores={DVZ.death=1..}] at @s run function dvz:customdeath/customdeath
 
+execute as @a[scores={DVZ.pearl_warmup=3}] run function dvz:dwarves/tools/pearl_rod_execute
+
 # - Player Notices - 
 
 # dwarf too far from shrine

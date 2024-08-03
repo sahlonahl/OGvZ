@@ -29,6 +29,11 @@ execute as @a[scores={DVZ.prod.cool=1..}] run scoreboard players add @s DVZ.prod
 execute as @a[scores={DVZ.prod.ticks=20..}] run scoreboard players remove @s DVZ.prod.cool 1
 execute as @a[scores={DVZ.prod.ticks=20..}] run scoreboard players set @s DVZ.prod.ticks 0
 execute as @a[scores={DVZ.prod.cool=..0}] run scoreboard players reset @s DVZ.prod.ticks
+#Dwarf Pearl rod warmup
+execute as @a[tag=pearlwarmup,scores={DVZ.pearl_warmup=..3}] run scoreboard players add @s DVZ.pearl_warmup.ticks 1
+execute as @a[tag=pearlwarmup,scores={DVZ.pearl_warmup.ticks=20..}] run scoreboard players add @s DVZ.pearl_warmup 1
+execute as @a[tag=pearlwarmup,scores={DVZ.pearl_warmup.ticks=20..}] run scoreboard players set @s DVZ.pearl_warmup.ticks 0
+execute as @a[tag=pearlwarmup,scores={DVZ.pearl_warmup=3..}] run scoreboard players reset @s DVZ.pearl_warmup.ticks
 #Blaze Firefly
 execute as @a[scores={DVZ.ffly.cool=1..}] run scoreboard players add @s DVZ.ffly.ticks 1
 execute as @a[scores={DVZ.ffly.ticks=20..}] run scoreboard players remove @s DVZ.ffly.cool 1

@@ -28,10 +28,10 @@ give @s[tag=chicken,tag=!selectedclass] chicken{display:{Name:'{"text":"NUGGET N
 give @s[tag=chicken,tag=!selectedclass] stick{CustomModelData:36,Descend:1b,display:{Name:'[{"text":"Descend","color":"red"}]',Lore:['[{"text":"Place in offhand to use."}]']}} 1
 #give @s[tag=chicken,tag=!selectedclass] stick{CustomModelData:70,Levitate:1b,display:{Name:'[{"text":"Levitate","color":"green"}]',Lore:['[{"text":"Place in offhand to use."}]']}} 1
 
-item replace entity @s[tag=chicken,tag=!selectedclass] armor.head with firework_star{CustomModelData:15,display:{Name:'{"text":"Chicken Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1}]} 1
-item replace entity @s[tag=chicken,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 16777215}, Enchantments: [{id: "blast_protection", lvl: 10}, {id: "binding_curse", lvl: 1}], AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:-3,Operation:0,UUID:[I;-1840866818,-221950756,-1828424277,-1758675542]}]} 1
-item replace entity @s[tag=chicken,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 16775239}, Enchantments: [{id: "blast_protection", lvl: 10}, {id: "binding_curse", lvl: 1}]} 1
-item replace entity @s[tag=chicken,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 16775239}, Enchantments: [{id: "feather_falling", lvl: 100}, {id: "blast_protection", lvl: 10}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=chicken,tag=!selectedclass] armor.head with firework_star{CustomModelData:15,display:{Name:'{"text":"Chicken Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id: "protection", lvl: 1},{id:"binding_curse",lvl:1}]} 1
+item replace entity @s[tag=chicken,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 16777215}, Enchantments: [{id: "blast_protection", lvl: 10},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}], AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:-3,Operation:0,UUID:[I;-1840866818,-221950756,-1828424277,-1758675542]}]} 1
+item replace entity @s[tag=chicken,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 16775239}, Enchantments: [{id: "blast_protection", lvl: 10},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=chicken,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 16775239}, Enchantments: [{id: "feather_falling", lvl: 100}, {id: "blast_protection", lvl: 10},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
 
 #effect give @s[tag=chicken,tag=!selectedclass] jump_boost 1000000 255 true
 tag @s add selectedclass

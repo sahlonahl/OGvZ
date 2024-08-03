@@ -28,10 +28,10 @@ give @s[tag=witherskeleton,tag=!selectedclass] arrow 1
 loot give @s[tag=witherskeleton,tag=!selectedclass] loot dvz:classes/skeletonhorse
 
 #item replace entity @s[tag=witherskeleton,tag=!selectedclass] armor.head with jack_o_lantern{Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]}
-item replace entity @s[tag=witherskeleton,tag=!selectedclass] armor.head with wither_skeleton_skull{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]}
-item replace entity @s[tag=witherskeleton,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 3684408}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]}
-item replace entity @s[tag=witherskeleton,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 3684408}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]}
-item replace entity @s[tag=witherskeleton,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 3684408}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]}
+item replace entity @s[tag=witherskeleton,tag=!selectedclass] armor.head with wither_skeleton_skull{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]}
+item replace entity @s[tag=witherskeleton,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 3684408}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]}
+item replace entity @s[tag=witherskeleton,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 3684408}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]}
+item replace entity @s[tag=witherskeleton,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 3684408}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]}
 
 execute as @s[tag=witherskeleton] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
 execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures

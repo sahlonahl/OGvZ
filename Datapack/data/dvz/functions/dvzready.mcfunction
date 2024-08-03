@@ -34,6 +34,7 @@ tag @s remove assassinslayer
 tag @s remove guardian
 tag @s remove hero
 tag @s remove lbookused
+tag @s remove pearlwarmup
 
 tag @s remove zombies
 tag @s remove zombie
@@ -111,6 +112,8 @@ scoreboard players set @s DVZ.slab.cool 0
 scoreboard players set @s DVZ.slab.ticks 0
 scoreboard players set @s DVZ.prod.cool 0
 scoreboard players set @s DVZ.prod.ticks 0
+scoreboard players set @s DVZ.pearl_warmup 0
+scoreboard players set @s DVZ.pearl_warmup.ticks 0
 #Zombie 
 scoreboard players set @s DVZ.ffly.airtime 0
 scoreboard players set @s DVZ.ffly.cool 0
