@@ -5,12 +5,12 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2024.07.29
+# Last Modified On: 2024.08.03
 # Last Modified By: Sahlonahl
 #
 # Credit to:
 #
-# Comments:
+# Comments: Bossbar disabled b/c Wither has a natural health bar.
 # -------------------------------------------
 kill @a[tag=slay]
 tellraw @a[tag=slay] {"text":"\u2620 You have died because you chose to become mob!","color":"gray"}
@@ -21,4 +21,4 @@ execute at @r[tag=dwarves] positioned ~ ~30 ~ run summon minecraft:wither ~ ~ ~
 title @a subtitle {"text":"The Wither has spawned!","color":"red"}
 title @a title {"text":""}
 execute as @a at @s run playsound entity.wither.spawn master @s ~ ~ ~ 1 1.5
-bossbar set dvz:witherhealth visible true
+#bossbar set dvz:witherhealth visible true
