@@ -41,6 +41,7 @@ tag @s remove enchanter
 tag @s remove tailor
 tag @s remove nomana
 tag @s remove slay
+tag @s remove volunteer
 
 tag @s remove dragon
 tag @s remove wither
@@ -81,6 +82,7 @@ tag @s remove charged_creeper
 tag @s remove natured
 tag @s remove evoker
 
+tag @s remove purplemob
 tag @s remove ghast
 tag @s remove johnny
 tag @s remove ravager

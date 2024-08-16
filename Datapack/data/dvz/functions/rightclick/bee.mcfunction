@@ -28,9 +28,9 @@ give @s[tag=bee,tag=!selectedclass] carrot_on_a_stick{CustomModelData:63,Unbreak
 give @s[tag=bee,tag=!selectedclass] cooked_beef 64
 #give @s[tag=bee,tag=!selectedclass] splash_potion{CustomPotionColor:16776960,CustomPotionEffects:[{Id:6b,Duration:10,Amplifier:1},{Id:10b,Duration:200}],display:{Name:'[{"text":"Bee\'s Potion"}]'}} 8
 #give @s[tag=bee,tag=!selectedclass] lingering_potion{CustomPotionColor:16776960,CustomPotionEffects:[{Id:6b,Duration:10,Amplifier:1},{Id:10b,Duration:200}],display:{Name:'[{"text":"Bee\'s Potion"}]'}} 8
-summon item ~ ~ ~ {Item:{id:"minecraft:splash_potion",Count:8b,tag:{display:{Name:'{"text":"Bee Potion"}'},CustomPotionEffects:[{Id:6,Duration:10,Amplifier:1},{Id:10,Duration:200}],CustomPotionColor:16776960}}}
+summon item ~ ~ ~ {Item:{id:"minecraft:splash_potion",Count:8b,tag:{display:{Name:'{"text":"Bee Potion"}',Lore:['{"text":"Thow potions on teammates NOT dwarves"}']},CustomPotionEffects:[{Id:6,Duration:10,Amplifier:1},{Id:10,Duration:200}],CustomPotionColor:16776960}}}
 execute at @s[tag=bee] run data modify entity @e[type=minecraft:item,limit=1,sort=nearest] Owner set from entity @s[tag=bee] UUID
-summon item ~ ~ ~ {Item:{id:"minecraft:lingering_potion",Count:8b,tag:{display:{Name:'{"text":"Bee Potion"}'},CustomPotionEffects:[{Id:6,Duration:10,Amplifier:1},{Id:10,Duration:200}],CustomPotionColor:16776960}}}
+summon item ~ ~ ~ {Item:{id:"minecraft:lingering_potion",Count:8b,tag:{display:{Name:'{"text":"Bee Potion"}',Lore:['{"text":"Thow potions on teammates NOT dwarves"}']},CustomPotionEffects:[{Id:6,Duration:10,Amplifier:1},{Id:10,Duration:200}],CustomPotionColor:16776960}}}
 execute at @s[tag=bee] run data modify entity @e[type=minecraft:item,limit=1,sort=nearest] Owner set from entity @s[tag=bee] UUID
 data modify entity @e[type=minecraft:item,limit=1,sort=nearest] Owner set from entity @s UUID
 give @s[tag=bee,tag=!selectedclass] tipped_arrow{Potion:"minecraft:long_poison"} 16

@@ -26,12 +26,3 @@ tag @e[tag=dvztimer] add gameover
 particle cloud ^ ^1 ^ 1 0.25 1 0.7 250
 
 weather thunder
-
-# Give potion effects to everyone to allow post-shrine killing
-effect give @a[tag=dwarves] glowing infinite
-effect give @a[tag=dwarves] weakness infinite 1 true
-effect give @a[tag=dwarves] slowness infinite 1 true
-
-effect give @a[tag=zombies] resistance infinite 1 true
-effect give @a[tag=zombies] strength infinite 1 true
-effect give @a[tag=zombies] speed infinite 1 true

@@ -50,6 +50,7 @@ give @s[tag=builder,tag=!selectedclass] torch 32
 give @s[tag=builder,tag=!selectedclass] iron_pickaxe{display:{Name:'{"text":"Builder Pickaxe","color":"green"}'},Enchantments:[{id:"minecraft:efficiency",lvl:4s},{id:"minecraft:unbreaking",lvl:2s}]} 1
 give @s[tag=builder,tag=!selectedclass] iron_shovel{display:{Name:'{"text":"Builder Shovel","color":"green"}'},Enchantments:[{id:"minecraft:efficiency",lvl:4s},{id:"minecraft:unbreaking",lvl:2s}]} 1
 give @s[tag=builder,tag=!selectedclass] iron_axe{display:{Name:'{"text":"Builder Axe","color":"green"}'},Enchantments:[{id:"minecraft:efficiency",lvl:4s},{id:"minecraft:unbreaking",lvl:2s},{id:"silk_touch",lvl:1}]}
+give @s[tag=builder,tag=!selectedclass] iron_hoe{display:{Name:'{"text":"Builder Hoe","color":"green"}'},Enchantments:[{id:"minecraft:efficiency",lvl:4s},{id:"minecraft:unbreaking",lvl:2s}]} 1
 give @s[tag=builder,tag=!selectedclass] fire_charge 32
 execute if predicate dvz:50chance run give @s[tag=builder,tag=!selectedclass] carrot_on_a_stick{CustomModelData:1000,Unbreakable:1b,display:{Name:'{"text":"Legendary Book","color":"gold"}',Lore:['[{"text":"Used with 5 Legendary Shards to make Legendary Items.","color":"blue"}]','[{"text":"Single-use item!","color":"red"}]']}}
 execute if predicate dvz:buildchance as @s[tag=builder,tag=!selectedclass] run loot give @s loot dvz:starter_buildings

@@ -13,5 +13,5 @@
 # Comments: Dwarf usage has two functions, branched in their other function
 # -------------------------------------------
 
-execute as @s if entity @s[tag=dwarves] run function dvz:dwarves/closeportal
+execute as @s if entity @s[tag=!zombies] run function dvz:dwarves/closeportal
 execute as @s if entity @s[tag=zombies,tag=chillager] run function dvz:zombies/chillager/invis

@@ -5,7 +5,7 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.08.04
+# Last Modified On: 2024.08.13
 # Last Modified By: Wilkekids
 #
 # Credit to:
@@ -40,7 +40,7 @@ tag @s remove blaze
 tag @s remove enderman
 tag @s remove ePortal
 
-#give @s[tag=!dwarves] carrot_on_a_stick{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"Mark for mob","color":"red"}',Lore:['[{"text":"Become a monster when the boss arrives!"}]']}} 1
+give @s[tag=!dwarves] carrot_on_a_stick{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"Volunteer for Boss","color":"red"}',Lore:['[{"text":"Increase your chance to become the boss!"}]']}} 1
 loot give @s[tag=!dwarves] loot dvz:dwarves
 tag @s add dwarves
 tag @s add nomana

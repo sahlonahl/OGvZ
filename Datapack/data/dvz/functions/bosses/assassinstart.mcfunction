@@ -12,15 +12,10 @@
 #
 # Comments:
 # -------------------------------------------
-kill @a[tag=slay]
-tellraw @a[tag=slay] {"text":"\u2620 You have died because you chose to become mob!","color":"gray"}
-tag @a[tag=slay] remove slay
 
-data merge entity @e[type=marker,tag=dSpawn,limit=1] {Rotation:[90F,0F]}
-tag @r[tag=dwarves,tag=override] add playerboss
-execute unless entity @a[tag=playerboss] run tag @r[tag=dwarves,tag=!noboss] add playerboss
-execute unless entity @a[tag=playerboss] run tag @r[tag=dwarves] add playerboss
-tag @a[tag=override] remove override
+function dvz:bosses/monster_volunteer
+
+function dvz:bosses/boss_select
 
 tag @a[tag=playerboss] add assassinpick
 scoreboard players set @a[tag=assassinpick] DVZ.Akill.cool 0

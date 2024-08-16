@@ -64,7 +64,9 @@ tag @s remove bee
 tag @s remove ghastflight
 tag @s remove chicken
 tag @s remove phantom
+tag @s remove charged_creeper
 
+tag @s remove purplemob
 tag @s remove ghast
 tag @s remove johnny
 tag @s remove ravager
@@ -238,6 +240,7 @@ gamemode survival @s
 tp @s @e[tag=worldspawn,limit=1]
 
 give @s written_book{pages:['["",{"text":"     ","bold":true,"color":"dark_aqua"},{"text":"OG","bold":true,"underlined":true,"color":"dark_aqua"},{"text":"v","bold":true,"underlined":true,"color":"gold"},{"text":"Z","bold":true,"underlined":true,"color":"dark_red"},{"text":" rules","color":"reset","bold":true,"underlined":true},{"text":"\\nGeneral rules after.\\n","color":"reset"},{"text":"DvZ Rules:","bold":true,"underlined":true,"color":"gold"},{"text":"\\n1: No hacking (duh)\\n2: Monsters cannot combine kits\\n3: Monsters cannot give items to dwarves 4: Dwarves cannot give items to monsters\\n5: Teamkilling is not allowed\\n6: Bosses cannot break the gold/shrine","color":"reset"}]','{"text":"7: Dying intentionally as a dwarf is considered gamethrowing\\n8: Snowman Jump Boost Glitch is not allowed\\n9: Be respectful, especially towards Admins, Mods, or Trial Mods\\n "}','{"text":"10: No gamethrowing -this includes but is not limited to throwing blocks on the ground, dying intentionally as a dwarf, leaving items in a chest as a dwarf for you to grab as a mob, mining the shrine as a dwarf\\n11: No spamming chat 12: If muted, you cannot use #-ingame to get around your mute\\n "}','{"text":"13: Hero dwarves (Dragon Warrior, Wither Warrior, Dwarven Guard, and Assassin Slayer) cannot use any Legendary items.\\n14: Posting any IP address or real life coordinates, real or fake, will result in an unappealable, immediate ban."}','{"text":"15: Don\'t abuse known OGvZ bugs to gain an advantage in combat.\\nIncluding, but not limited to:\\n-Intentionally using snowman freeze to launch dwarves into the sky\\n-Riding horses as a Golem.\\nExceptions:\\n-Golem Jump Boost Glitch"}','["",{"text":"General rules:","bold":true,"color":"gold"},{"text":"\\n-Don\'t be horrible.\\n-Don\'t spread hate: ANY topic that attacks or makes light of a subject that targets or may offend a specific demographic is strictly forbidden. This includes IGNs. Make sure what you say is ","color":"reset"},{"text":"unmistakably ","italic":true},{"text":"a joke. If someone says something that annoys, disturbs, or offends\\n ","color":"reset"}]','["",{"text":"you, report it to a moderator. Try to be the bigger person and don\'t start an argument!\\n-Don\'t spam.\\n-Use common sense\\n\\n\\n"},{"text":"Join our discord!","color":"light_purple","clickEvent":{"action":"open_url","value":"https://discord.gg/NUgCXuS"},"hoverEvent":{"action":"show_text","contents":"Click to join"}}]'],title:"OGvZ server rule book",author:"OGvZ Server",display:{Lore:["DvZ-specific rules and general rules."]}}
+give @s[tag=!dwarves] carrot_on_a_stick{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"Volunteer for Boss","color":"red"}',Lore:['[{"text":"Increase your chance to become the boss!"}]']}} 1
 execute if entity @e[tag=dvztimer,tag=begin,scores={DVZ.timer=..36000}] run function dvz:spawn
 execute if entity @e[tag=dvztimer,tag=fight] run tag @s add fight
 execute if entity @e[tag=dvztimer,tag=begin,scores={DVZ.timer=36000..}] run kill @s
