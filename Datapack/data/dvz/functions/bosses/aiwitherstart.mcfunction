@@ -20,12 +20,4 @@ execute at @r[tag=dwarves] positioned ~ ~30 ~ run summon minecraft:wither ~ ~ ~
 title @a subtitle {"text":"The Wither has spawned!","color":"red"}
 title @a title {"text":""}
 execute as @a at @s run playsound entity.wither.spawn master @s ~ ~ ~ 1 1.5
-<<<<<<< Updated upstream
 #bossbar set dvz:witherhealth visible true
-=======
-<<<<<<< HEAD
-bossbar set dvz:witherhealth visible true
-=======
-#bossbar set dvz:witherhealth visible true
->>>>>>> 371c060350e40a56fadc54c798caf0dbe65a920e
->>>>>>> Stashed changes
