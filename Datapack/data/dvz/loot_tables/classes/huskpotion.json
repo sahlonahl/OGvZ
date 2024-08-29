@@ -32,7 +32,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomPotionEffects:[{Id:20b,Duration:200,Ambient:1b}],CustomPotionColor:6041600,display:{Name:\"\\\"Splash Potion of Withering\\\"\"}}"
+              "tag": "{CustomPotionEffects:[{Id:20b,Duration:200,Ambient:1b}],CustomPotionColor:6041600,display:{Name:'{\"text\":\"Splash Potion of Withering\",\"italic\":false}'}}"
             }
           ]
         },
@@ -43,7 +43,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{CustomPotionEffects:[{Id:17b,Duration:200,Ambient:1b}],CustomPotionColor:6041600,display:{Name:\"\\\"Splash Potion of Hunger\\\"\"}}"
+              "tag": "{CustomPotionEffects:[{Id:17b,Duration:200,Ambient:1b}],CustomPotionColor:6041600,display:{Name:'{\"text\":\"Splash Potion of Hunger\",\"italic\":false}'}}"
             }
           ]
         }

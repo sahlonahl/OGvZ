@@ -33,9 +33,10 @@ give @s[tag=ghast,tag=!selectedclass] stick{CustomModelData:70,Levitate:1b,displ
 give @s[tag=ghast,tag=!selectedclass] stick{CustomModelData:36,Descend:1b,display:{Name:'[{"text":"Descend","color":"red"}]',Lore:['[{"text":"Place in offhand to use."}]']}} 1
 give @s[tag=ghast,tag=!selectedclass] carrot_on_a_stick{CustomModelData:64,Unbreakable:1b,display:{Name:'{"text":"Fireball","color":"gold"}',Lore:['[{"text":"Fires 1 HUGE fireball."}]','[{"text":"5 second cooldown!","color":"red"}]']}} 1
 
-#effect give @s[tag=ghast,tag=!selectedclass] regeneration 1000000 0 true
-effect give @s[tag=ghast,tag=!selectedclass] health_boost 1000000 4 true
-#effect give @s[tag=ghast,tag=!selectedclass] jump_boost 1000000 255 true
+#effect give @s[tag=ghast,tag=!selectedclass] regeneration infinite 0 true
+effect give @s[tag=ghast,tag=!selectedclass] health_boost infinite 2 true
+#effect give @s[tag=ghast,tag=!selectedclass] jump_boost infinite 255 true
+effect give @s[tag=ghast,tag=!selectedclass] instant_health infinite 2 true
 
 item replace entity @s[tag=ghast,tag=!selectedclass] armor.head with firework_star{CustomModelData:5,display:{Name:'{"text":"Ghast Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:20},{id:"binding_curse",lvl:1},{id:"protection",lvl:2}],AttributeModifiers:[{Slot:"head",AttributeName:"generic.armor", Name:"generic.armor", Amount:2.0, Operation:0, UUID:[I; -64585, 64804, 64804, 64804]}]}
 item replace entity @s[tag=ghast,tag=!selectedclass] armor.chest with iron_chestplate{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 20}, {id: "binding_curse", lvl: 1}, {id: "protection", lvl: 2}], AttributeModifiers: [{Slot: "chest", AttributeName: "generic.armor", Name: "generic.armor", Amount: 6.0d, Operation: 0, UUID: [I; 64585, -64804, 64804, 64804]}]}

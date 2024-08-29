@@ -27,8 +27,8 @@ item replace entity @s[tag=spider,tag=!selectedclass] armor.chest with leather_c
 item replace entity @s[tag=spider,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 11826}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=spider,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 727832}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "feather_falling", lvl: 10}, {id: "binding_curse", lvl: 1}]} 1
 
-effect give @s[tag=spider,tag=!selectedclass] jump_boost 1000000 4 true
-effect give @s[tag=spider,tag=!selectedclass] speed 1000000 2 true
+effect give @s[tag=spider,tag=!selectedclass] jump_boost infinite 4 true
+effect give @s[tag=spider,tag=!selectedclass] speed infinite 2 true
 execute as @s if entity @s[tag=spider,scores={DVZ.web.cool=0}] run scoreboard players set @s DVZ.web.cool 2
 
 execute as @s[tag=spider] if predicate dvz:natchance run loot give @s loot dvz:mob_natures

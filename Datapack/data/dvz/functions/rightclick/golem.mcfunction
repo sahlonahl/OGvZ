@@ -29,11 +29,11 @@ item replace entity @s[tag=golem,tag=!selectedclass] armor.chest with iron_chest
 item replace entity @s[tag=golem,tag=!selectedclass] armor.legs with iron_leggings{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 3}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=golem,tag=!selectedclass] armor.feet with iron_boots{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 3}, {id: "binding_curse", lvl: 1}, {id: "feather_falling", lvl: 10}]} 1
 
-effect give @s[tag=golem,tag=!selectedclass] jump_boost 1000000 128 true
-effect give @s[tag=golem,tag=!selectedclass] slowness 1000000 4 true
-effect give @s[tag=golem,tag=!selectedclass] strength 1000000 255 true
-effect give @s[tag=golem,tag=!selectedclass] mining_fatigue 1000000 255 true
-effect give @s[tag=golem,tag=!selectedclass] regeneration 1000000 2 true
+effect give @s[tag=golem,tag=!selectedclass] jump_boost infinite 128 true
+effect give @s[tag=golem,tag=!selectedclass] slowness infinite 4 true
+effect give @s[tag=golem,tag=!selectedclass] strength infinite 255 true
+effect give @s[tag=golem,tag=!selectedclass] mining_fatigue infinite 255 true
+effect give @s[tag=golem,tag=!selectedclass] regeneration infinite 2 true
 tag @s add selectedclass
 execute as @e[tag=dvztimer,tag=fight] run scoreboard players add @s DVZ.purplemob 1
 

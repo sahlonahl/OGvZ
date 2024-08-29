@@ -31,7 +31,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{CustomModelData:27,Unbreakable:1b,display:{Name:\'{\"text\":\"Health Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 20 mana!\",\"color\":\"red\"}]\']}}"
+              "tag": "{CustomModelData:27,Unbreakable:1b,display:{Name:\'{\"text\":\"Health Potion\",\"italic\":\"false\"}\',Lore:[\'[{\"text\":\"Requires 20 mana!\",\"color\":\"red\"}]\',\'[{\"text\":\"2 Second Cooldown!\",\"color\":\"red\"}]\']}}"
             }
           ]
         },

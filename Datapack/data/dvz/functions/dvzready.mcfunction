@@ -116,6 +116,8 @@ scoreboard players set @s DVZ.prod.cool 0
 scoreboard players set @s DVZ.prod.ticks 0
 scoreboard players set @s DVZ.pearl_warmup 0
 scoreboard players set @s DVZ.pearl_warmup.ticks 0
+scoreboard players set @s DVZ.health_pot.ticks 0
+scoreboard players set @s DVZ.health_pot.cool 0
 #Zombie 
 scoreboard players set @s DVZ.ffly.airtime 0
 scoreboard players set @s DVZ.ffly.cool 0

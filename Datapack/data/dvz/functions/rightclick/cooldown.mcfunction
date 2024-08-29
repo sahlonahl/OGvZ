@@ -234,3 +234,8 @@ execute as @a[scores={DVZ.minion_summon.cool=1..}] run scoreboard players add @s
 execute as @a[scores={DVZ.minion_summon.ticks=20..}] run scoreboard players remove @s DVZ.minion_summon.cool 1
 execute as @a[scores={DVZ.minion_summon.ticks=20..}] run scoreboard players set @s DVZ.minion_summon.ticks 0
 execute as @a[scores={DVZ.minion_summon.cool=..0}] run scoreboard players reset @s DVZ.minion_summon.ticks
+#Dwarf Health potion
+execute as @a[scores={DVZ.health_pot.cool=1..}] run scoreboard players add @s DVZ.health_pot.ticks 1
+execute as @a[scores={DVZ.health_pot.ticks=20..}] run scoreboard players remove @s DVZ.health_pot.cool 1
+execute as @a[scores={DVZ.health_pot.ticks=20..}] run scoreboard players set @s DVZ.health_pot.ticks 0
+execute as @a[scores={DVZ.health_pot.cool=..0}] run scoreboard players reset @s DVZ.health_pot.ticks

@@ -26,8 +26,8 @@ item replace entity @s[tag=chillager,tag=!selectedclass] armor.head with firewor
 item replace entity @s[tag=chillager,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 1456243}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=chillager,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 1456243}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=chillager,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 1456243}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
-effect give @s[tag=chillager,tag=!selectedclass] jump_boost 1000000 2 true
-effect give @s[tag=chillager,tag=!selectedclass] speed 1000000 1 true
+effect give @s[tag=chillager,tag=!selectedclass] jump_boost infinite 2 true
+effect give @s[tag=chillager,tag=!selectedclass] speed infinite 1 true
 tag @s add selectedclass
 
 execute as @s[tag=chillager] if predicate dvz:natchance run loot give @s loot dvz:mob_natures

@@ -27,9 +27,9 @@ item replace entity @s[tag=wolf,tag=!selectedclass] armor.head with firework_sta
 item replace entity @s[tag=wolf,tag=!selectedclass] armor.chest with chainmail_chestplate{Unbreakable: 1b, display: {color: 14539483}, AttributeModifiers: [{Slot: "chest", AttributeName: "generic.armor", Name: "generic.armor", Amount: 5.0d, Operation: 0, UUID: [I; 64800, -64800, 64800, 64800]}], Enchantments: [{id: "blast_protection", lvl: 4}, {id: "protection", lvl: 3}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=wolf,tag=!selectedclass] armor.legs with chainmail_leggings{Unbreakable: 1b, display: {color: 13289416}, AttributeModifiers: [{Slot: "legs", AttributeName: "generic.armor", Name: "generic.armor", Amount: 4.0d, Operation: 0, UUID: [I; 64800, 64800, -64800, 64800]}], Enchantments: [{id: "blast_protection", lvl: 4}, {id: "protection", lvl: 3}, {id: "binding_curse", lvl: 1}]} 1
 item replace entity @s[tag=wolf,tag=!selectedclass] armor.feet with chainmail_boots{Unbreakable: 1b, display: {color: 11578023}, AttributeModifiers: [{Slot: "feet", AttributeName: "generic.armor", Name: "generic.armor", Amount: 1.0d, Operation: 0, UUID: [I; 64800, 64800, 64800, -64800]}], Enchantments: [{id: "blast_protection", lvl: 4}, {id: "protection", lvl: 3}, {id: "binding_curse", lvl: 1}]} 1
-effect give @s[tag=wolf,tag=!selectedclass] speed 999999 1 true
-effect give @s[tag=wolf,tag=!selectedclass] jump_boost 999999 1 true
-#effect give @s[tag=wolf,tag=!selectedclass] strength 999999 0 true
+effect give @s[tag=wolf,tag=!selectedclass] speed infinite 1 true
+effect give @s[tag=wolf,tag=!selectedclass] jump_boost infinite 1 true
+#effect give @s[tag=wolf,tag=!selectedclass] strength infinite 0 true
 
 execute as @s[tag=wolf] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
 execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
