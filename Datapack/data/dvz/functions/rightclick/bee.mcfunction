@@ -35,10 +35,10 @@ execute at @s[tag=bee] run data modify entity @e[type=minecraft:item,limit=1,sor
 data modify entity @e[type=minecraft:item,limit=1,sort=nearest] Owner set from entity @s UUID
 give @s[tag=bee,tag=!selectedclass] tipped_arrow{Potion:"minecraft:long_poison"} 16
 
-item replace entity @s[tag=bee,tag=!selectedclass] armor.head with firework_star{CustomModelData:1,display:{Name:'{"text":"Bee Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id: "protection", lvl: 1},{id:"binding_curse",lvl:1}]} 1
-item replace entity @s[tag=bee,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 6238757}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
-item replace entity @s[tag=bee,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 15582019}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
-item replace entity @s[tag=bee,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 6238757}, Enchantments: [{id: "feather_falling", lvl: 100}, {id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=bee,tag=!selectedclass] armor.head with firework_star{CustomModelData:1,display:{Name:'{"text":"Bee Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1}]} 1
+item replace entity @s[tag=bee,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 6238757}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=bee,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 15582019}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=bee,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 6238757}, Enchantments: [{id: "feather_falling", lvl: 100}, {id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
 
 #effect give @s[tag=bee,tag=!selectedclass] jump_boost 1000000 255 true
 

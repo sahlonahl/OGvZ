@@ -37,7 +37,7 @@ effect give @s[tag=ravager,tag=!selectedclass] slowness infinite 1 true
 #effect give @s[tag=ravager,tag=!selectedclass] strength infinite 3 true
 effect give @s[tag=ravager,tag=!selectedclass] resistance infinite 2 true
 effect give @s[tag=ravager,tag=!selectedclass] health_boost infinite 9 true
-effect give @s[tag=ravager,tag=!selectedclass] instant_health infinite 9 true
+effect give @s[tag=ravager,tag=!selectedclass] instant_health 1 9 true
 
 item replace entity @s[tag=ravager,tag=!selectedclass] armor.head with firework_star{CustomModelData:12,display:{Name:'{"text":"Ravager Skull","italic":false}'},SkullOwner:{Id:[I;-988784499,1538476442,-1335897902,1631763943],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2QyMGJmNTJlYzM5MGEwNzk5Mjk5MTg0ZmM2NzhiZjg0Y2Y3MzJiYjFiZDc4ZmQxYzRiNDQxODU4ZjAyMzVhOCJ9fX0="}]}},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1},{id:"protection",lvl:2}],AttributeModifiers:[{Slot:"head",AttributeName:"generic.armor", Name:"generic.armor", Amount:2.0, Operation:0, UUID:[I; -64585, 64804, 64804, 64804]}]}
 item replace entity @s[tag=ravager,tag=!selectedclass] armor.chest with netherite_chestplate{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}, {id: "protection", lvl: 2}], AttributeModifiers: [{Slot: "chest", AttributeName: "generic.armor", Name: "generic.armor", Amount: 6.0d, Operation: 0, UUID: [I; 64585, -64804, 64804, 64804]},{AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:0.7,Operation:0,UUID:[I;2084593555,-841987119,-1103256485,-1930059247]}]}

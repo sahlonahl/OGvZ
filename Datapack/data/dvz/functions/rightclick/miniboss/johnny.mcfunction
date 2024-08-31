@@ -43,7 +43,7 @@ effect give @s[tag=johnny,tag=!selectedclass] speed infinite 1 true
 effect give @s[tag=johnny,tag=!selectedclass] strength infinite 2 true
 effect give @s[tag=johnny,tag=!selectedclass] health_boost infinite 4 true
 effect give @s[tag=johnny,tag=!selectedclass] haste infinite 2 true
-effect give @s[tag=johnny,tag=!selectedclass] instant_health infinite 4 true
+effect give @s[tag=johnny,tag=!selectedclass] instant_health 1 4 true
 
 item replace entity @s[tag=johnny,tag=!selectedclass] armor.head with firework_star{CustomModelData:16,display:{Name:'{"text":"Johnny\'s Head","italic":false}'},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:4},{id:"binding_curse",lvl:1},{id:"protection",lvl:3}],AttributeModifiers:[{Slot:"head",AttributeName:"generic.armor", Name:"generic.armor", Amount:2.0, Operation:0, UUID:[I; -64585, 64804, 64804, 64804]}]}
 item replace entity @s[tag=johnny,tag=!selectedclass] armor.chest with leather_chestplate{display: {color: 2895973}, Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}, {id: "protection", lvl: 3}], AttributeModifiers: [{Slot: "chest", AttributeName: "generic.armor", Name: "generic.armor", Amount: 6.0d, Operation: 0, UUID: [I; 64585, -64804, 64804, 64804]}]}
