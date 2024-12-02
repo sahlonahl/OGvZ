@@ -17,13 +17,10 @@ title @s[tag=dwarves,level=..49] actionbar ["",{"text":" * [Pearl Rod] you need 
 title @s[tag=dwarves,scores={DVZ.prod.cool=1..}] actionbar ["",{"text":" * [Pearl Rod] You have ","color":"light_purple"},{"score":{"name":"@s","objective":"DVZ.prod.cool"},"color":"light_purple"},{"text":" seconds remaining!","color":"light_purple"}]
 execute as @s[tag=dwarves] at @e[tag=dSpawn,limit=1] unless block ~ ~1 ~ air positioned ~ ~ ~ run tellraw @s[tag=dwarves] ["",{"text":" * [Pearl Rod] The shrine has been covered!","color":"light_purple"}]
 
-execute as @s[tag=dwarves,level=50..,scores={DVZ.prod.cool=0}] at @e[tag=dSpawn,limit=1] if block ~ ~1 ~ air at @s run playsound entity.zombie_villager.converted master @a ~ ~ ~ 1 2
-execute as @s[tag=dwarves,level=50..,scores={DVZ.prod.cool=0}] at @e[tag=dSpawn,limit=1] if block ~ ~1 ~ air at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.5 0.5 0.5 0.1 100
-execute as @s[tag=dwarves,level=50..,scores={DVZ.prod.cool=0}] at @e[tag=dSpawn,limit=1] if block ~ ~1 ~ air positioned ~ ~ ~ run tp @s ~ ~ ~ facing entity @e[type=marker,tag=zSpawn,limit=1]
-execute as @s[tag=dwarves,level=50..,scores={DVZ.prod.cool=0}] at @e[tag=dSpawn,limit=1] if block ~ ~1 ~ air run tellraw @a ["",{"text":" * [Pearl Rod] ","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":" has teleported to the shrine!","color":"light_purple"}]
-execute if entity @s[tag=dwarves,level=50..,scores={DVZ.prod.cool=0}] as @e[tag=dSpawn,limit=1] at @s if block ~ ~1 ~ air run playsound entity.zombie_villager.converted master @a ~ ~ ~ 1 2
-execute if entity @s[tag=dwarves,level=50..,scores={DVZ.prod.cool=0}] as @e[tag=dSpawn,limit=1] at @s if block ~ ~1 ~ air run particle minecraft:reverse_portal ~ ~1 ~ 0.5 0.5 0.5 0.1 100
+execute as @s[tag=dwarves,level=50..,scores={DVZ.prod.cool=0}] at @e[tag=dSpawn,limit=1] if block ~ ~1 ~ air run effect give @s glowing 3
+execute as @s[tag=dwarves,level=50..,scores={DVZ.prod.cool=0}] at @e[tag=dSpawn,limit=1] if block ~ ~1 ~ air run effect give @s slowness 3 3
+execute as @s[tag=dwarves,level=50..,scores={DVZ.prod.cool=0}] at @e[tag=dSpawn,limit=1] if block ~ ~1 ~ air run tag @s add pearlwarmup
 
 execute as @s[tag=dwarves,level=50..,scores={DVZ.prod.cool=0}] at @e[tag=dSpawn,limit=1] if block ~ ~1 ~ air run xp add @s -50 levels
-execute as @s[tag=dwarves,level=50..,scores={DVZ.prod.cool=0}] at @e[tag=dSpawn,limit=1] if block ~ ~1 ~ air run scoreboard players set @s DVZ.prod.cool 60
+
 scoreboard players set @s DVZ.rclick 0

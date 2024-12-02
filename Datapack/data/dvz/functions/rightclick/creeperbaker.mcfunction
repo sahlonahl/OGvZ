@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.14
-# Last Modified By: Zaffre
+# Last Modified On: 2024.06.14
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
@@ -16,22 +16,25 @@
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
 execute if entity @s[tag=zombies,tag=!selectedclass] run tag @s add creeper
-team join zMONSTER @s[tag=creeper,tag=!selectedclass]
+team join zCREEPER @s[tag=creeper,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 give @s[tag=creeper,tag=!selectedclass] cooked_beef 64
 give @s[tag=creeper,tag=!selectedclass] carrot_on_a_stick{CustomModelData:10,Unbreakable:1b,display:{Name:'{"text":"Explode!","color":"red"}',Lore:['[{"text":"Obvisouly a single-use item!","color":"dark_red"}]']}}
-item replace entity @s[tag=creeper,tag=!selectedclass] armor.head with creeper_head{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
-item replace entity @s[tag=creeper,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 42240}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
-item replace entity @s[tag=creeper,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 10082192}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
-item replace entity @s[tag=creeper,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 1854485}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=creeper,tag=!selectedclass] armor.head with creeper_head{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=creeper,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 42240}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=creeper,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 10082192}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
+item replace entity @s[tag=creeper,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 1854485}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]} 1
 
 execute as @s[tag=creeper] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
+execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures
 execute as @s[tag=creeper] if predicate dvz:chargedchance run function dvz:zombies/creeper/charged
+# the following line can be used in the previous to control charged creeper spawning based on the number of purples
+# unless entity @e[tag=dvztimer,scores={DVZ.purplemob=2..}]
 
 #=========================================
 
 tag @s[tag=!selectedclass] remove nomana
-execute if entity @s[tag=dwarves,tag=!selectedclass] run tag @s add baker
+tag @s[tag=dwarves,tag=!selectedclass] add baker
 team join dBAKER @s[tag=baker,tag=!selectedclass]
 #give @s[tag=baker,tag=!selectedclass] cow_spawn_egg{display:{Name:'{"text":"Conjure Milk Dispenser"}'},EntityTag:{Invulnerable:0b,CustomNameVisible:0b,Health:40f,CustomName:'{"text":"Magic Milk Dispenser","color":"white","italic":true}',ActiveEffects:[{Id:10,Amplifier:0b,Duration:199999980,ShowParticles:0b},{Id:11b,Amplifier:3b,Duration:199999980,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:40}]}} 1
 give @s[tag=baker,tag=!selectedclass] cooked_porkchop 1

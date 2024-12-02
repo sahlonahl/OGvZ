@@ -13,9 +13,7 @@
 # Comments:
 # -------------------------------------------
 
-kill @a[tag=slay]
-tellraw @a[tag=slay] {"text":"\u2620 You have died because you chose to become mob!","color":"gray"}
-tag @a[tag=slay] remove slay
+function dvz:bosses/monster_volunteer
 
 data merge entity @e[type=marker,tag=dSpawn,limit=1] {Rotation:[90F,0F]}
 execute at @r[tag=dwarves] positioned ~ ~30 ~ run summon minecraft:ender_dragon ~ ~ ~ {DragonPhase:0}

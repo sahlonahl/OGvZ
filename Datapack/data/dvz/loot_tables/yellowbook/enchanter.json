@@ -17,7 +17,8 @@
 							  "minecraft:unbreaking": 3,
 							  "minecraft:protection": 4,
 							  "minecraft:swift_sneak": 3,
-							  "minecraft:thorns": 3
+							  "minecraft:thorns": 3,
+							  "minecraft:feather_falling": 4
 							}
 						  }
 					]

@@ -28,8 +28,8 @@ execute as @a[name="AbraxisPilot",scores={DVZ.timer=20}] at @s run playsound blo
 execute as @a[name="AbraxisPilot",scores={DVZ.timer=24}] at @s run playsound block.dispenser.fail master @a ~ ~ ~ 1 1 0
 execute as @a[name="AbraxisPilot",scores={DVZ.timer=24}] at @s run playsound entity.generic.explode master @a ~ ~ ~ 1 1 0
 execute as @a[name="AbraxisPilot",scores={DVZ.timer=24}] at @s run particle minecraft:explosion ~ ~1 ~ .5 .5 .5 0 4 force
-title @a actionbar {"text":"Abraxis made a critical error and pilots no more.","color":"light_purple","italic":true}
-title @a title ""
+execute as @a[name="AbraxisPilot",scores={DVZ.timer=0}] run title @a actionbar {"text":"Abraxis made a critical error and pilots no more.","color":"light_purple","italic":true}
+
 execute as @a[name="AbraxisPilot"] at @s run scoreboard players add @s DVZ.timer 1
 execute as @a[name="AbraxisPilot",scores={DVZ.timer=..24}] at @s run schedule function dvz:customdeath/abraxispilot 1t
 execute as @a[name="AbraxisPilot",scores={DVZ.timer=25}] run scoreboard players reset @s DVZ.timer

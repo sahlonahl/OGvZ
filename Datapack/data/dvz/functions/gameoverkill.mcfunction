@@ -19,7 +19,7 @@ execute as @a at @s run playsound minecraft:ambient.soul_sand_valley.mood master
 execute as @a at @s run playsound minecraft:ambient.soul_sand_valley.mood master @s ~ ~ ~ 1 0.7
 execute as @a at @s run playsound minecraft:block.bell.resonate master @s ~ ~ ~ 1 0.5
 title @a title {"text":"GAME OVER!","color":"red","bold":false}
-title @a subtitle {"text":"All dwarves are dead!","color":"red","bold":true}
+title @a subtitle [{"text":"All dwarves are dead! ","color":"red","bold":true},{"text":"The server will be reset for the next game!","color":"blue","bold":true}]
 tellraw @a ["",{"text":"There are ","color":"blue"},{"text":"0","color":"green"},{"text":" dwarves left.","color":"blue"},{"text":" THE GAME IS OVER!","bold":true,"color":"green"},{"text":"\nPlease wait for an administrator to reset the game! The server will go down, but not for long! See you next game!","color":"green"}]
 tag @e[tag=dvztimer] add gameover
 weather thunder

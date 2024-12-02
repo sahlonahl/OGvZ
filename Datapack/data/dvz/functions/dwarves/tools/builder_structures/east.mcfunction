@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2022.09.24
-# Last Modified On: 2022.22.10
-# Last Modified By: Zaffre
+# Last Modified On: 2024.01.18
+# Last Modified By: wilkekids
 #
 # Credit to:
 #
@@ -22,6 +22,10 @@ execute as @e[name="Builder Stable",type=minecraft:glow_squid] at @s run place t
 execute as @e[name="Builder Talltower",type=minecraft:glow_squid] at @s run place template dvz:builder_talltower ~6 ~ ~3 180
 execute as @e[name="Builder Tower",type=minecraft:glow_squid] at @s run place template dvz:builder_tower ~5 ~ ~2 180
 execute as @e[name="Builder Workshop",type=minecraft:glow_squid] at @s run place template dvz:builder_workshop ~9 ~ ~4 180
+execute as @e[name="TNT Cannon",type=minecraft:glow_squid] at @s run place template dvz:ogvz_tnt_cannon ~7 ~ ~2 180
+
+execute as @e[name="Slayer Totem",type=minecraft:glow_squid] at @s run place template dvz:slayer_totem ~-1 ~ ~-1
+execute as @e[name="Slayer Totem",type=minecraft:glow_squid] at @s run summon marker ~ ~2 ~ {Tags:[slayer_totem]}
 
 execute as @s[type=minecraft:glow_squid] run particle minecraft:explosion ~ ~3 ~ 4 4 4 0.01 50
 execute as @s[type=minecraft:glow_squid] run playsound minecraft:block.nether_bricks.break master @a ~ ~ ~ 10 0.5

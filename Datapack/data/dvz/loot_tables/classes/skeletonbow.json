@@ -16,7 +16,7 @@
           "functions": [
             {
               "function": "set_nbt",
-              "tag": "{Unbreakable:1b,Enchantments:[{id:\"infinity\",lvl:1},{id:\"power\",lvl:4}]}"
+              "tag": "{Unbreakable:1b,Enchantments:[{id:\"infinity\",lvl:1},{id:\"power\",lvl:5}]}"
             },
             {
               "function": "minecraft:enchant_randomly",

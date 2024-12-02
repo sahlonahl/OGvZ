@@ -17,3 +17,7 @@
 give @s carrot_on_a_stick{dSpawn:1b,Unbreakable:1b,display:{Name:'{"text":"Dwarves\' Spawn","italic":"false"}'}}
 #Zombies Spawnpoint
 give @s carrot_on_a_stick{zSpawn:1b,Unbreakable:1b,display:{Name:'{"text":"Zombies\' Spawn","italic":"false"}'}}
+#Lobby Spawnpoint
+give @s carrot_on_a_stick{lobbySpawn:1b,Unbreakable:1b,display:{Name:'{"text":"Lobby Spawn","italic":"false"}'}}
+#Second Zombie Spawnpoint
+give @s carrot_on_a_stick{zSpawn2:1b,Unbreakable:1b,display:{Name:'{"text":"Second Zombie Spawn","italic":"false"}'}}

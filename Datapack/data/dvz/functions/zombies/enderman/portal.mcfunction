@@ -26,17 +26,18 @@ execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] 
 #Initial Setup
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run clear @s carrot_on_a_stick{Unbreakable:1b}
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s minecraft:instant_health 1 200
-execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s slowness 1000000 4 true
-execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s jump_boost 1000000 128 true
-execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s resistance 1000000 100 true
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s slowness infinite 4 true
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s jump_boost infinite 128 true
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run effect give @s resistance infinite 100 true
 
 #Portal Message
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run tellraw @a ["",{"text":" * [Portal] ","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":" has created an Ender portal!!!","color":"light_purple"}]
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run title @a actionbar ["",{"text":" * [Portal] ","color":"light_purple"},{"selector":"@s","color":"light_purple"},{"text":" has created an Ender portal!!!","color":"light_purple"}]
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run summon lightning_bolt ~ ~256 ~
 
 ##Portal Structure
 #Core
-execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run tp @s ~ ~20 ~
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run tp @s ~ ~30 ~
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] at @s run fill ~-1 ~-5 ~-1 ~1 ~-2 ~1 end_stone replace #dvz:gothrough
 #First ring
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] at @s run fill ~-3 ~-2 ~-1 ~-3 ~-4 ~1 end_stone replace #dvz:gothrough
@@ -91,5 +92,6 @@ execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] 
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run give @s zombie_spawn_egg 8
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run give @s skeleton_spawn_egg 8
 execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run give @s creeper_spawn_egg 8
+execute as @s if entity @s[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run function dvz:zombies/enderman/reinforce
 
 execute as @s if entity @a[tag=enderman,scores={DVZ.portal.cool=0},tag=ePortal] run scoreboard players reset @s DVZ.portal.cool

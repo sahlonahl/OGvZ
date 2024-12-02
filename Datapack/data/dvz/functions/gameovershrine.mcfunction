@@ -5,8 +5,8 @@
 # Created By: Zaffre
 # 
 # Created On: 2022.01.24
-# Last Modified On: 2022.09.11
-# Last Modified By: Zaffre
+# Last Modified On: 2023.09.08
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -20,9 +20,9 @@ execute as @a at @s run playsound minecraft:entity.wither.spawn master @s ~ ~ ~ 
 execute as @a at @s run playsound minecraft:block.respawn_anchor.deplete master @s ~ ~ ~ 1 0.7
 execute as @a at @s run playsound minecraft:entity.generic.explode master @s ~ ~ ~ 1 0.5
 title @a title {"text":"GAME OVER!","color":"red","bold":false}
-title @a subtitle {"text":"All shrine blocks are gone!","color":"red","bold":true}
+title @a subtitle [{"text":"All shrine blocks are gone! ","color":"blue","bold":true},{"text":"Kill the remaining dwarves!","color":"red","bold":true}]
 tellraw @a ["",{"text":"The shrine is destroyed.","color":"blue"},{"text":" THE GAME IS OVER!","bold":true,"color":"green"},{"text":"\nPlease wait for an administrator to reset the game! The server will go down, but not for long! See you next game!","color":"green"}]
 tag @e[tag=dvztimer] add gameover
 particle cloud ^ ^1 ^ 1 0.25 1 0.7 250
 
-effect give @a[tag=dwarves] glowing 1000000
+weather thunder

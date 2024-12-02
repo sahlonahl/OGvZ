@@ -5,15 +5,16 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.10
-# Last Modified By: Zaffre
+# Last Modified On: 2024.08.03
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
 # Comments:
 # -------------------------------------------
 
-tag @e[tag=dvztimer] add begin
+tag @e[tag=dvztimer,distance=..10000] add begin
+kill @e[tag=dvztimer,tag=!begin]
 scoreboard players set @e[tag=dvztimer] DVZ.timer 0
 gamerule doDaylightCycle true
 gamerule doMobSpawning false

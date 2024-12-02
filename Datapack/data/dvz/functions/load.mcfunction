@@ -5,18 +5,17 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.07.21
-# Last Modified By: Wilkekids
+# Last Modified On: 2024.07.29
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
 # Comments:
 # -------------------------------------------
 
-#Setup
-#schedule function dvz:unload 5s
+### Setup
 scoreboard objectives add DVZ.start trigger
-difficulty normal
+difficulty hard
 gamemode survival @a
 tag @a remove DVZready
 clear @a
@@ -28,30 +27,36 @@ xp set @a 0 levels
 effect clear @a
 team leave @a
 
-#Timer
-forceload add 0 0
-summon marker 0 0 0 {Tags:[dvztimer]}
 
-#Bossbars
-bossbar add dvz:bosstimer {"text":"Timer","italic":"true","color":"gray"}
+
+### Timer
+forceload add 0 0
+summon marker 0 0 0 {Tags:[dvztimer,overworld]}
+execute in the_nether run summon marker 0 0 0 {Tags:[dvztimer,the_nther]}
+execute in the_end run summon marker 0 0 0 {Tags:[dvztimer,the_end]}
+
+
+
+### Bossbars
+bossbar add dvz:bosstimer {"text":"Timer","italic":true,"color":"gray"}
 bossbar set dvz:bosstimer color green
 bossbar set dvz:bosstimer max 36000
 bossbar set dvz:bosstimer style notched_10
 bossbar set dvz:bosstimer visible false
 
-bossbar add dvz:dragonhealth {"text":"Ender Dragon","italic":"true","color":"light_purple"}
+bossbar add dvz:dragonhealth {"text":"Ender Dragon","italic":true,"color":"light_purple"}
 bossbar set dvz:dragonhealth color purple
 bossbar set dvz:dragonhealth max 200
 bossbar set dvz:dragonhealth style progress
 bossbar set dvz:dragonhealth visible false
 
-bossbar add dvz:guardianhealth {"text":"Elder Guardian","italic":"true","color":"aqua"}
+bossbar add dvz:guardianhealth {"text":"Elder Guardian","italic":true,"color":"aqua"}
 bossbar set dvz:guardianhealth color blue
 bossbar set dvz:guardianhealth max 200
 bossbar set dvz:guardianhealth style progress
 bossbar set dvz:guardianhealth visible false
 
-bossbar add dvz:assassintimer {"text":"Assassin dies in...","italic":"true","color":"gray"}
+bossbar add dvz:assassintimer {"text":"Assassin dies in...","italic":true,"color":"gray"}
 bossbar set dvz:assassintimer color red
 bossbar set dvz:assassintimer max 2400
 bossbar set dvz:assassintimer style notched_12
@@ -59,7 +64,10 @@ bossbar set dvz:assassintimer visible false
 
 scoreboard objectives add DVZ.wither.heal dummy
 
-#Gamerules
+
+
+### Gamerules
+# Executing every gamerule in every dimentions ensures compatibility with MP server forks (like PaperMC)
 gamerule doMobLoot false
 gamerule keepInventory true
 gamerule spawnRadius 2
@@ -67,15 +75,34 @@ gamerule sendCommandFeedback false
 gamerule mobGriefing false
 gamerule doMobSpawning false
 gamerule announceAdvancements false
+# Overworld-only gamerules (day cycle, warden spawning, etc.)
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule doInsomnia false
 gamerule doWardenSpawning false
 gamerule snowAccumulationHeight 8
-time set noon
-#gamerule showDeathMessages false
 
-#Function objectives
+execute in the_nether run gamerule doMobLoot false
+execute in the_nether run gamerule keepInventory true
+execute in the_nether run gamerule spawnRadius 2
+execute in the_nether run gamerule sendCommandFeedback false
+execute in the_nether run gamerule mobGriefing false
+execute in the_nether run gamerule doMobSpawning false
+execute in the_nether run gamerule announceAdvancements false
+
+execute in the_end run gamerule doMobLoot false
+execute in the_end run gamerule keepInventory true
+execute in the_end run gamerule spawnRadius 2
+execute in the_end run gamerule sendCommandFeedback false
+execute in the_end run gamerule mobGriefing false
+execute in the_end run gamerule doMobSpawning false
+execute in the_end run gamerule announceAdvancements false
+
+time set noon
+
+
+
+### Function objectives
 scoreboard objectives add DVZ.rclick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add DVZ.crouch minecraft.custom:minecraft.sneak_time
 scoreboard objectives add DVZ.kills minecraft.custom:minecraft.player_kills
@@ -95,9 +122,13 @@ scoreboard objectives add DVZ.bow minecraft.used:minecraft.bow
 scoreboard objectives add DVZ.legenditems dummy
 scoreboard objectives add DVZ.health health
 scoreboard objectives add DVZ.battletimer dummy
+scoreboard objectives add DVZ.purplemob dummy
+scoreboard objectives add DVZ.hunger food
+
+
 
 ### Cooldown objectives
-#Dwarves
+# Dwarves
 scoreboard objectives add DVZ.close.cool dummy
 scoreboard objectives add DVZ.close.ticks dummy
 scoreboard objectives add DVZ.book.cool dummy
@@ -106,8 +137,13 @@ scoreboard objectives add DVZ.slab.cool dummy
 scoreboard objectives add DVZ.slab.ticks dummy
 scoreboard objectives add DVZ.prod.cool dummy
 scoreboard objectives add DVZ.prod.ticks dummy
+scoreboard objectives add DVZ.pearl_warmup dummy
+scoreboard objectives add DVZ.pearl_warmup.ticks dummy
 scoreboard objectives add DVZ.build.struc minecraft.used:minecraft.glow_squid_spawn_egg
-#Zombie
+scoreboard objectives add DVZ.health_pot.ticks dummy
+scoreboard objectives add DVZ.health_pot.cool dummy
+
+# Zombie
 scoreboard objectives add DVZ.ffly.airtime dummy
 scoreboard objectives add DVZ.ffly.cool dummy
 scoreboard objectives add DVZ.ffly.ticks dummy
@@ -122,6 +158,8 @@ scoreboard objectives add DVZ.reinf.ticks dummy
 scoreboard objectives add DVZ.reinf.msg dummy
 scoreboard objectives add DVZ.fball.cool dummy
 scoreboard objectives add DVZ.fball.ticks dummy
+scoreboard objectives add DVZ.fball3.cool dummy
+scoreboard objectives add DVZ.fball3.ticks dummy
 scoreboard objectives add DVZ.poison.cool dummy
 scoreboard objectives add DVZ.poison.ticks dummy
 scoreboard objectives add DVZ.web.cool dummy
@@ -155,7 +193,7 @@ scoreboard objectives add DVZ.summon.ticks dummy
 scoreboard objectives add DVZ.summon.cool dummy
 scoreboard objectives add DVZ.evothrow.ticks dummy
 scoreboard objectives add DVZ.evothrow.cool dummy
-#Miniboss
+# Miniboss
 scoreboard objectives add DVZ.ghast.ticks dummy
 scoreboard objectives add DVZ.ghast.cool dummy
 scoreboard objectives add DVZ.fballage.cool dummy
@@ -163,7 +201,7 @@ scoreboard objectives add DVZ.smash.ticks dummy
 scoreboard objectives add DVZ.smash.cool dummy
 scoreboard objectives add DVZ.vindic.ticks dummy
 scoreboard objectives add DVZ.vindic.cool dummy
-#Boss
+# Boss
 scoreboard objectives add DVZ.breath.cool dummy
 scoreboard objectives add DVZ.breath.ticks dummy
 scoreboard objectives add DVZ.Akill.cool dummy
@@ -172,7 +210,9 @@ scoreboard objectives add DVZ.Wskull.cool dummy
 scoreboard objectives add DVZ.Wskull.ticks dummy
 scoreboard objectives add DVZ.Gbeam.cool dummy
 scoreboard objectives add DVZ.Gbeam.ticks dummy
-#Hero
+scoreboard objectives add DVZ.minion_summon.cool dummy
+scoreboard objectives add DVZ.minion_summon.ticks dummy
+# Hero
 scoreboard objectives add DVZ.flail.cool dummy
 scoreboard objectives add DVZ.flail.ticks dummy
 scoreboard objectives add DVZ.ruby.cool dummy
@@ -185,8 +225,10 @@ scoreboard objectives add DVZ.drain.cool dummy
 scoreboard objectives add DVZ.drain.ticks dummy
 scoreboard objectives add DVZ.sfury.cool dummy
 scoreboard objectives add DVZ.sfury.ticks dummy
+scoreboard objectives add DVZ.mindseye.cool dummy
+scoreboard objectives add DVZ.mindseye.ticks dummy
 
-### Dwarf Summoning Items
+# Dwarf Summoning Items
 scoreboard objectives add DVZ.alch.potions dummy
 scoreboard objectives add DVZ.baker.bricks dummy
 scoreboard objectives add DVZ.smith.clocks dummy
@@ -194,7 +236,7 @@ scoreboard objectives add DVZ.ench.emerald dummy
 scoreboard objectives add DVZ.tailor.dyes dummy
 scoreboard objectives add DVZ.legend.shard dummy
 
-#Zombie Block Alterations
+# Zombie Block Alterations
 scoreboard objectives add DVZ.layegg.check dummy
 scoreboard objectives add DVZ.layegg.block dummy
 scoreboard objectives add DVZ.silver.kill dummy
@@ -202,19 +244,24 @@ scoreboard objectives add DVZ.roar.check dummy
 scoreboard objectives add DVZ.icy.check dummy
 scoreboard objectives add DVZ.smash.check dummy
 
-#Dwarves' mana regen / Zombies' suicide pill
+# Dwarves' mana regen / Zombies' suicide pill
 scoreboard objectives add DVZ.mana.ticks dummy
 scoreboard objectives add DVZ.suicide.cool dummy
 scoreboard objectives add DVZ.suicide.tick dummy
+scoreboard objectives add DVZ.distdam.tick dummy
 
-###Player counter
+# Player counter
 scoreboard objectives add DVZ.playercount dummy ["",{"text":"OG","bold":true,"color":"dark_aqua"},{"text":"v","color":"gray"},{"text":"Z","bold":true,"color":"dark_red"}] 
 scoreboard objectives add DVZ.playertest dummy
-#Percent of dwarves needed to die to end plague (whole number percentages only)
-scoreboard players set #percentdead DVZ.playertest 50
+scoreboard objectives add DVZ.monstertest dummy
+# Percent of dwarves needed to die to end plague (whole number percentages only)
+scoreboard players set #percentdead DVZ.playertest 35
 scoreboard players set #100 DVZ.playertest 100
 
+
+
 ### Add teams
+# Dwarf teams
 team add dDWARVES
 team add dBUILDER
 team add dALCHEMIST
@@ -227,14 +274,54 @@ team add dSLAYER
 team add dWARRIOR
 team add dGUARD
 
+# General monster
 team add zMONSTER
 team add zDEAD
 
+# Red Mobs
+team add zPILLAGER
+team add zSKELETON
+team add zWITHER_SKELETON
+team add zGUARDIAN
+team add zDROWNED
+team add zHUSK
+team add zVINDICATOR
+team add zZOMBIE
+team add zCREEPER
+team add zSPIDER
+
+# Dark Red Mobs
+team add zBEE
+team add zBLAZE
+team add zCHICKEN
+team add zCHILLAGER
+team add zOCELOT
+team add zPHANTOM
+team add zPIGMAN
+team add zSILVERFISH
+team add zSNOWMAN
+team add zWOLF
+
+# Purple Mobs
+team add zENDERMAN
+team add zGOLEM
+team add zMAX_PIGMAN
+team add zCHARGED_CREEPER
+
+# Minibosses
+team add zGHAST
+team add zRAVAGER
+team add zJOHNNY
+
+# Boss Mobs
 team add zDRAGON
 team add zWITHER
-team add zGUARDIAN
+team add zGUARDIAN_BOSS
+
+
 
 ### Modify team colors
+# Dwarf teams
 team modify dDWARVES color aqua
 team modify dBUILDER color green
 team modify dALCHEMIST color blue
@@ -247,34 +334,114 @@ team modify dSLAYER color gold
 team modify dWARRIOR color gold
 team modify dGUARD color gold
 
+# General monster
 team modify zMONSTER color dark_red
 team modify zDEAD color yellow
 
+# Red Mobs
+team modify zPILLAGER color red
+team modify zSKELETON color red
+team modify zWITHER_SKELETON color red
+team modify zGUARDIAN color red
+team modify zDROWNED color red
+team modify zHUSK color red
+team modify zVINDICATOR color red
+team modify zZOMBIE color red
+team modify zCREEPER color red
+team modify zSPIDER color red
+
+# Dark Red Mobs
+team modify zBEE color dark_red
+team modify zBLAZE color dark_red
+team modify zCHICKEN color dark_red
+team modify zCHILLAGER color dark_red
+team modify zOCELOT color dark_red
+team modify zPHANTOM color dark_red
+team modify zPIGMAN color dark_red
+team modify zSILVERFISH color dark_red
+team modify zSNOWMAN color dark_red
+team modify zWOLF color dark_red
+
+# Purple Mobs
+team modify zENDERMAN color dark_purple
+team modify zGOLEM color dark_purple
+team modify zMAX_PIGMAN color dark_purple
+team modify zCHARGED_CREEPER color dark_purple
+
+# Minibosses
+team modify zGHAST color light_purple
+team modify zRAVAGER color light_purple
+team modify zJOHNNY color light_purple
+
+# Boss Mobs
 team modify zDRAGON color light_purple
 team modify zWITHER color light_purple
-team modify zGUARDIAN color light_purple
+team modify zGUARDIAN_BOSS color light_purple
+
+
 
 ### Modify team suffix
-team modify dDWARVES suffix {"text":", a Dwarf","italic":"true","color":"aqua"}
-team modify dBUILDER suffix {"text":", the Builder","italic":"true","color":"green"}
-team modify dALCHEMIST suffix {"text":", the Alchemist","italic":"true","color":"blue"}
-team modify dBAKER suffix {"text":", the Baker","italic":"true","color":"blue"}
-team modify dBLACKSMITH suffix {"text":", the Blacksmith","italic":"true","color":"blue"}
-team modify dENCHANTER suffix {"text":", the Enchanter","italic":"true","color":"blue"}
-team modify dTAILOR suffix {"text":", the Tailor","italic":"true","color":"blue"}
-team modify dDRAGON suffix {"text":", the Dragon Warrior","italic":"true","color":"gold"}
-team modify dSLAYER suffix {"text":", the Assassin Slayer","italic":"true","color":"gold"}
-team modify dWARRIOR suffix {"text":", the Wither Warrior","italic":"true","color":"gold"}
-team modify dGUARD suffix {"text":", the Dwarven Guard","italic":"true","color":"gold"}
+# Dwarf teams
+team modify dDWARVES suffix {"text":", a Dwarf","italic":true,"color":"aqua"}
+team modify dBUILDER suffix {"text":", the Builder","italic":true,"color":"green"}
+team modify dALCHEMIST suffix {"text":", the Alchemist","italic":true,"color":"blue"}
+team modify dBAKER suffix {"text":", the Baker","italic":true,"color":"blue"}
+team modify dBLACKSMITH suffix {"text":", the Blacksmith","italic":true,"color":"blue"}
+team modify dENCHANTER suffix {"text":", the Enchanter","italic":true,"color":"blue"}
+team modify dTAILOR suffix {"text":", the Tailor","italic":true,"color":"blue"}
+team modify dDRAGON suffix {"text":", the Dragon Warrior","italic":true,"color":"gold"}
+team modify dSLAYER suffix {"text":", the Assassin Slayer","italic":true,"color":"gold"}
+team modify dWARRIOR suffix {"text":", the Wither Warrior","italic":true,"color":"gold"}
+team modify dGUARD suffix {"text":", the Dwarven Guard","italic":true,"color":"gold"}
 
-team modify zMONSTER suffix {"text":", the Monster","italic":"true","color":"red"}
-team modify zDEAD suffix {"text":" is dead...","italic":"true","color":"yellow"}
+# General Monster
+team modify zMONSTER suffix {"text":", the Monster","italic":true,"color":"red"}
+team modify zDEAD suffix {"text":" is dead...","italic":true,"color":"yellow"}
 
-team modify zDRAGON suffix {"text":", the Dragon","italic":"true","color":"light_purple"}
-team modify zWITHER suffix {"text":", the Wither","italic":"true","color":"light_purple"}
-team modify zGUARDIAN suffix {"text":", the Guardian","italic":"true","color":"light_purple"}
+# Red Mobs
+team modify zPILLAGER suffix {"text":", the Pillager","italic":true,"color":"red"}
+team modify zSKELETON suffix {"text":", the Skeleton","italic":true,"color":"red"}
+team modify zWITHER_SKELETON suffix {"text":", the Wither Skeleton","italic":true,"color":"red"}
+team modify zGUARDIAN suffix {"text":", the Guardian","italic":true,"color":"red"}
+team modify zDROWNED suffix {"text":", the Drowned","italic":true,"color":"red"}
+team modify zHUSK suffix {"text":", the Husk","italic":true,"color":"red"}
+team modify zVINDICATOR suffix {"text":", the Vindicator","italic":true,"color":"red"}
+team modify zZOMBIE suffix {"text":", the Zombie","italic":true,"color":"red"}
+team modify zCREEPER suffix {"text":", the Creeper","italic":true,"color":"red"}
+team modify zSPIDER suffix {"text":", the Spider","italic":true,"color":"red"}
+
+# Dark Red Mobs
+team modify zBEE suffix {"text":", the Bee","italic":true,"color":"dark_red"}
+team modify zBLAZE suffix {"text":", the Blaze","italic":true,"color":"dark_red"}
+team modify zCHICKEN suffix {"text":", the Chicken","italic":true,"color":"dark_red"}
+team modify zCHILLAGER suffix {"text":", the Chillager","italic":true,"color":"dark_red"}
+team modify zOCELOT suffix {"text":", the Ocelot","italic":true,"color":"dark_red"}
+team modify zPHANTOM suffix {"text":", the Phantom","italic":true,"color":"dark_red"}
+team modify zPIGMAN suffix {"text":", the Hoglin","italic":true,"color":"dark_red"}
+team modify zSILVERFISH suffix {"text":", the Silverfish","italic":true,"color":"dark_red"}
+team modify zSNOWMAN suffix {"text":", the Snowman","italic":true,"color":"dark_red"}
+team modify zWOLF suffix {"text":", the Wolf","italic":true,"color":"dark_red"}
+
+# Purple Mobs
+team modify zENDERMAN suffix {"text":", the Enderman","italic":true,"color":"dark_purple"}
+team modify zGOLEM suffix {"text":", the Golem","italic":true,"color":"dark_purple"}
+team modify zMAX_PIGMAN suffix {"text":", the Hoglin","italic":true,"color":"dark_purple"}
+team modify zCHARGED_CREEPER suffix {"text":", the Charged Creeper","italic":true,"color":"dark_purple"}
+
+# Minibosses
+team modify zGHAST suffix {"text":", the Ghast","italic":true,"color":"light_purple"}
+team modify zRAVAGER suffix {"text":", the Ravager","italic":true,"color":"light_purple"}
+team modify zJOHNNY suffix {"text":", the Johnny","italic":true,"color":"light_purple"}
+
+# Boss Mobs
+team modify zDRAGON suffix {"text":", the Dragon","italic":true,"color":"light_purple"}
+team modify zWITHER suffix {"text":", the Wither","italic":true,"color":"light_purple"}
+team modify zGUARDIAN_BOSS suffix {"text":", the Guardian","italic":true,"color":"light_purple"}
+
+
 
 ### Zombies have invisible nametags
+# General Monster
 team modify zMONSTER nametagVisibility hideForOtherTeams
 team modify zMONSTER seeFriendlyInvisibles true
 team modify zMONSTER friendlyFire true
@@ -282,9 +449,47 @@ team modify zDEAD nametagVisibility never
 team modify zDEAD seeFriendlyInvisibles false
 team modify zDEAD friendlyFire true
 
+# Red Mobs
+team modify zPILLAGER nametagVisibility hideForOtherTeams
+team modify zSKELETON nametagVisibility hideForOtherTeams
+team modify zWITHER_SKELETON nametagVisibility hideForOtherTeams
+team modify zGUARDIAN nametagVisibility hideForOtherTeams
+team modify zDROWNED nametagVisibility hideForOtherTeams
+team modify zHUSK nametagVisibility hideForOtherTeams
+team modify zVINDICATOR nametagVisibility hideForOtherTeams
+team modify zZOMBIE nametagVisibility hideForOtherTeams
+team modify zCREEPER nametagVisibility hideForOtherTeams
+team modify zSPIDER nametagVisibility hideForOtherTeams
+
+# Dark Red Mobs
+team modify zBEE nametagVisibility hideForOtherTeams
+team modify zBLAZE nametagVisibility hideForOtherTeams
+team modify zCHICKEN nametagVisibility hideForOtherTeams
+team modify zCHILLAGER nametagVisibility hideForOtherTeams
+team modify zOCELOT nametagVisibility hideForOtherTeams
+team modify zPHANTOM nametagVisibility hideForOtherTeams
+team modify zPIGMAN nametagVisibility hideForOtherTeams
+team modify zSILVERFISH nametagVisibility hideForOtherTeams
+team modify zSNOWMAN nametagVisibility hideForOtherTeams
+team modify zWOLF nametagVisibility hideForOtherTeams
+
+# Purple Mobs
+team modify zENDERMAN nametagVisibility hideForOtherTeams
+team modify zGOLEM nametagVisibility hideForOtherTeams
+team modify zMAX_PIGMAN nametagVisibility hideForOtherTeams
+team modify zCHARGED_CREEPER nametagVisibility hideForOtherTeams
+
+# Minibosses
+team modify zGHAST nametagVisibility never
+team modify zRAVAGER nametagVisibility never
+team modify zJOHNNY nametagVisibility never
+
+# Boss Mobs
 team modify zDRAGON nametagVisibility never
 team modify zWITHER nametagVisibility never
 team modify zGUARDIAN nametagVisibility never
+
+
 
 ### Boss collisions
 team modify zDRAGON collisionRule never
@@ -292,4 +497,5 @@ team modify zWITHER collisionRule never
 team modify zGUARDIAN collisionRule never
 
 
-#~READY TO GO!
+
+### ~READY TO GO!

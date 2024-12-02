@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2022.05.08
-# Last Modified By: Zaffre
+# Last Modified On: 2024.05.03
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -18,16 +18,19 @@ execute as @a store result score @s DVZ.legenditems run clear @s #dvz:legenditem
 #Inventory
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:103b,tag:{Invis:1b}}]}] minecraft:invisibility 1 0 true
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:103b,tag:{Warrior:1b}}]}] minecraft:strength 1 1 true
-effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={foodLevel:17,Inventory:[{tag:{Papaya:1b}}]}] minecraft:saturation 3 0 true
+effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:100b,tag:{Traveler:1b}}]}] minecraft:speed 1 1 true
+effect give @a[scores={DVZ.legenditems=1,DVZ.hunger=..18},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{tag:{Papaya:1b}}]}] minecraft:saturation 3 0 true
 
 #Held
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={SelectedItem:{tag:{Bezerker:1b}}}] minecraft:speed 1 1
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={SelectedItem:{tag:{EmeraldBow:1b}}}] minecraft:jump_boost 1 1
+effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:-106b,tag:{EmeraldBow:1b}}]}] minecraft:jump_boost 1 1
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={SelectedItem:{tag:{WickedCrossbow:1b}}}] minecraft:slowness 1 1
 effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={SelectedItem:{tag:{WickedCrossbow:1b}}}] minecraft:resistance 1 1
-effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:-106b,tag:{EmeraldBow:1b}}]}] minecraft:jump_boost 1 1
-effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt=!{ActiveEffects:[{Id:21}]},nbt={SelectedItem:{tag:{HealthBoost:1b}}}] minecraft:health_boost 1000000 1
-effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt=!{ActiveEffects:[{Id:21}]},nbt={Inventory:[{Slot:-106b,tag:{HealthBoost:1b}}]}] minecraft:health_boost 1000000 1
+effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:-106b,tag:{WickedCrossbow:1b}}]}] minecraft:slowness 1 1
+effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt={Inventory:[{Slot:-106b,tag:{WickedCrossbow:1b}}]}] minecraft:resistance 1 1
+effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt=!{ActiveEffects:[{Id:21}]},nbt={SelectedItem:{tag:{HealthBoost:1b}}}] minecraft:health_boost infinite 1
+effect give @a[scores={DVZ.legenditems=1},tag=dwarves,tag=!hero,tag=!assassinpick,nbt=!{ActiveEffects:[{Id:21}]},nbt={Inventory:[{Slot:-106b,tag:{HealthBoost:1b}}]}] minecraft:health_boost infinite 1
 effect clear @a[tag=dwarves,tag=!hero,tag=!assassinpick,nbt={ActiveEffects:[{Id:21}]},nbt=!{Inventory:[{tag:{HealthBoost:1b}}]}] minecraft:health_boost
 
 #Hero Items

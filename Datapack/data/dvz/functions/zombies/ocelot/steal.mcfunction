@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.06.14
-# Last Modified By: Zaffre
+# Last Modified On: 2024.05.1
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -22,7 +22,7 @@ execute as @s if entity @s[tag=ocelot,scores={DVZ.steal.cool=0}] run summon mark
 execute as @s if entity @s[tag=ocelot,scores={DVZ.steal.cool=0}] run tp @e[tag=ray,limit=1,sort=nearest] @s
 execute as @s if entity @s[tag=ocelot,scores={DVZ.steal.cool=0}] run tp @e[tag=ray,limit=1,sort=nearest] ~ ~1.5 ~
 execute as @s if entity @s[tag=ocelot,scores={DVZ.steal.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run function dvz:zombies/ocelot/stealloop
-execute as @s if entity @s[tag=ocelot,scores={DVZ.steal.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run xp add @a[distance=..5,tag=dwarves] -50 levels
+execute as @s if entity @s[tag=ocelot,scores={DVZ.steal.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run xp add @a[distance=..5,tag=dwarves] -75 levels
 execute as @s if entity @s[tag=ocelot,scores={DVZ.steal.cool=0}] run execute at @e[tag=ray,limit=1,sort=nearest] as @a[distance=..5,tag=dwarves] run playsound block.beacon.deactivate master @a ~ ~ ~
 execute as @s if entity @s[tag=ocelot,scores={DVZ.steal.cool=0}] run execute at @e[tag=ray,limit=1,sort=nearest] as @a[distance=..5,tag=dwarves] run tellraw @s ["",{"text":" * [Steal] Your mana has been drained by an Ocelot! ","color":"dark_red"}]
 

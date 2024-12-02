@@ -16,7 +16,7 @@
 execute as @e[tag=ePortalStand] at @e[tag=ePortalStand] run fill ~-10 ~ ~-10 ~10 ~-10 ~10 air replace end_stone
 execute as @e[tag=ePortalStand] at @e[tag=ePortalStand] run fill ~-10 ~ ~-10 ~10 ~-10 ~10 air replace pearlescent_froglight
 
-clear @a carrot_on_a_stick{CustomModelData:1,Unbreakable:1b}
+clear @a[tag=!chillager] carrot_on_a_stick{CustomModelData:1,Unbreakable:1b}
 clear @a carrot_on_a_stick{CustomModelData:6,Unbreakable:1b}
 
 title @a actionbar ["",{"text":" * The portal was shut down with end stone!","color":"light_purple"}]

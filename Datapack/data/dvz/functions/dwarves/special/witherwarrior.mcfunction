@@ -40,6 +40,7 @@ execute as @a[tag=zombies] run effect clear @a[tag=zombies] slowness
 execute as @a[tag=zombies] run effect clear @a[tag=zombies] jump_boost
 execute as @a[tag=zombies] run effect clear @a[tag=zombies] invisibility
 
+# randomly kill an additional dwarf
 execute unless entity @a[tag=zombies] run kill @r[tag=dwarves,tag=!hero]
 
 execute as @a[tag=dwarves] at @s run playsound minecraft:entity.ravager.roar master @s ~ ~ ~

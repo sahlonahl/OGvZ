@@ -12,15 +12,10 @@
 #
 # Comments:
 # -------------------------------------------
-kill @a[tag=slay]
-tellraw @a[tag=slay] {"text":"\u2620 You have died because you chose to become mob!","color":"gray"}
-tag @a[tag=slay] remove slay
 
-data merge entity @e[type=marker,tag=dSpawn,limit=1] {Rotation:[90F,0F]}
-tag @r[tag=dwarves,tag=override] add playerboss
-execute unless entity @a[tag=playerboss] run tag @r[tag=dwarves,tag=!noboss] add playerboss
-execute unless entity @a[tag=playerboss] run tag @r[tag=dwarves] add playerboss
-tag @a[tag=override] remove override
+function dvz:bosses/monster_volunteer
+
+function dvz:bosses/boss_select
 
 tag @a[tag=playerboss] add assassinpick
 scoreboard players set @a[tag=assassinpick] DVZ.Akill.cool 0
@@ -34,4 +29,6 @@ scoreboard players set @a[tag=playerboss] DVZ.timer 2400
 bossbar set dvz:assassintimer visible true
 
 tellraw @s[tag=playerboss] ["",{"text":"\u25b6","bold":true},{"text":"You're the ASSASSIN! KILL THE OTHER DWARVES!","color":"dark_red"}]
-give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:40,Unbreakable:1b,display:{Name:'{"text":"Knife - Right-click to instantly KILL a nearby dwarf!","color":"red","bold":"true","italic":"true"}'}}
+clear @a[tag=playerboss] carrot_on_a_stick{CustomModelData:38}
+clear @a[tag=playerboss] carrot_on_a_stick{CustomModelData:27}
+give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:40,Unbreakable:1b,display:{Name:'{"text":"Knife - Right-click to instantly KILL a nearby dwarf!","color":"red","bold":true,"italic":true}'},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:5,Operation:0,UUID:[I;1,1,-1,-1],Slot:"mainhand"}]}

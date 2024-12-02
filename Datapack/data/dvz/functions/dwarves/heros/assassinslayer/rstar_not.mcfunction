@@ -20,7 +20,8 @@ execute as @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run sum
 execute as @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run tp @e[tag=ray,limit=1,sort=nearest] @s
 execute as @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run tp @e[tag=ray,limit=1,sort=nearest] ~ ~1.5 ~
 execute as @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run function dvz:dwarves/heros/assassinslayer/rstarloop
-execute as @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @a[tag=dwarves,tag=!hero,distance=..5] instant_health 1 2
+execute as @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @a[tag=dwarves,tag=!hero,distance=..5] instant_health 1 1
+execute as @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run effect give @a[tag=dwarves,tag=!hero,distance=..5] absorption 3 1
 execute as @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run xp add @a[tag=dwarves,tag=!hero,distance=..5] 50 levels
 execute as @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run execute as @e[tag=ray,limit=1,sort=nearest] at @s run execute as @a[tag=dwarves,tag=!hero,distance=..5] run playsound block.beacon.activate master @a ~ ~ ~ 1 2
 execute as @s if entity @s[tag=assassinslayer,scores={DVZ.rstar.cool=0}] run kill @e[type=marker,tag=ray]

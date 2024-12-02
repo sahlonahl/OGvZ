@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.14
-# Last Modified By: Zaffre
+# Last Modified On: 2024.06.14
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
@@ -41,6 +41,7 @@ tag @s remove enchanter
 tag @s remove tailor
 tag @s remove nomana
 tag @s remove slay
+tag @s remove volunteer
 
 tag @s remove dragon
 tag @s remove wither
@@ -48,6 +49,7 @@ tag @s remove assassinslayer
 tag @s remove guardian
 tag @s remove hero
 tag @s remove lbookused
+tag @s remove pearlwarmup
 
 tag @s remove zombie
 tag @s remove drowned
@@ -76,10 +78,11 @@ tag @s remove bee
 tag @s remove ghastflight
 tag @s remove chicken
 tag @s remove phantom
-tag @s remove chargecrp
+tag @s remove charged_creeper
 tag @s remove natured
 tag @s remove evoker
 
+tag @s remove purplemob
 tag @s remove ghast
 tag @s remove johnny
 tag @s remove ravager

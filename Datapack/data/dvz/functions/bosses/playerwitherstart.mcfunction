@@ -5,22 +5,17 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.02.19
-# Last Modified By: Zaffre
+# Last Modified On: 2024.07.29
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
 # Comments:
 # -------------------------------------------
-kill @a[tag=slay]
-tellraw @a[tag=slay] {"text":"\u2620 You have died because you chose to become mob!","color":"gray"}
-tag @a[tag=slay] remove slay
 
-data merge entity @e[type=marker,tag=dSpawn,limit=1] {Rotation:[90F,0F]}
-tag @r[tag=dwarves,tag=override] add playerboss
-execute unless entity @a[tag=playerboss] run tag @r[tag=dwarves,tag=!noboss] add playerboss
-execute unless entity @a[tag=playerboss] run tag @r[tag=dwarves] add playerboss
-tag @a[tag=override] remove override
+function dvz:bosses/monster_volunteer
+
+function dvz:bosses/boss_select
 
 team leave @a[tag=playerboss]
 tag @a[tag=playerboss] add playerwitherpick
@@ -57,15 +52,16 @@ tag @a[tag=playerboss] remove blaze
 tag @a[tag=playerboss] remove enderman
 tag @a[tag=playerboss] remove ePortal
 
-clear @a[tag=playerboss] 
+clear @a[tag=playerboss]
 effect clear @a[tag=playerboss]
 gamemode creative @a[tag=playerboss]
-effect give @a[tag=playerboss] invisibility 1000000 2 true
-effect give @a[tag=playerboss] resistance 1000000 9 true
-effect give @a[tag=playerboss] regeneration 1000000 9 true
+effect give @a[tag=playerboss] invisibility infinite 2 true
+effect give @a[tag=playerboss] resistance infinite 9 true
+effect give @a[tag=playerboss] regeneration infinite 9 true
 
 give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:41,Unbreakable:1b,display:{Name:'{"text":"Wither Skull","color":"red"}'}}
 give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:42,Unbreakable:1b,display:{Name:'{"text":"Mass Wither","color":"red"}'}}
+give @a[tag=playerboss] carrot_on_a_stick{CustomModelData:44,Unbreakable:1b,display:{Name:'{"text":"Summon Followers","color":"red"}'}}
 
 execute at @r[tag=dwarves] positioned ~ ~30 ~ run summon minecraft:wither ~ ~ ~ {Tags:[tpwither]}
 tp @a[tag=playerboss] @e[tag=tpwither,limit=1]

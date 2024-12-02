@@ -21,7 +21,7 @@
             }
           ]
         },
-		{
+		    {
           "type": "item",
           "name": "minecraft:diamond_sword",
           "weight": 1,
@@ -36,7 +36,7 @@
             }
           ]
         },
-		{
+		    {
           "type": "item",
           "name": "minecraft:bow",
           "weight": 1,
@@ -51,7 +51,7 @@
             }
           ]
         },
-		{
+		    {
           "type": "item",
           "name": "minecraft:bow",
           "weight": 1,
@@ -66,7 +66,7 @@
             }
           ]
         },
-		{
+		    {
           "type": "item",
           "name": "minecraft:crossbow",
           "weight": 1,
@@ -78,6 +78,21 @@
             {
               "function": "set_nbt",
               "tag": "{LegendItem:1b,Enchantments:[{id:\"piercing\",lvl:5s},{id:\"multishot\",lvl:1s},{id:\"quick_charge\",lvl:3s}],WickedCrossbow:1b,Unbreakable:1b,display:{Name:'{\"text\":\"Wicked Crossbow\",\"color\":\"dark_green\"}'}}"
+            }
+          ]
+        },
+		    {
+          "type": "item",
+          "name": "minecraft:trident",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Enchantments:[{id:\"riptide\",lvl:3s},{id:\"impaling\",lvl:3s}],Unbreakable:1b}"
             }
           ]
         }

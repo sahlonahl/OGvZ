@@ -16,7 +16,7 @@
 execute as @s[tag=ghast,scores={DVZ.ghast.cool=1..}] run title @s actionbar ["",{"text":" * [Fireball] You have ","color":"dark_red"},{"score":{"name":"@s","objective":"DVZ.ghast.cool"},"color":"dark_red"},{"text":" seconds remaining!","color":"dark_red"}]
 execute as @s if entity @s[tag=ghast,scores={DVZ.ghast.cool=0}] run title @s actionbar {"text":" * [Fireball] Poof!","color":"red"}
 
-execute if entity @s[tag=ghast,scores={DVZ.ghast.cool=0}] run execute positioned 0.0 0 0.0 run summon fireball ^ ^ ^1 {Tags:["projectile"],ExplosionPower:4b,HasBeenShot:1b}
+execute if entity @s[tag=ghast,scores={DVZ.ghast.cool=0}] run execute positioned 0.0 0 0.0 run summon fireball ^ ^ ^1 {Tags:["projectile"],ExplosionPower:3b,HasBeenShot:1b}
 execute if entity @s[tag=ghast,scores={DVZ.ghast.cool=0}] run function dvz:zombies/miniboss/fireball2
 
 execute if entity @s[tag=ghast,scores={DVZ.ghast.cool=0}] run playsound entity.ghast.warn master @a ~ ~ ~ 50 0.9 0.2

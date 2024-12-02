@@ -16,4 +16,4 @@
 function dvz:bosses/removetags
 tag @e[tag=dvztimer] add selected
 tag @e[tag=dvztimer] add assassinselected
-tellraw @a[tag=admin] {"text":" * [OGvZ] Assassin selected!","color":"light_purple","italic":"true"}
+tellraw @a[tag=admin] {"text":" * [OGvZ] Assassin selected!","color":"light_purple","italic":true}

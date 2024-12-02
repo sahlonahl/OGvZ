@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.05
-# Last Modified By: Zaffre
+# Last Modified On: 2023.09.08
+# Last Modified By: Wilkekids
 #
 # Credit to:
 #
@@ -15,7 +15,7 @@
 
 tag @s[tag=!selectedclass] remove nopill
 effect clear @s[tag=!selectedclass]
-team join zMONSTER @s[tag=skeleton,tag=!selectedclass]
+team join zSKELETON @s[tag=skeleton,tag=!selectedclass]
 clear @s[tag=!selectedclass]
 
 give @s[tag=skeleton,tag=!selectedclass] cooked_beef 64
@@ -25,9 +25,10 @@ give @s[tag=skeleton,tag=!selectedclass] vine 24
 give @s[tag=skeleton,tag=!selectedclass] arrow 128
 
 #item replace entity @s[tag=skeleton,tag=!selectedclass] armor.head with jack_o_lantern{Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]}
-item replace entity @s[tag=skeleton,tag=!selectedclass] armor.head with skeleton_skull{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]}
-item replace entity @s[tag=skeleton,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 11053475}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]}
-item replace entity @s[tag=skeleton,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 11053475}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]}
-item replace entity @s[tag=skeleton,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 11053475}, Enchantments: [{id: "blast_protection", lvl: 4}, {id: "binding_curse", lvl: 1}]}
+item replace entity @s[tag=skeleton,tag=!selectedclass] armor.head with skeleton_skull{Unbreakable: 1b, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]}
+item replace entity @s[tag=skeleton,tag=!selectedclass] armor.chest with leather_chestplate{Unbreakable: 1b, display: {color: 11053475}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]}
+item replace entity @s[tag=skeleton,tag=!selectedclass] armor.legs with leather_leggings{Unbreakable: 1b, display: {color: 11053475}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]}
+item replace entity @s[tag=skeleton,tag=!selectedclass] armor.feet with leather_boots{Unbreakable: 1b, display: {color: 11053475}, Enchantments: [{id: "blast_protection", lvl: 4},{id: "protection", lvl: 1}, {id: "binding_curse", lvl: 1}]}
 
 execute as @s[tag=skeleton] if predicate dvz:natchance run loot give @s loot dvz:mob_natures
+execute as @a[tag=zombies,tag=!natured,nbt={Inventory:[{tag:{Nature:1b}}]}] run function dvz:zombies/natures

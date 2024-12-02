@@ -14,11 +14,16 @@
 # -------------------------------------------
 
 kill @e[tag=worldspawn]
-execute as @s align xyz run tp ~.5 ~ ~.5
-execute at @s run fill ~10 ~5 ~10 ~-10 ~-3 ~-10 bedrock hollow
-execute at @s run setblock ~ ~-2 ~ sea_lantern
-execute at @s run fill ~9 ~3 ~9 ~-9 ~3 ~-9 barrier
-execute at @s run fill ~9 ~4 ~9 ~-9 ~4 ~-9 sea_lantern
+
+place template dvz:spawn2 ~-10 ~-3 ~-10
+
+# legacy version of the spawn-in lobby
+# execute as @s align xyz run tp ~.5 ~ ~.5
+# execute at @s run fill ~10 ~5 ~10 ~-10 ~-3 ~-10 bedrock hollow
+# execute at @s run setblock ~ ~-2 ~ sea_lantern
+# execute at @s run fill ~9 ~3 ~9 ~-9 ~3 ~-9 barrier
+# execute at @s run fill ~9 ~4 ~9 ~-9 ~4 ~-9 sea_lantern
+
 execute at @s run setworldspawn
 execute at @s run summon marker ~ ~-1 ~ {Tags:[worldspawn]}
 clear @a[tag=!admin]

@@ -5,8 +5,8 @@
 # Created By: Sahlonahl
 # 
 # Created On: 2020.02.29
-# Last Modified On: 2023.03.14
-# Last Modified By: Zaffre
+# Last Modified On: 2024.06.14
+# Last Modified By: Sahlonahl
 #
 # Credit to:
 #
@@ -34,6 +34,7 @@ tag @s remove assassinslayer
 tag @s remove guardian
 tag @s remove hero
 tag @s remove lbookused
+tag @s remove pearlwarmup
 
 tag @s remove zombies
 tag @s remove zombie
@@ -63,7 +64,9 @@ tag @s remove bee
 tag @s remove ghastflight
 tag @s remove chicken
 tag @s remove phantom
+tag @s remove charged_creeper
 
+tag @s remove purplemob
 tag @s remove ghast
 tag @s remove johnny
 tag @s remove ravager
@@ -99,6 +102,7 @@ scoreboard players set @s DVZ.whispersong 0
 scoreboard players set @s DVZ.bow 0
 scoreboard players set @s DVZ.legenditems 0
 scoreboard players set @s DVZ.health 0
+scoreboard players set @s DVZ.hunger 20
 
 ### Cooldown objectives
 #Dwarves
@@ -110,6 +114,10 @@ scoreboard players set @s DVZ.slab.cool 0
 scoreboard players set @s DVZ.slab.ticks 0
 scoreboard players set @s DVZ.prod.cool 0
 scoreboard players set @s DVZ.prod.ticks 0
+scoreboard players set @s DVZ.pearl_warmup 0
+scoreboard players set @s DVZ.pearl_warmup.ticks 0
+scoreboard players set @s DVZ.health_pot.ticks 0
+scoreboard players set @s DVZ.health_pot.cool 0
 #Zombie 
 scoreboard players set @s DVZ.ffly.airtime 0
 scoreboard players set @s DVZ.ffly.cool 0
@@ -125,6 +133,8 @@ scoreboard players set @s DVZ.reinf.ticks 0
 scoreboard players set @s DVZ.reinf.msg 0
 scoreboard players set @s DVZ.fball.cool 0
 scoreboard players set @s DVZ.fball.ticks 0
+scoreboard players set @s DVZ.fball3.cool 0
+scoreboard players set @s DVZ.fball3.ticks 0
 scoreboard players set @s DVZ.poison.cool 0
 scoreboard players set @s DVZ.poison.ticks 0
 scoreboard players set @s DVZ.web.cool 0
@@ -175,6 +185,9 @@ scoreboard players set @s DVZ.Wskull.cool 0
 scoreboard players set @s DVZ.Wskull.ticks 0
 scoreboard players set @s DVZ.Gbeam.cool 0
 scoreboard players set @s DVZ.Gbeam.ticks 0
+scoreboard players set @s DVZ.minion_summon.cool 0
+scoreboard players set @s DVZ.minion_summon.ticks 0
+
 #Hero
 scoreboard players set @s DVZ.flail.cool 0
 scoreboard players set @s DVZ.flail.ticks 0
@@ -188,6 +201,8 @@ scoreboard players set @s DVZ.drain.cool 0
 scoreboard players set @s DVZ.drain.ticks 0
 scoreboard players set @s DVZ.sfury.cool 0
 scoreboard players set @s DVZ.sfury.ticks 0
+scoreboard players set @s DVZ.mindseye.cool 0
+scoreboard players set @s DVZ.mindseye.ticks 0
 
 ### Dwarf Summoning Items
 scoreboard players set @s DVZ.alch.potions 0
@@ -210,6 +225,7 @@ scoreboard players set @s DVZ.smash.check 0
 scoreboard players set @s DVZ.mana.ticks 0
 #scoreboard players set @s DVZ.suicide.cool 0
 scoreboard players set @s DVZ.suicide.tick 0
+scoreboard players set @s DVZ.distdam.tick 0
 
 #####END OF SCOREBOARD RESETS
 
@@ -225,7 +241,8 @@ effect clear @s
 gamemode survival @s
 tp @s @e[tag=worldspawn,limit=1]
 
-give @s written_book{pages:['["",{"text":"     ","bold":true,"color":"dark_aqua"},{"text":"OG","bold":true,"underlined":true,"color":"dark_aqua"},{"text":"v","bold":true,"underlined":true,"color":"gold"},{"text":"Z","bold":true,"underlined":true,"color":"dark_red"},{"text":" rules","color":"reset","bold":true,"underlined":true},{"text":"\\nGeneral rules after.\\n","color":"reset"},{"text":"DvZ Rules:","bold":true,"underlined":true,"color":"gold"},{"text":"\\n1: No hacking (duh)\\n2: Monsters cannot combine kits\\n3: Monsters cannot give items to dwarves 4: Dwarves cannot give items to monsters\\n5: Teamkilling is not allowed\\n6: Bosses cannot break the gold/shrine","color":"reset"}]','{"text":"7: Dying intentionally as a dwarf is considered gamethrowing\\n8: Snowman Jump Boost Glitch is not allowed\\n9: Be respectful, especially towards Admins, Mods, or Trial Mods\\n "}','{"text":"10: No gamethrowing -this includes but is not limited to throwing blocks on the ground, dying intentionally as a dwarf, leaving items in a chest as a dwarf for you to grab as a mob, mining the shrine as a dwarf\\n11: No spamming chat 12: If muted, you cannot use #-ingame to get around your mute\\n "}','{"text":"13: Hero dwarves (Dragon Warrior, Wither Warrior, Dwarven Guard, and Assassin Slayer) cannot use any Legendary items.\\n14: Posting any IP address or real life coordinates, real or fake, will result in an unappealable, immediate ban."}','["",{"text":"General rules:","bold":true,"color":"gold"},{"text":"\\n-Don\'t be horrible.\\n-Don\'t spread hate: ANY topic that attacks or makes light of a subject that targets or may offend a specific demographic is strictly forbidden. This includes IGNs. Make sure what you say is ","color":"reset"},{"text":"unmistakably ","italic":true},{"text":"a joke. If someone says something that annoys, disturbs, or offends\\n ","color":"reset"}]','["",{"text":"you, report it to a moderator. Try to be the bigger person and don\'t start an argument!\\n-Don\'t spam.\\n-Use common sense\\n\\n\\n"},{"text":"Join our discord!","color":"light_purple","clickEvent":{"action":"open_url","value":"https://discord.gg/NUgCXuS"},"hoverEvent":{"action":"show_text","contents":"Click to join"}}]'],title:"OGvZ server rule book",author:"OGvZ Server",display:{Lore:["DvZ-specific rules and general rules."]}}
+give @s written_book{pages:['["",{"text":"     ","bold":true,"color":"dark_aqua"},{"text":"OG","bold":true,"underlined":true,"color":"dark_aqua"},{"text":"v","bold":true,"underlined":true,"color":"gold"},{"text":"Z","bold":true,"underlined":true,"color":"dark_red"},{"text":" rules","color":"reset","bold":true,"underlined":true},{"text":"\\nGeneral rules after.\\n","color":"reset"},{"text":"DvZ Rules:","bold":true,"underlined":true,"color":"gold"},{"text":"\\n1: No hacking (duh)\\n2: Monsters cannot combine kits\\n3: Monsters cannot give items to dwarves 4: Dwarves cannot give items to monsters\\n5: Teamkilling is not allowed\\n6: Bosses cannot break the gold/shrine","color":"reset"}]','{"text":"7: Dying intentionally as a dwarf is considered gamethrowing\\n8: Snowman Jump Boost Glitch is not allowed\\n9: Be respectful, especially towards Admins, Mods, or Trial Mods\\n "}','{"text":"10: No gamethrowing -this includes but is not limited to throwing blocks on the ground, dying intentionally as a dwarf, leaving items in a chest as a dwarf for you to grab as a mob, mining the shrine as a dwarf\\n11: No spamming chat 12: If muted, you cannot use #-ingame to get around your mute\\n "}','{"text":"13: Hero dwarves (Dragon Warrior, Wither Warrior, Dwarven Guard, and Assassin Slayer) cannot use any Legendary items.\\n14: Posting any IP address or real life coordinates, real or fake, will result in an unappealable, immediate ban."}','{"text":"15: Don\'t abuse known OGvZ bugs to gain an advantage in combat.\\nIncluding, but not limited to:\\n-Intentionally using snowman freeze to launch dwarves into the sky\\n-Riding horses as a Golem.\\nExceptions:\\n-Golem Jump Boost Glitch"}','["",{"text":"General rules:","bold":true,"color":"gold"},{"text":"\\n-Don\'t be horrible.\\n-Don\'t spread hate: ANY topic that attacks or makes light of a subject that targets or may offend a specific demographic is strictly forbidden. This includes IGNs. Make sure what you say is ","color":"reset"},{"text":"unmistakably ","italic":true},{"text":"a joke. If someone says something that annoys, disturbs, or offends\\n ","color":"reset"}]','["",{"text":"you, report it to a moderator. Try to be the bigger person and don\'t start an argument!\\n-Don\'t spam.\\n-Use common sense\\n\\n\\n"},{"text":"Join our discord!","color":"light_purple","clickEvent":{"action":"open_url","value":"https://discord.gg/NUgCXuS"},"hoverEvent":{"action":"show_text","contents":"Click to join"}}]'],title:"OGvZ server rule book",author:"OGvZ Server",display:{Lore:["DvZ-specific rules and general rules."]}}
+give @s[tag=!dwarves] carrot_on_a_stick{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"Volunteer for Boss","color":"red"}',Lore:['[{"text":"Increase your chance to become the boss!"}]']}} 1
 execute if entity @e[tag=dvztimer,tag=begin,scores={DVZ.timer=..36000}] run function dvz:spawn
 execute if entity @e[tag=dvztimer,tag=fight] run tag @s add fight
 execute if entity @e[tag=dvztimer,tag=begin,scores={DVZ.timer=36000..}] run kill @s
