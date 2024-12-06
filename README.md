@@ -13,4 +13,4 @@ OGvZ has been developed avoiding the use of third party server plugins to make i
 
 The Minecraft version targeted is usually the latest version that PaperMC+Plugins support, with some buffer time to avoid potentially unstable server builds.
 
-The server is currently on `1.19.4`
+The server is currently on `1.21.1`
