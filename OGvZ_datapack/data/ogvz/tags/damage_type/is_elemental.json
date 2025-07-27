@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:magic",
+    "minecraft:indirect_magic",
+    "#ogvz:is_fire",
+    "#ogvz:is_ice",
+    "#ogvz:is_electric",
+    "#ogvz:is_wind"
+  ]
+}

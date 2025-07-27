@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "bonemeal",
+  "ingredients": [
+    "minecraft:bone"
+  ],
+  "result": {
+    "count": 3,
+    "id": "minecraft:bone_meal",
+    "components": {
+      "minecraft:lore": [
+        {
+          "text": "Use to grow flowers.",
+          "color": "blue"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Give Other",
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "text": "Rulebook",
+        "color": "white"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/other/rulebook"
+      }
+    },
+    {
+      "label": {
+        "text": "Join Game (Magma Cream)",
+        "color": "white"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/other/join_game_magma_cream"
+      }
+    },
+    {
+      "label": {
+        "text": "Shrine Tape Measure",
+        "color": "gold"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/other/shrine_tape_measure"
+      }
+    },
+    {
+      "label": {
+        "text": "Legendary Book",
+        "color": "gold"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/other/legendary_book"
+      }
+    },
+    {
+      "label": {
+        "text": "Legendary Shard",
+        "color": "gold"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/other/legendary_shard"
+      }
+    },
+    {
+      "label": {
+        "text": "Suicide Pill",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/other/suicide_pill"
+      }
+    },
+    {
+      "label": {
+        "text": "Obsidian Skull",
+        "color": "light_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/other/obsidian_skull"
+      }
+    },
+    {
+      "label": {
+        "text": "Ender Eye",
+        "color": "light_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/other/ender_eye"
+      }
+    },
+    {
+      "label": "back",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:admin_menu"
+      }
+    }
+  ]
+}

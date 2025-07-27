@@ -1,0 +1,16 @@
+{
+	"type":	"minecraft:block",
+	"pools":	[{
+			"bonus_rolls":	0,
+			"entries":	[{
+					"type":	"minecraft:item",
+					"name":	"minecraft:zombie_head"
+				}],
+			"rolls":	1,
+			"conditions":	[{
+					"condition":	"minecraft:reference",
+					"name":	"ogvz:block_drops"
+				}]
+		}],
+	"random_sequence":	"minecraft:blocks/zombie_head"
+}

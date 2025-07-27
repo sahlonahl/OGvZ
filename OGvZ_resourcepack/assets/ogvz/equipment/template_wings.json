@@ -1,0 +1,10 @@
+{
+  "layers": {
+    "wings": [
+      {
+        "texture": "ogvz:template",
+        "use_player_texture": false
+      }
+    ]
+  }
+}

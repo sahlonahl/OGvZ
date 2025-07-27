@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_ingot"
+    },
+    "title": {
+      "text": "Melee the Golem",
+      "color": "#d8d8d8"
+    },
+    "description": [
+      {
+        "text": "As a Dwarf, kill a Golem in melee combat\n",
+        "color": "white"
+      }
+    ],
+    "frame": "challenge"
+  },
+  "parent": "ogvz:root",
+  "criteria": {
+    "a1": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.dwarf\"]}"
+        },
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"ogvz.zombie.class.golem\"]}"
+        },
+        "killing_blow": {
+          "tags": [
+            {
+              "id": "minecraft:is_player_attack",
+              "expected": true
+            }
+          ],
+          "is_direct": true
+        }
+      }
+    }
+  }
+}

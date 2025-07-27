@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Setup Error",
+    "color": "red",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:crying_obsidian"
+      },
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Zombie Spawn Location is missing!",
+        "color": "red"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "label": "OK"
+    }
+  ]
+}

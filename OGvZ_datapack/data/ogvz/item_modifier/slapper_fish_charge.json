@@ -1,0 +1,19 @@
+[
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{charged:1}"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "ogvz:slapper_fish_charged"
+    }
+  },
+  {
+    "function": "minecraft:set_enchantments",
+    "enchantments": {
+      "minecraft:knockback": 5,
+      "ogvz:charged": 1
+    }
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Setup Error",
+    "color": "red",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:gold_block"
+      },
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Shrine Block Markers are missing!",
+        "color": "red"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Check if all Gold Blocks are present on the Shrine and set its location again.",
+        "color": "red"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "label": "OK"
+    }
+  ]
+}

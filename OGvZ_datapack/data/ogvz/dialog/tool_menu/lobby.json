@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Lobby Tool Menu",
+    "color": "green",
+    "bold": true
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": [
+        {
+          "text": "Set",
+          "color": "green",
+          "underlined": true
+        },
+        {
+          "text": " Lobby Location",
+          "color": "green",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/lobby/set_location"
+      }
+    },
+    {
+      "label": [
+        {
+          "text": "Teleport to",
+          "color": "green",
+          "underlined": true
+        },
+        {
+          "text": " Lobby Location",
+          "color": "green",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/lobby/teleport_to"
+      }
+    },
+    {
+      "label": [
+        {
+          "text": "Place Standard",
+          "color": "green",
+          "underlined": true
+        },
+        {
+          "text": " Lobby",
+          "color": "green",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/lobby/place_standard"
+      }
+    },
+    {
+      "label": "Exit"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Zombie Spawn Tool Menu",
+    "color": "red",
+    "bold": true
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": {
+        "text": "Alpha",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:tool_menu/zombie_spawn/alpha"
+      }
+    },
+    {
+      "label": {
+        "text": "Beta",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:tool_menu/zombie_spawn/beta"
+      }
+    },
+    {
+      "label": {
+        "text": "Gamma",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:tool_menu/zombie_spawn/gamma"
+      }
+    },
+    {
+      "label": {
+        "text": "Delta",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:tool_menu/zombie_spawn/delta"
+      }
+    },
+    {
+      "label": "Exit"
+    }
+  ]
+}

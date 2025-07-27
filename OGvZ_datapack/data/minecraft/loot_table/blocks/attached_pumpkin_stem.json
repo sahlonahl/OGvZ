@@ -1,0 +1,28 @@
+{
+	"type":	"minecraft:block",
+	"pools":	[{
+			"bonus_rolls":	0,
+			"entries":	[{
+					"type":	"minecraft:item",
+					"functions":	[{
+							"add":	false,
+							"count":	{
+								"type":	"minecraft:binomial",
+								"n":	3,
+								"p":	0.53333336
+							},
+							"function":	"minecraft:set_count"
+						}],
+					"name":	"minecraft:pumpkin_seeds"
+				}],
+			"functions":	[{
+					"function":	"minecraft:explosion_decay"
+				}],
+			"rolls":	1,
+			"conditions":	[{
+					"condition":	"minecraft:reference",
+					"name":	"ogvz:block_drops"
+				}]
+		}],
+	"random_sequence":	"minecraft:blocks/attached_pumpkin_stem"
+}

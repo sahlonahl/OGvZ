@@ -1,0 +1,104 @@
+=== 2.0 - Legendary Update (XXXX.XX.XX) ===
+- Game has been completly rewritten from scratch. Code is now more readable, scalable and has better performance.
+- Resource pack has been remade. Most textures got tweaked or completley remade. Textures are now more consistant with vanilla minecraft textures.
+
+Setup phase changes:
+- Admins now recieve an admin book when switching to creative mode. Only players with an admin tag can use it.
+- Admins are now notified when a player is tagged as an admin (by switching to creative mode for the first time), when an admin places a lobby, shrine, zombie spawn, boss spawn or when an admin selects a boss.
+- Boss spawn has been added, which is now required to be placed in order for the games to start (unless the selected boss is assassin).
+- Lobby is now required to be placed before the game can start.
+- Players who join the game are now in adventure mode and have Resistance 5 (complete damage immunity).
+- Players who are somehow killed in lobby, will respawn in lobby instead of at zombie spawn and will not recieve blindness/slowness.
+- Players who join a game for the first time will always spawn in lobby, even during zombie phase.
+- If magma cream is used during boss, zombie or any later phase, the player will join the zombie team.
+- Magma cream can no longer be dropped.
+- If you somehow lose your magma cream you can now receive a new one by rejoining the server.
+- Players will now be notified if the games have started yet upon joining the server while still in lobby.
+- Bedrock texture is now no longer randomly rotated.
+
+Dwarf changes:
+- Summoning books are less random.
+- All dwarves start with a legendary book now.
+- Dwarves can legendary transmute multiple times now (as long as they have legendary books).
+- Builders no longer receive mana from using their summoning book.
+- Builders now regenerate mana naturally at 0.5 mana/second. Their mana is still not capped at 100 mana.
+- Enchanters no longer receive mana from using their summoning book.
+- Enchanters now regenerate mana and have a 100 mana cap like other non-builder classes.
+- Certain sources of mana can now overflow mana of all non-builder dwarves up to 200 mana.
+- Standing near the shrine will now let you recover mana faster and let you overflow your mana.
+- Builder's instant-buildings have been completly removed.
+- Builders now always start with a crab claw and stonecutter.
+- Alchemists now start with a water wand, which allows them to fill cauldrons with water.
+- Tailors now start with super fertilizer, which allows them to change the biome on a patch of grass to allow flowers to grow.
+- Tailors now use mud bricks instead of terracotta.
+- Blacksmiths now start with 4 blast furnaces instead of 4 regular furnaces. This now allows them to make 5 clocks in 30 seconds.
+- Bakers can now also rarely get some golden carrots with their transmutes.
+- Cake now stacks to 64.
+- Most dwarf classes received slight tweaks to their starting inventory.
+- Certain items now have a tooltip, which help the player dwarf with doing their job.
+- All potions that cost mana are now renamed to magic potions.
+- Magic health potion now has a 20 second cooldown.
+- Magic health potion now no longer gives short but strong regeneration and instead instantly heals you to full.
+- All magic potions now cost more mana (15/20 -> 30 mana).
+- Speed, strength and jump magic potions now give effects that last longer (10 -> 20 seconds).
+- Strength magic potion now gives a lesser level of strength (II -> I strength).
+- Pearl rod will now teleport you after 3 seconds. You will be slowed before your teleport. If you are hurt before teleporting the teleportation will be canceled. Cooldown starts and mana is consumed only if you teleport.
+- Chests and Barrels are now craftable again (they remain uncraftable for the zombie team).
+- All side-grades have been removed with the exception of shiv and scutum shield.
+- Shiv has been renamed to diamond dagger.
+- Scutum shield has been renamed to tower shield.
+- Tower shield now has a custom banner already applied, making it look different from the normal shield.
+- Tower shield has been reworked. The following changes have been made to it:
+    - When in off-hand -> when in hand (now works in either hand)
+    - Max health: +4 -> 0
+    - Armor: 0 -> +2
+    - Armor toughness: +2 -> 0
+    - Knockback resistance: +7 -> +2
+    - Movement speed: 0 -> -1.5
+    - No longer gives mining fatigue or slowness when in hand.
+- Diamond axes have been reworked. The following changes have been made to it (relative to vanilla diamond axe):
+    - Attack damage: 9 -> 12
+    - Can no longer receive Sharpness enchantment through the anvil.
+- Diamond daggers have been reworked. The following changes have been made to it:
+    - Attack damage: 6 -> 7
+    - Attack speed: 4.0 -> 40.0 (no longer has an attack cooldown)
+    - Attack reach: 3.0 -> 2.5
+    - Movement speed: +4 -> 0
+    - Is now a retextured diamond hoe (now has durability and can be enchanted).
+- Tridents have been reworked. The following changes have been made to it (relative to vanilla trident):
+    - Attack damage: 9 -> 10
+    - Attack speed: 1.1 -> 1.2
+    - Attack reach: 3.0 -> 3.5
+    - Durability: 250 -> 781
+    - Thrown tridents now ignore defense.
+- Crossbows now deal 50% more damage when using arrows.
+- Bread is now better:
+    - Nutrition: 5 -> 6
+    - Saturation: 6 -> 9.6
+- Pumpkin pie is now better:
+    - Nutrition: 8 -> 6
+    - Saturation: 4.8 -> 7.2
+    - Eat time: 1.6 -> 1.2 seconds
+Eating a slice of cake will now give you 10 seconds of regeneration II (4 hearts of healing).
+
+Zombie changes:
+- Creeper, Ocelot, Hoglin, Silverfish, Spider, Wolf no longer spawn with green particles and a *ding* sound, just like dwarves do.
+- Dyed text is now hidden on all mob armor.
+- Mob heads no longer have the unbreakable tag.
+- Wolf now uses light gray dyed leather armor instead of chainmail armor (visual change only).
+- Vindicator's boots now look closer to the original Vindicator.
+- Firework Rockets now have a more compact lore text.
+- Most mobs can now affect other mobs with their abilities (e.g. guardian's beam can hit other zombies).
+
+Misc. changes:
+- A *ding* sound will play when an active item/ability with a cooldown recharges.
+- There's is now a global 0.2 second cooldown on all active items/abilities, which should prevent accidental use of them.
+- Classes on the tab screen are now displayed differently so they take up less space and so you can read them faster.
+- All armor and tools along with some other items like block of lapis lazuli are now craftable.
+- All active/passive items/abilities now have a description.
+- Certain items are now uncraftable instead of crafting into themselves.
+- All vanilla advancements have been disabled.
+- Ray scanning has been improved and is now much more accurate while also travelling through more non-solid blocks.
+- load and tick mcfunctions now only contain sub-functions allowing for easier add-on creation.
+- Certain items/abilities no longer share the same texture.
+- Unbreaking lore text is now hidden on all active items/abilities.

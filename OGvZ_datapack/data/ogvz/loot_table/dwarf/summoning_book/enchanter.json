@@ -1,0 +1,139 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lapis_lazuli",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 24
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "Use to enchant.",
+                    "color": "blue"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Pearl Rod",
+                  "color": "light_purple"
+                },
+                "minecraft:item_model": "ogvz:pearl_rod",
+                "minecraft:custom_data": "{active_id:3104}",
+                "minecraft:lore": [
+                  {
+                    "text": "Attempts to teleport you to the",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "shrine after a short delay.",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "You are unable to move during ",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "the teleportation.",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "Taking damage will cancel the",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "teleportation.",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "You can manually cancel the",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "teleportation by using the pearl",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "rod again.",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "60 second cooldown",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "Requires 50 mana",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "Active Item",
+                    "color": "green",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{legendary_shard:1}",
+                "minecraft:item_name": {"text":"Legendary Shard","color":"gold"},
+                "minecraft:item_model": "ogvz:legendary_shard",
+                "minecraft:enchantment_glint_override": true,
+                "!minecraft:food": {},
+                "!minecraft:consumable": {}
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    }
+  ]
+}

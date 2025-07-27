@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.zombie.punish\"]}"
+        },
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"ogvz.dwarf\"]}"
+        }
+      }
+    },
+    "b": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.zombie.punish\"]}"
+        },
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:player",
+            "nbt": "{Tags:[\"ogvz.dwarf\"]}"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "a",
+      "b"
+    ]
+  ],
+  "rewards": {
+    "function": "ogvz:zombie/remove_punish_tag"
+  }
+}

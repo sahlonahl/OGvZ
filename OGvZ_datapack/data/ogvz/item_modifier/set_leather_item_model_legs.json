@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:equippable": {
+        "slot": "legs",
+        "asset_id": "minecraft:leather"
+      }
+    }
+  }
+]

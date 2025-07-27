@@ -1,0 +1,417 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Give Disc",
+  "columns": 1,
+  "actions": [
+    {
+      "label": "back",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:admin_menu"
+      }
+    },
+    {
+      "label": {
+        "text": "Builder",
+        "color": "green"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/dwarf/builder"
+      }
+    },
+    {
+      "label": {
+        "text": "Blacksmith",
+        "color": "blue"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/dwarf/blacksmith"
+      }
+    },
+    {
+      "label": {
+        "text": "Tailor",
+        "color": "blue"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/dwarf/tailor"
+      }
+    },
+    {
+      "label": {
+        "text": "Baker",
+        "color": "blue"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/dwarf/baker"
+      }
+    },
+    {
+      "label": {
+        "text": "Alchemist",
+        "color": "blue"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/dwarf/alchemist"
+      }
+    },
+    {
+      "label": {
+        "text": "Enchanter",
+        "color": "blue"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/dwarf/enchanter"
+      }
+    },
+    {
+      "label": {
+        "text": "Dragon Warrior",
+        "color": "gold"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/dwarf/hero/dragon_warrior"
+      }
+    },
+    {
+      "label": {
+        "text": "Wither Warrior",
+        "color": "gold"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/dwarf/hero/wither_warrior"
+      }
+    },
+    {
+      "label": {
+        "text": "Dwarven Guard",
+        "color": "gold"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/dwarf/hero/dwarven_guard"
+      }
+    },
+    {
+      "label": {
+        "text": "Assassin Slayer",
+        "color": "gold"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/dwarf/hero/assassin_slayer"
+      }
+    },
+    {
+      "label": {
+        "text": "Zombie",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/zombie"
+      }
+    },
+    {
+      "label": {
+        "text": "Husk",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/husk"
+      }
+    },
+    {
+      "label": {
+        "text": "Drowned",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/drowned"
+      }
+    },
+    {
+      "label": {
+        "text": "Vindicator",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/vindicator"
+      }
+    },
+    {
+      "label": {
+        "text": "Skeleton",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/skeleton"
+      }
+    },
+    {
+      "label": {
+        "text": "Wither Skeleton",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/wither_skeleton"
+      }
+    },
+    {
+      "label": {
+        "text": "Guardian",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/guardian"
+      }
+    },
+    {
+      "label": {
+        "text": "Pillager",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/pillager"
+      }
+    },
+    {
+      "label": {
+        "text": "Creeper",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/creeper"
+      }
+    },
+    {
+      "label": {
+        "text": "Spider",
+        "color": "red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/spider"
+      }
+    },
+    {
+      "label": {
+        "text": "Bee",
+        "color": "dark_red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/bee"
+      }
+    },
+    {
+      "label": {
+        "text": "Blaze",
+        "color": "dark_red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/blaze"
+      }
+    },
+    {
+      "label": {
+        "text": "Chicken Nugget",
+        "color": "dark_red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/chicken_nugget"
+      }
+    },
+    {
+      "label": {
+        "text": "Chillager",
+        "color": "dark_red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/chillager"
+      }
+    },
+    {
+      "label": {
+        "text": "Ocelot",
+        "color": "dark_red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/ocelot"
+      }
+    },
+    {
+      "label": {
+        "text": "Phantom",
+        "color": "dark_red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/phantom"
+      }
+    },
+    {
+      "label": {
+        "text": "Snowman",
+        "color": "dark_red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/snowman"
+      }
+    },
+    {
+      "label": {
+        "text": "Wolf",
+        "color": "dark_red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/wolf"
+      }
+    },
+    {
+      "label": {
+        "text": "Piglin",
+        "color": "dark_red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/piglin"
+      }
+    },
+    {
+      "label": {
+        "text": "Hoglin",
+        "color": "dark_red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/hoglin"
+      }
+    },
+    {
+      "label": {
+        "text": "Silverfish",
+        "color": "dark_red"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/silverfish"
+      }
+    },
+    {
+      "label": {
+        "text": "Enderman",
+        "color": "dark_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/enderman"
+      }
+    },
+    {
+      "label": {
+        "text": "Golem",
+        "color": "dark_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/golem"
+      }
+    },
+    {
+      "label": {
+        "text": "Ghast",
+        "color": "light_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/ghast"
+      }
+    },
+    {
+      "label": {
+        "text": "Johnny",
+        "color": "light_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/johnny"
+      }
+    },
+    {
+      "label": {
+        "text": "Ravager",
+        "color": "light_purple"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/disc/zombie/ravager"
+      }
+    },
+    {
+      "label": "back",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:admin_menu"
+      }
+    }
+  ]
+}

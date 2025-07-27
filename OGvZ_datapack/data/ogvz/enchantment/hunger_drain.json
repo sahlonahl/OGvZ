@@ -1,0 +1,34 @@
+{
+  "description": "Hunger Drain",
+  "supported_items": "#minecraft:enchantable/weapon",
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:hunger",
+          "min_duration": 5,
+          "max_duration": 5,
+          "min_amplifier": 39,
+          "max_amplifier": 39
+        },
+        "enchanted": "attacker",
+        "affected": "victim"
+      }
+    ]
+  }
+}

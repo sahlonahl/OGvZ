@@ -1,0 +1,62 @@
+{
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "ogvz:item/head/iron_golem",
+		"particle": "ogvz:item/head/iron_golem"
+	},
+	"elements": [
+		{
+			"name": "head",
+			"from": [4, 0, 4],
+			"to": [12, 10, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4, 8]},
+			"faces": {
+				"north": {"uv": [4, 4, 8, 9], "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 9], "texture": "#0"},
+				"south": {"uv": [12, 4, 16, 9], "texture": "#0"},
+				"west": {"uv": [8, 4, 12, 9], "texture": "#0"},
+				"up": {"uv": [8, 4, 4, 0], "texture": "#0"},
+				"down": {"uv": [12, 0, 8, 4], "texture": "#0"}
+			}
+		},
+		{
+			"name": "nose",
+			"from": [7, -1, 2],
+			"to": [9, 3, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, -1, 2]},
+			"faces": {
+				"north": {"uv": [1, 1, 2, 3], "texture": "#0"},
+				"east": {"uv": [0, 1, 1, 3], "texture": "#0"},
+				"south": {"uv": [3, 1, 4, 3], "texture": "#0"},
+				"west": {"uv": [2, 1, 3, 3], "texture": "#0"},
+				"up": {"uv": [2, 1, 1, 0], "texture": "#0"},
+				"down": {"uv": [3, 0, 2, 1], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [45, -135, 0],
+			"translation": [0, 3, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 180, 0]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [0, 3, 0]
+		},
+		"head": {
+			"translation": [0, 7.6, 0],
+			"scale": [1.9, 1.9, 1.9]
+		},
+		"fixed": {
+			"translation": [0, 4, 0]
+		}
+	}
+}

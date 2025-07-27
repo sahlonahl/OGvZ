@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Setup Error",
+    "color": "red",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:gold_block"
+      },
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Shrine Location is missing!",
+        "color": "red"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "label": "OK"
+    }
+  ]
+}

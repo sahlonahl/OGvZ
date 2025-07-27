@@ -1,0 +1,259 @@
+{
+  "pools": [
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_leggings"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_boots"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Light Shield",
+                "minecraft:lore": [
+                  {
+                    "text": "Instant Blocking",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:blocks_attacks": {
+                  "block_delay_seconds": 0,
+                  "damage_reductions": [
+                    {
+                      "type": "#ogvz:is_physical",
+                      "base": 0,
+                      "factor": 1.0
+                    },
+                    {
+                      "type": "#minecraft:is_explosion",
+                      "base": 0,
+                      "factor": 0.35
+                    }
+                  ],
+                  "item_damage": {
+                    "threshold": 3.0,
+                    "base": 0.0,
+                    "factor": 1.0
+                  },
+                  "block_sound": "minecraft:item.shield.block",
+                  "disabled_sound": "minecraft:item.shield.break",
+                  "bypassed_by": "#minecraft:bypasses_shield"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Tower Shield",
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "minecraft:armor.mainhand",
+                    "type": "minecraft:armor",
+                    "amount": 2.0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:armor.offhand",
+                    "type": "minecraft:armor",
+                    "amount": 2.0,
+                    "operation": "add_value",
+                    "slot": "offhand"
+                  },
+                  {
+                    "id": "minecraft:knockback_resistance.mainhand",
+                    "type": "minecraft:knockback_resistance",
+                    "amount": 0.2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:knockback_resistance.offhand",
+                    "type": "minecraft:knockback_resistance",
+                    "amount": 0.2,
+                    "operation": "add_value",
+                    "slot": "offhand"
+                  },
+                  {
+                    "id": "minecraft:movement_speed.mainhand",
+                    "type": "minecraft:movement_speed",
+                    "amount": -0.15,
+                    "operation": "add_multiplied_total",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:movement_speed.offhand",
+                    "type": "minecraft:movement_speed",
+                    "amount": -0.15,
+                    "operation": "add_multiplied_total",
+                    "slot": "offhand"
+                  }
+                ],
+                "minecraft:blocks_attacks": {
+                  "block_delay_seconds": 0.25,
+                  "damage_reductions": [
+                    {
+                      "type": "#ogvz:is_physical",
+                      "base": 0,
+                      "factor": 1.0
+                    },
+                    {
+                      "type": "#minecraft:is_explosion",
+                      "base": 0,
+                      "factor": 0.5
+                    }
+                  ],
+                  "item_damage": {
+                    "threshold": 3.0,
+                    "base": 0.0,
+                    "factor": 0.5
+                  },
+                  "block_sound": "minecraft:item.shield.block",
+                  "disabled_sound": "minecraft:item.shield.break",
+                  "bypassed_by": "#minecraft:bypasses_shield"
+                },
+                "minecraft:banner_patterns": [
+                  {
+                    "pattern":"ogvz:tower",
+                    "color":"white"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:banner_patterns"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ore",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 16,
+                "max": 32
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "Give to the blacksmith.",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "Smelt into gold ingots.",
+                    "color": "blue"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "Give to the enchanter.",
+                    "color": "blue"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{legendary_shard:1}",
+                "minecraft:item_name": {"text":"Legendary Shard","color":"gold"},
+                "minecraft:item_model": "ogvz:legendary_shard",
+                "minecraft:enchantment_glint_override": true,
+                "!minecraft:food": {},
+                "!minecraft:consumable": {}
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    }
+  ]
+}

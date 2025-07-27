@@ -1,0 +1,37 @@
+{
+  "description": "Midair Jump",
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 2,
+  "max_level": 3,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "feet"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "flags": {
+              "is_flying": false
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "ogvz:enchantment/midair_jump"
+        }
+      }
+    ]
+  }
+}

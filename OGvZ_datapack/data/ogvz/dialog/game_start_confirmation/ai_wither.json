@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Game Start Confirmation",
+    "color": "white",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Setup is complete!",
+        "color": "green"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Boss Selected: ",
+        "extra": [
+          {
+            "text": "AI Wither",
+            "color": "light_purple"
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Don't forget to ping ",
+        "extra": [
+          {
+            "text": "@Gamestart",
+            "extra": [
+              {
+                "text": "!",
+                "color": "white"
+              }
+            ],
+            "color": "green"
+          }
+        ]
+      }
+    }
+  ],
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Start Game!",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/start_game"
+      }
+    },
+    {
+      "label": "Cancel"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "asset_id": "ogvz:sahlonahl",
+  "height": 3,
+  "width": 4,
+  "title": {
+    "text": "Sahlonahl",
+    "color": "yellow"
+  },
+  "author": {
+    "text": "Morgan Ketelaar-Jarass",
+    "color": "gray"
+  }
+}

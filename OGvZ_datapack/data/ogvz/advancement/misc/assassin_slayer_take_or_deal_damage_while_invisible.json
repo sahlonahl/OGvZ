@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "deal_damage": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.dwarf.class.hero.assassin_slayer.invisible\"]}"
+        }
+      }
+    },
+    "take_damage": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.dwarf.class.hero.assassin_slayer.invisible\"]}"
+        },
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "minecraft:is_fall",
+                "expected": false
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "deal_damage",
+      "take_damage"
+    ]
+  ],
+  "rewards": {
+    "function": "ogvz:dwarf/item/hero/assassin_slayer/cloak_of_shadows_cancel"
+  }
+}
