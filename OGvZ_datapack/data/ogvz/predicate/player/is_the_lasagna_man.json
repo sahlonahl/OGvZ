@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "nbt": "{UUID:[I;1873853338,-1695921841,-1369806257,-768558102]}"
+  }
+}

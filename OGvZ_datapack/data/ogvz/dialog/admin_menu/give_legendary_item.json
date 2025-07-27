@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Give Legendary Item",
+  "columns": 1,
+  "actions": [
+    {
+      "label": "back",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:admin_menu"
+      }
+    }
+  ]
+}

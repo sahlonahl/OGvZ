@@ -1,0 +1,82 @@
+{
+  "pack": {
+    "pack_format": 81,
+    "description": "OG Dwarves VS Zombies.\nBy Sahlonahl."
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "advancement/adventure/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancement/end/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancement/husbandry/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancement/nether/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancement/story/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancement/recipes/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/gold_block.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/redstone_from_smelting_redstone_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/redstone_from_blasting_redstone_ore.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/white_dye.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/yellow_dye_from_sunflower.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/magenta_dye_from_lilac.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/red_dye_from_rose_bush.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/pink_dye_from_peony.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/pink_dye_from_pink_petals.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/yellow_dye_from_wildflowers.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/bricks.json"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "recipe/terracotta.json"
+      }
+    ]
+  }
+}

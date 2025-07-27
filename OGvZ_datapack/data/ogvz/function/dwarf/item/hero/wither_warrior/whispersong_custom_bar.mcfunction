@@ -1,0 +1,13 @@
+#> Description: Show the soul charge custom bar.
+
+title @s[scores={ogvz.wither_warrior.soul_charges.count=..0 }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220"}
+title @s[scores={ogvz.wither_warrior.soul_charges.count=1   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1221\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220"}
+title @s[scores={ogvz.wither_warrior.soul_charges.count=2   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1221\uF102\u1221\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220"}
+title @s[scores={ogvz.wither_warrior.soul_charges.count=3   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1221\uF102\u1221\uF102\u1221\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220"}
+title @s[scores={ogvz.wither_warrior.soul_charges.count=4   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220"}
+title @s[scores={ogvz.wither_warrior.soul_charges.count=5   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220"}
+title @s[scores={ogvz.wither_warrior.soul_charges.count=6   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1220\uF102\u1220\uF102\u1220\uF102\u1220"}
+title @s[scores={ogvz.wither_warrior.soul_charges.count=7   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1220\uF102\u1220\uF102\u1220"}
+title @s[scores={ogvz.wither_warrior.soul_charges.count=8   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1220\uF102\u1220"}
+title @s[scores={ogvz.wither_warrior.soul_charges.count=9   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1220"}
+title @s[scores={ogvz.wither_warrior.soul_charges.count=10..}] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221\uF102\u1221"}

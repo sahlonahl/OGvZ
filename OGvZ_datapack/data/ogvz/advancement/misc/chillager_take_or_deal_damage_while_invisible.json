@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "deal_damage": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.zombie.class.chillager.invisible\"]}"
+        }
+      }
+    },
+    "take_damage": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.zombie.class.chillager.invisible\"]}"
+        },
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "minecraft:is_fall",
+                "expected": false
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "deal_damage",
+      "take_damage"
+    ]
+  ],
+  "rewards": {
+    "function": "ogvz:zombie/ability/chillager/invisibility_cancel"
+  }
+}

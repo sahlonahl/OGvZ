@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.dwarf.class.hero.wither_warrior\"]}"
+        },
+        "entity": {
+          "type": "minecraft:player"
+        },
+        "killing_blow": {
+          "tags": [
+            {
+              "id": "minecraft:is_projectile",
+              "expected": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ogvz:dwarf/item/hero/wither_warrior/whispersong_charge_ranged"
+  }
+}

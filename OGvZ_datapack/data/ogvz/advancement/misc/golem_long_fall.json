@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:fall_from_height",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.zombie.class.golem\"]}"
+        },
+        "distance": {
+          "y": {
+            "min": 4.9
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ogvz:zombie/ability/golem/long_fall"
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Rulebook",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 1:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "No hacking.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 2:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Don't abuse game bugs to gain an advantage.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 3:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Intentional teamkilling is not allowed.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 4:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Dwarves and Zombies cannot give items to each other.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 5:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Do not break the Shrine as a Dwarf.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 6:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Dying intentionally as a Dwarf is not allowed.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 7:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Do not throw blocks on the ground and leave them there.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 8:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Do not leave items in a secret chest as a Dwarf, for you to grab them as a Zombie.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 9:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Hero Dwarves (Dragon Warrior, Wither Warrior, Dwarven Guard, Assassin Slayer) cannot use any Legendary items.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 10:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Zombies cannot combine kits.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 11:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Bosses cannot break the Shrine.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 12:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "No spamming chat.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 13:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "If muted, you cannot use #ingame to get around your mute.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 14:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Posting any IP address or real life coordinates, real or fake, will result in an unappealable, immediate ban.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 15:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Don't be horrible.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 16:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Use common sense.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 17:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Be respectful, especially towards Admins, Mods, Trial Mods and Developers.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
+        {
+          "text": "Rule 18:\n\n",
+          "underlined": true
+        },
+        {
+          "text": "Don't spread hate:\n",
+          "underlined": false
+        },
+        {
+          "text": "Any topic that attacks or makes light of a subject that may offend a specific demographic of people is strictly forbidden.\n",
+          "underlined": false
+        },
+        {
+          "text": "This includes player names and skins.\n",
+          "underlined": false
+        },
+        {
+          "text": "If it is intended as a joke, make sure it is unmistakably a joke.\n",
+          "underlined": false
+        },
+        {
+          "text": "If someone says something that annoys or offends you, report the message to a Moderator and contact an Admin if needed.\n",
+          "underlined": false
+        },
+        {
+          "text": "Do not engage with them and start a flame war. Just be the bigger person and walk away.\n",
+          "underlined": false
+        }
+      ],
+      "width": 300
+    }
+  ],
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Close"
+    }
+  ]
+}

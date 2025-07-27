@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Setup Error",
+    "color": "red",
+    "bold": true
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:end_portal_frame"
+      },
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Boss has not been selected!",
+        "color": "red"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "label": "OK"
+    }
+  ]
+}

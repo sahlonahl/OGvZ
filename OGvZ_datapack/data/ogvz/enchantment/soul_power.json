@@ -1,0 +1,36 @@
+{
+  "description": "Soul Power",
+  "supported_items": "minecraft:bow",
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 2
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "type": "#minecraft:arrows",
+            "nbt": "{Tags:[\"temp.charged_whispersong_arrow\"]}"
+          }
+        }
+      }
+    ]
+  }
+}

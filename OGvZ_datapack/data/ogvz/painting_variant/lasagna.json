@@ -1,0 +1,13 @@
+{
+  "asset_id": "ogvz:lasagna",
+  "height": 1,
+  "width": 1,
+  "title": {
+    "text": "Lasagna",
+    "color": "yellow"
+  },
+  "author": {
+    "text": "The Lasagna Man",
+    "color": "gray"
+  }
+}

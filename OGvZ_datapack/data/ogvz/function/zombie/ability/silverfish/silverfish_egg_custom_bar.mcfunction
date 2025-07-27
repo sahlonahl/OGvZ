@@ -1,0 +1,13 @@
+#> Description: Show the silverfish egg custom bar.
+
+title @s[scores={ogvz.silverfish.silverfish_egg.count=..0 }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260"}
+title @s[scores={ogvz.silverfish.silverfish_egg.count=1   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1261\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260"}
+title @s[scores={ogvz.silverfish.silverfish_egg.count=2   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1261\uF102\u1261\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260"}
+title @s[scores={ogvz.silverfish.silverfish_egg.count=3   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1261\uF102\u1261\uF102\u1261\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260"}
+title @s[scores={ogvz.silverfish.silverfish_egg.count=4   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260"}
+title @s[scores={ogvz.silverfish.silverfish_egg.count=5   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260"}
+title @s[scores={ogvz.silverfish.silverfish_egg.count=6   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1260\uF102\u1260\uF102\u1260\uF102\u1260"}
+title @s[scores={ogvz.silverfish.silverfish_egg.count=7   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1260\uF102\u1260\uF102\u1260"}
+title @s[scores={ogvz.silverfish.silverfish_egg.count=8   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1260\uF102\u1260"}
+title @s[scores={ogvz.silverfish.silverfish_egg.count=9   }] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1260"}
+title @s[scores={ogvz.silverfish.silverfish_egg.count=10..}] actionbar {font:"ogvz:custom",shadow_color:0,text:"\uF164\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261\uF102\u1261"}

@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Admin Menu",
+    "bold": true
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Setup Tools",
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/setup_tools"
+      }
+    },
+    {
+      "label": "Give Disc",
+      "width": 200,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:admin_menu/give_disc"
+      }
+    },
+    {
+      "label": "Give Legendary Item",
+      "width": 200,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:admin_menu/give_legendary_item"
+      }
+    },
+    {
+      "label": "Give Other",
+      "width": 200,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:admin_menu/give_other"
+      }
+    },
+    {
+      "label": "Exit"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "block.minecraft.bricks": "Clay Brick Block",
+  "block.minecraft.brick_stairs": "Clay Brick Stairs",
+  "block.minecraft.brick_slab": "Clay Brick Slab",
+  "block.minecraft.brick_wall": "Clay Brick Wall",
+  "block.minecraft.end_stone_brick_slab": "Reinforced Brick Slab",
+  "block.minecraft.end_stone_brick_stairs": "Reinforced Brick Stairs",
+  "block.minecraft.end_stone_brick_wall": "Reinforced Brick Wall",
+  "block.minecraft.end_stone_bricks": "Reinforced Bricks",
+  "block.minecraft.sea_lantern": "Lantern Block",
+  "block.ogvz.banner.tower": "Tower",
+  "item.minecraft.brick": "Clay Brick",
+  "effect.minecraft.luck": "Mana Regeneration",
+  "effect.minecraft.unluck": "Frozen",
+  "death.attack.electric": "%1$s was electrocuted by %2$s.",
+  "death.attack.snowball": "%1$s was snowballed by %2$s.",
+  "death.attack.shrine_destroyed": "%s could not endure without the shrine's power.",
+  "death.attack.outside_shrine_range": "%s wandered too far from the shrine.",
+  "death.attack.inside_zombie_spawn_range": "%s wandered too close to the zombie spawn.",
+  "death.attack.cyanide": "%s succumbed to cyanide poisoning."
+}

@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "source_entity": {
+              "type": "minecraft:player",
+              "nbt": "{Tags:[\"ogvz.dwarf.class.hero.dragon_warrior.dragon_form\"]}"
+            },
+            "direct_entity": {
+              "type": "minecraft:firework_rocket"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ogvz:dwarf/item/hero/dragon_warrior/dragon_scale_explode"
+  }
+}

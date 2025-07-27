@@ -1,0 +1,48 @@
+{
+  "description": "Parry",
+  "supported_items": "minecraft:music_disc_cat",
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": {
+    "base": 14,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:damage_immunity": [
+      {
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "tags": [
+                  {
+                    "id": "minecraft:bypasses_shield",
+                    "expected": false
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"ogvz.parry\"]}"
+              }
+            }
+          ]
+        },
+        "effect": {}
+      }
+    ]
+  }
+}

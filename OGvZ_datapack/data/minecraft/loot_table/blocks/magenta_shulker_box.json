@@ -1,0 +1,21 @@
+{
+	"type":	"minecraft:block",
+	"pools":	[{
+			"bonus_rolls":	0,
+			"entries":	[{
+					"type":	"minecraft:item",
+					"functions":	[{
+							"function":	"minecraft:copy_components",
+							"include":	["minecraft:custom_name", "minecraft:container", "minecraft:lock", "minecraft:container_loot"],
+							"source":	"block_entity"
+						}],
+					"name":	"minecraft:magenta_shulker_box"
+				}],
+			"rolls":	1,
+			"conditions":	[{
+					"condition":	"minecraft:reference",
+					"name":	"ogvz:block_drops"
+				}]
+		}],
+	"random_sequence":	"minecraft:blocks/magenta_shulker_box"
+}

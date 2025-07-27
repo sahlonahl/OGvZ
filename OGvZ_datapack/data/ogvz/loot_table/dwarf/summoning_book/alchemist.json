@@ -1,0 +1,348 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Magic Regeneration Potion",
+                  "color": "red"
+                },
+                "minecraft:item_model": "ogvz:magic_regeneration_potion",
+                "minecraft:custom_data": "{active_id:3100}",
+                "minecraft:lore": [
+                  {
+                    "text": "Grants temporary regeneration.",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "Requires 20 mana",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "Active Item",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Magic Swiftness Potion",
+                  "color": "aqua"
+                },
+                "minecraft:item_model": "ogvz:magic_swiftness_potion",
+                "minecraft:custom_data": "{active_id:3101}",
+                "minecraft:lore": [
+                  {
+                    "text": "Grants temporary speed.",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "Requires 20 mana",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "Active Item",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Magic Strength Potion",
+                  "color": "aqua"
+                },
+                "minecraft:item_model": "ogvz:magic_strength_potion",
+                "minecraft:custom_data": "{active_id:3102}",
+                "minecraft:lore": [
+                  {
+                    "text": "Grants temporary strength.",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "Requires 20 mana",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "Active Item",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:firework_rocket",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 32
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:fireworks": {
+                  "explosions": [
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    },
+                    {
+                      "shape": "small_ball",
+                      "colors": [
+                        26367
+                      ]
+                    }
+                  ],
+                  "flight_duration": 1
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Flight Duration: 1",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Firework Stars: 7",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:fireworks"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bucket"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_powder",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "Use to fuel the brewing stand.",
+                    "color": "blue"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "Give to the tailor.",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "Craft into bone meal.",
+                    "color": "blue"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "Give to the enchanter.",
+                    "color": "blue"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"text":"Legendary Shard","color":"gold"},
+                "minecraft:item_model": "ogvz:legendary_shard",
+                "minecraft:custom_data": "{legendary_shard:1}",
+                "minecraft:enchantment_glint_override": true,
+                "!minecraft:food": {},
+                "!minecraft:consumable": {}
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    }
+  ]
+}

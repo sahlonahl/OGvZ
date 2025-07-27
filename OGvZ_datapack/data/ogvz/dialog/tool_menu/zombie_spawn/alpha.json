@@ -1,0 +1,96 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Zombie Spawn Tool Menu [Alpha]",
+    "color": "red",
+    "bold": true
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": [
+        {
+          "text": "Set",
+          "color": "red",
+          "underlined": true
+        },
+        {
+          "text": " Zombie Spawn Location",
+          "color": "red",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/zombie_spawn/set_location/alpha"
+      }
+    },
+    {
+      "label": [
+        {
+          "text": "Remove",
+          "color": "red",
+          "underlined": true
+        },
+        {
+          "text": " Zombie Spawn Location",
+          "color": "red",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/zombie_spawn/remove_location/alpha"
+      }
+    },
+    {
+      "label": [
+        {
+          "text": "Teleport to",
+          "color": "red",
+          "underlined": true
+        },
+        {
+          "text": " Zombie Spawn",
+          "color": "red",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/zombie_spawn/teleport_to/alpha"
+      }
+    },
+    {
+      "label": [
+        {
+          "text": "Place Standard",
+          "color": "red",
+          "underlined": true
+        },
+        {
+          "text": " Zombie Spawn",
+          "color": "red",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/zombie_spawn/place_standard/alpha"
+      }
+    },
+    {
+      "label": {
+        "text": "back"
+      },
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "ogvz:tool_menu/zombie_spawn"
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:bane_of_arthropods",
+    "minecraft:blast_protection",
+    "minecraft:density",
+    "minecraft:efficiency",
+    "minecraft:fire_protection",
+    "minecraft:impaling",
+    "minecraft:lure",
+    "minecraft:power",
+    "minecraft:projectile_protection",
+    "minecraft:protection",
+    "minecraft:sharpness",
+    "minecraft:smite",
+    
+    "minecraft:aqua_affinity",
+    "minecraft:breach",
+    "minecraft:channeling",
+    "minecraft:depth_strider",
+    "minecraft:feather_falling",
+    "minecraft:fire_aspect",
+    "minecraft:flame",
+    "minecraft:fortune",
+    "minecraft:infinity",
+    "minecraft:knockback",
+    "minecraft:looting",
+    "minecraft:loyalty",
+    "minecraft:luck_of_the_sea",
+    "minecraft:multishot",
+    "minecraft:piercing",
+    "minecraft:punch",
+    "minecraft:quick_charge",
+    "minecraft:respiration",
+    "minecraft:riptide",
+    "minecraft:silk_touch",
+    "minecraft:sweeping_edge",
+    "minecraft:swift_sneak",
+    "minecraft:thorns",
+    "minecraft:wind_burst",
+    
+    "minecraft:frost_walker",
+    "minecraft:soul_speed",
+    
+    "minecraft:unbreaking",
+    
+    "minecraft:mending",
+    
+    "minecraft:binding_curse",
+    "minecraft:vanishing_curse"
+  ]
+}

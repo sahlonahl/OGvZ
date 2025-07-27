@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "ogvz:has_died"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "ogvz:misc/player_death"
+  }
+}

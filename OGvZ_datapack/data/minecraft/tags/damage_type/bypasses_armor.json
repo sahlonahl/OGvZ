@@ -1,0 +1,11 @@
+{
+  "values": [
+    "minecraft:fireball",
+    "ogvz:electric",
+    "ogvz:snowball",
+    "ogvz:shrine_destroyed",
+    "ogvz:outside_shrine_range",
+    "ogvz:inside_zombie_spawn_range",
+    "ogvz:cyanide"
+  ]
+}

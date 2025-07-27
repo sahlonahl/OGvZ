@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "ogvz:none"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "ogvz:none"
+      }
+    ]
+  }
+}

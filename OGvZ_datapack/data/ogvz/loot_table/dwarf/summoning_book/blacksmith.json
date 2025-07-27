@@ -1,0 +1,529 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "minecraft:base_attack_damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 6.0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:base_attack_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.4,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:entity_interaction_range.mainhand",
+                    "type": "minecraft:entity_interaction_range",
+                    "amount": 0.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "display": {
+                      "type": "override",
+                      "value": {
+                        "text": " 3 Attack Reach",
+                        "color": "dark_green"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_13",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Diamond Dagger",
+                "minecraft:item_model": "ogvz:diamond_dagger",
+                "minecraft:rarity": "common",
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "minecraft:base_attack_damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 4.0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:base_attack_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": 19996.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "display": {
+                      "type": "override",
+                      "value": {
+                        "text": " ∞ Attack Speed",
+                        "color":"dark_green"
+                      }
+                    }
+                  },
+                  {
+                    "id": "minecraft:entity_interaction_range.mainhand",
+                    "type": "minecraft:entity_interaction_range",
+                    "amount": -0.5,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "display": {
+                      "type": "override",
+                      "value": {
+                        "text": " 2.5 Attack Reach",
+                        "color": "dark_green"
+                      }
+                    }
+                  }
+                ],
+                "minecraft:max_damage": 1561,
+                "minecraft:damage": 0,
+                "minecraft:repairable": {
+                  "items": "#minecraft:diamond_tool_materials"
+                },
+                "minecraft:enchantable": {
+                  "value":10
+                },
+                "minecraft:weapon": {},
+                "minecraft:tool": {
+                  "can_destroy_blocks_in_creative": false,
+                  "damage_per_block": 1,
+                  "rules": [
+                    {
+                      "blocks": "#minecraft:sword_instantly_mines",
+                      "speed": 3.4028235e+38
+                    },
+                    {
+                      "blocks": "minecraft:cobweb",
+                      "correct_for_drops": true,
+                      "speed": 15.0
+                    },
+                    {
+                      "blocks": "#minecraft:sword_efficient",
+                      "speed": 1.5
+                    }
+                  ]
+                },
+                "!minecraft:jukebox_playable": {}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_axe",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "Disables Shields",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "minecraft:base_attack_damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 10.5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:base_attack_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": -3.0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:entity_interaction_range.mainhand",
+                    "type": "minecraft:entity_interaction_range",
+                    "amount": 0.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "display": {
+                      "type": "override",
+                      "value": {
+                        "text": " 3 Attack Reach",
+                        "color": "dark_green"
+                      }
+                    }
+                  }
+                ],
+                "minecraft:weapon": {
+                  "item_damage_per_attack": 1,
+                  "disable_blocking_for_seconds": 5.0
+                },
+                "minecraft:tool": {
+                  "damage_per_block": 1,
+                  "rules": [
+                    {
+                      "blocks": "#minecraft:incorrect_for_diamond_tool",
+                      "correct_for_drops": false
+                    },
+                    {
+                      "blocks": "minecraft:cobweb",
+                      "correct_for_drops": true,
+                      "speed": 15.0
+                    },
+                    {
+                      "blocks": "#minecraft:mineable/axe",
+                      "correct_for_drops": true,
+                      "speed": 8.0
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "Disables Shields",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:rarity": "common",
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "minecraft:base_attack_damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 8.0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:base_attack_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:entity_interaction_range.mainhand",
+                    "type": "minecraft:entity_interaction_range",
+                    "amount": 0.5,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "display": {
+                      "type": "override",
+                      "value": {
+                        "text": " 3.5 Attack Reach",
+                        "color": "dark_green"
+                      }
+                    }
+                  }
+                ],
+                "minecraft:max_damage": 1561,
+                "minecraft:enchantable": {
+                  "value": 10
+                },
+                "minecraft:weapon": {
+                  "item_damage_per_attack": 1,
+                  "disable_blocking_for_seconds": 3.5
+                },
+                "minecraft:tool": {
+                  "can_destroy_blocks_in_creative": false,
+                  "damage_per_block": 1,
+                  "rules": [
+                    {
+                      "blocks": "minecraft:cobweb",
+                      "correct_for_drops": true,
+                      "speed": 15.0
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Diamond Paxel",
+                "minecraft:item_model": "ogvz:diamond_paxel",
+                "minecraft:lore": [
+                  {
+                    "text": "Multi-Tool",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "minecraft:base_attack_damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 4.0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:base_attack_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": -2.8,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:entity_interaction_range.mainhand",
+                    "type": "minecraft:entity_interaction_range",
+                    "amount": 0.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "display": {
+                      "type": "override",
+                      "value": {
+                        "text": " 3 Attack Reach",
+                        "color": "dark_green"
+                      }
+                    }
+                  }
+                ],
+                "minecraft:weapon": {
+                  "item_damage_per_attack": 1
+                },
+                "minecraft:tool": {
+                  "damage_per_block": 1,
+                  "rules": [
+                    {
+                      "blocks": "#minecraft:incorrect_for_diamond_tool",
+                      "correct_for_drops": false
+                    },
+                    {
+                      "blocks": "#minecraft:sword_instantly_mines",
+                      "speed": 3.4028235e+38
+                    },
+                    {
+                      "blocks": "minecraft:cobweb",
+                      "correct_for_drops": true,
+                      "speed": 15.0
+                    },
+                    {
+                      "blocks": "#minecraft:mineable/pickaxe",
+                      "correct_for_drops": true,
+                      "speed": 8.0
+                    },
+                    {
+                      "blocks": "#minecraft:mineable/shovel",
+                      "correct_for_drops": true,
+                      "speed": 8.0
+                    },
+                    {
+                      "blocks": "#minecraft:mineable/axe",
+                      "correct_for_drops": true,
+                      "speed": 8.0
+                    },
+                    {
+                      "blocks": "#minecraft:mineable/hoe",
+                      "correct_for_drops": true,
+                      "speed": 8.0
+                    },
+                    {
+                      "blocks": "#minecraft:sword_efficient",
+                      "speed": 1.5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 64
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone_ore",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "Mine to get redstone.",
+                    "color": "blue"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:coal",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 4
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "Share with baker.",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "Use to fuel the furnace.",
+                    "color": "blue"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:lore": [
+                  {
+                    "text": "Give to the enchanter.",
+                    "color": "blue"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{legendary_shard:1}",
+                "minecraft:item_name": {"text":"Legendary Shard","color":"gold"},
+                "minecraft:item_model": "ogvz:legendary_shard",
+                "minecraft:enchantment_glint_override": true,
+                "!minecraft:food": {},
+                "!minecraft:consumable": {}
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ]
+    }
+  ]
+}

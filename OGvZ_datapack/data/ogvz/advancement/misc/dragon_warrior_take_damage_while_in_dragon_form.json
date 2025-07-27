@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.dwarf.class.hero.dragon_warrior.dragon_form\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "ogvz:dwarf/item/hero/dragon_warrior/dragon_scale_check"
+  }
+}

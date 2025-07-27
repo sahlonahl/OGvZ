@@ -1,0 +1,12 @@
+[
+  {
+    "function":"minecraft:set_custom_data",
+    "tag":"{disabled:0}"
+  },
+  {
+    "function":"minecraft:set_components",
+    "components":{
+      "minecraft:item_model":"ogvz:hover"
+    }
+  }
+]

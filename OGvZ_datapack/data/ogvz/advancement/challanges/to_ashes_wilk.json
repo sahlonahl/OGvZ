@@ -1,0 +1,199 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:blaze_powder"
+    },
+    "title": {
+      "text": "To Ashes, Wilk",
+      "color": "#fb8c00"
+    },
+    "description": [
+      {
+        "text": "As a Blaze, defeat wilkekids (the_lasagna_man) the Dwarf wearing at least 2 pieces of armor enchanted with Elemental Protection IV\n",
+        "color": "white"
+      }
+    ],
+    "frame": "challenge"
+  },
+  "parent": "ogvz:root",
+  "criteria": {
+    "a1": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.zombie.class.blaze\"]}"
+        },
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"ogvz.dwarf\"],UUID:[I;1873853338,-1695921841,-1369806257,-768558102]}",
+          "slots": {
+            "armor.head": {
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:fire_protection": 4
+                }
+              }
+            },
+            "armor.chest": {
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:fire_protection": 4
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "a2": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.zombie.class.blaze\"]}"
+        },
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"ogvz.dwarf\"],UUID:[I;1873853338,-1695921841,-1369806257,-768558102]}",
+          "slots": {
+            "armor.head": {
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:fire_protection": 4
+                }
+              }
+            },
+            "armor.legs": {
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:fire_protection": 4
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "a3": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.zombie.class.blaze\"]}"
+        },
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"ogvz.dwarf\"],UUID:[I;1873853338,-1695921841,-1369806257,-768558102]}",
+          "slots": {
+            "armor.head": {
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:fire_protection": 4
+                }
+              }
+            },
+            "armor.feet": {
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:fire_protection": 4
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "a4": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.zombie.class.blaze\"]}"
+        },
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"ogvz.dwarf\"],UUID:[I;1873853338,-1695921841,-1369806257,-768558102]}",
+          "slots": {
+            "armor.chest": {
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:fire_protection": 4
+                }
+              }
+            },
+            "armor.legs": {
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:fire_protection": 4
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "a5": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.zombie.class.blaze\"]}"
+        },
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"ogvz.dwarf\"],UUID:[I;1873853338,-1695921841,-1369806257,-768558102]}",
+          "slots": {
+            "armor.chest": {
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:fire_protection": 4
+                }
+              }
+            },
+            "armor.feet": {
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:fire_protection": 4
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "a6": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"ogvz.zombie.class.blaze\"]}"
+        },
+        "entity": {
+          "type": "minecraft:player",
+          "nbt": "{Tags:[\"ogvz.dwarf\"],UUID:[I;1873853338,-1695921841,-1369806257,-768558102]}",
+          "slots": {
+            "armor.legs": {
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:fire_protection": 4
+                }
+              }
+            },
+            "armor.feet": {
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:fire_protection": 4
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "a1",
+      "a2",
+      "a3",
+      "a4",
+      "a5",
+      "a6"
+    ]
+  ]
+}

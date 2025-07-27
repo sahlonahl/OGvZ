@@ -1,0 +1,35 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:using_item",
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "ogvz:item/whispersong"
+    },
+    "on_true": {
+      "type": "minecraft:range_dispatch",
+      "entries": [
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "ogvz:item/whispersong_pulling_1"
+          },
+          "threshold": 0.65
+        },
+        {
+          "model": {
+            "type": "minecraft:model",
+            "model": "ogvz:item/whispersong_pulling_2"
+          },
+          "threshold": 0.9
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "ogvz:item/whispersong_pulling_0"
+      },
+      "property": "minecraft:use_duration",
+      "scale": 0.05
+    }
+  }
+}

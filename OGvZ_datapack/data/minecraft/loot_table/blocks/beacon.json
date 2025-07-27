@@ -1,0 +1,21 @@
+{
+	"type":	"minecraft:block",
+	"pools":	[{
+			"bonus_rolls":	0,
+			"entries":	[{
+					"type":	"minecraft:item",
+					"functions":	[{
+							"function":	"minecraft:copy_components",
+							"include":	["minecraft:custom_name"],
+							"source":	"block_entity"
+						}],
+					"name":	"minecraft:beacon"
+				}],
+			"rolls":	1,
+			"conditions":	[{
+					"condition":	"minecraft:reference",
+					"name":	"ogvz:block_drops"
+				}]
+		}],
+	"random_sequence":	"minecraft:blocks/beacon"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "ogvz:item/dwarf/item/iron_rapier"
+  }
+}
