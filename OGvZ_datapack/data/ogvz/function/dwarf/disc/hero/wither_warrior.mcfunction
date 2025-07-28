@@ -141,10 +141,12 @@ give @s minecraft:bow[ \
 # Sunfury
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:4101}, \
-  minecraft:item_model="ogvz:sunfury", \
-  minecraft:unbreakable={}, \
-  minecraft:tooltip_style="ogvz:legendary", \
   minecraft:item_name={text:"Sunfury",color:"red",bold:true}, \
+  minecraft:item_model="ogvz:sunfury", \
+  minecraft:enchantments={ \
+    "minecraft:sharpness":5, \
+    "minecraft:fire_aspect":2 \
+  }, \
   minecraft:lore=[ \
     {text:" "}, \
     {text:"Phantom Slash",color:"blue",italic:false,underlined:true}, \
@@ -157,27 +159,58 @@ give @s minecraft:carrot_on_a_stick[ \
     {text:"15 second cooldown",color:"red",italic:false}, \
     {text:"Requires 30 mana",color:"red",italic:false}, \
     {text:"Weapon Ability",color:"green",italic:false}, \
-    {text:" "}, \
-    {text:"When in Main Hand:",color:"gray",italic:false}, \
-    {text:" 8 Attack Damage",color:"dark_green",italic:false}, \
-    {text:" 1.6 Attack Speed",color:"dark_green",italic:false}, \
-    {text:" 3 Attack Reach",color:"dark_green",italic:false}, \
-    {text:"Unbreakable",color:"blue",italic:false}, \
     {text:"Heroic Item",color:"gold",italic:false,bold:true} \
   ], \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:attack_damage",amount:7.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-    {type:"minecraft:attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+    { \
+      id:"minecraft:base_attack_damage", \
+      type:"minecraft:attack_damage", \
+      amount:7.0, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_attack_speed", \
+      type:"minecraft:attack_speed", \
+      amount:-2.4, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:entity_interaction_range.mainhand", \
+      type:"minecraft:entity_interaction_range", \
+      amount:0.0, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" 3 Attack Reach",color:"dark_green"} \
+      } \
+    } \
   ], \
-  minecraft:enchantments={ \
-    "minecraft:sharpness":5, \
-    "minecraft:sweeping_edge":3, \
-    "minecraft:fire_aspect":2 \
-  }, \
-  minecraft:tooltip_display={ \
-    hidden_components:[ \
-      "minecraft:unbreakable", \
-      "minecraft:attribute_modifiers" \
+  minecraft:unbreakable={}, \
+  minecraft:tooltip_style="ogvz:legendary", \
+  minecraft:max_damage=1561, \
+  minecraft:damage=0, \
+  minecraft:repairable={items:"minecraft:magma_cream"}, \
+  minecraft:weapon={}, \
+  minecraft:tool={ \
+    can_destroy_blocks_in_creative:false, \
+    damage_per_block:1, \
+    rules:[ \
+      { \
+        blocks:"#minecraft:sword_instantly_mines", \
+        speed:3.4028235e+38 \
+      }, \
+      { \
+        blocks:"minecraft:cobweb", \
+        correct_for_drops:true, \
+        speed:15.0 \
+      }, \
+      { \
+        blocks:"#minecraft:sword_efficient", \
+        speed:1.5 \
+      } \
     ] \
   } \
 ]

@@ -89,33 +89,71 @@ item replace entity @s armor.feet with minecraft:chainmail_boots[ \
 # Betrayer's Dagger
 give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:4200}, \
-  minecraft:item_model="ogvz:betrayers_dagger", \
-  minecraft:unbreakable={}, \
-  minecraft:tooltip_style="ogvz:legendary", \
   minecraft:item_name={text:"Betrayer's Dagger",color:"red",bold:true}, \
+  minecraft:item_model="ogvz:betrayers_dagger", \
   minecraft:lore=[ \
     {text:"Assassinate",color:"blue",italic:false,underlined:true}, \
-    {text:"Attacking a player from behind",color:"blue"}, \
-    {text:"will deal massive damage.",color:"blue"}, \
+    {text:"Perform an attack that deals",color:"blue"}, \
+    {text:"massive damage when striking a",color:"blue"}, \
+    {text:"player from behind.",color:"blue"}, \
     {text:"8 second cooldown",color:"red",italic:false}, \
     {text:"Weapon Ability",color:"green",italic:false}, \
-    {text:" "}, \
-    {text:"When in Main Hand:",color:"gray",italic:false}, \
-    {text:" 8.5 Attack Damage",color:"dark_green",italic:false}, \
-    {text:" \u221E Attack Speed",color:"dark_green",italic:false}, \
-    {text:" 2.5 Attack Reach",color:"dark_green",italic:false}, \
-    {text:"Unbreakable",color:"blue",italic:false}, \
     {text:"Heroic Item",color:"gold",italic:false,bold:true} \
   ], \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:attack_damage",amount:7.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-    {type:"minecraft:attack_speed",amount:19996.0,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"}, \
-    {type:"minecraft:entity_interaction_range",amount:-0.5,operation:"add_value",slot:"mainhand",id:"ogvz:mainhand"} \
+    { \
+      id:"minecraft:base_attack_damage", \
+      type:"minecraft:attack_damage", \
+      amount:7.5, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_attack_speed", \
+      type:"minecraft:attack_speed", \
+      amount:19996.0, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" ∞ Attack Speed",color:"dark_green"} \
+      } \
+    }, \
+    { \
+      id:"minecraft:entity_interaction_range.mainhand", \
+      type:"minecraft:entity_interaction_range", \
+      amount:-0.5, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" 2.5 Attack Reach",color:"dark_green"} \
+      } \
+    } \
   ], \
-  minecraft:tooltip_display={ \
-    hidden_components:[ \
-      "minecraft:unbreakable", \
-      "minecraft:attribute_modifiers" \
+  minecraft:unbreakable={}, \
+  minecraft:tooltip_style="ogvz:legendary", \
+  minecraft:max_damage=1561, \
+  minecraft:damage=0, \
+  minecraft:repairable={items:"minecraft:diamond"}, \
+  minecraft:weapon={}, \
+  minecraft:tool={ \
+    can_destroy_blocks_in_creative:false, \
+    damage_per_block:1, \
+    rules:[ \
+      { \
+        blocks:"#minecraft:sword_instantly_mines", \
+        speed:3.4028235e+38 \
+      }, \
+      { \
+        blocks:"minecraft:cobweb", \
+        correct_for_drops:true, \
+        speed:15.0 \
+      }, \
+      { \
+        blocks:"#minecraft:sword_efficient", \
+        speed:1.5 \
+      } \
     ] \
   } \
 ]
