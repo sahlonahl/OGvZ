@@ -3,11 +3,11 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-			"conditions":	[
+      "conditions":  [
         {
-					"condition":	"minecraft:reference",
-					"name":	"ogvz:block_drops"
-				}
+          "condition": "minecraft:reference",
+          "name": "ogvz:block_drops"
+        }
       ],
       "entries": [
         {

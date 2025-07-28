@@ -153,3 +153,6 @@ tellraw @a[tag=ogvz.joined_game] [ \
 
 # Play a global sound to all players that joined the game.
 execute as @a[tag=ogvz.joined_game] run playsound minecraft:entity.iron_golem.repair player @s ~ ~512 ~ 1 1 1
+
+# Dismount the player so they can move.
+ride @s dismount

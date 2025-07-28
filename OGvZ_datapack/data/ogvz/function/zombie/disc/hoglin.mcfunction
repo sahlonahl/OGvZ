@@ -174,6 +174,9 @@ execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s a
 # Give the player the Suicide Pill.
 execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 
+# Dismount the player so they can move.
+ride @s dismount
+
 # Display a hoglin message to all players that joined the game.
 tellraw @a[tag=ogvz.joined_game] [ \
   "", \

@@ -23,15 +23,15 @@ execute unless entity @s[level=50..] run title @s actionbar [ \
 ]
 execute unless entity @s[level=50..] run return 0
 
-# Check if the shrine is obstructed and.
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~-0.5 ~1.5 ~-0.5 #ogvz:go_through run tag @s add temp.fail
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~-0.5 ~1.5 ~0.5 #ogvz:go_through run tag @s add temp.fail
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~0.5 ~1.5 ~-0.5 #ogvz:go_through run tag @s add temp.fail
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~0.5 ~1.5 ~0.5 #ogvz:go_through run tag @s add temp.fail
+# Check if the shrine is obstructed.
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~-0.5 ~2.5 ~-0.5 #ogvz:go_through run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~-0.5 ~2.5 ~0.5 #ogvz:go_through run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~0.5 ~2.5 ~-0.5 #ogvz:go_through run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~0.5 ~2.5 ~0.5 #ogvz:go_through run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~-0.5 ~3.5 ~-0.5 #ogvz:go_through run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~-0.5 ~3.5 ~0.5 #ogvz:go_through run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~0.5 ~3.5 ~-0.5 #ogvz:go_through run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~0.5 ~3.5 ~0.5 #ogvz:go_through run tag @s add temp.fail
 
 # Display a fail message and return if the shrine is obstructed.
 title @s[tag=temp.fail] actionbar [ \
@@ -42,14 +42,14 @@ title @s[tag=temp.fail] actionbar [ \
 execute as @s[tag=temp.fail] run return run tag @s remove temp.fail
 
 # Check if the shrine is webbed.
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~-0.5 ~1.5 ~-0.5 minecraft:cobweb run tag @s add temp.fail
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~-0.5 ~1.5 ~0.5 minecraft:cobweb run tag @s add temp.fail
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~0.5 ~1.5 ~-0.5 minecraft:cobweb run tag @s add temp.fail
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~0.5 ~1.5 ~0.5 minecraft:cobweb run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~-0.5 ~2.5 ~-0.5 minecraft:cobweb run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~-0.5 ~2.5 ~0.5 minecraft:cobweb run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~0.5 ~2.5 ~-0.5 minecraft:cobweb run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~0.5 ~2.5 ~0.5 minecraft:cobweb run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~-0.5 ~3.5 ~-0.5 minecraft:cobweb run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~-0.5 ~3.5 ~0.5 minecraft:cobweb run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~0.5 ~3.5 ~-0.5 minecraft:cobweb run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~0.5 ~3.5 ~0.5 minecraft:cobweb run tag @s add temp.fail
 
 # Display a fail message and return if the shrine is webbed.
 title @s[tag=temp.fail] actionbar [ \

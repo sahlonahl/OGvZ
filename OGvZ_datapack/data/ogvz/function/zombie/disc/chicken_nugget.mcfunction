@@ -161,3 +161,6 @@ execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 # Give the player the punish tag and set a timer for it's removal.
 tag @s add ogvz.zombie.punish
 scoreboard players set @s ogvz.zombie.punish_timer.ticks 600
+
+# Dismount the player so they can move.
+ride @s dismount

@@ -10,7 +10,7 @@
         {
           "condition": "minecraft:reference",
           "name": "ogvz:block_drops"
-				}
+        }
       ],
       "entries": [
         {
