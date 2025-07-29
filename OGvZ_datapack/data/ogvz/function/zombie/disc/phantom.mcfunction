@@ -19,7 +19,7 @@ tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.phantom
 
 # Decreases max health by 2 hearts using an attribute.
-attribute @s minecraft:max_health modifier add ogvz.phantom.max_health -4 add_value
+attribute @s minecraft:max_health modifier add ogvz:phantom.max_health -4 add_value
 
 # Put the player on the phantom zombie team.
 team join z3PHANTOM @s

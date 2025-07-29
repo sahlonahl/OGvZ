@@ -22,8 +22,8 @@ tag @s add ogvz.zombie.class.ocelot
 tag @s add ogvz.mana
 
 # Multiply movement speed by 1.4 and nullify fall damage using attributes.
-attribute @s minecraft:movement_speed modifier add ogvz.ocelot.movement_speed 0.4 add_multiplied_total
-attribute @s minecraft:fall_damage_multiplier modifier add ogvz.ocelot.fall_damage_multiplier -1.0 add_multiplied_total
+attribute @s minecraft:movement_speed modifier add ogvz:ocelot.movement_speed 0.4 add_multiplied_total
+attribute @s minecraft:fall_damage_multiplier modifier add ogvz:ocelot.fall_damage_multiplier -1.0 add_multiplied_total
 
 # Put the player on the ocelot zombie team.
 team join z3OCELOT @s

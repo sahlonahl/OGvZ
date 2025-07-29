@@ -57,5 +57,5 @@ tag @s[predicate=ogvz:input_sneak_pressed] add ogvz.zombie.class.enderman.creati
 scoreboard players set @s ogvz.enderman.create_portal.warmup.seconds 5
 
 # Immobilizes the player using attributes.
-attribute @s minecraft:movement_speed modifier add ogvz.enderman.create_portal.movement_speed -1 add_multiplied_total
-attribute @s minecraft:jump_strength modifier add ogvz.enderman.create_portal.jump_strength -1 add_multiplied_total
+attribute @s minecraft:movement_speed modifier add ogvz:enderman.create_portal.movement_speed -1 add_multiplied_total
+attribute @s minecraft:jump_strength modifier add ogvz:enderman.create_portal.jump_strength -1 add_multiplied_total

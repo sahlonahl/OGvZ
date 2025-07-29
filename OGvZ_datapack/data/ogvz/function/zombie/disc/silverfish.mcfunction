@@ -19,7 +19,7 @@ tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.silverfish
 
 # Multiply movement speed by 1.2 using an attribute.
-attribute @s minecraft:movement_speed modifier add ogvz.silverfish.movement_speed 0.2 add_multiplied_total
+attribute @s minecraft:movement_speed modifier add ogvz:silverfish.movement_speed 0.2 add_multiplied_total
 
 # Set the silverfish egg bar to 10.
 scoreboard players set @s ogvz.silverfish.silverfish_egg.count 10

@@ -82,8 +82,8 @@ tag @s add ogvz.mana.teleporting
 scoreboard players set @s ogvz.dwarf.pearl_rod.warmup.seconds 5
 
 # Immobilize the player by multiplying their movement speed and jump strength by x0.
-attribute @s minecraft:movement_speed modifier add ogvz.pearl_rod.teleporting.movement_speed -1 add_multiplied_total
-attribute @s minecraft:jump_strength modifier add ogvz.pearl_rod.teleporting.jump_strength -1 add_multiplied_total
+attribute @s minecraft:movement_speed modifier add ogvz:pearl_rod.teleporting.movement_speed -1 add_multiplied_total
+attribute @s minecraft:jump_strength modifier add ogvz:pearl_rod.teleporting.jump_strength -1 add_multiplied_total
 
 # Give the player nausea effect.
 effect give @s minecraft:nausea 8 0 true

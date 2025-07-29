@@ -19,9 +19,9 @@ tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.spider
 
 # Multiply movement speed by 1.6, increase jump strength by 0.5 and increase safe fall distance by 12 using attributes.
-attribute @s minecraft:movement_speed modifier add ogvz.spider.movement_speed 0.6 add_multiplied_total
-attribute @s minecraft:jump_strength modifier add ogvz.spider.jump_strength 0.5 add_value
-attribute @s minecraft:safe_fall_distance modifier add ogvz.spider.safe_fall_distance 12.0 add_value
+attribute @s minecraft:movement_speed modifier add ogvz:spider.movement_speed 0.6 add_multiplied_total
+attribute @s minecraft:jump_strength modifier add ogvz:spider.jump_strength 0.5 add_value
+attribute @s minecraft:safe_fall_distance modifier add ogvz:spider.safe_fall_distance 12.0 add_value
 
 # Put the player on the spider zombie team.
 team join z2SPIDER @s

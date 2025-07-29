@@ -22,9 +22,9 @@ tag @s add ogvz.zombie.class.chillager
 tag @s add ogvz.zombie.element.ice
 
 # Multiply movement speed by 1.4, increase jump strength by 0.3 and increase safe fall distance by 6 using attributes.
-attribute @s minecraft:movement_speed modifier add ogvz.chillager.movement_speed 0.4 add_multiplied_total
-attribute @s minecraft:jump_strength modifier add ogvz.chillager.jump_strength 0.3 add_value
-attribute @s minecraft:safe_fall_distance modifier add ogvz.chillager.safe_fall_distance 6.0 add_value
+attribute @s minecraft:movement_speed modifier add ogvz:chillager.movement_speed 0.4 add_multiplied_total
+attribute @s minecraft:jump_strength modifier add ogvz:chillager.jump_strength 0.3 add_value
+attribute @s minecraft:safe_fall_distance modifier add ogvz:chillager.safe_fall_distance 6.0 add_value
 
 # Fill the invisibility bar.
 scoreboard players set @s ogvz.chillager.invisibility.duration 1200

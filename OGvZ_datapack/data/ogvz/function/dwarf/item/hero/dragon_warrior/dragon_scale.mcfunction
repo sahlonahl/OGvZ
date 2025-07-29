@@ -37,8 +37,8 @@ tag @s add ogvz.dwarf.class.hero.dragon_warrior.dragon_form
 scoreboard players set @s ogvz.dragon_warrior.dragon_scale.damage 0
 
 # Add attributes for attack damage and movement speed.
-attribute @s minecraft:attack_damage modifier add ogvz.dragon_form.attack_damage 3 add_value
-attribute @s minecraft:movement_speed modifier add ogvz.dragon_form.movement_speed 0.2 add_multiplied_total
+attribute @s minecraft:attack_damage modifier add ogvz:dragon_form.attack_damage 3 add_value
+attribute @s minecraft:movement_speed modifier add ogvz:dragon_form.movement_speed 0.2 add_multiplied_total
 
 # Add wings to the chestplate and let dragon warrior glide with them.
 item modify entity @s armor.chest ogvz:dragon_warrior_dragon_form_chestplate

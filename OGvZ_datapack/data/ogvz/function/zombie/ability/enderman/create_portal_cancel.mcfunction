@@ -26,5 +26,5 @@ scoreboard players set @s ogvz.enderman.create_portal.warmup.seconds 0
 scoreboard players set @s ogvz.enderman.create_portal.warmup.ticks 0
 
 # Remove the immobilization attributes.
-attribute @s minecraft:movement_speed modifier remove ogvz.enderman.create_portal.movement_speed
-attribute @s minecraft:jump_strength modifier remove ogvz.enderman.create_portal.jump_strength
+attribute @s minecraft:movement_speed modifier remove ogvz:enderman.create_portal.movement_speed
+attribute @s minecraft:jump_strength modifier remove ogvz:enderman.create_portal.jump_strength

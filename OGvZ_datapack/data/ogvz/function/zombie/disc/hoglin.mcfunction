@@ -19,7 +19,7 @@ tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.hoglin
 
 # Increase max health by 6 hearts using an attribute.
-attribute @s minecraft:max_health modifier add ogvz.hoglin.max_health 12 add_value
+attribute @s minecraft:max_health modifier add ogvz:hoglin.max_health 12 add_value
 
 # Put the player on the hoglin zombie team.
 team join z5HOGLIN @s

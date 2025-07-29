@@ -24,8 +24,8 @@ scoreboard players set @s ogvz.zombie.ender_eye.warmup.seconds 0
 scoreboard players set @s ogvz.zombie.ender_eye.warmup.ticks 0
 
 # Remove the immobilization attributes.
-attribute @s minecraft:movement_speed modifier remove ogvz.ender_eye.teleporting.movement_speed
-attribute @s minecraft:jump_strength modifier remove ogvz.ender_eye.teleporting.jump_strength
+attribute @s minecraft:movement_speed modifier remove ogvz:ender_eye.teleporting.movement_speed
+attribute @s minecraft:jump_strength modifier remove ogvz:ender_eye.teleporting.jump_strength
 
 # Remove the nause effect.
 effect clear @s minecraft:nausea

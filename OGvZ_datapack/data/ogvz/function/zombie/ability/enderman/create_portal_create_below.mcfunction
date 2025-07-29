@@ -8,8 +8,8 @@ tag @s remove ogvz.zombie.class.enderman.creating_portal
 tag @s remove ogvz.zombie.class.enderman.creating_portal.below
 
 # Remove the attributes if the check failed.
-attribute @s[tag=temp.fail] minecraft:movement_speed modifier remove ogvz.enderman.create_portal.movement_speed
-attribute @s[tag=temp.fail] minecraft:jump_strength modifier remove ogvz.enderman.create_portal.jump_strength
+attribute @s[tag=temp.fail] minecraft:movement_speed modifier remove ogvz:enderman.create_portal.movement_speed
+attribute @s[tag=temp.fail] minecraft:jump_strength modifier remove ogvz:enderman.create_portal.jump_strength
 
 # Play the cancel sound if the check failed.
 playsound minecraft:block.respawn_anchor.deplete player @s[tag=temp.fail] ~ ~ ~ 1 1
