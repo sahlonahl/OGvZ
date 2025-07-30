@@ -41,7 +41,7 @@ item replace entity @s armor.head with minecraft:iron_helmet[ \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -59,7 +59,7 @@ item replace entity @s armor.chest with minecraft:iron_chestplate[ \
   minecraft:item_name={text:"Golem Chestplate"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":3, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -72,7 +72,7 @@ item replace entity @s armor.legs with minecraft:iron_leggings[ \
   minecraft:item_name={text:"Golem Leggings"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":3, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -85,7 +85,7 @@ item replace entity @s armor.feet with minecraft:iron_boots[ \
   minecraft:item_name={text:"Golem Boots"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \

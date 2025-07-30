@@ -1,4 +1,4 @@
-#> Description: Handles what happens to players when they enter shrine zone or zombie spawn zone.
+#> Description: Handles what happens to players when they enter shrine zone, zombie spawn zone or ender portal zone.
 #> Note: Also handles dwarves taking damage when shrine is destroyed (lack of shrine zone).
 
 # Damage the dwarf if the shrine is gone.

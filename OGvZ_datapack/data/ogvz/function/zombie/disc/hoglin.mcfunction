@@ -33,7 +33,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":3, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -52,7 +52,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:dyed_color=13206117, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":3, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -71,7 +71,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:dyed_color=13206117, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":3, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -90,7 +90,7 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:dyed_color=13206117, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
