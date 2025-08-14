@@ -37,8 +37,8 @@ item modify entity @s[tag=temp.use.offhand,tag=!temp.enabled] weapon.offhand ogv
 
 # If ability was enabled, remove attributes and reset the base gravity attribute.
 attribute @s[tag=temp.enabled] minecraft:gravity base reset
-attribute @s[tag=temp.enabled] minecraft:gravity modifier remove ogvz.bee.hover.ascend.gravity
-attribute @s[tag=temp.enabled] minecraft:gravity modifier remove ogvz.bee.hover.descend.gravity
+attribute @s[tag=temp.enabled] minecraft:gravity modifier remove ogvz:bee.hover.ascend.gravity
+attribute @s[tag=temp.enabled] minecraft:gravity modifier remove ogvz:bee.hover.descend.gravity
 
 # If ability was disabled, set the base gravity attribute to 0.
 attribute @s[tag=!temp.enabled] minecraft:gravity base set 0

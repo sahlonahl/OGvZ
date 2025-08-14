@@ -75,6 +75,8 @@ tag @s remove ogvz.zombie.class.boss.wither
 tag @s remove ogvz.zombie.class.boss.assasin
 tag @s remove ogvz.zombie.class.boss.elder_guardian
 
+tag @s remove ogvz.zombie.zombie_spawn.resistance
+
 tag @s remove ogvz.zombie.obsidian_skull
 
 tag @s remove ogvz.zombie.aquatic

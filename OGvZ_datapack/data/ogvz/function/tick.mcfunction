@@ -20,9 +20,10 @@ execute as @a at @s run function ogvz:tick/zones
 execute as @a at @s run function ogvz:tick/frozen_custom_effect
 execute as @a at @s run function ogvz:tick/dolphins_grace_nerf
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s run function ogvz:tick/adventure_mode_toggle
-execute as @a[tag=ogvz.zombie,tag=!ogvz.zombie.class] at @s run function ogvz:tick/zombie_spawn_immobilize
+execute as @a[tag=ogvz.zombie,tag=!ogvz.zombie.class,tag=!ogvz.dead] at @s run function ogvz:tick/zombie_spawn_immobilize
 execute as @e[type=minecraft:player,tag=ogvz.dead] at @s run function ogvz:tick/player_respawn
 execute as @e[type=minecraft:item,tag=!ogvz.processed] at @s run function ogvz:tick/check_item
+execute as @e[type=#minecraft:arrows,tag=!ogvz.arrow.processed] at @s run function ogvz:tick/arrow_check
 #execute as @e[scores={ogvz.misc.air_toggle=-2147483648..2147483647}] at @s run function ogvz:tick/air_toggle
 
 # Detect functions
@@ -48,4 +49,3 @@ execute as @a[tag=ogvz.mana,scores={ogvz.dwarf.mana_buildup.mana=..-1}] at @s ru
 
 # Misc functions
 execute as @a[tag=ogvz.zombie] at @s run function ogvz:tick/innate_abilities
-execute as @e[type=#minecraft:arrows,tag=!ogvz.arrow.processed] at @s run function ogvz:tick/arrow_check

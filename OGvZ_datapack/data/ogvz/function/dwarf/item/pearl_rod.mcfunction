@@ -23,15 +23,15 @@ execute unless entity @s[level=50..] run title @s actionbar [ \
 ]
 execute unless entity @s[level=50..] run return 0
 
-# Check if the shrine is obstructed and.
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~-0.5 ~1.5 ~-0.5 #ogvz:go_through run tag @s add temp.fail
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~-0.5 ~1.5 ~0.5 #ogvz:go_through run tag @s add temp.fail
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~0.5 ~1.5 ~-0.5 #ogvz:go_through run tag @s add temp.fail
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~0.5 ~1.5 ~0.5 #ogvz:go_through run tag @s add temp.fail
+# Check if the shrine is obstructed.
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~-0.5 ~2.5 ~-0.5 #ogvz:go_through run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~-0.5 ~2.5 ~0.5 #ogvz:go_through run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~0.5 ~2.5 ~-0.5 #ogvz:go_through run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~0.5 ~2.5 ~0.5 #ogvz:go_through run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~-0.5 ~3.5 ~-0.5 #ogvz:go_through run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~-0.5 ~3.5 ~0.5 #ogvz:go_through run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~0.5 ~3.5 ~-0.5 #ogvz:go_through run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] unless block ~0.5 ~3.5 ~0.5 #ogvz:go_through run tag @s add temp.fail
 
 # Display a fail message and return if the shrine is obstructed.
 title @s[tag=temp.fail] actionbar [ \
@@ -42,14 +42,14 @@ title @s[tag=temp.fail] actionbar [ \
 execute as @s[tag=temp.fail] run return run tag @s remove temp.fail
 
 # Check if the shrine is webbed.
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~-0.5 ~1.5 ~-0.5 minecraft:cobweb run tag @s add temp.fail
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~-0.5 ~1.5 ~0.5 minecraft:cobweb run tag @s add temp.fail
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~0.5 ~1.5 ~-0.5 minecraft:cobweb run tag @s add temp.fail
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~0.5 ~1.5 ~0.5 minecraft:cobweb run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~-0.5 ~2.5 ~-0.5 minecraft:cobweb run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~-0.5 ~2.5 ~0.5 minecraft:cobweb run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~0.5 ~2.5 ~-0.5 minecraft:cobweb run tag @s add temp.fail
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~0.5 ~2.5 ~0.5 minecraft:cobweb run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~-0.5 ~3.5 ~-0.5 minecraft:cobweb run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~-0.5 ~3.5 ~0.5 minecraft:cobweb run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~0.5 ~3.5 ~-0.5 minecraft:cobweb run tag @s add temp.fail
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if block ~0.5 ~3.5 ~0.5 minecraft:cobweb run tag @s add temp.fail
 
 # Display a fail message and return if the shrine is webbed.
 title @s[tag=temp.fail] actionbar [ \
@@ -82,8 +82,8 @@ tag @s add ogvz.mana.teleporting
 scoreboard players set @s ogvz.dwarf.pearl_rod.warmup.seconds 5
 
 # Immobilize the player by multiplying their movement speed and jump strength by x0.
-attribute @s minecraft:movement_speed modifier add ogvz.pearl_rod.teleporting.movement_speed -1 add_multiplied_total
-attribute @s minecraft:jump_strength modifier add ogvz.pearl_rod.teleporting.jump_strength -1 add_multiplied_total
+attribute @s minecraft:movement_speed modifier add ogvz:pearl_rod.teleporting.movement_speed -1 add_multiplied_total
+attribute @s minecraft:jump_strength modifier add ogvz:pearl_rod.teleporting.jump_strength -1 add_multiplied_total
 
 # Give the player nausea effect.
 effect give @s minecraft:nausea 8 0 true

@@ -30,5 +30,5 @@ tellraw @a[tag=ogvz.zombie] [ \
 # Make the shrine health bossbar visible.
 bossbar set ogvz:shrine_health visible true
 
-# Give all the dead zombies spawn discs.
-execute as @a[tag=ogvz.zombie,tag=!ogvz.zombie.class] at @s run function ogvz:zombie/give_discs
+# Give all the zombies spawn discs (exclude dead players, they will get spawn discs upon respawning).
+execute as @a[tag=ogvz.zombie,tag=!ogvz.zombie.class,tag=!ogvz.dead] at @s run function ogvz:zombie/give_discs

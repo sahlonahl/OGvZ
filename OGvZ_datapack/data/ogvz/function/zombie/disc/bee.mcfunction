@@ -19,8 +19,8 @@ tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.bee
 
 # Decrease health by 2 hearts and nullify fall damage using attributes.
-attribute @s minecraft:max_health modifier add ogvz.bee.max_health -4 add_value
-attribute @s minecraft:fall_damage_multiplier modifier add ogvz.bee.fall_damage_multiplier -1.0 add_multiplied_total
+attribute @s minecraft:max_health modifier add ogvz:bee.max_health -4 add_value
+attribute @s minecraft:fall_damage_multiplier modifier add ogvz:bee.fall_damage_multiplier -1.0 add_multiplied_total
 
 # Put the player on the bee zombie team.
 team join z3BEE @s
@@ -191,3 +191,6 @@ execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 # Give the player the punish tag and set a timer for it's removal.
 tag @s add ogvz.zombie.punish
 scoreboard players set @s ogvz.zombie.punish_timer.ticks 600
+
+# Dismount the player so they can move.
+ride @s dismount

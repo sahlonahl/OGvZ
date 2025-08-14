@@ -12,4 +12,4 @@ title @s[tag=temp.teleported] actionbar [ \
 ]
 
 # Deal high cyanide type damage to the player.
-damage @s 10000 ogvz:cyanide
+damage @s 10000 ogvz:cyanide by @s

@@ -48,6 +48,9 @@ execute unless entity @e[type=minecraft:player,tag=ogvz.dwarf] run tellraw @a [ 
 scoreboard objectives remove temp.timer.minutes
 scoreboard objectives remove temp.const.1200
 
+# Hide the shrine health bossbar.
+bossbar set ogvz:shrine_health visible false
+
 # Replace the gold blocks on the shrine with gilded blackstone.
 execute at @e[type=minecraft:marker,tag=ogvz.marker.shrine_block] run setblock ~ ~ ~ minecraft:gilded_blackstone
 

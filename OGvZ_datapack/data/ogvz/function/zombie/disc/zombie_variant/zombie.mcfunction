@@ -31,7 +31,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -50,7 +50,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:dyed_color=44975, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":3, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -69,7 +69,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:dyed_color=4602533, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":3, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -88,7 +88,7 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:dyed_color=4602533, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -251,3 +251,6 @@ execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 # Give the player the punish tag and set a timer for it's removal.
 tag @s add ogvz.zombie.punish
 scoreboard players set @s ogvz.zombie.punish_timer.ticks 600
+
+# Dismount the player so they can move.
+ride @s dismount

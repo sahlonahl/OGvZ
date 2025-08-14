@@ -15,8 +15,8 @@ give @s minecraft:carrot_on_a_stick[ \
     ], \
     [ \
       {text:"DEF: ",color:"red",italic:false}, \
-      {text:"⭐⭐⭐⭐",color:"green",italic:false}, \
-      {text:"⭐",color:"gray",italic:false} \
+      {text:"⭐⭐⭐⭐⭐",color:"aqua",italic:false}, \
+      {text:"",color:"gray",italic:false} \
     ], \
     [ \
       {text:"MOV: ",color:"red",italic:false}, \

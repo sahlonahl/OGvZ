@@ -24,8 +24,8 @@ scoreboard players set @s ogvz.dwarf.pearl_rod.warmup.seconds 0
 scoreboard players set @s ogvz.dwarf.pearl_rod.warmup.ticks 0
 
 # Remove the immobilization attributes from the player.
-attribute @s minecraft:movement_speed modifier remove ogvz.pearl_rod.teleporting.movement_speed
-attribute @s minecraft:jump_strength modifier remove ogvz.pearl_rod.teleporting.jump_strength
+attribute @s minecraft:movement_speed modifier remove ogvz:pearl_rod.teleporting.movement_speed
+attribute @s minecraft:jump_strength modifier remove ogvz:pearl_rod.teleporting.jump_strength
 
 # Clear the nausea effect.
 effect clear @s minecraft:nausea

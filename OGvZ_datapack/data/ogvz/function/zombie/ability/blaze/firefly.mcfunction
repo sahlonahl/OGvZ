@@ -60,7 +60,7 @@ playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1 1.8
 scoreboard players set @s ogvz.blaze.firefly.duration.ticks 40
 
 # Multiply gravity by x0 using an attribute.
-attribute @s minecraft:gravity modifier add ogvz.blaze.firefly.gravity -1 add_multiplied_total
+attribute @s minecraft:gravity modifier add ogvz:blaze.firefly.gravity -1 add_multiplied_total
 
 # Give invisibility and damage immunity.
 effect give @s minecraft:invisibility infinite 0 true

@@ -19,9 +19,9 @@ tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.chicken_nugget
 
 # Multiply movement speed by 1.4, increase jump strength by 0.2 and nullify fall damage using attributes.
-attribute @s minecraft:movement_speed modifier add ogvz.chicken_nugget.movement_speed 0.4 add_multiplied_total
-attribute @s minecraft:jump_strength modifier add ogvz.chicken_nugget.jump_strength 0.2 add_value
-attribute @s minecraft:fall_damage_multiplier modifier add ogvz.chicken_nugget.fall_damage_multiplier -1.0 add_multiplied_total
+attribute @s minecraft:movement_speed modifier add ogvz:chicken_nugget.movement_speed 0.4 add_multiplied_total
+attribute @s minecraft:jump_strength modifier add ogvz:chicken_nugget.jump_strength 0.2 add_value
+attribute @s minecraft:fall_damage_multiplier modifier add ogvz:chicken_nugget.fall_damage_multiplier -1.0 add_multiplied_total
 
 # Put the player on the chicken nugget zombie team.
 team join z3CHICKEN_NUGGET @s
@@ -161,3 +161,6 @@ execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 # Give the player the punish tag and set a timer for it's removal.
 tag @s add ogvz.zombie.punish
 scoreboard players set @s ogvz.zombie.punish_timer.ticks 600
+
+# Dismount the player so they can move.
+ride @s dismount

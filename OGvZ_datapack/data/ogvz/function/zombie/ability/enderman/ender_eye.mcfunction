@@ -44,8 +44,8 @@ tag @s add ogvz.zombie.teleporting
 scoreboard players set @s ogvz.zombie.ender_eye.warmup.seconds 5
 
 # Immobilize the player using attributes.
-attribute @s minecraft:movement_speed modifier add ogvz.ender_eye.teleporting.movement_speed -1 add_multiplied_total
-attribute @s minecraft:jump_strength modifier add ogvz.ender_eye.teleporting.jump_strength -1 add_multiplied_total
+attribute @s minecraft:movement_speed modifier add ogvz:ender_eye.teleporting.movement_speed -1 add_multiplied_total
+attribute @s minecraft:jump_strength modifier add ogvz:ender_eye.teleporting.jump_strength -1 add_multiplied_total
 
 # Give the player the nausea effect.
 effect give @s minecraft:nausea 8 0 true

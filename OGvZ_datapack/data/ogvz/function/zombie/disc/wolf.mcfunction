@@ -19,9 +19,9 @@ tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.wolf
 
 # Multiply movement speed by 1.4, increase jump strength by 0.2 and increase safe fall distance by 3 using attributes.
-attribute @s minecraft:movement_speed modifier add ogvz.wolf.movement_speed 0.4 add_multiplied_total
-attribute @s minecraft:jump_strength modifier add ogvz.wolf.jump_strength 0.2 add_value
-attribute @s minecraft:safe_fall_distance modifier add ogvz.wolf.safe_fall_distance 3.0 add_value
+attribute @s minecraft:movement_speed modifier add ogvz:wolf.movement_speed 0.4 add_multiplied_total
+attribute @s minecraft:jump_strength modifier add ogvz:wolf.jump_strength 0.2 add_value
+attribute @s minecraft:safe_fall_distance modifier add ogvz:wolf.safe_fall_distance 3.0 add_value
 
 # Put the player on the wolf zombie team.
 team join z3WOLF @s
@@ -176,3 +176,6 @@ execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 # Give the player the punish tag and set a timer for it's removal.
 tag @s add ogvz.zombie.punish
 scoreboard players set @s ogvz.zombie.punish_timer.ticks 600
+
+# Dismount the player so they can move.
+ride @s dismount

@@ -11,11 +11,11 @@ title @s actionbar [ \
 tag @s remove ogvz.mana.teleporting
 
 # Remove the immobilization attributes from the player.
-attribute @s minecraft:movement_speed modifier remove ogvz.pearl_rod.teleporting.movement_speed
-attribute @s minecraft:jump_strength modifier remove ogvz.pearl_rod.teleporting.jump_strength
+attribute @s minecraft:movement_speed modifier remove ogvz:pearl_rod.teleporting.movement_speed
+attribute @s minecraft:jump_strength modifier remove ogvz:pearl_rod.teleporting.jump_strength
 
 # Teleport the player on top of the shrine.
-execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] run tp @s ~ ~2 ~
+execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] run tp @s ~ ~2.1 ~
 
 # Play a sound at the old and new player position.
 playsound minecraft:entity.zombie_villager.converted player @a ~ ~ ~ 1 2

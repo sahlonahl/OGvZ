@@ -19,7 +19,7 @@ tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.hoglin
 
 # Increase max health by 6 hearts using an attribute.
-attribute @s minecraft:max_health modifier add ogvz.hoglin.max_health 12 add_value
+attribute @s minecraft:max_health modifier add ogvz:hoglin.max_health 12 add_value
 
 # Put the player on the hoglin zombie team.
 team join z5HOGLIN @s
@@ -33,7 +33,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":3, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -52,7 +52,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:dyed_color=13206117, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":3, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -71,7 +71,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:dyed_color=13206117, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":3, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -90,7 +90,7 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:dyed_color=13206117, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -173,6 +173,9 @@ execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s a
 
 # Give the player the Suicide Pill.
 execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
+
+# Dismount the player so they can move.
+ride @s dismount
 
 # Display a hoglin message to all players that joined the game.
 tellraw @a[tag=ogvz.joined_game] [ \

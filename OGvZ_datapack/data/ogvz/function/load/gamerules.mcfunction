@@ -1,5 +1,6 @@
 #> Description: Properly configures the game rules.
 
+gamerule commandBlockOutput false
 gamerule disableRaids true
 gamerule doDaylightCycle false
 gamerule doInsomnia false

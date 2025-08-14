@@ -7,8 +7,8 @@ tag @s remove ogvz.dwarf.class.hero.dragon_warrior.dragon_form
 scoreboard players set @s ogvz.dragon_warrior.dragon_scale.cooldown.seconds 300
 
 # Remove the dragon form attributes.
-attribute @s minecraft:attack_damage modifier remove ogvz.dragon_form.attack_damage
-attribute @s minecraft:movement_speed modifier remove ogvz.dragon_form.movement_speed
+attribute @s minecraft:attack_damage modifier remove ogvz:dragon_form.attack_damage
+attribute @s minecraft:movement_speed modifier remove ogvz:dragon_form.movement_speed
 
 # Remove wings from the chestplate and disable gliding.
 item modify entity @s armor.chest ogvz:dragon_warrior_normal_form_chestplate

@@ -22,8 +22,8 @@ tag @s add ogvz.zombie.class.ocelot
 tag @s add ogvz.mana
 
 # Multiply movement speed by 1.4 and nullify fall damage using attributes.
-attribute @s minecraft:movement_speed modifier add ogvz.ocelot.movement_speed 0.4 add_multiplied_total
-attribute @s minecraft:fall_damage_multiplier modifier add ogvz.ocelot.fall_damage_multiplier -1.0 add_multiplied_total
+attribute @s minecraft:movement_speed modifier add ogvz:ocelot.movement_speed 0.4 add_multiplied_total
+attribute @s minecraft:fall_damage_multiplier modifier add ogvz:ocelot.fall_damage_multiplier -1.0 add_multiplied_total
 
 # Put the player on the ocelot zombie team.
 team join z3OCELOT @s
@@ -180,3 +180,6 @@ execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 # Give the player the punish tag and set a timer for it's removal.
 tag @s add ogvz.zombie.punish
 scoreboard players set @s ogvz.zombie.punish_timer.ticks 600
+
+# Dismount the player so they can move.
+ride @s dismount

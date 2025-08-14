@@ -7,7 +7,7 @@
         {
           "condition": "minecraft:reference",
           "name": "ogvz:block_drops"
-				}
+        }
       ],
       "entries": [
         {
@@ -70,7 +70,7 @@
                         "color": "blue"
                       },
                       {
-                        "text": "Brew into mundane potions.",
+                        "text": "Use as brewing ingredient.",
                         "color": "blue"
                       }
                     ]

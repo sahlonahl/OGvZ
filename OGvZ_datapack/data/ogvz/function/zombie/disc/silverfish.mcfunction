@@ -19,7 +19,7 @@ tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.silverfish
 
 # Multiply movement speed by 1.2 using an attribute.
-attribute @s minecraft:movement_speed modifier add ogvz.silverfish.movement_speed 0.2 add_multiplied_total
+attribute @s minecraft:movement_speed modifier add ogvz:silverfish.movement_speed 0.2 add_multiplied_total
 
 # Set the silverfish egg bar to 10.
 scoreboard players set @s ogvz.silverfish.silverfish_egg.count 10
@@ -173,3 +173,6 @@ execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 # Give the player the punish tag and set a timer for it's removal.
 tag @s add ogvz.zombie.punish
 scoreboard players set @s ogvz.zombie.punish_timer.ticks 600
+
+# Dismount the player so they can move.
+ride @s dismount

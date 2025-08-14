@@ -20,14 +20,14 @@ tag @s add ogvz.zombie.class.golem
 
 # Increase max health by 10 hearts, multiply attack damage by 1000, multiply attack speed by 0.25, increase knocback resistance by 100%,
 # increase explosion knockback resistance by 100%, multiply movement speed by 0.4, multiply jump strength by 0, nullify fall damage using attributes.
-attribute @s minecraft:max_health modifier add ogvz.golem.max_health 20.0 add_value
-attribute @s minecraft:attack_damage modifier add ogvz.golem.attack_damage 999.0 add_multiplied_total
-attribute @s minecraft:attack_speed modifier add ogvz.golem.attack_speed -0.75 add_multiplied_total
-attribute @s minecraft:knockback_resistance modifier add ogvz.golem.knockback_resistance 1.0 add_value
-attribute @s minecraft:explosion_knockback_resistance modifier add ogvz.golem.explosion_knockback_resistance 1.0 add_value
-attribute @s minecraft:movement_speed modifier add ogvz.golem.movement_speed -0.6 add_multiplied_total
-attribute @s minecraft:jump_strength modifier add ogvz.golem.jump_strength -1.0 add_multiplied_total
-attribute @s minecraft:fall_damage_multiplier modifier add ogvz.golem.fall_damage_multiplier -1.0 add_multiplied_total
+attribute @s minecraft:max_health modifier add ogvz:golem.max_health 20.0 add_value
+attribute @s minecraft:attack_damage modifier add ogvz:golem.attack_damage 999.0 add_multiplied_total
+attribute @s minecraft:attack_speed modifier add ogvz:golem.attack_speed -0.75 add_multiplied_total
+attribute @s minecraft:knockback_resistance modifier add ogvz:golem.knockback_resistance 1.0 add_value
+attribute @s minecraft:explosion_knockback_resistance modifier add ogvz:golem.explosion_knockback_resistance 1.0 add_value
+attribute @s minecraft:movement_speed modifier add ogvz:golem.movement_speed -0.6 add_multiplied_total
+attribute @s minecraft:jump_strength modifier add ogvz:golem.jump_strength -1.0 add_multiplied_total
+attribute @s minecraft:fall_damage_multiplier modifier add ogvz:golem.fall_damage_multiplier -1.0 add_multiplied_total
 
 # Put the player on the golem zombie team.
 team join z6GOLEM @s
@@ -41,7 +41,7 @@ item replace entity @s armor.head with minecraft:iron_helmet[ \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -59,7 +59,7 @@ item replace entity @s armor.chest with minecraft:iron_chestplate[ \
   minecraft:item_name={text:"Golem Chestplate"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":3, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -72,7 +72,7 @@ item replace entity @s armor.legs with minecraft:iron_leggings[ \
   minecraft:item_name={text:"Golem Leggings"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":3, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -85,7 +85,7 @@ item replace entity @s armor.feet with minecraft:iron_boots[ \
   minecraft:item_name={text:"Golem Boots"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -153,3 +153,6 @@ tellraw @a[tag=ogvz.joined_game] [ \
 
 # Play a global sound to all players that joined the game.
 execute as @a[tag=ogvz.joined_game] run playsound minecraft:entity.iron_golem.repair player @s ~ ~512 ~ 1 1 1
+
+# Dismount the player so they can move.
+ride @s dismount

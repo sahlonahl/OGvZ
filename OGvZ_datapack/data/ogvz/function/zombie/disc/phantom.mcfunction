@@ -19,7 +19,7 @@ tag @s add ogvz.zombie.class
 tag @s add ogvz.zombie.class.phantom
 
 # Decreases max health by 2 hearts using an attribute.
-attribute @s minecraft:max_health modifier add ogvz.phantom.max_health -4 add_value
+attribute @s minecraft:max_health modifier add ogvz:phantom.max_health -4 add_value
 
 # Put the player on the phantom zombie team.
 team join z3PHANTOM @s
@@ -209,3 +209,6 @@ execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
 # Give the player the punish tag and set a timer for it's removal.
 tag @s add ogvz.zombie.punish
 scoreboard players set @s ogvz.zombie.punish_timer.ticks 600
+
+# Dismount the player so they can move.
+ride @s dismount
