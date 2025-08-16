@@ -135,6 +135,56 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:tooltip_style="ogvz:legendary", \
   minecraft:max_damage=1561, \
   minecraft:damage=0, \
+  minecraft:repairable={items:"minecraft:diamond"} \
+]
+#give @s minecraft:carrot_on_a_stick[ \
+  minecraft:custom_data={active_id:4200}, \
+  minecraft:item_name={text:"Betrayer's Dagger",color:"red",bold:true}, \
+  minecraft:item_model="ogvz:betrayers_dagger", \
+  minecraft:lore=[ \
+    {text:"Assassinate",color:"blue",italic:false,underlined:true}, \
+    {text:"Perform an attack that deals",color:"blue"}, \
+    {text:"massive damage when striking a",color:"blue"}, \
+    {text:"player from behind.",color:"blue"}, \
+    {text:"8 second cooldown",color:"red",italic:false}, \
+    {text:"Weapon Ability",color:"green",italic:false}, \
+    {text:"Heroic Item",color:"gold",italic:false,bold:true} \
+  ], \
+  minecraft:attribute_modifiers=[ \
+    { \
+      id:"minecraft:base_attack_damage", \
+      type:"minecraft:attack_damage", \
+      amount:7.5, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_attack_speed", \
+      type:"minecraft:attack_speed", \
+      amount:19996.0, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" ∞ Attack Speed",color:"dark_green"} \
+      } \
+    }, \
+    { \
+      id:"minecraft:entity_interaction_range.mainhand", \
+      type:"minecraft:entity_interaction_range", \
+      amount:-0.5, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" 2.5 Attack Reach",color:"dark_green"} \
+      } \
+    } \
+  ], \
+  minecraft:unbreakable={}, \
+  minecraft:tooltip_style="ogvz:legendary", \
+  minecraft:max_damage=1561, \
+  minecraft:damage=0, \
   minecraft:repairable={items:"minecraft:diamond"}, \
   minecraft:weapon={}, \
   minecraft:tool={ \

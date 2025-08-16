@@ -149,11 +149,10 @@ give @s minecraft:redstone_ore[ \
     {text:"Mine to get redstone.",color:"blue"} \
   ] \
 ] 4
-# Coal x8
-give @s minecraft:coal[ \
+# Coal Ore x8
+give @s minecraft:coal_ore[ \
   minecraft:lore=[ \
-    {text:"Share with baker.",color:"blue"}, \
-    {text:"Use to fuel the furnace.",color:"blue"} \
+    {text:"Mine to get coal.",color:"blue"} \
   ] \
 ] 8
 # Legendary Book

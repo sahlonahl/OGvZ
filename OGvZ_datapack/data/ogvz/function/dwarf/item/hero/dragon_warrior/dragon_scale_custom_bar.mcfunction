@@ -3,8 +3,8 @@
 scoreboard objectives add temp.custom_bar_value dummy
 scoreboard objectives add temp.max_value dummy
 
-# The custom bar is 69 pixels wide from the inside.
-scoreboard players set @s temp.custom_bar_value 69
+# The custom bar has 70 different fullness stages. 
+scoreboard players set @s temp.custom_bar_value 70
 
 # Set the maximum damage.
 # If you have changed the max damage, you also have to change this to that value.

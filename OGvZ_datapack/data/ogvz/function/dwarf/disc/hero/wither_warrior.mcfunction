@@ -192,6 +192,61 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:tooltip_style="ogvz:legendary", \
   minecraft:max_damage=1561, \
   minecraft:damage=0, \
+  minecraft:repairable={items:"minecraft:magma_cream"} \
+]
+#give @s minecraft:carrot_on_a_stick[ \
+  minecraft:custom_data={active_id:4101}, \
+  minecraft:item_name={text:"Sunfury",color:"red",bold:true}, \
+  minecraft:item_model="ogvz:sunfury", \
+  minecraft:enchantments={ \
+    "minecraft:sharpness":5, \
+    "minecraft:fire_aspect":2 \
+  }, \
+  minecraft:lore=[ \
+    {text:" "}, \
+    {text:"Phantom Slash",color:"blue",italic:false,underlined:true}, \
+    {text:"Teleport forward a short",color:"blue"}, \
+    {text:"distance.",color:"blue"}, \
+    {text:"All zombies you pass through",color:"blue"}, \
+    {text:"will be damaged and will have",color:"blue"}, \
+    {text:"weakness, slowness and blindness",color:"blue"}, \
+    {text:"applied to them.",color:"blue"}, \
+    {text:"15 second cooldown",color:"red",italic:false}, \
+    {text:"Requires 30 mana",color:"red",italic:false}, \
+    {text:"Weapon Ability",color:"green",italic:false}, \
+    {text:"Heroic Item",color:"gold",italic:false,bold:true} \
+  ], \
+  minecraft:attribute_modifiers=[ \
+    { \
+      id:"minecraft:base_attack_damage", \
+      type:"minecraft:attack_damage", \
+      amount:7.0, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_attack_speed", \
+      type:"minecraft:attack_speed", \
+      amount:-2.4, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:entity_interaction_range.mainhand", \
+      type:"minecraft:entity_interaction_range", \
+      amount:0.0, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" 3 Attack Reach",color:"dark_green"} \
+      } \
+    } \
+  ], \
+  minecraft:unbreakable={}, \
+  minecraft:tooltip_style="ogvz:legendary", \
+  minecraft:max_damage=1561, \
+  minecraft:damage=0, \
   minecraft:repairable={items:"minecraft:magma_cream"}, \
   minecraft:weapon={}, \
   minecraft:tool={ \

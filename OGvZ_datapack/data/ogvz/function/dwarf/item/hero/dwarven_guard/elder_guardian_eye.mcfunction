@@ -54,10 +54,10 @@ execute if entity @s[predicate=ogvz:is_inside_water] as @n[type=minecraft:marker
 execute unless entity @s[predicate=ogvz:is_inside_water] as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:dwarf/item/hero/dwarven_guard/elder_guardian_eye_short_loop
 
 # Deals damage to all players who have been hit by the ray. Damage is increased if the user is submerged in water.
-execute if entity @s[predicate=ogvz:is_inside_water] as @a[tag=temp.hit,tag=zombies] run damage @s 24 ogvz:electric by @p[tag=temp.ray_origin]
-execute unless entity @s[predicate=ogvz:is_inside_water] as @a[tag=temp.hit,tag=zombies] run damage @s 16 ogvz:electric by @p[tag=temp.ray_origin]
-execute if entity @s[predicate=ogvz:is_inside_water] as @a[tag=temp.hit,tag=dwarves] run damage @s 6 ogvz:electric by @p[tag=temp.ray_origin]
-execute unless entity @s[predicate=ogvz:is_inside_water] as @a[tag=temp.hit,tag=dwarves] run damage @s 4 ogvz:electric by @p[tag=temp.ray_origin]
+execute if entity @s[predicate=ogvz:is_inside_water] as @a[tag=temp.hit,tag=ogvz.zombie] run damage @s 24 ogvz:electric by @p[tag=temp.ray_origin]
+execute unless entity @s[predicate=ogvz:is_inside_water] as @a[tag=temp.hit,tag=ogvz.zombie] run damage @s 16 ogvz:electric by @p[tag=temp.ray_origin]
+execute if entity @s[predicate=ogvz:is_inside_water] as @a[tag=temp.hit,tag=ogvz.dwarf] run damage @s 6 ogvz:electric by @p[tag=temp.ray_origin]
+execute unless entity @s[predicate=ogvz:is_inside_water] as @a[tag=temp.hit,tag=ogvz.dwarf] run damage @s 4 ogvz:electric by @p[tag=temp.ray_origin]
 
 # Gets rid of the ray.
 kill @e[type=minecraft:marker,tag=temp.ray]

@@ -128,6 +128,51 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:tooltip_style="ogvz:legendary", \
   minecraft:max_damage=32, \
   minecraft:damage=0, \
+  minecraft:repairable={items:"minecraft:gold_ingot"} \
+]
+#give @s minecraft:carrot_on_a_stick[ \
+  minecraft:custom_data={active_id:4000}, \
+  minecraft:item_name={text:"Golden Flail",color:"gold",bold:true}, \
+  minecraft:item_model="ogvz:golden_flail", \
+  minecraft:lore=[ \
+    {text:"Conjure Wall",color:"blue",italic:false,underlined:true}, \
+    {text:"Conjures a stone brick wall in",color:"blue"}, \
+    {text:"front of you.",color:"blue"}, \
+    {text:"Requires 8 mana",color:"red",italic:false}, \
+    {text:"Weapon Ability",color:"green",italic:false}, \
+    {text:"Heroic Item",color:"gold",italic:false,bold:true} \
+  ], \
+  minecraft:attribute_modifiers=[ \
+    { \
+      id:"minecraft:base_attack_damage", \
+      type:"minecraft:attack_damage", \
+      amount:11.0, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:base_attack_speed", \
+      type:"minecraft:attack_speed", \
+      amount:-2.7, \
+      operation:"add_value", \
+      slot:"mainhand" \
+    }, \
+    { \
+      id:"minecraft:entity_interaction_range.mainhand", \
+      type:"minecraft:entity_interaction_range", \
+      amount:0.0, \
+      operation:"add_value", \
+      slot:"mainhand", \
+      display:{ \
+        type:"override", \
+        value:{text:" 3 Attack Reach",color:"dark_green"} \
+      } \
+    } \
+  ], \
+  minecraft:unbreakable={}, \
+  minecraft:tooltip_style="ogvz:legendary", \
+  minecraft:max_damage=32, \
+  minecraft:damage=0, \
   minecraft:repairable={items:"minecraft:gold_ingot"}, \
   minecraft:weapon={}, \
   minecraft:tool={ \
