@@ -441,13 +441,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:coal",
+          "name": "minecraft:coal_ore",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 3,
-                "max": 4
+                "max": 6
               }
             },
             {
@@ -455,11 +455,7 @@
               "components": {
                 "minecraft:lore": [
                   {
-                    "text": "Share with baker.",
-                    "color": "blue"
-                  },
-                  {
-                    "text": "Use to fuel the furnace.",
+                    "text": "Mine to get coal.",
                     "color": "blue"
                   }
                 ]

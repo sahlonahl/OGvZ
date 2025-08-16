@@ -13,4 +13,4 @@ execute as @s[scores={ogvz.inventory.evolution=0}] run return 0
 execute at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:112}}}} run scoreboard players add @s ogvz.piglin.evolution.progress 1
 
 # Evolve the player if they have gained enough experience.
-execute as @s[scores={ogvz.piglin.evolution.progress=100..}] at @s run function ogvz:zombie/ability/piglin/evolution_evolve
+execute as @s[scores={ogvz.piglin.evolution.progress=64..}] at @s run function ogvz:zombie/ability/piglin/evolution_evolve

@@ -9,7 +9,7 @@ scoreboard players set @s temp.playsound_value 42
 
 # Set the maximum experience.
 # If you have changed the max experience, you also have to change this to that value.
-scoreboard players set @s temp.max_value 99
+scoreboard players set @s temp.max_value 64
 
 # Calculate the sound pitch.
 # This can be represented as: custom bar width * current value / max value

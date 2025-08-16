@@ -4,7 +4,7 @@
 scoreboard players set @s ogvz.blaze.firefly.duration.ticks 0
 
 # Remove the gravity attribute modifier.
-attribute @s minecraft:gravity modifier remove minecraft:ogvz.blaze.firefly.gravity
+attribute @s minecraft:gravity modifier remove ogvz:blaze.firefly.gravity
 
 # Remove the invisibility and resistance effects.
 effect clear @s minecraft:invisibility

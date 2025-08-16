@@ -4,13 +4,12 @@
 scoreboard objectives add temp.custom_bar_value dummy
 scoreboard objectives add temp.max_value dummy
 
-# The custom bar is 69 pixels wide from the inside.
-scoreboard players set @s temp.custom_bar_value 69
+# The custom bar has 70 different fullness stages. 
+scoreboard players set @s temp.custom_bar_value 70
 
 # Set the maximum experience.
 # If you have changed the max experience, you also have to change this to that value.
-# Decremented by 1 to show the bar full before it's hidden.
-scoreboard players set @s temp.max_value 99
+scoreboard players set @s temp.max_value 64
 
 # Calculate the custom bar fullness.
 # This can be represented as: custom bar width * current value / max value

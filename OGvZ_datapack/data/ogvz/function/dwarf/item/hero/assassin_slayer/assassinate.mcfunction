@@ -41,16 +41,16 @@ execute if score @s temp.rotation.p2 >= @s temp.rotation.p1 run scoreboard playe
 execute if score @s temp.rotation.p2 < @s temp.rotation.p1 store result score @s temp.rotation.delta run scoreboard players get @s temp.rotation.p1
 execute if score @s temp.rotation.p2 < @s temp.rotation.p1 run scoreboard players operation @s temp.rotation.delta -= @s temp.rotation.p2
 
-# Deal big damage, play a sound and show particles if the rotation difference is between ±60°.
-execute as @s[scores={temp.rotation.delta=-60000..60000}] run damage @p[tag=temp.hit] 24 minecraft:player_attack by @s
-execute as @s[scores={temp.rotation.delta=-60000..60000}] at @p[tag=temp.hit] run playsound minecraft:item.trident.hit player @a ~ ~ ~ 1 1
-execute as @s[scores={temp.rotation.delta=-60000..60000}] at @p[tag=temp.hit] run particle minecraft:dust{color:[0.6,0.0,0.0],scale:1.0} ~ ~1.0 ~ 0.2 0.2 0.2 0 20
+# Deal big damage, play a sound and show particles if the rotation difference is between ±90°.
+execute as @s[scores={temp.rotation.delta=-90000..90000}] run damage @p[tag=temp.hit] 24 minecraft:player_attack by @s
+execute as @s[scores={temp.rotation.delta=-90000..90000}] at @p[tag=temp.hit] run playsound minecraft:item.trident.hit player @a ~ ~ ~ 1 1
+execute as @s[scores={temp.rotation.delta=-90000..90000}] at @p[tag=temp.hit] run particle minecraft:dust{color:[0.6,0.0,0.0],scale:1.0} ~ ~1.0 ~ 0.2 0.2 0.2 0 20
 
-# Deal small damage and play a sound if the rotation difference is outside ±60°.
-execute as @s[scores={temp.rotation.delta=..-60001}] run damage @p[tag=temp.hit] 8 minecraft:player_attack by @s
-execute as @s[scores={temp.rotation.delta=60001..}] run damage @p[tag=temp.hit] 8 minecraft:player_attack by @s
-execute as @s[scores={temp.rotation.delta=..-60001}] at @p[tag=temp.hit] run playsound minecraft:entity.player.attack.weak player @a ~ ~ ~ 1 1
-execute as @s[scores={temp.rotation.delta=60001..}] at @p[tag=temp.hit] run playsound minecraft:entity.player.attack.weak player @a ~ ~ ~ 1 1
+# Deal small damage and play a sound if the rotation difference is outside ±90°.
+execute as @s[scores={temp.rotation.delta=..-90001}] run damage @p[tag=temp.hit] 8 minecraft:player_attack by @s
+execute as @s[scores={temp.rotation.delta=90001..}] run damage @p[tag=temp.hit] 8 minecraft:player_attack by @s
+execute as @s[scores={temp.rotation.delta=..-90001}] at @p[tag=temp.hit] run playsound minecraft:entity.player.attack.weak player @a ~ ~ ~ 1 1
+execute as @s[scores={temp.rotation.delta=90001..}] at @p[tag=temp.hit] run playsound minecraft:entity.player.attack.weak player @a ~ ~ ~ 1 1
 
 # Add cooldown if a player was hit.
 execute if entity @a[tag=temp.hit] run scoreboard players set @s ogvz.assassin_slayer.assassinate.cooldown.seconds 8

@@ -2,13 +2,13 @@
 #> Note: Also handles dwarves taking damage when shrine is destroyed (lack of shrine zone).
 
 # Damage the dwarf if the shrine is gone.
-execute as @s[tag=ogvz.dwarf] unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine] run damage @s 4 ogvz:shrine_destroyed
+execute as @s[tag=ogvz.dwarf] unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine] run damage @s 4 ogvz:shrine_destroyed by @s
 
 # Damage the dwarf if they are too far from shrine.
-execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{min:128}}}} run damage @s 4 ogvz:outside_shrine_range
+execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{min:128}}}} run damage @s 4 ogvz:outside_shrine_range by @s
 
 # Damage the dwarf if they are too close to zombie spawn.
-execute as @s[tag=ogvz.dwarf] at @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:32}}}} run damage @s 4 ogvz:inside_zombie_spawn_range
+execute as @s[tag=ogvz.dwarf] at @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:32}}}} run damage @s 4 ogvz:inside_zombie_spawn_range by @s
 
 # Toggle adventure mode for zombies near zombie spawn.
 execute as @s[tag=ogvz.zombie,tag=!ogvz.adventure.zombie_spawn] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:16}}}} run tag @s add ogvz.adventure.zombie_spawn

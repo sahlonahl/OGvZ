@@ -17,8 +17,8 @@ execute if score @s temp.rotation.p2 >= @s temp.rotation.p1 run scoreboard playe
 execute if score @s temp.rotation.p2 < @s temp.rotation.p1 store result score @s temp.rotation.delta run scoreboard players get @s temp.rotation.p1
 execute if score @s temp.rotation.p2 < @s temp.rotation.p1 run scoreboard players operation @s temp.rotation.delta -= @s temp.rotation.p2
 
-# Give a temporary tag to the player if the rotation difference is between ±60°.
-tag @s[scores={temp.rotation.delta=-60000..60000}] add temp.hit
+# Give a temporary tag to the player if the rotation difference is between ±90°.
+tag @s[scores={temp.rotation.delta=-90000..90000}] add temp.hit
 
 # Apply slowness, play a sound, show particles and display a message if the player has the temporary tag.
 effect give @s[tag=temp.hit] minecraft:slowness 10 1
