@@ -446,7 +446,7 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4,
+                "min": 3,
                 "max": 6
               }
             },
