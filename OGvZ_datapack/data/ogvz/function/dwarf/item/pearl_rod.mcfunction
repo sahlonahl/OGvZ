@@ -79,7 +79,7 @@ playsound minecraft:block.portal.trigger player @a ~ ~ ~ 1 0.8
 tag @s add ogvz.mana.teleporting
 
 # Set the warmup.
-scoreboard players set @s ogvz.dwarf.pearl_rod.warmup.seconds 5
+scoreboard players set @s ogvz.dwarf.pearl_rod.warmup.seconds 3
 
 # Immobilize the player by multiplying their movement speed and jump strength by x0.
 attribute @s minecraft:movement_speed modifier add ogvz:pearl_rod.teleporting.movement_speed -1 add_multiplied_total

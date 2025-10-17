@@ -55,9 +55,9 @@ execute as @e[type=minecraft:marker,tag=temp.ice] at @s run kill @e[type=minecra
 tag @e[type=minecraft:marker,tag=temp.ice] add ogvz.kill_on_reload
 tag @e[type=minecraft:marker,tag=temp.ice] add ogvz.ice
 
-# Create a temporary scoreboard and set it to the base melt time in ticks (1 second = 20 ticks).
+# Create a temporary scoreboard and set it to the base melt time in ticks (1 second = 20 ticks) (Currently set to 10 minutes).
 scoreboard objectives add temp.ice_melt_base.ticks dummy
-scoreboard players set @s temp.ice_melt_base.ticks 1200
+scoreboard players set @s temp.ice_melt_base.ticks 12000
 
 # Set the melt scoreboard for every new ice marker incrementally in order from closest to furthest marker. Also removes the temporary tag.
 execute as @s at @n[type=minecraft:marker,tag=temp.ray_origin] run function ogvz:zombie/ability/chillager/ice_bridge_loop_2

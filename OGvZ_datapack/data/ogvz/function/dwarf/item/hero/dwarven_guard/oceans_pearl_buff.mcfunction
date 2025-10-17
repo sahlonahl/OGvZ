@@ -29,7 +29,7 @@ execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:dwarf/
 effect give @p[tag=temp.target,tag=temp.hit] minecraft:conduit_power 9 0
 effect give @p[tag=temp.target,tag=temp.hit] minecraft:dolphins_grace 9 0
 effect give @p[tag=temp.target,tag=temp.hit] minecraft:regeneration 9 0
-effect give @p[tag=temp.target,tag=temp.hit] minecraft:resistance 9 0
+# effect give @p[tag=temp.target,tag=temp.hit] minecraft:resistance 9 0
 
 # Add buff cooldown to the player no matter if they were hit or not.
 scoreboard players set @p[tag=temp.target] ogvz.dwarf.oceans_pearl_buff.cooldown.seconds 8

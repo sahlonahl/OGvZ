@@ -91,7 +91,8 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
     "minecraft:binding_curse":1, \
-    "ogvz:fire_immunity":1 \
+    "ogvz:fire_immunity":1, \
+    "minecraft:feather_falling":10 \
   }, \
   minecraft:attribute_modifiers=[ \
     {type:"minecraft:armor",amount:1,operation:"add_value",slot:"feet",id:"ogvz:feet"} \

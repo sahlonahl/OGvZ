@@ -124,7 +124,7 @@ give @s minecraft:golden_axe[ \
     { \
       id:"minecraft:base_attack_speed", \
       type:"minecraft:attack_speed", \
-      amount:-3.0, \
+      amount:-2.4, \
       operation:"add_value", \
       slot:"mainhand" \
     }, \

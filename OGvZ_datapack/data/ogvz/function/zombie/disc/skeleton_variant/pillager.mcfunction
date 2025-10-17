@@ -106,8 +106,9 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 give @s minecraft:crossbow[ \
   minecraft:unbreakable={}, \
   minecraft:enchantments={ \
-    "minecraft:power":3, \
-    "minecraft:infinity":1 \
+    "minecraft:power":5, \
+    "minecraft:infinity":1, \
+    "minecraft:quick_charge":2 \
   } \
 ]
 # Vines x64

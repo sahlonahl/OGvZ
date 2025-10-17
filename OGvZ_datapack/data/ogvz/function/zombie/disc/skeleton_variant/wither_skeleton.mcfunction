@@ -106,6 +106,7 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 give @s minecraft:bow[ \
   minecraft:unbreakable={}, \
   minecraft:enchantments={ \
+    "minecraft:power":3, \
     "minecraft:infinity":1, \
     "ogvz:decay":2 \
   } \

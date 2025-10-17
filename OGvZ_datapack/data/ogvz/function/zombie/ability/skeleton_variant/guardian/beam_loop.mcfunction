@@ -3,7 +3,7 @@
 # Stops ray casting if ray is inside a solid block, is too far from the origin or has hit a player.
 execute unless block ~ ~ ~ #ogvz:go_through run return 0
 execute unless entity @n[tag=temp.ray_origin,distance=..32] run return 0
-execute if entity @a[tag=temp.hit] run return 0
+execute if entity @e[tag=temp.hit] run return 0
 
 # Teleports the ray slightly forward.
 tp @s ^ ^ ^0.1
@@ -19,13 +19,14 @@ execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.big_hitbox,tag=!temp
 execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.big_hitbox,tag=!temp.medium_hitbox,tag=!temp.small_hitbox] at @s anchored eyes positioned ^ ^ ^ if entity @s[distance=0.84..] run tag @s add temp.medium_hitbox
 execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.big_hitbox,tag=!temp.medium_hitbox,tag=!temp.small_hitbox] run tag @s add temp.small_hitbox
 
-# Checks if the ray is inside the player's inflated hitbox.
+# Checks if the ray is inside the player's (or guard pearl's) inflated hitbox.
 # Standing hitbox size: 0.6 * 1.8 * 0.6 -> 1.1 * 2.3 * 1.1
 # Sneaking hitbox size: 0.6 * 1.5 * 0.6 -> 1.1 * 2.0 * 1.1
 # Crawling/Swimming/Flying hitbox size: 0.6 * 0.6 * 0.6 -> 1.1 * 1.1 * 1.1
 execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.hit,tag=temp.big_hitbox] at @s positioned ~-0.55 ~-0.25 ~-0.55 if entity @e[type=minecraft:marker,tag=temp.ray,dx=0.1,dy=1.3,dz=0.1] run tag @s add temp.hit
 execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.hit,tag=temp.medium_hitbox] at @s positioned ~-0.55 ~-0.25 ~-0.55 if entity @e[type=minecraft:marker,tag=temp.ray,dx=0.1,dy=1.0,dz=0.1] run tag @s add temp.hit
 execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.hit,tag=temp.small_hitbox] at @s positioned ~-0.55 ~-0.25 ~-0.55 if entity @e[type=minecraft:marker,tag=temp.ray,dx=0.1,dy=0.1,dz=0.1] run tag @s add temp.hit
+execute as @e[distance=..2.5,tag=!temp.ray_origin,tag=!temp.hit,tag=ogvz.oceans_pearl_hitbox] at @s positioned ~-0.55 ~-0.25 ~-0.55 if entity @e[type=minecraft:marker,tag=temp.ray,dx=0.3,dy=0.3,dz=0.3] run tag @s add temp.hit
 
 # Repeat ray casting loop.
 execute as @s at @s run function ogvz:zombie/ability/skeleton_variant/guardian/beam_loop

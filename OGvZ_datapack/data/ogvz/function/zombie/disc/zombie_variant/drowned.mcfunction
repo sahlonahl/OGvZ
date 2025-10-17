@@ -140,7 +140,7 @@ item replace entity @s hotbar.8 with minecraft:shield[ \
 # Worn Trident
 give @s minecraft:trident[ \
   minecraft:item_name="Worn Trident", \
-  minecraft:enchantments={"minecraft:riptide":1}, \
+  minecraft:enchantments={"minecraft:riptide":3}, \
   minecraft:lore=[ \
     {text:"Disables Shields",color:"gray",italic:false} \
   ], \
@@ -191,6 +191,61 @@ give @s minecraft:trident[ \
     ] \
   } \
 ]
+# loyalty trident
+execute as @s at @s if predicate {condition:"minecraft:random_chance",chance:0.50} run \ 
+  give @s minecraft:trident[ \
+    minecraft:item_name="Loyal Trident", \
+    minecraft:enchantments={"minecraft:loyalty":3}, \
+    minecraft:lore=[ \
+      {text:"Disables Shields",color:"gray",italic:false} \
+    ], \
+    minecraft:rarity="common", \
+    minecraft:attribute_modifiers=[ \
+      { \
+        id:"minecraft:base_attack_damage", \
+        type:"minecraft:attack_damage", \
+        amount:9.0, \
+        operation:"add_value", \
+        slot:"mainhand" \
+      }, \
+      { \
+        id:"minecraft:base_attack_speed", \
+        type:"minecraft:attack_speed", \
+        amount:-2.8, \
+        operation:"add_value", \
+        slot:"mainhand" \
+      }, \
+      { \
+        id:"minecraft:entity_interaction_range.mainhand", \
+        type:"minecraft:entity_interaction_range", \
+        amount:0.5, \
+        operation:"add_value", \
+        slot:"mainhand", \
+        display:{ \
+          type:"override", \
+          value:{text:" 3.5 Attack Reach",color:"dark_green"} \
+        } \
+      } \
+    ], \
+    minecraft:unbreakable={}, \
+    minecraft:max_damage=1561, \
+    minecraft:enchantable={value:10}, \
+    minecraft:weapon={ \
+      item_damage_per_attack:1, \
+      disable_blocking_for_seconds:3.5 \
+    }, \
+    minecraft:tool={ \
+      can_destroy_blocks_in_creative:false, \
+      damage_per_block:1, \
+      rules:[ \
+        { \
+          blocks:"minecraft:cobweb", \
+          correct_for_drops:true, \
+          speed:15.0 \
+        } \
+      ] \
+    } \
+  ]
 # Steak x64
 give @s minecraft:cooked_beef 64
 # Undying Bond

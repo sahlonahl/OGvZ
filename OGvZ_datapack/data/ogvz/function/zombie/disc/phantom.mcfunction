@@ -124,13 +124,13 @@ give @s minecraft:music_disc_cat[ \
   !minecraft:jukebox_playable, \
   minecraft:item_name="Iron Rapier", \
   minecraft:item_model="ogvz:iron_rapier", \
-  minecraft:enchantments={"ogvz:impact":1}, \
+  minecraft:enchantments={"ogvz:impact":1,"minecraft:knockback":2}, \
   minecraft:rarity="common", \
   minecraft:attribute_modifiers=[ \
     { \
       id:"minecraft:base_attack_damage", \
       type:"minecraft:attack_damage", \
-      amount:4.0, \
+      amount:6.0, \
       operation:"add_value", \
       slot:"mainhand" \
     }, \

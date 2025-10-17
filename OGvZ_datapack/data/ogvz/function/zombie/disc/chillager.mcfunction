@@ -113,7 +113,7 @@ give @s minecraft:music_disc_13[ \
   !minecraft:jukebox_playable, \
   minecraft:item_name={text:"Shiver",color:"aqua"}, \
   minecraft:item_model="ogvz:shiver", \
-  minecraft:enchantments={"ogvz:chilling_backstab":1}, \
+  minecraft:enchantments={"ogvz:chilling_backstab":1,"knockback":2}, \
   minecraft:lore=[ \
     {text:" "}, \
     {text:"Chilling Backstab",color:"blue",italic:false,underlined:true}, \

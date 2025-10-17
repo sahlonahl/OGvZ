@@ -41,7 +41,7 @@ playsound minecraft:block.portal.trigger player @a ~ ~ ~ 1 0.8
 tag @s add ogvz.zombie.teleporting
 
 # Set the warmup.
-scoreboard players set @s ogvz.zombie.ender_eye.warmup.seconds 5
+scoreboard players set @s ogvz.zombie.ender_eye.warmup.seconds 3
 
 # Immobilize the player using attributes.
 attribute @s minecraft:movement_speed modifier add ogvz:ender_eye.teleporting.movement_speed -1 add_multiplied_total
