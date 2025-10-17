@@ -11,7 +11,7 @@ execute if entity @s[scores={ogvz.blaze.fireball.cooldown.seconds=1..}] run titl
 execute if entity @s[scores={ogvz.blaze.fireball.cooldown.seconds=1..}] run return 0
 
 # Set cooldown.
-scoreboard players set @s ogvz.blaze.fireball.cooldown.seconds 8
+scoreboard players set @s ogvz.blaze.fireball.cooldown.seconds 4
 
 # Display an activation message.
 title @s actionbar [ \

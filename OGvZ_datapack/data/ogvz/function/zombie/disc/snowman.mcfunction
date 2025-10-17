@@ -135,6 +135,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:lore=[ \
     {text:"Shoot a freezing ice beam.",color:"blue"}, \
     {text:"30 second cooldown",color:"red",italic:false}, \
+    {text:"32 block range",color:"light_purple",italic:false}, \
     {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \

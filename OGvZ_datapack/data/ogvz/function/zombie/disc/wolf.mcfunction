@@ -107,7 +107,7 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 
 ### Give the player all the wolf items.
 # Iron Sword
-give @s minecraft:iron_sword[ \
+give @s minecraft:diamond_sword[ \
   minecraft:enchantments={ \
     "minecraft:sharpness":5, \
     "ogvz:wolf_rally":1 \
@@ -116,7 +116,7 @@ give @s minecraft:iron_sword[ \
     { \
       id:"minecraft:base_attack_damage", \
       type:"minecraft:attack_damage", \
-      amount:5.0, \
+      amount:8.0, \
       operation:"add_value", \
       slot:"mainhand" \
     }, \

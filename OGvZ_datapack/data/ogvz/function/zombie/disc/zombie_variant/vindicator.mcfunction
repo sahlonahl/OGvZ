@@ -139,11 +139,14 @@ give @s minecraft:iron_axe[ \
   minecraft:lore=[ \
     {text:"Disables Shields",color:"gray",italic:false} \
   ], \
+  minecraft:enchantments={ \
+    "minecraft:sharpness":3, \
+  }, \
   minecraft:attribute_modifiers=[ \
     { \
       id:"minecraft:base_attack_damage", \
       type:"minecraft:attack_damage", \
-      amount:7.5, \
+      amount:9, \
       operation:"add_value", \
       slot:"mainhand" \
     }, \

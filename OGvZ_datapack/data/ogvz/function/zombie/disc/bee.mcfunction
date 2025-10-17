@@ -110,6 +110,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:lore=[ \
     {text:"Shoots a healing beam.",color:"blue"}, \
     {text:"10 second cooldown",color:"red",italic:false}, \
+    {text:"32 Block Range",color:"light_purple",italic:false}, \
     {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \

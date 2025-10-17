@@ -24,7 +24,7 @@ title @s actionbar [ \
 playsound minecraft:entity.cat.hiss player @s ~ ~ ~ 1 1
 
 # Tag all dwarves in a sphere 4 blocks ahead of you with a radius of 4 blocks.
-execute positioned ^ ^ ^4 run tag @a[tag=ogvz.dwarf] add temp.hit
+execute positioned ^ ^ ^4 run tag @a[tag=ogvz.dwarf,distance=..4] add temp.hit
 
 # Give all hit dwarves weakenss and mining fatigue.
 effect give @a[tag=temp.hit] minecraft:weakness 10 0

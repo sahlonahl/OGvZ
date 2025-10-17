@@ -149,7 +149,7 @@ give @s minecraft:trident[ \
     { \
       id:"minecraft:base_attack_damage", \
       type:"minecraft:attack_damage", \
-      amount:6.0, \
+      amount:9.0, \
       operation:"add_value", \
       slot:"mainhand" \
     }, \

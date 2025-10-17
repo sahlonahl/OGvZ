@@ -144,12 +144,12 @@ give @s minecraft:music_disc_cat[ \
     { \
       id:"minecraft:entity_interaction_range.mainhand", \
       type:"minecraft:entity_interaction_range", \
-      amount:0.0, \
+      amount:3.0, \
       operation:"add_value", \
       slot:"mainhand", \
       display:{ \
         type:"override", \
-        value:{text:" 3 Attack Reach",color:"dark_green"} \
+        value:{text:" 6 Attack Reach",color:"dark_green"} \
       } \
     } \
   ], \

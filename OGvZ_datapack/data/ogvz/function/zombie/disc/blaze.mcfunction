@@ -118,7 +118,8 @@ give @s minecraft:carrot_on_a_stick[ \
     {text:"The fireball has limited",color:"blue"}, \
     {text:"lifetime and will eventually",color:"blue"}, \
     {text:"burn out.",color:"blue"}, \
-    {text:"8 second cooldown",color:"red",italic:false}, \
+    {text:"4 second cooldown",color:"red",italic:false}, \
+    {text:"64 block range",color:"light_purple",italic:false}, \
     {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \
@@ -157,6 +158,7 @@ give @s minecraft:carrot_on_a_stick[ \
     {text:"Completely evaporate all the",color:"blue"}, \
     {text:"water around you.",color:"blue"}, \
     {text:"10 second cooldown",color:"red",italic:false}, \
+    {text:"3 block rnge",color:"light_purple",italic:false}, \
     {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \

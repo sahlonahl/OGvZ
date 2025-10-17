@@ -136,11 +136,14 @@ item replace entity @s weapon.offhand with minecraft:shield[ \
 
 # Iron Sword
 give @s minecraft:iron_sword[ \
+  minecraft:enchantments={ \
+      "minecraft:sharpness":3, \
+    }, \
   minecraft:attribute_modifiers=[ \
     { \
       id:"minecraft:base_attack_damage", \
       type:"minecraft:attack_damage", \
-      amount:5.0, \
+      amount:6.0, \
       operation:"add_value", \
       slot:"mainhand" \
     }, \
@@ -170,11 +173,14 @@ give @s minecraft:stone_axe[ \
   minecraft:lore=[ \
     {text:"Disables Shields",color:"gray",italic:false} \
   ], \
+  minecraft:enchantments={ \
+      "minecraft:sharpness":3, \
+  }, \
   minecraft:attribute_modifiers=[ \
     { \
       id:"minecraft:base_attack_damage", \
       type:"minecraft:attack_damage", \
-      amount:5.0, \
+      amount:6.0, \
       operation:"add_value", \
       slot:"mainhand" \
     }, \

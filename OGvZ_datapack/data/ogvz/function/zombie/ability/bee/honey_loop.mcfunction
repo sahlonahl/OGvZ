@@ -23,9 +23,9 @@ execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.big_hitbox,tag=!temp
 # Standing hitbox size: 0.6 * 1.8 * 0.6 -> 1.1 * 2.3 * 1.1
 # Sneaking hitbox size: 0.6 * 1.5 * 0.6 -> 1.1 * 2.0 * 1.1
 # Crawling/Swimming/Flying hitbox size: 0.6 * 0.6 * 0.6 -> 1.1 * 1.1 * 1.1
-execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.hit,tag=temp.big_hitbox] at @s positioned ~-0.55 ~-0.25 ~-0.55 if entity @e[type=minecraft:marker,tag=temp.ray,dx=0.1,dy=1.3,dz=0.1] run tag @s add temp.hit
-execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.hit,tag=temp.medium_hitbox] at @s positioned ~-0.55 ~-0.25 ~-0.55 if entity @e[type=minecraft:marker,tag=temp.ray,dx=0.1,dy=1.0,dz=0.1] run tag @s add temp.hit
-execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.hit,tag=temp.small_hitbox] at @s positioned ~-0.55 ~-0.25 ~-0.55 if entity @e[type=minecraft:marker,tag=temp.ray,dx=0.1,dy=0.1,dz=0.1] run tag @s add temp.hit
+execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.hit,tag=temp.big_hitbox] at @s positioned ~-0.55 ~-0.25 ~-0.55 if entity @e[type=minecraft:marker,tag=temp.ray,dx=0.5,dy=1.3,dz=0.5] run tag @s add temp.hit
+execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.hit,tag=temp.medium_hitbox] at @s positioned ~-0.55 ~-0.25 ~-0.55 if entity @e[type=minecraft:marker,tag=temp.ray,dx=0.5,dy=1.0,dz=0.5] run tag @s add temp.hit
+execute as @a[distance=..2.5,tag=!temp.ray_origin,tag=!temp.hit,tag=temp.small_hitbox] at @s positioned ~-0.55 ~-0.25 ~-0.55 if entity @e[type=minecraft:marker,tag=temp.ray,dx=0.5,dy=0.1,dz=0.5] run tag @s add temp.hit
 
 # Repeat ray casting loop.
 execute as @s at @s run function ogvz:zombie/ability/bee/honey_loop
