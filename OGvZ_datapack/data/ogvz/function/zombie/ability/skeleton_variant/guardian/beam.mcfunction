@@ -42,7 +42,7 @@ execute as @a[tag=temp.hit,tag=ogvz.dwarf] run damage @s 7.5 ogvz:electric by @p
 execute as @a[tag=temp.hit,tag=ogvz.zombie] run damage @s 1 ogvz:electric by @p[tag=temp.ray_origin]
 execute as @e[tag=temp.hit,tag=ogvz.oceans_pearl_hitbox] run damage @s 7.5 ogvz:electric by @p[tag=temp.ray_origin]
 
-# Play a ding sound if a player was hit.
+# Play a ding sound for the beam shooter if another player was hit.
 execute if entity @e[tag=temp.hit,tag=!ogvz.zombie.element.electric] run playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1 1
 
 # Gets rid of the markers.

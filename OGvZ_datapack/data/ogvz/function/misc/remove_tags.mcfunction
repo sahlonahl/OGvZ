@@ -29,33 +29,33 @@ tag @s remove ogvz.zombie
 
 tag @s remove ogvz.zombie.class
 
-tag @s remove ogvz.zombie.class.zombie_variant
-tag @s remove ogvz.zombie.class.zombie_variant.zombie
-tag @s remove ogvz.zombie.class.zombie_variant.husk
-tag @s remove ogvz.zombie.class.zombie_variant.vindicator
-tag @s remove ogvz.zombie.class.zombie_variant.drowned
-
 tag @s remove ogvz.zombie.class.skeleton_variant
 tag @s remove ogvz.zombie.class.skeleton_variant.skeleton
 tag @s remove ogvz.zombie.class.skeleton_variant.wither_skeleton
 tag @s remove ogvz.zombie.class.skeleton_variant.pillager
 tag @s remove ogvz.zombie.class.skeleton_variant.guardian
 
-tag @s remove ogvz.zombie.class.creeper
-tag @s remove ogvz.zombie.class.spider
+tag @s remove ogvz.zombie.class.zombie_variant
+tag @s remove ogvz.zombie.class.zombie_variant.zombie
+tag @s remove ogvz.zombie.class.zombie_variant.husk
+tag @s remove ogvz.zombie.class.zombie_variant.vindicator
+tag @s remove ogvz.zombie.class.zombie_variant.drowned
+
 tag @s remove ogvz.zombie.class.bee
 tag @s remove ogvz.zombie.class.blaze
 tag @s remove ogvz.zombie.class.chicken_nugget
 tag @s remove ogvz.zombie.class.chillager
-tag @s remove ogvz.zombie.class.ocelot
-tag @s remove ogvz.zombie.class.phantom
-tag @s remove ogvz.zombie.class.snowman
-tag @s remove ogvz.zombie.class.wolf
-tag @s remove ogvz.zombie.class.piglin
-tag @s remove ogvz.zombie.class.silverfish
-tag @s remove ogvz.zombie.class.hoglin
+tag @s remove ogvz.zombie.class.creeper
 tag @s remove ogvz.zombie.class.enderman
 tag @s remove ogvz.zombie.class.golem
+tag @s remove ogvz.zombie.class.hoglin
+tag @s remove ogvz.zombie.class.ocelot
+tag @s remove ogvz.zombie.class.phantom
+tag @s remove ogvz.zombie.class.piglin
+tag @s remove ogvz.zombie.class.silverfish
+tag @s remove ogvz.zombie.class.snowman
+tag @s remove ogvz.zombie.class.spider
+tag @s remove ogvz.zombie.class.wolf
 
 tag @s remove ogvz.zombie.class.chillager.invisible
 

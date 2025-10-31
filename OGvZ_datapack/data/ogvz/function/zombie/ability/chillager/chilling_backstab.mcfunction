@@ -20,8 +20,9 @@ execute if score @s temp.rotation.p2 < @s temp.rotation.p1 run scoreboard player
 # Give a temporary tag to the player if the rotation difference is between ±90°.
 tag @s[scores={temp.rotation.delta=-90000..90000}] add temp.hit
 
-# Apply slowness, play a sound, show particles and display a message if the player has the temporary tag.
+# Apply slowness, deal damage, play a sound, show particles and display a message if the player has the temporary tag.
 effect give @s[tag=temp.hit] minecraft:slowness 10 1
+damage @p[tag=temp.hit] 2 minecraft:player_attack by @s
 execute as @s[tag=temp.hit] run playsound minecraft:entity.player.hurt_freeze player @a ~ ~ ~ 1 1
 execute as @s[tag=temp.hit] run particle minecraft:snowflake ~ ~1.0 ~ 0.2 0.4 0.2 0 30
 title @a[tag=temp.hit] actionbar [ \

@@ -198,7 +198,7 @@ give @s minecraft:carrot_on_a_stick[ \
     {text:"You can manually cancel the",color:"blue"}, \
     {text:"invisibility by using the",color:"blue"}, \
     {text:"ability again.",color:"blue"}, \
-    {text:"5 second cooldown",color:"red",italic:false}, \
+    {text:"1 second cooldown",color:"red",italic:false}, \
     {text:"Active Ability",color:"green",italic:false} \
   ], \
   minecraft:tooltip_display={ \

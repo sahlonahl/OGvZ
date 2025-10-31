@@ -14,7 +14,7 @@ title @s actionbar [ \
 ]
 
 # Set a cooldown.
-scoreboard players set @s ogvz.chillager.invisibility.cooldown.seconds 5
+scoreboard players set @s ogvz.chillager.invisibility.cooldown.seconds 1
 
 # Remove the invisibility tag.
 tag @s remove ogvz.zombie.class.chillager.invisible

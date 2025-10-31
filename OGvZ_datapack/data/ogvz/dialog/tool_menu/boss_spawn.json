@@ -10,12 +10,12 @@
     {
       "label": [
         {
-          "text": "Set",
+          "text": "Summon",
           "color": "light_purple",
           "underlined": true
         },
         {
-          "text": " Boss Spawn Location",
+          "text": " Boss Spawn Marker",
           "color": "light_purple",
           "underlined": false
         }

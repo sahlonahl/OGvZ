@@ -1,4 +1,5 @@
 #> Description: Raycasting for spider's web ability.
+#> Called by: web.mcfunction
 
 # Stops ray casting if ray is inside a solid block, is too far from the origin or has hit a player.
 execute unless block ~ ~ ~ #ogvz:go_through run return 0

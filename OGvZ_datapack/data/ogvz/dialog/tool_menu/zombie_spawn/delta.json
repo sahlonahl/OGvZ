@@ -10,12 +10,31 @@
     {
       "label": [
         {
-          "text": "Set",
+          "text": "Place Standard",
           "color": "red",
           "underlined": true
         },
         {
-          "text": " Zombie Spawn Location",
+          "text": " Zombie Spawn Structure",
+          "color": "red",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/zombie_spawn/place_standard/delta"
+      }
+    },
+    {
+      "label": [
+        {
+          "text": "Summon",
+          "color": "red",
+          "underlined": true
+        },
+        {
+          "text": " Zombie Spawn Marker",
           "color": "red",
           "underlined": false
         }
@@ -34,7 +53,7 @@
           "underlined": true
         },
         {
-          "text": " Zombie Spawn Location",
+          "text": " Zombie Spawn Marker",
           "color": "red",
           "underlined": false
         }
@@ -62,25 +81,6 @@
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:admin/setup/zombie_spawn/teleport_to/delta"
-      }
-    },
-    {
-      "label": [
-        {
-          "text": "Place Standard",
-          "color": "red",
-          "underlined": true
-        },
-        {
-          "text": " Zombie Spawn",
-          "color": "red",
-          "underlined": false
-        }
-      ],
-      "width": 200,
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "function ogvz:admin/setup/zombie_spawn/place_standard/delta"
       }
     },
     {

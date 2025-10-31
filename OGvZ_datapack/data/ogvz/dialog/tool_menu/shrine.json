@@ -10,12 +10,50 @@
     {
       "label": [
         {
-          "text": "Set",
+          "text": "Place Standard",
           "color": "gold",
           "underlined": true
         },
         {
-          "text": " Shrine Location",
+          "text": " Shrine Structure",
+          "color": "gold",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/shrine/place_standard"
+      }
+    },
+    {
+      "label": [
+        {
+          "text": "Place Platform",
+          "color": "gold",
+          "underlined": true
+        },
+        {
+          "text": " Shrine Structure",
+          "color": "gold",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/shrine/place_platform"
+      }
+    },
+    {
+      "label": [
+        {
+          "text": "Summon",
+          "color": "gold",
+          "underlined": true
+        },
+        {
+          "text": " Shrine Marker",
           "color": "gold",
           "underlined": false
         }
@@ -43,44 +81,6 @@
       "action": {
         "type": "minecraft:run_command",
         "command": "function ogvz:admin/setup/shrine/teleport_to"
-      }
-    },
-    {
-      "label": [
-        {
-          "text": "Place Standard",
-          "color": "gold",
-          "underlined": true
-        },
-        {
-          "text": " Shrine",
-          "color": "gold",
-          "underlined": false
-        }
-      ],
-      "width": 200,
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "function ogvz:admin/setup/shrine/place_standard"
-      }
-    },
-    {
-      "label": [
-        {
-          "text": "Place Platform",
-          "color": "gold",
-          "underlined": true
-        },
-        {
-          "text": " Shrine",
-          "color": "gold",
-          "underlined": false
-        }
-      ],
-      "width": 200,
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "function ogvz:admin/setup/shrine/place_platform"
       }
     },
     {

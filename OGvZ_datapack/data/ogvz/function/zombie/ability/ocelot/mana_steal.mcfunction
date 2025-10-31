@@ -66,6 +66,9 @@ execute as @s[scores={temp.mana=1..}] run scoreboard players add @s ogvz.dwarf.m
 execute as @s[scores={temp.mana=1..}] run scoreboard players remove @p[tag=temp.hit,tag=ogvz.mana] ogvz.dwarf.mana_buildup.mana 1
 execute as @s[scores={temp.mana=1..}] run scoreboard players remove @s temp.mana 1
 
+# Play a ding sound for the beam shooter if another player was hit.
+execute if entity @e[tag=temp.hit] run playsound minecraft:entity.arrow.hit_player player @s ~ ~ ~ 1 1 1
+
 # Gets rid of the markers.
 kill @e[type=minecraft:marker,tag=temp.ray]
 kill @e[type=minecraft:marker,tag=temp.ray_origin]

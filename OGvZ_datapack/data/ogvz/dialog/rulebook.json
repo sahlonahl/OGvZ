@@ -71,7 +71,7 @@
           "underlined": false
         },
         {
-          "text": "Examples of gamethrowing include, though are not limited to: dwarves breaking the shrine, dwarves teamkilling or suiciding, dwarves refusing to do their assigned class job. Mobs teamkilling, mobs griefing other mobs (i.e. webbing other mobs as spider)\n",
+          "text": "Examples of gamethrowing include, though are not limited to: dwarves breaking the shrine, dwarves teamkilling or suiciding, dwarves refusing to do their assigned class job. Mobs intentionally teamkilling, mobs intentionally griefing other mobs (i.e. webbing other mobs as spider)\n",
           "underlined": false
         }
       ],
@@ -85,11 +85,11 @@
           "underlined": true
         },
         {
-          "text": "No Intentional Bug Exploitation\n",
+          "text": "Please do not intentionally exploit bugs, glitches, oversights or other software errors.\n",
           "underlined": false
         },
         {
-          "text": "Mojang-coded or dvz-coded!\n",
+          "text": "Whether coded by Mojang, OGvZ or others.\n",
           "underlined": false
         }
       ],
@@ -140,6 +140,10 @@
         },
         {
           "text": "Use common sense.\n",
+          "underlined": false
+        },
+        {
+          "text": "Just because something is not clearly listed as an example does not mean it is not against the rules, and certain things may be enforced at staff discretion as necessary.\n",
           "underlined": false
         }
       ],

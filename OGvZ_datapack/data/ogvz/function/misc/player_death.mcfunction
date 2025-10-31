@@ -1,5 +1,6 @@
 #> Description: Handles what happens to the player when they die.
 #> Note: This function DOES NOT handle what happens to the player when they respawn. ogvz:tick/respawn handles that.
+#> Called by: player_death.json advancement
 
 # Revoke the advancement so it can be granted again.
 advancement revoke @s only ogvz:misc/player_death
@@ -20,6 +21,9 @@ xp set @s 0 points
 # If the player is a dwarf, message everybody that a dwarf has fallen and place a gravestone.
 execute as @s[tag=ogvz.dwarf] at @s if score &ogvz ogvz.game.phase matches 1..5 run function ogvz:misc/dwarf_death_message
 execute as @s[tag=ogvz.dwarf] at @s if score &ogvz ogvz.game.phase matches 1..6 run function ogvz:misc/gravestone
+
+# If the player is a monster, play a sound at their location when they die
+execute as @s[tag=ogvz.zombie] at @s if score &ogvz ogvz.game.phase matches 1..6 run function ogvz:tick/mob_death
 
 # Remove tags, clear scoreboards and remove attributes from the player.
 execute as @s at @s run function ogvz:misc/remove_tags
