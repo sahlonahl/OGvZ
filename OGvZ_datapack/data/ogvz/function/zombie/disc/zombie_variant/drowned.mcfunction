@@ -149,7 +149,7 @@ give @s minecraft:trident[ \
     { \
       id:"minecraft:base_attack_damage", \
       type:"minecraft:attack_damage", \
-      amount:9.0, \
+      amount:7.0, \
       operation:"add_value", \
       slot:"mainhand" \
     }, \
@@ -204,7 +204,7 @@ execute as @s at @s if predicate {condition:"minecraft:random_chance",chance:0.5
       { \
         id:"minecraft:base_attack_damage", \
         type:"minecraft:attack_damage", \
-        amount:9.0, \
+        amount:7.0, \
         operation:"add_value", \
         slot:"mainhand" \
       }, \

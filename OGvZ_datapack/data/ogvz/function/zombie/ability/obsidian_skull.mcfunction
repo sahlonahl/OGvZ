@@ -48,6 +48,9 @@ title @s[tag=temp.teleported] actionbar [ \
   {text:" Poof!",color:"green"} \
 ]
 
+# turn the player towards the shrine (non functional)
+# execute as @s[tag=temp.teleported] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] run tp @a[tag=temp.teleported] ~ ~ ~ facing entity @e[type=minecraft:marker,tag=ogvz.marker.shrine,limit=1]
+
 # Play a sound and particle at the player's new position
 execute at @s[tag=temp.teleported] run playsound minecraft:block.ender_chest.open player @s ~ ~ ~ 1 1 1
 execute at @s[tag=temp.teleported] run particle minecraft:end_rod ~0 ~1 ~0 0.25 0.5 0.25 0.01 20 force @s

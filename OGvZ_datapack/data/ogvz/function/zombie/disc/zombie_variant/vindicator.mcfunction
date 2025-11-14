@@ -146,7 +146,7 @@ give @s minecraft:iron_axe[ \
     { \
       id:"minecraft:base_attack_damage", \
       type:"minecraft:attack_damage", \
-      amount:9, \
+      amount:6, \
       operation:"add_value", \
       slot:"mainhand" \
     }, \
