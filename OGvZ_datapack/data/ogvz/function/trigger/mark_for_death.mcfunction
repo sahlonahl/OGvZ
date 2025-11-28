@@ -5,6 +5,8 @@ scoreboard players set @s mark_for_death 0
 # Re-enable trigger.
 scoreboard players enable @s mark_for_death
 
+# replace the rest of this function with the command to give the player the volunteer book
+
 # Add a temporary tag to the player if they are marked for death.
 tag @s[tag=ogvz.marked_for_death] add temp.marked_for_death
 

@@ -1,8 +1,10 @@
 #> Description: Removes most of the ogvz tags.
 #> Note: Exceptions are: ogvz.initialized, ogvz.admin, ogvz.joined_game, ogvz.dead, ogvz.marked_for_death, ogvz.zombie.punish, ogvz.attribute tags.
 
+## dwarf and classes
 tag @s remove ogvz.dwarf
 
+# classes
 tag @s remove ogvz.dwarf.class
 tag @s remove ogvz.dwarf.class.builder
 tag @s remove ogvz.dwarf.class.blacksmith
@@ -11,6 +13,7 @@ tag @s remove ogvz.dwarf.class.baker
 tag @s remove ogvz.dwarf.class.alchemist
 tag @s remove ogvz.dwarf.class.enchanter
 
+# heros
 tag @s remove ogvz.dwarf.class.hero
 tag @s remove ogvz.dwarf.class.hero.dragon_warrior
 tag @s remove ogvz.dwarf.class.hero.wither_warrior
@@ -21,42 +24,57 @@ tag @s remove ogvz.dwarf.class.hero.dragon_warrior.dragon_form
 
 tag @s remove ogvz.dwarf.class.hero.assassin_slayer.invisible
 
+# misc dwarf tags
 tag @s remove ogvz.dwarf.plague
+tag @s remove ogvz.boss_volunteer
+tag @s remove ogvz.hero_volunteer
+tag @s remove ogvz.monster_volunteer
 
 tag @s remove ogvz.dwarf.last_dwarf
 
+## zombies and zombie classes
 tag @s remove ogvz.zombie
 
 tag @s remove ogvz.zombie.class
 
+# skeleton variants
 tag @s remove ogvz.zombie.class.skeleton_variant
 tag @s remove ogvz.zombie.class.skeleton_variant.skeleton
 tag @s remove ogvz.zombie.class.skeleton_variant.wither_skeleton
 tag @s remove ogvz.zombie.class.skeleton_variant.pillager
 tag @s remove ogvz.zombie.class.skeleton_variant.guardian
 
+# zombie variants
 tag @s remove ogvz.zombie.class.zombie_variant
 tag @s remove ogvz.zombie.class.zombie_variant.zombie
 tag @s remove ogvz.zombie.class.zombie_variant.husk
 tag @s remove ogvz.zombie.class.zombie_variant.vindicator
 tag @s remove ogvz.zombie.class.zombie_variant.drowned
 
+# common monsters
+tag @s remove ogvz.zombie.class.creeper
+tag @s remove ogvz.zombie.class.spider
+
+# uncommon monsters
 tag @s remove ogvz.zombie.class.bee
 tag @s remove ogvz.zombie.class.blaze
 tag @s remove ogvz.zombie.class.chicken_nugget
 tag @s remove ogvz.zombie.class.chillager
-tag @s remove ogvz.zombie.class.creeper
-tag @s remove ogvz.zombie.class.enderman
-tag @s remove ogvz.zombie.class.golem
-tag @s remove ogvz.zombie.class.hoglin
 tag @s remove ogvz.zombie.class.ocelot
 tag @s remove ogvz.zombie.class.phantom
-tag @s remove ogvz.zombie.class.piglin
-tag @s remove ogvz.zombie.class.silverfish
 tag @s remove ogvz.zombie.class.snowman
-tag @s remove ogvz.zombie.class.spider
 tag @s remove ogvz.zombie.class.wolf
 
+# rare monsters
+tag @s remove ogvz.zombie.class.hoglin
+tag @s remove ogvz.zombie.class.piglin
+tag @s remove ogvz.zombie.class.silverfish
+
+# legendary monsters
+tag @s remove ogvz.zombie.class.enderman
+tag @s remove ogvz.zombie.class.golem
+
+# misc zombie tags
 tag @s remove ogvz.zombie.class.chillager.invisible
 
 tag @s remove ogvz.zombie.class.enderman.creating_portal
@@ -88,6 +106,7 @@ tag @s remove ogvz.zombie.element.ice
 tag @s remove ogvz.zombie.element.air
 tag @s remove ogvz.zombie.element.electric
 
+## misc tags
 tag @s remove ogvz.mana
 tag @s remove ogvz.mana.teleporting
 

@@ -1,4 +1,5 @@
 #> Description: Give temporary regeneration to the player.
+#> Called by: active_detect.mcfunction
 
 # Display fail message and return if the player doens't have enough mana.
 execute unless entity @s[level=20..] run title @s actionbar [ \
@@ -23,5 +24,6 @@ title @s actionbar [ \
 # Play an activation sound.
 playsound minecraft:entity.witch.drink player @a ~ ~ ~ 1 1
 
-# Give the player temporary regeneration.
-effect give @s minecraft:regeneration 15 1
+# Give the player temporary regeneration and instant health.
+effect give @s minecraft:regeneration 10 1
+effect give @s instant_health 1 0

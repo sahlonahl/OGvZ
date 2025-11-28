@@ -82,8 +82,12 @@ give @s minecraft:bone[ \
     {text:"Craft into bone meal.",color:"blue"} \
   ] \
 ] 16
+
 # Legendary Book
 execute as @s at @s run function ogvz:give/other/legendary_book
+
+# Volunteer book
+execute as @s at @s run function ogvz:give/other/volunteer_book
 
 # Display a message on how to play as the tailor.
 tellraw @s [ \

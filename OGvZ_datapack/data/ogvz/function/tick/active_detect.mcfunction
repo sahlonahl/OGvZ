@@ -179,6 +179,7 @@ execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9001}] at @s r
 execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9002}] at @s run function ogvz:zombie/ability/obsidian_skull
 execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9003}] at @s run function ogvz:zombie/ability/enderman/ender_eye
 execute as @s[scores={ogvz.rclick.active_id=9004}] at @s run dialog show @s ogvz:rulebook
+execute as @s[scores={ogvz.rclick.active_id=9005}] at @s run dialog show @s ogvz:volunteer_book
 
 # Remove temporary tags.
 tag @s remove temp.use.mainhand

@@ -38,7 +38,7 @@ execute at @n[type=minecraft:marker,tag=ogvz.marker.lobby] run tp @a[tag=!ogvz.a
 # Play a sound to all admins.
 execute as @a[tag=ogvz.admin] at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 1 2
 
-# Tell the admins which player placed the standard shrine.
+# Tell the admins which player placed the standard lobby.
 tellraw @a[tag=ogvz.admin] [ \
   "", \
   {text:"SETUP: ",bold:true,color:"green"}, \

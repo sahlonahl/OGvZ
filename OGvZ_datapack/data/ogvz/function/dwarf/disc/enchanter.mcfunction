@@ -61,8 +61,12 @@ give @s minecraft:emerald[ \
     {text:"Give to the enchanter.",color:"blue"} \
   ] \
 ] 4
+
 # Legendary Book
 execute as @s at @s run function ogvz:give/other/legendary_book
+
+# Volunteer book
+execute as @s at @s run function ogvz:give/other/volunteer_book
 
 # Display a message on how to play as the enchanter.
 tellraw @s [ \

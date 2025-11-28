@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Volunteer Options",
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Volunteer for the Boss",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:misc/volunteer_options/boss_volunteer_toggle"
+      }
+    },
+    {
+      "label": "Volunteer to be a Monster",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:misc/volunteer_options/monster_volunteer_toggle"
+      }
+    },
+    {
+      "label": "Volunteer for Hero",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:misc/volunteer_options/hero_volunteer_toggle"
+      }
+    }
+  ]
+}

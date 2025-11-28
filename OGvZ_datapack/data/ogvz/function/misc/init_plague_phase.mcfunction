@@ -3,11 +3,16 @@
 # Set the game pahase to 3 - Plague phase.
 scoreboard players set &ogvz ogvz.game.phase 3
 
-# Make a random dwarf into a specific hero depending on which boss was chosen.
-execute if score &ogvz ogvz.game.boss matches 1 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero] at @s run function ogvz:dwarf/disc/hero/dragon_warrior
-execute if score &ogvz ogvz.game.boss matches 2 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero] at @s run function ogvz:dwarf/disc/hero/wither_warrior
-execute if score &ogvz ogvz.game.boss matches 3 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero] at @s run function ogvz:dwarf/disc/hero/dwarven_guard
-execute if score &ogvz ogvz.game.boss matches 4 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero] at @s run function ogvz:dwarf/disc/hero/assassin_slayer
+# Make a random dwarf into a specific hero depending on which boss was chosen. Favors players who volunteered for the hero
+execute unless entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 1 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=!ogvz.hero_volunteer] at @s run function ogvz:dwarf/disc/hero/dragon_warrior
+execute unless entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 2 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=!ogvz.hero_volunteer] at @s run function ogvz:dwarf/disc/hero/wither_warrior
+execute unless entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 3 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=!ogvz.hero_volunteer] at @s run function ogvz:dwarf/disc/hero/dwarven_guard
+execute unless entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 4 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=!ogvz.hero_volunteer] at @s run function ogvz:dwarf/disc/hero/assassin_slayer
+
+execute if entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 1 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=ogvz.hero_volunteer] at @s run function ogvz:dwarf/disc/hero/dragon_warrior
+execute if entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 2 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=ogvz.hero_volunteer] at @s run function ogvz:dwarf/disc/hero/wither_warrior
+execute if entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 3 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=ogvz.hero_volunteer] at @s run function ogvz:dwarf/disc/hero/dwarven_guard
+execute if entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 4 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=ogvz.hero_volunteer] at @s run function ogvz:dwarf/disc/hero/assassin_slayer
 
 # Create a temporary scoreboard that holds a constant number 100.
 scoreboard objectives add temp.const.100 dummy
@@ -23,11 +28,16 @@ scoreboard players operation &ogvz temp.total_player_count = Dwarves ogvz.game.p
 scoreboard players operation &ogvz temp.total_player_count += Zombies ogvz.game.player_count
 
 # Create a temporary scoreboard and store the amount of dwarf players that need to be killed.
+# equation: (100 - zmin) / 100 * N * -1 + Nd = Nk
+# zmin = minimum zombie percentage
+# N = number of players
+# Nd = number of dwarves
+# Nk = number of dwarves to be killed
 scoreboard objectives add temp.kill_dwarf_count dummy
 scoreboard players set &ogvz temp.kill_dwarf_count 100
 scoreboard players operation &ogvz temp.kill_dwarf_count -= &ogvz ogvz.game.zombie_players.percentage.min
-scoreboard players operation &ogvz temp.kill_dwarf_count *= &ogvz temp.total_player_count
 scoreboard players operation &ogvz temp.kill_dwarf_count /= &ogvz temp.const.100
+scoreboard players operation &ogvz temp.kill_dwarf_count *= &ogvz temp.total_player_count
 scoreboard players operation &ogvz temp.kill_dwarf_count *= &ogvz temp.const.-1
 scoreboard players operation &ogvz temp.kill_dwarf_count += Dwarves ogvz.game.player_count
 

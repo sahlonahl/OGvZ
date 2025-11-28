@@ -4,7 +4,7 @@
 item replace entity @s[tag=temp.use.mainhand] weapon.mainhand with minecraft:air
 item replace entity @s[tag=temp.use.offhand] weapon.offhand with minecraft:air
 
-# Clear the player's inventory.
+# Clear the player's effects.
 effect clear @s
 
 # Fully heal and saturate the player.

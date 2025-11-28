@@ -36,8 +36,9 @@ attribute @s minecraft:movement_speed modifier remove ogvz:spider.movement_speed
 attribute @s minecraft:jump_strength modifier remove ogvz:spider.jump_strength
 attribute @s minecraft:safe_fall_distance modifier remove ogvz:spider.safe_fall_distance
 
-# Blaze - firefly
+# Blaze - firefly and fall damage
 attribute @s minecraft:gravity modifier remove ogvz:blaze.firefly.gravity
+attribute @s minecraft:fall_damage_multiplier modifier remove ogvz:blaze.fall_immunity
 
 # Chicken Nugget - base attributes
 attribute @s minecraft:movement_speed modifier remove ogvz:chicken_nugget.movement_speed

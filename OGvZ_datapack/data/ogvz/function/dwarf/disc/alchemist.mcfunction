@@ -94,6 +94,9 @@ give @s minecraft:blaze_powder[ \
 # Legendary Book
 execute as @s at @s run function ogvz:give/other/legendary_book
 
+# Volunteer book
+execute as @s at @s run function ogvz:give/other/volunteer_book
+
 # Display a message on how to play as the alchemist.
 tellraw @s [ \
   "", \

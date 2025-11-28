@@ -198,8 +198,12 @@ give @s minecraft:crafting_table 1
 give @s minecraft:stonecutter 1
 # Torch x16
 give @s minecraft:torch 16
+
 # Legendary Book
 execute as @s at @s run function ogvz:give/other/legendary_book
+
+# Volunteer book
+execute as @s at @s run function ogvz:give/other/volunteer_book
 
 # Display a message on how to play as the builder.
 tellraw @s [ \

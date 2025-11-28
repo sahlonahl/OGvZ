@@ -19,7 +19,7 @@ execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] run
 # Check if boss has been selected. Return on fail.
 execute unless score &ogvz ogvz.game.boss matches 1..4 run return run dialog show @s ogvz:setup_error/boss_selection
 
-# Check if boss spawn location exists, unless the boss selected is the assassin (1). Return on fail.
+# Check if boss spawn location exists, unless the boss selected is the assassin (4). Return on fail.
 execute unless entity @e[type=minecraft:marker,tag=ogvz.marker.boss_spawn] unless score &ogvz ogvz.game.boss matches 4 run return run dialog show @s ogvz:setup_error/boss_spawn_location
 
 # Show the game start dialog if every check passed.

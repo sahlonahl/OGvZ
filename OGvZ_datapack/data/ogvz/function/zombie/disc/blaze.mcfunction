@@ -21,6 +21,9 @@ tag @s add ogvz.zombie.class.blaze
 # Give the player the fire element tag.
 tag @s add ogvz.zombie.element.fire
 
+# Attribute: immune to fall damage
+attribute @s minecraft:fall_damage_multiplier modifier add ogvz:blaze.fall_immunity -1 add_value
+
 # Put the player on the blaze zombie team.
 team join z3BLAZE @s
 
