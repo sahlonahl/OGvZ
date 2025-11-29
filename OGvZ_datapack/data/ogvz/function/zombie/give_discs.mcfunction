@@ -13,7 +13,7 @@ execute as @s at @s if score &ogvz ogvz.game.boss matches 3 run function ogvz:gi
 execute as @s at @s if score &ogvz ogvz.game.boss matches 4 run function ogvz:give/disc/zombie/pillager
 
 # Common class (40%)
-execute as @s at @s if predicate {condition:"minecraft:random_chance",chance:0.40} run function ogvz:give/disc/zombie/creeper
+execute as @s at @s if predicate {condition:"minecraft:random_chance",chance:0.30} run function ogvz:give/disc/zombie/creeper
 execute as @s at @s if predicate {condition:"minecraft:random_chance",chance:0.40} run function ogvz:give/disc/zombie/spider
 
 # Uncommon class (15%)
