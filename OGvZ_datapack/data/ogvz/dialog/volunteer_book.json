@@ -7,21 +7,21 @@
       "label": "Volunteer for the Boss",
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:misc/volunteer_options/boss_volunteer_toggle"
+        "command": "scoreboard players set @s volunteer_for_boss 1"
       }
     },
     {
       "label": "Volunteer to be a Monster",
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:misc/volunteer_options/monster_volunteer_toggle"
+        "command": "scoreboard players set @s mark_for_death 1"
       }
     },
     {
       "label": "Volunteer for Hero",
       "action": {
         "type": "minecraft:run_command",
-        "command": "function ogvz:misc/volunteer_options/hero_volunteer_toggle"
+        "command": "scoreboard players set @s volunteer_for_hero 1"
       }
     }
   ]

@@ -8,18 +8,18 @@
 
 # second, attempt to tag any player that volunteered for monster but not the boss
 #execute unless entity @a[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=ogvz.boss_volunteer] \
-    if entity @a[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=ogvz.monster_volunteer] \
-    run tag @r[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=ogvz.monster_volunteer] add ogvz.dwarf.plague
+    if entity @a[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=ogvz.marked_for_death] \
+    run tag @r[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=ogvz.marked_for_death] add ogvz.dwarf.plague
 
 # third, attempt to tag any player that didn't volunteer for anything
 #execute unless entity @a[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=ogvz.boss_volunteer] \
-    unless entity @a[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=ogvz.monster_volunteer] \
+    unless entity @a[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=ogvz.marked_for_death] \
     if entity @a[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=!ogvz.hero_volunteer] \
     run tag @r[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=!ogvz.hero_volunteer] add ogvz.dwarf.plague
 
 # finally, attempt to tag any player that volunteered for hero (last resort)
 #execute unless entity @a[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=ogvz.boss_volunteer] \
-    unless entity @a[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=ogvz.monster_volunteer] \
+    unless entity @a[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=ogvz.marked_for_death] \
     unless entity @a[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=!ogvz.hero_volunteer] \
     run tag @r[tag=!ogvz.dwarf.class.hero,tag=!ogvz.dwarf.plague,tag=ogvz.hero_volunteer] add ogvz.dwarf.plague
 

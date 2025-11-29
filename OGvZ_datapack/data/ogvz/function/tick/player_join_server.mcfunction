@@ -25,6 +25,8 @@ scoreboard players enable @s[predicate=ogvz:is_admin] admin_handbook
 scoreboard players enable @s game_status
 scoreboard players enable @s doom_event
 scoreboard players enable @s mark_for_death
+scoreboard players enable @s volunteer_for_hero
+scoreboard players enable @s volunteer_for_boss
 
 # Set the player's health and food scoreboards to max (20).
 scoreboard players set @s ogvz.misc.health 20

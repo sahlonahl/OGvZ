@@ -12,3 +12,9 @@ execute as @s[scores={doom_event=1..}] at @s run function ogvz:trigger/doom_even
 
 # Toggle mark for death.
 execute as @s[scores={mark_for_death=1..}] at @s run function ogvz:trigger/mark_for_death
+
+# Toggle volunteer for hero.
+execute as @s[scores={volunteer_for_hero=1..}] at @s run function ogvz:trigger/hero_volunteer_toggle
+
+# Toggle volunteer for boss.
+execute as @s[scores={volunteer_for_boss=1..}] at @s run function ogvz:trigger/boss_volunteer_toggle

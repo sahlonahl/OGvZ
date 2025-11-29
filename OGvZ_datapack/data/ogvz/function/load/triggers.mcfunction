@@ -11,3 +11,9 @@ scoreboard objectives add doom_event trigger
 
 # Mark for Death - Toggles the player's mark for mob (priority for being selected as boss/zombie).
 scoreboard objectives add mark_for_death trigger
+
+# Volunteer for Hero - Toggles the player's hero selection priority
+scoreboard objectives add volunteer_for_hero trigger
+
+# Volunteer for Boss - Toggles the player's boss selection priority
+scoreboard objectives add volunteer_for_boss trigger
