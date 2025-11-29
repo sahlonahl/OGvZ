@@ -28,7 +28,7 @@ scoreboard players operation &ogvz temp.total_player_count = Dwarves ogvz.game.p
 scoreboard players operation &ogvz temp.total_player_count += Zombies ogvz.game.player_count
 
 # Create a temporary scoreboard and store the amount of dwarf players that need to be killed.
-# equation: (100 - zmin) / 100 * N * -1 + Nd = Nk
+# equation: (100 - zmin) * N / 100 * -1 + Nd = Nk
 # zmin = minimum zombie percentage
 # N = number of players
 # Nd = number of dwarves
@@ -36,8 +36,8 @@ scoreboard players operation &ogvz temp.total_player_count += Zombies ogvz.game.
 scoreboard objectives add temp.kill_dwarf_count dummy
 scoreboard players set &ogvz temp.kill_dwarf_count 100
 scoreboard players operation &ogvz temp.kill_dwarf_count -= &ogvz ogvz.game.zombie_players.percentage.min
-scoreboard players operation &ogvz temp.kill_dwarf_count /= &ogvz temp.const.100
 scoreboard players operation &ogvz temp.kill_dwarf_count *= &ogvz temp.total_player_count
+scoreboard players operation &ogvz temp.kill_dwarf_count /= &ogvz temp.const.100
 scoreboard players operation &ogvz temp.kill_dwarf_count *= &ogvz temp.const.-1
 scoreboard players operation &ogvz temp.kill_dwarf_count += Dwarves ogvz.game.player_count
 
