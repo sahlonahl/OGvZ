@@ -40,7 +40,7 @@ fill ~ ~ ~-1 ~ ~1 ~1 minecraft:air replace #ogvz:dwarf_blocks
 fill ~-1 ~ ~ ~1 ~1 ~ minecraft:air replace #ogvz:dwarf_blocks
 
 # Summon an invisible tnt that will explode on the next tick and set it's owner nbt to the player's UUID.
-summon minecraft:tnt ~ ~ ~ {fuse:0,explosion_power:2,Tags:["temp.processing"],block_state:{Name:"minecraft:air"}}
+summon minecraft:tnt ~ ~ ~ {fuse:0,explosion_power:3,Tags:["temp.processing"],block_state:{Name:"minecraft:air"}}
 data modify entity @n[type=minecraft:tnt,tag=temp.processing] owner set from entity @s UUID
 tag @n[type=minecraft:tnt,tag=temp.processing] remove temp.processing
 
