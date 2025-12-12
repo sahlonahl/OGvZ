@@ -83,6 +83,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
   } \
 ]
 # Boots
+# removed enchantment: "ogvz:midair_jump":3
 item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:unbreakable={}, \
   minecraft:item_name={text:"Chicken Nugget Boots"}, \
@@ -90,7 +91,6 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
     "minecraft:binding_curse":1, \
-    "ogvz:midair_jump":3 \
   }, \
   minecraft:attribute_modifiers=[ \
     {type:"minecraft:armor",amount:1,operation:"add_value",slot:"feet",id:"ogvz:feet"} \

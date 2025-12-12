@@ -33,11 +33,11 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":2, \
+    "minecraft:protection":4, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"head",id:"ogvz:head"} \
+    {type:"minecraft:armor",amount:3,operation:"add_value",slot:"head",id:"ogvz:head"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -52,11 +52,11 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:dyed_color=13206117, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":3, \
+    "minecraft:protection":4, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+    {type:"minecraft:armor",amount:8,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -71,11 +71,11 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:dyed_color=13206117, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":3, \
+    "minecraft:protection":4, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
+    {type:"minecraft:armor",amount:6,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -90,11 +90,11 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:dyed_color=13206117, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":2, \
+    "minecraft:protection":4, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
+    {type:"minecraft:armor",amount:3,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

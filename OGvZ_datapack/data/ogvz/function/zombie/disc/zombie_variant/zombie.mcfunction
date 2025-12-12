@@ -137,7 +137,7 @@ item replace entity @s weapon.offhand with minecraft:shield[ \
 # Iron Sword
 give @s minecraft:iron_sword[ \
   minecraft:enchantments={ \
-      "minecraft:sharpness":3, \
+      "minecraft:sharpness":4, \
     }, \
   minecraft:attribute_modifiers=[ \
     { \

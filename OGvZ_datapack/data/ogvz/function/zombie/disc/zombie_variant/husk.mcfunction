@@ -144,7 +144,7 @@ give @s minecraft:music_disc_13[ \
     { \
       id:"minecraft:base_attack_damage", \
       type:"minecraft:attack_damage", \
-      amount:4.0, \
+      amount:6.0, \
       operation:"add_value", \
       slot:"mainhand" \
     }, \

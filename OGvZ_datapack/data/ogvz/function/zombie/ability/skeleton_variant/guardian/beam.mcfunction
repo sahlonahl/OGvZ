@@ -38,7 +38,7 @@ execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:ma
 execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:zombie/ability/skeleton_variant/guardian/beam_loop
 
 # Deals damage to all players (and gaurd pearls) who have been hit by the ray. Damage is reduced for zombies.
-execute as @a[tag=temp.hit,tag=ogvz.dwarf] run damage @s 6 ogvz:electric by @p[tag=temp.ray_origin]
+execute as @a[tag=temp.hit,tag=ogvz.dwarf] run damage @s 7 ogvz:electric by @p[tag=temp.ray_origin]
 execute as @a[tag=temp.hit,tag=ogvz.zombie] run damage @s 1 ogvz:electric by @p[tag=temp.ray_origin]
 execute as @e[tag=temp.hit,tag=ogvz.oceans_pearl_hitbox] run damage @s 7.5 ogvz:electric by @p[tag=temp.ray_origin]
 

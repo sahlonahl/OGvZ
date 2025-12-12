@@ -113,7 +113,7 @@ give @s minecraft:carrot_on_a_stick[ \
   } \
 ]
 # Leap
-give @s minecraft:carrot_on_a_stick[ \
+#give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:6611}, \
   minecraft:item_model="ogvz:leap", \
   minecraft:unbreakable={}, \
