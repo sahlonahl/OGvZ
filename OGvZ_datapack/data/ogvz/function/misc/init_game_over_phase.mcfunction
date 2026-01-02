@@ -35,7 +35,7 @@ scoreboard players operation &ogvz temp.timer.minutes = &ogvz ogvz.game.timer
 scoreboard players operation &ogvz temp.timer.minutes /= &ogvz temp.const.1200
 
 # Display the game statistics.
-execute unless entity @e[type=minecraft:player,tag=ogvz.dwarf] run tellraw @a [ \
+tellraw @a [ \
   "", \
   {text:"Game Statistics",color:"gray",bold:true}, \
   {text:":\n",color:"gray"}, \

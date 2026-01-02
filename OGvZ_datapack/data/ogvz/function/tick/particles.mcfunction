@@ -3,11 +3,15 @@
 # Dwarves - Particles when near non-destroyed shrine during zombie phase (4) or last stand phase (5).
 execute if score &ogvz ogvz.game.phase matches 4..5 if score &ogvz ogvz.game.shrine_health matches 1.. if predicate {condition:"minecraft:random_chance",chance:0.20} as @a[tag=ogvz.dwarf,tag=ogvz.mana] at @s positioned ~ ~2 ~ if entity @e[type=minecraft:marker,tag=ogvz.marker.shrine,distance=..4] at @s run particle minecraft:trial_spawner_detection ~ ~0.5 ~ 0.25 0.25 0.25 0 1 normal
 
-# Dwarves - Particles when near the edge of shrine zone.
-execute as @a[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{min:112}}}} at @s run particle minecraft:raid_omen ~ ~0.9 ~ 1 1 1 0 2
+# Dwarves - Particles and sounds when near the edge of shrine zone.
+execute as @a[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{min:108}}}} at @s run particle minecraft:raid_omen ~ ~0.9 ~ 1 1 1 0 2
+execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{min:108}}}} at @s run particle dust{color:[0.9,0.0,0.0],scale:1} ~ ~ ~ 1 2 1 0.2 2 force
+execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{min:108}}}} at @s run playsound minecraft:entity.generic.extinguish_fire ambient @s ~ ~ ~ 0.1 0.7
 
 # Dwarves - Particles when near the edge of zombie spawn zone.
-execute as @a[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:40}}}} at @s run particle minecraft:trial_omen ~ ~0.9 ~ 1 1 1 0 2
+execute as @a[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:42}}}} at @s run particle minecraft:trial_omen ~ ~0.9 ~ 1 1 1 0 2
+execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:42}}}} at @s run particle angry_villager ~ ~ ~ 1 2 1 0.2 2 force
+execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:42}}}} at @s run playsound minecraft:entity.generic.extinguish_fire ambient @s ~ ~ ~ 0.1 0.7
 
 # Frozen custom effect.
 execute as @a[tag=ogvz.frozen] at @s anchored eyes positioned ^ ^ ^ run particle minecraft:snowflake ~ ~ ~ 0.25 0.25 0.25 0 1

@@ -4,16 +4,8 @@
 # Damage the dwarf if the shrine is gone.
 execute as @s[tag=ogvz.dwarf] unless entity @e[type=minecraft:marker,tag=ogvz.marker.shrine] run damage @s 4 ogvz:shrine_destroyed by @s
 
-# particle and noise warning if dwarf is too far from shrine.
-execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{min:108}}}} run particle dust{color:[0.9,0.0,0.0],scale:1} ~ ~ ~ 1 2 1 0.2 2 force
-execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{min:108}}}} run execute as @s at @s run playsound minecraft:entity.generic.extinguish_fire ambient @s ~ ~ ~ 0.1 0.7
-
 # Damage the dwarf if they are too far from shrine.
 execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{min:128}}}} run damage @s 4 ogvz:outside_shrine_range by @s
-
-# particle and noise warning if dwarf is too close to zombie spawn.
-execute as @s[tag=ogvz.dwarf] at @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:45}}}} run particle angry_villager ~ ~ ~ 1 2 1 0.2 2 force
-execute as @s[tag=ogvz.dwarf] at @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:45}}}} run execute as @s at @s run playsound minecraft:entity.generic.extinguish_fire ambient @s ~ ~ ~ 0.1 0.7
 
 # Damage the dwarf if they are too close to zombie spawn.
 execute as @s[tag=ogvz.dwarf] at @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:32}}}} run damage @s 4 ogvz:inside_zombie_spawn_range by @s

@@ -51,6 +51,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:dyed_color=7026980, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
+    "blast_protection":4, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -180,6 +181,9 @@ give @s minecraft:carrot_on_a_stick[ \
     ] \
   } \
 ]
+
+# give the player a shrine tracking compass
+function ogvz:zombie/shrine_compass
 
 # Give the player the Ender Eye ability if the ender portal exists.
 execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s at @s run function ogvz:give/other/ender_eye

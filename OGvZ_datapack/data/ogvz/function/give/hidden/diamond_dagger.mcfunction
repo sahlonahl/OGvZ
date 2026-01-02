@@ -16,7 +16,7 @@ give @s minecraft:music_disc_13[ \
     { \
       id:"minecraft:base_attack_speed", \
       type:"minecraft:attack_speed", \
-      amount:19996.0, \
+      amount:-0.8, \
       operation:"add_value", \
       slot:"mainhand", \
       display:{ \

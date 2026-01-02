@@ -42,7 +42,7 @@ give @s minecraft:carrot_on_a_stick[ \
   } \
 ]
 # Iron Paxel
-give @s minecraft:iron_pickaxe[ \
+give @s minecraft:iron_shovel[ \
   minecraft:item_name="Iron Paxel", \
   minecraft:item_model="ogvz:iron_paxel", \
   minecraft:lore=[ \

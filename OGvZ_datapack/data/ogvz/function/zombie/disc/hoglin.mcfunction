@@ -24,7 +24,7 @@ attribute @s minecraft:max_health modifier add ogvz:hoglin.max_health 12 add_val
 # Put the player on the hoglin zombie team.
 team join z5HOGLIN @s
 
-### Equip the player with hoglin armor (iron tier).
+### Equip the player with hoglin armor (diamond tier).
 # Head (Helmet)
 item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:unbreakable={}, \
@@ -33,7 +33,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:equippable={slot:"head"}, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -52,7 +52,8 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:dyed_color=13206117, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":2, \
+    "blast_protection":4, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -71,7 +72,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:dyed_color=13206117, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -90,7 +91,7 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:dyed_color=13206117, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":4, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -167,6 +168,9 @@ give @s minecraft:golden_axe[ \
 ]
 # Steak x64
 give @s minecraft:cooked_beef 64
+
+# give the player a shrine tracking compass
+function ogvz:zombie/shrine_compass
 
 # Give the player the Ender Eye ability if the ender portal exists.
 execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s at @s run function ogvz:give/other/ender_eye

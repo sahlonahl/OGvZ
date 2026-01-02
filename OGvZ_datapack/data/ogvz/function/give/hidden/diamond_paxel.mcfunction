@@ -1,6 +1,6 @@
 #> Description: Gives the diamond paxel to the player.
 
-give @s minecraft:diamond_pickaxe[ \
+give @s minecraft:diamond_shovel[ \
   minecraft:item_name="Diamond Paxel", \
   minecraft:item_model="ogvz:diamond_paxel", \
   minecraft:lore=[ \

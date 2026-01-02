@@ -12,6 +12,8 @@ scoreboard objectives add ogvz.game.player_count dummy
 scoreboard objectives add ogvz.game.zombie_spawn_count dummy
 # Shrine health scoreboard
 scoreboard objectives add ogvz.game.shrine_health dummy
+# Shrine location scoreboards (use macro storage format)
+scoreboard objectives add ogvz.game.shrine_location dummy
 # Game phase scoreboard:
 # 0 - Setup phase
 # 1 - Build phase

@@ -55,6 +55,7 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:dyed_color=16768372, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
+    "blast_protection":4, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -91,7 +92,8 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
   minecraft:dyed_color=9327914, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:binding_curse":1 \
+    "minecraft:binding_curse":1, \
+    "feather_falling":5 \
   }, \
   minecraft:attribute_modifiers=[ \
     {type:"minecraft:armor",amount:1,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
@@ -171,6 +173,9 @@ give @s minecraft:cooked_cod[ \
     saturation:12.8 \
   } \
 ] 64
+
+# give the player a shrine tracking compass
+function ogvz:zombie/shrine_compass
 
 # Give the player the Ender Eye ability if the ender portal exists.
 execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s at @s run function ogvz:give/other/ender_eye

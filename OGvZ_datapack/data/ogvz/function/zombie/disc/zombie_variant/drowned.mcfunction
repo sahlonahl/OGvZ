@@ -35,6 +35,7 @@ item replace entity @s armor.head with minecraft:leather_helmet[ \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
     "minecraft:protection":2, \
+    "blast_protection":4, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
@@ -105,8 +106,8 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
 ]
 
 ### Give the player all the drowned items.
-# Shield (9th hotbar slot)
-item replace entity @s hotbar.8 with minecraft:shield[ \
+# Shield (8th hotbar slot)
+item replace entity @s hotbar.7 with minecraft:shield[ \
   minecraft:item_name="Light Shield", \
   minecraft:lore=[ \
     {text:"Instant Blocking",color:"gray",italic:false} \
@@ -282,6 +283,9 @@ give @s minecraft:carrot_on_a_stick[ \
     ] \
   } \
 ]
+
+# give the player a shrine tracking compass
+function ogvz:zombie/shrine_compass
 
 # Give the player the Ender Eye ability if the ender portal exists.
 execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s at @s run function ogvz:give/other/ender_eye

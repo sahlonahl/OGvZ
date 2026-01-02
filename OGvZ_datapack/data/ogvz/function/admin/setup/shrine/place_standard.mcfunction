@@ -23,6 +23,12 @@ execute if entity @s[predicate=ogvz:is_in_end_dimension] at @s positioned ~0.5 ~
 # Summon a shrine marker.
 execute at @s positioned ~0.5 ~ ~0.5 align xyz positioned ~ ~-1 ~ run summon minecraft:marker ~ ~ ~ {Tags:["ogvz.marker.shrine","ogvz.kill_on_reload"]}
 
+# Store the location and dimension of the shrine into a storage container known as a "macro"
+execute store result storage ogvz.game.shrine_location lodestone.x int 1 run data get entity @e[type=marker,tag=ogvz.marker.shrine,limit=1] Pos[0]
+execute store result storage ogvz.game.shrine_location lodestone.y int 1 run data get entity @e[type=marker,tag=ogvz.marker.shrine,limit=1] Pos[1]
+execute store result storage ogvz.game.shrine_location lodestone.z int 1 run data get entity @e[type=marker,tag=ogvz.marker.shrine,limit=1] Pos[2]
+#execute store result storage ogvz.game.shrine_location shrine.dim int 1 run data get entity @e[type=marker,tag=ogvz.marker.shrine,limit=1] dimension
+
 # Summon a shrine display marker.
 execute at @s positioned ~0.5 ~ ~0.5 align xyz positioned ~-0.25 ~0.25 ~-0.25 run summon minecraft:block_display ~ ~ ~ { \
   Tags:["ogvz.block_display.shrine","ogvz.kill_on_reload"], \
