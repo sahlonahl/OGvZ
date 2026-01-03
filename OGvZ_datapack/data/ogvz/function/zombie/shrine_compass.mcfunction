@@ -12,7 +12,7 @@ item replace entity @s hotbar.8 with compass[ \
   } \
 ]
 
-tellraw @a ["Shrine location should be: ",lodestone.x," , ",lodestone.z]
+#tellraw @a ["Shrine location should be: ",lodestone.x," , ",lodestone.z]
 
 # modifythe pointing of the compass (using macros)
 function ogvz:zombie/shrine_compass_update with storage ogvz.game.shrine_location lodestone

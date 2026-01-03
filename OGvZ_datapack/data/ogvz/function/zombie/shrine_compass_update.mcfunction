@@ -15,4 +15,4 @@ $item modify entity @s hotbar.8 [{\
     }\
 }]
 
-$tellraw @a "locator compass should be updated with data: $(x) , $(z)"
+#$tellraw @a "locator compass should be updated with data: $(x) , $(z)"
