@@ -63,6 +63,19 @@ scoreboard objectives add ogvz.inventory.flutter dummy
 scoreboard objectives add ogvz.inventory.hover dummy
 scoreboard objectives add ogvz.inventory.evolution dummy
 
+### Legendary Items scoreboards 
+# item detection category:(5xxx)
+scoreboard objectives add ogvz.inventory.legend dummy
+# builder (51xx)
+# blacksmith (52xx)
+scoreboard objectives add ogvz.inventory.berzerker dummy
+# tailor (53xx)
+scoreboard objectives add ogvz.inventory.warrior_helm dummy
+# baker (54xx)
+scoreboard objectives add ogvz.inventory.papaya dummy
+# alchemist (55xx)
+# enchanter (56xx)
+
 ### Enchantment scoreboards
 scoreboard objectives add ogvz.midair_jump.jumps dummy
 scoreboard objectives add ogvz.midair_jump.button_state.current dummy

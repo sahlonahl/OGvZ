@@ -23,8 +23,18 @@ execute as @s[tag=ogvz.dwarf.class.hero.wither_warrior] store result score @s og
 # Assassin Slayer (42xx)
 # Dwarven Guard (43xx)
 
-### Dwarf legendary items (5xxx)
-
+### Dwarf legendary items (5xxx) Passive Effects
+# common tag for all legend items (used to check for doubling up)
+execute as @s[tag=ogvz.dwarf] store result score @s ogvz.inventory.legend run clear @s *[minecraft:custom_data~{legend_item:5000}] 0
+# builder passive legendaries (51xx)
+# blacksmith passive legendaries (52xx)
+execute as @s[tag=ogvz.dwarf] store result score @s ogvz.inventory.berzerker run clear @s minecraft:blaze_rod[minecraft:custom_data~{passive_id:5200}] 0
+# tailor passive legendaries (53xx)
+execute as @s[tag=ogvz.dwarf] store result score @s ogvz.inventory.warrior_helm run clear @s minecraft:iron_helmet[minecraft:custom_data~{passive_id:5300}] 0
+# baker passive legendaries (54xx)
+execute as @s[tag=ogvz.dwarf] store result score @s ogvz.inventory.papaya run clear @s minecraft:nether_star[minecraft:custom_data~{passive_id:5400}] 0
+# alchemist passive legendaries (55xx)
+# enchanter passive legendaries (56xx)
 
 ### Zombie abilities (6xxx)
 # Zombie variants (600x)

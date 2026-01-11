@@ -46,8 +46,9 @@ execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:ma
 execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:zombie/ability/spider/web_loop
 
 # Place a cobweb at the targeted player's feet. If no player was targeted place cobweb behind the ray marker unless it's not inside a block.
+# can be made to check for a solid block with the following condition: ... at @s "unless block ~ ~ ~ #ogvz:go_through" positioned ...
 execute as @p[tag=temp.hit] at @s run function ogvz:zombie/ability/spider/web_place
-execute unless entity @a[tag=temp.hit] as @n[type=minecraft:marker,tag=temp.ray] at @s unless block ~ ~ ~ #ogvz:go_through positioned ^ ^ ^-0.1 run function ogvz:zombie/ability/spider/web_place
+execute unless entity @a[tag=temp.hit] as @n[type=minecraft:marker,tag=temp.ray] at @s positioned ^ ^ ^-0.1 run function ogvz:zombie/ability/spider/web_place
 
 # Get rid of the markers.
 kill @e[type=minecraft:marker,tag=temp.ray]

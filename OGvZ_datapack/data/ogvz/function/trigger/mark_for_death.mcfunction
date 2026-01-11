@@ -15,7 +15,7 @@ tag @s[tag=ogvz.marked_for_death] add temp.marked_for_death
 tag @s[tag=!temp.marked_for_death] add ogvz.marked_for_death
 tag @s[tag=temp.marked_for_death] remove ogvz.marked_for_death
 
-# Display a marked message if the player has been marked for death.
+# Display a marked message if the player is now marked for death.
 tellraw @s[tag=!temp.marked_for_death] [ \
     "", \
     {text:"You are now ",color:"red"}, \

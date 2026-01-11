@@ -71,6 +71,7 @@ team add z8ELDER_GUARDIAN
 # Zombie - Dead players (no class)
 team add z9DEAD
 
+
 ### Modify team colors.
 # Dwarf - Heroes
 team modify d0DRAGON_WARRIOR color gold
@@ -139,6 +140,7 @@ team modify z8WITHER color light_purple
 team modify z8ELDER_GUARDIAN color light_purple
 
 team modify z9DEAD color yellow
+
 
 ### Modify team suffix.
 # Dwarf - Heroes
@@ -209,6 +211,7 @@ team modify z8ELDER_GUARDIAN suffix {text:" [Elder Guardian]",bold:true}
 
 team modify z9DEAD suffix {text:" [Dead]",bold:true}
 
+
 ### Players can't see each other when invisible.
 # Dwarf - Heroes
 team modify d0DRAGON_WARRIOR seeFriendlyInvisibles false
@@ -276,6 +279,7 @@ team modify z8DRAGON seeFriendlyInvisibles false
 team modify z8WITHER seeFriendlyInvisibles false
 team modify z8ELDER_GUARDIAN seeFriendlyInvisibles false
 
+
 ### Zombies have invisible nametags.
 # Zombie - Zombie variant
 team modify z0ZOMBIE nametagVisibility never
@@ -324,11 +328,13 @@ team modify z8DRAGON nametagVisibility never
 team modify z8WITHER nametagVisibility never
 team modify z8ELDER_GUARDIAN nametagVisibility never
 
+
 ### Dead player's name tag shouldn't be visible and they should not be able to see or hit other invisible dead players.
 # Zombie - Dead players (no class)
 team modify z9DEAD nametagVisibility never
 team modify z9DEAD seeFriendlyInvisibles false
 team modify z9DEAD friendlyFire false
+
 
 ### Collisions between boss players and boss entities are disabled.
 # Zombie - Bosses

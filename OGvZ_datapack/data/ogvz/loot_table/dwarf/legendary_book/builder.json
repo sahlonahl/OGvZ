@@ -1,0 +1,47 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{active_id:5100}",
+                "minecraft:item_name": "Builder's Slab",
+                "minecraft:item_model": "nether_brick",
+                "minecraft:lore": [
+                  {
+                    "text": "Builds a large wall of Blue Bricks",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "One Time Use",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "Active Item",
+                    "color": "green",
+                    "italic": false
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -111,7 +111,14 @@ execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard,scores={ogvz.rclick.active
 execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard,scores={ogvz.rclick.active_id=4302}] at @s run function ogvz:dwarf/item/hero/dwarven_guard/glowing_shell
 
 ### Dwarf legendary items (5xxx)
-
+# builder active legendaries (51xx)
+execute as @s[tag=ogvz.dwarf.class,scores={ogvz.rclick.active_id=5100}] at @s run function ogvz:dwarf/item/builder_slab
+# blacksmith active legendaries (52xx)
+# tailor active legendaries (53xx)
+# baker active legendaries (54xx)
+# alchemist active legendaries (55xx)
+execute as @s[tag=ogvz.mana,scores={ogvz.rclick.active_id=5500}] at @s run function ogvz:dwarf/item/magic_potion/ultimte_potion
+# enchanter active legendaries (56xx)
 
 ### Zombie abilities (6xxx)
 # Zombie variants (600x)
@@ -179,7 +186,7 @@ execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9001}] at @s r
 execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9002}] at @s run function ogvz:zombie/ability/obsidian_skull
 execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9003}] at @s run function ogvz:zombie/ability/enderman/ender_eye
 execute as @s[scores={ogvz.rclick.active_id=9004}] at @s run dialog show @s ogvz:rulebook
-execute as @s[scores={ogvz.rclick.active_id=9005}] at @s run dialog show @s ogvz:volunteer_book
+execute as @s[scores={ogvz.rclick.active_id=9005}] at @s run function ogvz:trigger/mark_for_death
 
 # Remove temporary tags.
 tag @s remove temp.use.mainhand

@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_star",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"text":"The Papya","color":"gold"},
+                "minecraft:custom_data": "{legend_item:5000,passive_id:5400}",
+                "minecraft:item_model": "ogvz:papaya",
+                "minecraft:lore": [
+                  {"text":"Provides Infinite Saturation","color":"blue"},
+                  {"text":"Not consumable","color":"red"},
+                  {"text":"Doesn't stack with other legendary items","color":"red"},
+                  {"text": "Passive Item","color": "green"}
+                ],
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

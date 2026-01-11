@@ -30,6 +30,7 @@ tag @s remove ogvz.boss_volunteer
 tag @s remove ogvz.hero_volunteer
 tag @s remove ogvz.monster_volunteer
 
+tag @s remove dwarf.used.legendary
 tag @s remove ogvz.dwarf.last_dwarf
 
 ## zombies and zombie classes

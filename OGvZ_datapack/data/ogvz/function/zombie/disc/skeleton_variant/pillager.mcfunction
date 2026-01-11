@@ -109,7 +109,7 @@ give @s minecraft:crossbow[ \
   minecraft:enchantments={ \
     "minecraft:power":5, \
     "minecraft:infinity":1, \
-    "minecraft:quick_charge":2 \
+    "minecraft:quick_charge":3 \
   } \
 ]
 # Vines x64

@@ -1,5 +1,6 @@
 #> Description: Handles the effects of all passive items.
-#> Comment: All passive items are retextured carrot on a stick. Scoreboards are updated in ogvz:misc/inventory_check.
+#> Comment: All passive items are retextured carrot on a stick.
+#> Scoreboards are updated in ogvz:misc/inventory_check.
 
 ### Non-passive items
 # Lava Bucket
@@ -18,6 +19,9 @@ execute as @s[tag=ogvz.admin,scores={ogvz.inventory.shrine_tape_measure=1..}] at
 
 
 ### Dwarf legendary items
+execute if score @s ogvz.inventory.legend matches 1 as @s[tag=ogvz.dwarf,scores={ogvz.inventory.papaya=1..}] at @s run effect give @s saturation 2 1 true
+execute if score @s ogvz.inventory.legend matches 1 as @s[tag=ogvz.dwarf,scores={ogvz.inventory.berzerker=1..}] at @s run effect give @s speed 2 1 true
+execute if score @s ogvz.inventory.legend matches 1 as @s[tag=ogvz.dwarf,scores={ogvz.inventory.warrior_helm=1..}] at @s run effect give @s strength 2 1 true
 
 
 ### Zombie abilities

@@ -67,13 +67,13 @@
                   {
                     "id": "minecraft:base_attack_speed",
                     "type": "minecraft:attack_speed",
-                    "amount": 19996.0,
+                    "amount": -0.8,
                     "operation": "add_value",
                     "slot": "mainhand",
                     "display": {
                       "type": "override",
                       "value": {
-                        "text": " ∞ Attack Speed",
+                        "text": " Double Attack Speed",
                         "color":"dark_green"
                       }
                     }

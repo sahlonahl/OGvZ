@@ -1,0 +1,41 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Warriors Helmet",
+                "minecraft:custom_data": "{legend_item:5000,passive_id:5300}",
+
+                "minecraft:lore": [
+                  {
+                    "text": "Provides Permananet Strength",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "Does not work with other legendary items",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "Passive Item",
+                    "color": "green",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

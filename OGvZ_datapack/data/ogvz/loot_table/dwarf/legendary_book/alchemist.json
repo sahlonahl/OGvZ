@@ -1,0 +1,49 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Ultimate Potion",
+                  "color": "red"
+                },
+                "minecraft:item_model": "ogvz:ultimate_potion",
+                "minecraft:custom_data": "{active_id:5500}",
+                "minecraft:lore": [
+                  {
+                    "text": "Grants all potion effects.",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "Requires 30 mana",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "Active Item",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

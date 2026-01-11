@@ -1,4 +1,5 @@
 #> Description: Deal bonus damage to a targeted player depending on how fast the attacker was travelling.
+# called by: enchantment/impact.json
 
 # Tag self and the attacker.
 tag @s add temp.victim
