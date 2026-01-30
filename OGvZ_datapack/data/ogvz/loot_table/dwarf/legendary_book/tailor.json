@@ -13,7 +13,7 @@
               "components": {
                 "minecraft:item_name": "Warriors Helmet",
                 "minecraft:custom_data": "{legend_item:5000,passive_id:5300}",
-
+                "minecraft:unbreakable":{},
                 "minecraft:lore": [
                   {
                     "text": "Provides Permananet Strength",

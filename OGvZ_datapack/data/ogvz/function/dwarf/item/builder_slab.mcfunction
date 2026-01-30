@@ -1,7 +1,7 @@
 #> Description: Gives the player a legendary item from a legendary book
 
 # Remove one slab item from the player.
-clear @s minecraft:fishing_rod[minecraft:custom_data={active_id:5100}] 1
+clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={active_id:5100}] 1
 
 # Clear the global active item/ability cooldown.
 scoreboard players set @s ogvz.rclick.cooldown 0

@@ -27,11 +27,12 @@
       }
     ]
   },
+  "exclusive_set": "#minecraft:exclusive_set/crossbow",
   "max_cost": {
     "base": 2147483647,
     "per_level_above_first": 0
   },
-  "max_level": 3,
+  "max_level": 2,
   "min_cost": {
     "base": 2,
     "per_level_above_first": 12

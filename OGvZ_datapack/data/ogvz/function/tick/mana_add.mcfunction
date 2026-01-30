@@ -3,13 +3,13 @@
 # Remove 1 mana from the score.
 scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 1
 
-# Builders have mana cap of 9999.
+# Builders have mana cap of 2000.
 # Non-builders have a mana cap of 200.
-experience add @s[tag=ogvz.dwarf.class.builder,level=..9998] 1 levels
+experience add @s[tag=ogvz.dwarf.class.builder,level=..1999] 1 levels
 experience add @s[tag=!ogvz.dwarf.class.builder,level=..199] 1 levels
 
 # Set mana buildup to 0 if mana cap has been reached.
-scoreboard players set @s[tag=ogvz.dwarf.class.builder,level=9999..] ogvz.dwarf.mana_buildup.mana 0
+scoreboard players set @s[tag=ogvz.dwarf.class.builder,level=2000..] ogvz.dwarf.mana_buildup.mana 0
 scoreboard players set @s[tag=!ogvz.dwarf.class.builder,level=200..] ogvz.dwarf.mana_buildup.mana 0
 
 # Update the exp bar if all the mana buildup has been added.

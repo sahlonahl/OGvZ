@@ -11,7 +11,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": "{active_id:5100}",
-                "minecraft:item_name": "Builder's Slab",
+                "minecraft:item_name": "EZ fix Slab",
                 "minecraft:item_model": "nether_brick",
                 "minecraft:lore": [
                   {

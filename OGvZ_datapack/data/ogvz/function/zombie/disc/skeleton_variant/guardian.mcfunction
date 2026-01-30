@@ -132,7 +132,7 @@ give @s minecraft:carrot_on_a_stick[ \
   } \
 ]
 # Vines x64
-give @s minecraft:vine 64
+give @s minecraft:vine 32
 # Steak x64
 give @s minecraft:cooked_beef 64
 # Sharing Grace

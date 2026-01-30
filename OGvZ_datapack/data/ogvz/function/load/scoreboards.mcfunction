@@ -66,6 +66,7 @@ scoreboard objectives add ogvz.inventory.evolution dummy
 ### Legendary Items scoreboards 
 # item detection category:(5xxx)
 scoreboard objectives add ogvz.inventory.legend dummy
+scoreboard objectives add ogvz.inventory.legend.check dummy
 # builder (51xx)
 # blacksmith (52xx)
 scoreboard objectives add ogvz.inventory.berzerker dummy

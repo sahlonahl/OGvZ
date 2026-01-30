@@ -25,3 +25,6 @@ playsound minecraft:entity.witch.drink player @a ~ ~ ~ 1 1
 
 # Give the player temporary jump boost.
 effect give @s minecraft:jump_boost 15 3
+
+# if the player is crouching, give them slowfalling in addition to the jump boost
+execute if predicate ogvz:input_sneak_pressed run effect give @s minecraft:slow_falling 15

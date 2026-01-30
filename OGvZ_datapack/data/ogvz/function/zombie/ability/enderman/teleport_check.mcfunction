@@ -11,7 +11,7 @@ execute align xyz positioned ~0.5 ~0.5 ~0.5 positioned ~ ~ ~-0.5 summon minecraf
 # Tag the closest marker to determine which face of the block the player clicked.
 execute positioned ^ ^ ^-0.1 run tag @n[type=minecraft:marker,tag=temp.direction] add temp.direction.closest
 
-# Teleport the infestation marker to the center of the block it's in and make it face the center of the face of the block that was clicked by the player.
+# Teleport the telportation marker to the center of the block it's in and make it face the center of the face of the block that was clicked by the player.
 execute align xyz positioned ~0.5 ~0.5 ~0.5 facing entity @n[type=minecraft:marker,tag=temp.direction.closest] feet run tp @n[type=minecraft:marker,tag=temp.ray] ~ ~ ~ ~ ~
 
 # Kill temporary markers.

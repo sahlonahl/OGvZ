@@ -1,6 +1,6 @@
 #> Description: Gives the legendary book to the player.
 
-give @s minecraft:carrot_on_a_stick[ \
+execute if predicate ogvz:random50 run give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:3006}, \
   minecraft:item_model="ogvz:legendary_book", \
   minecraft:enchantment_glint_override=true, \

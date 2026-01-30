@@ -125,6 +125,50 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Magic Leaping Potion",
+                  "color": "aqua"
+                },
+                "minecraft:item_model": "ogvz:magic_leaping_potion",
+                "minecraft:custom_data": "{active_id:3103}",
+                "minecraft:lore": [
+                  {
+                    "text": "Grants temporary jump boost.",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "Shift click to activate slow falling.",
+                    "color": "blue"
+                  },
+                  {
+                    "text": "Requires 20 mana",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "Active Item",
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                "minecraft:unbreakable": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:unbreakable"
+                  ]
+                }
+              }
+            }
+          ]
         }
       ]
     },
@@ -137,31 +181,13 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 32
+              "count": 16
             },
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:fireworks": {
                   "explosions": [
-                    {
-                      "shape": "small_ball",
-                      "colors": [
-                        26367
-                      ]
-                    },
-                    {
-                      "shape": "small_ball",
-                      "colors": [
-                        26367
-                      ]
-                    },
-                    {
-                      "shape": "small_ball",
-                      "colors": [
-                        26367
-                      ]
-                    },
                     {
                       "shape": "small_ball",
                       "colors": [
@@ -196,7 +222,7 @@
                     "italic": false
                   },
                   {
-                    "text": "Firework Stars: 7",
+                    "text": "Firework Stars: 4",
                     "color": "gray",
                     "italic": false
                   }

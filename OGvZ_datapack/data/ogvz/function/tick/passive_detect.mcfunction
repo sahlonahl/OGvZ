@@ -19,8 +19,17 @@ execute as @s[tag=ogvz.admin,scores={ogvz.inventory.shrine_tape_measure=1..}] at
 
 
 ### Dwarf legendary items
+# if player has one legend item of any type give check score
+execute if score @s ogvz.inventory.legend matches 1 as @s[tag=ogvz.dwarf,scores={ogvz.inventory.legend.check=0}] at @s run scoreboard players set @s ogvz.inventory.legend.check 1
+# if player got rid of their legend items, remove effects and reset check score
+execute if score @s ogvz.inventory.legend matches 0 as @s[tag=ogvz.dwarf,scores={ogvz.inventory.legend.check=1}] at @s run effect clear @s
+execute if score @s ogvz.inventory.legend matches 0 as @s[tag=ogvz.dwarf,scores={ogvz.inventory.legend.check=1}] at @s run scoreboard players set @s ogvz.inventory.legend.check 0
+
+# papaya
 execute if score @s ogvz.inventory.legend matches 1 as @s[tag=ogvz.dwarf,scores={ogvz.inventory.papaya=1..}] at @s run effect give @s saturation 2 1 true
+# berzerkers axe
 execute if score @s ogvz.inventory.legend matches 1 as @s[tag=ogvz.dwarf,scores={ogvz.inventory.berzerker=1..}] at @s run effect give @s speed 2 1 true
+# warrior helmet
 execute if score @s ogvz.inventory.legend matches 1 as @s[tag=ogvz.dwarf,scores={ogvz.inventory.warrior_helm=1..}] at @s run effect give @s strength 2 1 true
 
 

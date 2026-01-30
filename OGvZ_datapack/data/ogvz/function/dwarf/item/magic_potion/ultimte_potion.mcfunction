@@ -2,17 +2,17 @@
 #> Called by: active_detect.mcfunction
 
 # Display fail message and return if the player doens't have enough mana.
-execute unless entity @s[level=30..] run title @s actionbar [ \
+execute unless entity @s[level=25..] run title @s actionbar [ \
   "", \
   {text:"[Ultimate Potion]",bold:true,color:"red"}, \
   {text:" You need at least ",color:"red"}, \
-  {text:"30 mana",bold:true,color:"red"}, \
+  {text:"25 mana",bold:true,color:"red"}, \
   {text:"!",color:"red"} \
 ]
-execute unless entity @s[level=30..] run return 0
+execute unless entity @s[level=25..] run return 0
 
-# Remove 30 mana (levels) from the player.
-scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 30
+# Remove 25 mana (levels) from the player.
+scoreboard players remove @s ogvz.dwarf.mana_buildup.mana 25
 
 # Display an activation message.
 title @s actionbar [ \

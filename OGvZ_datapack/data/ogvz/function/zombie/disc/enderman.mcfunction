@@ -106,6 +106,8 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:item_name={text:"Teleport",color:"light_purple"}, \
   minecraft:lore=[ \
     {text:"Teleport to a targeted block.",color:"blue"}, \
+    {text:"48 block range.",color:"blue"}, \
+    {text:"Must target a block and not the air",color:"red",italic:false,bold:true}, \
     {text:"10 second cooldown",color:"red",italic:false}, \
     {text:"Active Ability",color:"green",italic:false} \
   ], \

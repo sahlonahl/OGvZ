@@ -22,6 +22,8 @@ execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:ma
 execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:marker,tag=temp.ray_origin] ~ ~ ~ ~ ~
 
 # Starts the ray casting loop.
+# Note: range of 48 blocks set inside teleport loop
+# Note: make sure to update the enderman's teleport item with new range if updated
 execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:zombie/ability/enderman/teleport_loop
 
 # If the ray has hit a solid block, perform a check to see if you can be teleported there
@@ -38,7 +40,7 @@ execute unless entity @e[type=minecraft:marker,tag=temp.teleport] run title @s a
 execute at @n[type=minecraft:marker,tag=temp.ray] if block ~ ~ ~ #ogvz:go_through run title @s actionbar [ \
   "", \
   {text:"[Teleport]",bold:true,color:"red"}, \
-  {text:" That location is too far!",color:"red"} \
+  {text:" That location is too far away or in the air!",color:"red"} \
 ]
 
 # Teleport the player if there is a valid teleport spot.
