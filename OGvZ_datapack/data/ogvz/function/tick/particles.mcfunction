@@ -9,9 +9,9 @@ execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.shrine
 execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.shrine] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{min:118}}}} at @s run playsound minecraft:entity.generic.extinguish_fire ambient @s ~ ~ ~ 0.1 0.7
 
 # Dwarves - Particles when near the edge of zombie spawn zone.
-execute as @a[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:42}}}} at @s run particle minecraft:trial_omen ~ ~0.9 ~ 1 1 1 0 2
-execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:42}}}} at @s run particle angry_villager ~ ~ ~ 1 2 1 0.2 2 force
-execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:42}}}} at @s run playsound minecraft:entity.generic.extinguish_fire ambient @s ~ ~ ~ 0.1 0.7
+execute as @a[tag=ogvz.dwarf] at @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:42}}}} at @s run particle minecraft:trial_omen ~ ~0.9 ~ 1 1 1 0 2
+execute as @s[tag=ogvz.dwarf] at @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:42}}}} at @s run particle angry_villager ~ ~ ~ 1 2 1 0.2 2 force
+execute as @s[tag=ogvz.dwarf] at @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:42}}}} at @s run playsound minecraft:entity.generic.extinguish_fire ambient @s ~ ~ ~ 0.1 0.7
 
 # Frozen custom effect.
 execute as @a[tag=ogvz.frozen] at @s anchored eyes positioned ^ ^ ^ run particle minecraft:snowflake ~ ~ ~ 0.25 0.25 0.25 0 1

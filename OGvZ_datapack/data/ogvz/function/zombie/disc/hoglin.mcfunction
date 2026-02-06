@@ -1,7 +1,7 @@
 #> Description: Turns the player into the hoglin.
 
 # Clear the player's inventory and effects.
-clear @s
+clear @s golden_pickaxe
 effect clear @s
 
 # Fully heal and saturate the player.
@@ -167,7 +167,7 @@ give @s minecraft:golden_axe[ \
   } \
 ]
 # Steak x64
-give @s minecraft:cooked_beef 64
+#give @s minecraft:cooked_beef 64
 
 # give the player a shrine tracking compass
 function ogvz:zombie/shrine_compass
@@ -176,7 +176,7 @@ function ogvz:zombie/shrine_compass
 execute if entity @e[type=minecraft:marker,tag=ogvz.marker.ender_portal] as @s at @s run function ogvz:give/other/ender_eye
 
 # Give the player the Suicide Pill.
-execute as @s at @s run function ogvz:give/hidden/suicide_pill_slot_0
+function ogvz:give/hidden/suicide_pill_slot_0
 
 # Dismount the player so they can move.
 ride @s dismount

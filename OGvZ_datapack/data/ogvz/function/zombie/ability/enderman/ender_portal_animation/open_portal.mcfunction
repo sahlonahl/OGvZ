@@ -18,3 +18,6 @@ tellraw @a[tag=ogvz.joined_game] [ \
 
 # Give every zombie player an Ender Eye ability.
 execute as @a[tag=ogvz.zombie] at @s run function ogvz:give/other/ender_eye
+
+# Give every zombie player a suicide pill, because its getting deleted for some reason
+execute as @a[tag=ogvz.zombie] at @s run function ogvz:give/hidden/suicide_pill_slot_0

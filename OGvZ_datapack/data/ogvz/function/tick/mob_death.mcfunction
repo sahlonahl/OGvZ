@@ -20,9 +20,9 @@ execute as @a[tag=ogvz.zombie.class.chicken_nugget,tag=ogvz.dead] at @s run play
 execute as @a[tag=ogvz.zombie.class.chillager,tag=ogvz.dead] at @s run playsound minecraft:entity.illusioner.death player @a ~ ~ ~ 1
 execute as @a[tag=ogvz.zombie.class.creeper,tag=ogvz.dead] at @s run playsound minecraft:entity.creeper.death player @a ~ ~ ~ 1
 
-execute as @a[tag=ogvz.zombie.class.enderman,tag=ogvz.dead] at @s run playsound minecraft:entity.enderman.death player @a ~ ~ ~ 1
-execute as @a[tag=ogvz.zombie.class.golem,tag=ogvz.dead] run playsound minecraft:entity.iron_golem.death player @a ~ ~ ~ 1
-execute as @a[tag=ogvz.zombie.class.hoglin,tag=ogvz.dead] run playsound minecraft:entity.hoglin.death player @a ~ ~ ~ 1
+execute as @a[tag=ogvz.zombie.class.enderman,tag=ogvz.dead] at @a[tag=ogvz.joined_game] run playsound minecraft:entity.enderman.death player @a[tag=ogvz.joined_game] ~ ~ ~ 1
+execute as @a[tag=ogvz.zombie.class.golem,tag=ogvz.dead] at @a[tag=ogvz.joined_game] run playsound minecraft:entity.iron_golem.death player @a[tag=ogvz.joined_game] ~ ~ ~ 1
+execute as @a[tag=ogvz.zombie.class.hoglin,tag=ogvz.dead] at @a[tag=ogvz.joined_game] run playsound minecraft:entity.hoglin.death player @a[tag=ogvz.joined_game] ~ ~ ~ 1
 execute as @a[tag=ogvz.zombie.class.ocelot,tag=ogvz.dead] at @s run playsound minecraft:entity.ocelot.death player @a ~ ~ ~ 1
 execute as @a[tag=ogvz.zombie.class.phantom,tag=ogvz.dead] at @s run playsound minecraft:entity.phantom.death player @a ~ ~ ~ 1
 

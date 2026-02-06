@@ -431,6 +431,12 @@
     },
     {
       "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.4
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
@@ -448,12 +454,6 @@
               }
             }
           ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.2
         }
       ]
     },

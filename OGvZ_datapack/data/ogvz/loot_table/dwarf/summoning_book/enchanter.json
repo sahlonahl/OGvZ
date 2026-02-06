@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 24
+              "count": 12
             },
             {
               "function": "minecraft:set_components",
@@ -28,6 +28,12 @@
     },
     {
       "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.25
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
@@ -99,16 +105,16 @@
             }
           ]
         }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.5
-        }
       ]
     },
     {
       "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.1
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
@@ -126,12 +132,6 @@
               }
             }
           ]
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.1
         }
       ]
     }

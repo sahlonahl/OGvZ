@@ -47,9 +47,9 @@ scoreboard objectives add temp.angle.min dummy
 scoreboard objectives add temp.angle.max dummy
 scoreboard objectives add temp.power.min dummy
 scoreboard objectives add temp.power.max dummy
-scoreboard players set @s temp.angle.min 22500
+scoreboard players set @s temp.angle.min 1
 scoreboard players set @s temp.angle.max -45000
-scoreboard players set @s temp.power.min 300
+scoreboard players set @s temp.power.min 600
 scoreboard players set @s temp.power.max 1800
 
 # Create temporary constant scoreboards and calculate ranges.
