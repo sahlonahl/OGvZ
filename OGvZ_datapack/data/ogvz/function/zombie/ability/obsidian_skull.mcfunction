@@ -1,5 +1,15 @@
 #> Description: Teleport the player to another zombie spawn.
 
+## Check how far the player is from a mob spawn, if beyond 32 blocks send fail message
+execute as @s at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{min:32}}}} run \
+tellraw @a [ \
+  {text:"▶ ",bold:true,color:"dark_purple"}, \
+  {selector:"@s",color:"dark_purple"}, \
+  {text:" tried to use the obsidian skull to escape battle!",color:"dark_purple"} \
+]
+execute as @s at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{min:32}}}} run kill @s
+execute as @s at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{min:32}}}} run return 0
+
 ### Depending on the closest zombie spawn, teleport the player to the next in order zombie spawn that exists. (Alpha -> Beta -> Gamma -> Delta -> Alpha)
 # Alpha -> Beta
 execute as @s[tag=!temp.teleported] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if entity @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn.alpha,distance=..0.1] if entity @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn.beta] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn.beta] run tp @s ~ ~ ~
