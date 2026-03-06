@@ -21,6 +21,14 @@ execute if entity @s[gamemode=adventure] run title @s actionbar [ \
 ]
 execute if entity @s[gamemode=adventure] run return 0
 
+# Display a fail message and return if a portal is already open ogvz.marker.ender_portal
+execute if entity @e[tag=ogvz.marker.ender_portal] run title @s actionbar [ \
+  "", \
+  {text:"[Create Portal]",bold:true,color:"red"}, \
+  {text:" You must wait for the other portal to close!",color:"red"} \
+]
+execute if entity @e[tag=ogvz.marker.ender_portal] run return 0
+
 # Perform a check depending on if the player is sneaking or not. Return if the check fails.
 execute as @s[predicate=!ogvz:input_sneak_pressed] at @s run function ogvz:zombie/ability/enderman/create_portal_check_above
 execute as @s[predicate=ogvz:input_sneak_pressed] at @s run function ogvz:zombie/ability/enderman/create_portal_check_below

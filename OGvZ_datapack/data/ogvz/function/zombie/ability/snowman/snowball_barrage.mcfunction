@@ -49,7 +49,7 @@ scoreboard objectives add temp.power.min dummy
 scoreboard objectives add temp.power.max dummy
 scoreboard players set @s temp.angle.min 1
 scoreboard players set @s temp.angle.max -45000
-scoreboard players set @s temp.power.min 600
+scoreboard players set @s temp.power.min 900
 scoreboard players set @s temp.power.max 1800
 
 # Create temporary constant scoreboards and calculate ranges.
@@ -61,7 +61,7 @@ scoreboard players operation @s temp.power.range = @s temp.power.max
 scoreboard players operation @s temp.power.range -= @s temp.power.min
 
 # Calculate the power.
-# Equation: power[power] = (power[deg] - angle.min[deg]) * power.range[power] / angle.range[deg] + power.min[power]
+# Equation: power[power] = (power[deg] - angle.min[deg]) * power.range[power] / angle.range[deg] + power.min[power])
 scoreboard players operation @s temp.power -= @s temp.angle.min
 scoreboard players operation @s temp.power *= @s temp.power.range
 scoreboard players operation @s temp.power /= @s temp.angle.range

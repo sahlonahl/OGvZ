@@ -1,4 +1,4 @@
-#> Description: Turns the player into the enderman.
+#> Description: Turns the player into an enderman.
 
 # Clear the player's inventory and effects.
 clear @s
@@ -107,7 +107,7 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:lore=[ \
     {text:"Teleport to a targeted block.",color:"blue"}, \
     {text:"48 block range.",color:"blue"}, \
-    {text:"Must target a block and not the air",color:"red",italic:false,bold:true}, \
+    {text:"Must target a block and NOT the air",color:"red",italic:false,bold:true}, \
     {text:"10 second cooldown",color:"red",italic:false}, \
     {text:"Active Ability",color:"green",italic:false} \
   ], \
@@ -130,10 +130,12 @@ give @s minecraft:carrot_on_a_stick[ \
     {text:"teleport to the ender portal.",color:"blue"}, \
     {text:"Normally you will create the",color:"blue"}, \
     {text:"ender portal high above you, but",color:"blue"}, \
-    {text:"you can sneak to place it right",color:"blue"}, \
+    {text:"you can SNEAK to place it right",color:"blue"}, \
     {text:"below you instead.",color:"blue"}, \
     {text:"You need enough room above you",color:"blue"}, \
     {text:"to create the ender portal.",color:"blue"}, \
+    {text:"You cannot place and ender portal",color:"blue"}, \
+    {text:"when one is already open.",color:"blue"}, \
     {text:"The ender portal will close when",color:"blue"}, \
     {text:"one of its end stones is broken.",color:"blue"}, \
     {text:"Creating the ender portal takes time.",color:"blue"}, \

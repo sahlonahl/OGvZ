@@ -11,6 +11,9 @@ execute on origin run tag @s add temp.origin
 execute positioned ~-1.3 ~-2.5 ~-1.3 as @a[dx=1.0,dy=1.6,dz=1.0] run damage @s[tag=ogvz.dwarf] 12 ogvz:snowball by @p[tag=temp.origin]
 execute positioned ~-1.3 ~-2.5 ~-1.3 as @a[dx=1.0,dy=1.6,dz=1.0] run damage @s[tag=ogvz.zombie] 1.2 ogvz:snowball by @p[tag=temp.origin]
 
+# play a ding sound when damage is dealt
+execute positioned ~-1.3 ~-2.5 ~-1.3 as @a[dx=1.0,dy=1.6,dz=1.0] run playsound entity.arrow.hit_player player @p[tag=temp.origin]
+
 # Remove the temporary tag.
 execute on origin run tag @s remove temp.origin
 

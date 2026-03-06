@@ -1,4 +1,5 @@
 #> Description: Toggles the player between adventure and survival mode.
+# called by: ogvz:tick/zones
 
 # Give or remove the adventure tool tag depending on if the player has an adventure tool in their hand or not.
 execute as @s[tag=!ogvz.adventure.tool] if items entity @s weapon.mainhand *[minecraft:custom_data~{"adventure_mode":1}] run tag @s add ogvz.adventure.tool

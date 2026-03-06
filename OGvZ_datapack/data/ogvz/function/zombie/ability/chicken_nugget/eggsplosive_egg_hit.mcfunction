@@ -25,6 +25,10 @@ execute as @a[distance=..4] at @s run function ogvz:zombie/ability/chicken_nugge
 execute as @a[tag=temp.hit,tag=ogvz.dwarf,distance=..4] run damage @s 14 minecraft:explosion by @p[tag=temp.origin]
 execute as @a[tag=temp.hit,tag=ogvz.zombie,distance=..4] run damage @s 1.4 minecraft:explosion by @p[tag=temp.origin]
 
+# Damage all obstructed players for 50% damage
+execute as @a[tag=!temp.hit,tag=ogvz.dwarf,distance=..4] run damage @s 7 minecraft:explosion by @p[tag=temp.origin]
+execute as @a[tag=!temp.hit,tag=ogvz.zombie,distance=..4] run damage @s 0.7 minecraft:explosion by @p[tag=temp.origin]
+
 # Remove temporary tags.
 tag @a remove temp.hit
 execute on origin run tag @s remove temp.origin

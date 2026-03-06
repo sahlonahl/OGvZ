@@ -11,8 +11,8 @@ execute as @s[tag=ogvz.dwarf] at @n[type=minecraft:marker,tag=ogvz.marker.shrine
 execute as @s[tag=ogvz.dwarf] at @e[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:32}}}} run damage @s 4 ogvz:inside_zombie_spawn_range by @s
 
 # Toggle adventure mode for zombies near zombie spawn.
-execute as @s[tag=ogvz.zombie,tag=!ogvz.adventure.zombie_spawn] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:16}}}} run tag @s add ogvz.adventure.zombie_spawn
-execute as @s[tag=ogvz.zombie,tag=ogvz.adventure.zombie_spawn] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] unless predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:16}}}} run tag @s remove ogvz.adventure.zombie_spawn
+execute as @s[tag=ogvz.zombie,tag=!ogvz.adventure.zombie_spawn] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:8}}}} run tag @s add ogvz.adventure.zombie_spawn
+execute as @s[tag=ogvz.zombie,tag=ogvz.adventure.zombie_spawn] at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] unless predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:8}}}} run tag @s remove ogvz.adventure.zombie_spawn
 
 # Give/Remove obsidian skull to/from zombies near zombie spawn.
 execute as @s[tag=ogvz.zombie.class,tag=!ogvz.zombie.obsidian_skull] if score &ogvz ogvz.game.zombie_spawn_count matches 2.. at @n[type=minecraft:marker,tag=ogvz.marker.zombie_spawn] if predicate {condition:"entity_properties",entity:"this",predicate:{distance:{horizontal:{max:16}}}} at @s run function ogvz:give/other/obsidian_skull
