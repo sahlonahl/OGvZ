@@ -153,9 +153,9 @@ give @s minecraft:carrot_on_a_stick[ \
   } \
 ]
 # Fire Aspect Stick
-give @s minecraft:stick[ \
+give @s minecraft:blaze_rod[ \
   minecraft:unbreakable={}, \
-  minecraft:item_name={text:"Knockback Stick",color:"gold"}, \
+  minecraft:item_name={text:"Fiery Blaze Rod",color:"gold"}, \
   minecraft:enchantments={fire_aspect:10,knockback:2} \
 ]
 # Heat Wave

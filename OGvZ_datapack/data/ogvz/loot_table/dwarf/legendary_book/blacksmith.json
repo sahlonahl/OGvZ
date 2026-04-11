@@ -83,6 +83,55 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{legend_item:5000,passive_id:5201}",
+                "minecraft:item_name": "Excalibur",
+                "minecraft:item_model": "ogvz:excalibur",
+                "minecraft:rarity": "common",
+                "minecraft:lore": [
+                  {
+                    "text": "Provides Sustained Health Boost",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ],
+                "enchantments": {
+                  "sharpness": 5,
+                  "fire_aspect": 2,
+                  "sweeping_edge": 3
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:weapon": {},
+                "minecraft:tool": {
+                  "can_destroy_blocks_in_creative": false,
+                  "damage_per_block": 1,
+                  "rules": [
+                    {
+                      "blocks": "#minecraft:sword_instantly_mines",
+                      "speed": 3.4028235e+38
+                    },
+                    {
+                      "blocks": "minecraft:cobweb",
+                      "correct_for_drops": true,
+                      "speed": 15.0
+                    },
+                    {
+                      "blocks": "#minecraft:sword_efficient",
+                      "speed": 1.5
+                    }
+                  ]
+                }
+              }
+            }
+          ]
         }
       ]
     }

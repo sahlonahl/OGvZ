@@ -93,3 +93,4 @@ attribute @s minecraft:explosion_knockback_resistance modifier remove ogvz:golem
 attribute @s minecraft:movement_speed modifier remove ogvz:golem.movement_speed
 attribute @s minecraft:jump_strength modifier remove ogvz:golem.jump_strength
 attribute @s minecraft:fall_damage_multiplier modifier remove ogvz:golem.fall_damage_multiplier
+attribute @s minecraft:mining_efficiency modifier remove ogvz:golem.mining_efficiency

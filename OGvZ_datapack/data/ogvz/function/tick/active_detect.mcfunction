@@ -113,6 +113,7 @@ execute as @s[tag=ogvz.dwarf.class.hero.dwarven_guard,scores={ogvz.rclick.active
 ### Dwarf legendary items (5xxx)
 # builder active legendaries (51xx)
 execute as @s[tag=ogvz.dwarf.class,scores={ogvz.rclick.active_id=5100}] at @s run function ogvz:dwarf/item/builder_slab
+execute as @s[tag=ogvz.dwarf.class,scores={ogvz.rclick.active_id=5101}] at @s run function ogvz:dwarf/item/hero/dragon_warrior/conjure_wall
 # blacksmith active legendaries (52xx)
 # tailor active legendaries (53xx)
 # baker active legendaries (54xx)

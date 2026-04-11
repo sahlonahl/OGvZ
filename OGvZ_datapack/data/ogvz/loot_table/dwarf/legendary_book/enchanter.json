@@ -6,6 +6,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:white_bundle",
+          "weight":1,
           "functions": [
             {
               "function" : "minecraft:set_contents",
@@ -19,6 +20,41 @@
                 {"type":"item","name": "netherite_ingot"},
                 {"type":"item","name": "smithing_table"}
               ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "enchanted_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_enchantments",
+              "enchantments": {
+                "aqua_affinity": 1,
+                "respiration": 3,
+                "depth_strider": 3,
+                "feather_falling": 4,
+                "swift_sneak": 3,
+                "thorns": 3,
+                "frost_walker": 2,
+                "protection": 4,
+
+                "flame": 1,
+                "punch": 2,
+                "infinity": 1,
+                "power": 5,
+
+                "fire_aspect": 1,
+                "sharpness": 5,
+                "sweeping_edge": 3,
+
+                "unbreaking": 3
+              }
+            },
+            {
+              "function": "set_count",
+              "count": 3
             }
           ]
         }

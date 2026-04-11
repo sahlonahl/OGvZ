@@ -33,7 +33,7 @@ execute as @s[scores={ogvz.dwarf.oceans_pearl_buff.cooldown.seconds=1..}] run sc
 execute as @s[scores={ogvz.dwarf.oceans_pearl_buff.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dwarf.oceans_pearl_buff.cooldown.seconds 1
 execute as @s[scores={ogvz.dwarf.oceans_pearl_buff.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarf.oceans_pearl_buff.cooldown.ticks 0
 
-# Dragon Warrior - Dwarven Ruby
+# Dragon Warrior - Dragon Scale
 execute as @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dragon_warrior.dragon_scale.cooldown.ticks 1
 execute as @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dragon_warrior.dragon_scale.cooldown.seconds 1
 execute as @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.ticks=20..,ogvz.dragon_warrior.dragon_scale.cooldown.seconds=0}] run playsound minecraft:entity.ender_dragon.growl player @s ~ ~ ~ 1 1 1

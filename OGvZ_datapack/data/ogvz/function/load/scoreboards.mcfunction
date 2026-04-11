@@ -70,8 +70,10 @@ scoreboard objectives add ogvz.inventory.legend.check dummy
 # builder (51xx)
 # blacksmith (52xx)
 scoreboard objectives add ogvz.inventory.berzerker dummy
+scoreboard objectives add ogvz.inventory.excalibur dummy
 # tailor (53xx)
 scoreboard objectives add ogvz.inventory.warrior_helm dummy
+scoreboard objectives add ogvz.inventory.traveller_boots dummy
 # baker (54xx)
 scoreboard objectives add ogvz.inventory.papaya dummy
 # alchemist (55xx)

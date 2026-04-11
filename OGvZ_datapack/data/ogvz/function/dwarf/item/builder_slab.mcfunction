@@ -24,7 +24,7 @@ title @s actionbar [ \
   {text:" Poof!",color:"green"} \
 ]
 
-# Make a 11 * 5 * 3 stone brick wall around the marker one step before it hits a block.
+# Make a 11 * 5 * 3 stone brick wall around the marker.
 execute at @n[type=minecraft:marker,tag=temp.ray] positioned ^ ^ ^-0.001 run fill ^5 ^3 ^3 ^-5 ^-2 ^6 minecraft:end_stone_bricks replace #ogvz:go_through
 
 # Play a sound.

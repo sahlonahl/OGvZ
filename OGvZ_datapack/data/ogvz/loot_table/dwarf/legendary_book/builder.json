@@ -40,6 +40,42 @@
               }
             }
           ]
+        },
+        {
+          "type": "item",
+          "name": "carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:custom_data": "{active_id:5101}",
+                "minecraft:item_name": "Builders Wand",
+                "minecraft:item_model": "ogvz:builder_wand",
+                "minecraft:lore": [
+                  {
+                    "text": "Builds a small wall of Stone Bricks",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "8 mana",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "no cooldown",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "Active Item",
+                    "color": "green",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
         }
       ]
     }

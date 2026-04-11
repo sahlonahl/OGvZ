@@ -34,6 +34,38 @@
               }
             }
           ]
+        },
+        {
+          "type": "item",
+          "name": "iron_boots",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Boots of the Traveller",
+                "minecraft:custom_data": "{legend_item:5000,passive_id:5301}",
+                "minecraft:unbreakable":{},
+                "minecraft:lore": [
+                  {
+                    "text": "Provides Permananet Speed",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "text": "Does not work with other legendary items",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "text": "Passive Item",
+                    "color": "green",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
         }
       ]
     }

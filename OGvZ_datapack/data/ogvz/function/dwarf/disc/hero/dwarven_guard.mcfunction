@@ -36,7 +36,9 @@ item replace entity @s armor.head with minecraft:iron_helmet[ \
   minecraft:item_name={text:"Dwarven Guard Helmet",color:"gold"}, \
   minecraft:enchantments={ \
     "minecraft:protection":4, \
-    "minecraft:binding_curse":1 \
+    "minecraft:binding_curse":1, \
+    "aqua_affinity":1, \
+    "minecraft:respiration":3 \
   }, \
   minecraft:attribute_modifiers=[ \
     {type:"minecraft:armor",amount:3,operation:"add_value",slot:"head",id:"ogvz:head"}, \
@@ -76,7 +78,8 @@ item replace entity @s armor.feet with minecraft:iron_boots[ \
   minecraft:enchantments={ \
     "minecraft:protection":5, \
     "minecraft:feather_falling":4, \
-    "minecraft:binding_curse":1 \
+    "minecraft:binding_curse":1, \
+    "minecraft:depth_strider":3 \
   }, \
   minecraft:attribute_modifiers=[ \
     {type:"minecraft:armor",amount:3,operation:"add_value",slot:"feet",id:"ogvz:feet"}, \

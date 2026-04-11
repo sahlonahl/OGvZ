@@ -19,6 +19,10 @@
     },
     {
       "condition": "minecraft:reference",
+      "name": "ogvz:player/is_anakaie"
+    },
+    {
+      "condition": "minecraft:reference",
       "name": "ogvz:player/is_the_lasagna_man"
     },
     {

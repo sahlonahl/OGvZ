@@ -42,6 +42,30 @@
               }
             }
           ]
+        },
+        {
+          "type": "item",
+          "name": "tipped_arrow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 256
+            },
+            {
+              "function": "set_potion",
+              "id": "poison"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Legendary Arrow",
+                  "color": "blue"
+                }
+              }
+            }
+          ]
         }
       ]
     }

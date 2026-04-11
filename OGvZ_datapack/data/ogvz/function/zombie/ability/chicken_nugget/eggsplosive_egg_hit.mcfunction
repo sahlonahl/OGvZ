@@ -14,20 +14,20 @@ tag @s add temp.center
 execute on origin run tag @s add temp.origin
 
 # Damage all non-player entities. Reduced damage for wolves and silverfish.
-execute as @e[type=!minecraft:player,type=!minecraft:wolf,type=!minecraft:silverfish,distance=..4] run damage @s 14 minecraft:explosion by @p[tag=temp.origin]
-execute as @e[type=minecraft:wolf,distance=..4] run damage @s 1.4 minecraft:explosion by @p[tag=temp.origin]
-execute as @e[type=minecraft:silverfish,distance=..4] run damage @s 1.4 minecraft:explosion by @p[tag=temp.origin]
+execute as @e[type=!minecraft:player,type=!minecraft:wolf,type=!minecraft:silverfish,distance=..4] run damage @s 20 minecraft:explosion by @p[tag=temp.origin]
+execute as @e[type=minecraft:wolf,distance=..4] run damage @s 2.0 minecraft:explosion by @p[tag=temp.origin]
+execute as @e[type=minecraft:silverfish,distance=..4] run damage @s 2.0 minecraft:explosion by @p[tag=temp.origin]
 
 # Check if there is no obstruction between the players hit and the area effect cloud.
 execute as @a[distance=..4] at @s run function ogvz:zombie/ability/chicken_nugget/eggsplosive_egg_check
 
-# Damage all unobstructed nearby players. Zombies take reduced damage.
-execute as @a[tag=temp.hit,tag=ogvz.dwarf,distance=..4] run damage @s 14 minecraft:explosion by @p[tag=temp.origin]
-execute as @a[tag=temp.hit,tag=ogvz.zombie,distance=..4] run damage @s 1.4 minecraft:explosion by @p[tag=temp.origin]
+# Damage all unobstructed nearby players. Zombies take 90% reduced damage.
+execute as @a[tag=temp.hit,tag=ogvz.dwarf,distance=..4] run damage @s 20 minecraft:explosion by @p[tag=temp.origin]
+execute as @a[tag=temp.hit,tag=ogvz.zombie,distance=..4] run damage @s 2.0 minecraft:explosion by @p[tag=temp.origin]
 
-# Damage all obstructed players for 50% damage
-execute as @a[tag=!temp.hit,tag=ogvz.dwarf,distance=..4] run damage @s 7 minecraft:explosion by @p[tag=temp.origin]
-execute as @a[tag=!temp.hit,tag=ogvz.zombie,distance=..4] run damage @s 0.7 minecraft:explosion by @p[tag=temp.origin]
+# Damage all obstructed players for 50% damage. Zombies take 90% reduced damage.
+execute as @a[tag=!temp.hit,tag=ogvz.dwarf,distance=..4] run damage @s 10 minecraft:explosion by @p[tag=temp.origin]
+execute as @a[tag=!temp.hit,tag=ogvz.zombie,distance=..4] run damage @s 1.0 minecraft:explosion by @p[tag=temp.origin]
 
 # Remove temporary tags.
 tag @a remove temp.hit

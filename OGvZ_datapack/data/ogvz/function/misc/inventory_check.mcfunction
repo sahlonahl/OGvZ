@@ -29,8 +29,10 @@ execute as @s[tag=ogvz.dwarf] store result score @s ogvz.inventory.legend run cl
 # builder passive legendaries (51xx)
 # blacksmith passive legendaries (52xx)
 execute as @s[tag=ogvz.dwarf] store result score @s ogvz.inventory.berzerker run clear @s minecraft:blaze_rod[minecraft:custom_data~{passive_id:5200}] 0
+execute as @s[tag=ogvz.dwarf] store result score @s ogvz.inventory.excalibur run clear @s minecraft:diamond_sword[minecraft:custom_data~{passive_id:5201}] 0
 # tailor passive legendaries (53xx)
 execute as @s[tag=ogvz.dwarf] store result score @s ogvz.inventory.warrior_helm run clear @s minecraft:iron_helmet[minecraft:custom_data~{passive_id:5300}] 0
+execute as @s[tag=ogvz.dwarf] store result score @s ogvz.inventory.traveller_boots run clear @s minecraft:iron_boots[minecraft:custom_data~{passive_id:5301}] 0
 # baker passive legendaries (54xx)
 execute as @s[tag=ogvz.dwarf] store result score @s ogvz.inventory.papaya run clear @s minecraft:nether_star[minecraft:custom_data~{passive_id:5400}] 0
 # alchemist passive legendaries (55xx)

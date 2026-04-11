@@ -11,7 +11,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {"text":"The Papya","color":"gold"},
+                "minecraft:item_name": {"text":"The Papaya","color":"gold"},
                 "minecraft:custom_data": "{legend_item:5000,passive_id:5400}",
                 "minecraft:item_model": "ogvz:papaya",
                 "minecraft:lore": [
@@ -21,6 +21,25 @@
                   {"text": "Passive Item","color": "green"}
                 ],
                 "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "golden_carrot",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 128
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "lore": [
+                  {"text":"One of the best food sorces in the game","color":"blue"}
+                ]
               }
             }
           ]

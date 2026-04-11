@@ -21,7 +21,14 @@ execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:ma
 # Start the ray casting loop.
 execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:dwarf/item/hero/dragon_warrior/conjure_wall_loop
 
-# Display an activation message.
+# Display a fail message if the ray does not hit a block
+execute at @n[type=minecraft:marker,tag=temp.ray] if block ~ ~ ~ #ogvz:go_through run title @s actionbar [ \
+  "", \
+  {text:"[Conjure Wall]",bold:true,color:"red"}, \
+  {text:" Must be placed against another block!",color:"red"} \
+]
+
+# Display an activation message if the ray hits a block.
 execute at @n[type=minecraft:marker,tag=temp.ray] unless block ~ ~ ~ #ogvz:go_through run title @s actionbar [ \
   "", \
   {text:"[Conjure Wall]",bold:true,color:"green"}, \

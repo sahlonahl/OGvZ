@@ -28,6 +28,7 @@ attribute @s minecraft:explosion_knockback_resistance modifier add ogvz:golem.ex
 attribute @s minecraft:movement_speed modifier add ogvz:golem.movement_speed -0.6 add_multiplied_total
 attribute @s minecraft:jump_strength modifier add ogvz:golem.jump_strength -1.0 add_multiplied_total
 attribute @s minecraft:fall_damage_multiplier modifier add ogvz:golem.fall_damage_multiplier -1.0 add_multiplied_total
+attribute @s minecraft:mining_efficiency modifier add ogvz:golem.mining_efficiency -0.5 add_multiplied_total
 
 # Put the player on the golem zombie team.
 team join z6GOLEM @s
