@@ -40,7 +40,7 @@ execute as @n[type=minecraft:marker,tag=temp.ray] at @s run function ogvz:zombie
 # Apply instant healing and abosrption to nearest targeted zombie.
 effect give @p[tag=temp.hit,tag=ogvz.zombie] minecraft:instant_health 1 1 true
 effect give @p[tag=temp.hit,tag=ogvz.zombie] minecraft:instant_health 2 0 true
-effect give @p[tag=temp.hit,tag=ogvz.zombie] minecraft:absorption 60 2
+effect give @p[tag=temp.hit,tag=ogvz.zombie] minecraft:absorption 20 1
 
 # Gets rid of the markers.
 kill @e[type=minecraft:marker,tag=temp.ray]

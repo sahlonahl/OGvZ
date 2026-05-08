@@ -159,8 +159,9 @@ give @s minecraft:coal_ore[ \
 # Legendary Book
 execute as @s at @s run function ogvz:give/other/legendary_book
 
-# Volunteer book
+# Volunteer books
 execute as @s at @s run function ogvz:give/other/volunteer_book
+execute as @s at @s run function ogvz:give/other/hero_volunteer_book
 
 # Display a message on how to play as the blacksmith.
 tellraw @s [ \

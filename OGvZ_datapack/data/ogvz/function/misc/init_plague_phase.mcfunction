@@ -6,10 +6,10 @@ scoreboard players set &ogvz ogvz.game.phase 3
 # Make a random dwarf into a specific hero depending on which boss was chosen. 
 # Favors players who volunteered for the hero
 # selects from general population who did not mark for death
-execute unless entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 1 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=!ogvz.marked_for_death] at @s run function ogvz:dwarf/disc/hero/dragon_warrior
-execute unless entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 2 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=!ogvz.marked_for_death] at @s run function ogvz:dwarf/disc/hero/wither_warrior
-execute unless entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 3 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=!ogvz.marked_for_death] at @s run function ogvz:dwarf/disc/hero/dwarven_guard
-execute unless entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 4 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=!ogvz.marked_for_death] at @s run function ogvz:dwarf/disc/hero/assassin_slayer
+execute unless entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 1 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=!ogvz.marked_for_death,tag=!ogvz.hero_opt_out] at @s run function ogvz:dwarf/disc/hero/dragon_warrior
+execute unless entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 2 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=!ogvz.marked_for_death,tag=!ogvz.hero_opt_out] at @s run function ogvz:dwarf/disc/hero/wither_warrior
+execute unless entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 3 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=!ogvz.marked_for_death,tag=!ogvz.hero_opt_out] at @s run function ogvz:dwarf/disc/hero/dwarven_guard
+execute unless entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 4 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=!ogvz.marked_for_death,tag=!ogvz.hero_opt_out] at @s run function ogvz:dwarf/disc/hero/assassin_slayer
 
 execute if entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 1 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=ogvz.hero_volunteer] at @s run function ogvz:dwarf/disc/hero/dragon_warrior
 execute if entity @a[tag=ogvz.hero_volunteer] if score &ogvz ogvz.game.boss matches 2 as @r[tag=ogvz.dwarf,tag=!ogvz.dwarf.class.hero,tag=ogvz.hero_volunteer] at @s run function ogvz:dwarf/disc/hero/wither_warrior

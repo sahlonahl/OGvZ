@@ -27,6 +27,17 @@
     },
     {
       "label": {
+        "text": "Hero Volunteer Book",
+        "color": "white"
+      },
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:give/other/hero_volunteer_book"
+      }
+    },
+    {
+      "label": {
         "text": "Join Game (Magma Cream)",
         "color": "white"
       },

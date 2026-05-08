@@ -188,6 +188,7 @@ execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9002}] at @s r
 execute as @s[tag=ogvz.zombie.class,scores={ogvz.rclick.active_id=9003}] at @s run function ogvz:zombie/ability/enderman/ender_eye
 execute as @s[scores={ogvz.rclick.active_id=9004}] at @s run dialog show @s ogvz:rulebook
 execute as @s[scores={ogvz.rclick.active_id=9005}] at @s run function ogvz:trigger/mark_for_death
+execute as @s[scores={ogvz.rclick.active_id=9006}] at @s run function ogvz:trigger/hero_volunteer_toggle
 
 # Remove temporary tags.
 tag @s remove temp.use.mainhand

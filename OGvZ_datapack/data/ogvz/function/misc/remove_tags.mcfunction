@@ -1,5 +1,6 @@
 #> Description: Removes most of the ogvz tags.
-#> Note: Exceptions are: ogvz.initialized, ogvz.admin, ogvz.joined_game, ogvz.dead, ogvz.marked_for_death, ogvz.zombie.punish, ogvz.attribute tags.
+#> Note: Exceptions are: ogvz.initialized, ogvz.admin, ogvz.joined_game, ogvz.dead,  ogvz.zombie.punish, ogvz.attribute tags.
+#> Exceptions cont: ogvz.marked_for_death, ogvz.hero_volunteer, ogvz.hero_default, ogvz.hero_opt_out
 
 ## dwarf and classes
 tag @s remove ogvz.dwarf
@@ -27,7 +28,6 @@ tag @s remove ogvz.dwarf.class.hero.assassin_slayer.invisible
 # misc dwarf tags
 tag @s remove ogvz.dwarf.plague
 tag @s remove ogvz.boss_volunteer
-tag @s remove ogvz.hero_volunteer
 tag @s remove ogvz.monster_volunteer
 
 tag @s remove dwarf.used.legendary
