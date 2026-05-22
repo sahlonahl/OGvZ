@@ -118,7 +118,7 @@ give @s minecraft:golden_axe[ \
     { \
       id:"minecraft:base_attack_damage", \
       type:"minecraft:attack_damage", \
-      amount:9.0, \
+      amount:7.0, \
       operation:"add_value", \
       slot:"mainhand" \
     }, \

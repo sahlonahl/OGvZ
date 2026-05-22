@@ -9,7 +9,7 @@ scoreboard players set @s temp.custom_bar_value 70
 
 # Set the maximum experience.
 # If you have changed the max experience, you also have to change this to that value.
-scoreboard players set @s temp.max_value 64
+scoreboard players set @s temp.max_value 80
 
 # Calculate the custom bar fullness.
 # This can be represented as: custom bar width * current value / max value

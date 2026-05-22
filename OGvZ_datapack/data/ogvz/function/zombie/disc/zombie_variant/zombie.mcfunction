@@ -50,12 +50,12 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[ \
   minecraft:dyed_color=44975, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":3, \
+    "minecraft:protection":2, \
     "blast_protection":4, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:6,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
+    {type:"minecraft:armor",amount:5,operation:"add_value",slot:"chest",id:"ogvz:chest"} \    
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -70,11 +70,11 @@ item replace entity @s armor.legs with minecraft:leather_leggings[ \
   minecraft:dyed_color=4602533, \
   minecraft:enchantment_glint_override=false, \
   minecraft:enchantments={ \
-    "minecraft:protection":3, \
+    "minecraft:protection":2, \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:5,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
+    {type:"minecraft:armor",amount:4,operation:"add_value",slot:"legs",id:"ogvz:legs"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \
@@ -93,7 +93,7 @@ item replace entity @s armor.feet with minecraft:leather_boots[ \
     "minecraft:binding_curse":1 \
   }, \
   minecraft:attribute_modifiers=[ \
-    {type:"minecraft:armor",amount:2,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
+    {type:"minecraft:armor",amount:1,operation:"add_value",slot:"feet",id:"ogvz:feet"} \
   ], \
   minecraft:tooltip_display={ \
     hidden_components:[ \

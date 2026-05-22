@@ -103,7 +103,37 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:lore": [
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "minecraft:base_attack_damage",
+                    "type": "minecraft:attack_damage",
+                    "amount": 12.5,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:base_attack_speed",
+                    "type": "minecraft:attack_speed",
+                    "amount": -3.0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "id": "minecraft:entity_interaction_range.mainhand",
+                    "type": "minecraft:entity_interaction_range",
+                    "amount": 0.0,
+                    "operation": "add_value",
+                    "slot": "mainhand",
+                    "display": {
+                      "type": "override",
+                      "value": {
+                        "text": " 3 Attack Reach",
+                        "color": "dark_green"
+                      }
+                    }
+                  }
+                ],
+                  "minecraft:lore": [
                   {
                     "text": "Disables Shields",
                     "color": "gray",

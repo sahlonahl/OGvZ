@@ -141,7 +141,7 @@ item replace entity @s hotbar.7 with minecraft:shield[ \
 # Worn Trident
 give @s minecraft:trident[ \
   minecraft:item_name="Worn Trident", \
-  minecraft:enchantments={"minecraft:riptide":3,knockback:1}, \
+  minecraft:enchantments={"minecraft:riptide":3,knockback:1,sharpness:3}, \
   minecraft:lore=[ \
     {text:"Disables Shields",color:"gray",italic:false} \
   ], \
