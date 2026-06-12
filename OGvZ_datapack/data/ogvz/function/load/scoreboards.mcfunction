@@ -111,6 +111,8 @@ scoreboard objectives add ogvz.dwarf.pearl_rod.warmup.ticks dummy
 scoreboard objectives add ogvz.dwarf.pearl_rod.warmup.seconds dummy
 scoreboard objectives add ogvz.dwarf.oceans_pearl_buff.cooldown.ticks dummy
 scoreboard objectives add ogvz.dwarf.oceans_pearl_buff.cooldown.seconds dummy
+scoreboard objectives add ogvz.dwarf.regen_potion.cooldown.ticks dummy
+scoreboard objectives add ogvz.dwarf.regen_potion.cooldown.seconds dummy
 
 # Builder
 scoreboard objectives add ogvz.builder.summoning_book.cooldown.ticks dummy

@@ -38,8 +38,7 @@ execute as @s[predicate=ogvz:player/is_muff1narcades] run tellraw @a [ \
   "", \
   {text:"\u1100\u1101\u1102\n",font:"ogvz:custom"}, \
   {text:"▶ ",bold:true,color:"red"}, \
-  {"selector":"@s"}, \
-  {text:" died, and is thinking of excuses (-_-;)",color:"red"} \
+  {text:" YEEEEOWCH!!!!!!!!!!!!",color:"red"} \
 ]
 execute as @s[predicate=ogvz:player/is_muff1narcades] at @s run function ogvz:misc/custom_death_effect/muff1narcades
 execute as @s[predicate=ogvz:player/is_muff1narcades] run return 0

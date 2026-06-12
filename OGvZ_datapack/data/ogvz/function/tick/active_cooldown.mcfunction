@@ -33,6 +33,14 @@ execute as @s[scores={ogvz.dwarf.oceans_pearl_buff.cooldown.seconds=1..}] run sc
 execute as @s[scores={ogvz.dwarf.oceans_pearl_buff.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dwarf.oceans_pearl_buff.cooldown.seconds 1
 execute as @s[scores={ogvz.dwarf.oceans_pearl_buff.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarf.oceans_pearl_buff.cooldown.ticks 0
 
+# Dwarves - Regen potion cooldown
+execute as @s[scores={ogvz.dwarf.regen_potion.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dwarf.regen_potion.cooldown.ticks 1
+execute as @s[scores={ogvz.dwarf.regen_potion.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dwarf.regen_potion.cooldown.seconds 1
+execute as @s[scores={ogvz.dwarf.regen_potion.cooldown.ticks=20..,ogvz.dwarf.regen_potion.cooldown.seconds=0}] run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1 2 1
+execute as @s[scores={ogvz.dwarf.regen_potion.cooldown.ticks=20..,ogvz.dwarf.regen_potion.cooldown.seconds=0}] run title @s actionbar ["",{text:"[Magic Regeneration Potion]",bold:true,color:"blue"},{text:" Recharged!",color:"blue"}]
+execute as @s[scores={ogvz.dwarf.regen_potion.cooldown.ticks=20..}] run scoreboard players set @s ogvz.dwarf.regen_potion.cooldown.ticks 0
+
+
 # Dragon Warrior - Dragon Scale
 execute as @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.seconds=1..}] run scoreboard players add @s ogvz.dragon_warrior.dragon_scale.cooldown.ticks 1
 execute as @s[scores={ogvz.dragon_warrior.dragon_scale.cooldown.ticks=20..}] run scoreboard players remove @s ogvz.dragon_warrior.dragon_scale.cooldown.seconds 1

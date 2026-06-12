@@ -11,13 +11,16 @@ scoreboard players set @s ogvz.misc.custom_bar_hide.ticks 0
 scoreboard players set @s ogvz.dwarf.mana_buildup.mana 0
 scoreboard players set @s ogvz.dwarf.mana_buildup.micromana 0
 
-scoreboard players set @s ogvz.builder.summoning_book.cooldown.ticks 0
-scoreboard players set @s ogvz.builder.summoning_book.cooldown.seconds 0
-
 scoreboard players set @s ogvz.dwarf.pearl_rod.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarf.pearl_rod.cooldown.seconds 0
 scoreboard players set @s ogvz.dwarf.oceans_pearl_buff.cooldown.ticks 0
 scoreboard players set @s ogvz.dwarf.oceans_pearl_buff.cooldown.seconds 0
+
+scoreboard players set @s ogvz.dwarf.regen_potion.cooldown.ticks 0
+scoreboard players set @s ogvz.dwarf.regen_potion.cooldown.seconds 0
+
+scoreboard players set @s ogvz.builder.summoning_book.cooldown.ticks 0
+scoreboard players set @s ogvz.builder.summoning_book.cooldown.seconds 0
 
 scoreboard players set @s ogvz.dragon_warrior.dragon_scale.cooldown.ticks 0
 scoreboard players set @s ogvz.dragon_warrior.dragon_scale.cooldown.seconds 0

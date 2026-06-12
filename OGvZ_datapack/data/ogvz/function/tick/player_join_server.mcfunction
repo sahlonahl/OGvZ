@@ -59,9 +59,6 @@ tag @s add ogvz.initialized
 tag @s add ogvz.adventure.lobby
 tag @s[predicate=ogvz:is_admin] add ogvz.admin
 
-# Give the player the default hero volunteer tag, so they can volunteer for hero later
-tag @s add ogvz.hero_default
-
 # Display a welcoming message to the player.
 tellraw @s [ \
   "", \

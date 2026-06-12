@@ -4,7 +4,7 @@
 execute summon minecraft:snowball run tag @s add temp.processing
 
 # Teleport the snowball to the player's eyes and make it face in the same direction as the player.
-execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:snowball,tag=temp.processing] ~ ~ ~ ~ -45
+execute anchored eyes positioned ^ ^ ^ rotated as @s run tp @n[type=minecraft:snowball,tag=temp.processing] ~ ~ ~ ~ ~
 
 # Summon an area effect cloud, give it a tag, make it invisible, set it's owner to the player's UUID and make it ride the snowball.
 summon minecraft:area_effect_cloud ~ ~ ~ {custom_particle:{type:"block",block_state:"minecraft:air"},Radius:0f,Tags:["temp.processing"]}

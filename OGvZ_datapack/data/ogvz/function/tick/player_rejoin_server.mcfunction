@@ -23,6 +23,9 @@ execute as @s[tag=!ogvz.joined_game] run function ogvz:give/other/volunteer_book
 execute as @s[tag=!ogvz.joined_game] run function ogvz:give/other/hero_volunteer_book
 execute as @s[tag=!ogvz.joined_game,predicate=ogvz:is_admin] run function ogvz:give/admin_handbook
 
+# If the player hasn't joined the game yet, Give the player the default hero volunteer tag, so they can volunteer for hero later
+execute as @s[tag=!ogvz.joined_game] run tag @s add ogvz.hero_default
+
 # If the player hasn't joined the game yet and the game is in progress/over, give them a magma cream.
 execute as @s[tag=!ogvz.joined_game] if score &ogvz ogvz.game.phase matches 1..6 at @s run function ogvz:give/other/join_game_magma_cream
 

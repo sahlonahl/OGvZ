@@ -11,3 +11,6 @@ execute as @s at @s if score &ogvz ogvz.game.boss matches 1 run function ogvz:gi
 execute as @s at @s if score &ogvz ogvz.game.boss matches 2 run function ogvz:give/disc/zombie/wither_skeleton
 execute as @s at @s if score &ogvz ogvz.game.boss matches 3 run function ogvz:give/disc/zombie/guardian
 execute as @s at @s if score &ogvz ogvz.game.boss matches 4 run function ogvz:give/disc/zombie/pillager
+
+# Common class (~40%)
+execute as @s at @s run function ogvz:give/disc/zombie/spider

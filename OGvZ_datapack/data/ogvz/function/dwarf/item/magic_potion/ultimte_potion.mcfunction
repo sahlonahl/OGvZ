@@ -25,7 +25,7 @@ title @s actionbar [ \
 playsound minecraft:entity.witch.drink player @a ~ ~ ~ 1 1
 
 # Give the player temporary regeneration and instant health.
-effect give @s minecraft:regeneration 10 1
+effect give @s minecraft:regeneration 5 3
 effect give @s minecraft:instant_health 1 0
 effect give @s minecraft:strength 15 0
 effect give @s minecraft:speed 15 1

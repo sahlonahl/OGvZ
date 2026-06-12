@@ -52,6 +52,9 @@ title @a[tag=temp.hit] actionbar [ \
   {text:"A Phantom has made you delirious!",color:"red"} \
 ]
 
+# Play a ding sound for the player that casted the delirium
+execute as @a[tag=temp.hit] at @a[tag=temp.ray_origin] run playsound entity.arrow.hit
+
 # Gets rid of the markers.
 kill @e[type=minecraft:marker,tag=temp.ray]
 kill @e[type=minecraft:marker,tag=temp.ray_origin]

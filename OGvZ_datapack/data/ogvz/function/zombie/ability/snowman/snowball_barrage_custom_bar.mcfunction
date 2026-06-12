@@ -26,8 +26,8 @@ kill @e[type=minecraft:marker,tag=temp.yaw]
 # All values have to be scaled by 1000.
 scoreboard objectives add temp.angle.min dummy
 scoreboard objectives add temp.angle.max dummy
-scoreboard players set @s temp.angle.min 1
-scoreboard players set @s temp.angle.max -45000
+scoreboard players set @s temp.angle.min 90000
+scoreboard players set @s temp.angle.max -90000
 
 # Create temporary constant scoreboards and calculate ranges.
 scoreboard objectives add temp.angle.range dummy

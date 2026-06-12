@@ -1,5 +1,11 @@
 #> Description: Heals nearby zombies and tracks the pollen bomb's lifetime.
 
+# keep track of how long the marker has been alive since being spawned in
+
+# kill the marker and the potion if it's alive for too long (60 sec) without landing
+
+# notify the bee that the potion expired in flight
+
 # Return if the marker is still riding the splash potion.
 execute on vehicle run return 0
 
