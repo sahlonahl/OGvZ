@@ -135,7 +135,15 @@ give @s minecraft:carrot_on_a_stick[ \
   minecraft:tooltip_style="ogvz:legendary", \
   minecraft:max_damage=1561, \
   minecraft:damage=0, \
-  minecraft:repairable={items:"minecraft:diamond"} \
+  minecraft:repairable={items:"minecraft:diamond"}, \
+  minecraft:tool={ \
+    "rules": [ { \
+        "blocks": "minecraft:cobweb", \
+        "correct_for_drops": true, \
+        "speed": 15.0 \
+      } \
+    ] \
+  } \
 ]
 #give @s minecraft:carrot_on_a_stick[ \
   minecraft:custom_data={active_id:4200}, \

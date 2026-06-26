@@ -28,7 +28,7 @@ execute if score @s ogvz.inventory.legend matches 0 as @s[tag=ogvz.dwarf,scores=
 # berzerkers axe
 execute if score @s ogvz.inventory.legend matches 1 as @s[tag=ogvz.dwarf,scores={ogvz.inventory.berzerker=1..}] at @s run effect give @s speed 2 1 true
 # excalibur
-execute if score @s ogvz.inventory.legend matches 1 as @s[tag=ogvz.dwarf,scores={ogvz.inventory.excalibur=1..}] at @s run effect give @s health_boost 2 2 true
+execute if score @s ogvz.inventory.legend matches 1 as @s[tag=ogvz.dwarf,scores={ogvz.inventory.excalibur=1..}] at @s run effect give @s health_boost 2 0 true
 # warrior helmet
 execute if score @s ogvz.inventory.legend matches 1 as @s[tag=ogvz.dwarf,scores={ogvz.inventory.warrior_helm=1..},nbt={equipment:{head:{id:"minecraft:iron_helmet"}}}] at @s run effect give @s strength 2 1 true
 # Boots of the Traveller

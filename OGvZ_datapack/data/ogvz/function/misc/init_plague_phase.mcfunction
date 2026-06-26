@@ -42,7 +42,7 @@ scoreboard players operation &ogvz temp.kill_dwarf_count *= &ogvz temp.total_pla
 scoreboard players operation &ogvz temp.kill_dwarf_count /= &ogvz temp.const.100
 scoreboard players operation &ogvz temp.kill_dwarf_count *= &ogvz temp.const.-1
 scoreboard players operation &ogvz temp.kill_dwarf_count += Dwarves ogvz.game.player_count
-scoreboard players operation &ogvz temp.kill_dwarf_count -= Zombies ogvz.game.player_count
+# scoreboard players operation &ogvz temp.kill_dwarf_count -= Zombies ogvz.game.player_count
 
 # If at least one dwarf has to be killed, display a message to all players who joined the game that the plague is happening.
 execute if score &ogvz temp.kill_dwarf_count matches 1.. run tellraw @a[tag=ogvz.joined_game] [ \

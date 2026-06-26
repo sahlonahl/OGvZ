@@ -104,8 +104,8 @@
                   }
                 ],
                 "enchantments": {
-                  "sharpness": 5,
-                  "fire_aspect": 2,
+                  "sharpness": 6,
+                  "fire_aspect": 3,
                   "sweeping_edge": 3
                 },
                 "minecraft:unbreakable": {},
