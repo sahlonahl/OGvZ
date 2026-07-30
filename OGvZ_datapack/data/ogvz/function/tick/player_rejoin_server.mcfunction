@@ -19,8 +19,8 @@ execute as @s[tag=!ogvz.joined_game] run clear @s
 
 # If the player hasn't joined the game yet, give them the rulebook and volunteer book. If they are an admin, give them an admin handbook instead.
 execute as @s[tag=!ogvz.joined_game,predicate=!ogvz:is_admin] run function ogvz:give/other/rulebook
-execute as @s[tag=!ogvz.joined_game] run function ogvz:give/other/volunteer_book
-execute as @s[tag=!ogvz.joined_game] run function ogvz:give/other/hero_volunteer_book
+execute as @s[tag=!ogvz.joined_game,predicate=!ogvz:is_admin] run function ogvz:give/other/volunteer_book
+execute as @s[tag=!ogvz.joined_game,predicate=!ogvz:is_admin] run function ogvz:give/other/hero_volunteer_book
 execute as @s[tag=!ogvz.joined_game,predicate=ogvz:is_admin] run function ogvz:give/admin_handbook
 
 # If the player hasn't joined the game yet, Give the player the default hero volunteer tag, so they can volunteer for hero later

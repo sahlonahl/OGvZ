@@ -29,6 +29,25 @@
     {
       "label": [
         {
+          "text": "Place Muffin's Gauntlet",
+          "color": "green",
+          "underlined": true
+        },
+        {
+          "text": " Lobby Structure",
+          "color": "green",
+          "underlined": false
+        }
+      ],
+      "width": 200,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function ogvz:admin/setup/lobby/place_muffin_gauntlet"
+      }
+    },
+    {
+      "label": [
+        {
           "text": "Summon",
           "color": "green",
           "underlined": true
